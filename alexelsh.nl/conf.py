@@ -25,7 +25,7 @@ SITE_URL = "https://alexelsh.nl/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://alexelsh.nl/"
 BLOG_EMAIL = "alex@alexelsh.nl"
-BLOG_DESCRIPTION = "Yet another blog"  # (translatable)
+BLOG_DESCRIPTION = "Yet another blog!"  # (translatable)
 
 # Nikola is multilingual!
 #
