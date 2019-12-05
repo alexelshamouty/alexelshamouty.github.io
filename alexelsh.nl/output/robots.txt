@@ -1,4 +1,0 @@
-Sitemap: https://alexelsh.nl/sitemapindex.xml
-
-User-Agent: *
-Host: alexelsh.nl
