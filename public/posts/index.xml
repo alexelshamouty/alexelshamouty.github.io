@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Alex Elshamouty&#39;s bloge</title>
+    <link>http://www.example.com/posts/</link>
+    <description>Recent content in Posts on Alex Elshamouty&#39;s bloge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 08 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://www.example.com/posts/my-first-post/</link>
+      <pubDate>Sat, 08 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/my-first-post/</guid>
+      <description>Introduction Link to heading For years, I have been planning to start a blog, write about my thoughts, and improve my story writing skills.
+I am not much of a &amp;ldquo;take a class&amp;rdquo; person, I learn by doing, and I wanted to enhance my writing and story telling skills.
+Since I work as an Architect, the aspect of story telling is extreamly important. Focusing on the right details and showing the right information in the right context is crucial, in any job I would argu.</description>
+    </item>
+    
+  </channel>
+</rss>
