@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>johndoe</title>
+    <title>Alex Elshamouty&#39;s bloge</title>
     <link>http://www.example.com/</link>
-    <description>Recent content on johndoe</description>
+    <description>Recent content on Alex Elshamouty&#39;s bloge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://www.example.com/about/</link>
+      <pubDate>Sat, 08 Apr 2023 15:22:50 +0200</pubDate>
+      
+      <guid>http://www.example.com/about/</guid>
+      <description>About me Link to heading My Name is Alex Elshamouty,
+TL;DR:
+Technology generalist with a strong knowledge in the infrastructure and software delivery domain, focusing on creating feedback loops between technical strategy and business strategy.
+I work as a Principal Architect in Adevinta I excel in dynamic and evolving environments that requires advanced technical and people skills. My defination of an Architect is inspired from Gregor Hohpe&amp;rsquo;s analogy of seeing multiple-dimensions, Being an architect for me means that one needs to see multiple dimensions, have the needed in-depth and breadth of knowledge required to lead complex transformational programs.</description>
+    </item>
+    
   </channel>
 </rss>
