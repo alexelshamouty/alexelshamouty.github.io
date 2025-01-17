@@ -1,8 +1,0 @@
-Contributor 1	Contributor 2	# shared repositories
-pierremarcairoldi@gmail.com	101617755+jinxitian@users.noreply.github.com	1
-pierremarcairoldi@gmail.com	erkanyildiz@me.com	1
-pierremarcairoldi@gmail.com	magnificentbluez@hotmail.com	1
-101617755+jinxitian@users.noreply.github.com	erkanyildiz@me.com	1
-101617755+jinxitian@users.noreply.github.com	magnificentbluez@hotmail.com	1
-erkanyildiz@me.com	magnificentbluez@hotmail.com	1
-tplester@deloitte.com.au	36178559+tplester@users.noreply.github.com	1

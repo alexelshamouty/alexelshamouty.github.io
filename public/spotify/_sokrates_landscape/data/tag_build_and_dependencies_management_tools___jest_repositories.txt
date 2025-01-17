@@ -1,7 +1,0 @@
-Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
-spotify / lighthouse-audit-service	TS	876	1507	268	5	8	0	0	0	2022-04-08
-spotify / confidence-sdk-js	TS	2943	1776	3370	1	8	2	2	1	2025-01-10
-spotify / soa-reference-integration	CSS	1999	653	231	0	0	0	0	0	
-spotify / reactochart	JS	7318	5201	480	9	36	0	0	0	2022-12-15
-spotify / beam	JAVA	497850	366918	130145	11	1132	0	0	0	2021-05-03
-spotify / web-scripts	TS	1375	597	2574	6	46	0	0	0	2023-12-15

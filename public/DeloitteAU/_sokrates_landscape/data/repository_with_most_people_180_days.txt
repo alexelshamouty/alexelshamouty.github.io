@@ -1,4 +1,0 @@
-Contributor	# people
-DeloitteAU / Charts	4
-DeloitteAU / ddmock-ios	2
-DeloitteAU / Atlas	1

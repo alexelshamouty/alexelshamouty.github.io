@@ -1,7 +1,0 @@
-Contributor 1	Contributor 2	# shared repositories
-jillianc@twitter.com	aivanov@twitter.com	1
-jillianc@twitter.com	igorbachev@twitter.com	1
-jillianc@twitter.com	skunichi@twitter.com	1
-aivanov@twitter.com	igorbachev@twitter.com	1
-aivanov@twitter.com	skunichi@twitter.com	1
-igorbachev@twitter.com	skunichi@twitter.com	1

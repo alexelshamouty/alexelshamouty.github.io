@@ -1,2 +1,0 @@
-Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
-DeloitteAU / webpack-config	JS	468	123	1058	7	6	0	0	0	2019-06-26

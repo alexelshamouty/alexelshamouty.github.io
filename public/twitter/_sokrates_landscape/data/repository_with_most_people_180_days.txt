@@ -1,4 +1,0 @@
-Contributor	# people
-twitter / finagle	8
-twitter / communitynotes	6
-twitter / util	4

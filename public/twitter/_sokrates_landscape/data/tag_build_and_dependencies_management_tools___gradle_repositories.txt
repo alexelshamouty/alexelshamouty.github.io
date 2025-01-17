@@ -1,4 +1,0 @@
-Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
-twitter / ios-twitter-image-pipeline	C	96338	0	12623	8	11	0	0	0	2021-10-21
-twitter / compose-rules	KT	1916	3771	507	3	15	0	0	0	2023-01-30
-twitter / Serial	JAVA	3057	1546	819	7	15	0	0	0	2020-12-10

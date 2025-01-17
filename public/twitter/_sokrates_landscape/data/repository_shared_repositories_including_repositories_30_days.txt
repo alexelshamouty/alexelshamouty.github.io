@@ -1,5 +1,0 @@
-Contributor 1	Contributor 2	# shared repositories
-jillianc@twitter.com	[twitter / finagle]	1
-aivanov@twitter.com	[twitter / finagle]	1
-igorbachev@twitter.com	[twitter / finagle]	1
-skunichi@twitter.com	[twitter / finagle]	1

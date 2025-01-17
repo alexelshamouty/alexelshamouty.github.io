@@ -1,2 +1,0 @@
-Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
-epam / firecloud-ui	CLJS	13801	3939	9619	10	42	0	0	0	2017-10-20
