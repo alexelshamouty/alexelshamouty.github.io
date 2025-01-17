@@ -1,0 +1,5 @@
+Contributor	# repositories	# connections
+aivanov@twitter.com	1	3
+jillianc@twitter.com	1	3
+skunichi@twitter.com	1	3
+igorbachev@twitter.com	1	3

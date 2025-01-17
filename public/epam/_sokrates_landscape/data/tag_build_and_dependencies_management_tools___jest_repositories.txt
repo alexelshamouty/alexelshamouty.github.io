@@ -1,0 +1,15 @@
+Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
+epam / sitecore-engx-scaffold	JS	1797	183	6486	6	13	0	0	0	2021-08-09
+epam / edp-ddm-form-submission-validation	TS	9174	1061	286	2	10	0	0	0	2024-08-09
+epam / TimebaseWS-old	JAVA	22607	1613	1877	4	1	0	0	0	2021-05-26
+epam / dail-xl	TS	99055	26458	2728	1	2	0	0	0	2024-10-22
+epam / epmgcip-chaperone.admin	TSX	2356	709	2152	1	5	2	2	5	2025-01-08
+epam / miew	JS	30976	6625	7168	7	27	0	0	0	2024-10-28
+epam / UUI	TSX	84864	58308	43727	4	77	1	0	2	2025-01-09
+epam / edp-headlamp	TSX	55971	16310	1439	3	19	3	1	6	2025-01-10
+epam / deps-fe-usePolling	TS	275	252	242	2	4	0	0	0	2023-06-26
+epam / ketcher	TS	102593	138396	23708	14	196	16	12	5	2025-01-09
+epam / AIRUN-Assistants-Benchmark-CodeBase	JAVA	3079	944	3432	0	2	2	2	0	2024-12-18
+epam / TimeBaseGrafanaPlugin	TSX	4124	45	2900	4	12	3	3	0	2024-12-24
+epam / deps-fe-labeling-tool	JSX	17658	17072	1685	1	10	1	0	0	2024-08-02
+epam / eco-schema-catalog	JAVA	23586	8997	2174	5	15	4	1	0	2024-12-25

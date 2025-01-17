@@ -1,0 +1,130 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "nicklasl@spotify.com" -- "31034418+nickybondarenko@users.noreply.github.com" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "43047562+scala-steward@users.noreply.github.com" -- "micheld@spotify.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "43047562+scala-steward@users.noreply.github.com" -- "scala_steward@virtuslab.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "43047562+scala-steward@users.noreply.github.com" -- "lschaller@spotify.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "scala_steward@virtuslab.com" -- "lschaller@spotify.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "micheld@spotify.com" -- "kellen@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "gianni@spotify.com" -- "danao@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "viktorp@spotify.com" -- "nathanb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "viktorp@spotify.com" -- "461260911@qq.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "viktorp@spotify.com" -- "hi@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "viktorp@spotify.com" -- "accounts@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nathanb@spotify.com" -- "461260911@qq.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nathanb@spotify.com" -- "hi@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nathanb@spotify.com" -- "accounts@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "461260911@qq.com" -- "hi@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "461260911@qq.com" -- "accounts@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "hi@hadisatrio.com" -- "accounts@hadisatrio.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "togi@users.noreply.github.com" -- "marcusfs@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "togi@users.noreply.github.com" -- "rafalg@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "marcusfs@spotify.com" -- "rafalg@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "9971934+jhyching@users.noreply.github.com" -- "jching@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "90255202+broknloop@users.noreply.github.com" -- "150809971+ivo-sp@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "fabrizio.f.demaria@gmail.com" -- "31034418+nickybondarenko@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mprinold@spotify.com" -- "145126051+mprinold@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mprinold@spotify.com" -- "kamilm@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "145126051+mprinold@users.noreply.github.com" -- "kamilm@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "benkonz16@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "monicaz@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "scala_steward@virtuslab.com" -- "benkonz16@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "scala_steward@virtuslab.com" -- "monicaz@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "lschaller@spotify.com" -- "benkonz16@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "lschaller@spotify.com" -- "monicaz@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "benkonz16@gmail.com" -- "monicaz@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nicklasl@spotify.com" -- "fabrizio.f.demaria@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nicklasl@spotify.com" -- "mfranberg@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nicklasl@spotify.com" -- "37860104+leohoare@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "fabrizio.f.demaria@gmail.com" -- "mfranberg@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "fabrizio.f.demaria@gmail.com" -- "37860104+leohoare@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mfranberg@spotify.com" -- "37860104+leohoare@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nicklasl@spotify.com" -- "nicklaslundin@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dbannon@spotify.com" -- "micheleg@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dbannon@spotify.com" -- "stephen29xie@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheleg@spotify.com" -- "stephen29xie@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "psobot@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "clairem@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "kellen@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "kmj@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "sveyrie@luminatedata.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "micheld@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "clairem@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "kellen@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "kmj@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "sveyrie@luminatedata.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheld@spotify.com" -- "clairem@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheld@spotify.com" -- "kmj@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheld@spotify.com" -- "sveyrie@luminatedata.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheld@spotify.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "clairem@spotify.com" -- "kellen@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "clairem@spotify.com" -- "kmj@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "clairem@spotify.com" -- "sveyrie@luminatedata.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "clairem@spotify.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kellen@users.noreply.github.com" -- "kmj@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kellen@users.noreply.github.com" -- "sveyrie@luminatedata.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kellen@users.noreply.github.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kmj@google.com" -- "sveyrie@luminatedata.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kmj@google.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "sveyrie@luminatedata.com" -- "akolb@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "oss@regadas.email" -- "tcodehuber@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "spkrka@users.noreply.github.com" -- "davidem@spotify.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "35086881+tashrifbillah@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "chandler.camille.may@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "ikuyasam18@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "matek_a@outlook.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "dkoch@mm.st" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "raphael.delhome@oslandia.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "35086881+tashrifbillah@users.noreply.github.com" -- "chandler.camille.may@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "35086881+tashrifbillah@users.noreply.github.com" -- "ikuyasam18@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "35086881+tashrifbillah@users.noreply.github.com" -- "matek_a@outlook.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "35086881+tashrifbillah@users.noreply.github.com" -- "dkoch@mm.st" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "35086881+tashrifbillah@users.noreply.github.com" -- "raphael.delhome@oslandia.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "35086881+tashrifbillah@users.noreply.github.com" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "chandler.camille.may@gmail.com" -- "ikuyasam18@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "chandler.camille.may@gmail.com" -- "matek_a@outlook.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "chandler.camille.may@gmail.com" -- "dkoch@mm.st" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "chandler.camille.may@gmail.com" -- "raphael.delhome@oslandia.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "chandler.camille.may@gmail.com" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ikuyasam18@gmail.com" -- "matek_a@outlook.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ikuyasam18@gmail.com" -- "dkoch@mm.st" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ikuyasam18@gmail.com" -- "raphael.delhome@oslandia.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ikuyasam18@gmail.com" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "matek_a@outlook.com" -- "dkoch@mm.st" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "matek_a@outlook.com" -- "raphael.delhome@oslandia.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "matek_a@outlook.com" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dkoch@mm.st" -- "raphael.delhome@oslandia.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dkoch@mm.st" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "raphael.delhome@oslandia.com" -- "yyyyuki1024@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "psobot@spotify.com" -- "nxr9266@g.rit.edu" [label=" 1 ", penwidth="1", color="#00688b5E"];
+
+}

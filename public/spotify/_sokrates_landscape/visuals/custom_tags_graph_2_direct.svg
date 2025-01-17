@@ -1,0 +1,67 @@
+<svg width="1562pt" height="125pt"
+ viewBox="0.00 0.00 1562.25 124.84" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 120.84)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-120.84 1558.25,-120.84 1558.25,4 -4,4"/>
+<!-- build and dependencies management tools / npm (18) -->
+<g id="node1" class="node">
+<title>build and dependencies management tools / npm (18)</title>
+<polygon fill="grey" stroke="white" points="1554.25,-90 1205.25,-90 1205.25,-54 1554.25,-54 1554.25,-90"/>
+<text text-anchor="middle" x="1379.75" y="-67.33" font-family="Tahoma" font-size="14.00">build and dependencies management tools / npm (18)</text>
+</g>
+<!-- build and dependencies management tools / jest (6) -->
+<g id="node2" class="node">
+<title>build and dependencies management tools / jest (6)</title>
+<polygon fill="grey" stroke="white" points="336.25,-82 0,-82 0,-46 336.25,-46 336.25,-82"/>
+<text text-anchor="middle" x="168.12" y="-59.33" font-family="Tahoma" font-size="14.00">build and dependencies management tools / jest (6)</text>
+</g>
+<!-- build and dependencies management tools / npm (18)&#45;&#45;build and dependencies management tools / jest (6) -->
+<g id="edge1" class="edge">
+<title>build and dependencies management tools / npm (18)&#45;&#45;build and dependencies management tools / jest (6)</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1205.01,-85.59C1188.62,-86.54 1172.25,-87.38 1156.5,-88 813.88,-101.58 727.23,-112.32 385,-91 355.97,-89.19 324.88,-86.03 295.58,-82.49"/>
+<text text-anchor="middle" x="772.62" y="-105.44" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- build and dependencies management tools / maven (27) -->
+<g id="node3" class="node">
+<title>build and dependencies management tools / maven (27)</title>
+<polygon fill="grey" stroke="white" points="748.25,-82 385,-82 385,-46 748.25,-46 748.25,-82"/>
+<text text-anchor="middle" x="566.62" y="-59.33" font-family="Tahoma" font-size="14.00">build and dependencies management tools / maven (27)</text>
+</g>
+<!-- build and dependencies management tools / npm (18)&#45;&#45;build and dependencies management tools / maven (27) -->
+<g id="edge2" class="edge">
+<title>build and dependencies management tools / npm (18)&#45;&#45;build and dependencies management tools / maven (27)</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1205.24,-70.29C1070.74,-68.96 884.93,-67.13 748.59,-65.78"/>
+<text text-anchor="middle" x="976.75" y="-72.66" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- build and dependencies management tools / gradle (10) -->
+<g id="node4" class="node">
+<title>build and dependencies management tools / gradle (10)</title>
+<polygon fill="grey" stroke="white" points="1156.5,-36 797,-36 797,0 1156.5,0 1156.5,-36"/>
+<text text-anchor="middle" x="976.75" y="-13.32" font-family="Tahoma" font-size="14.00">build and dependencies management tools / gradle (10)</text>
+</g>
+<!-- build and dependencies management tools / npm (18)&#45;&#45;build and dependencies management tools / gradle (10) -->
+<g id="edge3" class="edge">
+<title>build and dependencies management tools / npm (18)&#45;&#45;build and dependencies management tools / gradle (10)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1256.48,-53.51C1233.49,-50.16 1209.65,-46.78 1187.25,-43.75 1169.27,-41.32 1150.42,-38.87 1131.69,-36.49"/>
+<text text-anchor="middle" x="1180.88" y="-46.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- build and dependencies management tools / maven (27)&#45;&#45;build and dependencies management tools / jest (6) -->
+<g id="edge6" class="edge">
+<title>build and dependencies management tools / maven (27)&#45;&#45;build and dependencies management tools / jest (6)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M384.78,-64C368.75,-64 352.56,-64 336.64,-64"/>
+<text text-anchor="middle" x="360.62" y="-66.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- build and dependencies management tools / gradle (10)&#45;&#45;build and dependencies management tools / jest (6) -->
+<g id="edge5" class="edge">
+<title>build and dependencies management tools / gradle (10)&#45;&#45;build and dependencies management tools / jest (6)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M796.6,-11.05C679.25,-8.57 522.66,-9.16 385,-22.75 338.96,-27.3 288.1,-36.79 247.32,-45.52"/>
+<text text-anchor="middle" x="566.62" y="-25.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- build and dependencies management tools / gradle (10)&#45;&#45;build and dependencies management tools / maven (27) -->
+<g id="edge4" class="edge">
+<title>build and dependencies management tools / gradle (10)&#45;&#45;build and dependencies management tools / maven (27)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M811.81,-36.48C785.43,-39.45 758.13,-42.53 731.75,-45.5"/>
+<text text-anchor="middle" x="772.62" y="-43.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+</g>
+</svg>

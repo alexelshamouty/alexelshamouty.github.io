@@ -1,0 +1,196 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[DeloitteAU / schematik-forms]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / stylelint-config-deloitte]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / DDBreakpoints]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / rhythm-ui]",
+    "size" : 1
+  }, {
+    "id" : "npm",
+    "size" : 12
+  }, {
+    "id" : "[DeloitteAU / webpack-config]",
+    "size" : 2
+  }, {
+    "id" : "gradle",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / dd-breakpoint-container]",
+    "size" : 1
+  }, {
+    "id" : "renovate",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / ripple-social-channels]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / react-habitat]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / DecimalFormat]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / ddmock-android]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / react-habitat-redux]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / htl-parser]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / eslint-config-deloitte]",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "[DeloitteAU / react-habitat-redux]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / react-habitat-redux]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / ripple-social-channels]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / ripple-social-channels]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / eslint-config-deloitte]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / eslint-config-deloitte]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / react-habitat]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / react-habitat]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / webpack-config]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / webpack-config]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / htl-parser]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / htl-parser]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / rhythm-ui]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / rhythm-ui]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / stylelint-config-deloitte]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / stylelint-config-deloitte]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / DecimalFormat]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / DecimalFormat]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / dd-breakpoint-container]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / dd-breakpoint-container]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / schematik-forms]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / schematik-forms]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / DDBreakpoints]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[DeloitteAU / DDBreakpoints]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / ddmock-android]",
+    "target" : "gradle",
+    "count" : 1
+  }, {
+    "source" : "gradle",
+    "target" : "[DeloitteAU / ddmock-android]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / webpack-config]",
+    "target" : "renovate",
+    "count" : 1
+  }, {
+    "source" : "renovate",
+    "target" : "[DeloitteAU / webpack-config]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

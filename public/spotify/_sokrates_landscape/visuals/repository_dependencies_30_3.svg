@@ -1,0 +1,205 @@
+<svg width="1937pt" height="475pt"
+ viewBox="0.00 0.00 1936.88 475.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 471.25)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-471.25 1932.88,-471.25 1932.88,4 -4,4"/>
+<!-- [spotify / java&#45;locales] -->
+<g id="node1" class="node">
+<title>[spotify / java&#45;locales]</title>
+<polygon fill="#00b2ee" stroke="white" points="152.5,-467.25 0,-467.25 0,-431.25 152.5,-431.25 152.5,-467.25"/>
+<text text-anchor="middle" x="76.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / java&#45;locales]</text>
+</g>
+<!-- [spotify / confidence&#45;sdk&#45;flutter] -->
+<g id="node2" class="node">
+<title>[spotify / confidence&#45;sdk&#45;flutter]</title>
+<polygon fill="#00b2ee" stroke="white" points="383.88,-467.25 170.62,-467.25 170.62,-431.25 383.88,-431.25 383.88,-467.25"/>
+<text text-anchor="middle" x="277.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / confidence&#45;sdk&#45;flutter]</text>
+</g>
+<!-- [spotify / ratatool] -->
+<g id="node3" class="node">
+<title>[spotify / ratatool]</title>
+<polygon fill="#00b2ee" stroke="white" points="754.75,-36 627.75,-36 627.75,0 754.75,0 754.75,-36"/>
+<text text-anchor="middle" x="691.25" y="-13.32" font-family="Tahoma" font-size="14.00">[spotify / ratatool]</text>
+</g>
+<!-- [spotify / confidence&#45;sdk&#45;js] -->
+<g id="node4" class="node">
+<title>[spotify / confidence&#45;sdk&#45;js]</title>
+<polygon fill="#00b2ee" stroke="white" points="746.38,-467.25 560.12,-467.25 560.12,-431.25 746.38,-431.25 746.38,-467.25"/>
+<text text-anchor="middle" x="653.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / confidence&#45;sdk&#45;js]</text>
+</g>
+<!-- [spotify / luigi] -->
+<g id="node5" class="node">
+<title>[spotify / luigi]</title>
+<polygon fill="#00b2ee" stroke="white" points="868.5,-467.25 764,-467.25 764,-431.25 868.5,-431.25 868.5,-467.25"/>
+<text text-anchor="middle" x="816.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / luigi]</text>
+</g>
+<!-- [spotify / voyager] -->
+<g id="node6" class="node">
+<title>[spotify / voyager]</title>
+<polygon fill="#00b2ee" stroke="white" points="1015.88,-467.25 886.62,-467.25 886.62,-431.25 1015.88,-431.25 1015.88,-467.25"/>
+<text text-anchor="middle" x="951.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / voyager]</text>
+</g>
+<!-- [spotify / magnolify] -->
+<g id="node7" class="node">
+<title>[spotify / magnolify]</title>
+<polygon fill="#00b2ee" stroke="white" points="542.12,-467.25 402.38,-467.25 402.38,-431.25 542.12,-431.25 542.12,-467.25"/>
+<text text-anchor="middle" x="472.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / magnolify]</text>
+</g>
+<!-- [spotify / magnolify]&#45;&#45;[spotify / ratatool] -->
+<g id="edge3" class="edge">
+<title>[spotify / magnolify]&#45;&#45;[spotify / ratatool]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M432.97,-430.86C407.96,-416.83 380.25,-394.43 380.25,-364 380.25,-364 380.25,-364 380.25,-103.25 380.25,-52.49 536.58,-31.35 627.56,-23.35"/>
+<text text-anchor="middle" x="386.62" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / scio&#45;idea&#45;plugin] -->
+<g id="node9" class="node">
+<title>[spotify / scio&#45;idea&#45;plugin]</title>
+<polygon fill="#00b2ee" stroke="white" points="701.12,-294.75 525.38,-294.75 525.38,-258.75 701.12,-258.75 701.12,-294.75"/>
+<text text-anchor="middle" x="613.25" y="-272.07" font-family="Tahoma" font-size="14.00">[spotify / scio&#45;idea&#45;plugin]</text>
+</g>
+<!-- [spotify / magnolify]&#45;&#45;[spotify / scio&#45;idea&#45;plugin] -->
+<g id="edge11" class="edge">
+<title>[spotify / magnolify]&#45;&#45;[spotify / scio&#45;idea&#45;plugin]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M478.28,-430.76C486.38,-409.02 502.36,-371.53 524.5,-345 541.22,-324.96 564.99,-307.36 583.72,-295.19"/>
+<text text-anchor="middle" x="530.88" y="-358.73" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / scio] -->
+<g id="node11" class="node">
+<title>[spotify / scio]</title>
+<polygon fill="#00b2ee" stroke="white" points="608.12,-122.25 504.38,-122.25 504.38,-86.25 608.12,-86.25 608.12,-122.25"/>
+<text text-anchor="middle" x="556.25" y="-99.58" font-family="Tahoma" font-size="14.00">[spotify / scio]</text>
+</g>
+<!-- [spotify / magnolify]&#45;&#45;[spotify / scio] -->
+<g id="edge4" class="edge">
+<title>[spotify / magnolify]&#45;&#45;[spotify / scio]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M456.16,-431.01C442.9,-414.94 426.25,-389.66 426.25,-364 426.25,-364 426.25,-364 426.25,-189.5 426.25,-150.5 467.96,-128.65 504.12,-117.04"/>
+<text text-anchor="middle" x="432.62" y="-272.48" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / gcs&#45;tools] -->
+<g id="node14" class="node">
+<title>[spotify / gcs&#45;tools]</title>
+<polygon fill="#00b2ee" stroke="white" points="680.5,-381 546,-381 546,-345 680.5,-345 680.5,-381"/>
+<text text-anchor="middle" x="613.25" y="-358.32" font-family="Tahoma" font-size="14.00">[spotify / gcs&#45;tools]</text>
+</g>
+<!-- [spotify / magnolify]&#45;&#45;[spotify / gcs&#45;tools] -->
+<g id="edge14" class="edge">
+<title>[spotify / magnolify]&#45;&#45;[spotify / gcs&#45;tools]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M501.47,-430.79C525.66,-416.33 559.88,-395.89 584.07,-381.43"/>
+<text text-anchor="middle" x="557.57" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / elitzur] -->
+<g id="node15" class="node">
+<title>[spotify / elitzur]</title>
+<polygon fill="#00b2ee" stroke="white" points="836.88,-208.5 719.62,-208.5 719.62,-172.5 836.88,-172.5 836.88,-208.5"/>
+<text text-anchor="middle" x="778.25" y="-185.82" font-family="Tahoma" font-size="14.00">[spotify / elitzur]</text>
+</g>
+<!-- [spotify / magnolify]&#45;&#45;[spotify / elitzur] -->
+<g id="edge12" class="edge">
+<title>[spotify / magnolify]&#45;&#45;[spotify / elitzur]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M542.31,-432.59C655.03,-406.69 866.23,-355.04 887.25,-327 919.76,-283.64 853.09,-234.47 810.34,-208.95"/>
+<text text-anchor="middle" x="900.47" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / dbeam] -->
+<g id="node8" class="node">
+<title>[spotify / dbeam]</title>
+<polygon fill="#00b2ee" stroke="white" points="663.5,-208.5 541,-208.5 541,-172.5 663.5,-172.5 663.5,-208.5"/>
+<text text-anchor="middle" x="602.25" y="-185.82" font-family="Tahoma" font-size="14.00">[spotify / dbeam]</text>
+</g>
+<!-- [spotify / dbeam]&#45;&#45;[spotify / scio] -->
+<g id="edge7" class="edge">
+<title>[spotify / dbeam]&#45;&#45;[spotify / scio]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M592.72,-172.04C584.82,-157.58 573.66,-137.14 565.77,-122.68"/>
+<text text-anchor="middle" x="588.38" y="-143.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / scio&#45;idea&#45;plugin]&#45;&#45;[spotify / ratatool] -->
+<g id="edge8" class="edge">
+<title>[spotify / scio&#45;idea&#45;plugin]&#45;&#45;[spotify / ratatool]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M634.15,-258.32C647.47,-245.9 663.77,-228.01 672.25,-208.5 697.89,-149.52 695.54,-70.77 692.93,-36.34"/>
+<text text-anchor="middle" x="696.57" y="-143.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / scio&#45;idea&#45;plugin]&#45;&#45;[spotify / scio] -->
+<g id="edge2" class="edge">
+<title>[spotify / scio&#45;idea&#45;plugin]&#45;&#45;[spotify / scio]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M573.71,-258.44C553.55,-247.33 530.93,-230.77 519.5,-208.5 504.73,-179.72 525.78,-143.64 541.59,-122.64"/>
+<text text-anchor="middle" x="525.88" y="-186.22" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / scio&#45;idea&#45;plugin]&#45;&#45;[spotify / elitzur] -->
+<g id="edge5" class="edge">
+<title>[spotify / scio&#45;idea&#45;plugin]&#45;&#45;[spotify / elitzur]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M665.26,-258.35C678.56,-253.26 692.66,-247.28 705.25,-240.75 722.89,-231.6 741.44,-219.04 755.43,-208.9"/>
+<text text-anchor="middle" x="734.62" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / Mobius.swift] -->
+<g id="node10" class="node">
+<title>[spotify / Mobius.swift]</title>
+<polygon fill="#00b2ee" stroke="white" points="1189,-467.25 1033.5,-467.25 1033.5,-431.25 1189,-431.25 1189,-467.25"/>
+<text text-anchor="middle" x="1111.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / Mobius.swift]</text>
+</g>
+<!-- [spotify / scio]&#45;&#45;[spotify / ratatool] -->
+<g id="edge9" class="edge">
+<title>[spotify / scio]&#45;&#45;[spotify / ratatool]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M584.22,-85.79C607.39,-71.33 640.15,-50.89 663.31,-36.43"/>
+<text text-anchor="middle" x="638.21" y="-56.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / ruler] -->
+<g id="node12" class="node">
+<title>[spotify / ruler]</title>
+<polygon fill="#00b2ee" stroke="white" points="1315.75,-467.25 1206.75,-467.25 1206.75,-431.25 1315.75,-431.25 1315.75,-467.25"/>
+<text text-anchor="middle" x="1261.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / ruler]</text>
+</g>
+<!-- [spotify / spotify.github.io] -->
+<g id="node13" class="node">
+<title>[spotify / spotify.github.io]</title>
+<polygon fill="#00b2ee" stroke="white" points="1510.5,-467.25 1334,-467.25 1334,-431.25 1510.5,-431.25 1510.5,-467.25"/>
+<text text-anchor="middle" x="1422.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / spotify.github.io]</text>
+</g>
+<!-- [spotify / gcs&#45;tools]&#45;&#45;[spotify / ratatool] -->
+<g id="edge13" class="edge">
+<title>[spotify / gcs&#45;tools]&#45;&#45;[spotify / ratatool]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M680.88,-353.62C757.92,-342.14 873.25,-318.2 873.25,-277.75 873.25,-277.75 873.25,-277.75 873.25,-103.25 873.25,-49.72 807.6,-30.1 755.16,-22.96"/>
+<text text-anchor="middle" x="879.62" y="-186.22" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / gcs&#45;tools]&#45;&#45;[spotify / scio&#45;idea&#45;plugin] -->
+<g id="edge10" class="edge">
+<title>[spotify / gcs&#45;tools]&#45;&#45;[spotify / scio&#45;idea&#45;plugin]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M613.25,-344.54C613.25,-330.08 613.25,-309.64 613.25,-295.18"/>
+<text text-anchor="middle" x="619.62" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / gcs&#45;tools]&#45;&#45;[spotify / scio] -->
+<g id="edge6" class="edge">
+<title>[spotify / gcs&#45;tools]&#45;&#45;[spotify / scio]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M572.99,-344.69C552.33,-333.57 528.91,-317.02 516.25,-294.75 482.3,-235.05 483.78,-199.06 519.25,-140.25 523.18,-133.74 528.64,-127.65 534.17,-122.44"/>
+<text text-anchor="middle" x="500.27" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / gcs&#45;tools]&#45;&#45;[spotify / elitzur] -->
+<g id="edge16" class="edge">
+<title>[spotify / gcs&#45;tools]&#45;&#45;[spotify / elitzur]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M644.37,-344.67C664.62,-332.42 690.78,-314.69 710.25,-294.75 736.19,-268.18 758.13,-230.37 769.62,-208.64"/>
+<text text-anchor="middle" x="745.07" y="-272.48" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / elitzur]&#45;&#45;[spotify / ratatool] -->
+<g id="edge1" class="edge">
+<title>[spotify / elitzur]&#45;&#45;[spotify / ratatool]</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M769.43,-172.21C752.75,-139.53 716.79,-69.05 700.09,-36.33"/>
+<text text-anchor="middle" x="749.77" y="-99.97" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [spotify / elitzur]&#45;&#45;[spotify / scio] -->
+<g id="edge15" class="edge">
+<title>[spotify / elitzur]&#45;&#45;[spotify / scio]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M758.1,-172.13C744.76,-161.48 726.43,-148.36 708.25,-140.25 676.6,-126.13 638.6,-117.38 608.51,-112.16"/>
+<text text-anchor="middle" x="739.23" y="-143.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- [spotify / SPTDataLoader] -->
+<g id="node16" class="node">
+<title>[spotify / SPTDataLoader]</title>
+<polygon fill="#00b2ee" stroke="white" points="1703.75,-467.25 1528.75,-467.25 1528.75,-431.25 1703.75,-431.25 1703.75,-467.25"/>
+<text text-anchor="middle" x="1616.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / SPTDataLoader]</text>
+</g>
+<!-- [spotify / flink&#45;on&#45;k8s&#45;operator] -->
+<g id="node17" class="node">
+<title>[spotify / flink&#45;on&#45;k8s&#45;operator]</title>
+<polygon fill="#00b2ee" stroke="white" points="1928.88,-467.25 1721.62,-467.25 1721.62,-431.25 1928.88,-431.25 1928.88,-467.25"/>
+<text text-anchor="middle" x="1825.25" y="-444.57" font-family="Tahoma" font-size="14.00">[spotify / flink&#45;on&#45;k8s&#45;operator]</text>
+</g>
+</g>
+</svg>

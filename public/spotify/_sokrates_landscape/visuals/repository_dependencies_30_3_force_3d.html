@@ -1,0 +1,185 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[spotify / elitzur]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / dbeam]",
+    "size" : 1
+  }, {
+    "id" : "[spotify / scio-idea-plugin]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / scio]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / magnolify]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / ratatool]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / gcs-tools]",
+    "size" : 5
+  } ],
+  "links" : [ {
+    "source" : "[spotify / elitzur]",
+    "target" : "[spotify / ratatool]",
+    "count" : 4
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "[spotify / elitzur]",
+    "count" : 4
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "[spotify / scio]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "[spotify / ratatool]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "[spotify / magnolify]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "[spotify / scio]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "[spotify / magnolify]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "[spotify / elitzur]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "[spotify / scio]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / dbeam]",
+    "target" : "[spotify / scio]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "[spotify / dbeam]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "[spotify / ratatool]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "[spotify / ratatool]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "[spotify / scio]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "[spotify / magnolify]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "[spotify / elitzur]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "[spotify / magnolify]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "[spotify / ratatool]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "[spotify / magnolify]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "[spotify / scio]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "[spotify / elitzur]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "[spotify / elitzur]",
+    "count" : 2
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 2
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

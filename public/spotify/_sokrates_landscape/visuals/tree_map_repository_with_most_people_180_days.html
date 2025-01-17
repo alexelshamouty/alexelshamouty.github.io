@@ -1,0 +1,365 @@
+<!--
+  ~ Copyright (c) 2021 Željko Obrenović. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A treeview view on componets</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+        svg {
+            font: 14px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<svg width="960" height="570"></svg>
+<script>
+
+    var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+    var fader = function (color) {
+                return d3.interpolateRgb(color, "#fff")(0.2);
+            },
+            color = d3.scaleOrdinal(d3.schemeCategory20.map(fader)),
+            format = d3.format(",d");
+
+    var treemap = d3.treemap()
+            .tile(d3.treemapResquarify)
+            .size([width, height])
+            .round(true)
+            .paddingInner(1);
+
+    var data = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "spotify / luigi",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "spotify / scio",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "spotify / basic-pitch",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "spotify / elitzur",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ratatool",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / voyager",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-python",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ruler",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / magnolify",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / pedalboard",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / dbeam",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / chartify",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / github-java-client",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-js",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-go",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / SPTDataLoader",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / mobius",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / soundcheck-demo-environment",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ios-sdk",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / gcs-tools",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / scio-idea-plugin",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / scio.g8",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / annoy",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / flink-on-k8s-operator",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-java",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-android",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / sparkey-python",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-swift",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / missinglink",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / fmt-maven-plugin",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / vispana",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ios-auth",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify-json",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify.github.io",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / realbook",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / futuristic-feline",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-flutter",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / Mobius.swift",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / semantic-metrics",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / homebrew-public",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / conversion-api-tag-template",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / dockerfile-mode",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / java-locales",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+} ]
+    }
+
+    var root = d3.hierarchy(data)
+            .eachBefore(function (d) {
+                d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
+            })
+            .sum(sumBySize)
+            .sort(function (a, b) {
+                return b.height - a.height || b.value - a.value;
+            });
+
+    treemap(root);
+
+    var cell = svg.selectAll("g")
+            .data(root.leaves())
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + d.x0 + "," + d.y0 + ")";
+            });
+
+    cell.append("rect")
+            .attr("id", function (d) {
+                return d.data.id;
+            })
+            .attr("width", function (d) {
+                return d.x1 - d.x0;
+            })
+            .attr("height", function (d) {
+                return d.y1 - d.y0;
+            })
+            .style("fill", "#c0deed");
+
+    cell.append("clipPath")
+            .attr("id", function (d) {
+                return "clip-" + d.data.id;
+            })
+            .append("use")
+            .attr("xlink:href", function (d) {
+                return "#" + d.data.id;
+            });
+
+    cell.append("text")
+            .attr("clip-path", function (d) {
+                return "url(#clip-" + d.data.id + ")";
+            })
+            .selectAll("tspan")
+            .data(function (d) {
+                return d.data.name.split(/(?=[A-Z][^A-Z])/g);
+            })
+            .enter().append("tspan")
+            .attr("x", 4)
+            .attr("y", function (d, i) {
+                return 13 + i * 10;
+            })
+            .text(function (d) {
+                return d;
+            });
+
+    cell.append("title")
+            .text(function (d) {
+                return d.data.name + ": " + format(d.value);
+            });
+
+    d3.selectAll("input")
+            .data([sumBySize, sumByCount], function (d) {
+                return d ? d.name : this.value;
+            })
+            .on("change", changed);
+
+    var timeout = d3.timeout(function () {
+        d3.select("input[value=\"sumByCount\"]")
+                .property("checked", true)
+                .dispatch("change");
+    }, 2000);
+
+    function changed(sum) {
+        timeout.stop();
+
+        treemap(root.sum(sum));
+
+        cell.transition()
+                .duration(750)
+                .attr("transform", function (d) {
+                    return "translate(" + d.x0 + "," + d.y0 + ")";
+                })
+                .select("rect")
+                .attr("width", function (d) {
+                    return d.x1 - d.x0;
+                })
+                .attr("height", function (d) {
+                    return d.y1 - d.y0;
+                });
+    }
+
+    function sumByCount(d) {
+        return d.children ? 0 : 1;
+    }
+
+    function sumBySize(d) {
+        return d.size;
+    }
+
+</script>
+</body>
+</html>

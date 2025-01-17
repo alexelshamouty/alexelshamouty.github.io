@@ -1,0 +1,16 @@
+Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
+twitter / whiskey	JAVA	5885	829	302	0	0	0	0	0	
+twitter / GraphJet	JAVA	10545	7592	1214	0	0	0	0	0	
+twitter / hadoop-lzo	JAVA	4123	655	8274	0	0	0	0	0	
+twitter / twitter-korean-text	SCALA	2436	1379	35119	0	0	0	0	0	
+twitter / hpack	JAVA	1757	545	949	0	0	0	0	0	
+twitter / nodes	JAVA	2645	980	884	8	12	0	0	0	2021-10-08
+twitter / scrooge	SCALA	19080	38168	3270	0	0	0	0	0	
+twitter / cloudhopper-commons	JAVA	14674	10334	4534	0	0	0	0	0	
+twitter / pants	PY	81165	55086	18317	14	234	0	0	0	2019-05-21
+twitter / iago2	SCALA	3450	1402	1390	7	2	0	0	0	2019-12-20
+twitter / twitter-text	JAVA	9761	2469	4291	0	0	0	0	0	
+twitter / joauth	JAVA	1686	1378	362	0	0	0	0	0	
+twitter / elephant-bird	JAVA	16140	6569	2992	0	0	0	0	0	
+twitter / sbf	JAVA	4691	1286	180	0	1	0	0	0	2020-02-07
+twitter / netty-http2	JAVA	3616	1944	187	0	0	0	0	0	

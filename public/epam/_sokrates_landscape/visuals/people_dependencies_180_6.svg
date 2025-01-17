@@ -1,0 +1,883 @@
+<svg width="5535pt" height="734pt"
+ viewBox="0.00 0.00 5535.00 734.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 730)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-730 5531,-730 5531,4 -4,4"/>
+<!-- mykola_marusenko@epam.com -->
+<g id="node1" class="node">
+<title>mykola_marusenko@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="234.25,-726 21.75,-726 21.75,-690 234.25,-690 234.25,-726"/>
+<text text-anchor="middle" x="128" y="-703.33" font-family="Tahoma" font-size="14.00">mykola_marusenko@epam.com</text>
+</g>
+<!-- sergiy_kulanov@epam.com -->
+<g id="node2" class="node">
+<title>sergiy_kulanov@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="446,-639.75 262,-639.75 262,-603.75 446,-603.75 446,-639.75"/>
+<text text-anchor="middle" x="354" y="-617.08" font-family="Tahoma" font-size="14.00">sergiy_kulanov@epam.com</text>
+</g>
+<!-- mykola_marusenko@epam.com&#45;&#45;sergiy_kulanov@epam.com -->
+<g id="edge1" class="edge">
+<title>mykola_marusenko@epam.com&#45;&#45;sergiy_kulanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="9" stroke-opacity="0.929412" d="M174.83,-689.54C213.61,-675.08 268.46,-654.64 307.23,-640.18"/>
+<text text-anchor="middle" x="260.91" y="-660.6" font-family="Arial" font-size="12.00"> 9 </text>
+</g>
+<!-- daniil_nedostup@epam.com -->
+<g id="node3" class="node">
+<title>daniil_nedostup@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="391.25,-294.75 202.75,-294.75 202.75,-258.75 391.25,-258.75 391.25,-294.75"/>
+<text text-anchor="middle" x="297" y="-272.07" font-family="Tahoma" font-size="14.00">daniil_nedostup@epam.com</text>
+</g>
+<!-- mykola_marusenko@epam.com&#45;&#45;daniil_nedostup@epam.com -->
+<g id="edge2" class="edge">
+<title>mykola_marusenko@epam.com&#45;&#45;daniil_nedostup@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="9" stroke-opacity="0.929412" d="M91.61,-689.52C67.77,-675.26 41,-652.61 41,-622.75 41,-622.75 41,-622.75 41,-491.38 41,-386.75 168.62,-323.37 243.65,-295.15"/>
+<text text-anchor="middle" x="47.38" y="-488.1" font-family="Arial" font-size="12.00"> 9 </text>
+</g>
+<!-- mykola_serdiuk@epam.com -->
+<g id="node8" class="node">
+<title>mykola_serdiuk@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="257.25,-467.25 68.75,-467.25 68.75,-431.25 257.25,-431.25 257.25,-467.25"/>
+<text text-anchor="middle" x="163" y="-444.57" font-family="Tahoma" font-size="14.00">mykola_serdiuk@epam.com</text>
+</g>
+<!-- mykola_marusenko@epam.com&#45;&#45;mykola_serdiuk@epam.com -->
+<g id="edge7" class="edge">
+<title>mykola_marusenko@epam.com&#45;&#45;mykola_serdiuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="7" stroke-opacity="0.788235" d="M130.35,-689.76C136.73,-642.98 154.3,-514.1 160.66,-467.42"/>
+<text text-anchor="middle" x="152.68" y="-574.35" font-family="Arial" font-size="12.00"> 7 </text>
+</g>
+<!-- zorian_motso@epam.com -->
+<g id="node10" class="node">
+<title>zorian_motso@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="382.88,-553.5 207.12,-553.5 207.12,-517.5 382.88,-517.5 382.88,-553.5"/>
+<text text-anchor="middle" x="295" y="-530.83" font-family="Tahoma" font-size="14.00">zorian_motso@epam.com</text>
+</g>
+<!-- mykola_marusenko@epam.com&#45;&#45;zorian_motso@epam.com -->
+<g id="edge13" class="edge">
+<title>mykola_marusenko@epam.com&#45;&#45;zorian_motso@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M144.93,-689.71C176.94,-657.03 245.98,-586.55 278.02,-553.83"/>
+<text text-anchor="middle" x="234.48" y="-617.48" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- oleksandr_stepanov@epam.com -->
+<g id="node11" class="node">
+<title>oleksandr_stepanov@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="321.38,-208.5 106.62,-208.5 106.62,-172.5 321.38,-172.5 321.38,-208.5"/>
+<text text-anchor="middle" x="214" y="-185.82" font-family="Tahoma" font-size="14.00">oleksandr_stepanov@epam.com</text>
+</g>
+<!-- mykola_marusenko@epam.com&#45;&#45;oleksandr_stepanov@epam.com -->
+<g id="edge14" class="edge">
+<title>mykola_marusenko@epam.com&#45;&#45;oleksandr_stepanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M61.75,-689.52C30.52,-676.87 0,-656 0,-622.75 0,-622.75 0,-622.75 0,-275.75 0,-246.8 68.65,-223.62 128.19,-208.96"/>
+<text text-anchor="middle" x="6.38" y="-444.98" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- oleksandr_taruraiev@epam.com -->
+<g id="node12" class="node">
+<title>oleksandr_taruraiev@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="575,-381 361,-381 361,-345 575,-345 575,-381"/>
+<text text-anchor="middle" x="468" y="-358.32" font-family="Tahoma" font-size="14.00">oleksandr_taruraiev@epam.com</text>
+</g>
+<!-- mykola_marusenko@epam.com&#45;&#45;oleksandr_taruraiev@epam.com -->
+<g id="edge22" class="edge">
+<title>mykola_marusenko@epam.com&#45;&#45;oleksandr_taruraiev@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M234.62,-707.28C363.99,-704.67 565,-689.83 565,-622.75 565,-622.75 565,-622.75 565,-448.25 565,-417.36 536.61,-395.23 510.55,-381.43"/>
+<text text-anchor="middle" x="571.38" y="-531.23" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- sergiy_kulanov@epam.com&#45;&#45;daniil_nedostup@epam.com -->
+<g id="edge3" class="edge">
+<title>sergiy_kulanov@epam.com&#45;&#45;daniil_nedostup@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="9" stroke-opacity="0.929412" d="M367.2,-603.3C376.15,-590.33 387.19,-571.79 392,-553.5 396.07,-538.03 395.38,-533.14 392,-517.5 386.83,-493.54 378.51,-489.95 369.25,-467.25 341.66,-399.58 340.71,-380.37 313,-312.75 310.62,-306.94 307.83,-300.68 305.25,-295.08"/>
+<text text-anchor="middle" x="375.62" y="-444.98" font-family="Arial" font-size="12.00"> 9 </text>
+</g>
+<!-- sergiy_kulanov@epam.com&#45;&#45;mykola_serdiuk@epam.com -->
+<g id="edge8" class="edge">
+<title>sergiy_kulanov@epam.com&#45;&#45;mykola_serdiuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="7" stroke-opacity="0.788235" d="M265.94,-603.39C236.42,-593.42 205.82,-577.82 185.25,-553.5 164.65,-529.14 161.77,-490.19 162.05,-467.74"/>
+<text text-anchor="middle" x="191.62" y="-531.23" font-family="Arial" font-size="12.00"> 7 </text>
+</g>
+<!-- sergiy_kulanov@epam.com&#45;&#45;zorian_motso@epam.com -->
+<g id="edge15" class="edge">
+<title>sergiy_kulanov@epam.com&#45;&#45;zorian_motso@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M341.78,-603.29C331.65,-588.83 317.33,-568.39 307.21,-553.93"/>
+<text text-anchor="middle" x="334.41" y="-574.35" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- sergiy_kulanov@epam.com&#45;&#45;oleksandr_stepanov@epam.com -->
+<g id="edge16" class="edge">
+<title>sergiy_kulanov@epam.com&#45;&#45;oleksandr_stepanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M410.81,-603.37C422.31,-598.58 433.95,-592.73 444,-585.75 487.64,-555.43 603,-460.27 603,-407.12 603,-407.12 603,-407.12 603,-275.75 603,-217.96 436.96,-199.72 321.84,-194.02"/>
+<text text-anchor="middle" x="609.38" y="-401.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- sergiy_kulanov@epam.com&#45;&#45;oleksandr_taruraiev@epam.com -->
+<g id="edge23" class="edge">
+<title>sergiy_kulanov@epam.com&#45;&#45;oleksandr_taruraiev@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M404.18,-603.44C412.11,-598.78 419.5,-592.96 425,-585.75 472.96,-522.95 472.06,-421.63 469.5,-381.33"/>
+<text text-anchor="middle" x="470.72" y="-488.1" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- daniil_nedostup@epam.com&#45;&#45;oleksandr_stepanov@epam.com -->
+<g id="edge18" class="edge">
+<title>daniil_nedostup@epam.com&#45;&#45;oleksandr_stepanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M279.8,-258.29C265.56,-243.83 245.41,-223.39 231.18,-208.93"/>
+<text text-anchor="middle" x="266.84" y="-229.35" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- anton_dubovik@epam.com -->
+<g id="node4" class="node">
+<title>anton_dubovik@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1541.25,-639.75 1358.75,-639.75 1358.75,-603.75 1541.25,-603.75 1541.25,-639.75"/>
+<text text-anchor="middle" x="1450" y="-617.08" font-family="Tahoma" font-size="14.00">anton_dubovik@epam.com</text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com -->
+<g id="node5" class="node">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1792.62,-467.25 1447.38,-467.25 1447.38,-431.25 1792.62,-431.25 1792.62,-467.25"/>
+<text text-anchor="middle" x="1620" y="-444.57" font-family="Tahoma" font-size="14.00">149404362+ai&#45;dial&#45;actions@users.noreply.github.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;149404362+ai&#45;dial&#45;actions@users.noreply.github.com -->
+<g id="edge4" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;149404362+ai&#45;dial&#45;actions@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="9" stroke-opacity="0.929412" d="M1541.5,-607.06C1554.22,-601.99 1566.24,-595.09 1576,-585.75 1609.4,-553.76 1617.48,-496.2 1619.41,-467.5"/>
+<text text-anchor="middle" x="1617.62" y="-531.23" font-family="Arial" font-size="12.00"> 9 </text>
+</g>
+<!-- 61313167+dspashynskyi@users.noreply.github.com -->
+<g id="node6" class="node">
+<title>61313167+dspashynskyi@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1352.88,-294.75 1021.12,-294.75 1021.12,-258.75 1352.88,-258.75 1352.88,-294.75"/>
+<text text-anchor="middle" x="1187" y="-272.07" font-family="Tahoma" font-size="14.00">61313167+dspashynskyi@users.noreply.github.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com -->
+<g id="edge5" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1485.53,-603.3C1520.23,-583.8 1564.87,-550.61 1543,-517.5 1511.64,-470.02 1474.12,-496.39 1425.25,-467.25 1336.05,-414.07 1243.41,-330.88 1205.17,-295.08"/>
+<text text-anchor="middle" x="1431.62" y="-444.98" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- andrei_tataranovich@epam.com -->
+<g id="node7" class="node">
+<title>andrei_tataranovich@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1324.38,-122.25 1109.62,-122.25 1109.62,-86.25 1324.38,-86.25 1324.38,-122.25"/>
+<text text-anchor="middle" x="1217" y="-99.58" font-family="Tahoma" font-size="14.00">andrei_tataranovich@epam.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge10" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="7" stroke-opacity="0.788235" d="M1410.77,-603.37C1390.77,-592.23 1368.33,-575.68 1357,-553.5 1352.21,-544.12 1360.89,-469.75 1361,-467.25 1364.95,-374.67 1413.1,-336.05 1362,-258.75 1330.57,-211.2 1281.24,-251.65 1244,-208.5 1222.94,-184.09 1218.03,-145.17 1217.05,-122.73"/>
+<text text-anchor="middle" x="1390.5" y="-358.73" font-family="Arial" font-size="12.00"> 7 </text>
+</g>
+<!-- 33350321+nepalevov@users.noreply.github.com -->
+<g id="node9" class="node">
+<title>33350321+nepalevov@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1057.25,-381 742.75,-381 742.75,-345 1057.25,-345 1057.25,-381"/>
+<text text-anchor="middle" x="900" y="-358.32" font-family="Tahoma" font-size="14.00">33350321+nepalevov@users.noreply.github.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;33350321+nepalevov@users.noreply.github.com -->
+<g id="edge19" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;33350321+nepalevov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1358.68,-611.39C1322.71,-605.94 1286.91,-597.72 1274,-585.75 1221.74,-537.28 1283.16,-479.83 1231,-431.25 1228.74,-429.15 1086.06,-400.68 988.78,-381.46"/>
+<text text-anchor="middle" x="1260.15" y="-488.1" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- 66549992+roman&#45;romanov&#45;o@users.noreply.github.com -->
+<g id="node13" class="node">
+<title>66549992+roman&#45;romanov&#45;o@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1140.38,-208.5 775.62,-208.5 775.62,-172.5 1140.38,-172.5 1140.38,-208.5"/>
+<text text-anchor="middle" x="958" y="-185.82" font-family="Tahoma" font-size="14.00">66549992+roman&#45;romanov&#45;o@users.noreply.github.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com -->
+<g id="edge25" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1358.38,-605.74C1345.9,-600.84 1333.98,-594.34 1324,-585.75 1267.01,-536.68 1304.39,-487.96 1255,-431.25 1250.91,-426.56 1070.76,-315.1 1065,-312.75 1030.87,-298.79 1010.75,-320.14 984,-294.75 960.4,-272.35 956.96,-231.95 957.12,-208.89"/>
+<text text-anchor="middle" x="1233.24" y="-401.85" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- 46220620+sr&#45;remsha@users.noreply.github.com -->
+<g id="node18" class="node">
+<title>46220620+sr&#45;remsha@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1116.25,-553.5 801.75,-553.5 801.75,-517.5 1116.25,-517.5 1116.25,-553.5"/>
+<text text-anchor="middle" x="959" y="-530.83" font-family="Tahoma" font-size="14.00">46220620+sr&#45;remsha@users.noreply.github.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;46220620+sr&#45;remsha@users.noreply.github.com -->
+<g id="edge32" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;46220620+sr&#45;remsha@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M1358.42,-608.3C1317,-602.23 1267.53,-594.39 1223.25,-585.75 1196.24,-580.48 1189.96,-577 1163,-571.5 1132.37,-565.26 1098.99,-559.21 1068.28,-553.96"/>
+<text text-anchor="middle" x="1229.62" y="-574.35" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- lagutin.igor@gmail.com -->
+<g id="node22" class="node">
+<title>lagutin.igor@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2388.38,-208.5 2227.62,-208.5 2227.62,-172.5 2388.38,-172.5 2388.38,-208.5"/>
+<text text-anchor="middle" x="2308" y="-185.82" font-family="Tahoma" font-size="14.00">lagutin.igor@gmail.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;lagutin.igor@gmail.com -->
+<g id="edge48" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;lagutin.igor@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1541.66,-620.01C1744.39,-617.16 2213,-603.34 2213,-536.5 2213,-536.5 2213,-536.5 2213,-275.75 2213,-245 2241.21,-222.74 2266.88,-208.86"/>
+<text text-anchor="middle" x="2219.38" y="-401.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- tataranovich@gmail.com -->
+<g id="node28" class="node">
+<title>tataranovich@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1533.75,-553.5 1366.25,-553.5 1366.25,-517.5 1533.75,-517.5 1533.75,-553.5"/>
+<text text-anchor="middle" x="1450" y="-530.83" font-family="Tahoma" font-size="14.00">tataranovich@gmail.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;tataranovich@gmail.com -->
+<g id="edge59" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;tataranovich@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1450,-603.29C1450,-588.83 1450,-568.39 1450,-553.93"/>
+<text text-anchor="middle" x="1456.38" y="-574.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 36817301+karash1989@users.noreply.github.com -->
+<g id="node40" class="node">
+<title>36817301+karash1989@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1850.38,-208.5 1527.62,-208.5 1527.62,-172.5 1850.38,-172.5 1850.38,-208.5"/>
+<text text-anchor="middle" x="1689" y="-185.82" font-family="Tahoma" font-size="14.00">36817301+karash1989@users.noreply.github.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;36817301+karash1989@users.noreply.github.com -->
+<g id="edge90" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;36817301+karash1989@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1541.42,-617.82C1716.29,-610.98 2081,-590.28 2081,-536.5 2081,-536.5 2081,-536.5 2081,-405.12 2081,-377.1 2084.18,-362.13 2062,-345 2030.56,-320.73 1734.01,-354.13 1705,-327 1672.47,-296.59 1679.09,-237.77 1684.9,-208.66"/>
+<text text-anchor="middle" x="2087.38" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- sergey.zinchenko.rnd@gmail.com -->
+<g id="node44" class="node">
+<title>sergey.zinchenko.rnd@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2052.75,-381 1831.25,-381 1831.25,-345 2052.75,-345 2052.75,-381"/>
+<text text-anchor="middle" x="1942" y="-358.32" font-family="Tahoma" font-size="14.00">sergey.zinchenko.rnd@gmail.com</text>
+</g>
+<!-- anton_dubovik@epam.com&#45;&#45;sergey.zinchenko.rnd@gmail.com -->
+<g id="edge97" class="edge">
+<title>anton_dubovik@epam.com&#45;&#45;sergey.zinchenko.rnd@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1540.82,-603.25C1559.38,-598.49 1578.56,-592.69 1596,-585.75 1730.91,-532.08 1869.97,-423.61 1921.33,-381.38"/>
+<text text-anchor="middle" x="1787.29" y="-488.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com -->
+<g id="edge11" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="7" stroke-opacity="0.788235" d="M1620.79,-431.14C1620.86,-408 1617.23,-367.1 1593,-345 1557.83,-312.92 1449.28,-296.01 1353.26,-287.18"/>
+<text text-anchor="middle" x="1620.19" y="-358.73" font-family="Arial" font-size="12.00"> 7 </text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge6" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1627.87,-430.79C1629.97,-425.29 1631.95,-419.12 1633,-413.25 1636.16,-395.68 1640.07,-363.17 1631,-345 1593.67,-270.23 1562.5,-257.77 1485,-226.5 1441.36,-208.89 1313.47,-234.12 1274,-208.5 1258.2,-198.24 1235.67,-149.39 1224.24,-122.72"/>
+<text text-anchor="middle" x="1606.05" y="-272.48" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;33350321+nepalevov@users.noreply.github.com -->
+<g id="edge26" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;33350321+nepalevov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1494.6,-430.78C1422.04,-420.91 1328.94,-408.65 1246,-399 1184.53,-391.85 1116.82,-384.81 1057.71,-378.94"/>
+<text text-anchor="middle" x="1365.59" y="-401.85" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com -->
+<g id="edge27" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1549.96,-430.81C1496.08,-417.35 1419.78,-398.17 1353,-381 1237.29,-351.24 1209.11,-340.88 1093,-312.75 1057.16,-304.07 1041.27,-317.18 1012,-294.75 997.23,-283.43 975.79,-235.04 964.91,-208.72"/>
+<text text-anchor="middle" x="1155.8" y="-315.6" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- 133792808+oleksii&#45;klimov@users.noreply.github.com -->
+<g id="node19" class="node">
+<title>133792808+oleksii&#45;klimov@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2209.75,-208.5 1868.25,-208.5 1868.25,-172.5 2209.75,-172.5 2209.75,-208.5"/>
+<text text-anchor="middle" x="2039" y="-185.82" font-family="Tahoma" font-size="14.00">133792808+oleksii&#45;klimov@users.noreply.github.com</text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;133792808+oleksii&#45;klimov@users.noreply.github.com -->
+<g id="edge37" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;133792808+oleksii&#45;klimov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1654.59,-430.85C1662.03,-425.93 1669.34,-420.03 1675,-413.25 1732.4,-344.44 1679.81,-280.92 1751,-226.5 1756.43,-222.35 1808.99,-215.43 1867.75,-208.84"/>
+<text text-anchor="middle" x="1714.34" y="-315.6" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;lagutin.igor@gmail.com -->
+<g id="edge49" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;lagutin.igor@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1660.24,-430.83C1671.39,-425.58 1683.35,-419.53 1694,-413.25 1738.79,-386.86 1742.31,-367.86 1789,-345 1869.28,-305.7 2116.88,-240.03 2238.77,-208.9"/>
+<text text-anchor="middle" x="1877.2" y="-315.6" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- alexey_klimov@epam.com -->
+<g id="node27" class="node">
+<title>alexey_klimov@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2128.75,-36 1949.25,-36 1949.25,0 2128.75,0 2128.75,-36"/>
+<text text-anchor="middle" x="2039" y="-13.32" font-family="Tahoma" font-size="14.00">alexey_klimov@epam.com</text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;alexey_klimov@epam.com -->
+<g id="edge55" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;alexey_klimov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1674.6,-430.79C1689.21,-425.62 1704.87,-419.62 1719,-413.25 1745.89,-401.13 1752.51,-397.44 1777,-381 1798.27,-366.73 1798.98,-356.23 1822,-345 1881.02,-316.21 2356.28,-260.02 2397,-208.5 2476.8,-107.54 2259.57,-54.09 2129.2,-31.81"/>
+<text text-anchor="middle" x="2371.79" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- anton.dubovik@gmail.com -->
+<g id="node41" class="node">
+<title>anton.dubovik@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1584,-381 1406,-381 1406,-345 1584,-345 1584,-381"/>
+<text text-anchor="middle" x="1495" y="-358.32" font-family="Tahoma" font-size="14.00">anton.dubovik@gmail.com</text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;anton.dubovik@gmail.com -->
+<g id="edge93" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;anton.dubovik@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1594.1,-430.79C1572.65,-416.33 1542.31,-395.89 1520.87,-381.43"/>
+<text text-anchor="middle" x="1571.36" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;sergey.zinchenko.rnd@gmail.com -->
+<g id="edge98" class="edge">
+<title>149404362+ai&#45;dial&#45;actions@users.noreply.github.com&#45;&#45;sergey.zinchenko.rnd@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1740.41,-430.79C1765.91,-426 1792.52,-420.17 1817,-413.25 1846.74,-404.84 1879.18,-391.94 1903.56,-381.46"/>
+<text text-anchor="middle" x="1865.41" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 61313167+dspashynskyi@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge31" class="edge">
+<title>61313167+dspashynskyi@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M1185.74,-258.36C1184.66,-237.67 1184.11,-202.18 1190.25,-172.5 1193.37,-157.41 1197.3,-154.57 1203,-140.25 1205.27,-134.53 1207.76,-128.3 1210.01,-122.69"/>
+<text text-anchor="middle" x="1196.62" y="-186.22" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- 61313167+dspashynskyi@users.noreply.github.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com -->
+<g id="edge36" class="edge">
+<title>61313167+dspashynskyi@users.noreply.github.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M1139.55,-258.29C1100.25,-243.83 1044.67,-223.39 1005.39,-208.93"/>
+<text text-anchor="middle" x="1092.59" y="-229.35" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- 61313167+dspashynskyi@users.noreply.github.com&#45;&#45;lagutin.igor@gmail.com -->
+<g id="edge50" class="edge">
+<title>61313167+dspashynskyi@users.noreply.github.com&#45;&#45;lagutin.igor@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1353.28,-258.64C1462.58,-247.95 1608.8,-234.7 1738.25,-226.5 1951.64,-212.98 2006.55,-232.63 2219,-208.5 2221.81,-208.18 2224.67,-207.82 2227.55,-207.43"/>
+<text text-anchor="middle" x="1744.62" y="-229.35" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 61313167+dspashynskyi@users.noreply.github.com&#45;&#45;36817301+karash1989@users.noreply.github.com -->
+<g id="edge91" class="edge">
+<title>61313167+dspashynskyi@users.noreply.github.com&#45;&#45;36817301+karash1989@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1291.01,-258.29C1377.17,-243.83 1499,-223.39 1585.12,-208.93"/>
+<text text-anchor="middle" x="1474.43" y="-229.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- andrei_tataranovich@epam.com&#45;&#45;alexey_klimov@epam.com -->
+<g id="edge57" class="edge">
+<title>andrei_tataranovich@epam.com&#45;&#45;alexey_klimov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1324.46,-92.24C1487.98,-75.48 1796.33,-43.87 1948.87,-28.24"/>
+<text text-anchor="middle" x="1683.59" y="-56.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- mykola_serdiuk@epam.com&#45;&#45;daniil_nedostup@epam.com -->
+<g id="edge9" class="edge">
+<title>mykola_serdiuk@epam.com&#45;&#45;daniil_nedostup@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="7" stroke-opacity="0.788235" d="M176.59,-430.96C202.27,-398.28 257.67,-327.8 283.38,-295.08"/>
+<text text-anchor="middle" x="249.7" y="-358.73" font-family="Arial" font-size="12.00"> 7 </text>
+</g>
+<!-- mykola_serdiuk@epam.com&#45;&#45;oleksandr_stepanov@epam.com -->
+<g id="edge21" class="edge">
+<title>mykola_serdiuk@epam.com&#45;&#45;oleksandr_stepanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M157.01,-430.98C144.37,-391.25 119.44,-291.78 161,-226.5 165.38,-219.62 171.66,-213.79 178.37,-208.98"/>
+<text text-anchor="middle" x="144.49" y="-315.6" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- mykola_serdiuk@epam.com&#45;&#45;oleksandr_taruraiev@epam.com -->
+<g id="edge39" class="edge">
+<title>mykola_serdiuk@epam.com&#45;&#45;oleksandr_taruraiev@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M201.85,-430.85C226.26,-420.45 258.64,-407.63 288.25,-399 311.6,-392.2 337.05,-386.34 361.25,-381.46"/>
+<text text-anchor="middle" x="294.62" y="-401.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 33350321+nepalevov@users.noreply.github.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com -->
+<g id="edge35" class="edge">
+<title>33350321+nepalevov@users.noreply.github.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M959.47,-344.54C1008.72,-330.08 1078.37,-309.64 1127.61,-295.18"/>
+<text text-anchor="middle" x="1067.06" y="-315.6" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- 33350321+nepalevov@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge12" class="edge">
+<title>33350321+nepalevov@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="7" stroke-opacity="0.788235" d="M871.83,-344.7C819.25,-310.34 715.97,-231.72 767,-172.5 810.31,-122.23 990.58,-108.98 1109.39,-105.81"/>
+<text text-anchor="middle" x="768.13" y="-229.35" font-family="Arial" font-size="12.00"> 7 </text>
+</g>
+<!-- 33350321+nepalevov@users.noreply.github.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com -->
+<g id="edge33" class="edge">
+<title>33350321+nepalevov@users.noreply.github.com&#45;&#45;66549992+roman&#45;romanov&#45;o@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M904.13,-344.65C909.19,-324 918.32,-288.55 928.25,-258.75 933.12,-244.13 934.8,-240.61 941,-226.5 943.56,-220.69 946.53,-214.42 949.26,-208.83"/>
+<text text-anchor="middle" x="934.62" y="-272.48" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- zorian_motso@epam.com&#45;&#45;daniil_nedostup@epam.com -->
+<g id="edge17" class="edge">
+<title>zorian_motso@epam.com&#45;&#45;daniil_nedostup@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M297.31,-517.08C297.96,-511.48 298.61,-505.24 299,-499.5 304.22,-423.45 300.17,-332.39 298.06,-295.03"/>
+<text text-anchor="middle" x="307.93" y="-401.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- zorian_motso@epam.com&#45;&#45;mykola_serdiuk@epam.com -->
+<g id="edge20" class="edge">
+<title>zorian_motso@epam.com&#45;&#45;mykola_serdiuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M267.65,-517.04C245,-502.58 212.96,-482.14 190.32,-467.68"/>
+<text text-anchor="middle" x="243.28" y="-488.1" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- zorian_motso@epam.com&#45;&#45;oleksandr_stepanov@epam.com -->
+<g id="edge30" class="edge">
+<title>zorian_motso@epam.com&#45;&#45;oleksandr_stepanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M293.49,-517.01C290.89,-495.25 283.98,-457.75 266,-431.25 245.35,-400.81 217.73,-413.36 200.25,-381 169.6,-324.26 193.78,-243.67 206.92,-208.74"/>
+<text text-anchor="middle" x="206.62" y="-358.73" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- zorian_motso@epam.com&#45;&#45;oleksandr_taruraiev@epam.com -->
+<g id="edge58" class="edge">
+<title>zorian_motso@epam.com&#45;&#45;oleksandr_taruraiev@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M322.34,-517.09C341.22,-504.42 366.36,-486.22 386,-467.25 414.32,-439.9 441.6,-402.69 456.46,-381.22"/>
+<text text-anchor="middle" x="424.89" y="-444.98" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- oleksandr_taruraiev@epam.com&#45;&#45;daniil_nedostup@epam.com -->
+<g id="edge24" class="edge">
+<title>oleksandr_taruraiev@epam.com&#45;&#45;daniil_nedostup@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M432.57,-344.54C403.22,-330.08 361.72,-309.64 332.39,-295.18"/>
+<text text-anchor="middle" x="399.11" y="-315.6" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- oleksandr_taruraiev@epam.com&#45;&#45;oleksandr_stepanov@epam.com -->
+<g id="edge40" class="edge">
+<title>oleksandr_taruraiev@epam.com&#45;&#45;oleksandr_stepanov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M460.74,-344.52C450.44,-321.72 429.5,-282.01 400,-258.75 369.93,-235.04 330.78,-219.23 296.15,-208.93"/>
+<text text-anchor="middle" x="439.03" y="-272.48" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 66549992+roman&#45;romanov&#45;o@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge34" class="edge">
+<title>66549992+roman&#45;romanov&#45;o@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M1011.66,-172.04C1056.12,-157.58 1118.97,-137.14 1163.4,-122.68"/>
+<text text-anchor="middle" x="1109.38" y="-143.1" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- oleksandr.onsha@gmail.com -->
+<g id="node14" class="node">
+<title>oleksandr.onsha@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3263.62,-553.5 3074.38,-553.5 3074.38,-517.5 3263.62,-517.5 3263.62,-553.5"/>
+<text text-anchor="middle" x="3169" y="-530.83" font-family="Tahoma" font-size="14.00">oleksandr.onsha@gmail.com</text>
+</g>
+<!-- bohdan_syniuk@epam.com -->
+<g id="node15" class="node">
+<title>bohdan_syniuk@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3289,-467.25 3105,-467.25 3105,-431.25 3289,-431.25 3289,-467.25"/>
+<text text-anchor="middle" x="3197" y="-444.57" font-family="Tahoma" font-size="14.00">bohdan_syniuk@epam.com</text>
+</g>
+<!-- oleksandr.onsha@gmail.com&#45;&#45;bohdan_syniuk@epam.com -->
+<g id="edge28" class="edge">
+<title>oleksandr.onsha@gmail.com&#45;&#45;bohdan_syniuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M3174.8,-517.04C3179.61,-502.58 3186.4,-482.14 3191.21,-467.68"/>
+<text text-anchor="middle" x="3191.05" y="-488.1" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- mykhailo_tolstyi@epam.com -->
+<g id="node17" class="node">
+<title>mykhailo_tolstyi@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2873.38,-294.75 2682.62,-294.75 2682.62,-258.75 2873.38,-258.75 2873.38,-294.75"/>
+<text text-anchor="middle" x="2778" y="-272.07" font-family="Tahoma" font-size="14.00">mykhailo_tolstyi@epam.com</text>
+</g>
+<!-- oleksandr.onsha@gmail.com&#45;&#45;mykhailo_tolstyi@epam.com -->
+<g id="edge46" class="edge">
+<title>oleksandr.onsha@gmail.com&#45;&#45;mykhailo_tolstyi@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M3116.32,-517.08C3029.38,-487.44 2861.14,-426.02 2818,-381 2794.72,-356.71 2784.58,-317.38 2780.49,-294.92"/>
+<text text-anchor="middle" x="2868.96" y="-401.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- onsha.bogdan@gmail.com -->
+<g id="node21" class="node">
+<title>onsha.bogdan@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3521,-381 3343,-381 3343,-345 3521,-345 3521,-381"/>
+<text text-anchor="middle" x="3432" y="-358.32" font-family="Tahoma" font-size="14.00">onsha.bogdan@gmail.com</text>
+</g>
+<!-- oleksandr.onsha@gmail.com&#45;&#45;onsha.bogdan@gmail.com -->
+<g id="edge45" class="edge">
+<title>oleksandr.onsha@gmail.com&#45;&#45;onsha.bogdan@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M3264.02,-527.43C3287.53,-522.2 3311.53,-513.58 3331,-499.5 3372.96,-469.14 3356.5,-438.5 3390,-399 3395.4,-392.63 3402.05,-386.5 3408.46,-381.21"/>
+<text text-anchor="middle" x="3376.79" y="-444.98" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 103605026+renckelalexolche@users.noreply.github.com -->
+<g id="node37" class="node">
+<title>103605026+renckelalexolche@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3612.88,-294.75 3251.12,-294.75 3251.12,-258.75 3612.88,-258.75 3612.88,-294.75"/>
+<text text-anchor="middle" x="3432" y="-272.07" font-family="Tahoma" font-size="14.00">103605026+renckelalexolche@users.noreply.github.com</text>
+</g>
+<!-- oleksandr.onsha@gmail.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com -->
+<g id="edge84" class="edge">
+<title>oleksandr.onsha@gmail.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3224.54,-517.01C3250.18,-506.35 3279.07,-490.27 3298,-467.25 3333.98,-423.51 3300.73,-390.84 3334,-345 3349.64,-323.46 3374.4,-306.55 3395.12,-295.08"/>
+<text text-anchor="middle" x="3323.53" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 57749020+dmytro&#45;afanasiev@users.noreply.github.com -->
+<g id="node39" class="node">
+<title>57749020+dmytro&#45;afanasiev@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3186.75,-381 2827.25,-381 2827.25,-345 3186.75,-345 3186.75,-381"/>
+<text text-anchor="middle" x="3007" y="-358.32" font-family="Tahoma" font-size="14.00">57749020+dmytro&#45;afanasiev@users.noreply.github.com</text>
+</g>
+<!-- oleksandr.onsha@gmail.com&#45;&#45;57749020+dmytro&#45;afanasiev@users.noreply.github.com -->
+<g id="edge83" class="edge">
+<title>oleksandr.onsha@gmail.com&#45;&#45;57749020+dmytro&#45;afanasiev@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3143.12,-517.02C3125.28,-504.32 3101.57,-486.11 3083.25,-467.25 3056.54,-439.76 3031.3,-402.6 3017.61,-381.17"/>
+<text text-anchor="middle" x="3089.62" y="-444.98" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- bohdan_syniuk@epam.com&#45;&#45;mykhailo_tolstyi@epam.com -->
+<g id="edge47" class="edge">
+<title>bohdan_syniuk@epam.com&#45;&#45;mykhailo_tolstyi@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M3202.91,-430.92C3209.41,-408.3 3216.46,-368.78 3196,-345 3155.19,-297.57 2983.79,-283.48 2873.54,-279.37"/>
+<text text-anchor="middle" x="3215.57" y="-358.73" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- bohdan_syniuk@epam.com&#45;&#45;onsha.bogdan@gmail.com -->
+<g id="edge86" class="edge">
+<title>bohdan_syniuk@epam.com&#45;&#45;onsha.bogdan@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3228.35,-430.84C3238.2,-425.29 3249.09,-419.08 3259,-413.25 3269.45,-407.1 3271.04,-403.6 3282.25,-399 3301.27,-391.19 3322.39,-384.91 3342.64,-379.95"/>
+<text text-anchor="middle" x="3288.62" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- bohdan_syniuk@epam.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com -->
+<g id="edge87" class="edge">
+<title>bohdan_syniuk@epam.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3217.02,-430.86C3222.77,-425.47 3228.87,-419.33 3234,-413.25 3268.61,-372.21 3257.37,-344.03 3301,-312.75 3311.14,-305.48 3322.7,-299.72 3334.65,-295.16"/>
+<text text-anchor="middle" x="3277.12" y="-358.73" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- bohdan_syniuk@epam.com&#45;&#45;57749020+dmytro&#45;afanasiev@users.noreply.github.com -->
+<g id="edge85" class="edge">
+<title>bohdan_syniuk@epam.com&#45;&#45;57749020+dmytro&#45;afanasiev@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3157.63,-430.79C3125.02,-416.33 3078.91,-395.89 3046.32,-381.43"/>
+<text text-anchor="middle" x="3119.75" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 80756766+anna&#45;shcherbak@users.noreply.github.com -->
+<g id="node16" class="node">
+<title>80756766+anna&#45;shcherbak@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2881.25,-467.25 2530.75,-467.25 2530.75,-431.25 2881.25,-431.25 2881.25,-467.25"/>
+<text text-anchor="middle" x="2706" y="-444.57" font-family="Tahoma" font-size="14.00">80756766+anna&#45;shcherbak@users.noreply.github.com</text>
+</g>
+<!-- 80756766+anna&#45;shcherbak@users.noreply.github.com&#45;&#45;mykhailo_tolstyi@epam.com -->
+<g id="edge29" class="edge">
+<title>80756766+anna&#45;shcherbak@users.noreply.github.com&#45;&#45;mykhailo_tolstyi@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M2713.3,-430.96C2727.1,-398.28 2756.87,-327.8 2770.68,-295.08"/>
+<text text-anchor="middle" x="2755.53" y="-358.73" font-family="Arial" font-size="12.00"> 5 </text>
+</g>
+<!-- anna_shcherbak@epam.com -->
+<g id="node23" class="node">
+<title>anna_shcherbak@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="2721.88,-381 2528.12,-381 2528.12,-345 2721.88,-345 2721.88,-381"/>
+<text text-anchor="middle" x="2625" y="-358.32" font-family="Tahoma" font-size="14.00">anna_shcherbak@epam.com</text>
+</g>
+<!-- 80756766+anna&#45;shcherbak@users.noreply.github.com&#45;&#45;anna_shcherbak@epam.com -->
+<g id="edge51" class="edge">
+<title>80756766+anna&#45;shcherbak@users.noreply.github.com&#45;&#45;anna_shcherbak@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2689.22,-430.79C2675.32,-416.33 2655.66,-395.89 2641.76,-381.43"/>
+<text text-anchor="middle" x="2676.72" y="-401.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;149404362+ai&#45;dial&#45;actions@users.noreply.github.com -->
+<g id="edge42" class="edge">
+<title>46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;149404362+ai&#45;dial&#45;actions@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1116.57,-517.38C1164.87,-511.92 1218.15,-505.68 1267,-499.5 1344.81,-489.65 1432.1,-477.48 1500.42,-467.71"/>
+<text text-anchor="middle" x="1380.22" y="-488.1" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com -->
+<g id="edge92" class="edge">
+<title>46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;61313167+dspashynskyi@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M928.28,-517.09C896.2,-496.68 853.56,-461.74 877,-431.25 929.98,-362.34 989.03,-421.38 1066,-381 1109.04,-358.42 1150.09,-318.09 1171.55,-295.08"/>
+<text text-anchor="middle" x="926.4" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge44" class="edge">
+<title>46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M825.29,-517.1C813.47,-512.47 802.15,-506.69 792,-499.5 734.57,-458.8 710,-434.39 710,-364 710,-364 710,-364 710,-189.5 710,-148.12 749.72,-153.25 789,-140.25 846.33,-121.28 1002.5,-112.3 1109.45,-108.27"/>
+<text text-anchor="middle" x="716.38" y="-315.6" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;33350321+nepalevov@users.noreply.github.com -->
+<g id="edge43" class="edge">
+<title>46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;33350321+nepalevov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M871.22,-517.13C861.28,-512.56 851.9,-506.79 844,-499.5 832.67,-489.05 834.13,-482.39 831.25,-467.25 828.26,-451.53 825.05,-446 831.25,-431.25 839.86,-410.78 858.08,-393.43 873.6,-381.48"/>
+<text text-anchor="middle" x="837.62" y="-444.98" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 65706367+akryvasheyeu@users.noreply.github.com -->
+<g id="node42" class="node">
+<title>65706367+akryvasheyeu@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1222.12,-467.25 885.88,-467.25 885.88,-431.25 1222.12,-431.25 1222.12,-467.25"/>
+<text text-anchor="middle" x="1054" y="-444.57" font-family="Tahoma" font-size="14.00">65706367+akryvasheyeu@users.noreply.github.com</text>
+</g>
+<!-- 46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;65706367+akryvasheyeu@users.noreply.github.com -->
+<g id="edge95" class="edge">
+<title>46220620+sr&#45;remsha@users.noreply.github.com&#45;&#45;65706367+akryvasheyeu@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M978.68,-517.04C994.99,-502.58 1018.04,-482.14 1034.34,-467.68"/>
+<text text-anchor="middle" x="1018.56" y="-488.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 133792808+oleksii&#45;klimov@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge38" class="edge">
+<title>133792808+oleksii&#45;klimov@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1868.68,-172.04C1705.15,-155.28 1463.13,-130.48 1324.68,-116.29"/>
+<text text-anchor="middle" x="1683.59" y="-143.1" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 133792808+oleksii&#45;klimov@users.noreply.github.com&#45;&#45;alexey_klimov@epam.com -->
+<g id="edge56" class="edge">
+<title>133792808+oleksii&#45;klimov@users.noreply.github.com&#45;&#45;alexey_klimov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M2039,-172.21C2039,-139.53 2039,-69.05 2039,-36.33"/>
+<text text-anchor="middle" x="2045.38" y="-99.97" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- ilya_bondar@epam.com -->
+<g id="node20" class="node">
+<title>ilya_bondar@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1207.25,-726 1042.75,-726 1042.75,-690 1207.25,-690 1207.25,-726"/>
+<text text-anchor="middle" x="1125" y="-703.33" font-family="Tahoma" font-size="14.00">ilya_bondar@epam.com</text>
+</g>
+<!-- ilya_bondar@epam.com&#45;&#45;anton_dubovik@epam.com -->
+<g id="edge63" class="edge">
+<title>ilya_bondar@epam.com&#45;&#45;anton_dubovik@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1192.34,-689.54C1248.12,-675.08 1326.99,-654.64 1382.75,-640.18"/>
+<text text-anchor="middle" x="1313.33" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- ilya_bondar@epam.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge66" class="edge">
+<title>ilya_bondar@epam.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1207.63,-706.1C1497.98,-702.41 2454,-685.5 2454,-622.75 2454,-622.75 2454,-622.75 2454,-232.62 2454,-195.8 2430.4,-188 2397,-172.5 2301.26,-128.07 1597.19,-111.62 1324.48,-106.87"/>
+<text text-anchor="middle" x="2460.38" y="-401.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- ilya_bondar@epam.com&#45;&#45;33350321+nepalevov@users.noreply.github.com -->
+<g id="edge65" class="edge">
+<title>ilya_bondar@epam.com&#45;&#45;33350321+nepalevov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1042.26,-705.7C934.11,-702.05 753.53,-688.59 712,-639.75 635.79,-550.13 730.26,-472.64 822,-399 830.57,-392.12 840.7,-386.3 850.77,-381.49"/>
+<text text-anchor="middle" x="707.77" y="-531.23" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- ilya_bondar@epam.com&#45;&#45;46220620+sr&#45;remsha@users.noreply.github.com -->
+<g id="edge41" class="edge">
+<title>ilya_bondar@epam.com&#45;&#45;46220620+sr&#45;remsha@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1120.75,-689.78C1114.55,-667.63 1101.15,-629.02 1078,-603.75 1057.88,-581.79 1028.89,-565.2 1004.56,-553.99"/>
+<text text-anchor="middle" x="1108.05" y="-617.48" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- 98586297+alexander&#45;kezik@users.noreply.github.com -->
+<g id="node34" class="node">
+<title>98586297+alexander&#45;kezik@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1068.75,-639.75 721.25,-639.75 721.25,-603.75 1068.75,-603.75 1068.75,-639.75"/>
+<text text-anchor="middle" x="895" y="-617.08" font-family="Tahoma" font-size="14.00">98586297+alexander&#45;kezik@users.noreply.github.com</text>
+</g>
+<!-- ilya_bondar@epam.com&#45;&#45;98586297+alexander&#45;kezik@users.noreply.github.com -->
+<g id="edge64" class="edge">
+<title>ilya_bondar@epam.com&#45;&#45;98586297+alexander&#45;kezik@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1077.34,-689.54C1037.87,-675.08 982.05,-654.64 942.6,-640.18"/>
+<text text-anchor="middle" x="1030.15" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- ilya_bondar@epam.com&#45;&#45;65706367+akryvasheyeu@users.noreply.github.com -->
+<g id="edge94" class="edge">
+<title>ilya_bondar@epam.com&#45;&#45;65706367+akryvasheyeu@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1129.45,-689.59C1137.35,-655.04 1150.71,-576.1 1125,-517.5 1115.93,-496.82 1097.12,-479.48 1081.14,-467.58"/>
+<text text-anchor="middle" x="1145.97" y="-574.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- onsha.bogdan@gmail.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com -->
+<g id="edge89" class="edge">
+<title>onsha.bogdan@gmail.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3432,-344.54C3432,-330.08 3432,-309.64 3432,-295.18"/>
+<text text-anchor="middle" x="3438.38" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- anna_shcherbak@epam.com&#45;&#45;mykhailo_tolstyi@epam.com -->
+<g id="edge52" class="edge">
+<title>anna_shcherbak@epam.com&#45;&#45;mykhailo_tolstyi@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2656.7,-344.54C2682.96,-330.08 2720.09,-309.64 2746.34,-295.18"/>
+<text text-anchor="middle" x="2717.04" y="-315.6" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- aleksandr_savelev@epam.com -->
+<g id="node24" class="node">
+<title>aleksandr_savelev@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="4378.5,-726 4173.5,-726 4173.5,-690 4378.5,-690 4378.5,-726"/>
+<text text-anchor="middle" x="4276" y="-703.33" font-family="Tahoma" font-size="14.00">aleksandr_savelev@epam.com</text>
+</g>
+<!-- 18146690+aliaksandrdziarkach@users.noreply.github.com -->
+<g id="node25" class="node">
+<title>18146690+aliaksandrdziarkach@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3990.12,-639.75 3617.88,-639.75 3617.88,-603.75 3990.12,-603.75 3990.12,-639.75"/>
+<text text-anchor="middle" x="3804" y="-617.08" font-family="Tahoma" font-size="14.00">18146690+aliaksandrdziarkach@users.noreply.github.com</text>
+</g>
+<!-- aleksandr_savelev@epam.com&#45;&#45;18146690+aliaksandrdziarkach@users.noreply.github.com -->
+<g id="edge53" class="edge">
+<title>aleksandr_savelev@epam.com&#45;&#45;18146690+aliaksandrdziarkach@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M4178.2,-689.54C4097.19,-675.08 3982.65,-654.64 3901.67,-640.18"/>
+<text text-anchor="middle" x="4074.63" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- nikita_chistousov@epam.com -->
+<g id="node26" class="node">
+<title>nikita_chistousov@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="4205.38,-639.75 4008.62,-639.75 4008.62,-603.75 4205.38,-603.75 4205.38,-639.75"/>
+<text text-anchor="middle" x="4107" y="-617.08" font-family="Tahoma" font-size="14.00">nikita_chistousov@epam.com</text>
+</g>
+<!-- aleksandr_savelev@epam.com&#45;&#45;nikita_chistousov@epam.com -->
+<g id="edge54" class="edge">
+<title>aleksandr_savelev@epam.com&#45;&#45;nikita_chistousov@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M4240.98,-689.54C4211.98,-675.08 4170.96,-654.64 4141.97,-640.18"/>
+<text text-anchor="middle" x="4207.99" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- agirin@mail.ru -->
+<g id="node43" class="node">
+<title>agirin@mail.ru</title>
+<polygon fill="#00b2ee" stroke="white" points="4328.62,-639.75 4223.38,-639.75 4223.38,-603.75 4328.62,-603.75 4328.62,-639.75"/>
+<text text-anchor="middle" x="4276" y="-617.08" font-family="Tahoma" font-size="14.00">agirin@mail.ru</text>
+</g>
+<!-- aleksandr_savelev@epam.com&#45;&#45;agirin@mail.ru -->
+<g id="edge96" class="edge">
+<title>aleksandr_savelev@epam.com&#45;&#45;agirin@mail.ru</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M4276,-689.54C4276,-675.08 4276,-654.64 4276,-640.18"/>
+<text text-anchor="middle" x="4282.38" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 30798676+dmitrii&#45;romanov@users.noreply.github.com -->
+<g id="node45" class="node">
+<title>30798676+dmitrii&#45;romanov@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="4697.25,-639.75 4346.75,-639.75 4346.75,-603.75 4697.25,-603.75 4697.25,-639.75"/>
+<text text-anchor="middle" x="4522" y="-617.08" font-family="Tahoma" font-size="14.00">30798676+dmitrii&#45;romanov@users.noreply.github.com</text>
+</g>
+<!-- aleksandr_savelev@epam.com&#45;&#45;30798676+dmitrii&#45;romanov@users.noreply.github.com -->
+<g id="edge99" class="edge">
+<title>aleksandr_savelev@epam.com&#45;&#45;30798676+dmitrii&#45;romanov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M4326.97,-689.54C4369.19,-675.08 4428.89,-654.64 4471.09,-640.18"/>
+<text text-anchor="middle" x="4420.1" y="-660.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- svvald@icloud.com -->
+<g id="node46" class="node">
+<title>svvald@icloud.com</title>
+<polygon fill="#00b2ee" stroke="white" points="4847.12,-639.75 4714.88,-639.75 4714.88,-603.75 4847.12,-603.75 4847.12,-639.75"/>
+<text text-anchor="middle" x="4781" y="-617.08" font-family="Tahoma" font-size="14.00">svvald@icloud.com</text>
+</g>
+<!-- aleksandr_savelev@epam.com&#45;&#45;svvald@icloud.com -->
+<g id="edge100" class="edge">
+<title>aleksandr_savelev@epam.com&#45;&#45;svvald@icloud.com</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M4378.86,-692.91C4466.18,-680.47 4594.68,-661.05 4706,-639.75 4708.75,-639.22 4711.56,-638.67 4714.39,-638.09"/>
+<text text-anchor="middle" x="4606.61" y="-660.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- aliaksandr_stsiapanay@epam.com -->
+<g id="node29" class="node">
+<title>aliaksandr_stsiapanay@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="1509.38,-208.5 1282.62,-208.5 1282.62,-172.5 1509.38,-172.5 1509.38,-208.5"/>
+<text text-anchor="middle" x="1396" y="-185.82" font-family="Tahoma" font-size="14.00">aliaksandr_stsiapanay@epam.com</text>
+</g>
+<!-- aliaksandr_stsiapanay@epam.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge60" class="edge">
+<title>aliaksandr_stsiapanay@epam.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1358.91,-172.04C1328.19,-157.58 1284.75,-137.14 1254.04,-122.68"/>
+<text text-anchor="middle" x="1323.59" y="-143.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 148881157+siarhei&#45;z1@users.noreply.github.com -->
+<g id="node30" class="node">
+<title>148881157+siarhei&#45;z1@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="5173.12,-726 4854.88,-726 4854.88,-690 5173.12,-690 5173.12,-726"/>
+<text text-anchor="middle" x="5014" y="-703.33" font-family="Tahoma" font-size="14.00">148881157+siarhei&#45;z1@users.noreply.github.com</text>
+</g>
+<!-- 57723193+xenn33@users.noreply.github.com -->
+<g id="node31" class="node">
+<title>57723193+xenn33@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="5162.62,-639.75 4865.38,-639.75 4865.38,-603.75 5162.62,-603.75 5162.62,-639.75"/>
+<text text-anchor="middle" x="5014" y="-617.08" font-family="Tahoma" font-size="14.00">57723193+xenn33@users.noreply.github.com</text>
+</g>
+<!-- 148881157+siarhei&#45;z1@users.noreply.github.com&#45;&#45;57723193+xenn33@users.noreply.github.com -->
+<g id="edge61" class="edge">
+<title>148881157+siarhei&#45;z1@users.noreply.github.com&#45;&#45;57723193+xenn33@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M5014,-689.54C5014,-675.08 5014,-654.64 5014,-640.18"/>
+<text text-anchor="middle" x="5020.38" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- valyaev.alexei@gmail.com -->
+<g id="node32" class="node">
+<title>valyaev.alexei@gmail.com</title>
+<polygon fill="#00b2ee" stroke="white" points="5442.62,-726 5265.38,-726 5265.38,-690 5442.62,-690 5442.62,-726"/>
+<text text-anchor="middle" x="5354" y="-703.33" font-family="Tahoma" font-size="14.00">valyaev.alexei@gmail.com</text>
+</g>
+<!-- 124697396+alexei&#45;valyaev@users.noreply.github.com -->
+<g id="node33" class="node">
+<title>124697396+alexei&#45;valyaev@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="5527,-639.75 5181,-639.75 5181,-603.75 5527,-603.75 5527,-639.75"/>
+<text text-anchor="middle" x="5354" y="-617.08" font-family="Tahoma" font-size="14.00">124697396+alexei&#45;valyaev@users.noreply.github.com</text>
+</g>
+<!-- valyaev.alexei@gmail.com&#45;&#45;124697396+alexei&#45;valyaev@users.noreply.github.com -->
+<g id="edge62" class="edge">
+<title>valyaev.alexei@gmail.com&#45;&#45;124697396+alexei&#45;valyaev@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M5354,-689.54C5354,-675.08 5354,-654.64 5354,-640.18"/>
+<text text-anchor="middle" x="5360.38" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 98586297+alexander&#45;kezik@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com -->
+<g id="edge69" class="edge">
+<title>98586297+alexander&#45;kezik@users.noreply.github.com&#45;&#45;andrei_tataranovich@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M772.36,-603.33C710.74,-586.9 649,-555.06 649,-493.38 649,-493.38 649,-493.38 649,-189.5 649,-146.99 690.47,-153.07 731,-140.25 798.95,-118.75 988,-110.39 1109.3,-107.19"/>
+<text text-anchor="middle" x="655.38" y="-358.73" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 98586297+alexander&#45;kezik@users.noreply.github.com&#45;&#45;33350321+nepalevov@users.noreply.github.com -->
+<g id="edge68" class="edge">
+<title>98586297+alexander&#45;kezik@users.noreply.github.com&#45;&#45;33350321+nepalevov@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M850.24,-603.36C828.81,-592.49 805.22,-576.19 793,-553.5 785.41,-539.41 790.25,-533.26 793,-517.5 802.67,-462 800.3,-440.86 838,-399 844.2,-392.11 852.09,-386.26 860.15,-381.42"/>
+<text text-anchor="middle" x="804.47" y="-488.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 98586297+alexander&#45;kezik@users.noreply.github.com&#45;&#45;46220620+sr&#45;remsha@users.noreply.github.com -->
+<g id="edge67" class="edge">
+<title>98586297+alexander&#45;kezik@users.noreply.github.com&#45;&#45;46220620+sr&#45;remsha@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M908.26,-603.29C919.24,-588.83 934.78,-568.39 945.76,-553.93"/>
+<text text-anchor="middle" x="937.21" y="-574.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 31548234+bohdan&#45;onsha@users.noreply.github.com -->
+<g id="node35" class="node">
+<title>31548234+bohdan&#45;onsha@users.noreply.github.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3509.62,-726 3170.38,-726 3170.38,-690 3509.62,-690 3509.62,-726"/>
+<text text-anchor="middle" x="3340" y="-703.33" font-family="Tahoma" font-size="14.00">31548234+bohdan&#45;onsha@users.noreply.github.com</text>
+</g>
+<!-- 31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;oleksandr.onsha@gmail.com -->
+<g id="edge71" class="edge">
+<title>31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;oleksandr.onsha@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3303.72,-689.56C3294.87,-684.51 3285.73,-678.56 3278,-672 3235.41,-635.86 3197.45,-581.19 3179.67,-553.65"/>
+<text text-anchor="middle" x="3250.41" y="-617.48" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;bohdan_syniuk@epam.com -->
+<g id="edge72" class="edge">
+<title>31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;bohdan_syniuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3333,-689.56C3330.75,-683.96 3328.26,-677.72 3326,-672 3310.86,-633.72 3305.35,-624.77 3292.25,-585.75 3282.22,-555.87 3289.76,-544.19 3273,-517.5 3260.35,-497.36 3239.91,-479.76 3223.41,-467.62"/>
+<text text-anchor="middle" x="3298.62" y="-574.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;onsha.bogdan@gmail.com -->
+<g id="edge73" class="edge">
+<title>31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;onsha.bogdan@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3340.85,-689.7C3342.85,-656 3349.04,-579.42 3366.25,-517.5 3368.2,-510.48 3407.62,-419.86 3424.47,-381.24"/>
+<text text-anchor="middle" x="3372.62" y="-531.23" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- polina_prakhova@epam.com -->
+<g id="node36" class="node">
+<title>polina_prakhova@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3561.5,-639.75 3368.5,-639.75 3368.5,-603.75 3561.5,-603.75 3561.5,-639.75"/>
+<text text-anchor="middle" x="3465" y="-617.08" font-family="Tahoma" font-size="14.00">polina_prakhova@epam.com</text>
+</g>
+<!-- 31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;polina_prakhova@epam.com -->
+<g id="edge70" class="edge">
+<title>31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;polina_prakhova@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3365.9,-689.54C3387.35,-675.08 3417.69,-654.64 3439.13,-640.18"/>
+<text text-anchor="middle" x="3416.36" y="-660.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com -->
+<g id="edge74" class="edge">
+<title>31548234+bohdan&#45;onsha@users.noreply.github.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3452.2,-689.57C3518.66,-675.97 3590,-654.07 3590,-622.75 3590,-622.75 3590,-622.75 3590,-362 3590,-327.65 3560.56,-307.26 3527.1,-295.17"/>
+<text text-anchor="middle" x="3596.38" y="-488.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- polina_prakhova@epam.com&#45;&#45;oleksandr.onsha@gmail.com -->
+<g id="edge79" class="edge">
+<title>polina_prakhova@epam.com&#45;&#45;oleksandr.onsha@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3412.53,-603.31C3382.37,-593.51 3343.71,-581.31 3309,-571.5 3287.42,-565.4 3263.82,-559.29 3242.25,-553.92"/>
+<text text-anchor="middle" x="3362.8" y="-574.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- polina_prakhova@epam.com&#45;&#45;bohdan_syniuk@epam.com -->
+<g id="edge80" class="edge">
+<title>polina_prakhova@epam.com&#45;&#45;bohdan_syniuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3455.16,-603.54C3441.53,-581.05 3414.94,-541.68 3383,-517.5 3351.93,-493.97 3311.85,-478.09 3276.85,-467.69"/>
+<text text-anchor="middle" x="3425.15" y="-531.23" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- polina_prakhova@epam.com&#45;&#45;onsha.bogdan@gmail.com -->
+<g id="edge81" class="edge">
+<title>polina_prakhova@epam.com&#45;&#45;onsha.bogdan@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3462.78,-603.51C3456.77,-556.73 3440.21,-427.85 3434.21,-381.17"/>
+<text text-anchor="middle" x="3455.64" y="-488.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- polina_prakhova@epam.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com -->
+<g id="edge82" class="edge">
+<title>polina_prakhova@epam.com&#45;&#45;103605026+renckelalexolche@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3499.65,-603.26C3522.79,-588.86 3549,-566.04 3549,-536.5 3549,-536.5 3549,-536.5 3549,-362 3549,-329.46 3518.83,-308.24 3489.13,-295.24"/>
+<text text-anchor="middle" x="3555.38" y="-444.98" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- dmytro_afanasiev1@epam.com -->
+<g id="node38" class="node">
+<title>dmytro_afanasiev1@epam.com</title>
+<polygon fill="#00b2ee" stroke="white" points="3115.12,-639.75 2904.88,-639.75 2904.88,-603.75 3115.12,-603.75 3115.12,-639.75"/>
+<text text-anchor="middle" x="3010" y="-617.08" font-family="Tahoma" font-size="14.00">dmytro_afanasiev1@epam.com</text>
+</g>
+<!-- dmytro_afanasiev1@epam.com&#45;&#45;oleksandr.onsha@gmail.com -->
+<g id="edge75" class="edge">
+<title>dmytro_afanasiev1@epam.com&#45;&#45;oleksandr.onsha@gmail.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3042.94,-603.29C3070.23,-588.83 3108.82,-568.39 3136.1,-553.93"/>
+<text text-anchor="middle" x="3105.39" y="-574.35" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- dmytro_afanasiev1@epam.com&#45;&#45;bohdan_syniuk@epam.com -->
+<g id="edge76" class="edge">
+<title>dmytro_afanasiev1@epam.com&#45;&#45;bohdan_syniuk@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M3013.07,-603.26C3017.82,-580.82 3028.98,-541.88 3052.25,-517.5 3074.44,-494.25 3106.25,-478.26 3134.39,-467.73"/>
+<text text-anchor="middle" x="3058.62" y="-531.23" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- dmytro_afanasiev1@epam.com&#45;&#45;mykhailo_tolstyi@epam.com -->
+<g id="edge78" class="edge">
+<title>dmytro_afanasiev1@epam.com&#45;&#45;mykhailo_tolstyi@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M2904.64,-613.77C2755.3,-602.44 2500,-577.14 2500,-536.5 2500,-536.5 2500,-536.5 2500,-362 2500,-322.92 2601.91,-300.27 2682.33,-288.49"/>
+<text text-anchor="middle" x="2506.38" y="-444.98" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- dmytro_afanasiev1@epam.com&#45;&#45;57749020+dmytro&#45;afanasiev@users.noreply.github.com -->
+<g id="edge77" class="edge">
+<title>dmytro_afanasiev1@epam.com&#45;&#45;57749020+dmytro&#45;afanasiev@users.noreply.github.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M2991.53,-603.59C2969.61,-581.84 2934.28,-542.03 2920.25,-499.5 2911.72,-473.63 2875.19,-468.3 2923,-399 2928.02,-391.72 2934.87,-385.95 2942.5,-381.37"/>
+<text text-anchor="middle" x="2926.62" y="-488.1" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- 57749020+dmytro&#45;afanasiev@users.noreply.github.com&#45;&#45;mykhailo_tolstyi@epam.com -->
+<g id="edge88" class="edge">
+<title>57749020+dmytro&#45;afanasiev@users.noreply.github.com&#45;&#45;mykhailo_tolstyi@epam.com</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M2959.55,-344.54C2920.25,-330.08 2864.67,-309.64 2825.39,-295.18"/>
+<text text-anchor="middle" x="2912.59" y="-315.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+</g>
+</svg>

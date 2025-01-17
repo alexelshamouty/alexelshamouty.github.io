@@ -1,0 +1,613 @@
+<svg width="447pt" height="2565pt"
+ viewBox="0.00 0.00 447.25 2565.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2561)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-2561 443.25,-2561 443.25,4 -4,4"/>
+<!-- build and dependencies management tools / npm -->
+<g id="node1" class="node">
+<title>build and dependencies management tools / npm</title>
+<polygon fill="#00b2ee" stroke="white" points="432.12,-36 113.12,-36 113.12,0 432.12,0 432.12,-36"/>
+<text text-anchor="middle" x="272.62" y="-13.32" font-family="Tahoma" font-size="14.00">build and dependencies management tools / npm</text>
+</g>
+<!-- build and dependencies management tools / gradle -->
+<g id="node2" class="node">
+<title>build and dependencies management tools / gradle</title>
+<polygon fill="#00b2ee" stroke="white" points="437.38,-90 107.88,-90 107.88,-54 437.38,-54 437.38,-90"/>
+<text text-anchor="middle" x="272.62" y="-67.33" font-family="Tahoma" font-size="14.00">build and dependencies management tools / gradle</text>
+</g>
+<!-- build and dependencies management tools / sbt -->
+<g id="node3" class="node">
+<title>build and dependencies management tools / sbt</title>
+<polygon fill="#00b2ee" stroke="white" points="427.62,-144 117.62,-144 117.62,-108 427.62,-108 427.62,-144"/>
+<text text-anchor="middle" x="272.62" y="-121.33" font-family="Tahoma" font-size="14.00">build and dependencies management tools / sbt</text>
+</g>
+<!-- build and dependencies management tools / maven -->
+<g id="node4" class="node">
+<title>build and dependencies management tools / maven</title>
+<polygon fill="#00b2ee" stroke="white" points="439.25,-198 106,-198 106,-162 439.25,-162 439.25,-198"/>
+<text text-anchor="middle" x="272.62" y="-175.32" font-family="Tahoma" font-size="14.00">build and dependencies management tools / maven</text>
+</g>
+<!-- build and dependencies management tools / jest -->
+<g id="node5" class="node">
+<title>build and dependencies management tools / jest</title>
+<polygon fill="#00b2ee" stroke="white" points="429.5,-252 115.75,-252 115.75,-216 429.5,-216 429.5,-252"/>
+<text text-anchor="middle" x="272.62" y="-229.32" font-family="Tahoma" font-size="14.00">build and dependencies management tools / jest</text>
+</g>
+<!-- [twitter / whiskey] -->
+<g id="node6" class="node">
+<title>[twitter / whiskey]</title>
+<polygon fill="grey" stroke="white" points="336.88,-1531 208.38,-1531 208.38,-1495 336.88,-1495 336.88,-1531"/>
+<text text-anchor="middle" x="272.62" y="-1508.33" font-family="Tahoma" font-size="14.00">[twitter / whiskey]</text>
+</g>
+<!-- maven -->
+<g id="node7" class="node">
+<title>maven</title>
+<polygon fill="grey" stroke="white" points="57.25,-1261 0,-1261 0,-1225 57.25,-1225 57.25,-1261"/>
+<text text-anchor="middle" x="28.62" y="-1238.33" font-family="Tahoma" font-size="14.00">maven</text>
+</g>
+<!-- [twitter / whiskey]&#45;&#45;maven -->
+<g id="edge1" class="edge">
+<title>[twitter / whiskey]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M208.26,-1515.2C175.22,-1513.42 135.63,-1506.41 106,-1486 67.76,-1459.65 40.87,-1313.01 32.43,-1261.17"/>
+<text text-anchor="middle" x="81.62" y="-1465.92" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / GraphJet] -->
+<g id="node8" class="node">
+<title>[twitter / GraphJet]</title>
+<polygon fill="grey" stroke="white" points="339.88,-1477 205.38,-1477 205.38,-1441 339.88,-1441 339.88,-1477"/>
+<text text-anchor="middle" x="272.62" y="-1454.33" font-family="Tahoma" font-size="14.00">[twitter / GraphJet]</text>
+</g>
+<!-- [twitter / GraphJet]&#45;&#45;maven -->
+<g id="edge2" class="edge">
+<title>[twitter / GraphJet]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M205.1,-1460.9C172.75,-1458.82 134.75,-1451.63 106,-1432 47.99,-1392.38 34.02,-1300.57 30.67,-1261.33"/>
+<text text-anchor="middle" x="81.62" y="-1417.14" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / hadoop&#45;lzo] -->
+<g id="node9" class="node">
+<title>[twitter / hadoop&#45;lzo]</title>
+<polygon fill="grey" stroke="white" points="346.25,-1423 199,-1423 199,-1387 346.25,-1387 346.25,-1423"/>
+<text text-anchor="middle" x="272.62" y="-1400.33" font-family="Tahoma" font-size="14.00">[twitter / hadoop&#45;lzo]</text>
+</g>
+<!-- [twitter / hadoop&#45;lzo]&#45;&#45;maven -->
+<g id="edge3" class="edge">
+<title>[twitter / hadoop&#45;lzo]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M198.76,-1406.07C167.97,-1403.4 133.06,-1395.96 106,-1378 64.04,-1350.15 42.63,-1290.95 34.14,-1261.07"/>
+<text text-anchor="middle" x="81.62" y="-1364.86" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twitter&#45;korean&#45;text] -->
+<g id="node10" class="node">
+<title>[twitter / twitter&#45;korean&#45;text]</title>
+<polygon fill="grey" stroke="white" points="370.25,-1639 175,-1639 175,-1603 370.25,-1603 370.25,-1639"/>
+<text text-anchor="middle" x="272.62" y="-1616.33" font-family="Tahoma" font-size="14.00">[twitter / twitter&#45;korean&#45;text]</text>
+</g>
+<!-- [twitter / twitter&#45;korean&#45;text]&#45;&#45;maven -->
+<g id="edge4" class="edge">
+<title>[twitter / twitter&#45;korean&#45;text]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M174.65,-1620.23C150.48,-1616.17 125.83,-1608.34 106,-1594 50.91,-1554.17 34.26,-1327.65 30.53,-1261.27"/>
+<text text-anchor="middle" x="81.62" y="-1569.86" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- sbt -->
+<g id="node39" class="node">
+<title>sbt</title>
+<polygon fill="grey" stroke="white" points="55.62,-1990 1.62,-1990 1.62,-1954 55.62,-1954 55.62,-1990"/>
+<text text-anchor="middle" x="28.62" y="-1967.33" font-family="Tahoma" font-size="14.00">sbt</text>
+</g>
+<!-- [twitter / twitter&#45;korean&#45;text]&#45;&#45;sbt -->
+<g id="edge37" class="edge">
+<title>[twitter / twitter&#45;korean&#45;text]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M174.54,-1621.61C150.37,-1625.67 125.75,-1633.54 106,-1648 55.52,-1684.95 35.8,-1891.13 30.91,-1953.88"/>
+<text text-anchor="middle" x="81.62" y="-1694.43" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / hpack] -->
+<g id="node11" class="node">
+<title>[twitter / hpack]</title>
+<polygon fill="grey" stroke="white" points="330.88,-1099 214.38,-1099 214.38,-1063 330.88,-1063 330.88,-1099"/>
+<text text-anchor="middle" x="272.62" y="-1076.33" font-family="Tahoma" font-size="14.00">[twitter / hpack]</text>
+</g>
+<!-- [twitter / hpack]&#45;&#45;maven -->
+<g id="edge5" class="edge">
+<title>[twitter / hpack]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M214.09,-1078.97C180.12,-1080.4 137.7,-1087.01 106,-1108 64.01,-1135.8 42.61,-1195.02 34.13,-1224.92"/>
+<text text-anchor="middle" x="81.62" y="-1139.5" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / nodes] -->
+<g id="node12" class="node">
+<title>[twitter / nodes]</title>
+<polygon fill="grey" stroke="white" points="330.88,-1045 214.38,-1045 214.38,-1009 330.88,-1009 330.88,-1045"/>
+<text text-anchor="middle" x="272.62" y="-1022.33" font-family="Tahoma" font-size="14.00">[twitter / nodes]</text>
+</g>
+<!-- [twitter / nodes]&#45;&#45;maven -->
+<g id="edge6" class="edge">
+<title>[twitter / nodes]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M213.89,-1024.67C179.85,-1025.99 137.42,-1032.59 106,-1054 47.95,-1093.56 34,-1185.4 30.67,-1224.67"/>
+<text text-anchor="middle" x="81.62" y="-1087.1" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / scrooge] -->
+<g id="node13" class="node">
+<title>[twitter / scrooge]</title>
+<polygon fill="grey" stroke="white" points="336.88,-1585 208.38,-1585 208.38,-1549 336.88,-1549 336.88,-1585"/>
+<text text-anchor="middle" x="272.62" y="-1562.33" font-family="Tahoma" font-size="14.00">[twitter / scrooge]</text>
+</g>
+<!-- [twitter / scrooge]&#45;&#45;maven -->
+<g id="edge7" class="edge">
+<title>[twitter / scrooge]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M207.88,-1569.73C174.73,-1568.11 135.16,-1561.08 106,-1540 59.73,-1506.55 37.38,-1320.64 31.35,-1261.25"/>
+<text text-anchor="middle" x="81.62" y="-1519.92" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / scrooge]&#45;&#45;sbt -->
+<g id="edge39" class="edge">
+<title>[twitter / scrooge]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M208.18,-1564.11C174.92,-1565.66 135.15,-1572.66 106,-1594 46.71,-1637.4 32.94,-1884.27 30.22,-1953.79"/>
+<text text-anchor="middle" x="81.62" y="-1639.93" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / cloudhopper&#45;commons] -->
+<g id="node14" class="node">
+<title>[twitter / cloudhopper&#45;commons]</title>
+<polygon fill="grey" stroke="white" points="382.25,-991 163,-991 163,-955 382.25,-955 382.25,-991"/>
+<text text-anchor="middle" x="272.62" y="-968.33" font-family="Tahoma" font-size="14.00">[twitter / cloudhopper&#45;commons]</text>
+</g>
+<!-- [twitter / cloudhopper&#45;commons]&#45;&#45;maven -->
+<g id="edge8" class="edge">
+<title>[twitter / cloudhopper&#45;commons]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M162.92,-976.64C142.73,-981.09 122.76,-988.38 106,-1000 67.84,-1026.46 40.89,-1173.03 32.44,-1224.85"/>
+<text text-anchor="middle" x="81.62" y="-1051.54" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / pants] -->
+<g id="node15" class="node">
+<title>[twitter / pants]</title>
+<polygon fill="grey" stroke="white" points="329.38,-935 215.88,-935 215.88,-899 329.38,-899 329.38,-935"/>
+<text text-anchor="middle" x="272.62" y="-912.33" font-family="Tahoma" font-size="14.00">[twitter / pants]</text>
+</g>
+<!-- [twitter / pants]&#45;&#45;maven -->
+<g id="edge9" class="edge">
+<title>[twitter / pants]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M215.76,-914.77C181.16,-916.11 137.47,-923.01 106,-946 59.89,-979.68 37.43,-1165.43 31.36,-1224.77"/>
+<text text-anchor="middle" x="81.62" y="-995.18" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- npm -->
+<g id="node23" class="node">
+<title>npm</title>
+<polygon fill="grey" stroke="white" points="55.62,-592 1.62,-592 1.62,-556 55.62,-556 55.62,-592"/>
+<text text-anchor="middle" x="28.62" y="-569.33" font-family="Tahoma" font-size="14.00">npm</text>
+</g>
+<!-- [twitter / pants]&#45;&#45;npm -->
+<g id="edge23" class="edge">
+<title>[twitter / pants]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M215.56,-920.62C179.76,-919.81 134.82,-912.49 106,-885 81.43,-861.56 101.77,-841.79 88,-810.75 83.91,-801.54 79.19,-801.28 75.25,-792 45.46,-721.89 34.5,-630.59 31.03,-592.23"/>
+<text text-anchor="middle" x="81.62" y="-813.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / iago2] -->
+<g id="node16" class="node">
+<title>[twitter / iago2]</title>
+<polygon fill="grey" stroke="white" points="329.38,-1369 215.88,-1369 215.88,-1333 329.38,-1333 329.38,-1369"/>
+<text text-anchor="middle" x="272.62" y="-1346.33" font-family="Tahoma" font-size="14.00">[twitter / iago2]</text>
+</g>
+<!-- [twitter / iago2]&#45;&#45;maven -->
+<g id="edge10" class="edge">
+<title>[twitter / iago2]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M215.45,-1350.75C181.96,-1348.5 139.58,-1341.83 106,-1324 78.18,-1309.22 54.82,-1280.43 41.52,-1261.45"/>
+<text text-anchor="middle" x="81.62" y="-1313.43" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twitter&#45;text] -->
+<g id="node17" class="node">
+<title>[twitter / twitter&#45;text]</title>
+<polygon fill="grey" stroke="white" points="346.62,-876 198.62,-876 198.62,-840 346.62,-840 346.62,-876"/>
+<text text-anchor="middle" x="272.62" y="-853.33" font-family="Tahoma" font-size="14.00">[twitter / twitter&#45;text]</text>
+</g>
+<!-- [twitter / twitter&#45;text]&#45;&#45;maven -->
+<g id="edge11" class="edge">
+<title>[twitter / twitter&#45;text]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M198.22,-858.23C167.15,-861.65 132.18,-870.24 106,-890 51.45,-931.17 34.42,-1158.2 30.57,-1224.7"/>
+<text text-anchor="middle" x="81.62" y="-940.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twitter&#45;text]&#45;&#45;npm -->
+<g id="edge24" class="edge">
+<title>[twitter / twitter&#45;text]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M198.14,-856.88C166.7,-852.92 131.45,-843.4 106,-822 89.75,-808.33 96.72,-797.11 88,-777.75 82.76,-766.11 79.69,-763.97 75.25,-752 54.22,-695.32 39.32,-625.02 33,-592.32"/>
+<text text-anchor="middle" x="81.62" y="-780.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / joauth] -->
+<g id="node18" class="node">
+<title>[twitter / joauth]</title>
+<polygon fill="grey" stroke="white" points="332,-1315 213.25,-1315 213.25,-1279 332,-1279 332,-1315"/>
+<text text-anchor="middle" x="272.62" y="-1292.33" font-family="Tahoma" font-size="14.00">[twitter / joauth]</text>
+</g>
+<!-- [twitter / joauth]&#45;&#45;maven -->
+<g id="edge12" class="edge">
+<title>[twitter / joauth]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M212.89,-1290.88C173.25,-1285.63 120.17,-1276.4 75.25,-1261 69.45,-1259.01 63.3,-1256.72 57.46,-1254.45"/>
+<text text-anchor="middle" x="81.62" y="-1267.2" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / elephant&#45;bird] -->
+<g id="node19" class="node">
+<title>[twitter / elephant&#45;bird]</title>
+<polygon fill="grey" stroke="white" points="353.38,-1261 191.88,-1261 191.88,-1225 353.38,-1225 353.38,-1261"/>
+<text text-anchor="middle" x="272.62" y="-1238.33" font-family="Tahoma" font-size="14.00">[twitter / elephant&#45;bird]</text>
+</g>
+<!-- [twitter / elephant&#45;bird]&#45;&#45;maven -->
+<g id="edge13" class="edge">
+<title>[twitter / elephant&#45;bird]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M191.38,-1243C145.29,-1243 90.26,-1243 57.73,-1243"/>
+<text text-anchor="middle" x="81.62" y="-1245.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / sbf] -->
+<g id="node20" class="node">
+<title>[twitter / sbf]</title>
+<polygon fill="grey" stroke="white" points="322.25,-1207 223,-1207 223,-1171 322.25,-1171 322.25,-1207"/>
+<text text-anchor="middle" x="272.62" y="-1184.33" font-family="Tahoma" font-size="14.00">[twitter / sbf]</text>
+</g>
+<!-- [twitter / sbf]&#45;&#45;maven -->
+<g id="edge14" class="edge">
+<title>[twitter / sbf]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M222.59,-1193.83C182.23,-1198.76 123.95,-1208.13 75.25,-1224.75 69.44,-1226.73 63.28,-1229.05 57.44,-1231.34"/>
+<text text-anchor="middle" x="81.62" y="-1227.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / netty&#45;http2] -->
+<g id="node21" class="node">
+<title>[twitter / netty&#45;http2]</title>
+<polygon fill="grey" stroke="white" points="346.62,-1153 198.62,-1153 198.62,-1117 346.62,-1117 346.62,-1153"/>
+<text text-anchor="middle" x="272.62" y="-1130.33" font-family="Tahoma" font-size="14.00">[twitter / netty&#45;http2]</text>
+</g>
+<!-- [twitter / netty&#45;http2]&#45;&#45;maven -->
+<g id="edge15" class="edge">
+<title>[twitter / netty&#45;http2]&#45;&#45;maven</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M198.25,-1136.75C168.24,-1140 134.05,-1147.11 106,-1162 78.18,-1176.78 54.82,-1205.57 41.52,-1224.55"/>
+<text text-anchor="middle" x="81.62" y="-1186.26" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / sqrl] -->
+<g id="node22" class="node">
+<title>[twitter / sqrl]</title>
+<polygon fill="grey" stroke="white" points="323.75,-684 221.5,-684 221.5,-648 323.75,-648 323.75,-684"/>
+<text text-anchor="middle" x="272.62" y="-661.33" font-family="Tahoma" font-size="14.00">[twitter / sqrl]</text>
+</g>
+<!-- [twitter / sqrl]&#45;&#45;npm -->
+<g id="edge16" class="edge">
+<title>[twitter / sqrl]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M221.01,-664.79C187.11,-662.31 142.22,-655.76 106,-639 82.14,-627.96 59.85,-607.33 45.59,-592.26"/>
+<text text-anchor="middle" x="81.62" y="-631.05" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- jest -->
+<g id="node33" class="node">
+<title>jest</title>
+<polygon fill="grey" stroke="white" points="55.62,-869 1.62,-869 1.62,-833 55.62,-833 55.62,-869"/>
+<text text-anchor="middle" x="28.62" y="-846.33" font-family="Tahoma" font-size="14.00">jest</text>
+</g>
+<!-- [twitter / sqrl]&#45;&#45;jest -->
+<g id="edge28" class="edge">
+<title>[twitter / sqrl]&#45;&#45;jest</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M221.33,-649.07C177.98,-637.91 116.12,-630.6 75.25,-662.75 48.49,-683.8 35.52,-789.34 31.26,-832.53"/>
+<text text-anchor="middle" x="81.62" y="-665.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / check&#45;my&#45;repo] -->
+<g id="node24" class="node">
+<title>[twitter / check&#45;my&#45;repo]</title>
+<polygon fill="grey" stroke="white" points="358.62,-576 186.62,-576 186.62,-540 358.62,-540 358.62,-576"/>
+<text text-anchor="middle" x="272.62" y="-553.33" font-family="Tahoma" font-size="14.00">[twitter / check&#45;my&#45;repo]</text>
+</g>
+<!-- [twitter / check&#45;my&#45;repo]&#45;&#45;npm -->
+<g id="edge17" class="edge">
+<title>[twitter / check&#45;my&#45;repo]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M186.38,-549.61C151.63,-548.11 111.24,-548.82 75.25,-555.75 68.72,-557.01 61.93,-559.19 55.65,-561.63"/>
+<text text-anchor="middle" x="81.62" y="-558.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / typeahead.js] -->
+<g id="node25" class="node">
+<title>[twitter / typeahead.js]</title>
+<polygon fill="grey" stroke="white" points="351.88,-522 193.38,-522 193.38,-486 351.88,-486 351.88,-522"/>
+<text text-anchor="middle" x="272.62" y="-499.32" font-family="Tahoma" font-size="14.00">[twitter / typeahead.js]</text>
+</g>
+<!-- [twitter / typeahead.js]&#45;&#45;npm -->
+<g id="edge18" class="edge">
+<title>[twitter / typeahead.js]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M193.31,-507.05C156.17,-510.87 112,-518.94 75.25,-535.75 64.72,-540.57 54.67,-548.49 46.7,-555.88"/>
+<text text-anchor="middle" x="81.62" y="-538.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / hogan.js] -->
+<g id="node26" class="node">
+<title>[twitter / hogan.js]</title>
+<polygon fill="grey" stroke="white" points="338.75,-468 206.5,-468 206.5,-432 338.75,-432 338.75,-468"/>
+<text text-anchor="middle" x="272.62" y="-445.32" font-family="Tahoma" font-size="14.00">[twitter / hogan.js]</text>
+</g>
+<!-- [twitter / hogan.js]&#45;&#45;npm -->
+<g id="edge19" class="edge">
+<title>[twitter / hogan.js]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M206.38,-450.14C174.35,-452.74 136.25,-459.77 106,-477 73.78,-495.35 50.23,-533.2 38.34,-555.81"/>
+<text text-anchor="middle" x="81.62" y="-502.77" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twemoji] -->
+<g id="node27" class="node">
+<title>[twitter / twemoji]</title>
+<polygon fill="grey" stroke="white" points="337.25,-414 208,-414 208,-378 337.25,-378 337.25,-414"/>
+<text text-anchor="middle" x="272.62" y="-391.32" font-family="Tahoma" font-size="14.00">[twitter / twemoji]</text>
+</g>
+<!-- [twitter / twemoji]&#45;&#45;npm -->
+<g id="edge20" class="edge">
+<title>[twitter / twemoji]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M207.68,-394.19C174.87,-396.13 135.67,-403.16 106,-423 59.48,-454.11 39.9,-522.53 32.93,-555.51"/>
+<text text-anchor="middle" x="81.62" y="-453.94" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twitter&#45;cldr&#45;npm] -->
+<g id="node28" class="node">
+<title>[twitter / twitter&#45;cldr&#45;npm]</title>
+<polygon fill="grey" stroke="white" points="362,-360 183.25,-360 183.25,-324 362,-324 362,-360"/>
+<text text-anchor="middle" x="272.62" y="-337.32" font-family="Tahoma" font-size="14.00">[twitter / twitter&#45;cldr&#45;npm]</text>
+</g>
+<!-- [twitter / twitter&#45;cldr&#45;npm]&#45;&#45;npm -->
+<g id="edge21" class="edge">
+<title>[twitter / twitter&#45;cldr&#45;npm]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M182.77,-342.12C156.21,-345.77 128.26,-353.56 106,-369 43.27,-412.51 31.96,-514.07 30,-555.7"/>
+<text text-anchor="middle" x="81.62" y="-399.99" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / labella.js] -->
+<g id="node29" class="node">
+<title>[twitter / labella.js]</title>
+<polygon fill="grey" stroke="white" points="339.5,-306 205.75,-306 205.75,-270 339.5,-270 339.5,-306"/>
+<text text-anchor="middle" x="272.62" y="-283.32" font-family="Tahoma" font-size="14.00">[twitter / labella.js]</text>
+</g>
+<!-- [twitter / labella.js]&#45;&#45;npm -->
+<g id="edge22" class="edge">
+<title>[twitter / labella.js]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M205.32,-285.8C172.83,-287.78 134.65,-294.96 106,-315 65.38,-343.41 39.75,-501.66 32.06,-555.82"/>
+<text text-anchor="middle" x="81.62" y="-363.75" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / dodo&#45;build] -->
+<g id="node30" class="node">
+<title>[twitter / dodo&#45;build]</title>
+<polygon fill="grey" stroke="white" points="344.75,-741 200.5,-741 200.5,-705 344.75,-705 344.75,-741"/>
+<text text-anchor="middle" x="272.62" y="-718.33" font-family="Tahoma" font-size="14.00">[twitter / dodo&#45;build]</text>
+</g>
+<!-- [twitter / dodo&#45;build]&#45;&#45;npm -->
+<g id="edge25" class="edge">
+<title>[twitter / dodo&#45;build]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M200.34,-725.48C158.69,-723.04 108.04,-712.79 75.25,-681 50.02,-656.54 38.01,-615.9 32.9,-592.37"/>
+<text text-anchor="middle" x="81.62" y="-694.17" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / dodo&#45;build]&#45;&#45;jest -->
+<g id="edge29" class="edge">
+<title>[twitter / dodo&#45;build]&#45;&#45;jest</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M200.2,-726.83C167.65,-732.12 130.92,-743.62 106,-768 85.8,-787.77 107.24,-808.29 88,-829 79.67,-837.97 67.32,-843.3 56.12,-846.47"/>
+<text text-anchor="middle" x="81.62" y="-841.11" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / SentenTree] -->
+<g id="node31" class="node">
+<title>[twitter / SentenTree]</title>
+<polygon fill="grey" stroke="white" points="347.38,-630 197.88,-630 197.88,-594 347.38,-594 347.38,-630"/>
+<text text-anchor="middle" x="272.62" y="-607.33" font-family="Tahoma" font-size="14.00">[twitter / SentenTree]</text>
+</g>
+<!-- [twitter / SentenTree]&#45;&#45;npm -->
+<g id="edge26" class="edge">
+<title>[twitter / SentenTree]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M197.7,-600.39C149.61,-592.84 89.76,-583.44 56.01,-578.14"/>
+<text text-anchor="middle" x="81.62" y="-585.06" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twemoji&#45;parser] -->
+<g id="node32" class="node">
+<title>[twitter / twemoji&#45;parser]</title>
+<polygon fill="grey" stroke="white" points="359.38,-813 185.88,-813 185.88,-777 359.38,-777 359.38,-813"/>
+<text text-anchor="middle" x="272.62" y="-790.33" font-family="Tahoma" font-size="14.00">[twitter / twemoji&#45;parser]</text>
+</g>
+<!-- [twitter / twemoji&#45;parser]&#45;&#45;npm -->
+<g id="edge27" class="edge">
+<title>[twitter / twemoji&#45;parser]&#45;&#45;npm</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M185.4,-782.69C158.39,-776.02 129.52,-765.76 106,-750 51.76,-713.66 35.81,-629.8 31.31,-592.48"/>
+<text text-anchor="middle" x="81.62" y="-736.39" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twemoji&#45;parser]&#45;&#45;jest -->
+<g id="edge30" class="edge">
+<title>[twitter / twemoji&#45;parser]&#45;&#45;jest</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M185.51,-799.29C157.9,-804.24 128.64,-813.61 106,-831 92.13,-841.65 102.93,-856.89 88,-866 78.35,-871.89 66.46,-870.14 55.93,-866.15"/>
+<text text-anchor="middle" x="81.62" y="-872.55" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / ios&#45;twitter&#45;image&#45;pipeline] -->
+<g id="node34" class="node">
+<title>[twitter / ios&#45;twitter&#45;image&#45;pipeline]</title>
+<polygon fill="grey" stroke="white" points="390.5,-2557 154.75,-2557 154.75,-2521 390.5,-2521 390.5,-2557"/>
+<text text-anchor="middle" x="272.62" y="-2534.32" font-family="Tahoma" font-size="14.00">[twitter / ios&#45;twitter&#45;image&#45;pipeline]</text>
+</g>
+<!-- gradle -->
+<g id="node35" class="node">
+<title>gradle</title>
+<polygon fill="grey" stroke="white" points="55.62,-2503 1.62,-2503 1.62,-2467 55.62,-2467 55.62,-2503"/>
+<text text-anchor="middle" x="28.62" y="-2480.32" font-family="Tahoma" font-size="14.00">gradle</text>
+</g>
+<!-- [twitter / ios&#45;twitter&#45;image&#45;pipeline]&#45;&#45;gradle -->
+<g id="edge31" class="edge">
+<title>[twitter / ios&#45;twitter&#45;image&#45;pipeline]&#45;&#45;gradle</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M154.37,-2523.41C127.96,-2518.27 100.33,-2511.6 75.25,-2503 68.97,-2500.85 62.28,-2498.33 56.01,-2495.88"/>
+<text text-anchor="middle" x="81.62" y="-2509.2" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / compose&#45;rules] -->
+<g id="node36" class="node">
+<title>[twitter / compose&#45;rules]</title>
+<polygon fill="grey" stroke="white" points="357.5,-2503 187.75,-2503 187.75,-2467 357.5,-2467 357.5,-2503"/>
+<text text-anchor="middle" x="272.62" y="-2480.32" font-family="Tahoma" font-size="14.00">[twitter / compose&#45;rules]</text>
+</g>
+<!-- [twitter / compose&#45;rules]&#45;&#45;gradle -->
+<g id="edge32" class="edge">
+<title>[twitter / compose&#45;rules]&#45;&#45;gradle</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M187.32,-2485C141.22,-2485 87.26,-2485 55.91,-2485"/>
+<text text-anchor="middle" x="81.62" y="-2487.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / Serial] -->
+<g id="node37" class="node">
+<title>[twitter / Serial]</title>
+<polygon fill="grey" stroke="white" points="329.75,-2449 215.5,-2449 215.5,-2413 329.75,-2413 329.75,-2449"/>
+<text text-anchor="middle" x="272.62" y="-2426.32" font-family="Tahoma" font-size="14.00">[twitter / Serial]</text>
+</g>
+<!-- [twitter / Serial]&#45;&#45;gradle -->
+<g id="edge33" class="edge">
+<title>[twitter / Serial]&#45;&#45;gradle</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M215.06,-2436.77C175.2,-2441.92 121,-2451.14 75.25,-2466.75 68.95,-2468.9 62.26,-2471.43 55.99,-2473.92"/>
+<text text-anchor="middle" x="81.62" y="-2469.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / finagle] -->
+<g id="node38" class="node">
+<title>[twitter / finagle]</title>
+<polygon fill="grey" stroke="white" points="333.12,-1963 212.12,-1963 212.12,-1927 333.12,-1927 333.12,-1963"/>
+<text text-anchor="middle" x="272.62" y="-1940.33" font-family="Tahoma" font-size="14.00">[twitter / finagle]</text>
+</g>
+<!-- [twitter / finagle]&#45;&#45;sbt -->
+<g id="edge34" class="edge">
+<title>[twitter / finagle]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M211.7,-1948.7C172.7,-1951.53 120.81,-1956.09 75.25,-1962.75 69.01,-1963.66 62.34,-1964.88 56.08,-1966.12"/>
+<text text-anchor="middle" x="81.62" y="-1965.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / scalding] -->
+<g id="node40" class="node">
+<title>[twitter / scalding]</title>
+<polygon fill="grey" stroke="white" points="337.25,-1909 208,-1909 208,-1873 337.25,-1873 337.25,-1909"/>
+<text text-anchor="middle" x="272.62" y="-1886.33" font-family="Tahoma" font-size="14.00">[twitter / scalding]</text>
+</g>
+<!-- [twitter / scalding]&#45;&#45;sbt -->
+<g id="edge35" class="edge">
+<title>[twitter / scalding]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M207.66,-1894.64C176.13,-1898.11 138.09,-1904.87 106,-1918 85.26,-1926.49 64.69,-1941.52 50.13,-1953.57"/>
+<text text-anchor="middle" x="81.62" y="-1936.63" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / bijection] -->
+<g id="node41" class="node">
+<title>[twitter / bijection]</title>
+<polygon fill="grey" stroke="white" points="338.38,-1855 206.88,-1855 206.88,-1819 338.38,-1819 338.38,-1855"/>
+<text text-anchor="middle" x="272.62" y="-1832.33" font-family="Tahoma" font-size="14.00">[twitter / bijection]</text>
+</g>
+<!-- [twitter / bijection]&#45;&#45;sbt -->
+<g id="edge36" class="edge">
+<title>[twitter / bijection]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M206.57,-1836.05C174.21,-1838.33 135.77,-1845.4 106,-1864 71.53,-1885.54 48.21,-1928.92 37.11,-1953.65"/>
+<text text-anchor="middle" x="81.62" y="-1892.74" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / util] -->
+<g id="node42" class="node">
+<title>[twitter / util]</title>
+<polygon fill="grey" stroke="white" points="321.88,-1801 223.38,-1801 223.38,-1765 321.88,-1765 321.88,-1801"/>
+<text text-anchor="middle" x="272.62" y="-1778.33" font-family="Tahoma" font-size="14.00">[twitter / util]</text>
+</g>
+<!-- [twitter / util]&#45;&#45;sbt -->
+<g id="edge38" class="edge">
+<title>[twitter / util]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M223.11,-1780.52C187.83,-1781.04 140.41,-1786.77 106,-1810 56.13,-1843.67 38.02,-1918.99 32.14,-1953.77"/>
+<text text-anchor="middle" x="81.62" y="-1842.88" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / algebird] -->
+<g id="node43" class="node">
+<title>[twitter / algebird]</title>
+<polygon fill="grey" stroke="white" points="337.25,-1747 208,-1747 208,-1711 337.25,-1711 337.25,-1747"/>
+<text text-anchor="middle" x="272.62" y="-1724.33" font-family="Tahoma" font-size="14.00">[twitter / algebird]</text>
+</g>
+<!-- [twitter / algebird]&#45;&#45;sbt -->
+<g id="edge40" class="edge">
+<title>[twitter / algebird]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M207.61,-1727.08C174.77,-1728.99 135.58,-1736.03 106,-1756 39.24,-1801.07 30.31,-1909.99 29.49,-1953.55"/>
+<text text-anchor="middle" x="81.62" y="-1788.06" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / stitch] -->
+<g id="node44" class="node">
+<title>[twitter / stitch]</title>
+<polygon fill="grey" stroke="white" points="329,-1693 216.25,-1693 216.25,-1657 329,-1657 329,-1693"/>
+<text text-anchor="middle" x="272.62" y="-1670.33" font-family="Tahoma" font-size="14.00">[twitter / stitch]</text>
+</g>
+<!-- [twitter / stitch]&#45;&#45;sbt -->
+<g id="edge41" class="edge">
+<title>[twitter / stitch]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M215.9,-1672.69C181.56,-1673.88 138.11,-1680.32 106,-1702 63.1,-1730.96 38.8,-1897.88 31.78,-1953.77"/>
+<text text-anchor="middle" x="81.62" y="-1752.31" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / scala_school2] -->
+<g id="node45" class="node">
+<title>[twitter / scala_school2]</title>
+<polygon fill="grey" stroke="white" points="354.88,-2395 190.38,-2395 190.38,-2359 354.88,-2359 354.88,-2395"/>
+<text text-anchor="middle" x="272.62" y="-2372.32" font-family="Tahoma" font-size="14.00">[twitter / scala_school2]</text>
+</g>
+<!-- [twitter / scala_school2]&#45;&#45;sbt -->
+<g id="edge42" class="edge">
+<title>[twitter / scala_school2]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M189.94,-2378.52C161.12,-2375.43 129.96,-2367.57 106,-2350 46.75,-2306.55 32.95,-2059.71 30.23,-1990.21"/>
+<text text-anchor="middle" x="81.62" y="-2329.95" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / finatra] -->
+<g id="node46" class="node">
+<title>[twitter / finatra]</title>
+<polygon fill="grey" stroke="white" points="332.38,-2341 212.88,-2341 212.88,-2305 332.38,-2305 332.38,-2341"/>
+<text text-anchor="middle" x="272.62" y="-2318.32" font-family="Tahoma" font-size="14.00">[twitter / finatra]</text>
+</g>
+<!-- [twitter / finatra]&#45;&#45;sbt -->
+<g id="edge43" class="edge">
+<title>[twitter / finatra]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M212.55,-2326.08C178.45,-2324.96 136.42,-2318.31 106,-2296 55.55,-2259.01 35.81,-2052.85 30.92,-1990.12"/>
+<text text-anchor="middle" x="81.62" y="-2273.78" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / rsc] -->
+<g id="node47" class="node">
+<title>[twitter / rsc]</title>
+<polygon fill="grey" stroke="white" points="321.88,-2287 223.38,-2287 223.38,-2251 321.88,-2251 321.88,-2287"/>
+<text text-anchor="middle" x="272.62" y="-2264.32" font-family="Tahoma" font-size="14.00">[twitter / rsc]</text>
+</g>
+<!-- [twitter / rsc]&#45;&#45;sbt -->
+<g id="edge44" class="edge">
+<title>[twitter / rsc]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M223.1,-2271.5C187.81,-2271 140.38,-2265.27 106,-2242 63.13,-2212.99 38.81,-2046.1 31.78,-1990.23"/>
+<text text-anchor="middle" x="81.62" y="-2219.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / bazel&#45;multiversion] -->
+<g id="node48" class="node">
+<title>[twitter / bazel&#45;multiversion]</title>
+<polygon fill="grey" stroke="white" points="368,-2233 177.25,-2233 177.25,-2197 368,-2197 368,-2233"/>
+<text text-anchor="middle" x="272.62" y="-2210.32" font-family="Tahoma" font-size="14.00">[twitter / bazel&#45;multiversion]</text>
+</g>
+<!-- [twitter / bazel&#45;multiversion]&#45;&#45;sbt -->
+<g id="edge45" class="edge">
+<title>[twitter / bazel&#45;multiversion]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M176.97,-2213.67C152.25,-2209.7 126.75,-2202.04 106,-2188 39.29,-2142.86 30.33,-2033.98 29.5,-1990.44"/>
+<text text-anchor="middle" x="81.62" y="-2175.33" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / storehaus] -->
+<g id="node49" class="node">
+<title>[twitter / storehaus]</title>
+<polygon fill="grey" stroke="white" points="342.5,-2179 202.75,-2179 202.75,-2143 342.5,-2143 342.5,-2179"/>
+<text text-anchor="middle" x="272.62" y="-2156.32" font-family="Tahoma" font-size="14.00">[twitter / storehaus]</text>
+</g>
+<!-- [twitter / storehaus]&#45;&#45;sbt -->
+<g id="edge46" class="edge">
+<title>[twitter / storehaus]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M202.31,-2162.6C170.62,-2160.26 133.99,-2152.94 106,-2134 56.3,-2100.37 38.13,-2025.37 32.19,-1990.49"/>
+<text text-anchor="middle" x="81.62" y="-2121.47" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / twitter&#45;server] -->
+<g id="node50" class="node">
+<title>[twitter / twitter&#45;server]</title>
+<polygon fill="grey" stroke="white" points="354.12,-2125 191.12,-2125 191.12,-2089 354.12,-2089 354.12,-2125"/>
+<text text-anchor="middle" x="272.62" y="-2102.32" font-family="Tahoma" font-size="14.00">[twitter / twitter&#45;server]</text>
+</g>
+<!-- [twitter / twitter&#45;server]&#45;&#45;sbt -->
+<g id="edge47" class="edge">
+<title>[twitter / twitter&#45;server]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M190.87,-2106.49C162.31,-2103.16 131.08,-2095.67 106,-2080 71.53,-2058.46 48.21,-2015.08 37.11,-1990.35"/>
+<text text-anchor="middle" x="81.62" y="-2067.42" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / tormenta] -->
+<g id="node51" class="node">
+<title>[twitter / tormenta]</title>
+<polygon fill="grey" stroke="white" points="341,-2071 204.25,-2071 204.25,-2035 341,-2035 341,-2071"/>
+<text text-anchor="middle" x="272.62" y="-2048.32" font-family="Tahoma" font-size="14.00">[twitter / tormenta]</text>
+</g>
+<!-- [twitter / tormenta]&#45;&#45;sbt -->
+<g id="edge48" class="edge">
+<title>[twitter / tormenta]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M204.06,-2048.95C173.26,-2045.37 136.87,-2038.64 106,-2026 85.26,-2017.51 64.69,-2002.48 50.13,-1990.43"/>
+<text text-anchor="middle" x="81.62" y="-2019.81" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- [twitter / chill] -->
+<g id="node52" class="node">
+<title>[twitter / chill]</title>
+<polygon fill="grey" stroke="white" points="324.5,-2017 220.75,-2017 220.75,-1981 324.5,-1981 324.5,-2017"/>
+<text text-anchor="middle" x="272.62" y="-1994.33" font-family="Tahoma" font-size="14.00">[twitter / chill]</text>
+</g>
+<!-- [twitter / chill]&#45;&#45;sbt -->
+<g id="edge49" class="edge">
+<title>[twitter / chill]&#45;&#45;sbt</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M220.3,-1993.27C169.94,-1987.65 95.14,-1979.31 55.88,-1974.93"/>
+<text text-anchor="middle" x="81.62" y="-1980.68" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+</g>
+</svg>

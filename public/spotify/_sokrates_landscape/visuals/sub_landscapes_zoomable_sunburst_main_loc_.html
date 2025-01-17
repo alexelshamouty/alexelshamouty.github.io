@@ -1,0 +1,700 @@
+<head>
+    <style>
+        body {
+            font-family: Sans-serif;
+            font-size: 11px;
+        }
+
+        .slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+    </style>
+
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+</head>
+<body>
+<script>
+    const width = window.innerWidth,
+        height = window.innerHeight,
+        maxRadius = (Math.min(width, height) / 2) - 5;
+
+    const formatNumber = d3.format(',d');
+
+    const x = d3.scaleLinear()
+        .range([0, 2 * Math.PI])
+        .clamp(true);
+
+    const y = d3.scaleSqrt()
+        .range([maxRadius * .1, maxRadius]);
+
+    const color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    const partition = d3.partition();
+
+    const arc = d3.arc()
+        .startAngle(d => x(d.x0))
+        .endAngle(d => x(d.x1))
+        .innerRadius(d => Math.max(0, y(d.y0)))
+        .outerRadius(d => Math.max(0, y(d.y1)));
+
+    const middleArcLine = d => {
+        const halfPi = Math.PI / 2;
+        const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+        const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+
+        const middleAngle = (angles[1] + angles[0]) / 2;
+        const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+        if (invertDirection) {
+            angles.reverse();
+        }
+
+        const path = d3.path();
+        path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+        return path.toString();
+    };
+
+    const textFits = d => {
+        const CHAR_SPACE = 6;
+
+        const deltaAngle = x(d.x1) - x(d.x0);
+        const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+        const perimeter = r * deltaAngle;
+
+        return d.data.name.length * CHAR_SPACE < perimeter;
+    };
+
+    const svg = d3.select('body').append('svg')
+        .style('width', '100vw')
+        .style('height', '100vh')
+        .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+        .on('click', () => focusOn()); // Reset zoom on canvas click
+
+    var rootData = {
+        "name": "",
+        "children": [ {
+  "name" : "flink (662K)",
+  "color" : "",
+  "size" : 661539,
+  "children" : [ ]
+}, {
+  "name" : "beam (498K)",
+  "color" : "",
+  "size" : 497850,
+  "children" : [ ]
+}, {
+  "name" : "robolectric (86K)",
+  "color" : "",
+  "size" : 86255,
+  "children" : [ ]
+}, {
+  "name" : "volcano (82K)",
+  "color" : "",
+  "size" : 82014,
+  "children" : [ ]
+}, {
+  "name" : "scio (56K)",
+  "color" : "",
+  "size" : 55709,
+  "children" : [ ]
+}, {
+  "name" : "DataflowJavaSDK (51K)",
+  "color" : "",
+  "size" : 51322,
+  "children" : [ ]
+}, {
+  "name" : "tfx (43K)",
+  "color" : "",
+  "size" : 43256,
+  "children" : [ ]
+}, {
+  "name" : "flink-on-k8s-operator (27K)",
+  "color" : "",
+  "size" : 27422,
+  "children" : [ ]
+}, {
+  "name" : "lemur (23K)",
+  "color" : "",
+  "size" : 23294,
+  "children" : [ ]
+}, {
+  "name" : "pedalboard (20K)",
+  "color" : "",
+  "size" : 20471,
+  "children" : [ ]
+}, {
+  "name" : "luigi (20K)",
+  "color" : "",
+  "size" : 19999,
+  "children" : [ ]
+}, {
+  "name" : "google-http-java-client (13K)",
+  "color" : "",
+  "size" : 13429,
+  "children" : [ ]
+}, {
+  "name" : "klio (13K)",
+  "color" : "",
+  "size" : 12585,
+  "children" : [ ]
+}, {
+  "name" : "XCRemoteCache (9.8K)",
+  "color" : "",
+  "size" : 9786,
+  "children" : [ ]
+}, {
+  "name" : "XCMetrics (7.8K)",
+  "color" : "",
+  "size" : 7825,
+  "children" : [ ]
+}, {
+  "name" : "reactochart (7.3K)",
+  "color" : "",
+  "size" : 7318,
+  "children" : [ ]
+}, {
+  "name" : "folsom (7.1K)",
+  "color" : "",
+  "size" : 7143,
+  "children" : [ ]
+}, {
+  "name" : "voyager (6.9K)",
+  "color" : "",
+  "size" : 6895,
+  "children" : [ ]
+}, {
+  "name" : "magnolify (5.8K)",
+  "color" : "",
+  "size" : 5817,
+  "children" : [ ]
+}, {
+  "name" : "ratatool (5.7K)",
+  "color" : "",
+  "size" : 5708,
+  "children" : [ ]
+}, {
+  "name" : "github-java-client (5.4K)",
+  "color" : "",
+  "size" : 5434,
+  "children" : [ ]
+}, {
+  "name" : "confidence (5.2K)",
+  "color" : "",
+  "size" : 5197,
+  "children" : [ ]
+}, {
+  "name" : "mobius (5.2K)",
+  "color" : "",
+  "size" : 5188,
+  "children" : [ ]
+}, {
+  "name" : "sparkey (5.1K)",
+  "color" : "",
+  "size" : 5103,
+  "children" : [ ]
+}, {
+  "name" : "featran (4.9K)",
+  "color" : "",
+  "size" : 4866,
+  "children" : [ ]
+}, {
+  "name" : "chartify (4.3K)",
+  "color" : "",
+  "size" : 4345,
+  "children" : [ ]
+}, {
+  "name" : "spotify-json (4.3K)",
+  "color" : "",
+  "size" : 4303,
+  "children" : [ ]
+}, {
+  "name" : "sparkey-java (4.3K)",
+  "color" : "",
+  "size" : 4273,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-swift (3.8K)",
+  "color" : "",
+  "size" : 3779,
+  "children" : [ ]
+}, {
+  "name" : "basic-pitch (3.6K)",
+  "color" : "",
+  "size" : 3578,
+  "children" : [ ]
+}, {
+  "name" : "mobius-android-sample (3.5K)",
+  "color" : "",
+  "size" : 3513,
+  "children" : [ ]
+}, {
+  "name" : "ruler (3.4K)",
+  "color" : "",
+  "size" : 3420,
+  "children" : [ ]
+}, {
+  "name" : "semantic-metrics (3.4K)",
+  "color" : "",
+  "size" : 3352,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-android (3.2K)",
+  "color" : "",
+  "size" : 3195,
+  "children" : [ ]
+}, {
+  "name" : "SPTDataLoader (3.1K)",
+  "color" : "",
+  "size" : 3106,
+  "children" : [ ]
+}, {
+  "name" : "android-auth (3K)",
+  "color" : "",
+  "size" : 2980,
+  "children" : [ ]
+}, {
+  "name" : "cartography (3K)",
+  "color" : "",
+  "size" : 2965,
+  "children" : [ ]
+}, {
+  "name" : "vispana (3K)",
+  "color" : "",
+  "size" : 2951,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-js (2.9K)",
+  "color" : "",
+  "size" : 2943,
+  "children" : [ ]
+}, {
+  "name" : "annoy (2.8K)",
+  "color" : "",
+  "size" : 2824,
+  "children" : [ ]
+}, {
+  "name" : "elitzur (2.8K)",
+  "color" : "",
+  "size" : 2814,
+  "children" : [ ]
+}, {
+  "name" : "s3mper (2.8K)",
+  "color" : "",
+  "size" : 2781,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-java (2.6K)",
+  "color" : "",
+  "size" : 2608,
+  "children" : [ ]
+}, {
+  "name" : "ios-sdk (2.5K)",
+  "color" : "",
+  "size" : 2466,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-rust (2.4K)",
+  "color" : "",
+  "size" : 2431,
+  "children" : [ ]
+}, {
+  "name" : "Mobius.swift (2.4K)",
+  "color" : "",
+  "size" : 2375,
+  "children" : [ ]
+}, {
+  "name" : "dbeam (2.4K)",
+  "color" : "",
+  "size" : 2365,
+  "children" : [ ]
+}, {
+  "name" : "android-sdk (2.3K)",
+  "color" : "",
+  "size" : 2253,
+  "children" : [ ]
+}, {
+  "name" : "SPTPersistentCache (2.2K)",
+  "color" : "",
+  "size" : 2229,
+  "children" : [ ]
+}, {
+  "name" : "proto-registry (2K)",
+  "color" : "",
+  "size" : 2046,
+  "children" : [ ]
+}, {
+  "name" : "async-google-pubsub-client (2K)",
+  "color" : "",
+  "size" : 2030,
+  "children" : [ ]
+}, {
+  "name" : "soa-reference-integration (2K)",
+  "color" : "",
+  "size" : 1999,
+  "children" : [ ]
+}, {
+  "name" : "Vandelay (2K)",
+  "color" : "",
+  "size" : 1993,
+  "children" : [ ]
+}, {
+  "name" : "spotify-web-api-ts-sdk (2K)",
+  "color" : "",
+  "size" : 1975,
+  "children" : [ ]
+}, {
+  "name" : "missinglink (1.9K)",
+  "color" : "",
+  "size" : 1884,
+  "children" : [ ]
+}, {
+  "name" : "cstar (1.8K)",
+  "color" : "",
+  "size" : 1843,
+  "children" : [ ]
+}, {
+  "name" : "tfreader (1.7K)",
+  "color" : "",
+  "size" : 1749,
+  "children" : [ ]
+}, {
+  "name" : "dataenum (1.7K)",
+  "color" : "",
+  "size" : 1685,
+  "children" : [ ]
+}, {
+  "name" : "soundcheck-demo-environment (1.6K)",
+  "color" : "",
+  "size" : 1586,
+  "children" : [ ]
+}, {
+  "name" : "okta-sdk-python (1.5K)",
+  "color" : "",
+  "size" : 1461,
+  "children" : [ ]
+}, {
+  "name" : "simple-bigtable (1.4K)",
+  "color" : "",
+  "size" : 1435,
+  "children" : [ ]
+}, {
+  "name" : "java-hamcrest (1.4K)",
+  "color" : "",
+  "size" : 1407,
+  "children" : [ ]
+}, {
+  "name" : "web-scripts (1.4K)",
+  "color" : "",
+  "size" : 1375,
+  "children" : [ ]
+}, {
+  "name" : "big-data-rosetta-code (1.3K)",
+  "color" : "",
+  "size" : 1289,
+  "children" : [ ]
+}, {
+  "name" : "realbook (1.3K)",
+  "color" : "",
+  "size" : 1282,
+  "children" : [ ]
+}, {
+  "name" : "spotify-tensorflow (1.1K)",
+  "color" : "",
+  "size" : 1150,
+  "children" : [ ]
+}, {
+  "name" : "futures-extra (1.1K)",
+  "color" : "",
+  "size" : 1051,
+  "children" : [ ]
+}, {
+  "name" : "java-locales (1K)",
+  "color" : "",
+  "size" : 1045,
+  "children" : [ ]
+}, {
+  "name" : "ffwd-client-java (1K)",
+  "color" : "",
+  "size" : 1026,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-go (952)",
+  "color" : "",
+  "size" : 952,
+  "children" : [ ]
+}, {
+  "name" : "flyte-flink-plugin (949)",
+  "color" : "",
+  "size" : 949,
+  "children" : [ ]
+}, {
+  "name" : "pythonflow (943)",
+  "color" : "",
+  "size" : 943,
+  "children" : [ ]
+}, {
+  "name" : "postgresql-metrics (936)",
+  "color" : "",
+  "size" : 936,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-flutter (920)",
+  "color" : "",
+  "size" : 920,
+  "children" : [ ]
+}, {
+  "name" : "lighthouse-audit-service (876)",
+  "color" : "",
+  "size" : 876,
+  "children" : [ ]
+}, {
+  "name" : "logging-java (861)",
+  "color" : "",
+  "size" : 861,
+  "children" : [ ]
+}, {
+  "name" : "fmt-maven-plugin (832)",
+  "color" : "",
+  "size" : 832,
+  "children" : [ ]
+}, {
+  "name" : "diffuser (831)",
+  "color" : "",
+  "size" : 831,
+  "children" : [ ]
+}, {
+  "name" : "dh-virtualenv (815)",
+  "color" : "",
+  "size" : 815,
+  "children" : [ ]
+}, {
+  "name" : "web-api-examples (757)",
+  "color" : "",
+  "size" : 757,
+  "children" : [ ]
+}, {
+  "name" : "basic-pitch-ts (720)",
+  "color" : "",
+  "size" : 720,
+  "children" : [ ]
+}, {
+  "name" : "ffwd-http-client (677)",
+  "color" : "",
+  "size" : 677,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-python (672)",
+  "color" : "",
+  "size" : 672,
+  "children" : [ ]
+}, {
+  "name" : "gcs-tools (636)",
+  "color" : "",
+  "size" : 636,
+  "children" : [ ]
+}, {
+  "name" : "futuristic-feline (626)",
+  "color" : "",
+  "size" : 626,
+  "children" : [ ]
+}, {
+  "name" : "heroic-client-java (621)",
+  "color" : "",
+  "size" : 621,
+  "children" : [ ]
+}, {
+  "name" : "spotify.github.io (540)",
+  "color" : "",
+  "size" : 540,
+  "children" : [ ]
+}, {
+  "name" : "completable-futures (527)",
+  "color" : "",
+  "size" : 527,
+  "children" : [ ]
+}, {
+  "name" : "container-agent (494)",
+  "color" : "",
+  "size" : 494,
+  "children" : [ ]
+}, {
+  "name" : "cookiecutter-golang (491)",
+  "color" : "",
+  "size" : 491,
+  "children" : [ ]
+}, {
+  "name" : "scio-idea-plugin (416)",
+  "color" : "",
+  "size" : 416,
+  "children" : [ ]
+}, {
+  "name" : "sparkey-python (409)",
+  "color" : "",
+  "size" : 409,
+  "children" : [ ]
+}, {
+  "name" : "spotify-web-playback-sdk-example (325)",
+  "color" : "",
+  "size" : 325,
+  "children" : [ ]
+}, {
+  "name" : "ulogger (294)",
+  "color" : "",
+  "size" : 294,
+  "children" : [ ]
+}, {
+  "name" : "terraform-google-aws-hybrid-cloud-vpn (258)",
+  "color" : "",
+  "size" : 258,
+  "children" : [ ]
+}, {
+  "name" : "dockerfile-mode (248)",
+  "color" : "",
+  "size" : 248,
+  "children" : [ ]
+}, {
+  "name" : "perf-map-agent (232)",
+  "color" : "",
+  "size" : 232,
+  "children" : [ ]
+}, {
+  "name" : "shumway (227)",
+  "color" : "",
+  "size" : 227,
+  "children" : [ ]
+}, {
+  "name" : "should-up (225)",
+  "color" : "",
+  "size" : 225,
+  "children" : [ ]
+}, {
+  "name" : "scio.g8 (223)",
+  "color" : "",
+  "size" : 223,
+  "children" : [ ]
+}, {
+  "name" : "testing-game (216)",
+  "color" : "",
+  "size" : 216,
+  "children" : [ ]
+}, {
+  "name" : "homebrew-public (214)",
+  "color" : "",
+  "size" : 214,
+  "children" : [ ]
+}, {
+  "name" : "gcp-aws-iam-federation-webidentity (200)",
+  "color" : "",
+  "size" : 200,
+  "children" : [ ]
+}, {
+  "name" : "ios-auth (195)",
+  "color" : "",
+  "size" : 195,
+  "children" : [ ]
+}, {
+  "name" : "conversion-api-tag-template (16)",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+} ]
+    }
+
+
+    root = d3.hierarchy(rootData);
+    root.sum(d => d.size);
+
+    const slice = svg.selectAll('g.slice')
+        .data(partition(root).descendants());
+
+    slice.exit().remove();
+
+    const newSlice = slice.enter()
+        .append('g').attr('class', 'slice')
+        .on('click', d => {
+            d3.event.stopPropagation();
+            focusOn(d);
+        });
+
+    newSlice.append('title')
+        .text(d => d.data.name + '\n' + formatNumber(d.value));
+
+    newSlice.append('path')
+        .attr('class', 'main-arc')
+        .style('fill', d => color((d.children ? d : d.parent).data.name))
+        .attr('d', arc);
+
+    newSlice.append('path')
+        .attr('class', 'hidden-arc')
+        .attr('id', (_, i) => `hiddenArc${i}`)
+        .attr('d', middleArcLine);
+
+    const text = newSlice.append('text')
+        .attr('display', d => textFits(d) ? null : 'none');
+
+    // Add white contour
+    text.append('textPath')
+        .attr('startOffset', '50%')
+        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+        .text(d => d.data.name)
+        .style('fill', 'none')
+        .style('stroke', '#fff')
+        .style('stroke-width', 5)
+        .style('stroke-linejoin', 'round');
+
+    text.append('textPath')
+        .attr('startOffset', '50%')
+        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+        .text(d => d.data.name);
+
+    function focusOn(d = {x0: 0, x1: 1, y0: 0, y1: 1}) {
+        const transition = svg.transition()
+            .duration(750)
+            .tween('scale', () => {
+                const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                    yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                return t => {
+                    x.domain(xd(t));
+                    y.domain(yd(t));
+                };
+            });
+
+        transition.selectAll('path.main-arc')
+            .attrTween('d', d => () => arc(d));
+
+        transition.selectAll('path.hidden-arc')
+            .attrTween('d', d => () => middleArcLine(d));
+
+        transition.selectAll('text')
+            .attrTween('display', d => () => textFits(d) ? null : 'none');
+
+        moveStackToFront(d);
+
+        //
+
+        function moveStackToFront(elD) {
+            svg.selectAll('.slice').filter(d => d === elD)
+                .each(function (d) {
+                    this.parentNode.appendChild(this);
+                    if (d.parent) {
+                        moveStackToFront(d.parent);
+                    }
+                })
+        }
+    }
+</script>
+</body>

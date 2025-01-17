@@ -1,0 +1,316 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[DeloitteAU / Atlas]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / stylelint-config-deloitte]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / DDBreakpoints]",
+    "size" : 1
+  }, {
+    "id" : "js",
+    "size" : 10
+  }, {
+    "id" : "py",
+    "size" : 2
+  }, {
+    "id" : "[DeloitteAU / webpack-config]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / DecimalFormat]",
+    "size" : 1
+  }, {
+    "id" : "xml",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / react-habitat-redux]",
+    "size" : 1
+  }, {
+    "id" : "tsx",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / dd-detekt-rules]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / eslint-config-deloitte]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / ddmock-ios]",
+    "size" : 1
+  }, {
+    "id" : "swift",
+    "size" : 4
+  }, {
+    "id" : "[DeloitteAU / thephuong-flask]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / schematik-forms]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / Dimmy.Sitecore.Plugin]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / ddrouter]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / rhythm-ui]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / SSReader]",
+    "size" : 1
+  }, {
+    "id" : "kt",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / Charts]",
+    "size" : 1
+  }, {
+    "id" : "cs",
+    "size" : 2
+  }, {
+    "id" : "[DeloitteAU / dd-breakpoint-container]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / ripple-social-channels]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / react-habitat]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / ddmock-android]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / dd-swiftlint-rules]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / htl-parser]",
+    "size" : 1
+  }, {
+    "id" : "[DeloitteAU / qd-satis]",
+    "size" : 1
+  }, {
+    "id" : "php",
+    "size" : 1
+  }, {
+    "id" : "ts",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "[DeloitteAU / ddmock-ios]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[DeloitteAU / ddmock-ios]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / ddrouter]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[DeloitteAU / ddrouter]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / Charts]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[DeloitteAU / Charts]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / dd-swiftlint-rules]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[DeloitteAU / dd-swiftlint-rules]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / react-habitat-redux]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / react-habitat-redux]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / ripple-social-channels]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / ripple-social-channels]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / eslint-config-deloitte]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / eslint-config-deloitte]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / react-habitat]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / react-habitat]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / webpack-config]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / webpack-config]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / htl-parser]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / htl-parser]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / stylelint-config-deloitte]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / stylelint-config-deloitte]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / DecimalFormat]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / DecimalFormat]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / schematik-forms]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / schematik-forms]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / DDBreakpoints]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[DeloitteAU / DDBreakpoints]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / Dimmy.Sitecore.Plugin]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[DeloitteAU / Dimmy.Sitecore.Plugin]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / Atlas]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[DeloitteAU / Atlas]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / rhythm-ui]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[DeloitteAU / rhythm-ui]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / dd-breakpoint-container]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[DeloitteAU / dd-breakpoint-container]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / dd-detekt-rules]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[DeloitteAU / dd-detekt-rules]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / ddmock-android]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[DeloitteAU / ddmock-android]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / thephuong-flask]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[DeloitteAU / thephuong-flask]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / SSReader]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[DeloitteAU / SSReader]",
+    "count" : 1
+  }, {
+    "source" : "[DeloitteAU / qd-satis]",
+    "target" : "php",
+    "count" : 1
+  }, {
+    "source" : "php",
+    "target" : "[DeloitteAU / qd-satis]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

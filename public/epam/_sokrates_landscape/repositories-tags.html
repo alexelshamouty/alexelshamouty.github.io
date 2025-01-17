@@ -1,0 +1,3142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+
+<div style="position: absolute; left: 1px">
+<table>
+<th>Tag</th>
+<th># repositories</th>
+<th>LOC<br>(main)</th>
+<th>LOC<br>(test)</th>
+<th>LOC<br>(active)</th>
+<th>LOC<br>(new)</th>
+<th># commits<br>(30 days)</th>
+<th># contributors<br>(30 days)</th>
+<p>2 groups (6 tags):</p>
+<ul>
+<li><a href='#tag_group_1'><b>build and dependencies management tools</b></a> (5)</li>
+<li><a href='#tag_group_2'><b>tech</b></a> (1)</li>
+</ul>
+<br/>
+<tr>
+<td colspan='8' style=''>
+<a name="tag_group_1"></a>
+<div style="border-radius: 9px; padding: 6px; margin-top: 16px; border: 1px solid lightgrey; background-color: #B9D9EB">
+build and dependencies management tools (5)
+<div style="margin: 5px; font-size: 80%">
+<div style="">
+<b>184 repositories</b>, <b><b>3.3</b>M</b> lines of main code, <b><b>3.5</b>M</b> lines of other code
+</div>
+</div>
+<div style="margin: 5px; font-size: 80%">
+tag dependencies: 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_force_3d.html'>3D graph (via repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_direct_force_3d.html'>3D graph (excluding repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1.svg'>2D graph (via repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_direct.svg'>2D graph (excluding repositories)</a>
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_direct.svg'>2D graph (excluding repositories)</a>
+</div>
+</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)pom[.]xml
+">
+<img title='maven' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/maven.png"><div style='vertical-align: middle; display: inline-block;'>maven</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_8');")><b>87</b> repositories <span style='color: grey; font-size: 90%'>(29%)</span></a><span id="showMoreBlock_8" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../acuity/html/index.html' target='_blank' style='margin-left: 6px'>epam / acuity</a> <span color='lightgrey'>(<b>261,129</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Indigo/html/index.html' target='_blank' style='margin-left: 6px'>epam / Indigo</a> <span color='lightgrey'>(<b>259,231</b> LOC)</span>
+</div>
+<div style="">
+<a href='../JDI/html/index.html' target='_blank' style='margin-left: 6px'>epam / JDI</a> <span color='lightgrey'>(<b>95,989</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-kafka-manager/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-kafka-manager</a> <span color='lightgrey'>(<b>65,155</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Indigo-ELN-v.-2.0/html/index.html' target='_blank' style='margin-left: 6px'>epam / Indigo-ELN-v.-2.0</a> <span color='lightgrey'>(<b>62,761</b> LOC)</span>
+</div>
+<div style="">
+<a href='../kubernetes-engine-samples/html/index.html' target='_blank' style='margin-left: 6px'>epam / kubernetes-engine-samples</a> <span color='lightgrey'>(<b>52,064</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hibernate-ogm/html/index.html' target='_blank' style='margin-left: 6px'>epam / hibernate-ogm</a> <span color='lightgrey'>(<b>49,670</b> LOC)</span>
+</div>
+<div style="">
+<a href='../checkstyle/html/index.html' target='_blank' style='margin-left: 6px'>epam / checkstyle</a> <span color='lightgrey'>(<b>39,531</b> LOC)</span>
+</div>
+<div style="">
+<a href='../aws-syndicate/html/index.html' target='_blank' style='margin-left: 6px'>epam / aws-syndicate</a> <span color='lightgrey'>(<b>30,801</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-schema-catalog/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-schema-catalog</a> <span color='lightgrey'>(<b>23,586</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-bpms/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-bpms</a> <span color='lightgrey'>(<b>16,831</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Lagerta/html/index.html' target='_blank' style='margin-left: 6px'>epam / Lagerta</a> <span color='lightgrey'>(<b>15,453</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-registry-regulation-management/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-registry-regulation-management</a> <span color='lightgrey'>(<b>14,826</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-service-generation-utility/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-service-generation-utility</a> <span color='lightgrey'>(<b>12,355</b> LOC)</span>
+</div>
+<div style="">
+<a href='../gcp-bank-of-anthos/html/index.html' target='_blank' style='margin-left: 6px'>epam / gcp-bank-of-anthos</a> <span color='lightgrey'>(<b>10,777</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-liquibase-ddm-ext/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-liquibase-ddm-ext</a> <span color='lightgrey'>(<b>7,402</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-commons-kafka/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-commons-kafka</a> <span color='lightgrey'>(<b>7,139</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-kafka-api-core-base-image/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-kafka-api-core-base-image</a> <span color='lightgrey'>(<b>5,227</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-notification-service/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-notification-service</a> <span color='lightgrey'>(<b>5,189</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-rest-api-core-base-image/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-rest-api-core-base-image</a> <span color='lightgrey'>(<b>5,153</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-registry-regulations-validator-cli/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-registry-regulations-validator-cli</a> <span color='lightgrey'>(<b>4,887</b> LOC)</span>
+</div>
+<div style="">
+<a href='../openvasp-java-core/html/index.html' target='_blank' style='margin-left: 6px'>epam / openvasp-java-core</a> <span color='lightgrey'>(<b>4,321</b> LOC)</span>
+</div>
+<div style="">
+<a href='../openvasp-java-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / openvasp-java-client</a> <span color='lightgrey'>(<b>4,242</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-registry-regulations-publication-pipeline/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-registry-regulations-publication-pipeline</a> <span color='lightgrey'>(<b>3,798</b> LOC)</span>
+</div>
+<div style="">
+<a href='../parso/html/index.html' target='_blank' style='margin-left: 6px'>epam / parso</a> <span color='lightgrey'>(<b>3,747</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-commons-avro/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-commons-avro</a> <span color='lightgrey'>(<b>3,606</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-user-publisher/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-user-publisher</a> <span color='lightgrey'>(<b>3,085</b> LOC)</span>
+</div>
+<div style="">
+<a href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' target='_blank' style='margin-left: 6px'>epam / AIRUN-Assistants-Benchmark-CodeBase</a> <span color='lightgrey'>(<b>3,079</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-digital-document-service/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-digital-document-service</a> <span color='lightgrey'>(<b>3,058</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-registry-steps/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-registry-steps</a> <span color='lightgrey'>(<b>2,579</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-user-task-management/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-user-task-management</a> <span color='lightgrey'>(<b>2,536</b> LOC)</span>
+</div>
+<div style="">
+<a href='../openvasp-java-host/html/index.html' target='_blank' style='margin-left: 6px'>epam / openvasp-java-host</a> <span color='lightgrey'>(<b>2,514</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-excerpt-service-api/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-excerpt-service-api</a> <span color='lightgrey'>(<b>2,462</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-report-publisher/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-report-publisher</a> <span color='lightgrey'>(<b>2,440</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-process-history-service-api/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-process-history-service-api</a> <span color='lightgrey'>(<b>2,402</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-user-settings-service-api/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-user-settings-service-api</a> <span color='lightgrey'>(<b>2,360</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-user-process-management/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-user-process-management</a> <span color='lightgrey'>(<b>2,211</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-history-excerptor/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-history-excerptor</a> <span color='lightgrey'>(<b>1,859</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-juel-function/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-juel-function</a> <span color='lightgrey'>(<b>1,825</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-bp-webservice-gateway/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-bp-webservice-gateway</a> <span color='lightgrey'>(<b>1,819</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-excerpt-worker-docx/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-excerpt-worker-docx</a> <span color='lightgrey'>(<b>1,382</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-feign-annotation-error-decoder/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-feign-annotation-error-decoder</a> <span color='lightgrey'>(<b>1,358</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-data-factory-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-data-factory-client</a> <span color='lightgrey'>(<b>1,315</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-excerpt-worker-csv/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-excerpt-worker-csv</a> <span color='lightgrey'>(<b>1,271</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-excerpt-worker/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-excerpt-worker</a> <span color='lightgrey'>(<b>1,243</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-report-exporter/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-report-exporter</a> <span color='lightgrey'>(<b>1,216</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-commons/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-commons</a> <span color='lightgrey'>(<b>1,102</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-platform-gateway/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-platform-gateway</a> <span color='lightgrey'>(<b>1,017</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-form-schema-provider/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-form-schema-provider</a> <span color='lightgrey'>(<b>994</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-process-history-service-persistence/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-process-history-service-persistence</a> <span color='lightgrey'>(<b>981</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-idm-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-idm-client</a> <span color='lightgrey'>(<b>885</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-notification-template-publisher/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-notification-template-publisher</a> <span color='lightgrey'>(<b>785</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-kafka/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-kafka</a> <span color='lightgrey'>(<b>773</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-security/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-security</a> <span color='lightgrey'>(<b>753</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-language-server/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-language-server</a> <span color='lightgrey'>(<b>722</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-bp-admin-portal/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-bp-admin-portal</a> <span color='lightgrey'>(<b>705</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-dso-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-dso-client</a> <span color='lightgrey'>(<b>695</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-logger/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-logger</a> <span color='lightgrey'>(<b>668</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-audit/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-audit</a> <span color='lightgrey'>(<b>652</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-soap-api-core-base-image/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-soap-api-core-base-image</a> <span color='lightgrey'>(<b>631</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-geoserver-publisher/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-geoserver-publisher</a> <span color='lightgrey'>(<b>610</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-swagger/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-swagger</a> <span color='lightgrey'>(<b>591</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-form-data-storage/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-form-data-storage</a> <span color='lightgrey'>(<b>589</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-model-core-base-image/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-model-core-base-image</a> <span color='lightgrey'>(<b>558</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-file-storage/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-file-storage</a> <span color='lightgrey'>(<b>477</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-rest-api/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-rest-api</a> <span color='lightgrey'>(<b>464</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-camunda-auth-cli/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-camunda-auth-cli</a> <span color='lightgrey'>(<b>446</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-kafka-api/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-kafka-api</a> <span color='lightgrey'>(<b>417</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-ceph-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-ceph-client</a> <span color='lightgrey'>(<b>387</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-excerpt-model/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-excerpt-model</a> <span color='lightgrey'>(<b>363</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-form-validation-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-form-validation-client</a> <span color='lightgrey'>(<b>357</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-message-payload-storage/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-message-payload-storage</a> <span color='lightgrey'>(<b>323</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-actuator/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-actuator</a> <span color='lightgrey'>(<b>323</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-keycloak-rest-api-ext/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-keycloak-rest-api-ext</a> <span color='lightgrey'>(<b>310</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-error-handler/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-error-handler</a> <span color='lightgrey'>(<b>248</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-process-history-model/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-process-history-model</a> <span color='lightgrey'>(<b>243</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-low-code-platform-maven-tiles/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-low-code-platform-maven-tiles</a> <span color='lightgrey'>(<b>200</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-user-settings-model/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-user-settings-model</a> <span color='lightgrey'>(<b>163</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-dataplatform-jenkins-agent/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-dataplatform-jenkins-agent</a> <span color='lightgrey'>(<b>158</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-database/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-database</a> <span color='lightgrey'>(<b>155</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-logger2/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-logger2</a> <span color='lightgrey'>(<b>92</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-localization/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-localization</a> <span color='lightgrey'>(<b>86</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-validation/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-validation</a> <span color='lightgrey'>(<b>81</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-starter-notifications/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-starter-notifications</a> <span color='lightgrey'>(<b>55</b> LOC)</span>
+</div>
+<div style="">
+<a href='../JDI-Examples/html/index.html' target='_blank' style='margin-left: 6px'>epam / JDI-Examples</a> <span color='lightgrey'>(<b>45</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-registry-tests/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-registry-tests</a> <span color='lightgrey'>(<b>6</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-low-code-platform-parent/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-low-code-platform-parent</a> <span color='lightgrey'>(<b>6</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___maven_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">1,126,000 <span style='color: grey; font-size: 90%'>(18%)</span></td>
+<td style="">431,302</td>
+<td style="r">285,777</td>
+<td style="">98,547</td>
+<td style="">41 <span style='color: grey; font-size: 90%'>(8%)</span></td>
+<td style="vertical-align: middle"><div style='vertical-align: middle; display: inline-block'>14</div><div style='vertical-align: middle; display: inline-block'><svg width="16pt" height="16pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <path d="m82 61.801-14-14c-2.1016-2.1016-4.8008-3.1992-7.8008-3.1992h-20.398c-2.8984 0-5.6992 1.1016-7.8008 3.1992l-14 14c-1.3008 1.3008-2 3.1016-2 4.8984 0 1.8984 0.69922 3.6016 2 5l3.8984 3.8984c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l1.6016-1.6016v10c0 3.8984 3.1016 7 7 7h19.102c3.8984 0 7-3.1016 7-7v-9.9961l1.6016 1.6016c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l3.8984-3.8984c2.8008-2.8047 2.8008-7.2031 0.10156-9.9023zm-4.3008 5.5977-3.8984 3.8984c-0.39844 0.39844-1 0.39844-1.3984 0l-6.6992-6.6992c-0.89844-0.89844-2.1016-1.1016-3.3008-0.69922-1.1016 0.5-1.8984 1.6016-1.8984 2.8008l-0.003906 17.301c0 0.60156-0.39844 1-1 1h-19c-0.60156 0-1-0.39844-1-1v-17.301c0-1.1992-0.69922-2.3008-1.8984-2.8008-0.39844-0.19922-0.80078-0.19922-1.1016-0.19922-0.80078 0-1.6016 0.30078-2.1016 0.89844l-6.6992 6.6992c-0.39844 0.39844-1 0.39844-1.3984 0l-3.8984-3.8984c-0.39844-0.39844-0.39844-1 0-1.3984l14-14c0.89844-0.89844 2.1992-1.5 3.5-1.5h20.5c1.3008 0 2.6016 0.5 3.5 1.5l14 14c0.19922 0.19922 0.30078 0.39844 0.30078 0.69922-0.003906 0.30078-0.30469 0.5-0.50391 0.69922z"></path>
+ <path d="m50 42.102c9.1016 0 16.5-7.3984 16.5-16.5 0-9.2031-7.3984-16.602-16.5-16.602s-16.5 7.3984-16.5 16.5c0 9.1992 7.3984 16.602 16.5 16.602zm0-27.102c5.8008 0 10.5 4.6992 10.5 10.5s-4.6992 10.602-10.5 10.602-10.5-4.6992-10.5-10.5c0-5.8008 4.6992-10.602 10.5-10.602z"></path>
+ </g>
+</svg></div> <span style='color: grey; font-size: 90%'>(15%)</span></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)package[.]json
+">
+<img title='npm' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/npm.png"><div style='vertical-align: middle; display: inline-block;'>npm</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_9');")><b>62</b> repositories <span style='color: grey; font-size: 90%'>(20%)</span></a><span id="showMoreBlock_9" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../cloud-pipeline/html/index.html' target='_blank' style='margin-left: 6px'>epam / cloud-pipeline</a> <span color='lightgrey'>(<b>527,727</b> LOC)</span>
+</div>
+<div style="">
+<a href='../acuity/html/index.html' target='_blank' style='margin-left: 6px'>epam / acuity</a> <span color='lightgrey'>(<b>261,129</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Indigo/html/index.html' target='_blank' style='margin-left: 6px'>epam / Indigo</a> <span color='lightgrey'>(<b>259,231</b> LOC)</span>
+</div>
+<div style="">
+<a href='../NGB/html/index.html' target='_blank' style='margin-left: 6px'>epam / NGB</a> <span color='lightgrey'>(<b>212,833</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseWS/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseWS</a> <span color='lightgrey'>(<b>121,191</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ketcher/html/index.html' target='_blank' style='margin-left: 6px'>epam / ketcher</a> <span color='lightgrey'>(<b>102,593</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dail-xl/html/index.html' target='_blank' style='margin-left: 6px'>epam / dail-xl</a> <span color='lightgrey'>(<b>99,055</b> LOC)</span>
+</div>
+<div style="">
+<a href='../JDI/html/index.html' target='_blank' style='margin-left: 6px'>epam / JDI</a> <span color='lightgrey'>(<b>95,989</b> LOC)</span>
+</div>
+<div style="">
+<a href='../UUI/html/index.html' target='_blank' style='margin-left: 6px'>epam / UUI</a> <span color='lightgrey'>(<b>84,864</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ai-dial-chat/html/index.html' target='_blank' style='margin-left: 6px'>epam / ai-dial-chat</a> <span color='lightgrey'>(<b>78,762</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-redash/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-redash</a> <span color='lightgrey'>(<b>73,695</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Sitecore-Reference-Storefront-on-Habitat/html/index.html' target='_blank' style='margin-left: 6px'>epam / Sitecore-Reference-Storefront-on-Habitat</a> <span color='lightgrey'>(<b>69,663</b> LOC)</span>
+</div>
+<div style="">
+<a href='../badgerdoc/html/index.html' target='_blank' style='margin-left: 6px'>epam / badgerdoc</a> <span color='lightgrey'>(<b>67,332</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Indigo-ELN-v.-2.0/html/index.html' target='_blank' style='margin-left: 6px'>epam / Indigo-ELN-v.-2.0</a> <span color='lightgrey'>(<b>62,761</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-headlamp/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-headlamp</a> <span color='lightgrey'>(<b>55,971</b> LOC)</span>
+</div>
+<div style="">
+<a href='../kubernetes-engine-samples/html/index.html' target='_blank' style='margin-left: 6px'>epam / kubernetes-engine-samples</a> <span color='lightgrey'>(<b>52,064</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-control-plane-console/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-control-plane-console</a> <span color='lightgrey'>(<b>34,221</b> LOC)</span>
+</div>
+<div style="">
+<a href='../miew/html/index.html' target='_blank' style='margin-left: 6px'>epam / miew</a> <span color='lightgrey'>(<b>30,976</b> LOC)</span>
+</div>
+<div style="">
+<a href='../aws-syndicate/html/index.html' target='_blank' style='margin-left: 6px'>epam / aws-syndicate</a> <span color='lightgrey'>(<b>30,801</b> LOC)</span>
+</div>
+<div style="">
+<a href='../kubernetes-kueue/html/index.html' target='_blank' style='margin-left: 6px'>epam / kubernetes-kueue</a> <span color='lightgrey'>(<b>29,272</b> LOC)</span>
+</div>
+<div style="">
+<a href='../mriviewer/html/index.html' target='_blank' style='margin-left: 6px'>epam / mriviewer</a> <span color='lightgrey'>(<b>28,866</b> LOC)</span>
+</div>
+<div style="">
+<a href='../AIRUN-LLM-Benchmark-Results/html/index.html' target='_blank' style='margin-left: 6px'>epam / AIRUN-LLM-Benchmark-Results</a> <span color='lightgrey'>(<b>24,203</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-schema-catalog/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-schema-catalog</a> <span color='lightgrey'>(<b>23,586</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseWS-old/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseWS-old</a> <span color='lightgrey'>(<b>22,607</b> LOC)</span>
+</div>
+<div style="">
+<a href='../deps-fe-labeling-tool/html/index.html' target='_blank' style='margin-left: 6px'>epam / deps-fe-labeling-tool</a> <span color='lightgrey'>(<b>17,658</b> LOC)</span>
+</div>
+<div style="">
+<a href='../firecloud-ui/html/index.html' target='_blank' style='margin-left: 6px'>epam / firecloud-ui</a> <span color='lightgrey'>(<b>13,801</b> LOC)</span>
+</div>
+<div style="">
+<a href='../xframework/html/index.html' target='_blank' style='margin-left: 6px'>epam / xframework</a> <span color='lightgrey'>(<b>12,656</b> LOC)</span>
+</div>
+<div style="">
+<a href='../pipeline-builder/html/index.html' target='_blank' style='margin-left: 6px'>epam / pipeline-builder</a> <span color='lightgrey'>(<b>10,945</b> LOC)</span>
+</div>
+<div style="">
+<a href='../wdl-workspace/html/index.html' target='_blank' style='margin-left: 6px'>epam / wdl-workspace</a> <span color='lightgrey'>(<b>9,833</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-form-submission-validation/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-form-submission-validation</a> <span color='lightgrey'>(<b>9,174</b> LOC)</span>
+</div>
+<div style="">
+<a href='../quanthub-portal/html/index.html' target='_blank' style='margin-left: 6px'>epam / quanthub-portal</a> <span color='lightgrey'>(<b>8,658</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Constellation/html/index.html' target='_blank' style='margin-left: 6px'>epam / Constellation</a> <span color='lightgrey'>(<b>7,538</b> LOC)</span>
+</div>
+<div style="">
+<a href='../AIRUN-LLM-Benchmark/html/index.html' target='_blank' style='margin-left: 6px'>epam / AIRUN-LLM-Benchmark</a> <span color='lightgrey'>(<b>6,858</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sdtm_validator/html/index.html' target='_blank' style='margin-left: 6px'>epam / sdtm_validator</a> <span color='lightgrey'>(<b>6,789</b> LOC)</span>
+</div>
+<div style="">
+<a href='../headless-commerce-salesforce-accelerator/html/index.html' target='_blank' style='margin-left: 6px'>epam / headless-commerce-salesforce-accelerator</a> <span color='lightgrey'>(<b>6,118</b> LOC)</span>
+</div>
+<div style="">
+<a href='../agr-lib/html/index.html' target='_blank' style='margin-left: 6px'>epam / agr-lib</a> <span color='lightgrey'>(<b>6,083</b> LOC)</span>
+</div>
+<div style="">
+<a href='../model_garden/html/index.html' target='_blank' style='margin-left: 6px'>epam / model_garden</a> <span color='lightgrey'>(<b>5,270</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-zeroharm.fe/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-zeroharm.fe</a> <span color='lightgrey'>(<b>5,220</b> LOC)</span>
+</div>
+<div style="">
+<a href='../clocks/html/index.html' target='_blank' style='margin-left: 6px'>epam / clocks</a> <span color='lightgrey'>(<b>4,945</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseGrafanaPlugin/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseGrafanaPlugin</a> <span color='lightgrey'>(<b>4,124</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ado-delivery-gantt/html/index.html' target='_blank' style='margin-left: 6px'>epam / ado-delivery-gantt</a> <span color='lightgrey'>(<b>3,285</b> LOC)</span>
+</div>
+<div style="">
+<a href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' target='_blank' style='margin-left: 6px'>epam / AIRUN-Assistants-Benchmark-CodeBase</a> <span color='lightgrey'>(<b>3,079</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-chaperone.admin/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-chaperone.admin</a> <span color='lightgrey'>(<b>2,356</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sitecore-engx-scaffold/html/index.html' target='_blank' style='margin-left: 6px'>epam / sitecore-engx-scaffold</a> <span color='lightgrey'>(<b>1,797</b> LOC)</span>
+</div>
+<div style="">
+<a href='../indigo-node/html/index.html' target='_blank' style='margin-left: 6px'>epam / indigo-node</a> <span color='lightgrey'>(<b>1,785</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epm-content-gen/html/index.html' target='_blank' style='margin-left: 6px'>epam / epm-content-gen</a> <span color='lightgrey'>(<b>1,627</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-uva.mono/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-uva.mono</a> <span color='lightgrey'>(<b>977</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ai-dial/html/index.html' target='_blank' style='margin-left: 6px'>epam / ai-dial</a> <span color='lightgrey'>(<b>913</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hub-state/html/index.html' target='_blank' style='margin-left: 6px'>epam / hub-state</a> <span color='lightgrey'>(<b>866</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-chaperone.contentful/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-chaperone.contentful</a> <span color='lightgrey'>(<b>792</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-architecture/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-architecture</a> <span color='lightgrey'>(<b>598</b> LOC)</span>
+</div>
+<div style="">
+<a href='../xdlc-ai/html/index.html' target='_blank' style='margin-left: 6px'>epam / xdlc-ai</a> <span color='lightgrey'>(<b>381</b> LOC)</span>
+</div>
+<div style="">
+<a href='../deps-fe-usePolling/html/index.html' target='_blank' style='margin-left: 6px'>epam / deps-fe-usePolling</a> <span color='lightgrey'>(<b>275</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ember-restws-samples/html/index.html' target='_blank' style='margin-left: 6px'>epam / ember-restws-samples</a> <span color='lightgrey'>(<b>274</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-connect-ed.admin/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-connect-ed.admin</a> <span color='lightgrey'>(<b>262</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hub-stacks-disposer/html/index.html' target='_blank' style='margin-left: 6px'>epam / hub-stacks-disposer</a> <span color='lightgrey'>(<b>234</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-zeroharm.be/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-zeroharm.be</a> <span color='lightgrey'>(<b>221</b> LOC)</span>
+</div>
+<div style="">
+<a href='../solidity-bootcamp/html/index.html' target='_blank' style='margin-left: 6px'>epam / solidity-bootcamp</a> <span color='lightgrey'>(<b>218</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-connect-ed.ui/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-connect-ed.ui</a> <span color='lightgrey'>(<b>215</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hub-extensions/html/index.html' target='_blank' style='margin-left: 6px'>epam / hub-extensions</a> <span color='lightgrey'>(<b>142</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-gabt.back-office-app/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-gabt.back-office-app</a> <span color='lightgrey'>(<b>130</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-gabt.user-app/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-gabt.user-app</a> <span color='lightgrey'>(<b>70</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___npm_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">2,605,559 <span style='color: grey; font-size: 90%'>(42%)</span></td>
+<td style="">849,261</td>
+<td style="r">947,317</td>
+<td style="">405,445</td>
+<td style="">282 <span style='color: grey; font-size: 90%'>(61%)</span></td>
+<td style="vertical-align: middle"><div style='vertical-align: middle; display: inline-block'>59</div><div style='vertical-align: middle; display: inline-block'><svg width="16pt" height="16pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <path d="m82 61.801-14-14c-2.1016-2.1016-4.8008-3.1992-7.8008-3.1992h-20.398c-2.8984 0-5.6992 1.1016-7.8008 3.1992l-14 14c-1.3008 1.3008-2 3.1016-2 4.8984 0 1.8984 0.69922 3.6016 2 5l3.8984 3.8984c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l1.6016-1.6016v10c0 3.8984 3.1016 7 7 7h19.102c3.8984 0 7-3.1016 7-7v-9.9961l1.6016 1.6016c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l3.8984-3.8984c2.8008-2.8047 2.8008-7.2031 0.10156-9.9023zm-4.3008 5.5977-3.8984 3.8984c-0.39844 0.39844-1 0.39844-1.3984 0l-6.6992-6.6992c-0.89844-0.89844-2.1016-1.1016-3.3008-0.69922-1.1016 0.5-1.8984 1.6016-1.8984 2.8008l-0.003906 17.301c0 0.60156-0.39844 1-1 1h-19c-0.60156 0-1-0.39844-1-1v-17.301c0-1.1992-0.69922-2.3008-1.8984-2.8008-0.39844-0.19922-0.80078-0.19922-1.1016-0.19922-0.80078 0-1.6016 0.30078-2.1016 0.89844l-6.6992 6.6992c-0.39844 0.39844-1 0.39844-1.3984 0l-3.8984-3.8984c-0.39844-0.39844-0.39844-1 0-1.3984l14-14c0.89844-0.89844 2.1992-1.5 3.5-1.5h20.5c1.3008 0 2.6016 0.5 3.5 1.5l14 14c0.19922 0.19922 0.30078 0.39844 0.30078 0.69922-0.003906 0.30078-0.30469 0.5-0.50391 0.69922z"></path>
+ <path d="m50 42.102c9.1016 0 16.5-7.3984 16.5-16.5 0-9.2031-7.3984-16.602-16.5-16.602s-16.5 7.3984-16.5 16.5c0 9.1992 7.3984 16.602 16.5 16.602zm0-27.102c5.8008 0 10.5 4.6992 10.5 10.5s-4.6992 10.602-10.5 10.602-10.5-4.6992-10.5-10.5c0-5.8008 4.6992-10.602 10.5-10.602z"></path>
+ </g>
+</svg></div> <span style='color: grey; font-size: 90%'>(64%)</span></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)build[.]gradle
+">
+<img title='gradle' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/gradle.png"><div style='vertical-align: middle; display: inline-block;'>gradle</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_10');")><b>51</b> repositories <span style='color: grey; font-size: 90%'>(17%)</span></a><span id="showMoreBlock_10" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../cloud-pipeline/html/index.html' target='_blank' style='margin-left: 6px'>epam / cloud-pipeline</a> <span color='lightgrey'>(<b>527,727</b> LOC)</span>
+</div>
+<div style="">
+<a href='../acuity/html/index.html' target='_blank' style='margin-left: 6px'>epam / acuity</a> <span color='lightgrey'>(<b>261,129</b> LOC)</span>
+</div>
+<div style="">
+<a href='../NGB/html/index.html' target='_blank' style='margin-left: 6px'>epam / NGB</a> <span color='lightgrey'>(<b>212,833</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseWS/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseWS</a> <span color='lightgrey'>(<b>121,191</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dail-xl/html/index.html' target='_blank' style='margin-left: 6px'>epam / dail-xl</a> <span color='lightgrey'>(<b>99,055</b> LOC)</span>
+</div>
+<div style="">
+<a href='../JDI/html/index.html' target='_blank' style='margin-left: 6px'>epam / JDI</a> <span color='lightgrey'>(<b>95,989</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sdmxsource/html/index.html' target='_blank' style='margin-left: 6px'>epam / sdmxsource</a> <span color='lightgrey'>(<b>81,793</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseCommons/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseCommons</a> <span color='lightgrey'>(<b>56,250</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Wilma/html/index.html' target='_blank' style='margin-left: 6px'>epam / Wilma</a> <span color='lightgrey'>(<b>41,055</b> LOC)</span>
+</div>
+<div style="">
+<a href='../DFP/html/index.html' target='_blank' style='margin-left: 6px'>epam / DFP</a> <span color='lightgrey'>(<b>25,051</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Containers/html/index.html' target='_blank' style='margin-left: 6px'>epam / Containers</a> <span color='lightgrey'>(<b>22,825</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseWS-old/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseWS-old</a> <span color='lightgrey'>(<b>22,607</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseCryptoConnectors/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseCryptoConnectors</a> <span color='lightgrey'>(<b>19,800</b> LOC)</span>
+</div>
+<div style="">
+<a href='../fonda/html/index.html' target='_blank' style='margin-left: 6px'>epam / fonda</a> <span color='lightgrey'>(<b>15,525</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ai-dial-core/html/index.html' target='_blank' style='margin-left: 6px'>epam / ai-dial-core</a> <span color='lightgrey'>(<b>15,122</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseClickhouseConnector/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseClickhouseConnector</a> <span color='lightgrey'>(<b>13,696</b> LOC)</span>
+</div>
+<div style="">
+<a href='../gflog/html/index.html' target='_blank' style='margin-left: 6px'>epam / gflog</a> <span color='lightgrey'>(<b>12,127</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ValuesTypes4Java/html/index.html' target='_blank' style='margin-left: 6px'>epam / ValuesTypes4Java</a> <span color='lightgrey'>(<b>9,106</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ember-trade-connector-sample/html/index.html' target='_blank' style='margin-left: 6px'>epam / ember-trade-connector-sample</a> <span color='lightgrey'>(<b>8,904</b> LOC)</span>
+</div>
+<div style="">
+<a href='../jsdmx/html/index.html' target='_blank' style='margin-left: 6px'>epam / jsdmx</a> <span color='lightgrey'>(<b>7,804</b> LOC)</span>
+</div>
+<div style="">
+<a href='../HdDateTime/html/index.html' target='_blank' style='margin-left: 6px'>epam / HdDateTime</a> <span color='lightgrey'>(<b>7,205</b> LOC)</span>
+</div>
+<div style="">
+<a href='../java-cme-mdp3-handler/html/index.html' target='_blank' style='margin-left: 6px'>epam / java-cme-mdp3-handler</a> <span color='lightgrey'>(<b>7,053</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseOrderBook/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseOrderBook</a> <span color='lightgrey'>(<b>6,443</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Gepard/html/index.html' target='_blank' style='margin-left: 6px'>epam / Gepard</a> <span color='lightgrey'>(<b>6,090</b> LOC)</span>
+</div>
+<div style="">
+<a href='../grid-engine-api/html/index.html' target='_blank' style='margin-left: 6px'>epam / grid-engine-api</a> <span color='lightgrey'>(<b>5,658</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Zstandard/html/index.html' target='_blank' style='margin-left: 6px'>epam / Zstandard</a> <span color='lightgrey'>(<b>5,403</b> LOC)</span>
+</div>
+<div style="">
+<a href='../NativeUtils/html/index.html' target='_blank' style='margin-left: 6px'>epam / NativeUtils</a> <span color='lightgrey'>(<b>4,453</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseTimescaleConnector/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseTimescaleConnector</a> <span color='lightgrey'>(<b>3,632</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-library-stages/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-library-stages</a> <span color='lightgrey'>(<b>3,449</b> LOC)</span>
+</div>
+<div style="">
+<a href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' target='_blank' style='margin-left: 6px'>epam / AIRUN-Assistants-Benchmark-CodeBase</a> <span color='lightgrey'>(<b>3,079</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-library-pipelines/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-library-pipelines</a> <span color='lightgrey'>(<b>1,979</b> LOC)</span>
+</div>
+<div style="">
+<a href='../atg-build-plugin/html/index.html' target='_blank' style='margin-left: 6px'>epam / atg-build-plugin</a> <span color='lightgrey'>(<b>1,962</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ai-dial-app-controller/html/index.html' target='_blank' style='margin-left: 6px'>epam / ai-dial-app-controller</a> <span color='lightgrey'>(<b>1,733</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseKafkaConnector/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseKafkaConnector</a> <span color='lightgrey'>(<b>1,592</b> LOC)</span>
+</div>
+<div style="">
+<a href='../covid-tracing-bluetooth-poc/html/index.html' target='_blank' style='margin-left: 6px'>epam / covid-tracing-bluetooth-poc</a> <span color='lightgrey'>(<b>1,555</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseTutorial/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseTutorial</a> <span color='lightgrey'>(<b>1,485</b> LOC)</span>
+</div>
+<div style="">
+<a href='../gmp-tools/html/index.html' target='_blank' style='margin-left: 6px'>epam / gmp-tools</a> <span color='lightgrey'>(<b>1,290</b> LOC)</span>
+</div>
+<div style="">
+<a href='../GMP/html/index.html' target='_blank' style='margin-left: 6px'>epam / GMP</a> <span color='lightgrey'>(<b>1,284</b> LOC)</span>
+</div>
+<div style="">
+<a href='../CoroutinesCache/html/index.html' target='_blank' style='margin-left: 6px'>epam / CoroutinesCache</a> <span color='lightgrey'>(<b>1,198</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ember-java-client/html/index.html' target='_blank' style='margin-left: 6px'>epam / ember-java-client</a> <span color='lightgrey'>(<b>836</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Android-Secure-Storage/html/index.html' target='_blank' style='margin-left: 6px'>epam / Android-Secure-Storage</a> <span color='lightgrey'>(<b>814</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ember-algo-sample/html/index.html' target='_blank' style='margin-left: 6px'>epam / ember-algo-sample</a> <span color='lightgrey'>(<b>746</b> LOC)</span>
+</div>
+<div style="">
+<a href='../htsjdk-s3-plugin/html/index.html' target='_blank' style='margin-left: 6px'>epam / htsjdk-s3-plugin</a> <span color='lightgrey'>(<b>712</b> LOC)</span>
+</div>
+<div style="">
+<a href='../gmp-common/html/index.html' target='_blank' style='margin-left: 6px'>epam / gmp-common</a> <span color='lightgrey'>(<b>675</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ai-dial-auth-helper/html/index.html' target='_blank' style='margin-left: 6px'>epam / ai-dial-auth-helper</a> <span color='lightgrey'>(<b>622</b> LOC)</span>
+</div>
+<div style="">
+<a href='../gmp-bootstrap/html/index.html' target='_blank' style='margin-left: 6px'>epam / gmp-bootstrap</a> <span color='lightgrey'>(<b>469</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ThreadAffinity/html/index.html' target='_blank' style='margin-left: 6px'>epam / ThreadAffinity</a> <span color='lightgrey'>(<b>452</b> LOC)</span>
+</div>
+<div style="">
+<a href='../CoroutinesExtensions/html/index.html' target='_blank' style='margin-left: 6px'>epam / CoroutinesExtensions</a> <span color='lightgrey'>(<b>387</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ember-risk-sample/html/index.html' target='_blank' style='margin-left: 6px'>epam / ember-risk-sample</a> <span color='lightgrey'>(<b>249</b> LOC)</span>
+</div>
+<div style="">
+<a href='../ember-fix-mdg-sample-java/html/index.html' target='_blank' style='margin-left: 6px'>epam / ember-fix-mdg-sample-java</a> <span color='lightgrey'>(<b>158</b> LOC)</span>
+</div>
+<div style="">
+<a href='../VelocityPlugin/html/index.html' target='_blank' style='margin-left: 6px'>epam / VelocityPlugin</a> <span color='lightgrey'>(<b>90</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___gradle_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">1,742,342 <span style='color: grey; font-size: 90%'>(28%)</span></td>
+<td style="">579,014</td>
+<td style="r">355,697</td>
+<td style="">110,526</td>
+<td style="">96 <span style='color: grey; font-size: 90%'>(20%)</span></td>
+<td style="vertical-align: middle"><div style='vertical-align: middle; display: inline-block'>26</div><div style='vertical-align: middle; display: inline-block'><svg width="16pt" height="16pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <path d="m82 61.801-14-14c-2.1016-2.1016-4.8008-3.1992-7.8008-3.1992h-20.398c-2.8984 0-5.6992 1.1016-7.8008 3.1992l-14 14c-1.3008 1.3008-2 3.1016-2 4.8984 0 1.8984 0.69922 3.6016 2 5l3.8984 3.8984c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l1.6016-1.6016v10c0 3.8984 3.1016 7 7 7h19.102c3.8984 0 7-3.1016 7-7v-9.9961l1.6016 1.6016c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l3.8984-3.8984c2.8008-2.8047 2.8008-7.2031 0.10156-9.9023zm-4.3008 5.5977-3.8984 3.8984c-0.39844 0.39844-1 0.39844-1.3984 0l-6.6992-6.6992c-0.89844-0.89844-2.1016-1.1016-3.3008-0.69922-1.1016 0.5-1.8984 1.6016-1.8984 2.8008l-0.003906 17.301c0 0.60156-0.39844 1-1 1h-19c-0.60156 0-1-0.39844-1-1v-17.301c0-1.1992-0.69922-2.3008-1.8984-2.8008-0.39844-0.19922-0.80078-0.19922-1.1016-0.19922-0.80078 0-1.6016 0.30078-2.1016 0.89844l-6.6992 6.6992c-0.39844 0.39844-1 0.39844-1.3984 0l-3.8984-3.8984c-0.39844-0.39844-0.39844-1 0-1.3984l14-14c0.89844-0.89844 2.1992-1.5 3.5-1.5h20.5c1.3008 0 2.6016 0.5 3.5 1.5l14 14c0.19922 0.19922 0.30078 0.39844 0.30078 0.69922-0.003906 0.30078-0.30469 0.5-0.50391 0.69922z"></path>
+ <path d="m50 42.102c9.1016 0 16.5-7.3984 16.5-16.5 0-9.2031-7.3984-16.602-16.5-16.602s-16.5 7.3984-16.5 16.5c0 9.1992 7.3984 16.602 16.5 16.602zm0-27.102c5.8008 0 10.5 4.6992 10.5 10.5s-4.6992 10.602-10.5 10.602-10.5-4.6992-10.5-10.5c0-5.8008 4.6992-10.602 10.5-10.602z"></path>
+ </g>
+</svg></div> <span style='color: grey; font-size: 90%'>(28%)</span></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)jest[.].*
+">
+<img title='jest' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/jest.png"><div style='vertical-align: middle; display: inline-block;'>jest</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_11');")><b>14</b> repositories <span style='color: grey; font-size: 90%'>(4%)</span></a><span id="showMoreBlock_11" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../ketcher/html/index.html' target='_blank' style='margin-left: 6px'>epam / ketcher</a> <span color='lightgrey'>(<b>102,593</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dail-xl/html/index.html' target='_blank' style='margin-left: 6px'>epam / dail-xl</a> <span color='lightgrey'>(<b>99,055</b> LOC)</span>
+</div>
+<div style="">
+<a href='../UUI/html/index.html' target='_blank' style='margin-left: 6px'>epam / UUI</a> <span color='lightgrey'>(<b>84,864</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-headlamp/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-headlamp</a> <span color='lightgrey'>(<b>55,971</b> LOC)</span>
+</div>
+<div style="">
+<a href='../miew/html/index.html' target='_blank' style='margin-left: 6px'>epam / miew</a> <span color='lightgrey'>(<b>30,976</b> LOC)</span>
+</div>
+<div style="">
+<a href='../eco-schema-catalog/html/index.html' target='_blank' style='margin-left: 6px'>epam / eco-schema-catalog</a> <span color='lightgrey'>(<b>23,586</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimebaseWS-old/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimebaseWS-old</a> <span color='lightgrey'>(<b>22,607</b> LOC)</span>
+</div>
+<div style="">
+<a href='../deps-fe-labeling-tool/html/index.html' target='_blank' style='margin-left: 6px'>epam / deps-fe-labeling-tool</a> <span color='lightgrey'>(<b>17,658</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-form-submission-validation/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-form-submission-validation</a> <span color='lightgrey'>(<b>9,174</b> LOC)</span>
+</div>
+<div style="">
+<a href='../TimeBaseGrafanaPlugin/html/index.html' target='_blank' style='margin-left: 6px'>epam / TimeBaseGrafanaPlugin</a> <span color='lightgrey'>(<b>4,124</b> LOC)</span>
+</div>
+<div style="">
+<a href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' target='_blank' style='margin-left: 6px'>epam / AIRUN-Assistants-Benchmark-CodeBase</a> <span color='lightgrey'>(<b>3,079</b> LOC)</span>
+</div>
+<div style="">
+<a href='../epmgcip-chaperone.admin/html/index.html' target='_blank' style='margin-left: 6px'>epam / epmgcip-chaperone.admin</a> <span color='lightgrey'>(<b>2,356</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sitecore-engx-scaffold/html/index.html' target='_blank' style='margin-left: 6px'>epam / sitecore-engx-scaffold</a> <span color='lightgrey'>(<b>1,797</b> LOC)</span>
+</div>
+<div style="">
+<a href='../deps-fe-usePolling/html/index.html' target='_blank' style='margin-left: 6px'>epam / deps-fe-usePolling</a> <span color='lightgrey'>(<b>275</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___jest_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">458,115 <span style='color: grey; font-size: 90%'>(7%)</span></td>
+<td style="">276,973</td>
+<td style="r">333,400</td>
+<td style="">186,712</td>
+<td style="">112 <span style='color: grey; font-size: 90%'>(24%)</span></td>
+<td style="vertical-align: middle"><div style='vertical-align: middle; display: inline-block'>30</div><div style='vertical-align: middle; display: inline-block'><svg width="16pt" height="16pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <path d="m82 61.801-14-14c-2.1016-2.1016-4.8008-3.1992-7.8008-3.1992h-20.398c-2.8984 0-5.6992 1.1016-7.8008 3.1992l-14 14c-1.3008 1.3008-2 3.1016-2 4.8984 0 1.8984 0.69922 3.6016 2 5l3.8984 3.8984c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l1.6016-1.6016v10c0 3.8984 3.1016 7 7 7h19.102c3.8984 0 7-3.1016 7-7v-9.9961l1.6016 1.6016c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l3.8984-3.8984c2.8008-2.8047 2.8008-7.2031 0.10156-9.9023zm-4.3008 5.5977-3.8984 3.8984c-0.39844 0.39844-1 0.39844-1.3984 0l-6.6992-6.6992c-0.89844-0.89844-2.1016-1.1016-3.3008-0.69922-1.1016 0.5-1.8984 1.6016-1.8984 2.8008l-0.003906 17.301c0 0.60156-0.39844 1-1 1h-19c-0.60156 0-1-0.39844-1-1v-17.301c0-1.1992-0.69922-2.3008-1.8984-2.8008-0.39844-0.19922-0.80078-0.19922-1.1016-0.19922-0.80078 0-1.6016 0.30078-2.1016 0.89844l-6.6992 6.6992c-0.39844 0.39844-1 0.39844-1.3984 0l-3.8984-3.8984c-0.39844-0.39844-0.39844-1 0-1.3984l14-14c0.89844-0.89844 2.1992-1.5 3.5-1.5h20.5c1.3008 0 2.6016 0.5 3.5 1.5l14 14c0.19922 0.19922 0.30078 0.39844 0.30078 0.69922-0.003906 0.30078-0.30469 0.5-0.50391 0.69922z"></path>
+ <path d="m50 42.102c9.1016 0 16.5-7.3984 16.5-16.5 0-9.2031-7.3984-16.602-16.5-16.602s-16.5 7.3984-16.5 16.5c0 9.1992 7.3984 16.602 16.5 16.602zm0-27.102c5.8008 0 10.5 4.6992 10.5 10.5s-4.6992 10.602-10.5 10.602-10.5-4.6992-10.5-10.5c0-5.8008 4.6992-10.602 10.5-10.602z"></path>
+ </g>
+</svg></div> <span style='color: grey; font-size: 90%'>(32%)</span></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)build[.]sbt
+">
+<img title='sbt' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/sbt.png"><div style='vertical-align: middle; display: inline-block;'>sbt</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_12');")><b>1</b> repository <span style='color: grey; font-size: 90%'>(<1%)</span></a><span id="showMoreBlock_12" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../firecloud-ui/html/index.html' target='_blank' style='margin-left: 6px'>epam / firecloud-ui</a> <span color='lightgrey'>(<b>13,801</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___sbt_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">13,801 <span style='color: grey; font-size: 90%'>(<1%)</span></td>
+<td style="">3,939</td>
+<td style="r">-</td>
+<td style="">-</td>
+<td style="">-</td>
+<td style="vertical-align: middle">-</td>
+</tr>
+<tr>
+<td colspan='8' style=''>
+<a name="tag_group_2"></a>
+<div style="border-radius: 9px; padding: 6px; margin-top: 16px; border: 1px solid lightgrey; background-color: #A3C1AD">
+tech (1)
+<div style="margin: 5px; font-size: 80%">
+<div style="">
+<b>11 repositories</b>, <b><b>100</b>K</b> lines of main code, <b><b>8.2</b>K</b> lines of other code
+</div>
+</div>
+<div style="margin: 5px; font-size: 80%">
+tag dependencies: 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_2_force_3d.html'>3D graph (via repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_2_direct_force_3d.html'>3D graph (excluding repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_2.svg'>2D graph (via repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_2_direct.svg'>2D graph (excluding repositories)</a>
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_2_direct.svg'>2D graph (excluding repositories)</a>
+</div>
+</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #A3C1AD" title="includes repositories with at least one file matching:
+ - (|.*/)helmfile[.]ya?ml
+ - (|.*/)[.]helmignore
+">
+<img title='helm' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/helm.png"><div style='vertical-align: middle; display: inline-block;'>helm</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_13');")><b>11</b> repositories <span style='color: grey; font-size: 90%'>(3%)</span></a><span id="showMoreBlock_13" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../edp-ddm-monitoring/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-monitoring</a> <span color='lightgrey'>(<b>77,005</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-control-plane-gerrit/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-control-plane-gerrit</a> <span color='lightgrey'>(<b>5,268</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-user-management/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-user-management</a> <span color='lightgrey'>(<b>4,656</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-install/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-install</a> <span color='lightgrey'>(<b>3,170</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-smtp-server/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-smtp-server</a> <span color='lightgrey'>(<b>2,663</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-backup-management/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-backup-management</a> <span color='lightgrey'>(<b>1,981</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-control-plane-nexus/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-control-plane-nexus</a> <span color='lightgrey'>(<b>1,972</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-control-plane-jenkins/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-control-plane-jenkins</a> <span color='lightgrey'>(<b>1,658</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-logging/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-logging</a> <span color='lightgrey'>(<b>628</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-redis-operator/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-redis-operator</a> <span color='lightgrey'>(<b>515</b> LOC)</span>
+</div>
+<div style="">
+<a href='../edp-ddm-cluster-kafka-operator/html/index.html' target='_blank' style='margin-left: 6px'>epam / edp-ddm-cluster-kafka-operator</a> <span color='lightgrey'>(<b>62</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_tech___helm_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">99,578 <span style='color: grey; font-size: 90%'>(1%)</span></td>
+<td style="">4</td>
+<td style="r">24,169</td>
+<td style="">22,014</td>
+<td style="">7 <span style='color: grey; font-size: 90%'>(1%)</span></td>
+<td style="vertical-align: middle"><div style='vertical-align: middle; display: inline-block'>4</div><div style='vertical-align: middle; display: inline-block'><svg width="16pt" height="16pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <path d="m82 61.801-14-14c-2.1016-2.1016-4.8008-3.1992-7.8008-3.1992h-20.398c-2.8984 0-5.6992 1.1016-7.8008 3.1992l-14 14c-1.3008 1.3008-2 3.1016-2 4.8984 0 1.8984 0.69922 3.6016 2 5l3.8984 3.8984c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l1.6016-1.6016v10c0 3.8984 3.1016 7 7 7h19.102c3.8984 0 7-3.1016 7-7v-9.9961l1.6016 1.6016c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l3.8984-3.8984c2.8008-2.8047 2.8008-7.2031 0.10156-9.9023zm-4.3008 5.5977-3.8984 3.8984c-0.39844 0.39844-1 0.39844-1.3984 0l-6.6992-6.6992c-0.89844-0.89844-2.1016-1.1016-3.3008-0.69922-1.1016 0.5-1.8984 1.6016-1.8984 2.8008l-0.003906 17.301c0 0.60156-0.39844 1-1 1h-19c-0.60156 0-1-0.39844-1-1v-17.301c0-1.1992-0.69922-2.3008-1.8984-2.8008-0.39844-0.19922-0.80078-0.19922-1.1016-0.19922-0.80078 0-1.6016 0.30078-2.1016 0.89844l-6.6992 6.6992c-0.39844 0.39844-1 0.39844-1.3984 0l-3.8984-3.8984c-0.39844-0.39844-0.39844-1 0-1.3984l14-14c0.89844-0.89844 2.1992-1.5 3.5-1.5h20.5c1.3008 0 2.6016 0.5 3.5 1.5l14 14c0.19922 0.19922 0.30078 0.39844 0.30078 0.69922-0.003906 0.30078-0.30469 0.5-0.50391 0.69922z"></path>
+ <path d="m50 42.102c9.1016 0 16.5-7.3984 16.5-16.5 0-9.2031-7.3984-16.602-16.5-16.602s-16.5 7.3984-16.5 16.5c0 9.1992 7.3984 16.602 16.5 16.602zm0-27.102c5.8008 0 10.5 4.6992 10.5 10.5s-4.6992 10.602-10.5 10.602-10.5-4.6992-10.5-10.5c0-5.8008 4.6992-10.602 10.5-10.602z"></path>
+ </g>
+</svg></div> <span style='color: grey; font-size: 90%'>(4%)</span></td>
+</tr>
+<td colspan='8'>&nbsp;</td>
+</table>
+<div style="margin: 2px; margin-top: 18px; margin-bottom: 42px;">
+ <a href="javascript:showHide('showMoreBlock_14');")>show visuals...</a><span id="showMoreBlock_14" style="display: none;">
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / maven</b> (87)
+</div>
+<a target='_blank' href='../kubernetes-engine-samples/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 26px; height: 26px; " title="epam / kubernetes-engine-samples
+13 commits (30 days)
+5 contributors (30 days)
+52,064 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.5083333333333333;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 24px; height: 24px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Indigo/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 53px; height: 53px; " title="epam / Indigo
+11 commits (30 days)
+1 contributors (30 days)
+259,231 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4916666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 51px; height: 51px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-schema-catalog/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / eco-schema-catalog
+10 commits (30 days)
+4 contributors (30 days)
+23,586 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.48333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Indigo-ELN-v.-2.0/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 28px; height: 28px; " title="epam / Indigo-ELN-v.-2.0
+4 commits (30 days)
+2 contributors (30 days)
+62,761 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.43333333333333335;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 26px; height: 26px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / AIRUN-Assistants-Benchmark-CodeBase
+3 commits (30 days)
+2 contributors (30 days)
+3,079 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.42500000000000004;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../gcp-bank-of-anthos/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 15px; height: 15px; " title="epam / gcp-bank-of-anthos
+0 commits (30 days)
+0 contributors (30 days)
+10,777 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 13px; height: 13px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-database/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-starter-database
+0 commits (30 days)
+0 contributors (30 days)
+155 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-excerpt-service-api/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-excerpt-service-api
+0 commits (30 days)
+0 contributors (30 days)
+2,462 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-platform-gateway/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-platform-gateway
+0 commits (30 days)
+0 contributors (30 days)
+1,017 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../acuity/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 53px; height: 53px; " title="epam / acuity
+0 commits (30 days)
+0 contributors (30 days)
+261,129 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 51px; height: 51px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-excerpt-worker/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-excerpt-worker
+0 commits (30 days)
+0 contributors (30 days)
+1,243 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../checkstyle/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 24px; height: 24px; " title="epam / checkstyle
+0 commits (30 days)
+0 contributors (30 days)
+39,531 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 22px; height: 22px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-user-settings-service-api/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-user-settings-service-api
+0 commits (30 days)
+0 contributors (30 days)
+2,360 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-geoserver-publisher/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-geoserver-publisher
+0 commits (30 days)
+0 contributors (30 days)
+610 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-kafka-api-core-base-image/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / edp-ddm-kafka-api-core-base-image
+0 commits (30 days)
+0 contributors (30 days)
+5,227 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-feign-annotation-error-decoder/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-feign-annotation-error-decoder
+0 commits (30 days)
+0 contributors (30 days)
+1,358 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-process-history-model/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-process-history-model
+0 commits (30 days)
+0 contributors (30 days)
+243 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-ceph-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-ceph-client
+0 commits (30 days)
+0 contributors (30 days)
+387 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-commons-avro/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / eco-commons-avro
+0 commits (30 days)
+0 contributors (30 days)
+3,606 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-security/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-starter-security
+0 commits (30 days)
+0 contributors (30 days)
+753 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-registry-tests/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 5px; height: 5px; " title="epam / edp-ddm-registry-tests
+0 commits (30 days)
+0 contributors (30 days)
+6 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 3px; height: 3px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-commons-kafka/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / eco-commons-kafka
+0 commits (30 days)
+0 contributors (30 days)
+7,139 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-notification-service/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / edp-ddm-notification-service
+0 commits (30 days)
+0 contributors (30 days)
+5,189 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Lagerta/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 17px; height: 17px; " title="epam / Lagerta
+0 commits (30 days)
+0 contributors (30 days)
+15,453 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 15px; height: 15px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-form-schema-provider/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-form-schema-provider
+0 commits (30 days)
+0 contributors (30 days)
+994 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-camunda-auth-cli/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-camunda-auth-cli
+0 commits (30 days)
+0 contributors (30 days)
+446 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-registry-regulations-validator-cli/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / edp-ddm-registry-regulations-validator-cli
+0 commits (30 days)
+0 contributors (30 days)
+4,887 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../openvasp-java-host/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / openvasp-java-host
+0 commits (30 days)
+0 contributors (30 days)
+2,514 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../openvasp-java-core/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / openvasp-java-core
+0 commits (30 days)
+0 contributors (30 days)
+4,321 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-message-payload-storage/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-message-payload-storage
+0 commits (30 days)
+0 contributors (30 days)
+323 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../aws-syndicate/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 21px; height: 21px; " title="epam / aws-syndicate
+0 commits (30 days)
+0 contributors (30 days)
+30,801 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 19px; height: 19px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-soap-api-core-base-image/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-soap-api-core-base-image
+0 commits (30 days)
+0 contributors (30 days)
+631 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-form-data-storage/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-form-data-storage
+0 commits (30 days)
+0 contributors (30 days)
+589 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-logger2/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-starter-logger2
+0 commits (30 days)
+0 contributors (30 days)
+92 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-kafka-manager/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 29px; height: 29px; " title="epam / eco-kafka-manager
+0 commits (30 days)
+0 contributors (30 days)
+65,155 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 27px; height: 27px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../openvasp-java-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / openvasp-java-client
+0 commits (30 days)
+0 contributors (30 days)
+4,242 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-excerpt-model/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-excerpt-model
+0 commits (30 days)
+0 contributors (30 days)
+363 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-excerpt-worker-docx/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-excerpt-worker-docx
+0 commits (30 days)
+0 contributors (30 days)
+1,382 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-digital-document-service/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-digital-document-service
+0 commits (30 days)
+0 contributors (30 days)
+3,058 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-validation/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-starter-validation
+0 commits (30 days)
+0 contributors (30 days)
+81 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-registry-regulations-publication-pipeline/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / edp-ddm-registry-regulations-publication-pipeline
+0 commits (30 days)
+0 contributors (30 days)
+3,798 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-report-exporter/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-report-exporter
+0 commits (30 days)
+0 contributors (30 days)
+1,216 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-logger/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-starter-logger
+0 commits (30 days)
+0 contributors (30 days)
+668 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-user-process-management/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-user-process-management
+0 commits (30 days)
+0 contributors (30 days)
+2,211 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-user-publisher/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-user-publisher
+0 commits (30 days)
+0 contributors (30 days)
+3,085 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-bp-admin-portal/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-bp-admin-portal
+0 commits (30 days)
+0 contributors (30 days)
+705 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-report-publisher/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-report-publisher
+0 commits (30 days)
+0 contributors (30 days)
+2,440 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-service-generation-utility/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 15px; height: 15px; " title="epam / edp-ddm-service-generation-utility
+0 commits (30 days)
+0 contributors (30 days)
+12,355 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 13px; height: 13px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-notifications/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-starter-notifications
+0 commits (30 days)
+0 contributors (30 days)
+55 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-bpms/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 17px; height: 17px; " title="epam / edp-ddm-bpms
+0 commits (30 days)
+0 contributors (30 days)
+16,831 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 15px; height: 15px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-history-excerptor/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-history-excerptor
+0 commits (30 days)
+0 contributors (30 days)
+1,859 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-error-handler/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-starter-error-handler
+0 commits (30 days)
+0 contributors (30 days)
+248 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-liquibase-ddm-ext/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / edp-ddm-liquibase-ddm-ext
+0 commits (30 days)
+0 contributors (30 days)
+7,402 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-actuator/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-starter-actuator
+0 commits (30 days)
+0 contributors (30 days)
+323 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-dataplatform-jenkins-agent/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-dataplatform-jenkins-agent
+0 commits (30 days)
+0 contributors (30 days)
+158 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-language-server/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-language-server
+0 commits (30 days)
+0 contributors (30 days)
+722 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-keycloak-rest-api-ext/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-keycloak-rest-api-ext
+0 commits (30 days)
+0 contributors (30 days)
+310 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-process-history-service-persistence/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-process-history-service-persistence
+0 commits (30 days)
+0 contributors (30 days)
+981 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-commons/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / eco-commons
+0 commits (30 days)
+0 contributors (30 days)
+1,102 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-swagger/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-starter-swagger
+0 commits (30 days)
+0 contributors (30 days)
+591 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../JDI-Examples/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / JDI-Examples
+0 commits (30 days)
+0 contributors (30 days)
+45 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-idm-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-idm-client
+0 commits (30 days)
+0 contributors (30 days)
+885 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../JDI/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 34px; height: 34px; " title="epam / JDI
+0 commits (30 days)
+0 contributors (30 days)
+95,989 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 32px; height: 32px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-model-core-base-image/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-model-core-base-image
+0 commits (30 days)
+0 contributors (30 days)
+558 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-data-factory-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-data-factory-client
+0 commits (30 days)
+0 contributors (30 days)
+1,315 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../parso/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / parso
+0 commits (30 days)
+0 contributors (30 days)
+3,747 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-kafka/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-starter-kafka
+0 commits (30 days)
+0 contributors (30 days)
+773 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-process-history-service-api/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-process-history-service-api
+0 commits (30 days)
+0 contributors (30 days)
+2,402 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-excerpt-worker-csv/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-excerpt-worker-csv
+0 commits (30 days)
+0 contributors (30 days)
+1,271 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-kafka-api/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-starter-kafka-api
+0 commits (30 days)
+0 contributors (30 days)
+417 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-audit/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-starter-audit
+0 commits (30 days)
+0 contributors (30 days)
+652 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-low-code-platform-parent/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 5px; height: 5px; " title="epam / edp-ddm-low-code-platform-parent
+0 commits (30 days)
+0 contributors (30 days)
+6 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 3px; height: 3px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-user-settings-model/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-user-settings-model
+0 commits (30 days)
+0 contributors (30 days)
+163 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-notification-template-publisher/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / edp-ddm-notification-template-publisher
+0 commits (30 days)
+0 contributors (30 days)
+785 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-bp-webservice-gateway/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-bp-webservice-gateway
+0 commits (30 days)
+0 contributors (30 days)
+1,819 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-rest-api-core-base-image/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / edp-ddm-rest-api-core-base-image
+0 commits (30 days)
+0 contributors (30 days)
+5,153 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-registry-regulation-management/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="epam / edp-ddm-registry-regulation-management
+0 commits (30 days)
+0 contributors (30 days)
+14,826 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-localization/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-starter-localization
+0 commits (30 days)
+0 contributors (30 days)
+86 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-file-storage/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-file-storage
+0 commits (30 days)
+0 contributors (30 days)
+477 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-dso-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-dso-client
+0 commits (30 days)
+0 contributors (30 days)
+695 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-registry-steps/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-registry-steps
+0 commits (30 days)
+0 contributors (30 days)
+2,579 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hibernate-ogm/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 26px; height: 26px; " title="epam / hibernate-ogm
+0 commits (30 days)
+0 contributors (30 days)
+49,670 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 24px; height: 24px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-low-code-platform-maven-tiles/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-low-code-platform-maven-tiles
+0 commits (30 days)
+0 contributors (30 days)
+200 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-form-validation-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-form-validation-client
+0 commits (30 days)
+0 contributors (30 days)
+357 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-user-task-management/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-user-task-management
+0 commits (30 days)
+0 contributors (30 days)
+2,536 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-juel-function/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-starter-juel-function
+0 commits (30 days)
+0 contributors (30 days)
+1,825 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-starter-rest-api/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-starter-rest-api
+0 commits (30 days)
+0 contributors (30 days)
+464 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / npm</b> (62)
+</div>
+<a target='_blank' href='../ai-dial-chat/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 31px; height: 31px; " title="epam / ai-dial-chat
+72 commits (30 days)
+9 contributors (30 days)
+78,762 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 1.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 29px; height: 29px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../cloud-pipeline/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 73px; height: 73px; " title="epam / cloud-pipeline
+52 commits (30 days)
+9 contributors (30 days)
+527,727 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.8333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 71px; height: 71px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ketcher/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="epam / ketcher
+50 commits (30 days)
+15 contributors (30 days)
+102,593 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.8166666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-headlamp/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 27px; height: 27px; " title="epam / edp-headlamp
+16 commits (30 days)
+3 contributors (30 days)
+55,971 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.5333333333333333;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 25px; height: 25px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseGrafanaPlugin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / TimeBaseGrafanaPlugin
+14 commits (30 days)
+3 contributors (30 days)
+4,124 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.5166666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../kubernetes-engine-samples/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 26px; height: 26px; " title="epam / kubernetes-engine-samples
+13 commits (30 days)
+5 contributors (30 days)
+52,064 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.5083333333333333;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 24px; height: 24px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Indigo/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 53px; height: 53px; " title="epam / Indigo
+11 commits (30 days)
+1 contributors (30 days)
+259,231 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4916666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 51px; height: 51px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../UUI/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 32px; height: 32px; " title="epam / UUI
+11 commits (30 days)
+1 contributors (30 days)
+84,864 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4916666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 30px; height: 30px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../xdlc-ai/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / xdlc-ai
+10 commits (30 days)
+1 contributors (30 days)
+381 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.48333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-schema-catalog/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / eco-schema-catalog
+10 commits (30 days)
+4 contributors (30 days)
+23,586 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.48333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-chaperone.admin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / epmgcip-chaperone.admin
+8 commits (30 days)
+2 contributors (30 days)
+2,356 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4666666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Indigo-ELN-v.-2.0/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 28px; height: 28px; " title="epam / Indigo-ELN-v.-2.0
+4 commits (30 days)
+2 contributors (30 days)
+62,761 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.43333333333333335;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 26px; height: 26px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ai-dial/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / ai-dial
+3 commits (30 days)
+1 contributors (30 days)
+913 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.42500000000000004;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / AIRUN-Assistants-Benchmark-CodeBase
+3 commits (30 days)
+2 contributors (30 days)
+3,079 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.42500000000000004;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../AIRUN-LLM-Benchmark-Results/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 20px; height: 20px; " title="epam / AIRUN-LLM-Benchmark-Results
+2 commits (30 days)
+1 contributors (30 days)
+24,203 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4166666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 18px; height: 18px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../AIRUN-LLM-Benchmark/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / AIRUN-LLM-Benchmark
+1 commits (30 days)
+1 contributors (30 days)
+6,858 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4083333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-chaperone.contentful/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / epmgcip-chaperone.contentful
+1 commits (30 days)
+1 contributors (30 days)
+792 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4083333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../NGB/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 48px; height: 48px; " title="epam / NGB
+1 commits (30 days)
+1 contributors (30 days)
+212,833 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4083333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 46px; height: 46px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-connect-ed.ui/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / epmgcip-connect-ed.ui
+0 commits (30 days)
+0 contributors (30 days)
+215 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epm-content-gen/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / epm-content-gen
+0 commits (30 days)
+0 contributors (30 days)
+1,627 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-zeroharm.be/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / epmgcip-zeroharm.be
+0 commits (30 days)
+0 contributors (30 days)
+221 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../sitecore-engx-scaffold/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / sitecore-engx-scaffold
+0 commits (30 days)
+0 contributors (30 days)
+1,797 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../acuity/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 53px; height: 53px; " title="epam / acuity
+0 commits (30 days)
+0 contributors (30 days)
+261,129 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 51px; height: 51px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseWS/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 38px; height: 38px; " title="epam / TimebaseWS
+0 commits (30 days)
+0 contributors (30 days)
+121,191 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 36px; height: 36px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ember-restws-samples/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / ember-restws-samples
+0 commits (30 days)
+0 contributors (30 days)
+274 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-control-plane-console/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 22px; height: 22px; " title="epam / edp-ddm-control-plane-console
+0 commits (30 days)
+0 contributors (30 days)
+34,221 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 20px; height: 20px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../kubernetes-kueue/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 21px; height: 21px; " title="epam / kubernetes-kueue
+0 commits (30 days)
+0 contributors (30 days)
+29,272 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 19px; height: 19px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-form-submission-validation/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="epam / edp-ddm-form-submission-validation
+0 commits (30 days)
+0 contributors (30 days)
+9,174 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseWS-old/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / TimebaseWS-old
+0 commits (30 days)
+0 contributors (30 days)
+22,607 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../solidity-bootcamp/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / solidity-bootcamp
+0 commits (30 days)
+0 contributors (30 days)
+218 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../sdtm_validator/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / sdtm_validator
+0 commits (30 days)
+0 contributors (30 days)
+6,789 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-redash/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 30px; height: 30px; " title="epam / edp-ddm-redash
+0 commits (30 days)
+0 contributors (30 days)
+73,695 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 28px; height: 28px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../clocks/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / clocks
+0 commits (30 days)
+0 contributors (30 days)
+4,945 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../dail-xl/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="epam / dail-xl
+0 commits (30 days)
+0 contributors (30 days)
+99,055 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Constellation/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / Constellation
+0 commits (30 days)
+0 contributors (30 days)
+7,538 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-architecture/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-architecture
+0 commits (30 days)
+0 contributors (30 days)
+598 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ado-delivery-gantt/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / ado-delivery-gantt
+0 commits (30 days)
+0 contributors (30 days)
+3,285 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../aws-syndicate/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 21px; height: 21px; " title="epam / aws-syndicate
+0 commits (30 days)
+0 contributors (30 days)
+30,801 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 19px; height: 19px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../model_garden/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / model_garden
+0 commits (30 days)
+0 contributors (30 days)
+5,270 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../badgerdoc/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 29px; height: 29px; " title="epam / badgerdoc
+0 commits (30 days)
+0 contributors (30 days)
+67,332 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 27px; height: 27px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../miew/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 22px; height: 22px; " title="epam / miew
+0 commits (30 days)
+0 contributors (30 days)
+30,976 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 20px; height: 20px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../quanthub-portal/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="epam / quanthub-portal
+0 commits (30 days)
+0 contributors (30 days)
+8,658 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../wdl-workspace/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="epam / wdl-workspace
+0 commits (30 days)
+0 contributors (30 days)
+9,833 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../headless-commerce-salesforce-accelerator/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / headless-commerce-salesforce-accelerator
+0 commits (30 days)
+0 contributors (30 days)
+6,118 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Sitecore-Reference-Storefront-on-Habitat/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 30px; height: 30px; " title="epam / Sitecore-Reference-Storefront-on-Habitat
+0 commits (30 days)
+0 contributors (30 days)
+69,663 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 28px; height: 28px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-zeroharm.fe/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / epmgcip-zeroharm.fe
+0 commits (30 days)
+0 contributors (30 days)
+5,220 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hub-state/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / hub-state
+0 commits (30 days)
+0 contributors (30 days)
+866 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../firecloud-ui/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="epam / firecloud-ui
+0 commits (30 days)
+0 contributors (30 days)
+13,801 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-gabt.back-office-app/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / epmgcip-gabt.back-office-app
+0 commits (30 days)
+0 contributors (30 days)
+130 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../deps-fe-usePolling/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / deps-fe-usePolling
+0 commits (30 days)
+0 contributors (30 days)
+275 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-connect-ed.admin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / epmgcip-connect-ed.admin
+0 commits (30 days)
+0 contributors (30 days)
+262 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-gabt.user-app/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / epmgcip-gabt.user-app
+0 commits (30 days)
+0 contributors (30 days)
+70 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hub-extensions/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / hub-extensions
+0 commits (30 days)
+0 contributors (30 days)
+142 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../JDI/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 34px; height: 34px; " title="epam / JDI
+0 commits (30 days)
+0 contributors (30 days)
+95,989 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 32px; height: 32px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../agr-lib/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / agr-lib
+0 commits (30 days)
+0 contributors (30 days)
+6,083 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../deps-fe-labeling-tool/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 17px; height: 17px; " title="epam / deps-fe-labeling-tool
+0 commits (30 days)
+0 contributors (30 days)
+17,658 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 15px; height: 15px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../mriviewer/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 21px; height: 21px; " title="epam / mriviewer
+0 commits (30 days)
+0 contributors (30 days)
+28,866 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 19px; height: 19px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hub-stacks-disposer/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / hub-stacks-disposer
+0 commits (30 days)
+0 contributors (30 days)
+234 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-uva.mono/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / epmgcip-uva.mono
+0 commits (30 days)
+0 contributors (30 days)
+977 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../indigo-node/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / indigo-node
+0 commits (30 days)
+0 contributors (30 days)
+1,785 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../xframework/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="epam / xframework
+0 commits (30 days)
+0 contributors (30 days)
+12,656 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../pipeline-builder/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 15px; height: 15px; " title="epam / pipeline-builder
+0 commits (30 days)
+0 contributors (30 days)
+10,945 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 13px; height: 13px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / jest</b> (14)
+</div>
+<a target='_blank' href='../ketcher/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="epam / ketcher
+50 commits (30 days)
+15 contributors (30 days)
+102,593 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.8166666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-headlamp/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 27px; height: 27px; " title="epam / edp-headlamp
+16 commits (30 days)
+3 contributors (30 days)
+55,971 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.5333333333333333;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 25px; height: 25px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseGrafanaPlugin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / TimeBaseGrafanaPlugin
+14 commits (30 days)
+3 contributors (30 days)
+4,124 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.5166666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../UUI/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 32px; height: 32px; " title="epam / UUI
+11 commits (30 days)
+1 contributors (30 days)
+84,864 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4916666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 30px; height: 30px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../eco-schema-catalog/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / eco-schema-catalog
+10 commits (30 days)
+4 contributors (30 days)
+23,586 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.48333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../epmgcip-chaperone.admin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / epmgcip-chaperone.admin
+8 commits (30 days)
+2 contributors (30 days)
+2,356 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4666666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / AIRUN-Assistants-Benchmark-CodeBase
+3 commits (30 days)
+2 contributors (30 days)
+3,079 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.42500000000000004;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../sitecore-engx-scaffold/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / sitecore-engx-scaffold
+0 commits (30 days)
+0 contributors (30 days)
+1,797 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-form-submission-validation/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="epam / edp-ddm-form-submission-validation
+0 commits (30 days)
+0 contributors (30 days)
+9,174 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseWS-old/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / TimebaseWS-old
+0 commits (30 days)
+0 contributors (30 days)
+22,607 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../dail-xl/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="epam / dail-xl
+0 commits (30 days)
+0 contributors (30 days)
+99,055 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../miew/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 22px; height: 22px; " title="epam / miew
+0 commits (30 days)
+0 contributors (30 days)
+30,976 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 20px; height: 20px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../deps-fe-usePolling/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / deps-fe-usePolling
+0 commits (30 days)
+0 contributors (30 days)
+275 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../deps-fe-labeling-tool/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 17px; height: 17px; " title="epam / deps-fe-labeling-tool
+0 commits (30 days)
+0 contributors (30 days)
+17,658 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 15px; height: 15px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / gradle</b> (51)
+</div>
+<a target='_blank' href='../cloud-pipeline/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 73px; height: 73px; " title="epam / cloud-pipeline
+52 commits (30 days)
+9 contributors (30 days)
+527,727 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.8333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 71px; height: 71px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ai-dial-core/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 17px; height: 17px; " title="epam / ai-dial-core
+21 commits (30 days)
+9 contributors (30 days)
+15,122 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.575;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 15px; height: 15px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ai-dial-app-controller/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / ai-dial-app-controller
+10 commits (30 days)
+3 contributors (30 days)
+1,733 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.48333333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ember-trade-connector-sample/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="epam / ember-trade-connector-sample
+5 commits (30 days)
+1 contributors (30 days)
+8,904 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4416666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../AIRUN-Assistants-Benchmark-CodeBase/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / AIRUN-Assistants-Benchmark-CodeBase
+3 commits (30 days)
+2 contributors (30 days)
+3,079 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.42500000000000004;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../sdmxsource/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 32px; height: 32px; " title="epam / sdmxsource
+2 commits (30 days)
+2 contributors (30 days)
+81,793 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4166666666666667;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 30px; height: 30px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ai-dial-auth-helper/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / ai-dial-auth-helper
+1 commits (30 days)
+1 contributors (30 days)
+622 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4083333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../NGB/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 48px; height: 48px; " title="epam / NGB
+1 commits (30 days)
+1 contributors (30 days)
+212,833 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4083333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 46px; height: 46px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../jsdmx/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / jsdmx
+1 commits (30 days)
+1 contributors (30 days)
+7,804 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.4083333333333334;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ember-algo-sample/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / ember-algo-sample
+0 commits (30 days)
+0 contributors (30 days)
+746 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../fonda/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 17px; height: 17px; " title="epam / fonda
+0 commits (30 days)
+0 contributors (30 days)
+15,525 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 15px; height: 15px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../GMP/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / GMP
+0 commits (30 days)
+0 contributors (30 days)
+1,284 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../acuity/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 53px; height: 53px; " title="epam / acuity
+0 commits (30 days)
+0 contributors (30 days)
+261,129 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 51px; height: 51px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseWS/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 38px; height: 38px; " title="epam / TimebaseWS
+0 commits (30 days)
+0 contributors (30 days)
+121,191 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 36px; height: 36px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-library-stages/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / edp-library-stages
+0 commits (30 days)
+0 contributors (30 days)
+3,449 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Android-Secure-Storage/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / Android-Secure-Storage
+0 commits (30 days)
+0 contributors (30 days)
+814 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../gmp-common/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / gmp-common
+0 commits (30 days)
+0 contributors (30 days)
+675 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseWS-old/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / TimebaseWS-old
+0 commits (30 days)
+0 contributors (30 days)
+22,607 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../java-cme-mdp3-handler/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / java-cme-mdp3-handler
+0 commits (30 days)
+0 contributors (30 days)
+7,053 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ThreadAffinity/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / ThreadAffinity
+0 commits (30 days)
+0 contributors (30 days)
+452 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../dail-xl/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="epam / dail-xl
+0 commits (30 days)
+0 contributors (30 days)
+99,055 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Gepard/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / Gepard
+0 commits (30 days)
+0 contributors (30 days)
+6,090 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../covid-tracing-bluetooth-poc/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / covid-tracing-bluetooth-poc
+0 commits (30 days)
+0 contributors (30 days)
+1,555 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../atg-build-plugin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / atg-build-plugin
+0 commits (30 days)
+0 contributors (30 days)
+1,962 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-library-pipelines/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-library-pipelines
+0 commits (30 days)
+0 contributors (30 days)
+1,979 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseKafkaConnector/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / TimeBaseKafkaConnector
+0 commits (30 days)
+0 contributors (30 days)
+1,592 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../HdDateTime/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / HdDateTime
+0 commits (30 days)
+0 contributors (30 days)
+7,205 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../gmp-bootstrap/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / gmp-bootstrap
+0 commits (30 days)
+0 contributors (30 days)
+469 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Wilma/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 24px; height: 24px; " title="epam / Wilma
+0 commits (30 days)
+0 contributors (30 days)
+41,055 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 22px; height: 22px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ValuesTypes4Java/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="epam / ValuesTypes4Java
+0 commits (30 days)
+0 contributors (30 days)
+9,106 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseTutorial/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / TimeBaseTutorial
+0 commits (30 days)
+0 contributors (30 days)
+1,485 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../CoroutinesCache/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / CoroutinesCache
+0 commits (30 days)
+0 contributors (30 days)
+1,198 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../grid-engine-api/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / grid-engine-api
+0 commits (30 days)
+0 contributors (30 days)
+5,658 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../htsjdk-s3-plugin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / htsjdk-s3-plugin
+0 commits (30 days)
+0 contributors (30 days)
+712 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseCryptoConnectors/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 18px; height: 18px; " title="epam / TimebaseCryptoConnectors
+0 commits (30 days)
+0 contributors (30 days)
+19,800 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 16px; height: 16px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ember-fix-mdg-sample-java/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / ember-fix-mdg-sample-java
+0 commits (30 days)
+0 contributors (30 days)
+158 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseCommons/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 27px; height: 27px; " title="epam / TimeBaseCommons
+0 commits (30 days)
+0 contributors (30 days)
+56,250 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 25px; height: 25px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ember-risk-sample/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / ember-risk-sample
+0 commits (30 days)
+0 contributors (30 days)
+249 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../CoroutinesExtensions/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / CoroutinesExtensions
+0 commits (30 days)
+0 contributors (30 days)
+387 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../DFP/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 20px; height: 20px; " title="epam / DFP
+0 commits (30 days)
+0 contributors (30 days)
+25,051 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 18px; height: 18px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../gflog/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 15px; height: 15px; " title="epam / gflog
+0 commits (30 days)
+0 contributors (30 days)
+12,127 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 13px; height: 13px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../gmp-tools/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / gmp-tools
+0 commits (30 days)
+0 contributors (30 days)
+1,290 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Containers/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="epam / Containers
+0 commits (30 days)
+0 contributors (30 days)
+22,825 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimebaseOrderBook/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="epam / TimebaseOrderBook
+0 commits (30 days)
+0 contributors (30 days)
+6,443 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseClickhouseConnector/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="epam / TimeBaseClickhouseConnector
+0 commits (30 days)
+0 contributors (30 days)
+13,696 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../TimeBaseTimescaleConnector/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / TimeBaseTimescaleConnector
+0 commits (30 days)
+0 contributors (30 days)
+3,632 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../JDI/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 34px; height: 34px; " title="epam / JDI
+0 commits (30 days)
+0 contributors (30 days)
+95,989 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 32px; height: 32px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../NativeUtils/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / NativeUtils
+0 commits (30 days)
+0 contributors (30 days)
+4,453 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../VelocityPlugin/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / VelocityPlugin
+0 commits (30 days)
+0 contributors (30 days)
+90 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Zstandard/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / Zstandard
+0 commits (30 days)
+0 contributors (30 days)
+5,403 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../ember-java-client/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="epam / ember-java-client
+0 commits (30 days)
+0 contributors (30 days)
+836 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / sbt</b> (1)
+</div>
+<a target='_blank' href='../firecloud-ui/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="epam / firecloud-ui
+0 commits (30 days)
+0 contributors (30 days)
+13,801 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>tech / helm</b> (11)
+</div>
+<a target='_blank' href='../edp-install/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-install
+7 commits (30 days)
+4 contributors (30 days)
+3,170 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.45833333333333337;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-smtp-server/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="epam / edp-ddm-smtp-server
+0 commits (30 days)
+0 contributors (30 days)
+2,663 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-logging/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-logging
+0 commits (30 days)
+0 contributors (30 days)
+628 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-control-plane-jenkins/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-control-plane-jenkins
+0 commits (30 days)
+0 contributors (30 days)
+1,658 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-control-plane-nexus/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-control-plane-nexus
+0 commits (30 days)
+0 contributors (30 days)
+1,972 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-monitoring/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 31px; height: 31px; " title="epam / edp-ddm-monitoring
+0 commits (30 days)
+0 contributors (30 days)
+77,005 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 29px; height: 29px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-backup-management/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="epam / edp-ddm-backup-management
+0 commits (30 days)
+0 contributors (30 days)
+1,981 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-control-plane-gerrit/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="epam / edp-ddm-control-plane-gerrit
+0 commits (30 days)
+0 contributors (30 days)
+5,268 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-redis-operator/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="epam / edp-ddm-redis-operator
+0 commits (30 days)
+0 contributors (30 days)
+515 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-cluster-kafka-operator/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 6px; height: 6px; " title="epam / edp-ddm-cluster-kafka-operator
+0 commits (30 days)
+0 contributors (30 days)
+62 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 4px; height: 4px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../edp-ddm-user-management/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="epam / edp-ddm-user-management
+0 commits (30 days)
+0 contributors (30 days)
+4,656 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #A3C1AD; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+</div>
+</span>
+</div>
+</div>
+</div>
+</body>
+</html>

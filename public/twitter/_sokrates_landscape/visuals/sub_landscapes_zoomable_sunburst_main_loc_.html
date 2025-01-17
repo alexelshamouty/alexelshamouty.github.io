@@ -1,0 +1,560 @@
+<head>
+    <style>
+        body {
+            font-family: Sans-serif;
+            font-size: 11px;
+        }
+
+        .slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+    </style>
+
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+</head>
+<body>
+<script>
+    const width = window.innerWidth,
+        height = window.innerHeight,
+        maxRadius = (Math.min(width, height) / 2) - 5;
+
+    const formatNumber = d3.format(',d');
+
+    const x = d3.scaleLinear()
+        .range([0, 2 * Math.PI])
+        .clamp(true);
+
+    const y = d3.scaleSqrt()
+        .range([maxRadius * .1, maxRadius]);
+
+    const color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    const partition = d3.partition();
+
+    const arc = d3.arc()
+        .startAngle(d => x(d.x0))
+        .endAngle(d => x(d.x1))
+        .innerRadius(d => Math.max(0, y(d.y0)))
+        .outerRadius(d => Math.max(0, y(d.y1)));
+
+    const middleArcLine = d => {
+        const halfPi = Math.PI / 2;
+        const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+        const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+
+        const middleAngle = (angles[1] + angles[0]) / 2;
+        const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+        if (invertDirection) {
+            angles.reverse();
+        }
+
+        const path = d3.path();
+        path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+        return path.toString();
+    };
+
+    const textFits = d => {
+        const CHAR_SPACE = 6;
+
+        const deltaAngle = x(d.x1) - x(d.x0);
+        const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+        const perimeter = r * deltaAngle;
+
+        return d.data.name.length * CHAR_SPACE < perimeter;
+    };
+
+    const svg = d3.select('body').append('svg')
+        .style('width', '100vw')
+        .style('height', '100vh')
+        .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+        .on('click', () => focusOn()); // Reset zoom on canvas click
+
+    var rootData = {
+        "name": "",
+        "children": [ {
+  "name" : "the-algorithm (434K)",
+  "color" : "",
+  "size" : 433772,
+  "children" : [ ]
+}, {
+  "name" : "ios-twitter-image-pipeline (96K)",
+  "color" : "",
+  "size" : 96338,
+  "children" : [ ]
+}, {
+  "name" : "finagle (89K)",
+  "color" : "",
+  "size" : 89358,
+  "children" : [ ]
+}, {
+  "name" : "pants (81K)",
+  "color" : "",
+  "size" : 81165,
+  "children" : [ ]
+}, {
+  "name" : "scalding (47K)",
+  "color" : "",
+  "size" : 46579,
+  "children" : [ ]
+}, {
+  "name" : "pelikan (43K)",
+  "color" : "",
+  "size" : 42858,
+  "children" : [ ]
+}, {
+  "name" : "util (36K)",
+  "color" : "",
+  "size" : 35832,
+  "children" : [ ]
+}, {
+  "name" : "vireo (35K)",
+  "color" : "",
+  "size" : 34568,
+  "children" : [ ]
+}, {
+  "name" : "twitter-cldr-rb (31K)",
+  "color" : "",
+  "size" : 31186,
+  "children" : [ ]
+}, {
+  "name" : "ios-twitter-network-layer (28K)",
+  "color" : "",
+  "size" : 27983,
+  "children" : [ ]
+}, {
+  "name" : "algebird (27K)",
+  "color" : "",
+  "size" : 26584,
+  "children" : [ ]
+}, {
+  "name" : "scoot (26K)",
+  "color" : "",
+  "size" : 26284,
+  "children" : [ ]
+}, {
+  "name" : "rsc (24K)",
+  "color" : "",
+  "size" : 24285,
+  "children" : [ ]
+}, {
+  "name" : "focus (23K)",
+  "color" : "",
+  "size" : 23342,
+  "children" : [ ]
+}, {
+  "name" : "scrooge (19K)",
+  "color" : "",
+  "size" : 19080,
+  "children" : [ ]
+}, {
+  "name" : "sqrl (18K)",
+  "color" : "",
+  "size" : 18149,
+  "children" : [ ]
+}, {
+  "name" : "elephant-bird (16K)",
+  "color" : "",
+  "size" : 16140,
+  "children" : [ ]
+}, {
+  "name" : "scala_school (15K)",
+  "color" : "",
+  "size" : 15457,
+  "children" : [ ]
+}, {
+  "name" : "twemproxy (15K)",
+  "color" : "",
+  "size" : 15247,
+  "children" : [ ]
+}, {
+  "name" : "cloudhopper-commons (15K)",
+  "color" : "",
+  "size" : 14674,
+  "children" : [ ]
+}, {
+  "name" : "finatra (14K)",
+  "color" : "",
+  "size" : 14208,
+  "children" : [ ]
+}, {
+  "name" : "hogan.js (14K)",
+  "color" : "",
+  "size" : 14081,
+  "children" : [ ]
+}, {
+  "name" : "ccommon (14K)",
+  "color" : "",
+  "size" : 14022,
+  "children" : [ ]
+}, {
+  "name" : "communitynotes (11K)",
+  "color" : "",
+  "size" : 10951,
+  "children" : [ ]
+}, {
+  "name" : "rezolus (11K)",
+  "color" : "",
+  "size" : 10869,
+  "children" : [ ]
+}, {
+  "name" : "GraphJet (11K)",
+  "color" : "",
+  "size" : 10545,
+  "children" : [ ]
+}, {
+  "name" : "twitter-text (9.8K)",
+  "color" : "",
+  "size" : 9761,
+  "children" : [ ]
+}, {
+  "name" : "rustcommon (7.9K)",
+  "color" : "",
+  "size" : 7935,
+  "children" : [ ]
+}, {
+  "name" : "twitter-server (6.8K)",
+  "color" : "",
+  "size" : 6778,
+  "children" : [ ]
+}, {
+  "name" : "chill (6.1K)",
+  "color" : "",
+  "size" : 6060,
+  "children" : [ ]
+}, {
+  "name" : "whiskey (5.9K)",
+  "color" : "",
+  "size" : 5885,
+  "children" : [ ]
+}, {
+  "name" : "stitch (5.8K)",
+  "color" : "",
+  "size" : 5824,
+  "children" : [ ]
+}, {
+  "name" : "bazel-multiversion (5.4K)",
+  "color" : "",
+  "size" : 5436,
+  "children" : [ ]
+}, {
+  "name" : "cassovary (5.4K)",
+  "color" : "",
+  "size" : 5363,
+  "children" : [ ]
+}, {
+  "name" : "the-algorithm-ml (5.3K)",
+  "color" : "",
+  "size" : 5265,
+  "children" : [ ]
+}, {
+  "name" : "bijection (4.9K)",
+  "color" : "",
+  "size" : 4859,
+  "children" : [ ]
+}, {
+  "name" : "rpc-perf (4.8K)",
+  "color" : "",
+  "size" : 4823,
+  "children" : [ ]
+}, {
+  "name" : "sbf (4.7K)",
+  "color" : "",
+  "size" : 4691,
+  "children" : [ ]
+}, {
+  "name" : "twitter-cldr-js (4.5K)",
+  "color" : "",
+  "size" : 4485,
+  "children" : [ ]
+}, {
+  "name" : "caladrius (4.3K)",
+  "color" : "",
+  "size" : 4350,
+  "children" : [ ]
+}, {
+  "name" : "effectivescala (4.3K)",
+  "color" : "",
+  "size" : 4254,
+  "children" : [ ]
+}, {
+  "name" : "opensource-website (4.2K)",
+  "color" : "",
+  "size" : 4236,
+  "children" : [ ]
+}, {
+  "name" : "storehaus (4.2K)",
+  "color" : "",
+  "size" : 4155,
+  "children" : [ ]
+}, {
+  "name" : "hadoop-lzo (4.1K)",
+  "color" : "",
+  "size" : 4123,
+  "children" : [ ]
+}, {
+  "name" : "ios-twitter-logging-service (4.1K)",
+  "color" : "",
+  "size" : 4091,
+  "children" : [ ]
+}, {
+  "name" : "netty-http2 (3.6K)",
+  "color" : "",
+  "size" : 3616,
+  "children" : [ ]
+}, {
+  "name" : "iago2 (3.5K)",
+  "color" : "",
+  "size" : 3450,
+  "children" : [ ]
+}, {
+  "name" : "libwatchman (3.1K)",
+  "color" : "",
+  "size" : 3059,
+  "children" : [ ]
+}, {
+  "name" : "Serial (3.1K)",
+  "color" : "",
+  "size" : 3057,
+  "children" : [ ]
+}, {
+  "name" : "SentenTree (2.9K)",
+  "color" : "",
+  "size" : 2935,
+  "children" : [ ]
+}, {
+  "name" : "zktraffic (2.8K)",
+  "color" : "",
+  "size" : 2795,
+  "children" : [ ]
+}, {
+  "name" : "diffusion-rl (2.8K)",
+  "color" : "",
+  "size" : 2755,
+  "children" : [ ]
+}, {
+  "name" : "nodes (2.6K)",
+  "color" : "",
+  "size" : 2645,
+  "children" : [ ]
+}, {
+  "name" : "gatekeeper-service (2.5K)",
+  "color" : "",
+  "size" : 2477,
+  "children" : [ ]
+}, {
+  "name" : "twitter-korean-text (2.4K)",
+  "color" : "",
+  "size" : 2436,
+  "children" : [ ]
+}, {
+  "name" : "typeahead.js (2.2K)",
+  "color" : "",
+  "size" : 2220,
+  "children" : [ ]
+}, {
+  "name" : "TwitterTextEditor (2.2K)",
+  "color" : "",
+  "size" : 2176,
+  "children" : [ ]
+}, {
+  "name" : "compose-rules (1.9K)",
+  "color" : "",
+  "size" : 1916,
+  "children" : [ ]
+}, {
+  "name" : "labella.js (1.8K)",
+  "color" : "",
+  "size" : 1829,
+  "children" : [ ]
+}, {
+  "name" : "groupcache (1.8K)",
+  "color" : "",
+  "size" : 1801,
+  "children" : [ ]
+}, {
+  "name" : "hpack (1.8K)",
+  "color" : "",
+  "size" : 1757,
+  "children" : [ ]
+}, {
+  "name" : "joauth (1.7K)",
+  "color" : "",
+  "size" : 1686,
+  "children" : [ ]
+}, {
+  "name" : "scala_school2 (1.5K)",
+  "color" : "",
+  "size" : 1500,
+  "children" : [ ]
+}, {
+  "name" : "ios-twitter-apache-thrift (1.2K)",
+  "color" : "",
+  "size" : 1162,
+  "children" : [ ]
+}, {
+  "name" : "go-bindata (1.1K)",
+  "color" : "",
+  "size" : 1054,
+  "children" : [ ]
+}, {
+  "name" : "check-my-repo (960)",
+  "color" : "",
+  "size" : 960,
+  "children" : [ ]
+}, {
+  "name" : "twurl (958)",
+  "color" : "",
+  "size" : 958,
+  "children" : [ ]
+}, {
+  "name" : "twemoji-parser (762)",
+  "color" : "",
+  "size" : 762,
+  "children" : [ ]
+}, {
+  "name" : "tormenta (664)",
+  "color" : "",
+  "size" : 664,
+  "children" : [ ]
+}, {
+  "name" : "twemoji (428)",
+  "color" : "",
+  "size" : 428,
+  "children" : [ ]
+}, {
+  "name" : "dict_minimize (377)",
+  "color" : "",
+  "size" : 377,
+  "children" : [ ]
+}, {
+  "name" : "dodo-build (255)",
+  "color" : "",
+  "size" : 255,
+  "children" : [ ]
+}, {
+  "name" : "twitter.github.io (40)",
+  "color" : "",
+  "size" : 40,
+  "children" : [ ]
+}, {
+  "name" : "cache-trace (9)",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "google-tag-manager-base-tag (9)",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "google-tag-manager-event-tag (9)",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "twitter-cldr-npm (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+} ]
+    }
+
+
+    root = d3.hierarchy(rootData);
+    root.sum(d => d.size);
+
+    const slice = svg.selectAll('g.slice')
+        .data(partition(root).descendants());
+
+    slice.exit().remove();
+
+    const newSlice = slice.enter()
+        .append('g').attr('class', 'slice')
+        .on('click', d => {
+            d3.event.stopPropagation();
+            focusOn(d);
+        });
+
+    newSlice.append('title')
+        .text(d => d.data.name + '\n' + formatNumber(d.value));
+
+    newSlice.append('path')
+        .attr('class', 'main-arc')
+        .style('fill', d => color((d.children ? d : d.parent).data.name))
+        .attr('d', arc);
+
+    newSlice.append('path')
+        .attr('class', 'hidden-arc')
+        .attr('id', (_, i) => `hiddenArc${i}`)
+        .attr('d', middleArcLine);
+
+    const text = newSlice.append('text')
+        .attr('display', d => textFits(d) ? null : 'none');
+
+    // Add white contour
+    text.append('textPath')
+        .attr('startOffset', '50%')
+        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+        .text(d => d.data.name)
+        .style('fill', 'none')
+        .style('stroke', '#fff')
+        .style('stroke-width', 5)
+        .style('stroke-linejoin', 'round');
+
+    text.append('textPath')
+        .attr('startOffset', '50%')
+        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+        .text(d => d.data.name);
+
+    function focusOn(d = {x0: 0, x1: 1, y0: 0, y1: 1}) {
+        const transition = svg.transition()
+            .duration(750)
+            .tween('scale', () => {
+                const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                    yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                return t => {
+                    x.domain(xd(t));
+                    y.domain(yd(t));
+                };
+            });
+
+        transition.selectAll('path.main-arc')
+            .attrTween('d', d => () => arc(d));
+
+        transition.selectAll('path.hidden-arc')
+            .attrTween('d', d => () => middleArcLine(d));
+
+        transition.selectAll('text')
+            .attrTween('display', d => () => textFits(d) ? null : 'none');
+
+        moveStackToFront(d);
+
+        //
+
+        function moveStackToFront(elD) {
+            svg.selectAll('.slice').filter(d => d === elD)
+                .each(function (d) {
+                    this.parentNode.appendChild(this);
+                    if (d.parent) {
+                        moveStackToFront(d.parent);
+                    }
+                })
+        }
+    }
+</script>
+</body>

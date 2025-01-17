@@ -1,0 +1,17 @@
+Repository 1	Repository 2	# people
+[spotify / elitzur]	[spotify / ratatool]	4
+[spotify / scio-idea-plugin]	[spotify / scio]	2
+[spotify / magnolify]	[spotify / ratatool]	2
+[spotify / magnolify]	[spotify / scio]	2
+[spotify / scio-idea-plugin]	[spotify / elitzur]	2
+[spotify / gcs-tools]	[spotify / scio]	2
+[spotify / dbeam]	[spotify / scio]	2
+[spotify / scio-idea-plugin]	[spotify / ratatool]	2
+[spotify / scio]	[spotify / ratatool]	2
+[spotify / gcs-tools]	[spotify / scio-idea-plugin]	2
+[spotify / magnolify]	[spotify / scio-idea-plugin]	2
+[spotify / magnolify]	[spotify / elitzur]	2
+[spotify / gcs-tools]	[spotify / ratatool]	2
+[spotify / magnolify]	[spotify / gcs-tools]	2
+[spotify / elitzur]	[spotify / scio]	2
+[spotify / gcs-tools]	[spotify / elitzur]	2

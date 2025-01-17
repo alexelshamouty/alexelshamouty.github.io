@@ -1,0 +1,1014 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "scala_steward@virtuslab.com",
+    "size" : 4
+  }, {
+    "id" : "kabas.andrew@gmail.com",
+    "size" : 2
+  }, {
+    "id" : "kamilm@spotify.com",
+    "size" : 2
+  }, {
+    "id" : "benkonz16@gmail.com",
+    "size" : 4
+  }, {
+    "id" : "lschaller@spotify.com",
+    "size" : 4
+  }, {
+    "id" : "davidem@spotify.com",
+    "size" : 1
+  }, {
+    "id" : "kellen@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "stephen29xie@gmail.com",
+    "size" : 2
+  }, {
+    "id" : "145126051+mprinold@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "ikuyasam18@gmail.com",
+    "size" : 7
+  }, {
+    "id" : "150809971+ivo-sp@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "oss@regadas.email",
+    "size" : 1
+  }, {
+    "id" : "nxr9266@g.rit.edu",
+    "size" : 1
+  }, {
+    "id" : "spkrka@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "461260911@qq.com",
+    "size" : 4
+  }, {
+    "id" : "nathanb@spotify.com",
+    "size" : 4
+  }, {
+    "id" : "hi@hadisatrio.com",
+    "size" : 4
+  }, {
+    "id" : "nicklaslundin@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "akolb@spotify.com",
+    "size" : 7
+  }, {
+    "id" : "31034418+nickybondarenko@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "yyyyuki1024@gmail.com",
+    "size" : 7
+  }, {
+    "id" : "sveyrie@luminatedata.com",
+    "size" : 7
+  }, {
+    "id" : "dkoch@mm.st",
+    "size" : 7
+  }, {
+    "id" : "rafalg@spotify.com",
+    "size" : 2
+  }, {
+    "id" : "dbannon@spotify.com",
+    "size" : 2
+  }, {
+    "id" : "psobot@spotify.com",
+    "size" : 8
+  }, {
+    "id" : "gianni@spotify.com",
+    "size" : 1
+  }, {
+    "id" : "togi@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "37860104+leohoare@users.noreply.github.com",
+    "size" : 3
+  }, {
+    "id" : "monicaz@spotify.com",
+    "size" : 4
+  }, {
+    "id" : "chandler.camille.may@gmail.com",
+    "size" : 7
+  }, {
+    "id" : "micheleg@spotify.com",
+    "size" : 2
+  }, {
+    "id" : "micheld@spotify.com",
+    "size" : 8
+  }, {
+    "id" : "accounts@hadisatrio.com",
+    "size" : 4
+  }, {
+    "id" : "jching@spotify.com",
+    "size" : 1
+  }, {
+    "id" : "90255202+broknloop@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "nicklasl@spotify.com",
+    "size" : 5
+  }, {
+    "id" : "9971934+jhyching@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "clairem@spotify.com",
+    "size" : 7
+  }, {
+    "id" : "kmj@google.com",
+    "size" : 7
+  }, {
+    "id" : "35086881+tashrifbillah@users.noreply.github.com",
+    "size" : 7
+  }, {
+    "id" : "dlstadther@gmail.com",
+    "size" : 7
+  }, {
+    "id" : "raphael.delhome@oslandia.com",
+    "size" : 7
+  }, {
+    "id" : "mfranberg@spotify.com",
+    "size" : 3
+  }, {
+    "id" : "danao@spotify.com",
+    "size" : 1
+  }, {
+    "id" : "fabrizio.f.demaria@gmail.com",
+    "size" : 4
+  }, {
+    "id" : "matek_a@outlook.com",
+    "size" : 7
+  }, {
+    "id" : "43047562+scala-steward@users.noreply.github.com",
+    "size" : 11
+  }, {
+    "id" : "viktorp@spotify.com",
+    "size" : 4
+  }, {
+    "id" : "marcusfs@spotify.com",
+    "size" : 2
+  }, {
+    "id" : "tcodehuber@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "mprinold@spotify.com",
+    "size" : 2
+  } ],
+  "links" : [ {
+    "source" : "nicklasl@spotify.com",
+    "target" : "31034418+nickybondarenko@users.noreply.github.com",
+    "count" : 3
+  }, {
+    "source" : "31034418+nickybondarenko@users.noreply.github.com",
+    "target" : "nicklasl@spotify.com",
+    "count" : 3
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "micheld@spotify.com",
+    "count" : 2
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "scala_steward@virtuslab.com",
+    "count" : 2
+  }, {
+    "source" : "scala_steward@virtuslab.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 2
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "scala_steward@virtuslab.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 2
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "scala_steward@virtuslab.com",
+    "count" : 2
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "micheld@spotify.com",
+    "count" : 2
+  }, {
+    "source" : "gianni@spotify.com",
+    "target" : "danao@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "danao@spotify.com",
+    "target" : "gianni@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "viktorp@spotify.com",
+    "target" : "nathanb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nathanb@spotify.com",
+    "target" : "viktorp@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "viktorp@spotify.com",
+    "target" : "461260911@qq.com",
+    "count" : 1
+  }, {
+    "source" : "461260911@qq.com",
+    "target" : "viktorp@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "viktorp@spotify.com",
+    "target" : "hi@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "hi@hadisatrio.com",
+    "target" : "viktorp@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "viktorp@spotify.com",
+    "target" : "accounts@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "accounts@hadisatrio.com",
+    "target" : "viktorp@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nathanb@spotify.com",
+    "target" : "461260911@qq.com",
+    "count" : 1
+  }, {
+    "source" : "461260911@qq.com",
+    "target" : "nathanb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nathanb@spotify.com",
+    "target" : "hi@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "hi@hadisatrio.com",
+    "target" : "nathanb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nathanb@spotify.com",
+    "target" : "accounts@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "accounts@hadisatrio.com",
+    "target" : "nathanb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "461260911@qq.com",
+    "target" : "hi@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "hi@hadisatrio.com",
+    "target" : "461260911@qq.com",
+    "count" : 1
+  }, {
+    "source" : "461260911@qq.com",
+    "target" : "accounts@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "accounts@hadisatrio.com",
+    "target" : "461260911@qq.com",
+    "count" : 1
+  }, {
+    "source" : "hi@hadisatrio.com",
+    "target" : "accounts@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "accounts@hadisatrio.com",
+    "target" : "hi@hadisatrio.com",
+    "count" : 1
+  }, {
+    "source" : "togi@users.noreply.github.com",
+    "target" : "marcusfs@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "marcusfs@spotify.com",
+    "target" : "togi@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "togi@users.noreply.github.com",
+    "target" : "rafalg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "rafalg@spotify.com",
+    "target" : "togi@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "marcusfs@spotify.com",
+    "target" : "rafalg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "rafalg@spotify.com",
+    "target" : "marcusfs@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "9971934+jhyching@users.noreply.github.com",
+    "target" : "jching@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "jching@spotify.com",
+    "target" : "9971934+jhyching@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "90255202+broknloop@users.noreply.github.com",
+    "target" : "150809971+ivo-sp@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "150809971+ivo-sp@users.noreply.github.com",
+    "target" : "90255202+broknloop@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "fabrizio.f.demaria@gmail.com",
+    "target" : "31034418+nickybondarenko@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "31034418+nickybondarenko@users.noreply.github.com",
+    "target" : "fabrizio.f.demaria@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "mprinold@spotify.com",
+    "target" : "145126051+mprinold@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "145126051+mprinold@users.noreply.github.com",
+    "target" : "mprinold@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "mprinold@spotify.com",
+    "target" : "kamilm@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "kamilm@spotify.com",
+    "target" : "mprinold@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "145126051+mprinold@users.noreply.github.com",
+    "target" : "kamilm@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "kamilm@spotify.com",
+    "target" : "145126051+mprinold@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "benkonz16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "benkonz16@gmail.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "monicaz@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "monicaz@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "scala_steward@virtuslab.com",
+    "target" : "benkonz16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "benkonz16@gmail.com",
+    "target" : "scala_steward@virtuslab.com",
+    "count" : 1
+  }, {
+    "source" : "scala_steward@virtuslab.com",
+    "target" : "monicaz@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "monicaz@spotify.com",
+    "target" : "scala_steward@virtuslab.com",
+    "count" : 1
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "benkonz16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "benkonz16@gmail.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "monicaz@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "monicaz@spotify.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "benkonz16@gmail.com",
+    "target" : "monicaz@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "monicaz@spotify.com",
+    "target" : "benkonz16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "nicklasl@spotify.com",
+    "target" : "fabrizio.f.demaria@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "fabrizio.f.demaria@gmail.com",
+    "target" : "nicklasl@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nicklasl@spotify.com",
+    "target" : "mfranberg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "mfranberg@spotify.com",
+    "target" : "nicklasl@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nicklasl@spotify.com",
+    "target" : "37860104+leohoare@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "37860104+leohoare@users.noreply.github.com",
+    "target" : "nicklasl@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "fabrizio.f.demaria@gmail.com",
+    "target" : "mfranberg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "mfranberg@spotify.com",
+    "target" : "fabrizio.f.demaria@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "fabrizio.f.demaria@gmail.com",
+    "target" : "37860104+leohoare@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "37860104+leohoare@users.noreply.github.com",
+    "target" : "fabrizio.f.demaria@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "mfranberg@spotify.com",
+    "target" : "37860104+leohoare@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "37860104+leohoare@users.noreply.github.com",
+    "target" : "mfranberg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "nicklasl@spotify.com",
+    "target" : "nicklaslundin@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "nicklaslundin@gmail.com",
+    "target" : "nicklasl@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "dbannon@spotify.com",
+    "target" : "micheleg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheleg@spotify.com",
+    "target" : "dbannon@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "dbannon@spotify.com",
+    "target" : "stephen29xie@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "stephen29xie@gmail.com",
+    "target" : "dbannon@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheleg@spotify.com",
+    "target" : "stephen29xie@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "stephen29xie@gmail.com",
+    "target" : "micheleg@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "oss@regadas.email",
+    "target" : "tcodehuber@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tcodehuber@gmail.com",
+    "target" : "oss@regadas.email",
+    "count" : 1
+  }, {
+    "source" : "spkrka@users.noreply.github.com",
+    "target" : "davidem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "davidem@spotify.com",
+    "target" : "spkrka@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "35086881+tashrifbillah@users.noreply.github.com",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "35086881+tashrifbillah@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "chandler.camille.may@gmail.com",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "chandler.camille.may@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ikuyasam18@gmail.com",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "ikuyasam18@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "dkoch@mm.st",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "dkoch@mm.st",
+    "count" : 1
+  }, {
+    "source" : "raphael.delhome@oslandia.com",
+    "target" : "yyyyuki1024@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "yyyyuki1024@gmail.com",
+    "target" : "raphael.delhome@oslandia.com",
+    "count" : 1
+  }, {
+    "source" : "psobot@spotify.com",
+    "target" : "nxr9266@g.rit.edu",
+    "count" : 1
+  }, {
+    "source" : "nxr9266@g.rit.edu",
+    "target" : "psobot@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "kabas.andrew@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kabas.andrew@gmail.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "kabas.andrew@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kabas.andrew@gmail.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

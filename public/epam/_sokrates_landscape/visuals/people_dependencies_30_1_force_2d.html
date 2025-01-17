@@ -1,0 +1,2497 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "aleksandr_sidoruk@epam.com",
+    "size" : 8
+  }, {
+    "id" : "agirin@mail.ru",
+    "size" : 14
+  }, {
+    "id" : "ivan_novik@epam.com",
+    "size" : 2
+  }, {
+    "id" : "denis.dzenskevich@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "66549992+roman-romanov-o@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "bot@renovateapp.com",
+    "size" : 4
+  }, {
+    "id" : "mykola_serdiuk@epam.com",
+    "size" : 6
+  }, {
+    "id" : "117785539+guch1g0v@users.noreply.github.com",
+    "size" : 14
+  }, {
+    "id" : "80756766+anna-shcherbak@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "15ug1@queensu.ca",
+    "size" : 14
+  }, {
+    "id" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "size" : 4
+  }, {
+    "id" : "pendleton@google.com",
+    "size" : 4
+  }, {
+    "id" : "mykola_marusenko@epam.com",
+    "size" : 8
+  }, {
+    "id" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "mikhail_rodichenko@epam.com",
+    "size" : 8
+  }, {
+    "id" : "148881157+siarhei-z1@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "vladisavvv@gmail.com",
+    "size" : 8
+  }, {
+    "id" : "98586297+alexander-kezik@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "irina.kartun@gmail.com",
+    "size" : 8
+  }, {
+    "id" : "oleksandr.buhaiov@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "size" : 21
+  }, {
+    "id" : "vladyslav_palyvoda@epam.com",
+    "size" : 2
+  }, {
+    "id" : "anna_shcherbak@epam.com",
+    "size" : 1
+  }, {
+    "id" : "95479023+drimodaren@users.noreply.github.com",
+    "size" : 14
+  }, {
+    "id" : "tanas80@gmail.com",
+    "size" : 14
+  }, {
+    "id" : "valyaev.alexei@gmail.com",
+    "size" : 3
+  }, {
+    "id" : "62464241+zhirnoff@users.noreply.github.com",
+    "size" : 14
+  }, {
+    "id" : "holdingonto16@gmail.com",
+    "size" : 2
+  }, {
+    "id" : "anton.dubovik@gmail.com",
+    "size" : 2
+  }, {
+    "id" : "vivianrwu@google.com",
+    "size" : 4
+  }, {
+    "id" : "aliaksandr_stsiapanay@epam.com",
+    "size" : 8
+  }, {
+    "id" : "lytvyn.michael@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "kostrubin@bk.ru",
+    "size" : 14
+  }, {
+    "id" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "oleksandr_stepanov@epam.com",
+    "size" : 3
+  }, {
+    "id" : "sergeibolonikov@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "zorian_motso@epam.com",
+    "size" : 4
+  }, {
+    "id" : "olga_davydova1@epam.com",
+    "size" : 2
+  }, {
+    "id" : "47791878+maryvictol@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "oleksandr_taruraiev@epam.com",
+    "size" : 4
+  }, {
+    "id" : "nikita_chistousov@epam.com",
+    "size" : 14
+  }, {
+    "id" : "doug.kirkley@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "eugene_karankow@epam.com",
+    "size" : 1
+  }, {
+    "id" : "57749020+dmytro-afanasiev@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "roman_rodionov@epam.com",
+    "size" : 14
+  }, {
+    "id" : "95343061+akurnosau@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "oleksandr.onsha@gmail.com",
+    "size" : 2
+  }, {
+    "id" : "46220620+sr-remsha@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "165396466+ivanmaslow@users.noreply.github.com",
+    "size" : 14
+  }, {
+    "id" : "alexey_klimov@epam.com",
+    "size" : 3
+  }, {
+    "id" : "33350321+nepalevov@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "57723193+xenn33@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "ekaterina_kazachkova@epam.com",
+    "size" : 8
+  }, {
+    "id" : "ilya_bondar@epam.com",
+    "size" : 8
+  }, {
+    "id" : "mukhammad.amaev@mail.ru",
+    "size" : 8
+  }, {
+    "id" : "ilia_zemtsov@epam.com",
+    "size" : 3
+  }, {
+    "id" : "101649138+dzmitry-yaniuk@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "113500783+ryanaoleary@users.noreply.github.com",
+    "size" : 4
+  }, {
+    "id" : "lumihis+github@gmail.com",
+    "size" : 14
+  }, {
+    "id" : "82438895+derikyan@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "8052337+kenthua@users.noreply.github.com",
+    "size" : 4
+  }, {
+    "id" : "kos891@gmail.com",
+    "size" : 14
+  }, {
+    "id" : "sergiy_kulanov@epam.com",
+    "size" : 5
+  }, {
+    "id" : "andrei_tataranovich@epam.com",
+    "size" : 5
+  }, {
+    "id" : "71060724+yatsektest@users.noreply.github.com",
+    "size" : 14
+  }, {
+    "id" : "sergey.zinchenko.rnd@gmail.com",
+    "size" : 9
+  }, {
+    "id" : "pavel_silin@epam.com",
+    "size" : 8
+  }, {
+    "id" : "81012703+nartovm@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "pavel_mitrafanau@epam.com",
+    "size" : 8
+  }, {
+    "id" : "gurlerburak9@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "size" : 3
+  }, {
+    "id" : "yulia_kamyshova@epam.com",
+    "size" : 8
+  }, {
+    "id" : "mariia_tolstaia@epam.com",
+    "size" : 8
+  }, {
+    "id" : "45459424+nshaforostov@users.noreply.github.com",
+    "size" : 8
+  }, {
+    "id" : "aleksey_vdovenko@epam.com",
+    "size" : 8
+  }, {
+    "id" : "42180137+callmevladik@users.noreply.github.com",
+    "size" : 2
+  }, {
+    "id" : "36859396+vfem@users.noreply.github.com",
+    "size" : 3
+  }, {
+    "id" : "maksim_labovich@epam.com",
+    "size" : 14
+  }, {
+    "id" : "daniil_nedostup@epam.com",
+    "size" : 5
+  }, {
+    "id" : "aleksandr_savelev@epam.com",
+    "size" : 14
+  }, {
+    "id" : "dmytro_afanasiev1@epam.com",
+    "size" : 2
+  }, {
+    "id" : "denis_dzenskevich@epam.com",
+    "size" : 1
+  }, {
+    "id" : "anton_dubovik@epam.com",
+    "size" : 4
+  }, {
+    "id" : "liashuk.corp@gmail.com",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "anton_dubovik@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 6
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "anton_dubovik@epam.com",
+    "count" : 6
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "mykola_serdiuk@epam.com",
+    "count" : 3
+  }, {
+    "source" : "mykola_serdiuk@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 3
+  }, {
+    "source" : "mykola_serdiuk@epam.com",
+    "target" : "daniil_nedostup@epam.com",
+    "count" : 3
+  }, {
+    "source" : "daniil_nedostup@epam.com",
+    "target" : "mykola_serdiuk@epam.com",
+    "count" : 3
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "sergiy_kulanov@epam.com",
+    "count" : 3
+  }, {
+    "source" : "sergiy_kulanov@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 3
+  }, {
+    "source" : "anton_dubovik@epam.com",
+    "target" : "66549992+roman-romanov-o@users.noreply.github.com",
+    "count" : 3
+  }, {
+    "source" : "66549992+roman-romanov-o@users.noreply.github.com",
+    "target" : "anton_dubovik@epam.com",
+    "count" : 3
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "66549992+roman-romanov-o@users.noreply.github.com",
+    "count" : 3
+  }, {
+    "source" : "66549992+roman-romanov-o@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 3
+  }, {
+    "source" : "sergiy_kulanov@epam.com",
+    "target" : "mykola_serdiuk@epam.com",
+    "count" : 3
+  }, {
+    "source" : "mykola_serdiuk@epam.com",
+    "target" : "sergiy_kulanov@epam.com",
+    "count" : 3
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "daniil_nedostup@epam.com",
+    "count" : 2
+  }, {
+    "source" : "daniil_nedostup@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 2
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "zorian_motso@epam.com",
+    "count" : 2
+  }, {
+    "source" : "zorian_motso@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 2
+  }, {
+    "source" : "sergiy_kulanov@epam.com",
+    "target" : "zorian_motso@epam.com",
+    "count" : 2
+  }, {
+    "source" : "zorian_motso@epam.com",
+    "target" : "sergiy_kulanov@epam.com",
+    "count" : 2
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 2
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "target" : "andrei_tataranovich@epam.com",
+    "count" : 2
+  }, {
+    "source" : "andrei_tataranovich@epam.com",
+    "target" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "sergiy_kulanov@epam.com",
+    "target" : "daniil_nedostup@epam.com",
+    "count" : 2
+  }, {
+    "source" : "daniil_nedostup@epam.com",
+    "target" : "sergiy_kulanov@epam.com",
+    "count" : 2
+  }, {
+    "source" : "148881157+siarhei-z1@users.noreply.github.com",
+    "target" : "57723193+xenn33@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "57723193+xenn33@users.noreply.github.com",
+    "target" : "148881157+siarhei-z1@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "oleksandr_stepanov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_stepanov@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mykola_serdiuk@epam.com",
+    "target" : "oleksandr_stepanov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_stepanov@epam.com",
+    "target" : "mykola_serdiuk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "daniil_nedostup@epam.com",
+    "target" : "oleksandr_stepanov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_stepanov@epam.com",
+    "target" : "daniil_nedostup@epam.com",
+    "count" : 1
+  }, {
+    "source" : "olga_davydova1@epam.com",
+    "target" : "holdingonto16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "holdingonto16@gmail.com",
+    "target" : "olga_davydova1@epam.com",
+    "count" : 1
+  }, {
+    "source" : "olga_davydova1@epam.com",
+    "target" : "ivan_novik@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ivan_novik@epam.com",
+    "target" : "olga_davydova1@epam.com",
+    "count" : 1
+  }, {
+    "source" : "holdingonto16@gmail.com",
+    "target" : "ivan_novik@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ivan_novik@epam.com",
+    "target" : "holdingonto16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mikhail_rodichenko@epam.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "mikhail_rodichenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_sidoruk@epam.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "aleksandr_sidoruk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_silin@epam.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "pavel_silin@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ekaterina_kazachkova@epam.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "ekaterina_kazachkova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "yulia_kamyshova@epam.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "yulia_kamyshova@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mariia_tolstaia@epam.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "mariia_tolstaia@epam.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "41908792+aleksandrgorodetskii@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "47791878+maryvictol@users.noreply.github.com",
+    "target" : "45459424+nshaforostov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "45459424+nshaforostov@users.noreply.github.com",
+    "target" : "47791878+maryvictol@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "sergeibolonikov@gmail.com",
+    "target" : "101649138+dzmitry-yaniuk@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "101649138+dzmitry-yaniuk@users.noreply.github.com",
+    "target" : "sergeibolonikov@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "bot@renovateapp.com",
+    "target" : "8052337+kenthua@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "8052337+kenthua@users.noreply.github.com",
+    "target" : "bot@renovateapp.com",
+    "count" : 1
+  }, {
+    "source" : "bot@renovateapp.com",
+    "target" : "113500783+ryanaoleary@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "113500783+ryanaoleary@users.noreply.github.com",
+    "target" : "bot@renovateapp.com",
+    "count" : 1
+  }, {
+    "source" : "bot@renovateapp.com",
+    "target" : "vivianrwu@google.com",
+    "count" : 1
+  }, {
+    "source" : "vivianrwu@google.com",
+    "target" : "bot@renovateapp.com",
+    "count" : 1
+  }, {
+    "source" : "bot@renovateapp.com",
+    "target" : "pendleton@google.com",
+    "count" : 1
+  }, {
+    "source" : "pendleton@google.com",
+    "target" : "bot@renovateapp.com",
+    "count" : 1
+  }, {
+    "source" : "8052337+kenthua@users.noreply.github.com",
+    "target" : "113500783+ryanaoleary@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "113500783+ryanaoleary@users.noreply.github.com",
+    "target" : "8052337+kenthua@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "8052337+kenthua@users.noreply.github.com",
+    "target" : "vivianrwu@google.com",
+    "count" : 1
+  }, {
+    "source" : "vivianrwu@google.com",
+    "target" : "8052337+kenthua@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "8052337+kenthua@users.noreply.github.com",
+    "target" : "pendleton@google.com",
+    "count" : 1
+  }, {
+    "source" : "pendleton@google.com",
+    "target" : "8052337+kenthua@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "113500783+ryanaoleary@users.noreply.github.com",
+    "target" : "vivianrwu@google.com",
+    "count" : 1
+  }, {
+    "source" : "vivianrwu@google.com",
+    "target" : "113500783+ryanaoleary@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "113500783+ryanaoleary@users.noreply.github.com",
+    "target" : "pendleton@google.com",
+    "count" : 1
+  }, {
+    "source" : "pendleton@google.com",
+    "target" : "113500783+ryanaoleary@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "vivianrwu@google.com",
+    "target" : "pendleton@google.com",
+    "count" : 1
+  }, {
+    "source" : "pendleton@google.com",
+    "target" : "vivianrwu@google.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "46220620+sr-remsha@users.noreply.github.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "46220620+sr-remsha@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aliaksandr_stsiapanay@epam.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "aliaksandr_stsiapanay@epam.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "72259616+artsiomkorzun@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "vladisavvv@gmail.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "vladisavvv@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksey_vdovenko@epam.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "aleksey_vdovenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "pavel_mitrafanau@epam.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "pavel_mitrafanau@epam.com",
+    "count" : 1
+  }, {
+    "source" : "95343061+akurnosau@users.noreply.github.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "95343061+akurnosau@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "80756766+anna-shcherbak@users.noreply.github.com",
+    "target" : "liashuk.corp@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "liashuk.corp@gmail.com",
+    "target" : "80756766+anna-shcherbak@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "aleksandr_savelev@epam.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "aleksandr_savelev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "roman_rodionov@epam.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "roman_rodionov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "62464241+zhirnoff@users.noreply.github.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "62464241+zhirnoff@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "agirin@mail.ru",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "agirin@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "nikita_chistousov@epam.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "nikita_chistousov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "117785539+guch1g0v@users.noreply.github.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "117785539+guch1g0v@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "kos891@gmail.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "kos891@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "95479023+drimodaren@users.noreply.github.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "95479023+drimodaren@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "71060724+yatsektest@users.noreply.github.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "71060724+yatsektest@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "kostrubin@bk.ru",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "kostrubin@bk.ru",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "165396466+ivanmaslow@users.noreply.github.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "165396466+ivanmaslow@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tanas80@gmail.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "tanas80@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "15ug1@queensu.ca",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "15ug1@queensu.ca",
+    "count" : 1
+  }, {
+    "source" : "maksim_labovich@epam.com",
+    "target" : "lumihis+github@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "lumihis+github@gmail.com",
+    "target" : "maksim_labovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "andrei_tataranovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "andrei_tataranovich@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "alexey_klimov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "alexey_klimov@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "target" : "alexey_klimov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "alexey_klimov@epam.com",
+    "target" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "andrei_tataranovich@epam.com",
+    "target" : "alexey_klimov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "alexey_klimov@epam.com",
+    "target" : "andrei_tataranovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "zorian_motso@epam.com",
+    "target" : "mykola_serdiuk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mykola_serdiuk@epam.com",
+    "target" : "zorian_motso@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "oleksandr_taruraiev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_taruraiev@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "sergiy_kulanov@epam.com",
+    "target" : "oleksandr_taruraiev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_taruraiev@epam.com",
+    "target" : "sergiy_kulanov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mykola_serdiuk@epam.com",
+    "target" : "oleksandr_taruraiev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_taruraiev@epam.com",
+    "target" : "mykola_serdiuk@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr_taruraiev@epam.com",
+    "target" : "daniil_nedostup@epam.com",
+    "count" : 1
+  }, {
+    "source" : "daniil_nedostup@epam.com",
+    "target" : "oleksandr_taruraiev@epam.com",
+    "count" : 1
+  }, {
+    "source" : "anton_dubovik@epam.com",
+    "target" : "andrei_tataranovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "andrei_tataranovich@epam.com",
+    "target" : "anton_dubovik@epam.com",
+    "count" : 1
+  }, {
+    "source" : "anton_dubovik@epam.com",
+    "target" : "sergey.zinchenko.rnd@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "sergey.zinchenko.rnd@gmail.com",
+    "target" : "anton_dubovik@epam.com",
+    "count" : 1
+  }, {
+    "source" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "target" : "anton.dubovik@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "anton.dubovik@gmail.com",
+    "target" : "133792808+oleksii-klimov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "andrei_tataranovich@epam.com",
+    "target" : "anton.dubovik@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "anton.dubovik@gmail.com",
+    "target" : "andrei_tataranovich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "vladyslav_palyvoda@epam.com",
+    "count" : 1
+  }, {
+    "source" : "vladyslav_palyvoda@epam.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "mykola_marusenko@epam.com",
+    "target" : "42180137+callmevladik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "42180137+callmevladik@users.noreply.github.com",
+    "target" : "mykola_marusenko@epam.com",
+    "count" : 1
+  }, {
+    "source" : "vladyslav_palyvoda@epam.com",
+    "target" : "42180137+callmevladik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "42180137+callmevladik@users.noreply.github.com",
+    "target" : "vladyslav_palyvoda@epam.com",
+    "count" : 1
+  }, {
+    "source" : "zorian_motso@epam.com",
+    "target" : "doug.kirkley@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "doug.kirkley@gmail.com",
+    "target" : "zorian_motso@epam.com",
+    "count" : 1
+  }, {
+    "source" : "80756766+anna-shcherbak@users.noreply.github.com",
+    "target" : "anna_shcherbak@epam.com",
+    "count" : 1
+  }, {
+    "source" : "anna_shcherbak@epam.com",
+    "target" : "80756766+anna-shcherbak@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "eugene_karankow@epam.com",
+    "target" : "oleksandr.buhaiov@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr.buhaiov@gmail.com",
+    "target" : "eugene_karankow@epam.com",
+    "count" : 1
+  }, {
+    "source" : "lytvyn.michael@gmail.com",
+    "target" : "gurlerburak9@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "gurlerburak9@gmail.com",
+    "target" : "lytvyn.michael@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "dmytro_afanasiev1@epam.com",
+    "target" : "oleksandr.onsha@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr.onsha@gmail.com",
+    "target" : "dmytro_afanasiev1@epam.com",
+    "count" : 1
+  }, {
+    "source" : "dmytro_afanasiev1@epam.com",
+    "target" : "57749020+dmytro-afanasiev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "57749020+dmytro-afanasiev@users.noreply.github.com",
+    "target" : "dmytro_afanasiev1@epam.com",
+    "count" : 1
+  }, {
+    "source" : "oleksandr.onsha@gmail.com",
+    "target" : "57749020+dmytro-afanasiev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "57749020+dmytro-afanasiev@users.noreply.github.com",
+    "target" : "oleksandr.onsha@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "denis.dzenskevich@gmail.com",
+    "target" : "denis_dzenskevich@epam.com",
+    "count" : 1
+  }, {
+    "source" : "denis_dzenskevich@epam.com",
+    "target" : "denis.dzenskevich@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilya_bondar@epam.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "ilya_bondar@epam.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "98586297+alexander-kezik@users.noreply.github.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "98586297+alexander-kezik@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "149404362+ai-dial-actions@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "33350321+nepalevov@users.noreply.github.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "33350321+nepalevov@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "82438895+derikyan@users.noreply.github.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "82438895+derikyan@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "irina.kartun@gmail.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "irina.kartun@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "143205282+denys-kolomiitsev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "mukhammad.amaev@mail.ru",
+    "target" : "81012703+nartovm@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "81012703+nartovm@users.noreply.github.com",
+    "target" : "mukhammad.amaev@mail.ru",
+    "count" : 1
+  }, {
+    "source" : "ilia_zemtsov@epam.com",
+    "target" : "valyaev.alexei@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "valyaev.alexei@gmail.com",
+    "target" : "ilia_zemtsov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilia_zemtsov@epam.com",
+    "target" : "36859396+vfem@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "36859396+vfem@users.noreply.github.com",
+    "target" : "ilia_zemtsov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "ilia_zemtsov@epam.com",
+    "target" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "target" : "ilia_zemtsov@epam.com",
+    "count" : 1
+  }, {
+    "source" : "valyaev.alexei@gmail.com",
+    "target" : "36859396+vfem@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "36859396+vfem@users.noreply.github.com",
+    "target" : "valyaev.alexei@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "valyaev.alexei@gmail.com",
+    "target" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "target" : "valyaev.alexei@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "36859396+vfem@users.noreply.github.com",
+    "target" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "124697396+alexei-valyaev@users.noreply.github.com",
+    "target" : "36859396+vfem@users.noreply.github.com",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

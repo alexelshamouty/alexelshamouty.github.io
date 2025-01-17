@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+
+<div style="position: absolute; left: 1px">
+<table>
+<th>Tag</th>
+<th># repositories</th>
+<th>LOC<br>(main)</th>
+<th>LOC<br>(test)</th>
+<th>LOC<br>(active)</th>
+<th>LOC<br>(new)</th>
+<th># commits<br>(30 days)</th>
+<th># contributors<br>(30 days)</th>
+<p>1 group (5 tags):</p>
+<ul>
+<li><a href='#tag_group_1'><b>build and dependencies management tools</b></a> (5)</li>
+</ul>
+<br/>
+<tr>
+<td colspan='8' style=''>
+<a name="tag_group_1"></a>
+<div style="border-radius: 9px; padding: 6px; margin-top: 16px; border: 1px solid lightgrey; background-color: #B9D9EB">
+build and dependencies management tools (5)
+<div style="margin: 5px; font-size: 80%">
+<div style="">
+<b>42 repositories</b>, <b><b>597</b>K</b> lines of main code, <b><b>575</b>K</b> lines of other code
+</div>
+</div>
+<div style="margin: 5px; font-size: 80%">
+tag dependencies: 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_force_3d.html'>3D graph (via repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_direct_force_3d.html'>3D graph (excluding repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1.svg'>2D graph (via repositories)</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_direct.svg'>2D graph (excluding repositories)</a>
+<a style='text-decoration: none' target='_blank' href='visuals/custom_tags_graph_1_direct.svg'>2D graph (excluding repositories)</a>
+</div>
+</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)build[.]sbt
+">
+<img title='sbt' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/sbt.png"><div style='vertical-align: middle; display: inline-block;'>sbt</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_7');")><b>16</b> repositories <span style='color: grey; font-size: 90%'>(20%)</span></a><span id="showMoreBlock_7" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../finagle/html/index.html' target='_blank' style='margin-left: 6px'>twitter / finagle</a> <span color='lightgrey'>(<b>89,358</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scalding/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scalding</a> <span color='lightgrey'>(<b>46,579</b> LOC)</span>
+</div>
+<div style="">
+<a href='../util/html/index.html' target='_blank' style='margin-left: 6px'>twitter / util</a> <span color='lightgrey'>(<b>35,832</b> LOC)</span>
+</div>
+<div style="">
+<a href='../algebird/html/index.html' target='_blank' style='margin-left: 6px'>twitter / algebird</a> <span color='lightgrey'>(<b>26,584</b> LOC)</span>
+</div>
+<div style="">
+<a href='../rsc/html/index.html' target='_blank' style='margin-left: 6px'>twitter / rsc</a> <span color='lightgrey'>(<b>24,285</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scrooge/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scrooge</a> <span color='lightgrey'>(<b>19,080</b> LOC)</span>
+</div>
+<div style="">
+<a href='../finatra/html/index.html' target='_blank' style='margin-left: 6px'>twitter / finatra</a> <span color='lightgrey'>(<b>14,208</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-server/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-server</a> <span color='lightgrey'>(<b>6,778</b> LOC)</span>
+</div>
+<div style="">
+<a href='../chill/html/index.html' target='_blank' style='margin-left: 6px'>twitter / chill</a> <span color='lightgrey'>(<b>6,060</b> LOC)</span>
+</div>
+<div style="">
+<a href='../stitch/html/index.html' target='_blank' style='margin-left: 6px'>twitter / stitch</a> <span color='lightgrey'>(<b>5,824</b> LOC)</span>
+</div>
+<div style="">
+<a href='../bazel-multiversion/html/index.html' target='_blank' style='margin-left: 6px'>twitter / bazel-multiversion</a> <span color='lightgrey'>(<b>5,436</b> LOC)</span>
+</div>
+<div style="">
+<a href='../bijection/html/index.html' target='_blank' style='margin-left: 6px'>twitter / bijection</a> <span color='lightgrey'>(<b>4,859</b> LOC)</span>
+</div>
+<div style="">
+<a href='../storehaus/html/index.html' target='_blank' style='margin-left: 6px'>twitter / storehaus</a> <span color='lightgrey'>(<b>4,155</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-korean-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-korean-text</a> <span color='lightgrey'>(<b>2,436</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scala_school2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scala_school2</a> <span color='lightgrey'>(<b>1,500</b> LOC)</span>
+</div>
+<div style="">
+<a href='../tormenta/html/index.html' target='_blank' style='margin-left: 6px'>twitter / tormenta</a> <span color='lightgrey'>(<b>664</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___sbt_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">293,638 <span style='color: grey; font-size: 90%'>(21%)</span></td>
+<td style="">246,730</td>
+<td style="r">10,077</td>
+<td style="">1,036</td>
+<td style="">8 <span style='color: grey; font-size: 90%'>(100%)</span></td>
+<td style="vertical-align: middle"><div style='vertical-align: middle; display: inline-block'>4</div><div style='vertical-align: middle; display: inline-block'><svg width="16pt" height="16pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <path d="m82 61.801-14-14c-2.1016-2.1016-4.8008-3.1992-7.8008-3.1992h-20.398c-2.8984 0-5.6992 1.1016-7.8008 3.1992l-14 14c-1.3008 1.3008-2 3.1016-2 4.8984 0 1.8984 0.69922 3.6016 2 5l3.8984 3.8984c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l1.6016-1.6016v10c0 3.8984 3.1016 7 7 7h19.102c3.8984 0 7-3.1016 7-7v-9.9961l1.6016 1.6016c1.3008 1.3008 3.1016 2.1016 5 2.1016 1.8984 0 3.6016-0.69922 4.8984-2.1016l3.8984-3.8984c2.8008-2.8047 2.8008-7.2031 0.10156-9.9023zm-4.3008 5.5977-3.8984 3.8984c-0.39844 0.39844-1 0.39844-1.3984 0l-6.6992-6.6992c-0.89844-0.89844-2.1016-1.1016-3.3008-0.69922-1.1016 0.5-1.8984 1.6016-1.8984 2.8008l-0.003906 17.301c0 0.60156-0.39844 1-1 1h-19c-0.60156 0-1-0.39844-1-1v-17.301c0-1.1992-0.69922-2.3008-1.8984-2.8008-0.39844-0.19922-0.80078-0.19922-1.1016-0.19922-0.80078 0-1.6016 0.30078-2.1016 0.89844l-6.6992 6.6992c-0.39844 0.39844-1 0.39844-1.3984 0l-3.8984-3.8984c-0.39844-0.39844-0.39844-1 0-1.3984l14-14c0.89844-0.89844 2.1992-1.5 3.5-1.5h20.5c1.3008 0 2.6016 0.5 3.5 1.5l14 14c0.19922 0.19922 0.30078 0.39844 0.30078 0.69922-0.003906 0.30078-0.30469 0.5-0.50391 0.69922z"></path>
+ <path d="m50 42.102c9.1016 0 16.5-7.3984 16.5-16.5 0-9.2031-7.3984-16.602-16.5-16.602s-16.5 7.3984-16.5 16.5c0 9.1992 7.3984 16.602 16.5 16.602zm0-27.102c5.8008 0 10.5 4.6992 10.5 10.5s-4.6992 10.602-10.5 10.602-10.5-4.6992-10.5-10.5c0-5.8008 4.6992-10.602 10.5-10.602z"></path>
+ </g>
+</svg></div> <span style='color: grey; font-size: 90%'>(100%)</span></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)pom[.]xml
+">
+<img title='maven' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/maven.png"><div style='vertical-align: middle; display: inline-block;'>maven</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_8');")><b>15</b> repositories <span style='color: grey; font-size: 90%'>(19%)</span></a><span id="showMoreBlock_8" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../pants/html/index.html' target='_blank' style='margin-left: 6px'>twitter / pants</a> <span color='lightgrey'>(<b>81,165</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scrooge/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scrooge</a> <span color='lightgrey'>(<b>19,080</b> LOC)</span>
+</div>
+<div style="">
+<a href='../elephant-bird/html/index.html' target='_blank' style='margin-left: 6px'>twitter / elephant-bird</a> <span color='lightgrey'>(<b>16,140</b> LOC)</span>
+</div>
+<div style="">
+<a href='../cloudhopper-commons/html/index.html' target='_blank' style='margin-left: 6px'>twitter / cloudhopper-commons</a> <span color='lightgrey'>(<b>14,674</b> LOC)</span>
+</div>
+<div style="">
+<a href='../GraphJet/html/index.html' target='_blank' style='margin-left: 6px'>twitter / GraphJet</a> <span color='lightgrey'>(<b>10,545</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-text</a> <span color='lightgrey'>(<b>9,761</b> LOC)</span>
+</div>
+<div style="">
+<a href='../whiskey/html/index.html' target='_blank' style='margin-left: 6px'>twitter / whiskey</a> <span color='lightgrey'>(<b>5,885</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sbf/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sbf</a> <span color='lightgrey'>(<b>4,691</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hadoop-lzo/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hadoop-lzo</a> <span color='lightgrey'>(<b>4,123</b> LOC)</span>
+</div>
+<div style="">
+<a href='../netty-http2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / netty-http2</a> <span color='lightgrey'>(<b>3,616</b> LOC)</span>
+</div>
+<div style="">
+<a href='../iago2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / iago2</a> <span color='lightgrey'>(<b>3,450</b> LOC)</span>
+</div>
+<div style="">
+<a href='../nodes/html/index.html' target='_blank' style='margin-left: 6px'>twitter / nodes</a> <span color='lightgrey'>(<b>2,645</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-korean-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-korean-text</a> <span color='lightgrey'>(<b>2,436</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hpack/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hpack</a> <span color='lightgrey'>(<b>1,757</b> LOC)</span>
+</div>
+<div style="">
+<a href='../joauth/html/index.html' target='_blank' style='margin-left: 6px'>twitter / joauth</a> <span color='lightgrey'>(<b>1,686</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___maven_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">181,654 <span style='color: grey; font-size: 90%'>(13%)</span></td>
+<td style="">130,616</td>
+<td style="r">-</td>
+<td style="">-</td>
+<td style="">-</td>
+<td style="vertical-align: middle">-</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)package[.]json
+">
+<img title='npm' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/npm.png"><div style='vertical-align: middle; display: inline-block;'>npm</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_9');")><b>12</b> repositories <span style='color: grey; font-size: 90%'>(15%)</span></a><span id="showMoreBlock_9" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../pants/html/index.html' target='_blank' style='margin-left: 6px'>twitter / pants</a> <span color='lightgrey'>(<b>81,165</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sqrl/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sqrl</a> <span color='lightgrey'>(<b>18,149</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hogan.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hogan.js</a> <span color='lightgrey'>(<b>14,081</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-text</a> <span color='lightgrey'>(<b>9,761</b> LOC)</span>
+</div>
+<div style="">
+<a href='../SentenTree/html/index.html' target='_blank' style='margin-left: 6px'>twitter / SentenTree</a> <span color='lightgrey'>(<b>2,935</b> LOC)</span>
+</div>
+<div style="">
+<a href='../typeahead.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / typeahead.js</a> <span color='lightgrey'>(<b>2,220</b> LOC)</span>
+</div>
+<div style="">
+<a href='../labella.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / labella.js</a> <span color='lightgrey'>(<b>1,829</b> LOC)</span>
+</div>
+<div style="">
+<a href='../check-my-repo/html/index.html' target='_blank' style='margin-left: 6px'>twitter / check-my-repo</a> <span color='lightgrey'>(<b>960</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twemoji-parser/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji-parser</a> <span color='lightgrey'>(<b>762</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twemoji/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji</a> <span color='lightgrey'>(<b>428</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dodo-build/html/index.html' target='_blank' style='margin-left: 6px'>twitter / dodo-build</a> <span color='lightgrey'>(<b>255</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-cldr-npm/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-cldr-npm</a> <span color='lightgrey'>(<b>6</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___npm_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">132,551 <span style='color: grey; font-size: 90%'>(9%)</span></td>
+<td style="">77,779</td>
+<td style="r">-</td>
+<td style="">-</td>
+<td style="">-</td>
+<td style="vertical-align: middle">-</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)jest[.].*
+">
+<img title='jest' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/jest.png"><div style='vertical-align: middle; display: inline-block;'>jest</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_10');")><b>3</b> repositories <span style='color: grey; font-size: 90%'>(3%)</span></a><span id="showMoreBlock_10" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../sqrl/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sqrl</a> <span color='lightgrey'>(<b>18,149</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twemoji-parser/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji-parser</a> <span color='lightgrey'>(<b>762</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dodo-build/html/index.html' target='_blank' style='margin-left: 6px'>twitter / dodo-build</a> <span color='lightgrey'>(<b>255</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___jest_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">19,166 <span style='color: grey; font-size: 90%'>(1%)</span></td>
+<td style="">5,011</td>
+<td style="r">-</td>
+<td style="">-</td>
+<td style="">-</td>
+<td style="vertical-align: middle">-</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)build[.]gradle
+">
+<img title='gradle' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 36px; height: 36px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/gradle.png"><div style='vertical-align: middle; display: inline-block;'>gradle</div>
+</div>
+</td>
+<td style="text-align: left">
+ <a href="javascript:showHide('showMoreBlock_11');")><b>3</b> repositories <span style='color: grey; font-size: 90%'>(3%)</span></a><span id="showMoreBlock_11" style="display: none;">
+<div style="border-left: 2px solid lightgrey; margin-left: 5px; font-size: 80%">
+<div style="">
+<a href='../ios-twitter-image-pipeline/html/index.html' target='_blank' style='margin-left: 6px'>twitter / ios-twitter-image-pipeline</a> <span color='lightgrey'>(<b>96,338</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Serial/html/index.html' target='_blank' style='margin-left: 6px'>twitter / Serial</a> <span color='lightgrey'>(<b>3,057</b> LOC)</span>
+</div>
+<div style="">
+<a href='../compose-rules/html/index.html' target='_blank' style='margin-left: 6px'>twitter / compose-rules</a> <span color='lightgrey'>(<b>1,916</b> LOC)</span>
+</div>
+<div style="margin-top: 12px; margin-left: 5px; margin-bottom: 8px">
+<a style='text-decoration: none' target='_blank' href='data/tag_build_and_dependencies_management_tools___gradle_repositories.txt'>see details...</a>
+</div>
+</div>
+</span>
+</td>
+<td style="">101,311 <span style='color: grey; font-size: 90%'>(7%)</span></td>
+<td style="">5,317</td>
+<td style="r">-</td>
+<td style="">-</td>
+<td style="">-</td>
+<td style="vertical-align: middle">-</td>
+</tr>
+<td colspan='8'>&nbsp;</td>
+</table>
+<div style="margin: 2px; margin-top: 18px; margin-bottom: 42px;">
+ <a href="javascript:showHide('showMoreBlock_12');")>show visuals...</a><span id="showMoreBlock_12" style="display: none;">
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / maven</b> (15)
+</div>
+<a target='_blank' href='../whiskey/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="twitter / whiskey
+0 commits (30 days)
+0 contributors (30 days)
+5,885 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../GraphJet/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="twitter / GraphJet
+0 commits (30 days)
+0 contributors (30 days)
+10,545 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hadoop-lzo/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="twitter / hadoop-lzo
+0 commits (30 days)
+0 contributors (30 days)
+4,123 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twitter-korean-text/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="twitter / twitter-korean-text
+0 commits (30 days)
+0 contributors (30 days)
+2,436 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hpack/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="twitter / hpack
+0 commits (30 days)
+0 contributors (30 days)
+1,757 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../nodes/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="twitter / nodes
+0 commits (30 days)
+0 contributors (30 days)
+2,645 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../scrooge/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 20px; height: 20px; " title="twitter / scrooge
+0 commits (30 days)
+0 contributors (30 days)
+19,080 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 18px; height: 18px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../cloudhopper-commons/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 18px; height: 18px; " title="twitter / cloudhopper-commons
+0 commits (30 days)
+0 contributors (30 days)
+14,674 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 16px; height: 16px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../pants/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="twitter / pants
+0 commits (30 days)
+0 contributors (30 days)
+81,165 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../iago2/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="twitter / iago2
+0 commits (30 days)
+0 contributors (30 days)
+3,450 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twitter-text/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="twitter / twitter-text
+0 commits (30 days)
+0 contributors (30 days)
+9,761 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../joauth/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="twitter / joauth
+0 commits (30 days)
+0 contributors (30 days)
+1,686 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../elephant-bird/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="twitter / elephant-bird
+0 commits (30 days)
+0 contributors (30 days)
+16,140 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../sbf/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="twitter / sbf
+0 commits (30 days)
+0 contributors (30 days)
+4,691 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../netty-http2/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="twitter / netty-http2
+0 commits (30 days)
+0 contributors (30 days)
+3,616 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / npm</b> (12)
+</div>
+<a target='_blank' href='../sqrl/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="twitter / sqrl
+0 commits (30 days)
+0 contributors (30 days)
+18,149 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../check-my-repo/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="twitter / check-my-repo
+0 commits (30 days)
+0 contributors (30 days)
+960 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../typeahead.js/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="twitter / typeahead.js
+0 commits (30 days)
+0 contributors (30 days)
+2,220 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../hogan.js/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 18px; height: 18px; " title="twitter / hogan.js
+0 commits (30 days)
+0 contributors (30 days)
+14,081 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 16px; height: 16px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twemoji/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="twitter / twemoji
+0 commits (30 days)
+0 contributors (30 days)
+428 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twitter-cldr-npm/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 5px; height: 5px; " title="twitter / twitter-cldr-npm
+0 commits (30 days)
+0 contributors (30 days)
+6 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 3px; height: 3px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../labella.js/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="twitter / labella.js
+0 commits (30 days)
+0 contributors (30 days)
+1,829 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../pants/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 35px; height: 35px; " title="twitter / pants
+0 commits (30 days)
+0 contributors (30 days)
+81,165 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 33px; height: 33px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twitter-text/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 16px; height: 16px; " title="twitter / twitter-text
+0 commits (30 days)
+0 contributors (30 days)
+9,761 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 14px; height: 14px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../dodo-build/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="twitter / dodo-build
+0 commits (30 days)
+0 contributors (30 days)
+255 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../SentenTree/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="twitter / SentenTree
+0 commits (30 days)
+0 contributors (30 days)
+2,935 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twemoji-parser/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="twitter / twemoji-parser
+0 commits (30 days)
+0 contributors (30 days)
+762 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / jest</b> (3)
+</div>
+<a target='_blank' href='../sqrl/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 19px; height: 19px; " title="twitter / sqrl
+0 commits (30 days)
+0 contributors (30 days)
+18,149 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 17px; height: 17px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../dodo-build/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 7px; height: 7px; " title="twitter / dodo-build
+0 commits (30 days)
+0 contributors (30 days)
+255 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 5px; height: 5px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twemoji-parser/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="twitter / twemoji-parser
+0 commits (30 days)
+0 contributors (30 days)
+762 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / gradle</b> (3)
+</div>
+<a target='_blank' href='../ios-twitter-image-pipeline/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 38px; height: 38px; " title="twitter / ios-twitter-image-pipeline
+0 commits (30 days)
+0 contributors (30 days)
+96,338 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 36px; height: 36px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../compose-rules/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="twitter / compose-rules
+0 commits (30 days)
+0 contributors (30 days)
+1,916 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../Serial/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 11px; height: 11px; " title="twitter / Serial
+0 commits (30 days)
+0 contributors (30 days)
+3,057 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 9px; height: 9px; ">
+</div>
+</div>
+</a>
+</div>
+<div style="margin: 18px;">
+<div style="margin-bottom: 5px">
+<b>build and dependencies management tools / sbt</b> (16)
+</div>
+<a target='_blank' href='../finagle/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 37px; height: 37px; " title="twitter / finagle
+8 commits (30 days)
+4 contributors (30 days)
+89,358 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 1.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 35px; height: 35px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../scalding/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 28px; height: 28px; " title="twitter / scalding
+0 commits (30 days)
+0 contributors (30 days)
+46,579 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 26px; height: 26px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../bijection/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="twitter / bijection
+0 commits (30 days)
+0 contributors (30 days)
+4,859 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twitter-korean-text/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 10px; height: 10px; " title="twitter / twitter-korean-text
+0 commits (30 days)
+0 contributors (30 days)
+2,436 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 8px; height: 8px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../util/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 25px; height: 25px; " title="twitter / util
+0 commits (30 days)
+0 contributors (30 days)
+35,832 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 23px; height: 23px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../scrooge/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 20px; height: 20px; " title="twitter / scrooge
+0 commits (30 days)
+0 contributors (30 days)
+19,080 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 18px; height: 18px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../algebird/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 22px; height: 22px; " title="twitter / algebird
+0 commits (30 days)
+0 contributors (30 days)
+26,584 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 20px; height: 20px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../stitch/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="twitter / stitch
+0 commits (30 days)
+0 contributors (30 days)
+5,824 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../scala_school2/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 9px; height: 9px; " title="twitter / scala_school2
+0 commits (30 days)
+0 contributors (30 days)
+1,500 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 7px; height: 7px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../finatra/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 18px; height: 18px; " title="twitter / finatra
+0 commits (30 days)
+0 contributors (30 days)
+14,208 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 16px; height: 16px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../rsc/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 22px; height: 22px; " title="twitter / rsc
+0 commits (30 days)
+0 contributors (30 days)
+24,285 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 20px; height: 20px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../bazel-multiversion/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="twitter / bazel-multiversion
+0 commits (30 days)
+0 contributors (30 days)
+5,436 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../storehaus/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 12px; height: 12px; " title="twitter / storehaus
+0 commits (30 days)
+0 contributors (30 days)
+4,155 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 10px; height: 10px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../twitter-server/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 14px; height: 14px; " title="twitter / twitter-server
+0 commits (30 days)
+0 contributors (30 days)
+6,778 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 12px; height: 12px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../tormenta/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 8px; height: 8px; " title="twitter / tormenta
+0 commits (30 days)
+0 contributors (30 days)
+664 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 6px; height: 6px; ">
+</div>
+</div>
+</a>
+<a target='_blank' href='../chill/html/index.html' style=''>
+<div style="cursor: help;border: 1px solid grey; border-radius: 50%;display: inline-block; padding: 0;vertical-align: middle; overflow: none; width: 13px; height: 13px; " title="twitter / chill
+0 commits (30 days)
+0 contributors (30 days)
+6,060 LOC">
+<div style=" margin: 0;border-radius: 50%;opacity: 0.0;background-color: #B9D9EB; border: 1px solid lightgrey; cursor: pointer;width: 11px; height: 11px; ">
+</div>
+</div>
+</a>
+</div>
+</span>
+</div>
+</div>
+</div>
+</body>
+</html>

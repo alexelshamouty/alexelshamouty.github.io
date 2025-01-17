@@ -1,0 +1,17 @@
+Contributor	# repositories	# connections
+jillianc@twitter.com	2	9
+mbezoyan@twitter.com	2	9
+ci+autoflagger@twitter.com	1	7
+spotu@twitter.com	1	7
+aivanov@twitter.com	1	7
+skunichi@twitter.com	1	7
+igorbachev@twitter.com	1	7
+tpollitt@twitter.com	1	7
+brad.miller.87@gmail.com	1	5
+74026070+twitterbirdwatch@users.noreply.github.com	1	5
+9256836+keithcoleman@users.noreply.github.com	1	5
+jaynbaxter@gmail.com	1	5
+bradm@twitter.com	1	5
+jiansongc@x.com	1	5
+kcelik@twitter.com	1	3
+eslutckii@twitter.com	1	3

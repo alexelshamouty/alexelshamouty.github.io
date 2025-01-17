@@ -1,0 +1,13 @@
+Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
+twitter / sqrl	TS	18149	3590	15329	6	9	0	0	0	2022-11-21
+twitter / check-my-repo	VUE	960	169	327	4	3	0	0	0	2021-05-21
+twitter / typeahead.js	JS	2220	4441	1148	0	0	0	0	0	
+twitter / hogan.js	JS	14081	1643	154	0	0	0	0	0	
+twitter / twemoji	JS	428	8286	1443	10	72	0	0	0	2023-01-10
+twitter / twitter-cldr-npm	JS	6	0	138	0	0	0	0	0	
+twitter / labella.js	JS	1829	637	558	0	0	0	0	0	
+twitter / pants	PY	81165	55086	18317	14	234	0	0	0	2019-05-21
+twitter / twitter-text	JAVA	9761	2469	4291	0	0	0	0	0	
+twitter / dodo-build	JS	255	48	10933	5	2	0	0	0	2021-02-09
+twitter / SentenTree	JS	2935	37	583	0	0	0	0	0	
+twitter / twemoji-parser	SCALA	762	1373	214	6	4	0	0	0	2022-03-11

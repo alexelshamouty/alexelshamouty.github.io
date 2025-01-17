@@ -1,0 +1,25 @@
+<svg width="129pt" height="130pt"
+ viewBox="0.00 0.00 129.00 130.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 126.25)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-126.25 125,-126.25 125,4 -4,4"/>
+<!-- [twitter / finagle] -->
+<g id="node1" class="node">
+<title>[twitter / finagle]</title>
+<polygon fill="#00b2ee" stroke="white" points="121,-122.25 0,-122.25 0,-86.25 121,-86.25 121,-122.25"/>
+<text text-anchor="middle" x="60.5" y="-99.58" font-family="Tahoma" font-size="14.00">[twitter / finagle]</text>
+</g>
+<!-- [twitter / util] -->
+<g id="node2" class="node">
+<title>[twitter / util]</title>
+<polygon fill="#00b2ee" stroke="white" points="109.75,-36 11.25,-36 11.25,0 109.75,0 109.75,-36"/>
+<text text-anchor="middle" x="60.5" y="-13.32" font-family="Tahoma" font-size="14.00">[twitter / util]</text>
+</g>
+<!-- [twitter / finagle]&#45;&#45;[twitter / util] -->
+<g id="edge1" class="edge">
+<title>[twitter / finagle]&#45;&#45;[twitter / util]</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M60.5,-85.79C60.5,-71.33 60.5,-50.89 60.5,-36.43"/>
+<text text-anchor="middle" x="66.88" y="-56.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,783 @@
+[ {
+  "metadata" : {
+    "name" : "DeloitteAU / ddmock-ios",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/ddmock-ios.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-10-12",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 22,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "tplester@deloitte.com.au", "36178559+tplester@users.noreply.github.com", "wrigney@deloitte.com.au", "tikong@deloitte.com.au", "mitch.currie@virginmoney.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "ddmock-ios/data/analysisResults.json",
+    "htmlReportsRoot" : "ddmock-ios/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 7,
+  "mainLinesOfCode" : 417,
+  "testFilesCount" : 1,
+  "testLinesOfCode" : 13,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 275,
+  "buildAndDeployFilesCount" : 2,
+  "buildAndDeployLinesOfCode" : 68,
+  "otherFilesCount" : 7,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / react-habitat-redux",
+    "description" : "Official Redux Container for React Habitat https://github.com/DeloitteDigitalAPAC/react-habitat",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/react-habitat-redux.git"
+    } ]
+  },
+  "latestCommitDate" : "2018-02-12",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 31,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "jsalau@deloitte.com.au", "jenna.salau@gmail.com", "juergen.messner@cornelsen.de", "aventurella@blitzagency.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "react-habitat-redux/data/analysisResults.json",
+    "htmlReportsRoot" : "react-habitat-redux/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 4,
+  "mainLinesOfCode" : 69,
+  "testFilesCount" : 5,
+  "testLinesOfCode" : 167,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 195,
+  "buildAndDeployFilesCount" : 1,
+  "buildAndDeployLinesOfCode" : 52,
+  "otherFilesCount" : 4,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / ripple-social-channels",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/ripple-social-channels.git"
+    } ]
+  },
+  "latestCommitDate" : "2021-12-17",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 5,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "chopper@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "ripple-social-channels/data/analysisResults.json",
+    "htmlReportsRoot" : "ripple-social-channels/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 1,
+  "mainLinesOfCode" : 20,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 1,
+  "generatedLinesOfCode" : 73,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 3,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / eslint-config-deloitte",
+    "description" : "This package provides Deloitte Digital&apos;s code standards as an ESLint extensible config",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/eslint-config-deloitte.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-02-16",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 450,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "waldron.rick@gmail.com", "jsalau@deloitte.com.au", "jfroffice@gmail.com", "kestreet@deloitte.com.au", "keeganstreet@gmail.com", "leonardo.balter@gmail.com", "alex.navasardyan@gmail.com", "mathias@qiwi.be", "marocchino@gmail.com", "juntai81@gmail.com", "jenna.salau@gmail.com", "happinesz@gmail.com", "junechuang@deloitte.com.au", "gavra@arvag.net", "okuryu@okuryu.com", "dejan.dimic@gmail.com", "marco@marcotrulla.it", "garu@cpan.org", "karl.guillotte.1@gmail.com", "sindresorhus@gmail.com", "rmurphey@gmail.com", "leobalter@me.com", "leobetosouza@gmail.com", "kitcambridge@gmail.com", "chuang.june@gmail.com", "rlavers@deloitte.com.au", "jsalau@au0091.au.deloitte.com", "aperini@aperini2.office-fulano", "mandrikov@gmail.com", "nick.niemeir@gmail.com", "github@jeremie-parker.com", "mihaipaun01@gmail.com", "pascal.precht@googlemail.com", "alex.navasardyan@yahoo.com", "jt@gosquared.com", "rtoal@lmu.edu", "fracmak@gmail.com", "knuthaug+github@gmail.com", "ebalter@gmail.com", "daniel.c.herman@gmail.com", "benja1000@gmail.com", "tim@timshomepage.net", "mikko@redinnovation.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "eslint-config-deloitte/data/analysisResults.json",
+    "htmlReportsRoot" : "eslint-config-deloitte/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 9,
+  "mainLinesOfCode" : 375,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 298,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 11,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / ddrouter",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/ddrouter.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-05-11",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 26,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "tplester@deloitte.com.au", "wrigney@deloitte.com.au", "mitch.currie@virginmoney.com.au", "william@rigney.com.au", "36178559+tplester@users.noreply.github.com", "nf1993@gmail.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "ddrouter/data/analysisResults.json",
+    "htmlReportsRoot" : "ddrouter/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 16,
+  "mainLinesOfCode" : 549,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 94,
+  "buildAndDeployFilesCount" : 1,
+  "buildAndDeployLinesOfCode" : 15,
+  "otherFilesCount" : 6,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / ddmock-android",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/ddmock-android.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-07-22",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 19,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "nf1993@gmail.com", "davtao@deloitte.com.au", "japaz@deloitte.com", "david.sawick@trausteknij.com", "davetao@users.noreply.github.com", "38674945+aeoxia@users.noreply.github.com", "tplester@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "ddmock-android/data/analysisResults.json",
+    "htmlReportsRoot" : "ddmock-android/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 33,
+  "mainLinesOfCode" : 1150,
+  "testFilesCount" : 1,
+  "testLinesOfCode" : 63,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 155,
+  "buildAndDeployFilesCount" : 10,
+  "buildAndDeployLinesOfCode" : 259,
+  "otherFilesCount" : 6,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / react-habitat",
+    "description" : "⚛️ 🛅 A React DOM Bootstrapper designed to harmonise a hybrid &apos;CMS + React&apos; application.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/react-habitat.git"
+    } ]
+  },
+  "latestCommitDate" : "2020-08-19",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 278,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "jsalau@deloitte.com.au", "jenna.salau@gmail.com", "ryanpcmcquen@member.fsf.org", "ryan.mcquen@surlatable.com", "samuel.alvin1994@gmail.com", "fitzsimons.finn@gmail.com", "ariel.kirkwood@me.com", "nilsmagne.lunde@skandiabanken.no", "joshuakelly@users.noreply.github.com", "aventurella@blitzagency.com", "19caleb95@gmail.com", "shaunkelly@gmail.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "react-habitat/data/analysisResults.json",
+    "htmlReportsRoot" : "react-habitat/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 20,
+  "mainLinesOfCode" : 1244,
+  "testFilesCount" : 11,
+  "testLinesOfCode" : 920,
+  "generatedFilesCount" : 6,
+  "generatedLinesOfCode" : 30151,
+  "buildAndDeployFilesCount" : 1,
+  "buildAndDeployLinesOfCode" : 49,
+  "otherFilesCount" : 68,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / Dimmy.Sitecore.Plugin",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/Dimmy.Sitecore.Plugin.git"
+    } ]
+  },
+  "latestCommitDate" : "2021-05-10",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 53,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "aaron@gravypower.net" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "Dimmy.Sitecore.Plugin/data/analysisResults.json",
+    "htmlReportsRoot" : "Dimmy.Sitecore.Plugin/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 33,
+  "mainLinesOfCode" : 1142,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 47,
+  "buildAndDeployFilesCount" : 5,
+  "buildAndDeployLinesOfCode" : 575,
+  "otherFilesCount" : 1,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / Charts",
+    "description" : "Beautiful charts for iOS/tvOS/OSX! The Apple side of the crossplatform MPAndroidChart.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/Charts.git"
+    } ]
+  },
+  "latestCommitDate" : "2023-01-18",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 1774,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "danielgindi@gmail.com", "pierremarcairoldi@gmail.com", "liuxuan30@gmail.com", "j.christie@icloud.com", "mathewa6@users.noreply.github.com", "liuxuan30@users.noreply.github.com", "phil.jahoda@gmail.com", "19879272+jjatie@users.noreply.github.com", "chenkem@gmail.com", "mpz@financial.com", "who-is-bb@ya.ru", "zntfdr@gmail.com", "aelam@users.noreply.github.com", "pja@zuehlke.com", "harryl.byread@gmail.com", "jc@necktronics.com", "anti2moron@gmail.com", "felix.herrmann@icloud.com", "rynecheow@gmail.com", "y_ohba@webfrontier.co.jp", "github@w7software.com", "kevin.barnes@shopify.com", "wjacker2@gmail.com", "tommy@pixelspark.nl", "tracyk@zillow.com", "mkubenka@gmail.com", "101617755+jinxitian@users.noreply.github.com", "lredpath@community.com", "tho.do@medtronic.com", "51040483+phuanggh@users.noreply.github.com", "a.s.filimonov@tinkoff.ru", "sven.bone@mail.de", "shiww@outlook.com", "antonthedev@gmail.com", "jconstant@mac.com", "ewg777@users.noreply.github.com", "maciektr@gmail.com", "porooshani@gmail.com", "thierry.hentic@gmail.com", "m@macteo.it", "anatoly@ideomobile.com", "simon.tsai.j@gmail.com", "vincentxueios@gmail.com", "ben@einsteinx2.com", "bartosz.olszanowski@gmail.com", "rfpels@gmail.com", "leo@leomehlig.com", "andreas.igel@computacenter.com", "ospr@me.com", "leo98meh@googlemail.com", "albert.donaire@sage.com", "mconintet@163.com", "sven@svens-mbp.speedport_w_724v_typ_a_05011603_00_003", "doralon@dors-macbook-pro.local", "doralon@guyad-pc.theseus.dev", "dor.alon@adir-pc.theseus.dev", "erkanyildiz@me.com", "magnificentbluez@hotmail.com", "356485255@qq.com", "batikansosun@gmail.com", "emrahkrkmz1@gmail.com", "raphael@sylvilagus.com", "slambrakis@users.noreply.github.com", "harry@moneybrilliant.com.au", "rquesada@pinterest.com", "nuomi1@qq.com", "slynch@createchsol.com", "6350992+bivant@users.noreply.github.com", "me@alexruperez.com", "tcraig@usc.edu", "64682602+basistiy@users.noreply.github.com", "9885219+rubenfer@users.noreply.github.com", "rebeloper@users.noreply.github.com", "grant.kamin@garmin.com", "fkl@jumhyn.com", "peter.kaminski09@gmail.com", "david.piper@udo.edu", "tkidd@capis.com", "muclemente@gmail.com", "andrey.martushev@gmail.com", "stefanos@zachariadis.net", "4np@users.noreply.github.com", "colton.lemmon@gmail.com", "scalman@users.noreply.github.com", "jobins666@gmail.com", "nick@swellinvesting.com", "lucas.fernandes@easynvest.com.br", "pat@phughes.us", "charlie.fougeray@st-groupe.fr", "lcsmarcal@users.noreply.github.com", "lucasmarcal.fernandes@gmail.com", "esqlimite@hotmail.com", "tokat.shant@gmail.com", "41472829+artemiusmk@users.noreply.github.com", "32229799+justinlew@users.noreply.github.com", "dominique@stranz.org", "guiga741@gmail.com", "anton.doudarev@gmail.com", "yiping_du@163.com", "417.72ki@gmail.com", "yang.asahi@gmail.com", "chuynadamas@gmail.com", "jlcanale@me.com", "robert.cronin@uqconnect.edu.au", "cuong1112035@gmail.com", "lennon.hejin@gmail.com", "alexander.repty@mac.com", "tim@swiftkick.it", "rapisarda.carlo@gmail.com", "denis@irlmobile.com", "canapio.developer@gmail.com", "alexleeds@hotmail.com", "jekahy@gmail.com", "roberto.estrada@intelygenz.com", "l.lemesev@gmail.com", "666tos@gmail.com", "snowy_way@163.com", "dennis@franke-s.de", "auu.aug@gmail.com", "yangcaimu@gmail.com", "russell.qwerty@gmail.com", "pascal.h.herrmann@daimler.com", "brian.doig@jpl.nasa.gov", "hir-suzuki@dip-net.co.jp", "daniel@wobster.de", "martnst@users.noreply.github.com", "xinran_wang@comcast.com", "hardboiledbaby@gmail.com", "gzxiaozhengyang@corp.netease.com", "russell.stephens@compass.com", "osiansmith@me.com", "eric.ch_chang@htc.com", "annalizhaz@gmail.com", "enrique@youneedabudget.com", "eric0625@users.noreply.github.com", "franqueli@gmail.com", "simonbromberg@users.noreply.github.com", "kv@idealdev.dk", "krunoslav.zaher@gmail.com", "valeriy.van@cgm.com", "anttyc@gmail.com", "sokolov.lev95@gmail.com", "krystof.matej@cleverlance.com", "elaewin@gmail.com", "shad.ratliff@amtrustgroup.com", "esso@eventer.jp", "chris@gunawardena.id.au", "emiranda04@users.noreply.github.com", "rofreg@gmail.com", "badger@gitter.im", "tom.burns@shopify.com", "me@antoniomarques.eu", "enrico.zamagni@gmail.com", "bogdanvitoc@gmail.com", "stevoeddz@gmail.com", "frankensteinbot@gmail.com", "gunter@allaboutapps.at", "patrickscottreynolds@gmail.com", "david.vicenteferreira@gmail.com", "aarondaub@aarons-macbook-pro.local", "chanil1218@gmail.com", "sky4winder@gmail.com", "alvesjtiago@gmail.com", "chenxiaobin01@lianjia.com", "boyuan.gby@alibaba-inc.com", "fm4809@gmail.com", "iangmaia@gmail.com", "softdesigner.ua@gmail.com", "ian.guedesmaia@bux.io", "niraj.rayalla@gmail.com", "davidmiguel.ferreira@pt.bosch.com", "jake@stripysock.com.au", "avishaan@codehatcher.com", "ilyukevich.victor@gmail.com", "javiers@twitter.com", "codehunt@codehunt.io", "maxim.zabelin@noveogroup.com", "michael.c.mcguire@aexp.com", "arnetempelhof@googlemail.com", "michael@msanders.com", "jose.navarro@liferay.com", "zenkimoto@gmail.com", "mkalmes@gmail.com", "nwestr@gmail.com", "chef@bitdeli.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "Charts/data/analysisResults.json",
+    "htmlReportsRoot" : "Charts/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 182,
+  "mainLinesOfCode" : 18691,
+  "testFilesCount" : 9,
+  "testLinesOfCode" : 785,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 13483,
+  "buildAndDeployFilesCount" : 2,
+  "buildAndDeployLinesOfCode" : 26,
+  "otherFilesCount" : 115,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / dd-swiftlint-rules",
+    "description" : "This repository contains the configuration file of Swiftlint that is based on Deloitte Digital&apos;s Swift Style Guide.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/dd-swiftlint-rules.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-03-22",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 8,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "102123951+dlaborada@users.noreply.github.com", "101161142+jerfranco-deloitte@users.noreply.github.com", "jerfranco@deloitte.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "dd-swiftlint-rules/data/analysisResults.json",
+    "htmlReportsRoot" : "dd-swiftlint-rules/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 3,
+  "mainLinesOfCode" : 181,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 255,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 11,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / thephuong-flask",
+    "description" : "The Flaskr template, configured for Gitpod &lpar;www.gitpod.io&rpar; to give you pre-built, ephemeral development environments in the cloud.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/thephuong-flask.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-06-17",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 8,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "henry.tranvan@gmail.com", "sven.efftinge@typefox.io", "mikenikles@pm.me", "ghuntley@ghuntley.com", "mikenikles@gmail.com", "anton@gitpod.io" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "thephuong-flask/data/analysisResults.json",
+    "htmlReportsRoot" : "thephuong-flask/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 15,
+  "mainLinesOfCode" : 478,
+  "testFilesCount" : 6,
+  "testLinesOfCode" : 173,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 33,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 2,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / webpack-config",
+    "description" : "Upgradeable collection of Webpack plugins, loaders and configuration for Deloitte Digital projects",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/webpack-config.git"
+    } ]
+  },
+  "latestCommitDate" : "2019-06-26",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 239,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "kestreet@deloitte.com.au", "jsalau@deloitte.com.au", "bot@renovateapp.com", "jenna.salau@gmail.com", "keeganstreet@gmail.com", "hmunasinghe@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "webpack-config/data/analysisResults.json",
+    "htmlReportsRoot" : "webpack-config/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 16,
+  "mainLinesOfCode" : 468,
+  "testFilesCount" : 6,
+  "testLinesOfCode" : 123,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 1037,
+  "buildAndDeployFilesCount" : 2,
+  "buildAndDeployLinesOfCode" : 21,
+  "otherFilesCount" : 33,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / htl-parser",
+    "description" : "PEG.js grammar and parser for Adobe&apos;s HTML Template Language &lpar;HTL&rpar;",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/htl-parser.git"
+    } ]
+  },
+  "latestCommitDate" : "2018-08-07",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 29,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "lacmcdonald@deloitte.com.au", "dkeeghan@deloitte.com.au", "lachlanmcdonald@users.noreply.github.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "htl-parser/data/analysisResults.json",
+    "htmlReportsRoot" : "htl-parser/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 2,
+  "mainLinesOfCode" : 15,
+  "testFilesCount" : 1,
+  "testLinesOfCode" : 98,
+  "generatedFilesCount" : 1,
+  "generatedLinesOfCode" : 5355,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 3,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / rhythm-ui",
+    "description" : "A UI framework for creating Design Systems",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/rhythm-ui.git"
+    } ]
+  },
+  "latestCommitDate" : "2019-11-27",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 531,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "jsalau@deloitte.com.au", "j.nelssonsmith@gmail.com", "jenna.salau@gmail.com", "ricominten@gmail.com", "tejeong@au10917.localdomain", "gmills@deloitte.com.au", "ricominten@users.noreply.github.com", "georgee_123@hotmail.com", "tejeong@au10917.home", "lcaceres@deloitte.com.au", "lim_kaiyang@hotmail.com", "tejeong@au10917.au.deloitte.com", "jnelsson-smith@deloitte.com.au", "robbie.blackburn@gmail.com", "rminten@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "rhythm-ui/data/analysisResults.json",
+    "htmlReportsRoot" : "rhythm-ui/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 198,
+  "mainLinesOfCode" : 8185,
+  "testFilesCount" : 20,
+  "testLinesOfCode" : 898,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 3670,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 126,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / stylelint-config-deloitte",
+    "description" : "This package provides Deloitte Digital&apos;s code standards as a Stylelint extensible config.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/stylelint-config-deloitte.git"
+    } ]
+  },
+  "latestCommitDate" : "2019-05-20",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 77,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "nicolasgallagher@gmail.com", "jsalau@deloitte.com.au", "keeganstreet@gmail.com", "kestreet@deloitte.com.au", "gavra@arvag.net", "jenna.salau@gmail.com", "thevasya@gmail.com", "zno.rocha@gmail.com", "nicolas@nicolasgallagher.com", "elecay@gmail.com", "mbk@michaels-macbook-pro.local", "michalek@shortcat.cz", "info@modestowicz.com", "megahulk2222@gmail.com", "m.strehl@kinetiqa.de", "frank.taillandier@gmail.com", "baepower@me.com", "otakustay@gmail.com", "david.hund@gmail.com", "sinantaga@gmail.com", "studiomohawk@gmail.com", "leobetosouza@gmail.com", "marco@marcotrulla.it", "jackalmage@gmail.com", "bruno1378@gmail.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "stylelint-config-deloitte/data/analysisResults.json",
+    "htmlReportsRoot" : "stylelint-config-deloitte/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 1,
+  "mainLinesOfCode" : 124,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 1,
+  "generatedLinesOfCode" : 2910,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 5,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / DecimalFormat",
+    "description" : "Node implementation of Java&apos;s DecimalFormat",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/DecimalFormat.git"
+    } ]
+  },
+  "latestCommitDate" : "2018-06-21",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 11,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "lachlan@radelaide.net" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "DecimalFormat/data/analysisResults.json",
+    "htmlReportsRoot" : "DecimalFormat/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 3,
+  "mainLinesOfCode" : 346,
+  "testFilesCount" : 1,
+  "testLinesOfCode" : 71,
+  "generatedFilesCount" : 1,
+  "generatedLinesOfCode" : 5777,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 5,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / SSReader",
+    "description" : "This script reads an Excel Spreadsheet with a set of key column and value column, and converts them into IOS string resource file &apos;Localizable.strings&apos; or Android string resource file &apos;strings.xml&apos;",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/SSReader.git"
+    } ]
+  },
+  "latestCommitDate" : "2019-12-17",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 4,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "52811724+moe-attack@users.noreply.github.com", "bradley@squarepolka.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "SSReader/data/analysisResults.json",
+    "htmlReportsRoot" : "SSReader/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 1,
+  "mainLinesOfCode" : 115,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 19,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 2,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / qd-satis",
+    "description" : "Deloitte Drupal Package Registry",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/qd-satis.git"
+    } ]
+  },
+  "latestCommitDate" : "2020-08-05",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 37,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "yhasanmiyan@deloitte.com.au", "chopper@deloitte.com.au", "adam@adammalone.net", "srodrigo@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "qd-satis/data/analysisResults.json",
+    "htmlReportsRoot" : "qd-satis/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 1,
+  "mainLinesOfCode" : 45,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 133,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 3,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / dd-detekt-rules",
+    "description" : "This repository contains Detekt custom rules and configuration that are based on Deloitte Digital&apos;s Kotlin Style Guide.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/dd-detekt-rules.git"
+    } ]
+  },
+  "latestCommitDate" : "2022-03-21",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 1,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "jerfranco@deloitte.com" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "dd-detekt-rules/data/analysisResults.json",
+    "htmlReportsRoot" : "dd-detekt-rules/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 10,
+  "mainLinesOfCode" : 281,
+  "testFilesCount" : 7,
+  "testLinesOfCode" : 573,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 70,
+  "buildAndDeployFilesCount" : 1,
+  "buildAndDeployLinesOfCode" : 68,
+  "otherFilesCount" : 3,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / dd-breakpoint-container",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/dd-breakpoint-container.git"
+    } ]
+  },
+  "latestCommitDate" : "2019-12-20",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 259,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "sacameron@deloitte.com.au", "ttotsuka@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "dd-breakpoint-container/data/analysisResults.json",
+    "htmlReportsRoot" : "dd-breakpoint-container/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 28,
+  "mainLinesOfCode" : 875,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 706,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 12,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / Atlas",
+    "description" : "Atlas is the Deloitte Digital Framework for Sitecore Development",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/Atlas.git"
+    } ]
+  },
+  "latestCommitDate" : "2023-02-16",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 33,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "mail@heikofranz.info", "heikosebastian.franz@gmail.com", "matt@geekrocket.com", "ben.mcevoy@gmail.com", "mattaylor@deloitte.com.au", "diepnn@gmail.com", "40154418+hollywoodinvegas@users.noreply.github.com", "hefranz@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "Atlas/data/analysisResults.json",
+    "htmlReportsRoot" : "Atlas/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 137,
+  "mainLinesOfCode" : 4169,
+  "testFilesCount" : 9,
+  "testLinesOfCode" : 393,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 52,
+  "buildAndDeployFilesCount" : 2,
+  "buildAndDeployLinesOfCode" : 267,
+  "otherFilesCount" : 1,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / schematik-forms",
+    "description" : "Schematick Forms is an elegant schema based form builder for React using JSON",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/schematik-forms.git"
+    } ]
+  },
+  "latestCommitDate" : "2019-04-23",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 13,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "jsalau@deloitte.com.au", "jenna.salau@gmail.com", "throwe@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "schematik-forms/data/analysisResults.json",
+    "htmlReportsRoot" : "schematik-forms/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 67,
+  "mainLinesOfCode" : 4218,
+  "testFilesCount" : 30,
+  "testLinesOfCode" : 2038,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 933,
+  "buildAndDeployFilesCount" : 2,
+  "buildAndDeployLinesOfCode" : 58,
+  "otherFilesCount" : 14,
+  "otherLinesOfCode" : 0
+}, {
+  "metadata" : {
+    "name" : "DeloitteAU / DDBreakpoints",
+    "description" : "Breakpoints SCSS Mixin and JavaScript tool, used to accelerate the development process of responsive pages.",
+    "tooltip" : "",
+    "logoLink" : "https://avatars.githubusercontent.com/DeloitteAU",
+    "links" : [ {
+      "label" : "GitHub Repo",
+      "href" : "https://github.com/DeloitteAU/DDBreakpoints.git"
+    } ]
+  },
+  "latestCommitDate" : "2021-08-16",
+  "commitsCount30Days" : 0,
+  "commitsCount90Days" : 0,
+  "commitsCount" : 92,
+  "contributors30Days" : [ ],
+  "contributors90Days" : [ ],
+  "contributors" : [ "dkeeghan@deloitte.com.au", "hadimichael@gmail.com", "damian@keeghan.com.au", "hadimichael@users.noreply.github.com", "kestreet@deloitte.com.au", "keeganstreet@gmail.com", "andrewplummer@me.com", "jdowdle@deloitte.com.au", "jenna.salau@gmail.com", "jsalau@deloitte.com.au", "lachlan@radelaide.net", "lacmcdonald@deloitte.com.au" ],
+  "sokratesRepositoryLink" : {
+    "analysisResultsPath" : "DDBreakpoints/data/analysisResults.json",
+    "htmlReportsRoot" : "DDBreakpoints/html",
+    "note" : ""
+  },
+  "metrics" : null,
+  "mainFilesCount" : 5,
+  "mainLinesOfCode" : 847,
+  "testFilesCount" : 0,
+  "testLinesOfCode" : 0,
+  "generatedFilesCount" : 0,
+  "generatedLinesOfCode" : 642,
+  "buildAndDeployFilesCount" : 0,
+  "buildAndDeployLinesOfCode" : 0,
+  "otherFilesCount" : 3,
+  "otherLinesOfCode" : 0
+} ]

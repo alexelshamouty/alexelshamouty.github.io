@@ -1,0 +1,186 @@
+[ {
+  "processing" : "everything",
+  "startMs" : 1737113662176,
+  "endMs" : 0,
+  "durationMs" : 6910
+}, {
+  "processing" : "analyzing",
+  "startMs" : 1737113663024,
+  "endMs" : 1737113664470,
+  "durationMs" : 1446
+}, {
+  "processing" : "reporting",
+  "startMs" : 1737113664470,
+  "endMs" : 1737113669085,
+  "durationMs" : 4615
+}, {
+  "processing" : "reporting/tags/custom tags map",
+  "startMs" : 1737113665128,
+  "endMs" : 1737113665512,
+  "durationMs" : 384
+}, {
+  "processing" : "reporting/tags/extensions tags map",
+  "startMs" : 1737113665513,
+  "endMs" : 1737113665561,
+  "durationMs" : 48
+}, {
+  "processing" : "reporting/big summary",
+  "startMs" : 1737113665828,
+  "endMs" : 1737113665953,
+  "durationMs" : 125
+}, {
+  "processing" : "reporting/overview",
+  "startMs" : 1737113665828,
+  "endMs" : 1737113665953,
+  "durationMs" : 125
+}, {
+  "processing" : "reporting/repositories",
+  "startMs" : 1737113665953,
+  "endMs" : 1737113666133,
+  "durationMs" : 180
+}, {
+  "processing" : "reporting/repositories/short report",
+  "startMs" : 1737113665953,
+  "endMs" : 1737113666131,
+  "durationMs" : 178
+}, {
+  "processing" : "reporting/repositories/short report/preparing",
+  "startMs" : 1737113665954,
+  "endMs" : 1737113665955,
+  "durationMs" : 1
+}, {
+  "processing" : "reporting/repositories/short report/size",
+  "startMs" : 1737113665955,
+  "endMs" : 1737113665971,
+  "durationMs" : 16
+}, {
+  "processing" : "reporting/repositories/short report/commits",
+  "startMs" : 1737113665971,
+  "endMs" : 1737113666072,
+  "durationMs" : 101
+}, {
+  "processing" : "reporting/repositories/short report/history",
+  "startMs" : 1737113666072,
+  "endMs" : 1737113666112,
+  "durationMs" : 40
+}, {
+  "processing" : "reporting/repositories/short report/metrics",
+  "startMs" : 1737113666112,
+  "endMs" : 1737113666124,
+  "durationMs" : 12
+}, {
+  "processing" : "reporting/repositories/short report/features of interest",
+  "startMs" : 1737113666124,
+  "endMs" : 1737113666131,
+  "durationMs" : 7
+}, {
+  "processing" : "reporting/repositories",
+  "startMs" : 1737113666136,
+  "endMs" : 1737113666148,
+  "durationMs" : 12
+}, {
+  "processing" : "reporting/repositories/export visuals",
+  "startMs" : 1737113666136,
+  "endMs" : 1737113666146,
+  "durationMs" : 10
+}, {
+  "processing" : "reporting/repositories/file age & freshness",
+  "startMs" : 1737113666146,
+  "endMs" : 1737113666148,
+  "durationMs" : 2
+}, {
+  "processing" : "reporting/tags",
+  "startMs" : 1737113666148,
+  "endMs" : 1737113667159,
+  "durationMs" : 1011
+}, {
+  "processing" : "reporting/repositories/tags",
+  "startMs" : 1737113666148,
+  "endMs" : 1737113667159,
+  "durationMs" : 1011
+}, {
+  "processing" : "reporting/tags/custom",
+  "startMs" : 1737113666148,
+  "endMs" : 1737113666602,
+  "durationMs" : 454
+}, {
+  "processing" : "reporting/tags/custom-matrix",
+  "startMs" : 1737113666602,
+  "endMs" : 1737113666607,
+  "durationMs" : 5
+}, {
+  "processing" : "reporting/repositories/tags/custom-matrix/adding report sections",
+  "startMs" : 1737113666603,
+  "endMs" : 1737113666607,
+  "durationMs" : 4
+}, {
+  "processing" : "reporting/tags/extensions",
+  "startMs" : 1737113666607,
+  "endMs" : 1737113667144,
+  "durationMs" : 537
+}, {
+  "processing" : "reporting/tags/extensions-matrix",
+  "startMs" : 1737113667144,
+  "endMs" : 1737113667159,
+  "durationMs" : 15
+}, {
+  "processing" : "reporting/repositories/tags/extension-matrix/adding report sections",
+  "startMs" : 1737113667144,
+  "endMs" : 1737113667159,
+  "durationMs" : 15
+}, {
+  "processing" : "reporting/summary",
+  "startMs" : 1737113667159,
+  "endMs" : 1737113668117,
+  "durationMs" : 958
+}, {
+  "processing" : "reporting/contributors",
+  "startMs" : 1737113667171,
+  "endMs" : 1737113667907,
+  "durationMs" : 736
+}, {
+  "processing" : "reporting/contributors/preparing",
+  "startMs" : 1737113667171,
+  "endMs" : 1737113667176,
+  "durationMs" : 5
+}, {
+  "processing" : "reporting/contributors/table",
+  "startMs" : 1737113667176,
+  "endMs" : 1737113667179,
+  "durationMs" : 3
+}, {
+  "processing" : "reporting/contributors/saving tables",
+  "startMs" : 1737113667179,
+  "endMs" : 1737113667239,
+  "durationMs" : 60
+}, {
+  "processing" : "reporting/contributors/individual reports",
+  "startMs" : 1737113667239,
+  "endMs" : 1737113667907,
+  "durationMs" : 668
+}, {
+  "processing" : "reporting/team topologies",
+  "startMs" : 1737113668117,
+  "endMs" : 1737113668160,
+  "durationMs" : 43
+}, {
+  "processing" : "reporting/saving",
+  "startMs" : 1737113668160,
+  "endMs" : 1737113669085,
+  "durationMs" : 925
+}, {
+  "processing" : "reporting/saving/reports",
+  "startMs" : 1737113668160,
+  "endMs" : 1737113668697,
+  "durationMs" : 537
+}, {
+  "processing" : "reporting/saving/contributors",
+  "startMs" : 1737113668697,
+  "endMs" : 1737113669063,
+  "durationMs" : 366
+}, {
+  "processing" : "reporting/saving/generating visuals",
+  "startMs" : 1737113669063,
+  "endMs" : 1737113669085,
+  "durationMs" : 22
+} ]

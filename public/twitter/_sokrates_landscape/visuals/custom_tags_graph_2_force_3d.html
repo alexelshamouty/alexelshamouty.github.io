@@ -1,0 +1,569 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "sbt",
+    "size" : 16
+  }, {
+    "id" : "[twitter / ios-twitter-image-pipeline]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / dodo-build]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / hpack]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / sqrl]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / typeahead.js]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / check-my-repo]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / twemoji-parser]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / sbf]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / tormenta]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / finagle]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / util]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / stitch]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / scrooge]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / cloudhopper-commons]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / netty-http2]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / scala_school2]",
+    "size" : 1
+  }, {
+    "id" : "maven",
+    "size" : 15
+  }, {
+    "id" : "[twitter / whiskey]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / pants]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / scalding]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / joauth]",
+    "size" : 1
+  }, {
+    "id" : "npm",
+    "size" : 12
+  }, {
+    "id" : "[twitter / hadoop-lzo]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / hogan.js]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / twitter-korean-text]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / twitter-server]",
+    "size" : 1
+  }, {
+    "id" : "jest",
+    "size" : 3
+  }, {
+    "id" : "[twitter / labella.js]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / nodes]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / SentenTree]",
+    "size" : 1
+  }, {
+    "id" : "gradle",
+    "size" : 3
+  }, {
+    "id" : "[twitter / rsc]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / elephant-bird]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / twitter-cldr-npm]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / algebird]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / chill]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / GraphJet]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / twitter-text]",
+    "size" : 2
+  }, {
+    "id" : "[twitter / Serial]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / compose-rules]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / iago2]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / twemoji]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / bazel-multiversion]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / bijection]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / finatra]",
+    "size" : 1
+  }, {
+    "id" : "[twitter / storehaus]",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "[twitter / whiskey]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / whiskey]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / GraphJet]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / GraphJet]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / hadoop-lzo]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / hadoop-lzo]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twitter-korean-text]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / twitter-korean-text]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / hpack]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / hpack]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / nodes]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / nodes]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / scrooge]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / scrooge]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / cloudhopper-commons]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / cloudhopper-commons]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / pants]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / pants]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / iago2]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / iago2]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twitter-text]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / twitter-text]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / joauth]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / joauth]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / elephant-bird]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / elephant-bird]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / sbf]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / sbf]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / netty-http2]",
+    "target" : "maven",
+    "count" : 1
+  }, {
+    "source" : "maven",
+    "target" : "[twitter / netty-http2]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / sqrl]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / sqrl]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / check-my-repo]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / check-my-repo]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / typeahead.js]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / typeahead.js]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / hogan.js]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / hogan.js]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twemoji]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / twemoji]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twitter-cldr-npm]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / twitter-cldr-npm]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / labella.js]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / labella.js]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / pants]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / pants]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twitter-text]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / twitter-text]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / dodo-build]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / dodo-build]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / SentenTree]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / SentenTree]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twemoji-parser]",
+    "target" : "npm",
+    "count" : 1
+  }, {
+    "source" : "npm",
+    "target" : "[twitter / twemoji-parser]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / sqrl]",
+    "target" : "jest",
+    "count" : 1
+  }, {
+    "source" : "jest",
+    "target" : "[twitter / sqrl]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / dodo-build]",
+    "target" : "jest",
+    "count" : 1
+  }, {
+    "source" : "jest",
+    "target" : "[twitter / dodo-build]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twemoji-parser]",
+    "target" : "jest",
+    "count" : 1
+  }, {
+    "source" : "jest",
+    "target" : "[twitter / twemoji-parser]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / ios-twitter-image-pipeline]",
+    "target" : "gradle",
+    "count" : 1
+  }, {
+    "source" : "gradle",
+    "target" : "[twitter / ios-twitter-image-pipeline]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / compose-rules]",
+    "target" : "gradle",
+    "count" : 1
+  }, {
+    "source" : "gradle",
+    "target" : "[twitter / compose-rules]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / Serial]",
+    "target" : "gradle",
+    "count" : 1
+  }, {
+    "source" : "gradle",
+    "target" : "[twitter / Serial]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / finagle]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / finagle]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / scalding]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / scalding]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / bijection]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / bijection]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twitter-korean-text]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / twitter-korean-text]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / util]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / util]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / scrooge]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / scrooge]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / algebird]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / algebird]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / stitch]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / stitch]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / scala_school2]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / scala_school2]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / finatra]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / finatra]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / rsc]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / rsc]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / bazel-multiversion]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / bazel-multiversion]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / storehaus]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / storehaus]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / twitter-server]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / twitter-server]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / tormenta]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / tormenta]",
+    "count" : 1
+  }, {
+    "source" : "[twitter / chill]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[twitter / chill]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

@@ -1,0 +1,615 @@
+<!--
+  ~ Copyright (c) 2021 Željko Obrenović. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A bubble chart view on componets</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+        svg {
+            font: 14px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+    var dataset = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "spotify / s3mper",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / java-locales",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / should-up",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / DataflowJavaSDK",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "spotify / lighthouse-audit-service",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / vispana",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / tfx",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / heroic-client-java",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / Vandelay",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / backup-utils",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-android",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / diffuser",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / cstar",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "spotify / basic-pitch-ts",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / simple-bigtable",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-java",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ulogger",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-rust",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / google-http-java-client",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-go",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "spotify / folsom",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-flutter",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / missinglink",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "spotify / cookiecutter-golang",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ratatool",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / pedalboard",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / dockerfile-mode",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / homebrew-public",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / flink",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / completable-futures",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / XCRemoteCache",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / big-data-rosetta-code",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / perf-map-agent",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-js",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / luigi",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ios-auth",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / voyager",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / proto-registry",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / container-agent",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify-web-api-ts-sdk",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify-web-playback-sdk-example",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / android-sdk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / magnolify",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / dh-virtualenv",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "spotify / klio",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / web-api-examples",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / github-java-client",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / annoy",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / shumway",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / postgresql-metrics",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / conversion-api-tag-template",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / scio.g8",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify-tensorflow",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ffwd-http-client",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify-json",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "spotify / mobius-android-sample",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / dbeam",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / scio-idea-plugin",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ios-sdk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / Mobius.swift",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "spotify / scio",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / futures-extra",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / pythonflow",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / futuristic-feline",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / sparkey-java",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / tfreader",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / SPTPersistentCache",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-swift",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ruler",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / dataenum",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / realbook",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / reactochart",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / sparkey-python",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / spotify.github.io",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / gcs-tools",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / robolectric",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / flyte-flink-plugin",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / featran",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / beam",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / async-google-pubsub-client",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / okta-sdk-python",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / confidence-sdk-python",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / terraform-google-aws-hybrid-cloud-vpn",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / testing-game",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / elitzur",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / ffwd-client-java",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / semantic-metrics",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / logging-java",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / mobius",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / sparkey",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "spotify / fmt-maven-plugin",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / SPTDataLoader",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / lemur",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / volcano",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / gcp-aws-iam-federation-webidentity",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / chartify",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify / cartography",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify / soundcheck-demo-environment",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / flink-on-k8s-operator",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / android-auth",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "spotify / java-hamcrest",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify / web-scripts",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "spotify / XCMetrics",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "spotify / basic-pitch",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+} ]
+    }
+
+    var diameter = 800;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var bubble = d3.pack(dataset)
+        .size([diameter, diameter])
+        .padding(1.5);
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", diameter)
+        .attr("height", diameter)
+        .attr("class", "bubble");
+
+    var nodes = d3.hierarchy(dataset)
+        .sum(function(d) { return d.size; });
+
+    var node = svg.selectAll(".node")
+        .data(bubble(nodes).descendants())
+        .enter()
+        .filter(function(d){
+            return  !d.children
+        })
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+
+    node.append("title")
+        .text(function(d) {
+            return d.data.name + ": " + d.data.size;
+        });
+
+    node.append("circle")
+        .attr("r", function(d) {
+            return d.r;
+        })
+        .style("fill", function(d,i) {
+            return "rgb(192, 222, 237)";
+        });
+
+    node.append("text")
+        .attr("dy", ".2em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.data.name.substring(0, d.r / 3);
+        })
+        .attr("font-family", "sans-serif")
+        .attr("fill", "black");
+
+    node.append("text")
+        .attr("dy", "1.3em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.data.Count;
+        })
+        .attr("font-family",  "Gill Sans", "Gill Sans MT")
+        .attr("fill", "white");
+
+    d3.select(self.frameElement)
+        .style("height", diameter + "px");
+
+</script>
+</body>
+</html>

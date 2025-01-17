@@ -1,0 +1,81 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+    "[spotify / java-locales]" [fillcolor="deepskyblue2"];
+    "[spotify / confidence-sdk-flutter]" [fillcolor="deepskyblue2"];
+    "[spotify / ratatool]" [fillcolor="deepskyblue2"];
+    "[spotify / confidence-sdk-js]" [fillcolor="deepskyblue2"];
+    "[spotify / luigi]" [fillcolor="deepskyblue2"];
+    "[spotify / voyager]" [fillcolor="deepskyblue2"];
+    "[spotify / magnolify]" [fillcolor="deepskyblue2"];
+    "[spotify / dbeam]" [fillcolor="deepskyblue2"];
+    "[spotify / scio-idea-plugin]" [fillcolor="deepskyblue2"];
+    "[spotify / Mobius.swift]" [fillcolor="deepskyblue2"];
+    "[spotify / scio]" [fillcolor="deepskyblue2"];
+    "[spotify / ruler]" [fillcolor="deepskyblue2"];
+    "[spotify / spotify.github.io]" [fillcolor="deepskyblue2"];
+    "[spotify / gcs-tools]" [fillcolor="deepskyblue2"];
+    "[spotify / elitzur]" [fillcolor="deepskyblue2"];
+    "[spotify / SPTDataLoader]" [fillcolor="deepskyblue2"];
+    "[spotify / flink-on-k8s-operator]" [fillcolor="deepskyblue2"];
+
+
+
+    "[spotify / elitzur]" -- "[spotify / ratatool]" [label=" 6 ", penwidth="6", color="#00688bB7"];
+    "[spotify / confidence-sdk-java]" -- "[spotify / confidence-sdk-android]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[spotify / confidence-sdk-js]" -- "[spotify / confidence-sdk-android]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[spotify / magnolify]" -- "[spotify / scio]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[spotify / scio]" -- "[spotify / dbeam]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[spotify / confidence-sdk-js]" -- "[spotify / confidence-sdk-java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[spotify / scio-idea-plugin]" -- "[spotify / elitzur]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / pedalboard]" -- "[spotify / basic-pitch]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / gcs-tools]" -- "[spotify / scio]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-python]" -- "[spotify / confidence-sdk-android]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-python]" -- "[spotify / confidence-sdk-go]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / scio-idea-plugin]" -- "[spotify / ratatool]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-js]" -- "[spotify / confidence-sdk-go]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-go]" -- "[spotify / confidence-sdk-android]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-swift]" -- "[spotify / confidence-sdk-java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / magnolify]" -- "[spotify / scio-idea-plugin]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / scio-idea-plugin]" -- "[spotify / scio]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / magnolify]" -- "[spotify / ratatool]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / scio]" -- "[spotify / basic-pitch]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-swift]" -- "[spotify / confidence-sdk-python]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-swift]" -- "[spotify / confidence-sdk-js]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / magnolify]" -- "[spotify / dbeam]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-python]" -- "[spotify / confidence-sdk-java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / scio]" -- "[spotify / ratatool]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / gcs-tools]" -- "[spotify / scio-idea-plugin]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / magnolify]" -- "[spotify / elitzur]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-js]" -- "[spotify / confidence-sdk-python]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-android]" -- "[spotify / confidence-sdk-swift]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / confidence-sdk-java]" -- "[spotify / confidence-sdk-go]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / gcs-tools]" -- "[spotify / ratatool]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / pedalboard]" -- "[spotify / scio]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / magnolify]" -- "[spotify / gcs-tools]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / elitzur]" -- "[spotify / scio]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[spotify / gcs-tools]" -- "[spotify / elitzur]" [label=" 2 ", penwidth="2", color="#00688b70"];
+
+}

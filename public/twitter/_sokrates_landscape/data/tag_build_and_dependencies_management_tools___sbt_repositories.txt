@@ -1,0 +1,17 @@
+Repository	Main Lanuguage	LOC (main)	LOC (test)	LOC (other)	Age (years)	Contributors	Recent Contributors	Rookies	Commits this year	Latest commit
+twitter / finagle	SCALA	89358	87536	12810	14	548	4	2	5	2025-01-15
+twitter / scalding	SCALA	46579	24917	5610	0	0	0	0	0	
+twitter / bijection	SCALA	4859	2940	2075	0	0	0	0	0	
+twitter / twitter-korean-text	SCALA	2436	1379	35119	0	0	0	0	0	
+twitter / util	SCALA	35832	32875	8362	14	328	0	0	0	2024-12-13
+twitter / scrooge	SCALA	19080	38168	3270	0	0	0	0	0	
+twitter / algebird	SCALA	26584	10626	478	0	0	0	0	0	
+twitter / stitch	SCALA	5824	3789	168	0	1	0	0	0	2024-11-07
+twitter / scala_school2	CSS	1500	153	787	0	0	0	0	0	
+twitter / finatra	SCALA	14208	31509	17265	13	257	0	0	0	2024-05-07
+twitter / rsc	SCALA	24285	1122	33753	7	14	0	0	0	2021-10-21
+twitter / bazel-multiversion	SCALA	5436	1930	250	4	8	0	0	0	2023-03-10
+twitter / storehaus	SCALA	4155	2345	378	0	0	0	0	0	
+twitter / twitter-server	SCALA	6778	4086	2144	0	0	0	0	0	
+twitter / tormenta	SCALA	664	661	142	0	0	0	0	0	
+twitter / chill	SCALA	6060	2694	333	0	0	0	0	0	

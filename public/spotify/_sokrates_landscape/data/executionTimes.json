@@ -1,0 +1,221 @@
+[ {
+  "processing" : "everything",
+  "startMs" : 1737110893192,
+  "endMs" : 0,
+  "durationMs" : 11243
+}, {
+  "processing" : "analyzing",
+  "startMs" : 1737110894342,
+  "endMs" : 1737110896228,
+  "durationMs" : 1886
+}, {
+  "processing" : "reporting",
+  "startMs" : 1737110896228,
+  "endMs" : 1737110904434,
+  "durationMs" : 8206
+}, {
+  "processing" : "reporting/tags/custom tags map",
+  "startMs" : 1737110898662,
+  "endMs" : 1737110899475,
+  "durationMs" : 813
+}, {
+  "processing" : "reporting/tags/extensions tags map",
+  "startMs" : 1737110899475,
+  "endMs" : 1737110899544,
+  "durationMs" : 69
+}, {
+  "processing" : "reporting/big summary",
+  "startMs" : 1737110899964,
+  "endMs" : 1737110900185,
+  "durationMs" : 221
+}, {
+  "processing" : "reporting/overview",
+  "startMs" : 1737110899964,
+  "endMs" : 1737110900185,
+  "durationMs" : 221
+}, {
+  "processing" : "reporting/repositories",
+  "startMs" : 1737110900185,
+  "endMs" : 1737110900594,
+  "durationMs" : 409
+}, {
+  "processing" : "reporting/repositories/short report",
+  "startMs" : 1737110900185,
+  "endMs" : 1737110900418,
+  "durationMs" : 233
+}, {
+  "processing" : "reporting/repositories/short report/preparing",
+  "startMs" : 1737110900186,
+  "endMs" : 1737110900187,
+  "durationMs" : 1
+}, {
+  "processing" : "reporting/repositories/short report/size",
+  "startMs" : 1737110900187,
+  "endMs" : 1737110900205,
+  "durationMs" : 18
+}, {
+  "processing" : "reporting/repositories/short report/commits",
+  "startMs" : 1737110900205,
+  "endMs" : 1737110900336,
+  "durationMs" : 131
+}, {
+  "processing" : "reporting/repositories/short report/history",
+  "startMs" : 1737110900336,
+  "endMs" : 1737110900394,
+  "durationMs" : 58
+}, {
+  "processing" : "reporting/repositories/short report/metrics",
+  "startMs" : 1737110900394,
+  "endMs" : 1737110900411,
+  "durationMs" : 17
+}, {
+  "processing" : "reporting/repositories/short report/features of interest",
+  "startMs" : 1737110900411,
+  "endMs" : 1737110900418,
+  "durationMs" : 7
+}, {
+  "processing" : "reporting/repositories/long report",
+  "startMs" : 1737110900425,
+  "endMs" : 1737110900594,
+  "durationMs" : 169
+}, {
+  "processing" : "reporting/repositories/long report/preparing",
+  "startMs" : 1737110900425,
+  "endMs" : 1737110900426,
+  "durationMs" : 1
+}, {
+  "processing" : "reporting/repositories/long report/size",
+  "startMs" : 1737110900426,
+  "endMs" : 1737110900437,
+  "durationMs" : 11
+}, {
+  "processing" : "reporting/repositories/long report/commits",
+  "startMs" : 1737110900437,
+  "endMs" : 1737110900538,
+  "durationMs" : 101
+}, {
+  "processing" : "reporting/repositories/long report/history",
+  "startMs" : 1737110900538,
+  "endMs" : 1737110900577,
+  "durationMs" : 39
+}, {
+  "processing" : "reporting/repositories/long report/metrics",
+  "startMs" : 1737110900578,
+  "endMs" : 1737110900589,
+  "durationMs" : 11
+}, {
+  "processing" : "reporting/repositories/long report/features of interest",
+  "startMs" : 1737110900590,
+  "endMs" : 1737110900594,
+  "durationMs" : 4
+}, {
+  "processing" : "reporting/repositories",
+  "startMs" : 1737110900598,
+  "endMs" : 1737110900614,
+  "durationMs" : 16
+}, {
+  "processing" : "reporting/repositories/export visuals",
+  "startMs" : 1737110900599,
+  "endMs" : 1737110900612,
+  "durationMs" : 13
+}, {
+  "processing" : "reporting/repositories/file age & freshness",
+  "startMs" : 1737110900612,
+  "endMs" : 1737110900614,
+  "durationMs" : 2
+}, {
+  "processing" : "reporting/tags",
+  "startMs" : 1737110900614,
+  "endMs" : 1737110901651,
+  "durationMs" : 1037
+}, {
+  "processing" : "reporting/repositories/tags",
+  "startMs" : 1737110900614,
+  "endMs" : 1737110901651,
+  "durationMs" : 1037
+}, {
+  "processing" : "reporting/tags/custom",
+  "startMs" : 1737110900614,
+  "endMs" : 1737110901069,
+  "durationMs" : 455
+}, {
+  "processing" : "reporting/tags/custom-matrix",
+  "startMs" : 1737110901069,
+  "endMs" : 1737110901075,
+  "durationMs" : 6
+}, {
+  "processing" : "reporting/repositories/tags/custom-matrix/adding report sections",
+  "startMs" : 1737110901070,
+  "endMs" : 1737110901075,
+  "durationMs" : 5
+}, {
+  "processing" : "reporting/tags/extensions",
+  "startMs" : 1737110901075,
+  "endMs" : 1737110901630,
+  "durationMs" : 555
+}, {
+  "processing" : "reporting/tags/extensions-matrix",
+  "startMs" : 1737110901630,
+  "endMs" : 1737110901651,
+  "durationMs" : 21
+}, {
+  "processing" : "reporting/repositories/tags/extension-matrix/adding report sections",
+  "startMs" : 1737110901630,
+  "endMs" : 1737110901651,
+  "durationMs" : 21
+}, {
+  "processing" : "reporting/summary",
+  "startMs" : 1737110901652,
+  "endMs" : 1737110903245,
+  "durationMs" : 1593
+}, {
+  "processing" : "reporting/contributors",
+  "startMs" : 1737110901692,
+  "endMs" : 1737110902653,
+  "durationMs" : 961
+}, {
+  "processing" : "reporting/contributors/preparing",
+  "startMs" : 1737110901692,
+  "endMs" : 1737110901708,
+  "durationMs" : 16
+}, {
+  "processing" : "reporting/contributors/table",
+  "startMs" : 1737110901708,
+  "endMs" : 1737110901711,
+  "durationMs" : 3
+}, {
+  "processing" : "reporting/contributors/saving tables",
+  "startMs" : 1737110901711,
+  "endMs" : 1737110901769,
+  "durationMs" : 58
+}, {
+  "processing" : "reporting/contributors/individual reports",
+  "startMs" : 1737110901769,
+  "endMs" : 1737110902653,
+  "durationMs" : 884
+}, {
+  "processing" : "reporting/team topologies",
+  "startMs" : 1737110903245,
+  "endMs" : 1737110903326,
+  "durationMs" : 81
+}, {
+  "processing" : "reporting/saving",
+  "startMs" : 1737110903326,
+  "endMs" : 1737110904434,
+  "durationMs" : 1108
+}, {
+  "processing" : "reporting/saving/reports",
+  "startMs" : 1737110903326,
+  "endMs" : 1737110903946,
+  "durationMs" : 620
+}, {
+  "processing" : "reporting/saving/contributors",
+  "startMs" : 1737110903946,
+  "endMs" : 1737110904367,
+  "durationMs" : 421
+}, {
+  "processing" : "reporting/saving/generating visuals",
+  "startMs" : 1737110904367,
+  "endMs" : 1737110904434,
+  "durationMs" : 67
+} ]

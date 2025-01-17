@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    .node {
+        cursor: pointer;
+    }
+
+    .node:hover {
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
+    .node--leaf {
+        fill: white;
+    }
+
+    .label {
+        font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-anchor: middle;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+    }
+
+    .label,
+    .node--root,
+    .node--leaf {
+        pointer-events: none;
+    }
+
+</style>
+<svg width="960" height="960"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+    var svg = d3.select("svg"),
+        margin = 20,
+        diameter = +svg.attr("width"),
+        g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+    var color = d3.scaleLinear()
+        .domain([-1, 5])
+        .range(["hsl(152,80%,100%)", "hsl(228,30%,40%)"])
+        .interpolate(d3.interpolateHcl);
+
+    var pack = d3.pack()
+        .size([diameter - margin, diameter - margin])
+        .padding(2);
+
+
+    var root = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "gpac (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "cloud-pipeline (8)",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "opencv (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pymol-open-source (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "acuity (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "Indigo (7)",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "NGB (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-kong-admin-tools (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-kong (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "TimebaseWS (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ketcher (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "dail-xl (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "JDI (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ecc-aws-rulepack (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "UUI (7)",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "sdmxsource (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-chat (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-monitoring (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sap-commerce-intellij-idea-plugin (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-redash (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "fix-antenna-net-core (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "badgerdoc (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eco-kafka-manager (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "Indigo-ELN-v.-2.0 (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseCommons (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-headlamp (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "kubernetes-engine-samples (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-tekton (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hibernate-ogm (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kubernetes-perf-tests (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "nfstrace (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "Wilma (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "syndicate-rule-engine (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "checkstyle (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ecc-azure-rulepack (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-control-plane-console (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "miew (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "aws-syndicate (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kubernetes-kueue (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mriviewer (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam-graphql (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "DFP (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "AIRUN-LLM-Benchmark-Results (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-keycloak-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eco-schema-catalog (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "r8s (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-nexus-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "Containers (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseClientCpp (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "TimebaseWS-old (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hubctl (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ecc-gcp-rulepack (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "TimebaseCryptoConnectors (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-cluster-add-ons (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "deps-fe-labeling-tool (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-bpms (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fonda (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "Lagerta (11)",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-core (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-codebase-operator (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-regulation-management (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "road-ios-framework (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "covid-resistance-mobile (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "firecloud-ui (9)",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseClickhouseConnector (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "xframework (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-jenkins-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kubernetes-jobset (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-service-generation-utility (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gflog (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dail-quant (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pipeline-builder (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gcp-bank-of-anthos (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "azurelz (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "wdl-workspace (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-gerrit-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ecc-kubernetes-rulepack (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-form-submission-validation (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ValuesTypes4Java (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-redash-chart (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "covid-resistance-back-end (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ember-trade-connector-sample (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "quanthub-portal (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jsdmx (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-sonar-operator (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "Constellation (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-liquibase-ddm-ext (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "HdDateTime (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "eco-commons-kafka (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseClientPython (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "java-cme-mdp3-handler (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam-kafka (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "AIRUN-LLM-Benchmark (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sdtm_validator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "modular-service (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lifescience (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "OSCI (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "TimebaseOrderBook (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "modular-api (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "headless-commerce-salesforce-accelerator (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "Gepard (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "agr-lib (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "OneDrive-L (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-adapter-bedrock (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "aws-ci-cd-accelerator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "modular-sdk (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-cd-pipeline-operator (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "grid-engine-api (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "Zstandard (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "model_garden (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-control-plane-gerrit (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-kafka-api-core-base-image (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-zeroharm.fe (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-notification-service (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-rest-api-core-base-image (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "clocks (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "libdt (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-regulations-validator-cli (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-user-management (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "Cake.Sitecore.Recipe (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ecc-openstack-rulepack (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "NativeUtils (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "openvasp-java-core (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "openvasp-java-client (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "lib-obj-c-attr (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseGrafanaPlugin (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-regulations-publication-pipeline (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "parso (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-adapter-vertexai (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseTimescaleConnector (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eco-commons-avro (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-postgres (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-library-stages (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ado-delivery-gantt (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-install (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-user-publisher (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "oauth2_proxy (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "AIRUN-Assistants-Benchmark-CodeBase (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-digital-document-service (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-configuration (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-assistant (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-hashicorp-vault (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-google-components (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-adapter-openai (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-sdk (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-smtp-server (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-steps (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-user-task-management (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "openvasp-java-host (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-excerpt-service-api (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-report-publisher (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-process-history-service-api (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-user-settings-service-api (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-chaperone.admin (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "deps-be-message-flow (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gcp-go2-auto (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-user-process-management (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-kubeflow-components (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-helm (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-backup-management (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-library-pipelines (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-control-plane-nexus (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "atg-build-plugin (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ai-stacks (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-history-excerptor (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "modular-cli (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-juel-function (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-bp-webservice-gateway (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sitecore-engx-scaffold (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "indigo-node (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-app-controller (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "AIRUN-Evaluation-Framework (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-control-plane-jenkins (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epm-content-gen (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseKafkaConnector (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-nexus (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "covid-tracing-bluetooth-poc (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "TimeBaseTutorial (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "azurecnp (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-excerpt-worker-docx (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-feign-annotation-error-decoder (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-jenkins-operator (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-data-factory-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gmp-tools (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "GMP (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-excerpt-worker-csv (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-excerpt-worker (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-interceptors-sdk (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-report-exporter (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "CoroutinesCache (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hub-google-stacks (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-adapter-dial (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eco-commons (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-platform-vault (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-platform-gateway (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-form-schema-provider (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-process-history-service-persistence (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-uva.mono (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-analytics-realtime (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-strimzi-kafka-operator (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-idm-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-state (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-liquibase-ext-schema (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ember-java-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "Android-Secure-Storage (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-platform-minio (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-chaperone.contentful (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-notification-template-publisher (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-kafka (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-security (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ember-algo-sample (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-language-server (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "htsjdk-s3-plugin (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-gerrit-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-bp-admin-portal (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-dso-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gmp-common (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-logger (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-audit (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-soap-api-core-base-image (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-logging (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-auth-helper (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-geoserver-publisher (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-architecture (8)",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-swagger (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-form-data-storage (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ember-python-fix-sample (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-model-core-base-image (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-redis-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-geo-server (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-file-storage (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gmp-bootstrap (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ThreadAffinity (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-camunda-auth-cli (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-dexctl (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-redis-sentinel (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "modular-cli-sdk (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-ceph-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "CoroutinesExtensions (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "xdlc-ai (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-excerpt-model (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-form-validation-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-actuator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-message-payload-storage (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-keycloak-rest-api-ext (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-history-excerptor-chart (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "deps-fe-usePolling (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "ember-restws-samples (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-connect-ed.admin (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ember-risk-sample (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-error-handler (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-process-history-model (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-stacks-disposer (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-app-builder-python (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-zeroharm.be (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-empty-template-registry-regulation (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "solidity-bootcamp (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-wiremock (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-connect-ed.ui (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-pgadmin-chart (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-low-code-platform-maven-tiles (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ember-fix-mdg-sample-python (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hub-azure-components (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-common (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-user-settings-model (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ember-fix-mdg-sample-java (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-dataplatform-jenkins-agent (7)",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-database (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-extensions (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-gabt.back-office-app (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-kafka-schema-registry (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "homebrew-tap (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-data-model (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ember-python-s3-sample (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-infrastructure-jenkins-agent (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-logger2 (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "VelocityPlugin (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-localization (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-validation (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-gabt.user-app (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epmgcip-chaperone.ai (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-cluster-kafka-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-starter-notifications (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "JDI-Examples (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam.github.io (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-chat-themes (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-registry-tests (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-ddm-low-code-platform-parent (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ai-dial-ci (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "AIRUN-Assistants-Benchmark-TestInstructions (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edp-gerrit (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hub-toolbox (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+} ]
+    }
+
+    root = d3.hierarchy(root)
+        .sum(function (d) {
+            return d.size;
+        })
+        .sort(function (a, b) {
+            return b.value - a.value;
+        });
+
+    var focus = root,
+        nodes = pack(root).descendants(),
+        view;
+
+    var circle = g.selectAll("circle")
+        .data(nodes)
+        .enter().append("circle")
+        .attr("class", function (d) {
+            return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root";
+        })
+        .style("fill", function (d) {
+            return d.children ? color(d.depth) : (d.data.color ? d.data.color : null);
+        })
+        .on("click", function (d) {
+            if (focus !== d) zoom(d), d3.event.stopPropagation();
+        });
+
+    var text = g.selectAll("text")
+        .data(nodes)
+        .enter().append("text")
+        .attr("class", "label")
+        .style("fill-opacity", function (d) {
+            return d.parent === root ? 1 : 0;
+        })
+        .style("display", function (d) {
+            return d.parent === root ? "inline" : "none";
+        })
+        .text(function (d) {
+            return d.data.name.length > 33 ? (d.data.name.substr(0, 14) + "..." + d.data.name.substr(d.data.name.length - 14))  : d.data.name;
+        });
+
+    var node = g.selectAll("circle,text");
+
+    svg
+        .style("background", color(-1))
+        .on("click", function () {
+            zoom(root);
+        });
+
+    zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+    function zoom(d) {
+        var focus0 = focus;
+        focus = d;
+
+        var transition = d3.transition()
+            .duration(d3.event.altKey ? 7500 : 750)
+            .tween("zoom", function (d) {
+                var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+                return function (t) {
+                    zoomTo(i(t));
+                };
+            });
+
+        transition.selectAll("text")
+            .filter(function (d) {
+                return d.parent === focus || this.style.display === "inline";
+            })
+            .style("fill-opacity", function (d) {
+                return d.parent === focus ? 1 : 0;
+            })
+            .on("start", function (d) {
+                if (d.parent === focus) this.style.display = "inline";
+            })
+            .on("end", function (d) {
+                if (d.parent !== focus) this.style.display = "none";
+            });
+    }
+
+    function zoomTo(v) {
+        var k = diameter / v[2];
+        view = v;
+        node.attr("transform", function (d) {
+            return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")";
+        });
+        circle.attr("r", function (d) {
+            return d.r * k;
+        });
+    }
+
+</script>

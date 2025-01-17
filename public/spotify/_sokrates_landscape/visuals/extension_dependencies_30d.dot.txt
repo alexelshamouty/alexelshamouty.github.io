@@ -1,0 +1,72 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+    "scala (7)" [fillcolor="deepskyblue2"];
+    "kt (2)" [fillcolor="deepskyblue2"];
+    "m (2)" [fillcolor="deepskyblue2"];
+    "html (1)" [fillcolor="deepskyblue2"];
+    "go (1)" [fillcolor="deepskyblue2"];
+    "sbt (8)" [fillcolor="deepskyblue2"];
+    "yaml (5)" [fillcolor="deepskyblue2"];
+    "swift (2)" [fillcolor="deepskyblue2"];
+    "css (1)" [fillcolor="deepskyblue2"];
+    "ts (1)" [fillcolor="deepskyblue2"];
+    "sql (1)" [fillcolor="deepskyblue2"];
+    "proto (1)" [fillcolor="deepskyblue2"];
+    "dart (1)" [fillcolor="deepskyblue2"];
+    "kts (1)" [fillcolor="deepskyblue2"];
+    "xml (2)" [fillcolor="deepskyblue2"];
+    "java (2)" [fillcolor="deepskyblue2"];
+    "py (2)" [fillcolor="deepskyblue2"];
+
+
+
+    "sbt (8)" -- "scala (7)" [label=" 6 ", penwidth="6", color="#00688bB7"];
+    "sbt (8)" -- "yaml (5)" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "scala (7)" -- "yaml (5)" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "sbt (8)" -- "java (2)" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "scala (7)" -- "java (2)" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "sbt (8)" -- "proto (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "scala (7)" -- "proto (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "java (2)" -- "proto (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "sbt (8)" -- "xml (2)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "sbt (8)" -- "sql (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "scala (7)" -- "xml (2)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "scala (7)" -- "sql (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "xml (2)" -- "java (2)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "xml (2)" -- "sql (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "java (2)" -- "sql (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "yaml (5)" -- "go (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kt (2)" -- "kts (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kt (2)" -- "css (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kt (2)" -- "html (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kts (1)" -- "css (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kts (1)" -- "html (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "css (1)" -- "html (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "swift (2)" -- "kt (2)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "swift (2)" -- "dart (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kt (2)" -- "dart (1)" [label=" 1 ", penwidth="1", color="#00688b5E"];
+
+}

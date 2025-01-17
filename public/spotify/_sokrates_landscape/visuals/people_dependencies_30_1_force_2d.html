@@ -1,0 +1,322 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "clairem@spotify.com",
+    "size" : 6
+  }, {
+    "id" : "akolb@spotify.com",
+    "size" : 6
+  }, {
+    "id" : "scala_steward@virtuslab.com",
+    "size" : 2
+  }, {
+    "id" : "kmj@google.com",
+    "size" : 6
+  }, {
+    "id" : "benkonz16@gmail.com",
+    "size" : 2
+  }, {
+    "id" : "lschaller@spotify.com",
+    "size" : 3
+  }, {
+    "id" : "sveyrie@luminatedata.com",
+    "size" : 6
+  }, {
+    "id" : "kellen@users.noreply.github.com",
+    "size" : 6
+  }, {
+    "id" : "dlstadther@gmail.com",
+    "size" : 1
+  }, {
+    "id" : "danao@spotify.com",
+    "size" : 1
+  }, {
+    "id" : "matek_a@outlook.com",
+    "size" : 1
+  }, {
+    "id" : "micheld@spotify.com",
+    "size" : 6
+  }, {
+    "id" : "oss@regadas.email",
+    "size" : 1
+  }, {
+    "id" : "43047562+scala-steward@users.noreply.github.com",
+    "size" : 9
+  }, {
+    "id" : "gianni@spotify.com",
+    "size" : 1
+  }, {
+    "id" : "tcodehuber@gmail.com",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 2
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 2
+  }, {
+    "source" : "gianni@spotify.com",
+    "target" : "danao@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "danao@spotify.com",
+    "target" : "gianni@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "micheld@spotify.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "micheld@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "clairem@spotify.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "clairem@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kellen@users.noreply.github.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "kellen@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "kmj@google.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "kmj@google.com",
+    "count" : 1
+  }, {
+    "source" : "sveyrie@luminatedata.com",
+    "target" : "akolb@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "akolb@spotify.com",
+    "target" : "sveyrie@luminatedata.com",
+    "count" : 1
+  }, {
+    "source" : "oss@regadas.email",
+    "target" : "tcodehuber@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "tcodehuber@gmail.com",
+    "target" : "oss@regadas.email",
+    "count" : 1
+  }, {
+    "source" : "dlstadther@gmail.com",
+    "target" : "matek_a@outlook.com",
+    "count" : 1
+  }, {
+    "source" : "matek_a@outlook.com",
+    "target" : "dlstadther@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "scala_steward@virtuslab.com",
+    "count" : 1
+  }, {
+    "source" : "scala_steward@virtuslab.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "scala_steward@virtuslab.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 1
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "scala_steward@virtuslab.com",
+    "count" : 1
+  }, {
+    "source" : "43047562+scala-steward@users.noreply.github.com",
+    "target" : "benkonz16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "benkonz16@gmail.com",
+    "target" : "43047562+scala-steward@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "lschaller@spotify.com",
+    "target" : "benkonz16@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "benkonz16@gmail.com",
+    "target" : "lschaller@spotify.com",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

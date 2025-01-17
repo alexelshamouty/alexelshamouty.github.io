@@ -1,0 +1,316 @@
+{
+  "subLandscapes" : [ ],
+  "repositories" : [ {
+    "analysisResultsPath" : "whiskey/data/analysisResults.json",
+    "htmlReportsRoot" : "whiskey/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "finagle/data/analysisResults.json",
+    "htmlReportsRoot" : "finagle/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "GraphJet/data/analysisResults.json",
+    "htmlReportsRoot" : "GraphJet/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ios-twitter-image-pipeline/data/analysisResults.json",
+    "htmlReportsRoot" : "ios-twitter-image-pipeline/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "sqrl/data/analysisResults.json",
+    "htmlReportsRoot" : "sqrl/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "groupcache/data/analysisResults.json",
+    "htmlReportsRoot" : "groupcache/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "hadoop-lzo/data/analysisResults.json",
+    "htmlReportsRoot" : "hadoop-lzo/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "cassovary/data/analysisResults.json",
+    "htmlReportsRoot" : "cassovary/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dodo/data/analysisResults.json",
+    "htmlReportsRoot" : "dodo/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scalding/data/analysisResults.json",
+    "htmlReportsRoot" : "scalding/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "vireo/data/analysisResults.json",
+    "htmlReportsRoot" : "vireo/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "check-my-repo/data/analysisResults.json",
+    "htmlReportsRoot" : "check-my-repo/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "bijection/data/analysisResults.json",
+    "htmlReportsRoot" : "bijection/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter-korean-text/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter-korean-text/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "hpack/data/analysisResults.json",
+    "htmlReportsRoot" : "hpack/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ios-twitter-logging-service/data/analysisResults.json",
+    "htmlReportsRoot" : "ios-twitter-logging-service/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "typeahead.js/data/analysisResults.json",
+    "htmlReportsRoot" : "typeahead.js/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ccommon/data/analysisResults.json",
+    "htmlReportsRoot" : "ccommon/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "hogan.js/data/analysisResults.json",
+    "htmlReportsRoot" : "hogan.js/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "compose-rules/data/analysisResults.json",
+    "htmlReportsRoot" : "compose-rules/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "effectivescala/data/analysisResults.json",
+    "htmlReportsRoot" : "effectivescala/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "go-bindata/data/analysisResults.json",
+    "htmlReportsRoot" : "go-bindata/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "util/data/analysisResults.json",
+    "htmlReportsRoot" : "util/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "the-algorithm/data/analysisResults.json",
+    "htmlReportsRoot" : "the-algorithm/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twemoji/data/analysisResults.json",
+    "htmlReportsRoot" : "twemoji/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "nodes/data/analysisResults.json",
+    "htmlReportsRoot" : "nodes/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter-cldr-npm/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter-cldr-npm/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "labella.js/data/analysisResults.json",
+    "htmlReportsRoot" : "labella.js/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "pelikan/data/analysisResults.json",
+    "htmlReportsRoot" : "pelikan/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twemproxy/data/analysisResults.json",
+    "htmlReportsRoot" : "twemproxy/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter-cldr-rb/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter-cldr-rb/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "rustcommon/data/analysisResults.json",
+    "htmlReportsRoot" : "rustcommon/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scrooge/data/analysisResults.json",
+    "htmlReportsRoot" : "scrooge/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter.github.io/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter.github.io/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "algebird/data/analysisResults.json",
+    "htmlReportsRoot" : "algebird/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "google-tag-manager-base-tag/data/analysisResults.json",
+    "htmlReportsRoot" : "google-tag-manager-base-tag/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "gatekeeper-service/data/analysisResults.json",
+    "htmlReportsRoot" : "gatekeeper-service/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "rezolus/data/analysisResults.json",
+    "htmlReportsRoot" : "rezolus/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dict_minimize/data/analysisResults.json",
+    "htmlReportsRoot" : "dict_minimize/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ios-twitter-apache-thrift/data/analysisResults.json",
+    "htmlReportsRoot" : "ios-twitter-apache-thrift/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "focus/data/analysisResults.json",
+    "htmlReportsRoot" : "focus/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "cloudhopper-commons/data/analysisResults.json",
+    "htmlReportsRoot" : "cloudhopper-commons/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "pants/data/analysisResults.json",
+    "htmlReportsRoot" : "pants/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "google-tag-manager-event-tag/data/analysisResults.json",
+    "htmlReportsRoot" : "google-tag-manager-event-tag/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "iago2/data/analysisResults.json",
+    "htmlReportsRoot" : "iago2/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "communitynotes/data/analysisResults.json",
+    "htmlReportsRoot" : "communitynotes/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twurl/data/analysisResults.json",
+    "htmlReportsRoot" : "twurl/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter-text/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter-text/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dodo-build/data/analysisResults.json",
+    "htmlReportsRoot" : "dodo-build/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "stitch/data/analysisResults.json",
+    "htmlReportsRoot" : "stitch/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scala_school2/data/analysisResults.json",
+    "htmlReportsRoot" : "scala_school2/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "joauth/data/analysisResults.json",
+    "htmlReportsRoot" : "joauth/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scoot/data/analysisResults.json",
+    "htmlReportsRoot" : "scoot/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "diffusion-rl/data/analysisResults.json",
+    "htmlReportsRoot" : "diffusion-rl/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "opensource-website/data/analysisResults.json",
+    "htmlReportsRoot" : "opensource-website/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "elephant-bird/data/analysisResults.json",
+    "htmlReportsRoot" : "elephant-bird/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "sbf/data/analysisResults.json",
+    "htmlReportsRoot" : "sbf/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "finatra/data/analysisResults.json",
+    "htmlReportsRoot" : "finatra/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "TwitterTextEditor/data/analysisResults.json",
+    "htmlReportsRoot" : "TwitterTextEditor/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "rsc/data/analysisResults.json",
+    "htmlReportsRoot" : "rsc/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "bazel-multiversion/data/analysisResults.json",
+    "htmlReportsRoot" : "bazel-multiversion/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "netty-http2/data/analysisResults.json",
+    "htmlReportsRoot" : "netty-http2/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "storehaus/data/analysisResults.json",
+    "htmlReportsRoot" : "storehaus/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ios-twitter-network-layer/data/analysisResults.json",
+    "htmlReportsRoot" : "ios-twitter-network-layer/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "SentenTree/data/analysisResults.json",
+    "htmlReportsRoot" : "SentenTree/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "cache-trace/data/analysisResults.json",
+    "htmlReportsRoot" : "cache-trace/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "the-algorithm-ml/data/analysisResults.json",
+    "htmlReportsRoot" : "the-algorithm-ml/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "libwatchman/data/analysisResults.json",
+    "htmlReportsRoot" : "libwatchman/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twemoji-parser/data/analysisResults.json",
+    "htmlReportsRoot" : "twemoji-parser/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter-cldr-js/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter-cldr-js/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "twitter-server/data/analysisResults.json",
+    "htmlReportsRoot" : "twitter-server/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "tormenta/data/analysisResults.json",
+    "htmlReportsRoot" : "tormenta/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "caladrius/data/analysisResults.json",
+    "htmlReportsRoot" : "caladrius/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scala_school/data/analysisResults.json",
+    "htmlReportsRoot" : "scala_school/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "Serial/data/analysisResults.json",
+    "htmlReportsRoot" : "Serial/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "zktraffic/data/analysisResults.json",
+    "htmlReportsRoot" : "zktraffic/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "rpc-perf/data/analysisResults.json",
+    "htmlReportsRoot" : "rpc-perf/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "chill/data/analysisResults.json",
+    "htmlReportsRoot" : "chill/html",
+    "note" : ""
+  } ]
+}

@@ -1,0 +1,130 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "mykola_marusenko@epam.com" -- "daniil_nedostup@epam.com" [label=" 9 ", penwidth="9", color="#00688bED"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "andrei_tataranovich@epam.com" [label=" 8 ", penwidth="8", color="#00688bDB"];
+    "anton_dubovik@epam.com" -- "149404362+ai-dial-actions@users.noreply.github.com" [label=" 7 ", penwidth="7", color="#00688bC9"];
+    "anton_dubovik@epam.com" -- "61313167+dspashynskyi@users.noreply.github.com" [label=" 7 ", penwidth="7", color="#00688bC9"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "61313167+dspashynskyi@users.noreply.github.com" [label=" 7 ", penwidth="7", color="#00688bC9"];
+    "oleksandr.onsha@gmail.com" -- "bohdan_syniuk@epam.com" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "mykola_marusenko@epam.com" -- "sergiy_kulanov@epam.com" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "sergiy_kulanov@epam.com" -- "daniil_nedostup@epam.com" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "anton_dubovik@epam.com" -- "andrei_tataranovich@epam.com" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "mykola_marusenko@epam.com" -- "mykola_serdiuk@epam.com" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "mykola_serdiuk@epam.com" -- "daniil_nedostup@epam.com" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "mykola_marusenko@epam.com" -- "zorian_motso@epam.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "zorian_motso@epam.com" -- "daniil_nedostup@epam.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "61313167+dspashynskyi@users.noreply.github.com" -- "andrei_tataranovich@epam.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "33350321+nepalevov@users.noreply.github.com" -- "andrei_tataranovich@epam.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "sergiy_kulanov@epam.com" -- "mykola_serdiuk@epam.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "anton_dubovik@epam.com" -- "66549992+roman-romanov-o@users.noreply.github.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "66549992+roman-romanov-o@users.noreply.github.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "61313167+dspashynskyi@users.noreply.github.com" -- "66549992+roman-romanov-o@users.noreply.github.com" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "mykola_marusenko@epam.com" -- "oleksandr_taruraiev@epam.com" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "oleksandr_taruraiev@epam.com" -- "daniil_nedostup@epam.com" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "oleksandr.onsha@gmail.com" -- "mykhailo_tolstyi@epam.com" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "bohdan_syniuk@epam.com" -- "mykhailo_tolstyi@epam.com" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "66549992+roman-romanov-o@users.noreply.github.com" -- "andrei_tataranovich@epam.com" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "oleksandr.onsha@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "bohdan_syniuk@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "oleksandr.onsha@gmail.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "bohdan_syniuk@epam.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "aleksandr_savelev@epam.com" -- "nikita_chistousov@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "sergiy_kulanov@epam.com" -- "zorian_motso@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "46220620+sr-remsha@users.noreply.github.com" -- "149404362+ai-dial-actions@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "33350321+nepalevov@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "sergey.zinchenko.rnd@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "aliaksandr_stsiapanay@epam.com" -- "andrei_tataranovich@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "133792808+oleksii-klimov@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "alexey_klimov@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "133792808+oleksii-klimov@users.noreply.github.com" -- "andrei_tataranovich@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "133792808+oleksii-klimov@users.noreply.github.com" -- "alexey_klimov@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "andrei_tataranovich@epam.com" -- "alexey_klimov@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "zorian_motso@epam.com" -- "mykola_serdiuk@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "sergiy_kulanov@epam.com" -- "oleksandr_taruraiev@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "mykola_serdiuk@epam.com" -- "oleksandr_taruraiev@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "anton_dubovik@epam.com" -- "tataranovich@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "anton.dubovik@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "148881157+siarhei-z1@users.noreply.github.com" -- "57723193+xenn33@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "ilya_bondar@epam.com" -- "33350321+nepalevov@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "ilya_bondar@epam.com" -- "andrei_tataranovich@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "dmytro_afanasiev1@epam.com" -- "oleksandr.onsha@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "dmytro_afanasiev1@epam.com" -- "bohdan_syniuk@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "dmytro_afanasiev1@epam.com" -- "57749020+dmytro-afanasiev@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "dmytro_afanasiev1@epam.com" -- "mykhailo_tolstyi@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "oleksandr.onsha@gmail.com" -- "57749020+dmytro-afanasiev@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "bohdan_syniuk@epam.com" -- "57749020+dmytro-afanasiev@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "57749020+dmytro-afanasiev@users.noreply.github.com" -- "mykhailo_tolstyi@epam.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "anton_dubovik@epam.com" -- "lagutin.igor@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "149404362+ai-dial-actions@users.noreply.github.com" -- "lagutin.igor@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "61313167+dspashynskyi@users.noreply.github.com" -- "lagutin.igor@gmail.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "anton_dubovik@epam.com" -- "46220620+sr-remsha@users.noreply.github.com" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "mykhailo_kutsybala@epam.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "polina_prakhova@epam.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "onsha.bogdan@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "31548234+bohdan-onsha@users.noreply.github.com" -- "60649733+polina-prakhova@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mykhailo_kutsybala@epam.com" -- "polina_prakhova@epam.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mykhailo_kutsybala@epam.com" -- "oleksandr.onsha@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mykhailo_kutsybala@epam.com" -- "bohdan_syniuk@epam.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mykhailo_kutsybala@epam.com" -- "onsha.bogdan@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mykhailo_kutsybala@epam.com" -- "60649733+polina-prakhova@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mykhailo_kutsybala@epam.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "polina_prakhova@epam.com" -- "oleksandr.onsha@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "polina_prakhova@epam.com" -- "bohdan_syniuk@epam.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "polina_prakhova@epam.com" -- "onsha.bogdan@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "polina_prakhova@epam.com" -- "60649733+polina-prakhova@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "polina_prakhova@epam.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "oleksandr.onsha@gmail.com" -- "onsha.bogdan@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "oleksandr.onsha@gmail.com" -- "60649733+polina-prakhova@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bohdan_syniuk@epam.com" -- "onsha.bogdan@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bohdan_syniuk@epam.com" -- "60649733+polina-prakhova@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "onsha.bogdan@gmail.com" -- "60649733+polina-prakhova@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "onsha.bogdan@gmail.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "60649733+polina-prakhova@users.noreply.github.com" -- "103605026+renckelalexolche@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "aleksandr_savelev@epam.com" -- "18146690+aliaksandrdziarkach@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "18146690+aliaksandrdziarkach@users.noreply.github.com" -- "nikita_chistousov@epam.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "nimjay@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "theemadnes@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "8052337+kenthua@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "edandres249@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "113500783+ryanaoleary@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "vivianrwu@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "jmfran@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "ikwak@hotmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "pendleton@google.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "shen.xiang@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "maxym.fugol@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "47573756+tarasrudko@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bot@renovateapp.com" -- "36760800+alvarobartt@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nimjay@google.com" -- "theemadnes@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nimjay@google.com" -- "8052337+kenthua@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nimjay@google.com" -- "edandres249@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nimjay@google.com" -- "113500783+ryanaoleary@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+
+}

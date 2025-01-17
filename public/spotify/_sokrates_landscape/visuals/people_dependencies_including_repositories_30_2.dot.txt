@@ -1,0 +1,60 @@
+graph G {
+    compound="true"
+    rankdir="LR"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "43047562+scala-steward@users.noreply.github.com" -- "[spotify / ratatool]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "[spotify / magnolify]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "[spotify / scio-idea-plugin]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "[spotify / gcs-tools]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "43047562+scala-steward@users.noreply.github.com" -- "[spotify / elitzur]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "actions@users.noreply.github.com" -- "[spotify / spotify.github.io]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheld@spotify.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "oss@regadas.email" -- "[spotify / flink-on-k8s-operator]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "scala_steward@virtuslab.com" -- "[spotify / elitzur]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "clairem@spotify.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "nicklasl@spotify.com" -- "[spotify / confidence-sdk-js]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "vahidlazio@gmail.com" -- "[spotify / confidence-sdk-flutter]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "dlstadther@gmail.com" -- "[spotify / luigi]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kellen@users.noreply.github.com" -- "[spotify / dbeam]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kellen@users.noreply.github.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kmcbride@users.noreply.github.com" -- "[spotify / Mobius.swift]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "lschaller@spotify.com" -- "[spotify / ratatool]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "lschaller@spotify.com" -- "[spotify / elitzur]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "benkonz16@gmail.com" -- "[spotify / ratatool]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "kmj@google.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "gianni@spotify.com" -- "[spotify / SPTDataLoader]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "461260911@qq.com" -- "[spotify / ruler]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "micheleg@spotify.com" -- "[spotify / voyager]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ericfjosne@users.noreply.github.com" -- "[spotify / java-locales]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "sveyrie@luminatedata.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "matek_a@outlook.com" -- "[spotify / luigi]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "akolb@spotify.com" -- "[spotify / scio]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "danao@spotify.com" -- "[spotify / SPTDataLoader]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "tcodehuber@gmail.com" -- "[spotify / flink-on-k8s-operator]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+
+}

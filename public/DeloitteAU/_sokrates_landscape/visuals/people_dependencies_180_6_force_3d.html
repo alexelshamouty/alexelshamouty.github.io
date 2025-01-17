@@ -1,0 +1,110 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "erkanyildiz@me.com",
+    "size" : 3
+  }, {
+    "id" : "101617755+jinxitian@users.noreply.github.com",
+    "size" : 3
+  }, {
+    "id" : "36178559+tplester@users.noreply.github.com",
+    "size" : 1
+  }, {
+    "id" : "tplester@deloitte.com.au",
+    "size" : 1
+  }, {
+    "id" : "magnificentbluez@hotmail.com",
+    "size" : 3
+  }, {
+    "id" : "pierremarcairoldi@gmail.com",
+    "size" : 3
+  } ],
+  "links" : [ {
+    "source" : "pierremarcairoldi@gmail.com",
+    "target" : "101617755+jinxitian@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "101617755+jinxitian@users.noreply.github.com",
+    "target" : "pierremarcairoldi@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "pierremarcairoldi@gmail.com",
+    "target" : "erkanyildiz@me.com",
+    "count" : 1
+  }, {
+    "source" : "erkanyildiz@me.com",
+    "target" : "pierremarcairoldi@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "pierremarcairoldi@gmail.com",
+    "target" : "magnificentbluez@hotmail.com",
+    "count" : 1
+  }, {
+    "source" : "magnificentbluez@hotmail.com",
+    "target" : "pierremarcairoldi@gmail.com",
+    "count" : 1
+  }, {
+    "source" : "101617755+jinxitian@users.noreply.github.com",
+    "target" : "erkanyildiz@me.com",
+    "count" : 1
+  }, {
+    "source" : "erkanyildiz@me.com",
+    "target" : "101617755+jinxitian@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "101617755+jinxitian@users.noreply.github.com",
+    "target" : "magnificentbluez@hotmail.com",
+    "count" : 1
+  }, {
+    "source" : "magnificentbluez@hotmail.com",
+    "target" : "101617755+jinxitian@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "erkanyildiz@me.com",
+    "target" : "magnificentbluez@hotmail.com",
+    "count" : 1
+  }, {
+    "source" : "magnificentbluez@hotmail.com",
+    "target" : "erkanyildiz@me.com",
+    "count" : 1
+  }, {
+    "source" : "tplester@deloitte.com.au",
+    "target" : "36178559+tplester@users.noreply.github.com",
+    "count" : 1
+  }, {
+    "source" : "36178559+tplester@users.noreply.github.com",
+    "target" : "tplester@deloitte.com.au",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

@@ -1,0 +1,949 @@
+<svg width="6765pt" height="928pt"
+ viewBox="0.00 0.00 6764.50 928.25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 924.25)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-924.25 6760.5,-924.25 6760.5,4 -4,4"/>
+<!-- [epam / edp&#45;cd&#45;pipeline&#45;operator] -->
+<g id="node1" class="node">
+<title>[epam / edp&#45;cd&#45;pipeline&#45;operator]</title>
+<polygon fill="#00b2ee" stroke="white" points="324,-661.5 98,-661.5 98,-625.5 324,-625.5 324,-661.5"/>
+<text text-anchor="middle" x="211" y="-638.83" font-family="Tahoma" font-size="14.00">[epam / edp&#45;cd&#45;pipeline&#45;operator]</text>
+</g>
+<!-- [epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="node10" class="node">
+<title>[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<polygon fill="#00b2ee" stroke="white" points="532.38,-381 335.62,-381 335.62,-345 532.38,-345 532.38,-381"/>
+<text text-anchor="middle" x="434" y="-358.32" font-family="Tahoma" font-size="14.00">[epam / edp&#45;cluster&#45;add&#45;ons]</text>
+</g>
+<!-- [epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="edge55" class="edge">
+<title>[epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M199.81,-625.18C187.93,-604.55 172.13,-569.13 182,-539.25 182.76,-536.95 283.97,-400.33 286,-399 300.77,-389.27 317.95,-382.23 335.26,-377.15"/>
+<text text-anchor="middle" x="210.79" y="-509.85" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;keycloak&#45;operator] -->
+<g id="node26" class="node">
+<title>[epam / edp&#45;keycloak&#45;operator]</title>
+<polygon fill="#00b2ee" stroke="white" points="604.88,-294.75 393.12,-294.75 393.12,-258.75 604.88,-258.75 604.88,-294.75"/>
+<text text-anchor="middle" x="499" y="-272.07" font-family="Tahoma" font-size="14.00">[epam / edp&#45;keycloak&#45;operator]</text>
+</g>
+<!-- [epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge18" class="edge">
+<title>[epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M193.12,-625.27C188.53,-619.97 184.04,-613.85 181,-607.5 151.23,-545.29 162.51,-513.57 195.5,-453 239.08,-372.99 261.72,-349.69 345,-312.75 361.17,-305.58 378.96,-299.8 396.54,-295.17"/>
+<text text-anchor="middle" x="205.25" y="-466.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;nexus&#45;operator] -->
+<g id="node37" class="node">
+<title>[epam / edp&#45;nexus&#45;operator]</title>
+<polygon fill="#00b2ee" stroke="white" points="591.62,-489 396.38,-489 396.38,-453 591.62,-453 591.62,-489"/>
+<text text-anchor="middle" x="494" y="-466.32" font-family="Tahoma" font-size="14.00">[epam / edp&#45;nexus&#45;operator]</text>
+</g>
+<!-- [epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;nexus&#45;operator] -->
+<g id="edge10" class="edge">
+<title>[epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;nexus&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M324.31,-637.35C376.68,-632.75 431.54,-624.03 451,-607.5 486.36,-577.46 492.98,-518.47 494,-489.24"/>
+<text text-anchor="middle" x="497.17" y="-552.98" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;codebase&#45;operator] -->
+<g id="node46" class="node">
+<title>[epam / edp&#45;codebase&#45;operator]</title>
+<polygon fill="#00b2ee" stroke="white" points="408.88,-575.25 191.12,-575.25 191.12,-539.25 408.88,-539.25 408.88,-575.25"/>
+<text text-anchor="middle" x="300" y="-552.58" font-family="Tahoma" font-size="14.00">[epam / edp&#45;codebase&#45;operator]</text>
+</g>
+<!-- [epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;codebase&#45;operator] -->
+<g id="edge11" class="edge">
+<title>[epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;codebase&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M229.44,-625.04C244.72,-610.58 266.31,-590.14 281.58,-575.68"/>
+<text text-anchor="middle" x="270.58" y="-596.1" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;gerrit&#45;operator] -->
+<g id="node51" class="node">
+<title>[epam / edp&#45;gerrit&#45;operator]</title>
+<polygon fill="#00b2ee" stroke="white" points="760.5,-208.5 567.5,-208.5 567.5,-172.5 760.5,-172.5 760.5,-208.5"/>
+<text text-anchor="middle" x="664" y="-185.82" font-family="Tahoma" font-size="14.00">[epam / edp&#45;gerrit&#45;operator]</text>
+</g>
+<!-- [epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge35" class="edge">
+<title>[epam / edp&#45;cd&#45;pipeline&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M186.94,-625.05C181.1,-619.92 175.31,-613.94 171,-607.5 162.57,-594.92 162.78,-590.14 160,-575.25 145.6,-498.21 129.8,-473.46 154.25,-399 180.65,-318.61 209.94,-301.43 283,-258.75 330.05,-231.27 470.5,-211.61 567.07,-200.89"/>
+<text text-anchor="middle" x="160.62" y="-412.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / epmgcip&#45;chaperone.ai] -->
+<g id="node2" class="node">
+<title>[epam / epmgcip&#45;chaperone.ai]</title>
+<polygon fill="#00b2ee" stroke="white" points="1101.88,-920.25 890.12,-920.25 890.12,-884.25 1101.88,-884.25 1101.88,-920.25"/>
+<text text-anchor="middle" x="996" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / epmgcip&#45;chaperone.ai]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;ci] -->
+<g id="node3" class="node">
+<title>[epam / ai&#45;dial&#45;ci]</title>
+<polygon fill="#00b2ee" stroke="white" points="1983.5,-435 1856.5,-435 1856.5,-399 1983.5,-399 1983.5,-435"/>
+<text text-anchor="middle" x="1920" y="-412.32" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;ci]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;chat] -->
+<g id="node5" class="node">
+<title>[epam / ai&#45;dial&#45;chat]</title>
+<polygon fill="#00b2ee" stroke="white" points="1640.75,-208.5 1497.25,-208.5 1497.25,-172.5 1640.75,-172.5 1640.75,-208.5"/>
+<text text-anchor="middle" x="1569" y="-185.82" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;chat]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;ci]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge64" class="edge">
+<title>[epam / ai&#45;dial&#45;ci]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1917.36,-398.64C1910.57,-360.49 1888.7,-269.33 1830,-226.5 1800.73,-205.14 1707.66,-196.82 1641,-193.57"/>
+<text text-anchor="middle" x="1904.15" y="-315.6" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;core] -->
+<g id="node7" class="node">
+<title>[epam / ai&#45;dial&#45;core]</title>
+<polygon fill="#00b2ee" stroke="white" points="1498.12,-294.75 1353.88,-294.75 1353.88,-258.75 1498.12,-258.75 1498.12,-294.75"/>
+<text text-anchor="middle" x="1426" y="-272.07" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;core]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;ci]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge82" class="edge">
+<title>[epam / ai&#45;dial&#45;ci]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1872.88,-398.59C1831.35,-383.53 1769.05,-361.62 1714,-345 1659.49,-328.54 1645.41,-325.86 1590,-312.75 1560.11,-305.68 1527,-298.49 1498.41,-292.48"/>
+<text text-anchor="middle" x="1829.16" y="-358.73" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;chat&#45;themes] -->
+<g id="node50" class="node">
+<title>[epam / ai&#45;dial&#45;chat&#45;themes]</title>
+<polygon fill="#00b2ee" stroke="white" points="1665.88,-122.25 1472.12,-122.25 1472.12,-86.25 1665.88,-86.25 1665.88,-122.25"/>
+<text text-anchor="middle" x="1569" y="-99.58" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;chat&#45;themes]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;ci]&#45;&#45;[epam / ai&#45;dial&#45;chat&#45;themes] -->
+<g id="edge100" class="edge">
+<title>[epam / ai&#45;dial&#45;ci]&#45;&#45;[epam / ai&#45;dial&#45;chat&#45;themes]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1926,-398.75C1937.33,-362.76 1957.47,-278.66 1919,-226.5 1860.88,-147.71 1748.1,-119.75 1666.23,-110.03"/>
+<text text-anchor="middle" x="1947.45" y="-272.48" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;auth&#45;helper] -->
+<g id="node4" class="node">
+<title>[epam / ai&#45;dial&#45;auth&#45;helper]</title>
+<polygon fill="#00b2ee" stroke="white" points="1782.88,-920.25 1595.12,-920.25 1595.12,-884.25 1782.88,-884.25 1782.88,-920.25"/>
+<text text-anchor="middle" x="1689" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;auth&#45;helper]</text>
+</g>
+<!-- [epam / ai&#45;dial] -->
+<g id="node11" class="node">
+<title>[epam / ai&#45;dial]</title>
+<polygon fill="#00b2ee" stroke="white" points="1497,-36 1385,-36 1385,0 1497,0 1497,-36"/>
+<text text-anchor="middle" x="1441" y="-13.32" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;chat]&#45;&#45;[epam / ai&#45;dial] -->
+<g id="edge59" class="edge">
+<title>[epam / ai&#45;dial&#45;chat]&#45;&#45;[epam / ai&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1514.96,-172.02C1491.14,-161.46 1465.2,-145.45 1450.25,-122.25 1433.38,-96.08 1435.09,-58.13 1437.97,-36.27"/>
+<text text-anchor="middle" x="1456.62" y="-99.97" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;chat]&#45;&#45;[epam / ai&#45;dial&#45;chat&#45;themes] -->
+<g id="edge15" class="edge">
+<title>[epam / ai&#45;dial&#45;chat]&#45;&#45;[epam / ai&#45;dial&#45;chat&#45;themes]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1569,-172.04C1569,-157.58 1569,-137.14 1569,-122.68"/>
+<text text-anchor="middle" x="1578.75" y="-143.1" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime] -->
+<g id="node6" class="node">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]</title>
+<polygon fill="#00b2ee" stroke="white" points="1404.62,-661.5 1179.38,-661.5 1179.38,-625.5 1404.62,-625.5 1404.62,-661.5"/>
+<text text-anchor="middle" x="1292" y="-638.83" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;analytics&#45;realtime]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge88" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1285.78,-625.24C1283.98,-619.65 1282.18,-613.37 1281,-607.5 1278.16,-593.39 1278.86,-589.62 1278,-575.25 1268.63,-418.68 1210.03,-325.11 1332,-226.5 1359.82,-204.01 1456.7,-214.36 1492,-208.5 1493.62,-208.23 1495.26,-207.95 1496.91,-207.66"/>
+<text text-anchor="middle" x="1266.64" y="-412.73" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge66" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1289.05,-625.11C1281.76,-576.61 1267.38,-437.33 1324,-345 1337.69,-322.67 1361.91,-306.23 1383.32,-295.2"/>
+<text text-anchor="middle" x="1293.48" y="-466.73" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial] -->
+<g id="edge76" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1187.19,-625.1C1176.02,-620.52 1165.34,-614.76 1156,-607.5 1098.66,-562.93 999,-393.5 999,-320.88 999,-320.88 999,-320.88 999,-103.25 999,-25.62 1265.41,-17.75 1384.57,-18.11"/>
+<text text-anchor="middle" x="1005.58" y="-315.6" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai] -->
+<g id="node33" class="node">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]</title>
+<polygon fill="#00b2ee" stroke="white" points="1539.75,-575.25 1330.25,-575.25 1330.25,-539.25 1539.75,-539.25 1539.75,-575.25"/>
+<text text-anchor="middle" x="1435" y="-552.58" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;adapter&#45;openai]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai] -->
+<g id="edge81" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1321.63,-625.04C1346.17,-610.58 1380.88,-590.14 1405.41,-575.68"/>
+<text text-anchor="middle" x="1378.44" y="-596.1" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;interceptors&#45;sdk] -->
+<g id="node38" class="node">
+<title>[epam / ai&#45;dial&#45;interceptors&#45;sdk]</title>
+<polygon fill="#00b2ee" stroke="white" points="1749.75,-489 1534.25,-489 1534.25,-453 1749.75,-453 1749.75,-489"/>
+<text text-anchor="middle" x="1642" y="-466.32" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;interceptors&#45;sdk]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk] -->
+<g id="edge57" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1405.1,-628.67C1452.34,-619.03 1506.09,-602.74 1549,-575.25 1582.04,-554.08 1578.25,-535.71 1605,-507 1610.55,-501.05 1616.88,-494.85 1622.73,-489.36"/>
+<text text-anchor="middle" x="1588.32" y="-552.98" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;app&#45;controller] -->
+<g id="node47" class="node">
+<title>[epam / ai&#45;dial&#45;app&#45;controller]</title>
+<polygon fill="#00b2ee" stroke="white" points="1366.38,-122.25 1163.62,-122.25 1163.62,-86.25 1366.38,-86.25 1366.38,-122.25"/>
+<text text-anchor="middle" x="1265" y="-99.58" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;app&#45;controller]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;controller] -->
+<g id="edge99" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;controller]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1271.71,-625.25C1226.42,-584.69 1121,-478.04 1121,-364 1121,-364 1121,-364 1121,-189.5 1121,-155.47 1151.34,-134.93 1184.16,-122.66"/>
+<text text-anchor="middle" x="1128.11" y="-358.73" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="node52" class="node">
+<title>[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<polygon fill="#00b2ee" stroke="white" points="1523,-381 1333,-381 1333,-345 1523,-345 1523,-381"/>
+<text text-anchor="middle" x="1428" y="-358.32" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;adapter&#45;dial]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="edge78" class="edge">
+<title>[epam / ai&#45;dial&#45;analytics&#45;realtime]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1295.48,-625.26C1300.01,-604.4 1308.79,-568.45 1321,-539.25 1348.69,-473.05 1361.21,-458.72 1401,-399 1404.91,-393.12 1409.5,-386.95 1413.77,-381.45"/>
+<text text-anchor="middle" x="1341.43" y="-509.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge24" class="edge">
+<title>[epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1450.73,-258.4C1465.02,-248.62 1483.49,-236.42 1500.5,-226.5 1510.88,-220.44 1522.43,-214.32 1533.04,-208.92"/>
+<text text-anchor="middle" x="1510.25" y="-229.35" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;app&#45;builder&#45;python] -->
+<g id="node42" class="node">
+<title>[epam / ai&#45;dial&#45;app&#45;builder&#45;python]</title>
+<polygon fill="#00b2ee" stroke="white" points="1381,-208.5 1149,-208.5 1149,-172.5 1381,-172.5 1381,-208.5"/>
+<text text-anchor="middle" x="1265" y="-185.82" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;app&#45;builder&#45;python]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;builder&#45;python] -->
+<g id="edge67" class="edge">
+<title>[epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;builder&#45;python]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1392.64,-258.29C1365.01,-243.83 1325.94,-223.39 1298.32,-208.93"/>
+<text text-anchor="middle" x="1361.51" y="-229.35" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;controller] -->
+<g id="edge75" class="edge">
+<title>[epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;controller]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1423.88,-258.49C1420.37,-236.3 1411.44,-197.63 1390,-172.5 1370.65,-149.82 1341.66,-133.55 1316.48,-122.71"/>
+<text text-anchor="middle" x="1416.88" y="-186.22" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;chat&#45;themes] -->
+<g id="edge74" class="edge">
+<title>[epam / ai&#45;dial&#45;core]&#45;&#45;[epam / ai&#45;dial&#45;chat&#45;themes]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1431.22,-258.54C1438.46,-236.74 1453.2,-198.85 1475.25,-172.5 1492.48,-151.92 1517.35,-134.46 1537.15,-122.49"/>
+<text text-anchor="middle" x="1481.62" y="-186.22" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / AIRUN&#45;LLM&#45;Benchmark] -->
+<g id="node8" class="node">
+<title>[epam / AIRUN&#45;LLM&#45;Benchmark]</title>
+<polygon fill="#00b2ee" stroke="white" points="2020.62,-920.25 1801.38,-920.25 1801.38,-884.25 2020.62,-884.25 2020.62,-920.25"/>
+<text text-anchor="middle" x="1911" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / AIRUN&#45;LLM&#45;Benchmark]</text>
+</g>
+<!-- [epam / epmgcip&#45;chaperone.contentful] -->
+<g id="node9" class="node">
+<title>[epam / epmgcip&#45;chaperone.contentful]</title>
+<polygon fill="#00b2ee" stroke="white" points="2301,-920.25 2039,-920.25 2039,-884.25 2301,-884.25 2301,-920.25"/>
+<text text-anchor="middle" x="2170" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / epmgcip&#45;chaperone.contentful]</text>
+</g>
+<!-- [epam / edp&#45;cluster&#45;add&#45;ons]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge40" class="edge">
+<title>[epam / edp&#45;cluster&#45;add&#45;ons]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M447.47,-344.54C458.62,-330.08 474.4,-309.64 485.55,-295.18"/>
+<text text-anchor="middle" x="476.77" y="-315.6" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;cluster&#45;add&#45;ons]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge37" class="edge">
+<title>[epam / edp&#45;cluster&#45;add&#45;ons]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M519.13,-344.6C551.83,-334.48 587.61,-318.78 614,-294.75 639.77,-271.28 653.67,-231.65 659.89,-208.92"/>
+<text text-anchor="middle" x="647" y="-272.48" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / syndicate&#45;rule&#45;engine] -->
+<g id="node12" class="node">
+<title>[epam / syndicate&#45;rule&#45;engine]</title>
+<polygon fill="#00b2ee" stroke="white" points="2525.25,-920.25 2318.75,-920.25 2318.75,-884.25 2525.25,-884.25 2525.25,-920.25"/>
+<text text-anchor="middle" x="2422" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / syndicate&#45;rule&#45;engine]</text>
+</g>
+<!-- [epam / aws&#45;syndicate] -->
+<g id="node48" class="node">
+<title>[epam / aws&#45;syndicate]</title>
+<polygon fill="#00b2ee" stroke="white" points="2385.75,-834 2224.25,-834 2224.25,-798 2385.75,-798 2385.75,-834"/>
+<text text-anchor="middle" x="2305" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / aws&#45;syndicate]</text>
+</g>
+<!-- [epam / syndicate&#45;rule&#45;engine]&#45;&#45;[epam / aws&#45;syndicate] -->
+<g id="edge97" class="edge">
+<title>[epam / syndicate&#45;rule&#45;engine]&#45;&#45;[epam / aws&#45;syndicate]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2397.76,-883.79C2377.68,-869.33 2349.28,-848.89 2329.21,-834.43"/>
+<text text-anchor="middle" x="2376.88" y="-854.85" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / modular&#45;sdk] -->
+<g id="node49" class="node">
+<title>[epam / modular&#45;sdk]</title>
+<polygon fill="#00b2ee" stroke="white" points="2497.12,-747.75 2346.88,-747.75 2346.88,-711.75 2497.12,-711.75 2497.12,-747.75"/>
+<text text-anchor="middle" x="2422" y="-725.08" font-family="Tahoma" font-size="14.00">[epam / modular&#45;sdk]</text>
+</g>
+<!-- [epam / syndicate&#45;rule&#45;engine]&#45;&#45;[epam / modular&#45;sdk] -->
+<g id="edge14" class="edge">
+<title>[epam / syndicate&#45;rule&#45;engine]&#45;&#45;[epam / modular&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M2422,-883.96C2422,-851.28 2422,-780.8 2422,-748.08"/>
+<text text-anchor="middle" x="2431.75" y="-811.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / modular&#45;cli] -->
+<g id="node53" class="node">
+<title>[epam / modular&#45;cli]</title>
+<polygon fill="#00b2ee" stroke="white" points="2602.38,-834 2459.62,-834 2459.62,-798 2602.38,-798 2602.38,-834"/>
+<text text-anchor="middle" x="2531" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / modular&#45;cli]</text>
+</g>
+<!-- [epam / syndicate&#45;rule&#45;engine]&#45;&#45;[epam / modular&#45;cli] -->
+<g id="edge68" class="edge">
+<title>[epam / syndicate&#45;rule&#45;engine]&#45;&#45;[epam / modular&#45;cli]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M2444.58,-883.79C2463.29,-869.33 2489.74,-848.89 2508.44,-834.43"/>
+<text text-anchor="middle" x="2489.4" y="-854.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / NGB] -->
+<g id="node13" class="node">
+<title>[epam / NGB]</title>
+<polygon fill="#00b2ee" stroke="white" points="2644.75,-920.25 2543.25,-920.25 2543.25,-884.25 2644.75,-884.25 2644.75,-920.25"/>
+<text text-anchor="middle" x="2594" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / NGB]</text>
+</g>
+<!-- [epam / cloud&#45;pipeline] -->
+<g id="node14" class="node">
+<title>[epam / cloud&#45;pipeline]</title>
+<polygon fill="#00b2ee" stroke="white" points="2821.62,-920.25 2662.38,-920.25 2662.38,-884.25 2821.62,-884.25 2821.62,-920.25"/>
+<text text-anchor="middle" x="2742" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / cloud&#45;pipeline]</text>
+</g>
+<!-- [epam / epmgcip&#45;chaperone.admin] -->
+<g id="node15" class="node">
+<title>[epam / epmgcip&#45;chaperone.admin]</title>
+<polygon fill="#00b2ee" stroke="white" points="3078.38,-920.25 2839.62,-920.25 2839.62,-884.25 3078.38,-884.25 3078.38,-920.25"/>
+<text text-anchor="middle" x="2959" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / epmgcip&#45;chaperone.admin]</text>
+</g>
+<!-- [epam / epam&#45;kafka] -->
+<g id="node16" class="node">
+<title>[epam / epam&#45;kafka]</title>
+<polygon fill="#00b2ee" stroke="white" points="3244,-920.25 3096,-920.25 3096,-884.25 3244,-884.25 3244,-920.25"/>
+<text text-anchor="middle" x="3170" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / epam&#45;kafka]</text>
+</g>
+<!-- [epam / jsdmx] -->
+<g id="node17" class="node">
+<title>[epam / jsdmx]</title>
+<polygon fill="#00b2ee" stroke="white" points="3373.62,-920.25 3262.38,-920.25 3262.38,-884.25 3373.62,-884.25 3373.62,-920.25"/>
+<text text-anchor="middle" x="3318" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / jsdmx]</text>
+</g>
+<!-- [epam / ecc&#45;aws&#45;rulepack] -->
+<g id="node18" class="node">
+<title>[epam / ecc&#45;aws&#45;rulepack]</title>
+<polygon fill="#00b2ee" stroke="white" points="3450.88,-834 3269.12,-834 3269.12,-798 3450.88,-798 3450.88,-834"/>
+<text text-anchor="middle" x="3360" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / ecc&#45;aws&#45;rulepack]</text>
+</g>
+<!-- [epam / ecc&#45;gcp&#45;rulepack] -->
+<g id="node54" class="node">
+<title>[epam / ecc&#45;gcp&#45;rulepack]</title>
+<polygon fill="#00b2ee" stroke="white" points="3576.75,-747.75 3397.25,-747.75 3397.25,-711.75 3576.75,-711.75 3576.75,-747.75"/>
+<text text-anchor="middle" x="3487" y="-725.08" font-family="Tahoma" font-size="14.00">[epam / ecc&#45;gcp&#45;rulepack]</text>
+</g>
+<!-- [epam / ecc&#45;aws&#45;rulepack]&#45;&#45;[epam / ecc&#45;gcp&#45;rulepack] -->
+<g id="edge70" class="edge">
+<title>[epam / ecc&#45;aws&#45;rulepack]&#45;&#45;[epam / ecc&#45;gcp&#45;rulepack]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M3386.31,-797.54C3408.11,-783.08 3438.93,-762.64 3460.72,-748.18"/>
+<text text-anchor="middle" x="3437.48" y="-768.6" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ecc&#45;openstack&#45;rulepack] -->
+<g id="node56" class="node">
+<title>[epam / ecc&#45;openstack&#45;rulepack]</title>
+<polygon fill="#00b2ee" stroke="white" points="3379.25,-747.75 3160.75,-747.75 3160.75,-711.75 3379.25,-711.75 3379.25,-747.75"/>
+<text text-anchor="middle" x="3270" y="-725.08" font-family="Tahoma" font-size="14.00">[epam / ecc&#45;openstack&#45;rulepack]</text>
+</g>
+<!-- [epam / ecc&#45;aws&#45;rulepack]&#45;&#45;[epam / ecc&#45;openstack&#45;rulepack] -->
+<g id="edge95" class="edge">
+<title>[epam / ecc&#45;aws&#45;rulepack]&#45;&#45;[epam / ecc&#45;openstack&#45;rulepack]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M3341.35,-797.54C3325.91,-783.08 3304.06,-762.64 3288.62,-748.18"/>
+<text text-anchor="middle" x="3326.76" y="-768.6" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk] -->
+<g id="node19" class="node">
+<title>[epam / ai&#45;dial&#45;sdk]</title>
+<polygon fill="#00b2ee" stroke="white" points="1432.75,-834 1295.25,-834 1295.25,-798 1432.75,-798 1432.75,-834"/>
+<text text-anchor="middle" x="1364" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;sdk]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge77" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1295.07,-798.96C1225.76,-779.02 1121.59,-737.88 1067,-661.5 974.97,-532.74 898.89,-438.5 995,-312.75 1063.52,-223.09 1380.57,-226.31 1492,-208.5 1493.62,-208.24 1495.26,-207.97 1496.91,-207.68"/>
+<text text-anchor="middle" x="981.16" y="-509.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;analytics&#45;realtime] -->
+<g id="edge86" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;analytics&#45;realtime]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1356.7,-797.71C1342.9,-765.03 1313.13,-694.55 1299.32,-661.83"/>
+<text text-anchor="middle" x="1341.53" y="-725.48" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge60" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1294.8,-798.07C1264.44,-787.73 1230.28,-771.75 1206,-747.75 1119.37,-662.11 1061.71,-628.09 1075,-507 1083.12,-433.06 1062.94,-396.08 1117,-345 1150.52,-313.33 1273.12,-294.26 1353.45,-284.9"/>
+<text text-anchor="middle" x="1082.27" y="-552.98" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai] -->
+<g id="edge53" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1370.35,-797.7C1380.56,-769.47 1400.78,-711.64 1414,-661.5 1421.88,-631.61 1428.51,-596.19 1432.1,-575.56"/>
+<text text-anchor="middle" x="1415" y="-682.35" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk] -->
+<g id="edge85" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1385.93,-797.64C1431.15,-760.89 1535.76,-670.73 1599,-575.25 1617.34,-547.57 1630.36,-510.8 1636.99,-489.43"/>
+<text text-anchor="middle" x="1566.91" y="-639.23" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai] -->
+<g id="node45" class="node">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]</title>
+<polygon fill="#00b2ee" stroke="white" points="1836.5,-747.75 1619.5,-747.75 1619.5,-711.75 1836.5,-711.75 1836.5,-747.75"/>
+<text text-anchor="middle" x="1728" y="-725.08" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;adapter&#45;vertexai]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;vertexai] -->
+<g id="edge33" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;vertexai]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1432.94,-800.13C1460.91,-794.01 1493.53,-786.78 1523,-780 1567.59,-769.74 1617.51,-757.75 1656.92,-748.18"/>
+<text text-anchor="middle" x="1585.76" y="-768.6" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="edge87" class="edge">
+<title>[epam / ai&#45;dial&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1328.69,-797.68C1283.87,-773.69 1207.85,-725.94 1170,-661.5 1154.51,-635.13 1158.55,-623.71 1161.25,-593.25 1169,-505.89 1132.71,-459.72 1196,-399 1217.36,-378.51 1298.74,-385.48 1328,-381 1329.57,-380.76 1331.15,-380.52 1332.74,-380.27"/>
+<text text-anchor="middle" x="1167.62" y="-596.1" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / Indigo] -->
+<g id="node20" class="node">
+<title>[epam / Indigo]</title>
+<polygon fill="#00b2ee" stroke="white" points="3714.75,-920.25 3601.25,-920.25 3601.25,-884.25 3714.75,-884.25 3714.75,-920.25"/>
+<text text-anchor="middle" x="3658" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / Indigo]</text>
+</g>
+<!-- [epam / AIRUN&#45;LLM&#45;Benchmark&#45;Results] -->
+<g id="node21" class="node">
+<title>[epam / AIRUN&#45;LLM&#45;Benchmark&#45;Results]</title>
+<polygon fill="#00b2ee" stroke="white" points="3999.25,-920.25 3732.75,-920.25 3732.75,-884.25 3999.25,-884.25 3999.25,-920.25"/>
+<text text-anchor="middle" x="3866" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / AIRUN&#45;LLM&#45;Benchmark&#45;Results]</text>
+</g>
+<!-- [epam / UUI] -->
+<g id="node22" class="node">
+<title>[epam / UUI]</title>
+<polygon fill="#00b2ee" stroke="white" points="4116.25,-920.25 4017.75,-920.25 4017.75,-884.25 4116.25,-884.25 4116.25,-920.25"/>
+<text text-anchor="middle" x="4067" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / UUI]</text>
+</g>
+<!-- [epam / kubernetes&#45;engine&#45;samples] -->
+<g id="node23" class="node">
+<title>[epam / kubernetes&#45;engine&#45;samples]</title>
+<polygon fill="#00b2ee" stroke="white" points="4377.62,-920.25 4134.38,-920.25 4134.38,-884.25 4377.62,-884.25 4377.62,-920.25"/>
+<text text-anchor="middle" x="4256" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / kubernetes&#45;engine&#45;samples]</text>
+</g>
+<!-- [epam / edp&#45;install] -->
+<g id="node24" class="node">
+<title>[epam / edp&#45;install]</title>
+<polygon fill="#00b2ee" stroke="white" points="432.75,-834 295.25,-834 295.25,-798 432.75,-798 432.75,-834"/>
+<text text-anchor="middle" x="364" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / edp&#45;install]</text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;cd&#45;pipeline&#45;operator] -->
+<g id="edge13" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;cd&#45;pipeline&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M350.93,-797.57C325.17,-763.31 269.43,-689.63 259,-679.5 252.56,-673.25 244.96,-667.2 237.72,-661.95"/>
+<text text-anchor="middle" x="321.45" y="-725.48" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="edge23" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M369.82,-797.65C371.6,-792.05 373.49,-785.79 375,-780 398.52,-690.04 408.39,-667.74 418,-575.25 419.65,-559.34 425.01,-553.63 418,-539.25 412.31,-527.58 402.06,-532.14 395,-521.25 378.39,-495.62 379.65,-482.64 387,-453 393.64,-426.2 409.99,-398.58 421.53,-381.36"/>
+<text text-anchor="middle" x="425.68" y="-596.1" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge34" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M295,-810.59C201.47,-802.69 46,-781.87 46,-730.75 46,-730.75 46,-730.75 46,-556.25 46,-441.61 95.13,-403.03 194,-345 254.32,-309.59 331.3,-292.79 392.83,-284.84"/>
+<text text-anchor="middle" x="52.38" y="-552.98" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;headlamp] -->
+<g id="node27" class="node">
+<title>[epam / edp&#45;headlamp]</title>
+<polygon fill="#00b2ee" stroke="white" points="678.5,-747.75 515.5,-747.75 515.5,-711.75 678.5,-711.75 678.5,-747.75"/>
+<text text-anchor="middle" x="597" y="-725.08" font-family="Tahoma" font-size="14.00">[epam / edp&#45;headlamp]</text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;headlamp] -->
+<g id="edge12" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;headlamp]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M412.28,-797.54C452.27,-783.08 508.81,-762.64 548.78,-748.18"/>
+<text text-anchor="middle" x="504.2" y="-768.6" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;nexus&#45;operator] -->
+<g id="edge27" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;nexus&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M386.17,-797.76C392.54,-792.37 399.3,-786.2 405,-780 430.27,-752.51 430.31,-740.61 454,-711.75 473.4,-688.11 488.15,-689.25 501,-661.5 529.87,-599.16 522.47,-573.7 506,-507 504.55,-501.14 502.55,-494.86 500.6,-489.27"/>
+<text text-anchor="middle" x="524.47" y="-639.23" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;codebase&#45;operator] -->
+<g id="edge28" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;codebase&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M362.87,-797.62C360.29,-763.77 352.63,-686.95 333,-625.5 327.34,-607.78 317.71,-588.88 310.31,-575.64"/>
+<text text-anchor="middle" x="359.11" y="-682.35" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;install]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge58" class="edge">
+<title>[epam / edp&#45;install]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M295.11,-812.98C189.58,-807.98 0,-790.67 0,-730.75 0,-730.75 0,-730.75 0,-275.75 0,-219.28 382.8,-199.99 567.09,-193.98"/>
+<text text-anchor="middle" x="6.38" y="-509.85" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ecc&#45;azure&#45;rulepack] -->
+<g id="node25" class="node">
+<title>[epam / ecc&#45;azure&#45;rulepack]</title>
+<polygon fill="#00b2ee" stroke="white" points="3582.75,-920.25 3391.25,-920.25 3391.25,-884.25 3582.75,-884.25 3582.75,-920.25"/>
+<text text-anchor="middle" x="3487" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / ecc&#45;azure&#45;rulepack]</text>
+</g>
+<!-- [epam / ecc&#45;azure&#45;rulepack]&#45;&#45;[epam / ecc&#45;aws&#45;rulepack] -->
+<g id="edge63" class="edge">
+<title>[epam / ecc&#45;azure&#45;rulepack]&#45;&#45;[epam / ecc&#45;aws&#45;rulepack]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M3460.69,-883.79C3438.89,-869.33 3408.07,-848.89 3386.28,-834.43"/>
+<text text-anchor="middle" x="3437.48" y="-854.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ecc&#45;azure&#45;rulepack]&#45;&#45;[epam / ecc&#45;gcp&#45;rulepack] -->
+<g id="edge72" class="edge">
+<title>[epam / ecc&#45;azure&#45;rulepack]&#45;&#45;[epam / ecc&#45;gcp&#45;rulepack]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M3487,-883.96C3487,-851.28 3487,-780.8 3487,-748.08"/>
+<text text-anchor="middle" x="3493.38" y="-811.73" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ecc&#45;kubernetes&#45;rulepack] -->
+<g id="node55" class="node">
+<title>[epam / ecc&#45;kubernetes&#45;rulepack]</title>
+<polygon fill="#00b2ee" stroke="white" points="3742.62,-834 3517.38,-834 3517.38,-798 3742.62,-798 3742.62,-834"/>
+<text text-anchor="middle" x="3630" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / ecc&#45;kubernetes&#45;rulepack]</text>
+</g>
+<!-- [epam / ecc&#45;azure&#45;rulepack]&#45;&#45;[epam / ecc&#45;kubernetes&#45;rulepack] -->
+<g id="edge94" class="edge">
+<title>[epam / ecc&#45;azure&#45;rulepack]&#45;&#45;[epam / ecc&#45;kubernetes&#45;rulepack]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M3516.63,-883.79C3541.17,-869.33 3575.88,-848.89 3600.41,-834.43"/>
+<text text-anchor="middle" x="3573.44" y="-854.85" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / edp&#45;keycloak&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge39" class="edge">
+<title>[epam / edp&#45;keycloak&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M533.19,-258.29C561.51,-243.83 601.55,-223.39 629.86,-208.93"/>
+<text text-anchor="middle" x="597.75" y="-229.35" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;cd&#45;pipeline&#45;operator] -->
+<g id="edge52" class="edge">
+<title>[epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;cd&#45;pipeline&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M518.95,-711.27C476.41,-701.79 422.83,-689.91 375,-679.5 348.54,-673.74 319.67,-667.55 293.62,-662"/>
+<text text-anchor="middle" x="442.38" y="-682.35" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="edge41" class="edge">
+<title>[epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M603.1,-711.32C618.07,-665.2 651.88,-537.77 601,-453 579.36,-416.94 537.61,-394.69 501.27,-381.46"/>
+<text text-anchor="middle" x="634.41" y="-552.98" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge89" class="edge">
+<title>[epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M612.32,-711.42C616.54,-706.03 620.82,-699.88 624,-693.75 630.91,-680.43 630.94,-676.19 634,-661.5 648.03,-594.27 650.9,-574.26 637,-507 617.63,-413.26 610.96,-381.15 544,-312.75 537.91,-306.53 530.69,-300.45 523.83,-295.14"/>
+<text text-anchor="middle" x="646.1" y="-509.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;nexus&#45;operator] -->
+<g id="edge46" class="edge">
+<title>[epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;nexus&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M597.04,-711.53C596.34,-671.89 589.87,-572.61 545,-507 540.33,-500.17 533.86,-494.29 527.09,-489.39"/>
+<text text-anchor="middle" x="591.12" y="-596.1" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;codebase&#45;operator] -->
+<g id="edge38" class="edge">
+<title>[epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;codebase&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M559.26,-711.38C536.7,-699.64 508.56,-682.47 488.25,-661.5 463.91,-636.37 477.07,-614.14 449,-593.25 437.17,-584.45 423.47,-577.81 409.26,-572.83"/>
+<text text-anchor="middle" x="494.62" y="-639.23" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge44" class="edge">
+<title>[epam / edp&#45;headlamp]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M622.43,-711.56C629,-706.35 635.7,-700.26 641,-693.75 727.6,-587.28 780,-555.25 780,-418 780,-418 780,-418 780,-275.75 780,-243.27 749.86,-222.01 720.3,-208.97"/>
+<text text-anchor="middle" x="785.02" y="-466.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / sap&#45;commerce&#45;intellij&#45;idea&#45;plugin] -->
+<g id="node28" class="node">
+<title>[epam / sap&#45;commerce&#45;intellij&#45;idea&#45;plugin]</title>
+<polygon fill="#00b2ee" stroke="white" points="4674.62,-920.25 4395.38,-920.25 4395.38,-884.25 4674.62,-884.25 4674.62,-920.25"/>
+<text text-anchor="middle" x="4535" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / sap&#45;commerce&#45;intellij&#45;idea&#45;plugin]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock] -->
+<g id="node29" class="node">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]</title>
+<polygon fill="#00b2ee" stroke="white" points="1576.88,-920.25 1359.12,-920.25 1359.12,-884.25 1576.88,-884.25 1576.88,-920.25"/>
+<text text-anchor="middle" x="1468" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;adapter&#45;bedrock]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;ci] -->
+<g id="edge83" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;ci]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1577.27,-885.38C1580.21,-885 1583.13,-884.62 1586,-884.25 1671.5,-873.31 1968,-903.19 1968,-817 1968,-817 1968,-817 1968,-513.12 1968,-483.34 1949.01,-453.4 1934.92,-435.27"/>
+<text text-anchor="middle" x="1974.38" y="-682.35" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge21" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1577.25,-885.15C1580.19,-884.83 1583.12,-884.53 1586,-884.25 1664.4,-876.63 1865.21,-890.95 1940,-866.25 1977.51,-853.86 2014,-856.51 2014,-817 2014,-817 2014,-817 2014,-416 2014,-371.08 1925.3,-282.22 1887,-258.75 1811.47,-212.45 1708.98,-197.65 1641,-193.12"/>
+<text text-anchor="middle" x="2023.75" y="-552.98" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;analytics&#45;realtime] -->
+<g id="edge47" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;analytics&#45;realtime]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1359.05,-884.31C1330.66,-874.4 1303.23,-858.74 1286,-834 1249.03,-780.93 1272.35,-697.68 1285.19,-661.85"/>
+<text text-anchor="middle" x="1273.25" y="-768.6" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge32" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1358.88,-894.31C1206.66,-883.15 949,-858.16 949,-817 949,-817 949,-817 949,-513.12 949,-388.86 1025.73,-350.88 1144,-312.75 1212.91,-290.54 1295.48,-282.29 1353.41,-279.3"/>
+<text text-anchor="middle" x="955.38" y="-596.1" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial] -->
+<g id="edge61" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1358.79,-896.82C1247.23,-891.56 1081.87,-881.52 1020,-866.25 967.21,-853.22 908,-871.38 908,-817 908,-817 908,-817 908,-103.25 908,-49.28 966.71,-67.36 1019,-54 1086.67,-36.71 1286.35,-25.81 1384.81,-21.33"/>
+<text text-anchor="middle" x="914.38" y="-466.73" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;sdk] -->
+<g id="edge48" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1446.45,-883.79C1428.6,-869.33 1403.36,-848.89 1385.52,-834.43"/>
+<text text-anchor="middle" x="1428.6" y="-854.85" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai] -->
+<g id="edge1" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M1515.89,-883.87C1543.58,-870.42 1573,-848.67 1573,-817 1573,-817 1573,-817 1573,-642.5 1573,-608.68 1542.42,-588.03 1510.06,-575.64"/>
+<text text-anchor="middle" x="1582.75" y="-725.48" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk] -->
+<g id="edge50" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1577.19,-884.01C1713.8,-862.06 1930,-825.92 1930,-817 1930,-817 1930,-817 1930,-599.38 1930,-517.64 1831.78,-487.93 1750.06,-477.36"/>
+<text text-anchor="middle" x="1936.38" y="-682.35" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;vertexai] -->
+<g id="edge9" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;vertexai]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M1555.59,-883.84C1566.82,-879.28 1577.65,-873.52 1587,-866.25 1614.85,-844.61 1603.24,-823.61 1627.5,-798 1646.85,-777.58 1673.48,-760.11 1694.46,-748.1"/>
+<text text-anchor="middle" x="1637.25" y="-811.73" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="edge56" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;bedrock]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1358.73,-899.17C1241.21,-893.89 1071,-876.05 1071,-817 1071,-817 1071,-817 1071,-685.62 1071,-551.7 1060.13,-483.54 1164,-399 1192.43,-375.86 1291.69,-386.07 1328,-381 1329.57,-380.78 1331.15,-380.56 1332.75,-380.33"/>
+<text text-anchor="middle" x="1077.27" y="-639.23" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ember&#45;trade&#45;connector&#45;sample] -->
+<g id="node30" class="node">
+<title>[epam / ember&#45;trade&#45;connector&#45;sample]</title>
+<polygon fill="#00b2ee" stroke="white" points="4957.5,-920.25 4692.5,-920.25 4692.5,-884.25 4957.5,-884.25 4957.5,-920.25"/>
+<text text-anchor="middle" x="4825" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / ember&#45;trade&#45;connector&#45;sample]</text>
+</g>
+<!-- [epam / edp&#45;tekton] -->
+<g id="node31" class="node">
+<title>[epam / edp&#45;tekton]</title>
+<polygon fill="#00b2ee" stroke="white" points="725.62,-920.25 584.38,-920.25 584.38,-884.25 725.62,-884.25 725.62,-920.25"/>
+<text text-anchor="middle" x="655" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / edp&#45;tekton]</text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;cd&#45;pipeline&#45;operator] -->
+<g id="edge6" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;cd&#45;pipeline&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M584.01,-896.92C489.51,-889.74 329.26,-872.19 286,-834 233.35,-787.52 217.25,-699.19 212.68,-661.85"/>
+<text text-anchor="middle" x="254.91" y="-768.6" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="edge19" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M713.45,-883.88C743.55,-870.96 774,-849.78 774,-817 774,-817 774,-817 774,-685.62 774,-531.3 708.98,-480.61 578,-399 568.23,-392.91 547.69,-386.8 525.1,-381.43"/>
+<text text-anchor="middle" x="783.05" y="-639.23" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;install] -->
+<g id="edge8" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;install]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M584.28,-896.66C542.05,-892.21 487.96,-883.45 442.5,-866.25 422.19,-858.56 401.47,-845.29 386.42,-834.45"/>
+<text text-anchor="middle" x="452.25" y="-854.85" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge16" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M725.82,-893.24C771.34,-883.7 822,-862.79 822,-817 822,-817 822,-817 822,-685.62 822,-504.92 725.26,-475.24 600,-345 585.34,-329.75 582.26,-324.97 565,-312.75 556,-306.38 545.7,-300.38 535.96,-295.21"/>
+<text text-anchor="middle" x="823.84" y="-596.1" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;headlamp] -->
+<g id="edge22" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;headlamp]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M649.12,-883.96C638,-851.28 614.02,-780.8 602.9,-748.08"/>
+<text text-anchor="middle" x="641.52" y="-811.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;nexus&#45;operator] -->
+<g id="edge2" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;nexus&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M661.11,-883.96C680.03,-826.97 731.39,-642.8 645,-539.25 625.05,-515.34 594.89,-499.62 566.75,-489.44"/>
+<text text-anchor="middle" x="703.27" y="-682.35" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;codebase&#45;operator] -->
+<g id="edge4" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;codebase&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M627.09,-883.86C592.91,-861.88 534.1,-821.84 490,-780 412.16,-706.15 410.12,-671.78 337,-593.25 331.46,-587.3 325.12,-581.1 319.27,-575.61"/>
+<text text-anchor="middle" x="467.81" y="-725.48" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge25" class="edge">
+<title>[epam / edp&#45;tekton]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M726.12,-900.06C785.33,-894.83 860,-876.45 860,-817 860,-817 860,-817 860,-275.75 860,-227.97 810.23,-206.95 760.85,-197.85"/>
+<text text-anchor="middle" x="869.75" y="-552.98" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / Indigo&#45;ELN&#45;v.&#45;2.0] -->
+<g id="node32" class="node">
+<title>[epam / Indigo&#45;ELN&#45;v.&#45;2.0]</title>
+<polygon fill="#00b2ee" stroke="white" points="5156.12,-920.25 4975.88,-920.25 4975.88,-884.25 5156.12,-884.25 5156.12,-920.25"/>
+<text text-anchor="middle" x="5066" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / Indigo&#45;ELN&#45;v.&#45;2.0]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;ci] -->
+<g id="edge65" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;ci]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1461.79,-538.94C1468.81,-533.73 1476.06,-527.67 1482,-521.25 1506.34,-494.93 1494.41,-471.69 1525,-453 1552.54,-436.17 1751.63,-425.22 1856.21,-420.56"/>
+<text text-anchor="middle" x="1498.09" y="-509.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge20" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1440.74,-538.98C1449.24,-516.05 1467.31,-475.8 1496,-453 1516.8,-436.47 1536.6,-455.9 1553,-435 1606.48,-366.84 1584.73,-252.19 1573.81,-208.82"/>
+<text text-anchor="middle" x="1595.52" y="-358.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge31" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1433.24,-539.03C1431.92,-516.52 1433.14,-477.13 1454,-453 1470.27,-434.18 1488.5,-451.63 1507,-435 1537.87,-407.24 1552,-381.38 1532,-345 1519.4,-322.08 1495.32,-305.87 1473.29,-295.12"/>
+<text text-anchor="middle" x="1542.56" y="-412.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk] -->
+<g id="edge90" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1481.57,-538.92C1495.07,-533.58 1509.75,-527.46 1523,-521.25 1535.02,-515.62 1537.18,-512.52 1549.25,-507 1562.87,-500.77 1577.94,-494.73 1591.91,-489.48"/>
+<text text-anchor="middle" x="1555.62" y="-509.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;builder&#45;python] -->
+<g id="edge96" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;builder&#45;python]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1418.99,-538.81C1392.4,-508.88 1339.29,-444.76 1311.25,-381 1284.8,-320.86 1271.88,-243.04 1267.17,-208.88"/>
+<text text-anchor="middle" x="1317.62" y="-358.73" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="edge49" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;openai]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1423.76,-538.83C1416.07,-525.73 1406.68,-507.01 1403.25,-489 1395.92,-450.53 1410.56,-405.5 1420.29,-381.38"/>
+<text text-anchor="middle" x="1409.62" y="-466.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ketcher] -->
+<g id="node34" class="node">
+<title>[epam / ketcher]</title>
+<polygon fill="#00b2ee" stroke="white" points="5295.5,-920.25 5174.5,-920.25 5174.5,-884.25 5295.5,-884.25 5295.5,-920.25"/>
+<text text-anchor="middle" x="5235" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / ketcher]</text>
+</g>
+<!-- [epam / lifescience] -->
+<g id="node57" class="node">
+<title>[epam / lifescience]</title>
+<polygon fill="#00b2ee" stroke="white" points="5304.12,-834 5165.88,-834 5165.88,-798 5304.12,-798 5304.12,-834"/>
+<text text-anchor="middle" x="5235" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / lifescience]</text>
+</g>
+<!-- [epam / ketcher]&#45;&#45;[epam / lifescience] -->
+<g id="edge98" class="edge">
+<title>[epam / ketcher]&#45;&#45;[epam / lifescience]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M5235,-883.79C5235,-869.33 5235,-848.89 5235,-834.43"/>
+<text text-anchor="middle" x="5241.38" y="-854.85" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / AIRUN&#45;Assistants&#45;Benchmark&#45;CodeBase] -->
+<g id="node35" class="node">
+<title>[epam / AIRUN&#45;Assistants&#45;Benchmark&#45;CodeBase]</title>
+<polygon fill="#00b2ee" stroke="white" points="5632.12,-920.25 5313.88,-920.25 5313.88,-884.25 5632.12,-884.25 5632.12,-920.25"/>
+<text text-anchor="middle" x="5473" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / AIRUN&#45;Assistants&#45;Benchmark&#45;CodeBase]</text>
+</g>
+<!-- [epam / TimeBaseGrafanaPlugin] -->
+<g id="node36" class="node">
+<title>[epam / TimeBaseGrafanaPlugin]</title>
+<polygon fill="#00b2ee" stroke="white" points="5869.62,-920.25 5650.38,-920.25 5650.38,-884.25 5869.62,-884.25 5869.62,-920.25"/>
+<text text-anchor="middle" x="5760" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / TimeBaseGrafanaPlugin]</text>
+</g>
+<!-- [epam / edp&#45;nexus&#45;operator]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="edge30" class="edge">
+<title>[epam / edp&#45;nexus&#45;operator]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M484.36,-452.97C473.23,-433.31 455.02,-401.13 443.82,-381.34"/>
+<text text-anchor="middle" x="479.26" y="-412.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;nexus&#45;operator]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge29" class="edge">
+<title>[epam / edp&#45;nexus&#45;operator]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M506.47,-452.64C518.01,-435.42 534.36,-407.8 541,-381 544.85,-365.47 545.41,-360.38 541,-345 535.69,-326.47 523.63,-308.1 513.78,-295.25"/>
+<text text-anchor="middle" x="553.85" y="-358.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;nexus&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge36" class="edge">
+<title>[epam / edp&#45;nexus&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M548.65,-452.55C602.66,-432.03 682.25,-392.24 718,-327 740.15,-286.58 703.51,-235.15 680.48,-208.79"/>
+<text text-anchor="middle" x="729.59" y="-315.6" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;interceptors&#45;sdk]&#45;&#45;[epam / ai&#45;dial] -->
+<g id="edge93" class="edge">
+<title>[epam / ai&#45;dial&#45;interceptors&#45;sdk]&#45;&#45;[epam / ai&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1650.73,-452.87C1679.04,-394.61 1761.69,-201.36 1675,-86.25 1653.64,-57.89 1559.54,-37.79 1497.37,-27.32"/>
+<text text-anchor="middle" x="1719.75" y="-229.35" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;interceptors&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="edge62" class="edge">
+<title>[epam / ai&#45;dial&#45;interceptors&#45;sdk]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1534.96,-452.62C1520.76,-448.05 1506.79,-442.28 1494.25,-435 1471.22,-421.62 1451.38,-397.71 1439.57,-381.37"/>
+<text text-anchor="middle" x="1500.62" y="-412.73" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / xdlc&#45;ai] -->
+<g id="node39" class="node">
+<title>[epam / xdlc&#45;ai]</title>
+<polygon fill="#00b2ee" stroke="white" points="6002.12,-920.25 5887.88,-920.25 5887.88,-884.25 6002.12,-884.25 6002.12,-920.25"/>
+<text text-anchor="middle" x="5945" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / xdlc&#45;ai]</text>
+</g>
+<!-- [epam / AIRUN&#45;Assistants&#45;Benchmark&#45;TestInstructions] -->
+<g id="node40" class="node">
+<title>[epam / AIRUN&#45;Assistants&#45;Benchmark&#45;TestInstructions]</title>
+<polygon fill="#00b2ee" stroke="white" points="6373.38,-920.25 6020.62,-920.25 6020.62,-884.25 6373.38,-884.25 6373.38,-920.25"/>
+<text text-anchor="middle" x="6197" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / AIRUN&#45;Assistants&#45;Benchmark&#45;TestInstructions]</text>
+</g>
+<!-- [epam / sdmxsource] -->
+<g id="node41" class="node">
+<title>[epam / sdmxsource]</title>
+<polygon fill="#00b2ee" stroke="white" points="6539,-920.25 6391,-920.25 6391,-884.25 6539,-884.25 6539,-920.25"/>
+<text text-anchor="middle" x="6465" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / sdmxsource]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;app&#45;builder&#45;python]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;controller] -->
+<g id="edge54" class="edge">
+<title>[epam / ai&#45;dial&#45;app&#45;builder&#45;python]&#45;&#45;[epam / ai&#45;dial&#45;app&#45;controller]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1265,-172.04C1265,-157.58 1265,-137.14 1265,-122.68"/>
+<text text-anchor="middle" x="1271.38" y="-143.1" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;helm] -->
+<g id="node43" class="node">
+<title>[epam / ai&#45;dial&#45;helm]</title>
+<polygon fill="#00b2ee" stroke="white" points="1803.62,-834 1656.38,-834 1656.38,-798 1803.62,-798 1803.62,-834"/>
+<text text-anchor="middle" x="1730" y="-811.33" font-family="Tahoma" font-size="14.00">[epam / ai&#45;dial&#45;helm]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;helm]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;vertexai] -->
+<g id="edge92" class="edge">
+<title>[epam / ai&#45;dial&#45;helm]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;vertexai]</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1729.59,-797.54C1729.24,-783.08 1728.76,-762.64 1728.41,-748.18"/>
+<text text-anchor="middle" x="1735.49" y="-768.6" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- [epam / eco&#45;schema&#45;catalog] -->
+<g id="node44" class="node">
+<title>[epam / eco&#45;schema&#45;catalog]</title>
+<polygon fill="#00b2ee" stroke="white" points="6756.5,-920.25 6557.5,-920.25 6557.5,-884.25 6756.5,-884.25 6756.5,-920.25"/>
+<text text-anchor="middle" x="6657" y="-897.58" font-family="Tahoma" font-size="14.00">[epam / eco&#45;schema&#45;catalog]</text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;ci] -->
+<g id="edge73" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;ci]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1829.33,-711.25C1846.87,-706.42 1861.55,-700.59 1868,-693.75 1937.69,-619.85 1928.35,-483.41 1922.49,-435.32"/>
+<text text-anchor="middle" x="1923.34" y="-596.1" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge26" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M1782.5,-711.29C1792.32,-706.59 1801.98,-700.8 1810,-693.75 1822.5,-682.77 1824.4,-677.49 1829,-661.5 1854.65,-572.45 1859.86,-540.72 1830,-453 1789.69,-334.59 1659.36,-244.85 1599.53,-208.8"/>
+<text text-anchor="middle" x="1850.75" y="-466.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;analytics&#45;realtime] -->
+<g id="edge79" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;analytics&#45;realtime]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1637.66,-711.29C1562.83,-696.83 1457.02,-676.39 1382.22,-661.93"/>
+<text text-anchor="middle" x="1542.48" y="-682.35" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge45" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1764.81,-711.38C1788.92,-697.17 1816,-674.53 1816,-644.5 1816,-644.5 1816,-644.5 1816,-470 1816,-398.29 1601.17,-327.12 1490.4,-295.2"/>
+<text text-anchor="middle" x="1822.38" y="-509.85" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai] -->
+<g id="edge3" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;openai]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M1716.54,-711.43C1695.25,-680.97 1646.31,-618.62 1587,-593.25 1570.44,-586.17 1552.23,-580.4 1534.34,-575.75"/>
+<text text-anchor="middle" x="1684.72" y="-639.23" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk] -->
+<g id="edge69" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;interceptors&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1723.36,-711.47C1717.74,-690.88 1707.81,-655.48 1698,-625.5 1681.68,-575.62 1659.7,-517.67 1648.77,-489.36"/>
+<text text-anchor="middle" x="1697.88" y="-596.1" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial] -->
+<g id="edge42" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;vertexai]&#45;&#45;[epam / ai&#45;dial&#45;adapter&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M1737.47,-711.35C1761.68,-664.22 1819.82,-532.33 1759,-453 1730.35,-415.63 1610.64,-390.45 1523.39,-376.67"/>
+<text text-anchor="middle" x="1792.23" y="-552.98" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons] -->
+<g id="edge51" class="edge">
+<title>[epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;cluster&#45;add&#45;ons]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M301.45,-538.83C304.97,-507.12 316.64,-439.54 354,-399 360.57,-391.87 368.86,-386.11 377.6,-381.49"/>
+<text text-anchor="middle" x="327.51" y="-466.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;keycloak&#45;operator] -->
+<g id="edge17" class="edge">
+<title>[epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;keycloak&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="8" stroke-opacity="0.858824" d="M296.02,-538.8C287.95,-498.42 274.58,-397.94 327,-345 350.8,-320.96 384.19,-305.32 415.23,-295.23"/>
+<text text-anchor="middle" x="306.42" y="-412.73" font-family="Arial" font-size="12.00"> 10 </text>
+</g>
+<!-- [epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;nexus&#45;operator] -->
+<g id="edge5" class="edge">
+<title>[epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;nexus&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M340.2,-538.79C373.49,-524.33 420.57,-503.89 453.85,-489.43"/>
+<text text-anchor="middle" x="418.37" y="-509.85" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator] -->
+<g id="edge43" class="edge">
+<title>[epam / edp&#45;codebase&#45;operator]&#45;&#45;[epam / edp&#45;gerrit&#45;operator]</title>
+<path fill="none" stroke="#00688b" stroke-width="6" stroke-opacity="0.717647" d="M238.48,-538.82C213.96,-528.52 188.22,-512.71 174,-489 145.61,-441.66 206.16,-365.17 225.25,-345 315.41,-249.78 467.89,-213.59 567.25,-199.86"/>
+<text text-anchor="middle" x="231.62" y="-358.73" font-family="Arial" font-size="12.00"> 8 </text>
+</g>
+<!-- [epam / aws&#45;syndicate]&#45;&#45;[epam / modular&#45;sdk] -->
+<g id="edge7" class="edge">
+<title>[epam / aws&#45;syndicate]&#45;&#45;[epam / modular&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="10" d="M2329.24,-797.54C2349.32,-783.08 2377.72,-762.64 2397.79,-748.18"/>
+<text text-anchor="middle" x="2380.26" y="-768.6" font-family="Arial" font-size="12.00"> 12 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;chat&#45;themes]&#45;&#45;[epam / ai&#45;dial] -->
+<g id="edge71" class="edge">
+<title>[epam / ai&#45;dial&#45;chat&#45;themes]&#45;&#45;[epam / ai&#45;dial]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1542.48,-85.79C1520.51,-71.33 1489.45,-50.89 1467.49,-36.43"/>
+<text text-anchor="middle" x="1519.04" y="-56.85" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;dial]&#45;&#45;[epam / ai&#45;dial&#45;chat] -->
+<g id="edge84" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;dial]&#45;&#45;[epam / ai&#45;dial&#45;chat]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1452.28,-344.67C1468.91,-332.03 1490.81,-313.85 1507,-294.75 1530.26,-267.32 1550.25,-230.14 1560.87,-208.69"/>
+<text text-anchor="middle" x="1539.14" y="-272.48" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / ai&#45;dial&#45;adapter&#45;dial]&#45;&#45;[epam / ai&#45;dial&#45;core] -->
+<g id="edge80" class="edge">
+<title>[epam / ai&#45;dial&#45;adapter&#45;dial]&#45;&#45;[epam / ai&#45;dial&#45;core]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M1427.59,-344.54C1427.24,-330.08 1426.76,-309.64 1426.41,-295.18"/>
+<text text-anchor="middle" x="1433.49" y="-315.6" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+<!-- [epam / modular&#45;cli]&#45;&#45;[epam / modular&#45;sdk] -->
+<g id="edge91" class="edge">
+<title>[epam / modular&#45;cli]&#45;&#45;[epam / modular&#45;sdk]</title>
+<path fill="none" stroke="#00688b" stroke-width="5" stroke-opacity="0.647059" d="M2508.42,-797.54C2489.71,-783.08 2463.26,-762.64 2444.56,-748.18"/>
+<text text-anchor="middle" x="2489.4" y="-768.6" font-family="Arial" font-size="12.00"> 6 </text>
+</g>
+</g>
+</svg>

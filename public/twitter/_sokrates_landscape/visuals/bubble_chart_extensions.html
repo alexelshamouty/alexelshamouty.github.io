@@ -1,0 +1,335 @@
+<!--
+  ~ Copyright (c) 2021 Željko Obrenović. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A bubble chart view on componets</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+        svg {
+            font: 14px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+    var dataset = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "scala",
+  "color" : "",
+  "size" : 556873,
+  "children" : [ ]
+}, {
+  "name" : "java",
+  "color" : "",
+  "size" : 190337,
+  "children" : [ ]
+}, {
+  "name" : "py",
+  "color" : "",
+  "size" : 96804,
+  "children" : [ ]
+}, {
+  "name" : "c",
+  "color" : "",
+  "size" : 94486,
+  "children" : [ ]
+}, {
+  "name" : "rs",
+  "color" : "",
+  "size" : 88842,
+  "children" : [ ]
+}, {
+  "name" : "m",
+  "color" : "",
+  "size" : 51305,
+  "children" : [ ]
+}, {
+  "name" : "h",
+  "color" : "",
+  "size" : 33879,
+  "children" : [ ]
+}, {
+  "name" : "rb",
+  "color" : "",
+  "size" : 32550,
+  "children" : [ ]
+}, {
+  "name" : "cpp",
+  "color" : "",
+  "size" : 30730,
+  "children" : [ ]
+}, {
+  "name" : "go",
+  "color" : "",
+  "size" : 28872,
+  "children" : [ ]
+}, {
+  "name" : "js",
+  "color" : "",
+  "size" : 24067,
+  "children" : [ ]
+}, {
+  "name" : "textile",
+  "color" : "",
+  "size" : 14784,
+  "children" : [ ]
+}, {
+  "name" : "ts",
+  "color" : "",
+  "size" : 14664,
+  "children" : [ ]
+}, {
+  "name" : "in",
+  "color" : "",
+  "size" : 13955,
+  "children" : [ ]
+}, {
+  "name" : "mustache",
+  "color" : "",
+  "size" : 8659,
+  "children" : [ ]
+}, {
+  "name" : "proto",
+  "color" : "",
+  "size" : 8607,
+  "children" : [ ]
+}, {
+  "name" : "thrift",
+  "color" : "",
+  "size" : 7485,
+  "children" : [ ]
+}, {
+  "name" : "scss",
+  "color" : "",
+  "size" : 6395,
+  "children" : [ ]
+}, {
+  "name" : "sbt",
+  "color" : "",
+  "size" : 6173,
+  "children" : [ ]
+}, {
+  "name" : "pat",
+  "color" : "",
+  "size" : 5536,
+  "children" : [ ]
+}, {
+  "name" : "swift",
+  "color" : "",
+  "size" : 4146,
+  "children" : [ ]
+}, {
+  "name" : "mo",
+  "color" : "",
+  "size" : 3869,
+  "children" : [ ]
+}, {
+  "name" : "toml",
+  "color" : "",
+  "size" : 3707,
+  "children" : [ ]
+}, {
+  "name" : "coffee",
+  "color" : "",
+  "size" : 3121,
+  "children" : [ ]
+}, {
+  "name" : "html",
+  "color" : "",
+  "size" : 2521,
+  "children" : [ ]
+}, {
+  "name" : "css",
+  "color" : "",
+  "size" : 2026,
+  "children" : [ ]
+}, {
+  "name" : "xml",
+  "color" : "",
+  "size" : 1996,
+  "children" : [ ]
+}, {
+  "name" : "kt",
+  "color" : "",
+  "size" : 1895,
+  "children" : [ ]
+}, {
+  "name" : "workflow",
+  "color" : "",
+  "size" : 1305,
+  "children" : [ ]
+}, {
+  "name" : "cmake",
+  "color" : "",
+  "size" : 1152,
+  "children" : [ ]
+}, {
+  "name" : "sql",
+  "color" : "",
+  "size" : 1082,
+  "children" : [ ]
+}, {
+  "name" : "yaml",
+  "color" : "",
+  "size" : 847,
+  "children" : [ ]
+}, {
+  "name" : "erb",
+  "color" : "",
+  "size" : 784,
+  "children" : [ ]
+}, {
+  "name" : "vue",
+  "color" : "",
+  "size" : 689,
+  "children" : [ ]
+}, {
+  "name" : "bzl",
+  "color" : "",
+  "size" : 530,
+  "children" : [ ]
+}, {
+  "name" : "hpp",
+  "color" : "",
+  "size" : 387,
+  "children" : [ ]
+}, {
+  "name" : "inc",
+  "color" : "",
+  "size" : 385,
+  "children" : [ ]
+}, {
+  "name" : "php",
+  "color" : "",
+  "size" : 301,
+  "children" : [ ]
+}, {
+  "name" : "lua",
+  "color" : "",
+  "size" : 265,
+  "children" : [ ]
+}, {
+  "name" : "vcxproj",
+  "color" : "",
+  "size" : 159,
+  "children" : [ ]
+}, {
+  "name" : "spec",
+  "color" : "",
+  "size" : 149,
+  "children" : [ ]
+}, {
+  "name" : "gemspec",
+  "color" : "",
+  "size" : 123,
+  "children" : [ ]
+}, {
+  "name" : "bash",
+  "color" : "",
+  "size" : 100,
+  "children" : [ ]
+}, {
+  "name" : "ipynb",
+  "color" : "",
+  "size" : 83,
+  "children" : [ ]
+}, {
+  "name" : "ejs",
+  "color" : "",
+  "size" : 55,
+  "children" : [ ]
+}, {
+  "name" : "rake",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "graphql",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "cfg",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "bib",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+} ]
+    }
+
+    var diameter = 800;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var bubble = d3.pack(dataset)
+        .size([diameter, diameter])
+        .padding(1.5);
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", diameter)
+        .attr("height", diameter)
+        .attr("class", "bubble");
+
+    var nodes = d3.hierarchy(dataset)
+        .sum(function(d) { return d.size; });
+
+    var node = svg.selectAll(".node")
+        .data(bubble(nodes).descendants())
+        .enter()
+        .filter(function(d){
+            return  !d.children
+        })
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+
+    node.append("title")
+        .text(function(d) {
+            return d.data.name + ": " + d.data.size;
+        });
+
+    node.append("circle")
+        .attr("r", function(d) {
+            return d.r;
+        })
+        .style("fill", function(d,i) {
+            return "rgb(192, 222, 237)";
+        });
+
+    node.append("text")
+        .attr("dy", ".2em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.data.name.substring(0, d.r / 3);
+        })
+        .attr("font-family", "sans-serif")
+        .attr("fill", "black");
+
+    node.append("text")
+        .attr("dy", "1.3em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.data.Count;
+        })
+        .attr("font-family",  "Gill Sans", "Gill Sans MT")
+        .attr("fill", "white");
+
+    d3.select(self.frameElement)
+        .style("height", diameter + "px");
+
+</script>
+</body>
+</html>

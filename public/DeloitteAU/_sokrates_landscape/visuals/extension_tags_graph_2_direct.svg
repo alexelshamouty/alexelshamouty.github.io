@@ -1,0 +1,529 @@
+<svg width="2420pt" height="1274pt"
+ viewBox="0.00 0.00 2419.75 1274.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1270)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1270 2415.75,-1270 2415.75,4 -4,4"/>
+<!-- all file extensions / scss (4) -->
+<g id="node1" class="node">
+<title>all file extensions / scss (4)</title>
+<polygon fill="grey" stroke="white" points="2411.75,-918 2230,-918 2230,-882 2411.75,-882 2411.75,-918"/>
+<text text-anchor="middle" x="2320.88" y="-895.33" font-family="Tahoma" font-size="14.00">all file extensions / scss (4)</text>
+</g>
+<!-- all file extensions / js (12) -->
+<g id="node2" class="node">
+<title>all file extensions / js (12)</title>
+<polygon fill="grey" stroke="white" points="405.5,-691 231.25,-691 231.25,-655 405.5,-655 405.5,-691"/>
+<text text-anchor="middle" x="318.38" y="-668.33" font-family="Tahoma" font-size="14.00">all file extensions / js (12)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / js (12) -->
+<g id="edge1" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M2302.13,-918.34C2265.9,-953.73 2179.25,-1028 2090.25,-1028 2090.25,-1028 2090.25,-1028 542.25,-1028 381.43,-1028 332.18,-763.43 321.72,-691.09"/>
+<text text-anchor="middle" x="1216.75" y="-1030.85" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- all file extensions / html (5) -->
+<g id="node3" class="node">
+<title>all file extensions / html (5)</title>
+<polygon fill="grey" stroke="white" points="2181.25,-561 1997.25,-561 1997.25,-525 2181.25,-525 2181.25,-561"/>
+<text text-anchor="middle" x="2089.25" y="-538.33" font-family="Tahoma" font-size="14.00">all file extensions / html (5)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / html (5) -->
+<g id="edge4" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / html (5)</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M2310.23,-881.72C2292.06,-847.64 2251.09,-772.38 2212,-711.75 2175.59,-655.28 2127.82,-591.78 2104.41,-561.28"/>
+<text text-anchor="middle" x="2205.62" y="-714.6" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- all file extensions / css (3) -->
+<g id="node6" class="node">
+<title>all file extensions / css (3)</title>
+<polygon fill="grey" stroke="white" points="1535.12,-561 1359.38,-561 1359.38,-525 1535.12,-525 1535.12,-561"/>
+<text text-anchor="middle" x="1447.25" y="-538.33" font-family="Tahoma" font-size="14.00">all file extensions / css (3)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / css (3) -->
+<g id="edge18" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / css (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2304.08,-881.64C2284.47,-859.88 2249.07,-823.83 2212,-802 1986.39,-669.14 1682.86,-592.18 1535.62,-560.35"/>
+<text text-anchor="middle" x="1889.5" y="-692.23" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / ts (2) -->
+<g id="node7" class="node">
+<title>all file extensions / ts (2)</title>
+<polygon fill="grey" stroke="white" points="1073.38,-710 905.88,-710 905.88,-674 1073.38,-674 1073.38,-710"/>
+<text text-anchor="middle" x="989.62" y="-687.33" font-family="Tahoma" font-size="14.00">all file extensions / ts (2)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / ts (2) -->
+<g id="edge19" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / ts (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2229.53,-891.07C1959.52,-864.18 1174.15,-784.37 1124,-761 1110.5,-754.71 1088.24,-722.28 1075.25,-715 1072.33,-713.36 1069.28,-711.84 1066.16,-710.41"/>
+<text text-anchor="middle" x="1560.62" y="-824.08" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / tsx (2) -->
+<g id="node8" class="node">
+<title>all file extensions / tsx (2)</title>
+<polygon fill="grey" stroke="white" points="855.25,-722 681,-722 681,-686 855.25,-686 855.25,-722"/>
+<text text-anchor="middle" x="768.12" y="-699.33" font-family="Tahoma" font-size="14.00">all file extensions / tsx (2)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / tsx (2) -->
+<g id="edge20" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / tsx (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2229.65,-915.28C2223.69,-915.96 2217.76,-916.55 2212,-917 2116.85,-924.45 2092.69,-917.81 1997.25,-917 1608.84,-913.7 1504.89,-958.14 1124,-882 1008.33,-858.88 953.47,-881.49 873.25,-795 851.99,-772.08 877.33,-749.13 855.25,-727 853.61,-725.36 851.87,-723.83 850.04,-722.4"/>
+<text text-anchor="middle" x="1447.25" y="-929.78" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / vue (2) -->
+<g id="node9" class="node">
+<title>all file extensions / vue (2)</title>
+<polygon fill="grey" stroke="white" points="1306.12,-752 1127.38,-752 1127.38,-716 1306.12,-716 1306.12,-752"/>
+<text text-anchor="middle" x="1216.75" y="-729.33" font-family="Tahoma" font-size="14.00">all file extensions / vue (2)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / vue (2) -->
+<g id="edge42" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / vue (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2229.51,-902.99C2090.14,-906.04 1814.79,-905.9 1585,-868 1467.39,-848.6 1437.82,-838.14 1327.5,-793 1299.47,-781.53 1269.27,-764.96 1247.66,-752.3"/>
+<text text-anchor="middle" x="1683.38" y="-894.12" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / ejs (1) -->
+<g id="node13" class="node">
+<title>all file extensions / ejs (1)</title>
+<polygon fill="grey" stroke="white" points="178.38,-64 4.12,-64 4.12,-28 178.38,-28 178.38,-64"/>
+<text text-anchor="middle" x="91.25" y="-41.33" font-family="Tahoma" font-size="14.00">all file extensions / ejs (1)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / ejs (1) -->
+<g id="edge21" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / ejs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2319.27,-881.61C2314.61,-753.57 2279.12,0 2090.25,0 2090.25,0 2090.25,0 317.38,0 259.53,0 194.99,-14.76 149.9,-27.56"/>
+<text text-anchor="middle" x="1099.62" y="-2.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / jsx (1) -->
+<g id="node21" class="node">
+<title>all file extensions / jsx (1)</title>
+<polygon fill="grey" stroke="white" points="178,-981 4.5,-981 4.5,-945 178,-945 178,-981"/>
+<text text-anchor="middle" x="91.25" y="-958.33" font-family="Tahoma" font-size="14.00">all file extensions / jsx (1)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / jsx (1) -->
+<g id="edge43" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / jsx (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2311.48,-918.42C2295.78,-951.31 2259.24,-1020.91 2212,-1066 2170.59,-1105.52 2147.49,-1108 2090.25,-1108 2090.25,-1108 2090.25,-1108 317.38,-1108 224.86,-1108 140.14,-1020.38 107,-981.36"/>
+<text text-anchor="middle" x="1099.62" y="-1110.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / less (1) -->
+<g id="node24" class="node">
+<title>all file extensions / less (1)</title>
+<polygon fill="grey" stroke="white" points="1979.25,-1087 1799.75,-1087 1799.75,-1051 1979.25,-1051 1979.25,-1087"/>
+<text text-anchor="middle" x="1889.5" y="-1064.33" font-family="Tahoma" font-size="14.00">all file extensions / less (1)</text>
+</g>
+<!-- all file extensions / scss (4)&#45;&#45;all file extensions / less (1) -->
+<g id="edge52" class="edge">
+<title>all file extensions / scss (4)&#45;&#45;all file extensions / less (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2312.11,-918.3C2297.64,-949.85 2263.28,-1013.82 2212,-1042 2140.94,-1081.05 2047.45,-1084.57 1979.62,-1080.26"/>
+<text text-anchor="middle" x="2205.62" y="-1050.5" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / js (12)&#45;&#45;all file extensions / ejs (1) -->
+<g id="edge23" class="edge">
+<title>all file extensions / js (12)&#45;&#45;all file extensions / ejs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M310.76,-654.57C277.82,-562.84 131.8,-156.16 98.87,-64.43"/>
+<text text-anchor="middle" x="206.88" y="-381.15" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / java (1) -->
+<g id="node14" class="node">
+<title>all file extensions / java (1)</title>
+<polygon fill="grey" stroke="white" points="182.5,-691 0,-691 0,-655 182.5,-655 182.5,-691"/>
+<text text-anchor="middle" x="91.25" y="-668.33" font-family="Tahoma" font-size="14.00">all file extensions / java (1)</text>
+</g>
+<!-- all file extensions / js (12)&#45;&#45;all file extensions / java (1) -->
+<g id="edge24" class="edge">
+<title>all file extensions / js (12)&#45;&#45;all file extensions / java (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M230.98,-673C215.23,-673 198.76,-673 182.89,-673"/>
+<text text-anchor="middle" x="206.88" y="-675.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / js (12)&#45;&#45;all file extensions / jsx (1) -->
+<g id="edge46" class="edge">
+<title>all file extensions / js (12)&#45;&#45;all file extensions / jsx (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M303.29,-691.14C262.86,-743.22 146.75,-892.79 106.33,-944.87"/>
+<text text-anchor="middle" x="206.88" y="-820.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / js (12) -->
+<g id="edge2" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-width="4" stroke-opacity="0.576471" d="M2006.12,-524.54C1864.74,-493.8 1565.84,-433.41 1309.5,-412 928.62,-380.19 786.27,-312.66 454.25,-502 390.2,-538.52 345.47,-618.62 327.79,-654.72"/>
+<text text-anchor="middle" x="1099.62" y="-393.46" font-family="Arial" font-size="12.00"> 4 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / css (3) -->
+<g id="edge5" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / css (3)</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1996.89,-543C1873.86,-543 1656.42,-543 1535.51,-543"/>
+<text text-anchor="middle" x="1683.38" y="-545.85" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / ts (2) -->
+<g id="edge6" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / ts (2)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1998.18,-561.48C1853.61,-590.38 1560.54,-645.89 1309.5,-674 1229.74,-682.93 1138.23,-687.52 1073.76,-689.82"/>
+<text text-anchor="middle" x="1447.25" y="-671" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / tsx (2) -->
+<g id="edge7" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / tsx (2)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M2082.2,-561.28C2069.45,-596.55 2036.24,-673.53 1979.25,-708 1903.76,-753.66 1869.66,-720.48 1781.75,-728 1384.42,-761.99 1284.68,-771.06 886,-780 880.33,-780.13 877.86,-783.3 873.25,-780 853.03,-765.51 873.42,-744 855.25,-727 853.44,-725.31 851.52,-723.74 849.52,-722.28"/>
+<text text-anchor="middle" x="1333.88" y="-766.46" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / vue (2) -->
+<g id="edge14" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / vue (2)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M2079.64,-561.44C2064.31,-591.88 2029.15,-651.86 1979.25,-678 1920.94,-708.54 1494.7,-725.4 1306.57,-731.42"/>
+<text text-anchor="middle" x="1560.62" y="-724.03" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / ejs (1) -->
+<g id="edge22" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / ejs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2086.33,-524.66C2078.03,-448.98 2042.75,-162.12 1979.25,-102 1882.38,-10.28 1817.77,-46 1684.38,-46 1684.38,-46 1684.38,-46 317.38,-46 271.65,-46 220.69,-46 178.84,-46"/>
+<text text-anchor="middle" x="989.62" y="-48.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / in (1) -->
+<g id="node17" class="node">
+<title>all file extensions / in (1)</title>
+<polygon fill="grey" stroke="white" points="1767.12,-336 1599.62,-336 1599.62,-300 1767.12,-300 1767.12,-336"/>
+<text text-anchor="middle" x="1683.38" y="-313.32" font-family="Tahoma" font-size="14.00">all file extensions / in (1)</text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / in (1) -->
+<g id="edge28" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / in (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2083.81,-524.71C2073.23,-485.51 2042.56,-393.54 1979.25,-351.75 1916.89,-310.59 1830.57,-305.23 1767.44,-308.32"/>
+<text text-anchor="middle" x="1889.5" y="-354.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / cfg (1) -->
+<g id="node18" class="node">
+<title>all file extensions / cfg (1)</title>
+<polygon fill="grey" stroke="white" points="1304.62,-282 1128.88,-282 1128.88,-246 1304.62,-246 1304.62,-282"/>
+<text text-anchor="middle" x="1216.75" y="-259.32" font-family="Tahoma" font-size="14.00">all file extensions / cfg (1)</text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / cfg (1) -->
+<g id="edge29" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / cfg (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2086.11,-524.72C2079.64,-478.66 2055.77,-357.71 1979.25,-304 1765.78,-154.17 1429.91,-211.25 1286.43,-245.52"/>
+<text text-anchor="middle" x="1560.62" y="-209.45" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / py (3) -->
+<g id="node19" class="node">
+<title>all file extensions / py (3)</title>
+<polygon fill="grey" stroke="white" points="1075.25,-236 904,-236 904,-200 1075.25,-200 1075.25,-236"/>
+<text text-anchor="middle" x="989.62" y="-213.32" font-family="Tahoma" font-size="14.00">all file extensions / py (3)</text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / py (3) -->
+<g id="edge30" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / py (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2087.72,-524.65C2085.1,-470.12 2069.72,-307.56 1979.25,-223 1774,-31.14 1638.19,-80.87 1358.25,-104.75 1253,-113.73 1222,-105.56 1124,-145 1099.73,-154.77 1097.98,-165.04 1075.25,-178 1061.84,-185.65 1046.73,-193.13 1033.03,-199.51"/>
+<text text-anchor="middle" x="1447.25" y="-107.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / sql (1) -->
+<g id="node20" class="node">
+<title>all file extensions / sql (1)</title>
+<polygon fill="grey" stroke="white" points="854.88,-340 681.38,-340 681.38,-304 854.88,-304 854.88,-340"/>
+<text text-anchor="middle" x="768.12" y="-317.32" font-family="Tahoma" font-size="14.00">all file extensions / sql (1)</text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / sql (1) -->
+<g id="edge31" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / sql (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2079.2,-524.69C2063.46,-495.09 2028.02,-437.49 1979.25,-412 1916.09,-378.99 1411.36,-361.4 1340.25,-356.75 1132.93,-343.19 1080.19,-354.47 873.25,-336 867.35,-335.47 861.26,-334.85 855.14,-334.18"/>
+<text text-anchor="middle" x="1333.88" y="-359.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / jsx (1) -->
+<g id="edge44" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / jsx (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2084.01,-561.38C2073.15,-605.23 2040.73,-717.69 1979.25,-790 1877.95,-909.15 1840.76,-982 1684.38,-982 1684.38,-982 1684.38,-982 1332.88,-982 1131.87,-982 1081.63,-986 880.62,-986 880.62,-986 880.62,-986 317.38,-986 271.31,-986 220.22,-981.18 178.36,-975.95"/>
+<text text-anchor="middle" x="989.62" y="-988.83" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / hbs (1) -->
+<g id="node25" class="node">
+<title>all file extensions / hbs (1)</title>
+<polygon fill="grey" stroke="white" points="632.25,-770 454.25,-770 454.25,-734 632.25,-734 632.25,-770"/>
+<text text-anchor="middle" x="543.25" y="-747.33" font-family="Tahoma" font-size="14.00">all file extensions / hbs (1)</text>
+</g>
+<!-- all file extensions / html (5)&#45;&#45;all file extensions / hbs (1) -->
+<g id="edge54" class="edge">
+<title>all file extensions / html (5)&#45;&#45;all file extensions / hbs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2083.09,-561.5C2071.38,-599.89 2039.09,-688.43 1979.25,-734 1828.83,-848.54 1754.6,-815.48 1567,-839 1218,-882.75 799.2,-807.32 625.69,-770.48"/>
+<text text-anchor="middle" x="1216.75" y="-854.95" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / swift (4) -->
+<g id="node4" class="node">
+<title>all file extensions / swift (4)</title>
+<polygon fill="grey" stroke="white" points="1309.5,-190 1124,-190 1124,-154 1309.5,-154 1309.5,-190"/>
+<text text-anchor="middle" x="1216.75" y="-167.32" font-family="Tahoma" font-size="14.00">all file extensions / swift (4)</text>
+</g>
+<!-- all file extensions / h (3) -->
+<g id="node5" class="node">
+<title>all file extensions / h (3)</title>
+<polygon fill="grey" stroke="white" points="850.38,-152 685.88,-152 685.88,-116 850.38,-116 850.38,-152"/>
+<text text-anchor="middle" x="768.12" y="-129.32" font-family="Tahoma" font-size="14.00">all file extensions / h (3)</text>
+</g>
+<!-- all file extensions / swift (4)&#45;&#45;all file extensions / h (3) -->
+<g id="edge3" class="edge">
+<title>all file extensions / swift (4)&#45;&#45;all file extensions / h (3)</title>
+<path fill="none" stroke="#00688b" stroke-width="3" stroke-opacity="0.509804" d="M1123.75,-164.17C1043.44,-157.34 927.99,-147.52 850.87,-140.95"/>
+<text text-anchor="middle" x="989.62" y="-162.68" font-family="Arial" font-size="12.00"> 3 </text>
+</g>
+<!-- all file extensions / swift (4)&#45;&#45;all file extensions / py (3) -->
+<g id="edge50" class="edge">
+<title>all file extensions / swift (4)&#45;&#45;all file extensions / py (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1123.56,-184.09C1113.3,-185.81 1103.03,-187.7 1093.25,-189.75 1080.05,-192.51 1066.03,-196 1052.73,-199.57"/>
+<text text-anchor="middle" x="1099.62" y="-192.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / js (12) -->
+<g id="edge10" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1359.1,-536.26C1248.07,-528.26 1050.21,-516 880.62,-516 880.62,-516 880.62,-516 542.25,-516 446.88,-516 363.56,-613.27 332.41,-654.68"/>
+<text text-anchor="middle" x="879.62" y="-518.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / ts (2) -->
+<g id="edge8" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / ts (2)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1423.63,-561.21C1403.04,-576.9 1371.23,-599 1340.25,-612 1249.49,-650.07 1219.89,-637.57 1124,-659.75 1105.08,-664.12 1084.69,-668.98 1065.69,-673.57"/>
+<text text-anchor="middle" x="1216.75" y="-662.6" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / tsx (2) -->
+<g id="edge9" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / tsx (2)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1390.71,-561.45C1374.54,-566.51 1356.77,-571.76 1340.25,-576 1245.25,-600.39 1220.1,-600.39 1124,-620 1026.21,-639.95 1000.9,-641.12 904,-665 879.27,-671.09 852.25,-678.71 828.94,-685.59"/>
+<text text-anchor="middle" x="1099.62" y="-628.69" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / vue (2) -->
+<g id="edge55" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / vue (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1426.73,-561.12C1400.56,-585.21 1352.42,-628.85 1309.5,-664 1287.33,-682.15 1261.3,-701.87 1242.64,-715.73"/>
+<text text-anchor="middle" x="1333.88" y="-650.97" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / cfg (1) -->
+<g id="edge36" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / cfg (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1429.71,-524.85C1403.91,-495.55 1354.28,-435.02 1327.5,-375 1312.83,-342.11 1333.5,-322.84 1309.5,-296 1304.66,-290.59 1298.86,-286.1 1292.56,-282.36"/>
+<text text-anchor="middle" x="1333.88" y="-402.84" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / py (3) -->
+<g id="edge37" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / py (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1419.38,-524.69C1398.04,-510.23 1367.37,-489.61 1340.25,-472 1245.02,-410.18 1207.23,-413.23 1124,-336 1097.27,-311.2 1102.11,-294.67 1075.25,-270 1061.02,-256.94 1043.05,-245.35 1027.33,-236.45"/>
+<text text-anchor="middle" x="1216.75" y="-454.82" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / sql (1) -->
+<g id="edge38" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / sql (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1391.31,-524.53C1374.99,-519.42 1357,-514.14 1340.25,-510 1245.37,-486.54 1218.45,-495.15 1124,-470 1009.87,-439.61 980.6,-431.25 873.25,-382 846.7,-369.82 818.05,-353.02 797.53,-340.29"/>
+<text text-anchor="middle" x="1099.62" y="-467.48" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / css (3)&#45;&#45;all file extensions / hbs (1) -->
+<g id="edge56" class="edge">
+<title>all file extensions / css (3)&#45;&#45;all file extensions / hbs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1359.04,-553.67C1316.5,-558 1264.52,-562 1217.75,-562 1217.75,-562 1217.75,-562 878.62,-562 786.44,-562 756.14,-571.59 681,-625 662.43,-638.2 661.26,-646.06 650.25,-666 639.44,-685.58 647.66,-696.78 632.25,-713 624.19,-721.48 613.96,-728.24 603.35,-733.59"/>
+<text text-anchor="middle" x="989.62" y="-564.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / ts (2)&#45;&#45;all file extensions / js (12) -->
+<g id="edge12" class="edge">
+<title>all file extensions / ts (2)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M905.5,-681.29C888.88,-679.54 871.53,-677.97 855.25,-677 696.91,-667.53 511.78,-668.9 405.78,-670.87"/>
+<text text-anchor="middle" x="656.62" y="-673.09" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / ts (2)&#45;&#45;all file extensions / tsx (2) -->
+<g id="edge11" class="edge">
+<title>all file extensions / ts (2)&#45;&#45;all file extensions / tsx (2)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M905.64,-696.54C889.25,-697.43 872.01,-698.38 855.52,-699.28"/>
+<text text-anchor="middle" x="879.62" y="-700.85" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / ts (2)&#45;&#45;all file extensions / hbs (1) -->
+<g id="edge60" class="edge">
+<title>all file extensions / ts (2)&#45;&#45;all file extensions / hbs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M919.72,-710.41C914.39,-711.93 909.1,-713.47 904,-715 882.16,-721.55 877.63,-726.64 855.25,-731 771.19,-747.37 748.45,-738.23 663,-744 653.1,-744.67 642.74,-745.37 632.44,-746.06"/>
+<text text-anchor="middle" x="768.12" y="-745.76" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / tsx (2)&#45;&#45;all file extensions / js (12) -->
+<g id="edge13" class="edge">
+<title>all file extensions / tsx (2)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M680.53,-698C601.34,-692.52 484.83,-684.46 405.72,-678.98"/>
+<text text-anchor="middle" x="543.25" y="-697.4" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / tsx (2)&#45;&#45;all file extensions / hbs (1) -->
+<g id="edge61" class="edge">
+<title>all file extensions / tsx (2)&#45;&#45;all file extensions / hbs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M681.27,-722.49C664.47,-726.11 646.85,-729.9 630.06,-733.52"/>
+<text text-anchor="middle" x="656.62" y="-730.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / vue (2)&#45;&#45;all file extensions / js (12) -->
+<g id="edge15" class="edge">
+<title>all file extensions / vue (2)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-width="2" stroke-opacity="0.439216" d="M1186.96,-715.55C1159.46,-699.01 1116.26,-675.74 1075.25,-665 839.59,-603.3 548.27,-635.28 405.91,-657.53"/>
+<text text-anchor="middle" x="768.12" y="-634.82" font-family="Arial" font-size="12.00"> 2 </text>
+</g>
+<!-- all file extensions / vue (2)&#45;&#45;all file extensions / ts (2) -->
+<g id="edge57" class="edge">
+<title>all file extensions / vue (2)&#45;&#45;all file extensions / ts (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1127.1,-717.46C1109.5,-714.18 1091.09,-710.74 1073.69,-707.5"/>
+<text text-anchor="middle" x="1099.62" y="-715.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / vue (2)&#45;&#45;all file extensions / tsx (2) -->
+<g id="edge58" class="edge">
+<title>all file extensions / vue (2)&#45;&#45;all file extensions / tsx (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1127.08,-732.24C1115.69,-731.89 1104.2,-731.48 1093.25,-731 995.34,-726.7 970.7,-726.37 873.25,-716 867.46,-715.38 861.49,-714.73 855.48,-714.07"/>
+<text text-anchor="middle" x="989.62" y="-733.04" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / vue (2)&#45;&#45;all file extensions / jsx (1) -->
+<g id="edge45" class="edge">
+<title>all file extensions / vue (2)&#45;&#45;all file extensions / jsx (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1201.37,-752.28C1161,-802.7 1045.99,-940 990.62,-940 990.62,-940 990.62,-940 317.38,-940 271.31,-940 220.22,-944.82 178.36,-950.05"/>
+<text text-anchor="middle" x="656.62" y="-942.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / vue (2)&#45;&#45;all file extensions / hbs (1) -->
+<g id="edge59" class="edge">
+<title>all file extensions / vue (2)&#45;&#45;all file extensions / hbs (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1126.99,-743.42C1109.83,-745.08 1091.99,-746.69 1075.25,-748 900.47,-761.68 856.22,-766.76 681,-761 665.31,-760.48 648.61,-759.64 632.48,-758.66"/>
+<text text-anchor="middle" x="879.62" y="-764.74" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / xml (2) -->
+<g id="node10" class="node">
+<title>all file extensions / xml (2)</title>
+<polygon fill="grey" stroke="white" points="2410.25,-1223 2231.5,-1223 2231.5,-1187 2410.25,-1187 2410.25,-1223"/>
+<text text-anchor="middle" x="2320.88" y="-1200.33" font-family="Tahoma" font-size="14.00">all file extensions / xml (2)</text>
+</g>
+<!-- all file extensions / cs (2) -->
+<g id="node11" class="node">
+<title>all file extensions / cs (2)</title>
+<polygon fill="grey" stroke="white" points="2174.12,-1233 2004.38,-1233 2004.38,-1197 2174.12,-1197 2174.12,-1233"/>
+<text text-anchor="middle" x="2089.25" y="-1210.33" font-family="Tahoma" font-size="14.00">all file extensions / cs (2)</text>
+</g>
+<!-- all file extensions / xml (2)&#45;&#45;all file extensions / cs (2) -->
+<g id="edge16" class="edge">
+<title>all file extensions / xml (2)&#45;&#45;all file extensions / cs (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2231.1,-1208.87C2212.42,-1209.68 2192.77,-1210.54 2174.27,-1211.34"/>
+<text text-anchor="middle" x="2205.62" y="-1212.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / kt (2) -->
+<g id="node12" class="node">
+<title>all file extensions / kt (2)</title>
+<polygon fill="grey" stroke="white" points="2173.38,-1176 2005.12,-1176 2005.12,-1140 2173.38,-1140 2173.38,-1176"/>
+<text text-anchor="middle" x="2089.25" y="-1153.33" font-family="Tahoma" font-size="14.00">all file extensions / kt (2)</text>
+</g>
+<!-- all file extensions / xml (2)&#45;&#45;all file extensions / kt (2) -->
+<g id="edge17" class="edge">
+<title>all file extensions / xml (2)&#45;&#45;all file extensions / kt (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2231.1,-1186.83C2212.17,-1182.95 2192.24,-1178.88 2173.52,-1175.04"/>
+<text text-anchor="middle" x="2205.62" y="-1185.76" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / cshtml (1) -->
+<g id="node15" class="node">
+<title>all file extensions / cshtml (1)</title>
+<polygon fill="grey" stroke="white" points="1781.75,-1266 1585,-1266 1585,-1230 1781.75,-1230 1781.75,-1266"/>
+<text text-anchor="middle" x="1683.38" y="-1243.33" font-family="Tahoma" font-size="14.00">all file extensions / cshtml (1)</text>
+</g>
+<!-- all file extensions / cs (2)&#45;&#45;all file extensions / cshtml (1) -->
+<g id="edge25" class="edge">
+<title>all file extensions / cs (2)&#45;&#45;all file extensions / cshtml (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2004.08,-1221.88C1939.35,-1227.17 1849.8,-1234.48 1781.94,-1240.03"/>
+<text text-anchor="middle" x="1889.5" y="-1241.1" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / ps1 (1) -->
+<g id="node16" class="node">
+<title>all file extensions / ps1 (1)</title>
+<polygon fill="grey" stroke="white" points="1536.25,-1237 1358.25,-1237 1358.25,-1201 1536.25,-1201 1536.25,-1237"/>
+<text text-anchor="middle" x="1447.25" y="-1214.33" font-family="Tahoma" font-size="14.00">all file extensions / ps1 (1)</text>
+</g>
+<!-- all file extensions / cs (2)&#45;&#45;all file extensions / ps1 (1) -->
+<g id="edge26" class="edge">
+<title>all file extensions / cs (2)&#45;&#45;all file extensions / ps1 (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2004.06,-1210.48C1904.08,-1205.85 1732.31,-1200.17 1585,-1206.75 1569.28,-1207.45 1552.58,-1208.61 1536.45,-1209.93"/>
+<text text-anchor="middle" x="1683.38" y="-1209.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / cshtml (1)&#45;&#45;all file extensions / ps1 (1) -->
+<g id="edge27" class="edge">
+<title>all file extensions / cshtml (1)&#45;&#45;all file extensions / ps1 (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1584.78,-1235.91C1568.85,-1233.94 1552.42,-1231.9 1536.72,-1229.96"/>
+<text text-anchor="middle" x="1560.62" y="-1236.35" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / in (1)&#45;&#45;all file extensions / css (3) -->
+<g id="edge32" class="edge">
+<title>all file extensions / in (1)&#45;&#45;all file extensions / css (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1663.22,-336.41C1619.2,-378.71 1511.3,-482.41 1467.35,-524.65"/>
+<text text-anchor="middle" x="1560.62" y="-440.1" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / in (1)&#45;&#45;all file extensions / cfg (1) -->
+<g id="edge33" class="edge">
+<title>all file extensions / in (1)&#45;&#45;all file extensions / cfg (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1599.18,-300.27C1578.68,-296.36 1556.73,-292.55 1536.25,-289.75 1458.34,-279.1 1369.06,-272.35 1304.88,-268.45"/>
+<text text-anchor="middle" x="1447.25" y="-292.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / in (1)&#45;&#45;all file extensions / py (3) -->
+<g id="edge34" class="edge">
+<title>all file extensions / in (1)&#45;&#45;all file extensions / py (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1636,-299.55C1607.6,-288.91 1570.3,-276.07 1536.25,-268 1376.36,-230.09 1183.8,-220.58 1075.47,-218.4"/>
+<text text-anchor="middle" x="1333.88" y="-237.7" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / in (1)&#45;&#45;all file extensions / sql (1) -->
+<g id="edge35" class="edge">
+<title>all file extensions / in (1)&#45;&#45;all file extensions / sql (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1599.31,-318.36C1426.62,-319.12 1030.37,-320.86 855.15,-321.62"/>
+<text text-anchor="middle" x="1216.75" y="-323.27" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / cfg (1)&#45;&#45;all file extensions / py (3) -->
+<g id="edge39" class="edge">
+<title>all file extensions / cfg (1)&#45;&#45;all file extensions / py (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1128.39,-246.15C1111.09,-242.61 1092.94,-238.91 1075.72,-235.39"/>
+<text text-anchor="middle" x="1099.62" y="-243.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / cfg (1)&#45;&#45;all file extensions / sql (1) -->
+<g id="edge40" class="edge">
+<title>all file extensions / cfg (1)&#45;&#45;all file extensions / sql (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1128.42,-269.72C1065.74,-274.46 979.39,-282.29 904,-293.75 886.38,-296.43 867.59,-299.94 849.81,-303.57"/>
+<text text-anchor="middle" x="989.62" y="-296.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / py (3)&#45;&#45;all file extensions / h (3) -->
+<g id="edge51" class="edge">
+<title>all file extensions / py (3)&#45;&#45;all file extensions / h (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M940.45,-199.57C903.86,-185.56 853.75,-166.39 817.18,-152.39"/>
+<text text-anchor="middle" x="879.62" y="-181.37" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / py (3)&#45;&#45;all file extensions / sql (1) -->
+<g id="edge41" class="edge">
+<title>all file extensions / py (3)&#45;&#45;all file extensions / sql (1)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M913.21,-236.4C899.63,-240.74 885.81,-245.85 873.25,-251.75 843.25,-265.84 812.16,-287.96 791.86,-303.61"/>
+<text text-anchor="middle" x="879.62" y="-254.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / kts (1) -->
+<g id="node22" class="node">
+<title>all file extensions / kts (1)</title>
+<polygon fill="grey" stroke="white" points="2408,-1159 2233.75,-1159 2233.75,-1123 2408,-1123 2408,-1159"/>
+<text text-anchor="middle" x="2320.88" y="-1136.33" font-family="Tahoma" font-size="14.00">all file extensions / kts (1)</text>
+</g>
+<!-- all file extensions / kts (1)&#45;&#45;all file extensions / kt (2) -->
+<g id="edge47" class="edge">
+<title>all file extensions / kts (1)&#45;&#45;all file extensions / kt (2)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M2233.5,-1140.05C2221.97,-1140.36 2210.32,-1140.9 2199.25,-1141.75 2190.95,-1142.39 2182.33,-1143.28 2173.73,-1144.32"/>
+<text text-anchor="middle" x="2205.62" y="-1144.6" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / m (1) -->
+<g id="node23" class="node">
+<title>all file extensions / m (1)</title>
+<polygon fill="grey" stroke="white" points="1531.75,-164 1362.75,-164 1362.75,-128 1531.75,-128 1531.75,-164"/>
+<text text-anchor="middle" x="1447.25" y="-141.32" font-family="Tahoma" font-size="14.00">all file extensions / m (1)</text>
+</g>
+<!-- all file extensions / m (1)&#45;&#45;all file extensions / swift (4) -->
+<g id="edge48" class="edge">
+<title>all file extensions / m (1)&#45;&#45;all file extensions / swift (4)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1362.46,-155.53C1345.27,-157.49 1327.08,-159.56 1309.62,-161.55"/>
+<text text-anchor="middle" x="1333.88" y="-161.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / m (1)&#45;&#45;all file extensions / h (3) -->
+<g id="edge49" class="edge">
+<title>all file extensions / m (1)&#45;&#45;all file extensions / h (3)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1362.54,-144.52C1231.71,-142.2 980.36,-137.74 850.79,-135.45"/>
+<text text-anchor="middle" x="1099.62" y="-142.71" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / less (1)&#45;&#45;all file extensions / js (12) -->
+<g id="edge53" class="edge">
+<title>all file extensions / less (1)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M1799.36,-1069.42C1733.64,-1069.69 1642.07,-1070 1561.62,-1070 1561.62,-1070 1561.62,-1070 542.25,-1070 488.02,-1070 462.67,-1079.5 423.5,-1042 370.97,-991.71 332.26,-758.45 322.04,-691.2"/>
+<text text-anchor="middle" x="1099.62" y="-1072.85" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+<!-- all file extensions / hbs (1)&#45;&#45;all file extensions / js (12) -->
+<g id="edge62" class="edge">
+<title>all file extensions / hbs (1)&#45;&#45;all file extensions / js (12)</title>
+<path fill="none" stroke="#00688b" stroke-opacity="0.368627" d="M489.93,-733.51C469.23,-726.2 445.24,-717.71 423.5,-710 406.5,-703.97 387.95,-697.39 371.27,-691.46"/>
+<text text-anchor="middle" x="429.88" y="-716.26" font-family="Arial" font-size="12.00"> 1 </text>
+</g>
+</g>
+</svg>

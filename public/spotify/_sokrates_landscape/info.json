@@ -1,0 +1,428 @@
+{
+  "subLandscapes" : [ ],
+  "repositories" : [ {
+    "analysisResultsPath" : "s3mper/data/analysisResults.json",
+    "htmlReportsRoot" : "s3mper/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "java-locales/data/analysisResults.json",
+    "htmlReportsRoot" : "java-locales/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "should-up/data/analysisResults.json",
+    "htmlReportsRoot" : "should-up/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "DataflowJavaSDK/data/analysisResults.json",
+    "htmlReportsRoot" : "DataflowJavaSDK/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "lighthouse-audit-service/data/analysisResults.json",
+    "htmlReportsRoot" : "lighthouse-audit-service/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "vispana/data/analysisResults.json",
+    "htmlReportsRoot" : "vispana/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "tfx/data/analysisResults.json",
+    "htmlReportsRoot" : "tfx/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "heroic-client-java/data/analysisResults.json",
+    "htmlReportsRoot" : "heroic-client-java/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "Vandelay/data/analysisResults.json",
+    "htmlReportsRoot" : "Vandelay/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "backup-utils/data/analysisResults.json",
+    "htmlReportsRoot" : "backup-utils/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-android/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-android/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "diffuser/data/analysisResults.json",
+    "htmlReportsRoot" : "diffuser/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "cstar/data/analysisResults.json",
+    "htmlReportsRoot" : "cstar/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "basic-pitch-ts/data/analysisResults.json",
+    "htmlReportsRoot" : "basic-pitch-ts/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "simple-bigtable/data/analysisResults.json",
+    "htmlReportsRoot" : "simple-bigtable/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-java/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-java/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ulogger/data/analysisResults.json",
+    "htmlReportsRoot" : "ulogger/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-rust/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-rust/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "google-http-java-client/data/analysisResults.json",
+    "htmlReportsRoot" : "google-http-java-client/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-go/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-go/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "folsom/data/analysisResults.json",
+    "htmlReportsRoot" : "folsom/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-flutter/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-flutter/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "missinglink/data/analysisResults.json",
+    "htmlReportsRoot" : "missinglink/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "cookiecutter-golang/data/analysisResults.json",
+    "htmlReportsRoot" : "cookiecutter-golang/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ratatool/data/analysisResults.json",
+    "htmlReportsRoot" : "ratatool/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "pedalboard/data/analysisResults.json",
+    "htmlReportsRoot" : "pedalboard/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dockerfile-mode/data/analysisResults.json",
+    "htmlReportsRoot" : "dockerfile-mode/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "homebrew-public/data/analysisResults.json",
+    "htmlReportsRoot" : "homebrew-public/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "flink/data/analysisResults.json",
+    "htmlReportsRoot" : "flink/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "completable-futures/data/analysisResults.json",
+    "htmlReportsRoot" : "completable-futures/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "XCRemoteCache/data/analysisResults.json",
+    "htmlReportsRoot" : "XCRemoteCache/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "big-data-rosetta-code/data/analysisResults.json",
+    "htmlReportsRoot" : "big-data-rosetta-code/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "perf-map-agent/data/analysisResults.json",
+    "htmlReportsRoot" : "perf-map-agent/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-js/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-js/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "luigi/data/analysisResults.json",
+    "htmlReportsRoot" : "luigi/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ios-auth/data/analysisResults.json",
+    "htmlReportsRoot" : "ios-auth/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "voyager/data/analysisResults.json",
+    "htmlReportsRoot" : "voyager/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "proto-registry/data/analysisResults.json",
+    "htmlReportsRoot" : "proto-registry/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "container-agent/data/analysisResults.json",
+    "htmlReportsRoot" : "container-agent/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "spotify-web-api-ts-sdk/data/analysisResults.json",
+    "htmlReportsRoot" : "spotify-web-api-ts-sdk/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "spotify-web-playback-sdk-example/data/analysisResults.json",
+    "htmlReportsRoot" : "spotify-web-playback-sdk-example/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "android-sdk/data/analysisResults.json",
+    "htmlReportsRoot" : "android-sdk/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "magnolify/data/analysisResults.json",
+    "htmlReportsRoot" : "magnolify/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dh-virtualenv/data/analysisResults.json",
+    "htmlReportsRoot" : "dh-virtualenv/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "klio/data/analysisResults.json",
+    "htmlReportsRoot" : "klio/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "web-api-examples/data/analysisResults.json",
+    "htmlReportsRoot" : "web-api-examples/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "github-java-client/data/analysisResults.json",
+    "htmlReportsRoot" : "github-java-client/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "annoy/data/analysisResults.json",
+    "htmlReportsRoot" : "annoy/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "shumway/data/analysisResults.json",
+    "htmlReportsRoot" : "shumway/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "postgresql-metrics/data/analysisResults.json",
+    "htmlReportsRoot" : "postgresql-metrics/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "soa-reference-integration/data/analysisResults.json",
+    "htmlReportsRoot" : "soa-reference-integration/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "conversion-api-tag-template/data/analysisResults.json",
+    "htmlReportsRoot" : "conversion-api-tag-template/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scio.g8/data/analysisResults.json",
+    "htmlReportsRoot" : "scio.g8/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "spotify-tensorflow/data/analysisResults.json",
+    "htmlReportsRoot" : "spotify-tensorflow/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ffwd-http-client/data/analysisResults.json",
+    "htmlReportsRoot" : "ffwd-http-client/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "spotify-json/data/analysisResults.json",
+    "htmlReportsRoot" : "spotify-json/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "mobius-android-sample/data/analysisResults.json",
+    "htmlReportsRoot" : "mobius-android-sample/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dbeam/data/analysisResults.json",
+    "htmlReportsRoot" : "dbeam/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scio-idea-plugin/data/analysisResults.json",
+    "htmlReportsRoot" : "scio-idea-plugin/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ios-sdk/data/analysisResults.json",
+    "htmlReportsRoot" : "ios-sdk/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "Mobius.swift/data/analysisResults.json",
+    "htmlReportsRoot" : "Mobius.swift/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "scio/data/analysisResults.json",
+    "htmlReportsRoot" : "scio/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "futures-extra/data/analysisResults.json",
+    "htmlReportsRoot" : "futures-extra/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "pythonflow/data/analysisResults.json",
+    "htmlReportsRoot" : "pythonflow/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "futuristic-feline/data/analysisResults.json",
+    "htmlReportsRoot" : "futuristic-feline/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "sparkey-java/data/analysisResults.json",
+    "htmlReportsRoot" : "sparkey-java/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "tfreader/data/analysisResults.json",
+    "htmlReportsRoot" : "tfreader/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "SPTPersistentCache/data/analysisResults.json",
+    "htmlReportsRoot" : "SPTPersistentCache/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-swift/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-swift/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ruler/data/analysisResults.json",
+    "htmlReportsRoot" : "ruler/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dataenum/data/analysisResults.json",
+    "htmlReportsRoot" : "dataenum/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "realbook/data/analysisResults.json",
+    "htmlReportsRoot" : "realbook/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "reactochart/data/analysisResults.json",
+    "htmlReportsRoot" : "reactochart/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "sparkey-python/data/analysisResults.json",
+    "htmlReportsRoot" : "sparkey-python/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "spotify.github.io/data/analysisResults.json",
+    "htmlReportsRoot" : "spotify.github.io/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "gcs-tools/data/analysisResults.json",
+    "htmlReportsRoot" : "gcs-tools/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "robolectric/data/analysisResults.json",
+    "htmlReportsRoot" : "robolectric/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "flyte-flink-plugin/data/analysisResults.json",
+    "htmlReportsRoot" : "flyte-flink-plugin/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "featran/data/analysisResults.json",
+    "htmlReportsRoot" : "featran/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "beam/data/analysisResults.json",
+    "htmlReportsRoot" : "beam/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "async-google-pubsub-client/data/analysisResults.json",
+    "htmlReportsRoot" : "async-google-pubsub-client/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "okta-sdk-python/data/analysisResults.json",
+    "htmlReportsRoot" : "okta-sdk-python/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "confidence-sdk-python/data/analysisResults.json",
+    "htmlReportsRoot" : "confidence-sdk-python/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "terraform-google-aws-hybrid-cloud-vpn/data/analysisResults.json",
+    "htmlReportsRoot" : "terraform-google-aws-hybrid-cloud-vpn/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "testing-game/data/analysisResults.json",
+    "htmlReportsRoot" : "testing-game/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "elitzur/data/analysisResults.json",
+    "htmlReportsRoot" : "elitzur/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ffwd-client-java/data/analysisResults.json",
+    "htmlReportsRoot" : "ffwd-client-java/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "semantic-metrics/data/analysisResults.json",
+    "htmlReportsRoot" : "semantic-metrics/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "logging-java/data/analysisResults.json",
+    "htmlReportsRoot" : "logging-java/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "mobius/data/analysisResults.json",
+    "htmlReportsRoot" : "mobius/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "sparkey/data/analysisResults.json",
+    "htmlReportsRoot" : "sparkey/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "fmt-maven-plugin/data/analysisResults.json",
+    "htmlReportsRoot" : "fmt-maven-plugin/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "SPTDataLoader/data/analysisResults.json",
+    "htmlReportsRoot" : "SPTDataLoader/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "lemur/data/analysisResults.json",
+    "htmlReportsRoot" : "lemur/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "volcano/data/analysisResults.json",
+    "htmlReportsRoot" : "volcano/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "gcp-aws-iam-federation-webidentity/data/analysisResults.json",
+    "htmlReportsRoot" : "gcp-aws-iam-federation-webidentity/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "chartify/data/analysisResults.json",
+    "htmlReportsRoot" : "chartify/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "cartography/data/analysisResults.json",
+    "htmlReportsRoot" : "cartography/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "soundcheck-demo-environment/data/analysisResults.json",
+    "htmlReportsRoot" : "soundcheck-demo-environment/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "flink-on-k8s-operator/data/analysisResults.json",
+    "htmlReportsRoot" : "flink-on-k8s-operator/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "android-auth/data/analysisResults.json",
+    "htmlReportsRoot" : "android-auth/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "java-hamcrest/data/analysisResults.json",
+    "htmlReportsRoot" : "java-hamcrest/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "web-scripts/data/analysisResults.json",
+    "htmlReportsRoot" : "web-scripts/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "XCMetrics/data/analysisResults.json",
+    "htmlReportsRoot" : "XCMetrics/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "basic-pitch/data/analysisResults.json",
+    "htmlReportsRoot" : "basic-pitch/html",
+    "note" : ""
+  } ]
+}

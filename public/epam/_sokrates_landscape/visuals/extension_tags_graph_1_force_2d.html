@@ -1,0 +1,3363 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "css",
+    "size" : 4
+  }, {
+    "id" : "[epam / gcp-bank-of-anthos]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-process-history-service-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / eco-kafka-manager]",
+    "size" : 1
+  }, {
+    "id" : "[epam / lifescience]",
+    "size" : 1
+  }, {
+    "id" : "py",
+    "size" : 28
+  }, {
+    "id" : "[epam / edp-nexus-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / atg-build-plugin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / kubernetes-kueue]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-zeroharm.fe]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-adapter-dial]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-kafka-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-smtp-server]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-google-components]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-kafka-api-core-base-image]",
+    "size" : 1
+  }, {
+    "id" : "java",
+    "size" : 102
+  }, {
+    "id" : "[epam / TimebaseCryptoConnectors]",
+    "size" : 1
+  }, {
+    "id" : "[epam / azurecnp]",
+    "size" : 1
+  }, {
+    "id" : "xml",
+    "size" : 8
+  }, {
+    "id" : "[epam / VelocityPlugin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-dso-client]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-app-builder-python]",
+    "size" : 1
+  }, {
+    "id" : "[epam / JDI]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-control-plane-jenkins]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-codebase-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-regulations-publication-stages]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-auth-helper]",
+    "size" : 1
+  }, {
+    "id" : "[epam / openvasp-java-client]",
+    "size" : 1
+  }, {
+    "id" : "[epam / NGB]",
+    "size" : 1
+  }, {
+    "id" : "[epam / fonda]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-keycloak-rest-api-ext]",
+    "size" : 1
+  }, {
+    "id" : "[epam / UUI]",
+    "size" : 1
+  }, {
+    "id" : "[epam / dail-quant]",
+    "size" : 1
+  }, {
+    "id" : "rb",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-algo-sample]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-dexctl]",
+    "size" : 1
+  }, {
+    "id" : "groovy",
+    "size" : 9
+  }, {
+    "id" : "[epam / edp-ddm-report-publisher]",
+    "size" : 1
+  }, {
+    "id" : "[epam / eco-commons-avro]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-risk-sample]",
+    "size" : 1
+  }, {
+    "id" : "[epam / checkstyle]",
+    "size" : 1
+  }, {
+    "id" : "[epam / parso]",
+    "size" : 1
+  }, {
+    "id" : "[epam / opencv]",
+    "size" : 1
+  }, {
+    "id" : "[epam / clocks]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-camunda-auth-cli]",
+    "size" : 1
+  }, {
+    "id" : "[epam / kubernetes-perf-tests]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-chat]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-sonar-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / covid-tracing-bluetooth-poc]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-kafka]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-fix-mdg-sample-python]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-user-publisher]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimeBaseGrafanaPlugin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / nfstrace]",
+    "size" : 1
+  }, {
+    "id" : "[epam / eco-commons-kafka]",
+    "size" : 1
+  }, {
+    "id" : "[epam / jsdmx]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-gabt.back-office-app]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-architecture]",
+    "size" : 1
+  }, {
+    "id" : "jsx",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-adapter-bedrock]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hubctl]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-rest-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ecc-azure-rulepack]",
+    "size" : 1
+  }, {
+    "id" : "[epam / sitecore-engx-scaffold]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Cake.Sitecore.Recipe]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-interceptors-sdk]",
+    "size" : 1
+  }, {
+    "id" : "[epam / HdDateTime]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-notifications]",
+    "size" : 1
+  }, {
+    "id" : "[epam / pymol-open-source]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-library-pipelines]",
+    "size" : 1
+  }, {
+    "id" : "[epam / CoroutinesCache]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Android-Secure-Storage]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial]",
+    "size" : 1
+  }, {
+    "id" : "[epam / DFP]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-history-excerptor-chart]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-audit]",
+    "size" : 1
+  }, {
+    "id" : "c",
+    "size" : 2
+  }, {
+    "id" : "[epam / eco-commons]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-empty-template-registry-regulation]",
+    "size" : 1
+  }, {
+    "id" : "i",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-python-fix-sample]",
+    "size" : 1
+  }, {
+    "id" : "m",
+    "size" : 2
+  }, {
+    "id" : "[epam / covid-resistance-mobile]",
+    "size" : 1
+  }, {
+    "id" : "cs",
+    "size" : 9
+  }, {
+    "id" : "tf",
+    "size" : 10
+  }, {
+    "id" : "[epam / edp-ddm-bp-webservice-gateway]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-kubeflow-components]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Indigo]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-control-plane-nexus]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ThreadAffinity]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-steps]",
+    "size" : 1
+  }, {
+    "id" : "[epam / deps-fe-usePolling]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-geoserver-publisher]",
+    "size" : 1
+  }, {
+    "id" : "ts",
+    "size" : 8
+  }, {
+    "id" : "[epam / TimeBaseCommons]",
+    "size" : 1
+  }, {
+    "id" : "[epam / CoroutinesExtensions]",
+    "size" : 1
+  }, {
+    "id" : "[epam / aws-syndicate]",
+    "size" : 1
+  }, {
+    "id" : "[epam / htsjdk-s3-plugin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-form-validation-client]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-backup-management]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Wilma]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-logger2]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-chaperone.contentful]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-notification-template-publisher]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-excerpt-worker]",
+    "size" : 1
+  }, {
+    "id" : "ps1",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-helm]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epam-kafka]",
+    "size" : 1
+  }, {
+    "id" : "psm1",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-ceph-client]",
+    "size" : 1
+  }, {
+    "id" : "[epam / OneDrive-L]",
+    "size" : 1
+  }, {
+    "id" : "[epam / model_garden]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ketcher]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-swagger]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-restws-samples]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-geo-server]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-excerpt-worker-docx]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-database]",
+    "size" : 1
+  }, {
+    "id" : "[epam / openvasp-java-host]",
+    "size" : 1
+  }, {
+    "id" : "[epam / badgerdoc]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-feign-annotation-error-decoder]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ecc-kubernetes-rulepack]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-cd-pipeline-operator]",
+    "size" : 1
+  }, {
+    "id" : "yaml",
+    "size" : 46
+  }, {
+    "id" : "[epam / edp-ddm-starter-logger]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-google-stacks]",
+    "size" : 1
+  }, {
+    "id" : "[epam / gmp-common]",
+    "size" : 1
+  }, {
+    "id" : "[epam / mriviewer]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-common]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-actuator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-excerpt-model]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Containers]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-process-history-model]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-platform-vault]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Constellation]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-excerpt-worker-csv]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-redis-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / kubernetes-jobset]",
+    "size" : 1
+  }, {
+    "id" : "[epam / libdt]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-install]",
+    "size" : 1
+  }, {
+    "id" : "[epam / gmp-bootstrap]",
+    "size" : 1
+  }, {
+    "id" : "[epam / cloud-pipeline]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimeBaseTutorial]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-localization]",
+    "size" : 1
+  }, {
+    "id" : "xsd",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-assistant]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-adapter-openai]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-report-exporter]",
+    "size" : 1
+  }, {
+    "id" : "[epam / oauth2_proxy]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-wiremock]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-fix-mdg-sample-java]",
+    "size" : 1
+  }, {
+    "id" : "svelte",
+    "size" : 1
+  }, {
+    "id" : "[epam / epam-graphql]",
+    "size" : 1
+  }, {
+    "id" : "[epam / JDI-Examples]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-jenkins-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-model-core-base-image]",
+    "size" : 1
+  }, {
+    "id" : "[epam / grid-engine-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-data-factory-client]",
+    "size" : 1
+  }, {
+    "id" : "[epam / acuity]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-strimzi-kafka-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / azurelz]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-azure-components]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-postgres]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-jenkins-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-connect-ed.admin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / homebrew-tap]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-excerpt-service-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimebaseWS-old]",
+    "size" : 1
+  }, {
+    "id" : "go",
+    "size" : 12
+  }, {
+    "id" : "[epam / AIRUN-LLM-Benchmark]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimeBaseClientCpp]",
+    "size" : 1
+  }, {
+    "id" : "[epam / sdmxsource]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-security]",
+    "size" : 1
+  }, {
+    "id" : "[epam / aws-ci-cd-accelerator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-chat-themes]",
+    "size" : 1
+  }, {
+    "id" : "[epam / gmp-tools]",
+    "size" : 1
+  }, {
+    "id" : "[epam / gcp-go2-auto]",
+    "size" : 1
+  }, {
+    "id" : "[epam / gpac]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-tests]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-history-excerptor]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-regulations-publication-pipeline]",
+    "size" : 1
+  }, {
+    "id" : "[epam / kubernetes-engine-samples]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-extensions]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Gepard]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-gerrit-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-zeroharm.be]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-bp-admin-portal]",
+    "size" : 1
+  }, {
+    "id" : "[epam / gflog]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-stacks]",
+    "size" : 1
+  }, {
+    "id" : "[epam / quanthub-portal]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimeBaseClientPython]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-tekton]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-liquibase-ext-schema]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epam.github.io]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-regulations-validator-cli]",
+    "size" : 1
+  }, {
+    "id" : "[epam / xdlc-ai]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-connect-ed.ui]",
+    "size" : 1
+  }, {
+    "id" : "[epam / wdl-workspace]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-control-plane-console]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hibernate-ogm]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-digital-document-service]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-keycloak-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimebaseOrderBook]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Zstandard]",
+    "size" : 1
+  }, {
+    "id" : "[epam / java-cme-mdp3-handler]",
+    "size" : 1
+  }, {
+    "id" : "[epam / headless-commerce-salesforce-accelerator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-stacks-disposer]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-form-data-storage]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Indigo-ELN-v.-2.0]",
+    "size" : 1
+  }, {
+    "id" : "[epam / AIRUN-LLM-Benchmark-Results]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-regulation-management]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-liquibase-ddm-ext]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-error-handler]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-rest-api-core-base-image]",
+    "size" : 1
+  }, {
+    "id" : "[epam / covid-resistance-back-end]",
+    "size" : 1
+  }, {
+    "id" : "js",
+    "size" : 20
+  }, {
+    "id" : "[epam / modular-sdk]",
+    "size" : 1
+  }, {
+    "id" : "[epam / r8s]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-cluster-kafka-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-adapter-vertexai]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ecc-openstack-rulepack]",
+    "size" : 1
+  }, {
+    "id" : "cljs",
+    "size" : 1
+  }, {
+    "id" : "[epam / AIRUN-Evaluation-Framework]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-analytics-realtime]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Sitecore-Reference-Storefront-on-Habitat]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-soap-api-core-base-image]",
+    "size" : 1
+  }, {
+    "id" : "ftl",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-trade-connector-sample]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-python-s3-sample]",
+    "size" : 1
+  }, {
+    "id" : "[epam / road-ios-framework]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ValuesTypes4Java]",
+    "size" : 1
+  }, {
+    "id" : "[epam / modular-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-gabt.user-app]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-headlamp]",
+    "size" : 1
+  }, {
+    "id" : "[epam / deps-be-message-flow]",
+    "size" : 1
+  }, {
+    "id" : "kt",
+    "size" : 3
+  }, {
+    "id" : "[epam / TimeBaseKafkaConnector]",
+    "size" : 1
+  }, {
+    "id" : "[epam / deps-fe-labeling-tool]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-message-payload-storage]",
+    "size" : 1
+  }, {
+    "id" : "[epam / sap-commerce-intellij-idea-plugin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-infrastructure-jenkins-agent]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-service-generation-utility]",
+    "size" : 1
+  }, {
+    "id" : "[epam / modular-service]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-user-settings-model]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-registry-configuration]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-platform-gateway]",
+    "size" : 1
+  }, {
+    "id" : "[epam / dail-xl]",
+    "size" : 1
+  }, {
+    "id" : "php",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-logging]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-redis-sentinel]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-starter-validation]",
+    "size" : 1
+  }, {
+    "id" : "[epam / carrier]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-platform-minio]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-data-model]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-low-code-platform-maven-tiles]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimebaseWS]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-kong-admin-tools]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-redash-chart]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-core]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-nexus]",
+    "size" : 1
+  }, {
+    "id" : "[epam / miew]",
+    "size" : 1
+  }, {
+    "id" : "html",
+    "size" : 1
+  }, {
+    "id" : "[epam / GMP]",
+    "size" : 1
+  }, {
+    "id" : "[epam / modular-cli]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-app-controller]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ai-dial-sdk]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ember-java-client]",
+    "size" : 1
+  }, {
+    "id" : "cpp",
+    "size" : 5
+  }, {
+    "id" : "[epam / edp-ddm-starter-juel-function]",
+    "size" : 1
+  }, {
+    "id" : "[epam / Lagerta]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ecc-gcp-rulepack]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-notification-service]",
+    "size" : 1
+  }, {
+    "id" : "[epam / TimeBaseClickhouseConnector]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-user-task-management]",
+    "size" : 1
+  }, {
+    "id" : "[epam / hub-state]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ecc-aws-rulepack]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-language-server]",
+    "size" : 1
+  }, {
+    "id" : "[epam / solidity-bootcamp]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-user-settings-service-api]",
+    "size" : 1
+  }, {
+    "id" : "[epam / lib-obj-c-attr]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-gerrit-operator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / openvasp-java-core]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-form-schema-provider]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-chaperone.ai]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-file-storage]",
+    "size" : 1
+  }, {
+    "id" : "[epam / eco-schema-catalog]",
+    "size" : 1
+  }, {
+    "id" : "[epam / pipeline-builder]",
+    "size" : 1
+  }, {
+    "id" : "[epam / OSCI]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-control-plane-gerrit]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-uva.mono]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epmgcip-chaperone.admin]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-kong]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-idm-client]",
+    "size" : 1
+  }, {
+    "id" : "[epam / fix-antenna-net-core]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-bpms]",
+    "size" : 1
+  }, {
+    "id" : "sql",
+    "size" : 1
+  }, {
+    "id" : "[epam / NativeUtils]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-form-submission-validation]",
+    "size" : 1
+  }, {
+    "id" : "[epam / sdtm_validator]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-dataplatform-jenkins-agent]",
+    "size" : 1
+  }, {
+    "id" : "tsx",
+    "size" : 12
+  }, {
+    "id" : "[epam / TimeBaseTimescaleConnector]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-monitoring]",
+    "size" : 1
+  }, {
+    "id" : "[epam / firecloud-ui]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-user-management]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-pgadmin-chart]",
+    "size" : 1
+  }, {
+    "id" : "[epam / agr-lib]",
+    "size" : 1
+  }, {
+    "id" : "[epam / AIRUN-Assistants-Benchmark-CodeBase]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-kafka-schema-registry]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-cluster-add-ons]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-hashicorp-vault]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-library-stages]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-process-history-service-persistence]",
+    "size" : 1
+  }, {
+    "id" : "[epam / modular-cli-sdk]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-user-process-management]",
+    "size" : 1
+  }, {
+    "id" : "[epam / ado-delivery-gantt]",
+    "size" : 1
+  }, {
+    "id" : "[epam / indigo-node]",
+    "size" : 1
+  }, {
+    "id" : "[epam / syndicate-rule-engine]",
+    "size" : 1
+  }, {
+    "id" : "[epam / epm-content-gen]",
+    "size" : 1
+  }, {
+    "id" : "[epam / xframework]",
+    "size" : 1
+  }, {
+    "id" : "lua",
+    "size" : 2
+  }, {
+    "id" : "[epam / edp-ddm-low-code-platform-parent]",
+    "size" : 1
+  }, {
+    "id" : "[epam / edp-ddm-redash]",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "[epam / edp-ddm-starter-database]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-database]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-excerpt-service-api]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-excerpt-service-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / fonda]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / fonda]",
+    "count" : 1
+  }, {
+    "source" : "[epam / GMP]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / GMP]",
+    "count" : 1
+  }, {
+    "source" : "[epam / acuity]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / acuity]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-excerpt-worker]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-excerpt-worker]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimebaseWS]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimebaseWS]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Android-Secure-Storage]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / Android-Secure-Storage]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-user-settings-service-api]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-user-settings-service-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-geoserver-publisher]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-geoserver-publisher]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gmp-common]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / gmp-common]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-auth-helper]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ai-dial-auth-helper]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-kafka-api-core-base-image]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-kafka-api-core-base-image]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-process-history-model]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-process-history-model]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimebaseWS-old]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimebaseWS-old]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-ceph-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-ceph-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / eco-commons-avro]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / eco-commons-avro]",
+    "count" : 1
+  }, {
+    "source" : "[epam / java-cme-mdp3-handler]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / java-cme-mdp3-handler]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-core]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ai-dial-core]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-security]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-security]",
+    "count" : 1
+  }, {
+    "source" : "[epam / eco-commons-kafka]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / eco-commons-kafka]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ThreadAffinity]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ThreadAffinity]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-notification-service]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-notification-service]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Lagerta]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / Lagerta]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-form-schema-provider]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-form-schema-provider]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Gepard]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / Gepard]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-camunda-auth-cli]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-camunda-auth-cli]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-regulations-validator-cli]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-registry-regulations-validator-cli]",
+    "count" : 1
+  }, {
+    "source" : "[epam / openvasp-java-host]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / openvasp-java-host]",
+    "count" : 1
+  }, {
+    "source" : "[epam / openvasp-java-core]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / openvasp-java-core]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-message-payload-storage]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-message-payload-storage]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-soap-api-core-base-image]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-soap-api-core-base-image]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-form-data-storage]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-form-data-storage]",
+    "count" : 1
+  }, {
+    "source" : "[epam / jsdmx]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / jsdmx]",
+    "count" : 1
+  }, {
+    "source" : "[epam / eco-kafka-manager]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / eco-kafka-manager]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseKafkaConnector]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimeBaseKafkaConnector]",
+    "count" : 1
+  }, {
+    "source" : "[epam / openvasp-java-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / openvasp-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-excerpt-model]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-excerpt-model]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gmp-bootstrap]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / gmp-bootstrap]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-excerpt-worker-docx]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-excerpt-worker-docx]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-digital-document-service]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-digital-document-service]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Wilma]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / Wilma]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ValuesTypes4Java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ValuesTypes4Java]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-validation]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-validation]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-report-exporter]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-report-exporter]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-logger]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-logger]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-user-process-management]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-user-process-management]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-user-publisher]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-user-publisher]",
+    "count" : 1
+  }, {
+    "source" : "[epam / grid-engine-api]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / grid-engine-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-report-publisher]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-report-publisher]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-service-generation-utility]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-service-generation-utility]",
+    "count" : 1
+  }, {
+    "source" : "[epam / htsjdk-s3-plugin]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / htsjdk-s3-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimebaseCryptoConnectors]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimebaseCryptoConnectors]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-fix-mdg-sample-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ember-fix-mdg-sample-java]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-notifications]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-notifications]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseCommons]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimeBaseCommons]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-bpms]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-bpms]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-risk-sample]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ember-risk-sample]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-history-excerptor]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-history-excerptor]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-error-handler]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-error-handler]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-liquibase-ddm-ext]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-liquibase-ddm-ext]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-actuator]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-actuator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / DFP]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / DFP]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-trade-connector-sample]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ember-trade-connector-sample]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-language-server]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-language-server]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-keycloak-rest-api-ext]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-keycloak-rest-api-ext]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-process-history-service-persistence]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-process-history-service-persistence]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gflog]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / gflog]",
+    "count" : 1
+  }, {
+    "source" : "[epam / AIRUN-Assistants-Benchmark-CodeBase]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / AIRUN-Assistants-Benchmark-CodeBase]",
+    "count" : 1
+  }, {
+    "source" : "[epam / eco-commons]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / eco-commons]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-swagger]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-swagger]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimebaseOrderBook]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimebaseOrderBook]",
+    "count" : 1
+  }, {
+    "source" : "[epam / JDI-Examples]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / JDI-Examples]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseClickhouseConnector]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimeBaseClickhouseConnector]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseTimescaleConnector]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / TimeBaseTimescaleConnector]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-idm-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-idm-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-model-core-base-image]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-model-core-base-image]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-data-factory-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-data-factory-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / parso]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / parso]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-kafka]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-kafka]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-process-history-service-api]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-process-history-service-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-excerpt-worker-csv]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-excerpt-worker-csv]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-kafka-api]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-kafka-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-audit]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-audit]",
+    "count" : 1
+  }, {
+    "source" : "[epam / sdmxsource]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / sdmxsource]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-user-settings-model]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-user-settings-model]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-notification-template-publisher]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-notification-template-publisher]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-bp-webservice-gateway]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-bp-webservice-gateway]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-rest-api-core-base-image]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-rest-api-core-base-image]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-java-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ember-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-regulation-management]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-registry-regulation-management]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-localization]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-localization]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-file-storage]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-file-storage]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-dso-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-dso-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-steps]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-registry-steps]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hibernate-ogm]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / hibernate-ogm]",
+    "count" : 1
+  }, {
+    "source" : "[epam / eco-schema-catalog]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / eco-schema-catalog]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-form-validation-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-form-validation-client]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-user-task-management]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-user-task-management]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-juel-function]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-juel-function]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-rest-api]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / edp-ddm-starter-rest-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-app-controller]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[epam / ai-dial-app-controller]",
+    "count" : 1
+  }, {
+    "source" : "[epam / nfstrace]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[epam / nfstrace]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Indigo]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[epam / Indigo]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseClientCpp]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[epam / TimeBaseClientCpp]",
+    "count" : 1
+  }, {
+    "source" : "[epam / opencv]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[epam / opencv]",
+    "count" : 1
+  }, {
+    "source" : "[epam / pymol-open-source]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[epam / pymol-open-source]",
+    "count" : 1
+  }, {
+    "source" : "[epam / sitecore-engx-scaffold]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / sitecore-engx-scaffold]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-restws-samples]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / ember-restws-samples]",
+    "count" : 1
+  }, {
+    "source" : "[epam / AIRUN-LLM-Benchmark]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / AIRUN-LLM-Benchmark]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / ai-dial]",
+    "count" : 1
+  }, {
+    "source" : "[epam / NGB]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / NGB]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Constellation]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / Constellation]",
+    "count" : 1
+  }, {
+    "source" : "[epam / cloud-pipeline]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / cloud-pipeline]",
+    "count" : 1
+  }, {
+    "source" : "[epam / miew]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / miew]",
+    "count" : 1
+  }, {
+    "source" : "[epam / wdl-workspace]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / wdl-workspace]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-state]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / hub-state]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-gabt.back-office-app]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / epmgcip-gabt.back-office-app]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-connect-ed.admin]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / epmgcip-connect-ed.admin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Indigo-ELN-v.-2.0]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / Indigo-ELN-v.-2.0]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-extensions]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / hub-extensions]",
+    "count" : 1
+  }, {
+    "source" : "[epam / JDI]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / JDI]",
+    "count" : 1
+  }, {
+    "source" : "[epam / xdlc-ai]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / xdlc-ai]",
+    "count" : 1
+  }, {
+    "source" : "[epam / mriviewer]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / mriviewer]",
+    "count" : 1
+  }, {
+    "source" : "[epam / indigo-node]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / indigo-node]",
+    "count" : 1
+  }, {
+    "source" : "[epam / xframework]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / xframework]",
+    "count" : 1
+  }, {
+    "source" : "[epam / pipeline-builder]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[epam / pipeline-builder]",
+    "count" : 1
+  }, {
+    "source" : "[epam / modular-cli-sdk]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / modular-cli-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[epam / modular-sdk]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / modular-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-chaperone.ai]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / epmgcip-chaperone.ai]",
+    "count" : 1
+  }, {
+    "source" : "[epam / modular-api]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / modular-api]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-adapter-dial]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-adapter-dial]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-analytics-realtime]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-analytics-realtime]",
+    "count" : 1
+  }, {
+    "source" : "[epam / OSCI]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / OSCI]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-redash]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / edp-ddm-redash]",
+    "count" : 1
+  }, {
+    "source" : "[epam / dail-quant]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / dail-quant]",
+    "count" : 1
+  }, {
+    "source" : "[epam / syndicate-rule-engine]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / syndicate-rule-engine]",
+    "count" : 1
+  }, {
+    "source" : "[epam / OneDrive-L]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / OneDrive-L]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-assistant]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-assistant]",
+    "count" : 1
+  }, {
+    "source" : "[epam / aws-syndicate]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / aws-syndicate]",
+    "count" : 1
+  }, {
+    "source" : "[epam / badgerdoc]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / badgerdoc]",
+    "count" : 1
+  }, {
+    "source" : "[epam / deps-be-message-flow]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / deps-be-message-flow]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-sdk]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[epam / modular-service]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / modular-service]",
+    "count" : 1
+  }, {
+    "source" : "[epam / r8s]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / r8s]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-adapter-bedrock]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-adapter-bedrock]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-adapter-openai]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-adapter-openai]",
+    "count" : 1
+  }, {
+    "source" : "[epam / carrier]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / carrier]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-python-fix-sample]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ember-python-fix-sample]",
+    "count" : 1
+  }, {
+    "source" : "[epam / modular-cli]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / modular-cli]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-fix-mdg-sample-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ember-fix-mdg-sample-python]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-interceptors-sdk]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-interceptors-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-app-builder-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-app-builder-python]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-python-s3-sample]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ember-python-s3-sample]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-adapter-vertexai]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[epam / ai-dial-adapter-vertexai]",
+    "count" : 1
+  }, {
+    "source" : "[epam / libdt]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[epam / libdt]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gpac]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[epam / gpac]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gcp-bank-of-anthos]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / gcp-bank-of-anthos]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-infrastructure-jenkins-agent]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-infrastructure-jenkins-agent]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-platform-gateway]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-platform-gateway]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-stacks]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / ai-stacks]",
+    "count" : 1
+  }, {
+    "source" : "[epam / kubernetes-kueue]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / kubernetes-kueue]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-smtp-server]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-smtp-server]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-history-excerptor-chart]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-history-excerptor-chart]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-logging]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-logging]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-control-plane-jenkins]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-control-plane-jenkins]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-cluster-add-ons]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-cluster-add-ons]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-kafka-schema-registry]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-kafka-schema-registry]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-chat-themes]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / ai-dial-chat-themes]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-gerrit-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-gerrit-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-pgadmin-chart]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-pgadmin-chart]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-google-stacks]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / hub-google-stacks]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-architecture]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-architecture]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-control-plane-nexus]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-control-plane-nexus]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-monitoring]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-monitoring]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-hashicorp-vault]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-hashicorp-vault]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-jenkins-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-jenkins-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / kubernetes-jobset]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / kubernetes-jobset]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-backup-management]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-backup-management]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseTutorial]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / TimeBaseTutorial]",
+    "count" : 1
+  }, {
+    "source" : "[epam / kubernetes-engine-samples]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / kubernetes-engine-samples]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-install]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-install]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-control-plane-gerrit]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-control-plane-gerrit]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-geo-server]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-geo-server]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-redash-chart]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-redash-chart]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-bp-admin-portal]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-bp-admin-portal]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-strimzi-kafka-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-strimzi-kafka-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-redis-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-redis-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-cluster-kafka-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-cluster-kafka-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / AIRUN-Evaluation-Framework]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / AIRUN-Evaluation-Framework]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-user-management]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-user-management]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-dataplatform-jenkins-agent]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-dataplatform-jenkins-agent]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-tekton]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-tekton]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gcp-go2-auto]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / gcp-go2-auto]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-google-components]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / hub-google-components]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-redis-sentinel]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-redis-sentinel]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-kubeflow-components]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / hub-kubeflow-components]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-nexus]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-nexus]",
+    "count" : 1
+  }, {
+    "source" : "[epam / kubernetes-perf-tests]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / kubernetes-perf-tests]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-nexus-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-nexus-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-helm]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / ai-dial-helm]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-configuration]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-registry-configuration]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-wiremock]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[epam / edp-ddm-wiremock]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-kong-admin-tools]",
+    "target" : "lua",
+    "count" : 1
+  }, {
+    "source" : "lua",
+    "target" : "[epam / edp-ddm-kong-admin-tools]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-kong]",
+    "target" : "lua",
+    "count" : 1
+  }, {
+    "source" : "lua",
+    "target" : "[epam / edp-ddm-kong]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-zeroharm.be]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / epmgcip-zeroharm.be]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-form-submission-validation]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / edp-ddm-form-submission-validation]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ai-dial-chat]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / ai-dial-chat]",
+    "count" : 1
+  }, {
+    "source" : "[epam / sdtm_validator]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / sdtm_validator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / dail-xl]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / dail-xl]",
+    "count" : 1
+  }, {
+    "source" : "[epam / deps-fe-usePolling]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / deps-fe-usePolling]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ketcher]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / ketcher]",
+    "count" : 1
+  }, {
+    "source" : "[epam / agr-lib]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[epam / agr-lib]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-chaperone.contentful]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / epmgcip-chaperone.contentful]",
+    "count" : 1
+  }, {
+    "source" : "[epam / clocks]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / clocks]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ado-delivery-gantt]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / ado-delivery-gantt]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-chaperone.admin]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / epmgcip-chaperone.admin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / model_garden]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / model_garden]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-zeroharm.fe]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / epmgcip-zeroharm.fe]",
+    "count" : 1
+  }, {
+    "source" : "[epam / AIRUN-LLM-Benchmark-Results]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / AIRUN-LLM-Benchmark-Results]",
+    "count" : 1
+  }, {
+    "source" : "[epam / UUI]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / UUI]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-headlamp]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / edp-headlamp]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-gabt.user-app]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / epmgcip-gabt.user-app]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseGrafanaPlugin]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / TimeBaseGrafanaPlugin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-uva.mono]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[epam / epmgcip-uva.mono]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epam-graphql]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / epam-graphql]",
+    "count" : 1
+  }, {
+    "source" : "[epam / covid-resistance-mobile]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / covid-resistance-mobile]",
+    "count" : 1
+  }, {
+    "source" : "[epam / covid-resistance-back-end]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / covid-resistance-back-end]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epam-kafka]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / epam-kafka]",
+    "count" : 1
+  }, {
+    "source" : "[epam / HdDateTime]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / HdDateTime]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Containers]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / Containers]",
+    "count" : 1
+  }, {
+    "source" : "[epam / NativeUtils]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / NativeUtils]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Zstandard]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / Zstandard]",
+    "count" : 1
+  }, {
+    "source" : "[epam / fix-antenna-net-core]",
+    "target" : "cs",
+    "count" : 1
+  }, {
+    "source" : "cs",
+    "target" : "[epam / fix-antenna-net-core]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ecc-openstack-rulepack]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / ecc-openstack-rulepack]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ecc-gcp-rulepack]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / ecc-gcp-rulepack]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-platform-vault]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / edp-ddm-platform-vault]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ecc-aws-rulepack]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / ecc-aws-rulepack]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ecc-azure-rulepack]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / ecc-azure-rulepack]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-azure-components]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / hub-azure-components]",
+    "count" : 1
+  }, {
+    "source" : "[epam / azurelz]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / azurelz]",
+    "count" : 1
+  }, {
+    "source" : "[epam / aws-ci-cd-accelerator]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / aws-ci-cd-accelerator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-platform-minio]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / edp-ddm-platform-minio]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ecc-kubernetes-rulepack]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[epam / ecc-kubernetes-rulepack]",
+    "count" : 1
+  }, {
+    "source" : "[epam / ember-algo-sample]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / ember-algo-sample]",
+    "count" : 1
+  }, {
+    "source" : "[epam / checkstyle]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / checkstyle]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-feign-annotation-error-decoder]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / edp-ddm-feign-annotation-error-decoder]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-starter-logger2]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / edp-ddm-starter-logger2]",
+    "count" : 1
+  }, {
+    "source" : "[epam / headless-commerce-salesforce-accelerator]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / headless-commerce-salesforce-accelerator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-data-model]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / edp-ddm-data-model]",
+    "count" : 1
+  }, {
+    "source" : "[epam / CoroutinesExtensions]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / CoroutinesExtensions]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-low-code-platform-maven-tiles]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[epam / edp-ddm-low-code-platform-maven-tiles]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-cd-pipeline-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-cd-pipeline-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / oauth2_proxy]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / oauth2_proxy]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-control-plane-console]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-ddm-control-plane-console]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-sonar-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-sonar-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-jenkins-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-jenkins-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-common]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-common]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-keycloak-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-keycloak-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-gerrit-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-gerrit-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-dexctl]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / hub-dexctl]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hubctl]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / hubctl]",
+    "count" : 1
+  }, {
+    "source" : "[epam / hub-stacks-disposer]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / hub-stacks-disposer]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-codebase-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[epam / edp-codebase-operator]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epmgcip-connect-ed.ui]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[epam / epmgcip-connect-ed.ui]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epm-content-gen]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[epam / epm-content-gen]",
+    "count" : 1
+  }, {
+    "source" : "[epam / lifescience]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[epam / lifescience]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Sitecore-Reference-Storefront-on-Habitat]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[epam / Sitecore-Reference-Storefront-on-Habitat]",
+    "count" : 1
+  }, {
+    "source" : "[epam / epam.github.io]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[epam / epam.github.io]",
+    "count" : 1
+  }, {
+    "source" : "[epam / covid-tracing-bluetooth-poc]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[epam / covid-tracing-bluetooth-poc]",
+    "count" : 1
+  }, {
+    "source" : "[epam / CoroutinesCache]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[epam / CoroutinesCache]",
+    "count" : 1
+  }, {
+    "source" : "[epam / sap-commerce-intellij-idea-plugin]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[epam / sap-commerce-intellij-idea-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / deps-fe-labeling-tool]",
+    "target" : "jsx",
+    "count" : 1
+  }, {
+    "source" : "jsx",
+    "target" : "[epam / deps-fe-labeling-tool]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-postgres]",
+    "target" : "sql",
+    "count" : 1
+  }, {
+    "source" : "sql",
+    "target" : "[epam / edp-ddm-registry-postgres]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-library-stages]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / edp-library-stages]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-tests]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / edp-ddm-registry-tests]",
+    "count" : 1
+  }, {
+    "source" : "[epam / atg-build-plugin]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / atg-build-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-library-pipelines]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / edp-library-pipelines]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-regulations-publication-stages]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / edp-ddm-registry-regulations-publication-stages]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-registry-regulations-publication-pipeline]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / edp-ddm-registry-regulations-publication-pipeline]",
+    "count" : 1
+  }, {
+    "source" : "[epam / gmp-tools]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / gmp-tools]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-low-code-platform-parent]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / edp-ddm-low-code-platform-parent]",
+    "count" : 1
+  }, {
+    "source" : "[epam / VelocityPlugin]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[epam / VelocityPlugin]",
+    "count" : 1
+  }, {
+    "source" : "[epam / firecloud-ui]",
+    "target" : "cljs",
+    "count" : 1
+  }, {
+    "source" : "cljs",
+    "target" : "[epam / firecloud-ui]",
+    "count" : 1
+  }, {
+    "source" : "[epam / road-ios-framework]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[epam / road-ios-framework]",
+    "count" : 1
+  }, {
+    "source" : "[epam / lib-obj-c-attr]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[epam / lib-obj-c-attr]",
+    "count" : 1
+  }, {
+    "source" : "[epam / Cake.Sitecore.Recipe]",
+    "target" : "ps1",
+    "count" : 1
+  }, {
+    "source" : "ps1",
+    "target" : "[epam / Cake.Sitecore.Recipe]",
+    "count" : 1
+  }, {
+    "source" : "[epam / quanthub-portal]",
+    "target" : "php",
+    "count" : 1
+  }, {
+    "source" : "php",
+    "target" : "[epam / quanthub-portal]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-empty-template-registry-regulation]",
+    "target" : "ftl",
+    "count" : 1
+  }, {
+    "source" : "ftl",
+    "target" : "[epam / edp-ddm-empty-template-registry-regulation]",
+    "count" : 1
+  }, {
+    "source" : "[epam / edp-ddm-liquibase-ext-schema]",
+    "target" : "xsd",
+    "count" : 1
+  }, {
+    "source" : "xsd",
+    "target" : "[epam / edp-ddm-liquibase-ext-schema]",
+    "count" : 1
+  }, {
+    "source" : "[epam / TimeBaseClientPython]",
+    "target" : "i",
+    "count" : 1
+  }, {
+    "source" : "i",
+    "target" : "[epam / TimeBaseClientPython]",
+    "count" : 1
+  }, {
+    "source" : "[epam / azurecnp]",
+    "target" : "psm1",
+    "count" : 1
+  }, {
+    "source" : "psm1",
+    "target" : "[epam / azurecnp]",
+    "count" : 1
+  }, {
+    "source" : "[epam / homebrew-tap]",
+    "target" : "rb",
+    "count" : 1
+  }, {
+    "source" : "rb",
+    "target" : "[epam / homebrew-tap]",
+    "count" : 1
+  }, {
+    "source" : "[epam / solidity-bootcamp]",
+    "target" : "svelte",
+    "count" : 1
+  }, {
+    "source" : "svelte",
+    "target" : "[epam / solidity-bootcamp]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

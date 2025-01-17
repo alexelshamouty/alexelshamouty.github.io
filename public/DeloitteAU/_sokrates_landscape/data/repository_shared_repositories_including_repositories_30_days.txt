@@ -1,0 +1,3 @@
+Contributor 1	Contributor 2	# shared repositories
+101617755+jinxitian@users.noreply.github.com	[DeloitteAU / Charts]	1
+40154418+hollywoodinvegas@users.noreply.github.com	[DeloitteAU / Atlas]	1

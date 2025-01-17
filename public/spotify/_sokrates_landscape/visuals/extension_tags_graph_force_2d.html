@@ -1,0 +1,4739 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "css",
+    "size" : 18
+  }, {
+    "id" : "[spotify / container-agent]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / lemur]",
+    "size" : 8
+  }, {
+    "id" : "sbt",
+    "size" : 11
+  }, {
+    "id" : "[spotify / scio-idea-plugin]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / sparkey]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / tfx]",
+    "size" : 8
+  }, {
+    "id" : "py",
+    "size" : 57
+  }, {
+    "id" : "[spotify / completable-futures]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / flink]",
+    "size" : 18
+  }, {
+    "id" : "[spotify / gcs-tools]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / s3mper]",
+    "size" : 4
+  }, {
+    "id" : "java",
+    "size" : 70
+  }, {
+    "id" : "[spotify / should-up]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / SPTPersistentCache]",
+    "size" : 4
+  }, {
+    "id" : "bzl",
+    "size" : 1
+  }, {
+    "id" : "xml",
+    "size" : 25
+  }, {
+    "id" : "sass",
+    "size" : 1
+  }, {
+    "id" : "nix",
+    "size" : 2
+  }, {
+    "id" : "[spotify / mobius-android-sample]",
+    "size" : 5
+  }, {
+    "id" : "clj",
+    "size" : 1
+  }, {
+    "id" : "[spotify / heroic-client-java]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / sparkey-java]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / ffwd-client-java]",
+    "size" : 4
+  }, {
+    "id" : "in",
+    "size" : 19
+  }, {
+    "id" : "kts",
+    "size" : 3
+  }, {
+    "id" : "[spotify / flink-on-k8s-operator]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / folsom]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / spotify-web-playback-sdk-example]",
+    "size" : 6
+  }, {
+    "id" : "rb",
+    "size" : 5
+  }, {
+    "id" : "[spotify / robolectric]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / confidence-sdk-android]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / async-google-pubsub-client]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / homebrew-public]",
+    "size" : 2
+  }, {
+    "id" : "groovy",
+    "size" : 2
+  }, {
+    "id" : "[spotify / dockerfile-mode]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / dataenum]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / big-data-rosetta-code]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / DataflowJavaSDK]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / ios-sdk]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / SPTDataLoader]",
+    "size" : 5
+  }, {
+    "id" : "rs",
+    "size" : 2
+  }, {
+    "id" : "[spotify / futuristic-feline]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / testing-game]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / XCRemoteCache]",
+    "size" : 7
+  }, {
+    "id" : "js",
+    "size" : 21
+  }, {
+    "id" : "[spotify / vispana]",
+    "size" : 7
+  }, {
+    "id" : "[spotify / magnolify]",
+    "size" : 6
+  }, {
+    "id" : "jsx",
+    "size" : 2
+  }, {
+    "id" : "[spotify / cartography]",
+    "size" : 3
+  }, {
+    "id" : "dart",
+    "size" : 2
+  }, {
+    "id" : "[spotify / Mobius.swift]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / Vandelay]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / semantic-metrics]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / lighthouse-audit-service]",
+    "size" : 4
+  }, {
+    "id" : "pxd",
+    "size" : 2
+  }, {
+    "id" : "[spotify / android-auth]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / volcano]",
+    "size" : 5
+  }, {
+    "id" : "ftl",
+    "size" : 2
+  }, {
+    "id" : "[spotify / pedalboard]",
+    "size" : 9
+  }, {
+    "id" : "cc",
+    "size" : 1
+  }, {
+    "id" : "st",
+    "size" : 2
+  }, {
+    "id" : "[spotify / ulogger]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / confidence-sdk-go]",
+    "size" : 4
+  }, {
+    "id" : "c",
+    "size" : 5
+  }, {
+    "id" : "[spotify / confidence-sdk-rust]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / ios-auth]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / voyager]",
+    "size" : 8
+  }, {
+    "id" : "cfg",
+    "size" : 17
+  }, {
+    "id" : "[spotify / featran]",
+    "size" : 7
+  }, {
+    "id" : "h",
+    "size" : 18
+  }, {
+    "id" : "[spotify / spotify-web-api-ts-sdk]",
+    "size" : 6
+  }, {
+    "id" : "avsc",
+    "size" : 3
+  }, {
+    "id" : "kt",
+    "size" : 9
+  }, {
+    "id" : "hpp",
+    "size" : 2
+  }, {
+    "id" : "i",
+    "size" : 1
+  }, {
+    "id" : "[spotify / shumway]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / confidence-sdk-java]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / dh-virtualenv]",
+    "size" : 4
+  }, {
+    "id" : "toml",
+    "size" : 10
+  }, {
+    "id" : "m",
+    "size" : 7
+  }, {
+    "id" : "[spotify / diffuser]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / sparkey-python]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / luigi]",
+    "size" : 7
+  }, {
+    "id" : "tpl",
+    "size" : 3
+  }, {
+    "id" : "tf",
+    "size" : 4
+  }, {
+    "id" : "[spotify / basic-pitch]",
+    "size" : 5
+  }, {
+    "id" : "rdf",
+    "size" : 1
+  }, {
+    "id" : "[spotify / okta-sdk-python]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "size" : 3
+  }, {
+    "id" : "mjs",
+    "size" : 1
+  }, {
+    "id" : "ts",
+    "size" : 16
+  }, {
+    "id" : "pyi",
+    "size" : 3
+  }, {
+    "id" : "[spotify / spotify.github.io]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / mobius]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / confidence]",
+    "size" : 6
+  }, {
+    "id" : "rockspec",
+    "size" : 1
+  }, {
+    "id" : "scss",
+    "size" : 2
+  }, {
+    "id" : "[spotify / google-http-java-client]",
+    "size" : 5
+  }, {
+    "id" : "[spotify / android-sdk]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / scio.g8]",
+    "size" : 4
+  }, {
+    "id" : "pyx",
+    "size" : 2
+  }, {
+    "id" : "[spotify / cstar]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / postgresql-metrics]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / logging-java]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / flyte-flink-plugin]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / tfreader]",
+    "size" : 6
+  }, {
+    "id" : "html",
+    "size" : 19
+  }, {
+    "id" : "[spotify / soundcheck-demo-environment]",
+    "size" : 5
+  }, {
+    "id" : "ipynb",
+    "size" : 1
+  }, {
+    "id" : "[spotify / basic-pitch-ts]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / perf-map-agent]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / soa-reference-integration]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / ratatool]",
+    "size" : 7
+  }, {
+    "id" : "yaml",
+    "size" : 71
+  }, {
+    "id" : "swift",
+    "size" : 15
+  }, {
+    "id" : "mm",
+    "size" : 1
+  }, {
+    "id" : "[spotify / confidence-sdk-python]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / confidence-sdk-js]",
+    "size" : 7
+  }, {
+    "id" : "cpp",
+    "size" : 3
+  }, {
+    "id" : "el",
+    "size" : 2
+  }, {
+    "id" : "less",
+    "size" : 2
+  }, {
+    "id" : "pro",
+    "size" : 2
+  }, {
+    "id" : "[spotify / spotify-json]",
+    "size" : 3
+  }, {
+    "id" : "edn",
+    "size" : 1
+  }, {
+    "id" : "[spotify / dbeam]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / XCMetrics]",
+    "size" : 7
+  }, {
+    "id" : "[spotify / java-locales]",
+    "size" : 3
+  }, {
+    "id" : "proto",
+    "size" : 13
+  }, {
+    "id" : "[spotify / proto-registry]",
+    "size" : 8
+  }, {
+    "id" : "[spotify / cookiecutter-golang]",
+    "size" : 5
+  }, {
+    "id" : "gemspec",
+    "size" : 1
+  }, {
+    "id" : "[spotify / java-hamcrest]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / ruler]",
+    "size" : 7
+  }, {
+    "id" : "scala",
+    "size" : 18
+  }, {
+    "id" : "[spotify / fmt-maven-plugin]",
+    "size" : 3
+  }, {
+    "id" : "mako",
+    "size" : 1
+  }, {
+    "id" : "sql",
+    "size" : 2
+  }, {
+    "id" : "[spotify / simple-bigtable]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / confidence-sdk-swift]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / elitzur]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / annoy]",
+    "size" : 9
+  }, {
+    "id" : "[spotify / missinglink]",
+    "size" : 4
+  }, {
+    "id" : "tsx",
+    "size" : 8
+  }, {
+    "id" : "[spotify / confidence-sdk-flutter]",
+    "size" : 7
+  }, {
+    "id" : "[spotify / realbook]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / pythonflow]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / web-api-examples]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / klio]",
+    "size" : 9
+  }, {
+    "id" : "[spotify / ffwd-http-client]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / web-scripts]",
+    "size" : 6
+  }, {
+    "id" : "[spotify / scio]",
+    "size" : 9
+  }, {
+    "id" : "[spotify / spotify-tensorflow]",
+    "size" : 5
+  }, {
+    "id" : "go",
+    "size" : 10
+  }, {
+    "id" : "[spotify / github-java-client]",
+    "size" : 4
+  }, {
+    "id" : "cjs",
+    "size" : 1
+  }, {
+    "id" : "[spotify / reactochart]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / futures-extra]",
+    "size" : 3
+  }, {
+    "id" : "[spotify / chartify]",
+    "size" : 4
+  }, {
+    "id" : "[spotify / beam]",
+    "size" : 26
+  }, {
+    "id" : "[spotify / conversion-api-tag-template]",
+    "size" : 2
+  }, {
+    "id" : "[spotify / gcp-aws-iam-federation-webidentity]",
+    "size" : 2
+  }, {
+    "id" : "pm",
+    "size" : 1
+  } ],
+  "links" : [ {
+    "source" : "[spotify / s3mper]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / s3mper]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / java-locales]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / java-locales]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / DataflowJavaSDK]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / DataflowJavaSDK]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Vandelay]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / Vandelay]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / simple-bigtable]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / simple-bigtable]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / confidence-sdk-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / google-http-java-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / google-http-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / folsom]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / folsom]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / missinglink]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / missinglink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / completable-futures]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / completable-futures]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / github-java-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / github-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-http-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / ffwd-http-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius-android-sample]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / mobius-android-sample]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dbeam]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / dbeam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / futures-extra]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / futures-extra]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / futuristic-feline]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / futuristic-feline]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / sparkey-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dataenum]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / dataenum]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / robolectric]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / robolectric]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / async-google-pubsub-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / async-google-pubsub-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-client-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / ffwd-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / semantic-metrics]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / semantic-metrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / logging-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / logging-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / mobius]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / fmt-maven-plugin]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / fmt-maven-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-auth]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / android-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / java-hamcrest]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / java-hamcrest]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cstar]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / cstar]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ulogger]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / ulogger]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / confidence]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / container-agent]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / container-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dh-virtualenv]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / dh-virtualenv]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / shumway]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / shumway]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / postgresql-metrics]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / postgresql-metrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-tensorflow]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / spotify-tensorflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pythonflow]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / pythonflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / realbook]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / realbook]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / sparkey-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / okta-sdk-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / okta-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / confidence-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / testing-game]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / testing-game]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / chartify]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / chartify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cartography]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / cartography]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / basic-pitch]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / big-data-rosetta-code]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / big-data-rosetta-code]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / magnolify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / elitzur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / conversion-api-tag-template]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / conversion-api-tag-template]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / volcano]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / volcano]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink-on-k8s-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / flink-on-k8s-operator]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-go]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / confidence-sdk-go]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cookiecutter-golang]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / cookiecutter-golang]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flyte-flink-plugin]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / flyte-flink-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / diffuser]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / diffuser]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-auth]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / ios-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Mobius.swift]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / Mobius.swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-swift]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / confidence-sdk-swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-sdk]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / ios-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / should-up]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / should-up]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / reactochart]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / reactochart]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lighthouse-audit-service]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / lighthouse-audit-service]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch-ts]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / basic-pitch-ts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-api-ts-sdk]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / spotify-web-api-ts-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-scripts]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / web-scripts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-api-examples]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / web-api-examples]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify.github.io]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / spotify.github.io]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfreader]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / tfreader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / heroic-client-java]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / heroic-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-android]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / confidence-sdk-android]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio.g8]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / scio.g8]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTPersistentCache]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / SPTPersistentCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTDataLoader]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / SPTDataLoader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-playback-sdk-example]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / spotify-web-playback-sdk-example]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-sdk]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / android-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soa-reference-integration]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / soa-reference-integration]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / perf-map-agent]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[spotify / perf-map-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[spotify / sparkey]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-json]",
+    "target" : "hpp",
+    "count" : 1
+  }, {
+    "source" : "hpp",
+    "target" : "[spotify / spotify-json]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soundcheck-demo-environment]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / soundcheck-demo-environment]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-rust]",
+    "target" : "rs",
+    "count" : 1
+  }, {
+    "source" : "rs",
+    "target" : "[spotify / confidence-sdk-rust]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / homebrew-public]",
+    "target" : "rb",
+    "count" : 1
+  }, {
+    "source" : "rb",
+    "target" : "[spotify / homebrew-public]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcp-aws-iam-federation-webidentity]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[spotify / gcp-aws-iam-federation-webidentity]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "dart",
+    "count" : 1
+  }, {
+    "source" : "dart",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dockerfile-mode]",
+    "target" : "el",
+    "count" : 1
+  }, {
+    "source" : "el",
+    "target" : "[spotify / dockerfile-mode]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / s3mper]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / s3mper]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / java-locales]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / java-locales]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / DataflowJavaSDK]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / DataflowJavaSDK]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / heroic-client-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / heroic-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Vandelay]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / Vandelay]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / diffuser]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / diffuser]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / simple-bigtable]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / simple-bigtable]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / confidence-sdk-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / google-http-java-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / google-http-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / folsom]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / folsom]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / missinglink]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / missinglink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / completable-futures]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / completable-futures]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / perf-map-agent]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / perf-map-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-sdk]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / android-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / magnolify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / github-java-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / github-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-http-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / ffwd-http-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius-android-sample]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / mobius-android-sample]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dbeam]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / dbeam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / futures-extra]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / futures-extra]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / futuristic-feline]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / futuristic-feline]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / sparkey-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dataenum]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / dataenum]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / robolectric]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / robolectric]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / async-google-pubsub-client]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / async-google-pubsub-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-client-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / ffwd-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / semantic-metrics]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / semantic-metrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / logging-java]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / logging-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / mobius]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / fmt-maven-plugin]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / fmt-maven-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-auth]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / android-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / java-hamcrest]",
+    "target" : "java",
+    "count" : 1
+  }, {
+    "source" : "java",
+    "target" : "[spotify / java-hamcrest]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / s3mper]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / s3mper]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cstar]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / cstar]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ulogger]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / ulogger]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-rust]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / confidence-sdk-rust]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / google-http-java-client]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / google-http-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / confidence]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cookiecutter-golang]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / cookiecutter-golang]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / container-agent]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / container-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dh-virtualenv]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / dh-virtualenv]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / shumway]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / shumway]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / postgresql-metrics]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / postgresql-metrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-tensorflow]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / spotify-tensorflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pythonflow]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / pythonflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-swift]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / confidence-sdk-swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / realbook]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / realbook]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / sparkey-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flyte-flink-plugin]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / flyte-flink-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / okta-sdk-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / okta-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-python]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / confidence-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / testing-game]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / testing-game]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / semantic-metrics]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / semantic-metrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / volcano]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / volcano]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / chartify]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / chartify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cartography]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / cartography]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch]",
+    "target" : "py",
+    "count" : 1
+  }, {
+    "source" : "py",
+    "target" : "[spotify / basic-pitch]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / big-data-rosetta-code]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / big-data-rosetta-code]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / magnolify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio.g8]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / scio.g8]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfreader]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / tfreader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "scala",
+    "count" : 1
+  }, {
+    "source" : "scala",
+    "target" : "[spotify / elitzur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / java-locales]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / java-locales]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / heroic-client-java]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / heroic-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Vandelay]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / Vandelay]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-android]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence-sdk-android]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch-ts]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / basic-pitch-ts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-java]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence-sdk-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ulogger]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / ulogger]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-go]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence-sdk-go]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / folsom]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / folsom]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / missinglink]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / missinglink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cookiecutter-golang]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / cookiecutter-golang]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / completable-futures]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / completable-futures]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / big-data-rosetta-code]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / big-data-rosetta-code]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / container-agent]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / container-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-playback-sdk-example]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / spotify-web-playback-sdk-example]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-sdk]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / android-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / magnolify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-api-examples]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / web-api-examples]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / github-java-client]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / github-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / shumway]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / shumway]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soa-reference-integration]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / soa-reference-integration]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / conversion-api-tag-template]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / conversion-api-tag-template]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio.g8]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / scio.g8]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-tensorflow]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / spotify-tensorflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-http-client]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / ffwd-http-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius-android-sample]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / mobius-android-sample]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dbeam]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / dbeam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-sdk]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / ios-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Mobius.swift]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / Mobius.swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / futures-extra]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / futures-extra]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / futuristic-feline]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / futuristic-feline]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfreader]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / tfreader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-swift]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence-sdk-swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / realbook]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / realbook]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify.github.io]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / spotify.github.io]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flyte-flink-plugin]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / flyte-flink-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-python]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / confidence-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / elitzur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-client-java]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / ffwd-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / logging-java]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / logging-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / mobius]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / fmt-maven-plugin]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / fmt-maven-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTDataLoader]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / SPTDataLoader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / volcano]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / volcano]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soundcheck-demo-environment]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / soundcheck-demo-environment]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink-on-k8s-operator]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / flink-on-k8s-operator]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-auth]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / android-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / java-hamcrest]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / java-hamcrest]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-scripts]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / web-scripts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch]",
+    "target" : "yaml",
+    "count" : 1
+  }, {
+    "source" : "yaml",
+    "target" : "[spotify / basic-pitch]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-go]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / confidence-sdk-go]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cookiecutter-golang]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / cookiecutter-golang]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flyte-flink-plugin]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / flyte-flink-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / volcano]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / volcano]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink-on-k8s-operator]",
+    "target" : "go",
+    "count" : 1
+  }, {
+    "source" : "go",
+    "target" : "[spotify / flink-on-k8s-operator]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / diffuser]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / diffuser]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-auth]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / ios-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-sdk]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / ios-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Mobius.swift]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / Mobius.swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-swift]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / confidence-sdk-swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTDataLoader]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / SPTDataLoader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "swift",
+    "count" : 1
+  }, {
+    "source" : "swift",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / perf-map-agent]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / perf-map-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-auth]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / ios-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-sdk]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / ios-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Mobius.swift]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / Mobius.swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTPersistentCache]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / SPTPersistentCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / sparkey]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTDataLoader]",
+    "target" : "h",
+    "count" : 1
+  }, {
+    "source" : "h",
+    "target" : "[spotify / SPTDataLoader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / should-up]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / should-up]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lighthouse-audit-service]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / lighthouse-audit-service]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch-ts]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / basic-pitch-ts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-api-ts-sdk]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / spotify-web-api-ts-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-playback-sdk-example]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / spotify-web-playback-sdk-example]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-sdk]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / android-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-api-examples]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / web-api-examples]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soa-reference-integration]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / soa-reference-integration]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / reactochart]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / reactochart]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify.github.io]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / spotify.github.io]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-auth]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / android-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-scripts]",
+    "target" : "js",
+    "count" : 1
+  }, {
+    "source" : "js",
+    "target" : "[spotify / web-scripts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lighthouse-audit-service]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / lighthouse-audit-service]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch-ts]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / basic-pitch-ts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-api-ts-sdk]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / spotify-web-api-ts-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-api-examples]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / web-api-examples]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soa-reference-integration]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / soa-reference-integration]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soundcheck-demo-environment]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / soundcheck-demo-environment]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-scripts]",
+    "target" : "ts",
+    "count" : 1
+  }, {
+    "source" : "ts",
+    "target" : "[spotify / web-scripts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / google-http-java-client]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / google-http-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-api-ts-sdk]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / spotify-web-api-ts-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-playback-sdk-example]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / spotify-web-playback-sdk-example]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-api-examples]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / web-api-examples]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soa-reference-integration]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / soa-reference-integration]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / reactochart]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / reactochart]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify.github.io]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / spotify.github.io]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soundcheck-demo-environment]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / soundcheck-demo-environment]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "html",
+    "count" : 1
+  }, {
+    "source" : "html",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / s3mper]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / s3mper]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / DataflowJavaSDK]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / DataflowJavaSDK]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-android]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / confidence-sdk-android]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / google-http-java-client]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / google-http-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-go]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / confidence-sdk-go]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / missinglink]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / missinglink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / completable-futures]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / completable-futures]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-sdk]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / android-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / github-java-client]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / github-java-client]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius-android-sample]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / mobius-android-sample]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dbeam]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / dbeam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / robolectric]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / robolectric]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / elitzur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / semantic-metrics]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / semantic-metrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / logging-java]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / logging-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink-on-k8s-operator]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / flink-on-k8s-operator]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-auth]",
+    "target" : "xml",
+    "count" : 1
+  }, {
+    "source" : "xml",
+    "target" : "[spotify / android-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / DataflowJavaSDK]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / DataflowJavaSDK]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-java]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / confidence-sdk-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfreader]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / tfreader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flyte-flink-plugin]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / flyte-flink-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ffwd-client-java]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / ffwd-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "proto",
+    "count" : 1
+  }, {
+    "source" : "proto",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-json]",
+    "target" : "cpp",
+    "count" : 1
+  }, {
+    "source" : "cpp",
+    "target" : "[spotify / spotify-json]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "scss",
+    "count" : 1
+  }, {
+    "source" : "scss",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "scss",
+    "count" : 1
+  }, {
+    "source" : "scss",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / heroic-client-java]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / heroic-client-java]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-android]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / confidence-sdk-android]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius]",
+    "target" : "kt",
+    "count" : 1
+  }, {
+    "source" : "kt",
+    "target" : "[spotify / mobius]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lighthouse-audit-service]",
+    "target" : "sql",
+    "count" : 1
+  }, {
+    "source" : "sql",
+    "target" : "[spotify / lighthouse-audit-service]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "sql",
+    "count" : 1
+  }, {
+    "source" : "sql",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / big-data-rosetta-code]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / big-data-rosetta-code]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / magnolify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio.g8]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / scio.g8]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio-idea-plugin]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / scio-idea-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfreader]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / tfreader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcs-tools]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / gcs-tools]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "sbt",
+    "count" : 1
+  }, {
+    "source" : "sbt",
+    "target" : "[spotify / elitzur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-sdk]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / ios-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / Mobius.swift]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / Mobius.swift]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTPersistentCache]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / SPTPersistentCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTDataLoader]",
+    "target" : "m",
+    "count" : 1
+  }, {
+    "source" : "m",
+    "target" : "[spotify / SPTDataLoader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / vispana]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / vispana]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-api-ts-sdk]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / spotify-web-api-ts-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-playback-sdk-example]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / spotify-web-playback-sdk-example]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-sdk]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / android-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-api-examples]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / web-api-examples]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soa-reference-integration]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / soa-reference-integration]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify.github.io]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / spotify.github.io]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / android-auth]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / android-auth]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "css",
+    "count" : 1
+  }, {
+    "source" : "css",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / perf-map-agent]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[spotify / perf-map-agent]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / SPTPersistentCache]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[spotify / SPTPersistentCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey]",
+    "target" : "c",
+    "count" : 1
+  }, {
+    "source" : "c",
+    "target" : "[spotify / sparkey]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / robolectric]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[spotify / robolectric]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "groovy",
+    "count" : 1
+  }, {
+    "source" : "groovy",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "ftl",
+    "count" : 1
+  }, {
+    "source" : "ftl",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "ftl",
+    "count" : 1
+  }, {
+    "source" : "ftl",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-json]",
+    "target" : "hpp",
+    "count" : 1
+  }, {
+    "source" : "hpp",
+    "target" : "[spotify / spotify-json]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / proto-registry]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / proto-registry]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-api-ts-sdk]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / spotify-web-api-ts-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / soundcheck-demo-environment]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / soundcheck-demo-environment]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-scripts]",
+    "target" : "tsx",
+    "count" : 1
+  }, {
+    "source" : "tsx",
+    "target" : "[spotify / web-scripts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ulogger]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / ulogger]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / confidence]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / luigi]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / luigi]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / shumway]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / shumway]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-tensorflow]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / spotify-tensorflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pythonflow]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / pythonflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / realbook]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / realbook]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey-python]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / sparkey-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / sparkey]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / chartify]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / chartify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch]",
+    "target" : "in",
+    "count" : 1
+  }, {
+    "source" : "in",
+    "target" : "[spotify / basic-pitch]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-rust]",
+    "target" : "rs",
+    "count" : 1
+  }, {
+    "source" : "rs",
+    "target" : "[spotify / confidence-sdk-rust]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "pyi",
+    "count" : 1
+  }, {
+    "source" : "pyi",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "pyi",
+    "count" : 1
+  }, {
+    "source" : "pyi",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "pyi",
+    "count" : 1
+  }, {
+    "source" : "pyi",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-android]",
+    "target" : "kts",
+    "count" : 1
+  }, {
+    "source" : "kts",
+    "target" : "[spotify / confidence-sdk-android]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ruler]",
+    "target" : "kts",
+    "count" : 1
+  }, {
+    "source" : "kts",
+    "target" : "[spotify / ruler]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "kts",
+    "count" : 1
+  }, {
+    "source" : "kts",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "pyx",
+    "count" : 1
+  }, {
+    "source" : "pyx",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "pyx",
+    "count" : 1
+  }, {
+    "source" : "pyx",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "less",
+    "count" : 1
+  }, {
+    "source" : "less",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / reactochart]",
+    "target" : "less",
+    "count" : 1
+  }, {
+    "source" : "less",
+    "target" : "[spotify / reactochart]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "clj",
+    "count" : 1
+  }, {
+    "source" : "clj",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / homebrew-public]",
+    "target" : "rb",
+    "count" : 1
+  }, {
+    "source" : "rb",
+    "target" : "[spotify / homebrew-public]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "rb",
+    "count" : 1
+  }, {
+    "source" : "rb",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ios-sdk]",
+    "target" : "rb",
+    "count" : 1
+  }, {
+    "source" : "rb",
+    "target" : "[spotify / ios-sdk]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCMetrics]",
+    "target" : "rb",
+    "count" : 1
+  }, {
+    "source" : "rb",
+    "target" : "[spotify / XCMetrics]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "cc",
+    "count" : 1
+  }, {
+    "source" : "cc",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "pxd",
+    "count" : 1
+  }, {
+    "source" : "pxd",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "pxd",
+    "count" : 1
+  }, {
+    "source" : "pxd",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ratatool]",
+    "target" : "avsc",
+    "count" : 1
+  }, {
+    "source" : "avsc",
+    "target" : "[spotify / ratatool]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "avsc",
+    "count" : 1
+  }, {
+    "source" : "avsc",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / elitzur]",
+    "target" : "avsc",
+    "count" : 1
+  }, {
+    "source" : "avsc",
+    "target" : "[spotify / elitzur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "sass",
+    "count" : 1
+  }, {
+    "source" : "sass",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "tpl",
+    "count" : 1
+  }, {
+    "source" : "tpl",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / volcano]",
+    "target" : "tpl",
+    "count" : 1
+  }, {
+    "source" : "tpl",
+    "target" : "[spotify / volcano]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink-on-k8s-operator]",
+    "target" : "tpl",
+    "count" : 1
+  }, {
+    "source" : "tpl",
+    "target" : "[spotify / flink-on-k8s-operator]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[spotify / terraform-google-aws-hybrid-cloud-vpn]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / gcp-aws-iam-federation-webidentity]",
+    "target" : "tf",
+    "count" : 1
+  }, {
+    "source" : "tf",
+    "target" : "[spotify / gcp-aws-iam-federation-webidentity]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-rust]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / confidence-sdk-rust]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / confidence]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cookiecutter-golang]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / cookiecutter-golang]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / voyager]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / voyager]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / realbook]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / realbook]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / sparkey-python]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / sparkey-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-python]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / confidence-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / basic-pitch]",
+    "target" : "toml",
+    "count" : 1
+  }, {
+    "source" : "toml",
+    "target" : "[spotify / basic-pitch]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-flutter]",
+    "target" : "dart",
+    "count" : 1
+  }, {
+    "source" : "dart",
+    "target" : "[spotify / confidence-sdk-flutter]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / ulogger]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / ulogger]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / confidence]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dh-virtualenv]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / dh-virtualenv]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / klio]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / klio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / shumway]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / shumway]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-tensorflow]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / spotify-tensorflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pythonflow]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / pythonflow]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / realbook]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / realbook]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flyte-flink-plugin]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / flyte-flink-plugin]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / okta-sdk-python]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / okta-sdk-python]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / chartify]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / chartify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / cartography]",
+    "target" : "cfg",
+    "count" : 1
+  }, {
+    "source" : "cfg",
+    "target" : "[spotify / cartography]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dockerfile-mode]",
+    "target" : "el",
+    "count" : 1
+  }, {
+    "source" : "el",
+    "target" : "[spotify / dockerfile-mode]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "ipynb",
+    "count" : 1
+  }, {
+    "source" : "ipynb",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / dh-virtualenv]",
+    "target" : "pm",
+    "count" : 1
+  }, {
+    "source" : "pm",
+    "target" : "[spotify / dh-virtualenv]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfx]",
+    "target" : "bzl",
+    "count" : 1
+  }, {
+    "source" : "bzl",
+    "target" : "[spotify / tfx]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "i",
+    "count" : 1
+  }, {
+    "source" : "i",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / pedalboard]",
+    "target" : "mm",
+    "count" : 1
+  }, {
+    "source" : "mm",
+    "target" : "[spotify / pedalboard]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "mjs",
+    "count" : 1
+  }, {
+    "source" : "mjs",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / spotify-web-playback-sdk-example]",
+    "target" : "jsx",
+    "count" : 1
+  }, {
+    "source" : "jsx",
+    "target" : "[spotify / spotify-web-playback-sdk-example]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / web-scripts]",
+    "target" : "jsx",
+    "count" : 1
+  }, {
+    "source" : "jsx",
+    "target" : "[spotify / web-scripts]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-js]",
+    "target" : "cjs",
+    "count" : 1
+  }, {
+    "source" : "cjs",
+    "target" : "[spotify / confidence-sdk-js]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / annoy]",
+    "target" : "rockspec",
+    "count" : 1
+  }, {
+    "source" : "rockspec",
+    "target" : "[spotify / annoy]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / tfreader]",
+    "target" : "nix",
+    "count" : 1
+  }, {
+    "source" : "nix",
+    "target" : "[spotify / tfreader]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / featran]",
+    "target" : "nix",
+    "count" : 1
+  }, {
+    "source" : "nix",
+    "target" : "[spotify / featran]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / magnolify]",
+    "target" : "st",
+    "count" : 1
+  }, {
+    "source" : "st",
+    "target" : "[spotify / magnolify]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / scio]",
+    "target" : "st",
+    "count" : 1
+  }, {
+    "source" : "st",
+    "target" : "[spotify / scio]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / beam]",
+    "target" : "rdf",
+    "count" : 1
+  }, {
+    "source" : "rdf",
+    "target" : "[spotify / beam]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / flink]",
+    "target" : "edn",
+    "count" : 1
+  }, {
+    "source" : "edn",
+    "target" : "[spotify / flink]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / XCRemoteCache]",
+    "target" : "gemspec",
+    "count" : 1
+  }, {
+    "source" : "gemspec",
+    "target" : "[spotify / XCRemoteCache]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / lemur]",
+    "target" : "mako",
+    "count" : 1
+  }, {
+    "source" : "mako",
+    "target" : "[spotify / lemur]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / confidence-sdk-android]",
+    "target" : "pro",
+    "count" : 1
+  }, {
+    "source" : "pro",
+    "target" : "[spotify / confidence-sdk-android]",
+    "count" : 1
+  }, {
+    "source" : "[spotify / mobius-android-sample]",
+    "target" : "pro",
+    "count" : 1
+  }, {
+    "source" : "pro",
+    "target" : "[spotify / mobius-android-sample]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

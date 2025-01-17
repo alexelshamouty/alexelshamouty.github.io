@@ -1,0 +1,69 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "74026070+twitterbirdwatch@users.noreply.github.com" -- "brad.miller.87@gmail.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "74026070+twitterbirdwatch@users.noreply.github.com" -- "bradm@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "74026070+twitterbirdwatch@users.noreply.github.com" -- "jiansongc@x.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "74026070+twitterbirdwatch@users.noreply.github.com" -- "9256836+keithcoleman@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "brad.miller.87@gmail.com" -- "bradm@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "brad.miller.87@gmail.com" -- "jiansongc@x.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "brad.miller.87@gmail.com" -- "9256836+keithcoleman@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bradm@twitter.com" -- "jiansongc@x.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "bradm@twitter.com" -- "9256836+keithcoleman@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jiansongc@x.com" -- "9256836+keithcoleman@users.noreply.github.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "ci+autoflagger@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "mbezoyan@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "aivanov@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "igorbachev@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "skunichi@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "tpollitt@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ci+autoflagger@twitter.com" -- "mbezoyan@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ci+autoflagger@twitter.com" -- "aivanov@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ci+autoflagger@twitter.com" -- "igorbachev@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ci+autoflagger@twitter.com" -- "skunichi@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ci+autoflagger@twitter.com" -- "tpollitt@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "ci+autoflagger@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mbezoyan@twitter.com" -- "aivanov@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mbezoyan@twitter.com" -- "igorbachev@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mbezoyan@twitter.com" -- "skunichi@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mbezoyan@twitter.com" -- "tpollitt@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "mbezoyan@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "aivanov@twitter.com" -- "igorbachev@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "aivanov@twitter.com" -- "skunichi@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "aivanov@twitter.com" -- "tpollitt@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "aivanov@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "igorbachev@twitter.com" -- "skunichi@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "igorbachev@twitter.com" -- "tpollitt@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "igorbachev@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "skunichi@twitter.com" -- "tpollitt@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "skunichi@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "tpollitt@twitter.com" -- "spotu@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "jillianc@twitter.com" -- "eslutckii@twitter.com" [label=" 1 ", penwidth="1", color="#00688b5E"];
+
+}

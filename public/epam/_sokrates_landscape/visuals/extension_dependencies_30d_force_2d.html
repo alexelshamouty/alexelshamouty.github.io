@@ -1,0 +1,704 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "h (1)",
+    "size" : 4
+  }, {
+    "id" : "rdf (1)",
+    "size" : 1
+  }, {
+    "id" : "yaml (28)",
+    "size" : 13
+  }, {
+    "id" : "less (1)",
+    "size" : 2
+  }, {
+    "id" : "tf (3)",
+    "size" : 2
+  }, {
+    "id" : "js (12)",
+    "size" : 11
+  }, {
+    "id" : "tsx (17)",
+    "size" : 10
+  }, {
+    "id" : "ipynb (1)",
+    "size" : 5
+  }, {
+    "id" : "css (6)",
+    "size" : 8
+  }, {
+    "id" : "kts (1)",
+    "size" : 2
+  }, {
+    "id" : "mjs (1)",
+    "size" : 3
+  }, {
+    "id" : "py (13)",
+    "size" : 12
+  }, {
+    "id" : "scss (5)",
+    "size" : 6
+  }, {
+    "id" : "kt (2)",
+    "size" : 3
+  }, {
+    "id" : "cpp (1)",
+    "size" : 4
+  }, {
+    "id" : "tfvars (2)",
+    "size" : 2
+  }, {
+    "id" : "html (2)",
+    "size" : 6
+  }, {
+    "id" : "ts (32)",
+    "size" : 11
+  }, {
+    "id" : "go (3)",
+    "size" : 1
+  }, {
+    "id" : "toml (7)",
+    "size" : 3
+  }, {
+    "id" : "sql (3)",
+    "size" : 5
+  }, {
+    "id" : "in (2)",
+    "size" : 5
+  }, {
+    "id" : "jsx (2)",
+    "size" : 2
+  }, {
+    "id" : "cmake (1)",
+    "size" : 4
+  }, {
+    "id" : "java (23)",
+    "size" : 9
+  }, {
+    "id" : "xml (8)",
+    "size" : 12
+  } ],
+  "links" : [ {
+    "source" : "ts (32)",
+    "target" : "tsx (17)",
+    "count" : 17
+  }, {
+    "source" : "tsx (17)",
+    "target" : "ts (32)",
+    "count" : 17
+  }, {
+    "source" : "yaml (28)",
+    "target" : "py (13)",
+    "count" : 7
+  }, {
+    "source" : "py (13)",
+    "target" : "yaml (28)",
+    "count" : 7
+  }, {
+    "source" : "java (23)",
+    "target" : "xml (8)",
+    "count" : 6
+  }, {
+    "source" : "xml (8)",
+    "target" : "java (23)",
+    "count" : 6
+  }, {
+    "source" : "py (13)",
+    "target" : "toml (7)",
+    "count" : 5
+  }, {
+    "source" : "toml (7)",
+    "target" : "py (13)",
+    "count" : 5
+  }, {
+    "source" : "ts (32)",
+    "target" : "js (12)",
+    "count" : 5
+  }, {
+    "source" : "js (12)",
+    "target" : "ts (32)",
+    "count" : 5
+  }, {
+    "source" : "js (12)",
+    "target" : "css (6)",
+    "count" : 5
+  }, {
+    "source" : "css (6)",
+    "target" : "js (12)",
+    "count" : 5
+  }, {
+    "source" : "ts (32)",
+    "target" : "css (6)",
+    "count" : 4
+  }, {
+    "source" : "css (6)",
+    "target" : "ts (32)",
+    "count" : 4
+  }, {
+    "source" : "java (23)",
+    "target" : "js (12)",
+    "count" : 4
+  }, {
+    "source" : "js (12)",
+    "target" : "java (23)",
+    "count" : 4
+  }, {
+    "source" : "yaml (28)",
+    "target" : "toml (7)",
+    "count" : 4
+  }, {
+    "source" : "toml (7)",
+    "target" : "yaml (28)",
+    "count" : 4
+  }, {
+    "source" : "tsx (17)",
+    "target" : "js (12)",
+    "count" : 4
+  }, {
+    "source" : "js (12)",
+    "target" : "tsx (17)",
+    "count" : 4
+  }, {
+    "source" : "js (12)",
+    "target" : "scss (5)",
+    "count" : 4
+  }, {
+    "source" : "scss (5)",
+    "target" : "js (12)",
+    "count" : 4
+  }, {
+    "source" : "java (23)",
+    "target" : "py (13)",
+    "count" : 3
+  }, {
+    "source" : "py (13)",
+    "target" : "java (23)",
+    "count" : 3
+  }, {
+    "source" : "tsx (17)",
+    "target" : "css (6)",
+    "count" : 3
+  }, {
+    "source" : "css (6)",
+    "target" : "tsx (17)",
+    "count" : 3
+  }, {
+    "source" : "yaml (28)",
+    "target" : "java (23)",
+    "count" : 3
+  }, {
+    "source" : "java (23)",
+    "target" : "yaml (28)",
+    "count" : 3
+  }, {
+    "source" : "yaml (28)",
+    "target" : "js (12)",
+    "count" : 3
+  }, {
+    "source" : "js (12)",
+    "target" : "yaml (28)",
+    "count" : 3
+  }, {
+    "source" : "java (23)",
+    "target" : "sql (3)",
+    "count" : 3
+  }, {
+    "source" : "sql (3)",
+    "target" : "java (23)",
+    "count" : 3
+  }, {
+    "source" : "js (12)",
+    "target" : "xml (8)",
+    "count" : 3
+  }, {
+    "source" : "xml (8)",
+    "target" : "js (12)",
+    "count" : 3
+  }, {
+    "source" : "xml (8)",
+    "target" : "sql (3)",
+    "count" : 3
+  }, {
+    "source" : "sql (3)",
+    "target" : "xml (8)",
+    "count" : 3
+  }, {
+    "source" : "yaml (28)",
+    "target" : "tf (3)",
+    "count" : 3
+  }, {
+    "source" : "tf (3)",
+    "target" : "yaml (28)",
+    "count" : 3
+  }, {
+    "source" : "ts (32)",
+    "target" : "scss (5)",
+    "count" : 3
+  }, {
+    "source" : "scss (5)",
+    "target" : "ts (32)",
+    "count" : 3
+  }, {
+    "source" : "tsx (17)",
+    "target" : "scss (5)",
+    "count" : 3
+  }, {
+    "source" : "scss (5)",
+    "target" : "tsx (17)",
+    "count" : 3
+  }, {
+    "source" : "yaml (28)",
+    "target" : "go (3)",
+    "count" : 3
+  }, {
+    "source" : "go (3)",
+    "target" : "yaml (28)",
+    "count" : 3
+  }, {
+    "source" : "ts (32)",
+    "target" : "yaml (28)",
+    "count" : 3
+  }, {
+    "source" : "yaml (28)",
+    "target" : "ts (32)",
+    "count" : 3
+  }, {
+    "source" : "ts (32)",
+    "target" : "html (2)",
+    "count" : 2
+  }, {
+    "source" : "html (2)",
+    "target" : "ts (32)",
+    "count" : 2
+  }, {
+    "source" : "tsx (17)",
+    "target" : "html (2)",
+    "count" : 2
+  }, {
+    "source" : "html (2)",
+    "target" : "tsx (17)",
+    "count" : 2
+  }, {
+    "source" : "css (6)",
+    "target" : "html (2)",
+    "count" : 2
+  }, {
+    "source" : "html (2)",
+    "target" : "css (6)",
+    "count" : 2
+  }, {
+    "source" : "yaml (28)",
+    "target" : "xml (8)",
+    "count" : 2
+  }, {
+    "source" : "xml (8)",
+    "target" : "yaml (28)",
+    "count" : 2
+  }, {
+    "source" : "yaml (28)",
+    "target" : "sql (3)",
+    "count" : 2
+  }, {
+    "source" : "sql (3)",
+    "target" : "yaml (28)",
+    "count" : 2
+  }, {
+    "source" : "yaml (28)",
+    "target" : "in (2)",
+    "count" : 2
+  }, {
+    "source" : "in (2)",
+    "target" : "yaml (28)",
+    "count" : 2
+  }, {
+    "source" : "java (23)",
+    "target" : "in (2)",
+    "count" : 2
+  }, {
+    "source" : "in (2)",
+    "target" : "java (23)",
+    "count" : 2
+  }, {
+    "source" : "js (12)",
+    "target" : "sql (3)",
+    "count" : 2
+  }, {
+    "source" : "sql (3)",
+    "target" : "js (12)",
+    "count" : 2
+  }, {
+    "source" : "js (12)",
+    "target" : "in (2)",
+    "count" : 2
+  }, {
+    "source" : "in (2)",
+    "target" : "js (12)",
+    "count" : 2
+  }, {
+    "source" : "xml (8)",
+    "target" : "in (2)",
+    "count" : 2
+  }, {
+    "source" : "in (2)",
+    "target" : "xml (8)",
+    "count" : 2
+  }, {
+    "source" : "sql (3)",
+    "target" : "in (2)",
+    "count" : 2
+  }, {
+    "source" : "in (2)",
+    "target" : "sql (3)",
+    "count" : 2
+  }, {
+    "source" : "yaml (28)",
+    "target" : "tfvars (2)",
+    "count" : 2
+  }, {
+    "source" : "tfvars (2)",
+    "target" : "yaml (28)",
+    "count" : 2
+  }, {
+    "source" : "tf (3)",
+    "target" : "tfvars (2)",
+    "count" : 2
+  }, {
+    "source" : "tfvars (2)",
+    "target" : "tf (3)",
+    "count" : 2
+  }, {
+    "source" : "yaml (28)",
+    "target" : "tsx (17)",
+    "count" : 2
+  }, {
+    "source" : "tsx (17)",
+    "target" : "yaml (28)",
+    "count" : 2
+  }, {
+    "source" : "java (23)",
+    "target" : "scss (5)",
+    "count" : 2
+  }, {
+    "source" : "scss (5)",
+    "target" : "java (23)",
+    "count" : 2
+  }, {
+    "source" : "ts (32)",
+    "target" : "jsx (2)",
+    "count" : 2
+  }, {
+    "source" : "jsx (2)",
+    "target" : "ts (32)",
+    "count" : 2
+  }, {
+    "source" : "ts (32)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "ts (32)",
+    "count" : 1
+  }, {
+    "source" : "ts (32)",
+    "target" : "ipynb (1)",
+    "count" : 1
+  }, {
+    "source" : "ipynb (1)",
+    "target" : "ts (32)",
+    "count" : 1
+  }, {
+    "source" : "tsx (17)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "tsx (17)",
+    "count" : 1
+  }, {
+    "source" : "tsx (17)",
+    "target" : "ipynb (1)",
+    "count" : 1
+  }, {
+    "source" : "ipynb (1)",
+    "target" : "tsx (17)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "css (6)",
+    "count" : 1
+  }, {
+    "source" : "css (6)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "html (2)",
+    "count" : 1
+  }, {
+    "source" : "html (2)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "ipynb (1)",
+    "count" : 1
+  }, {
+    "source" : "ipynb (1)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "css (6)",
+    "target" : "ipynb (1)",
+    "count" : 1
+  }, {
+    "source" : "ipynb (1)",
+    "target" : "css (6)",
+    "count" : 1
+  }, {
+    "source" : "html (2)",
+    "target" : "ipynb (1)",
+    "count" : 1
+  }, {
+    "source" : "ipynb (1)",
+    "target" : "html (2)",
+    "count" : 1
+  }, {
+    "source" : "java (23)",
+    "target" : "toml (7)",
+    "count" : 1
+  }, {
+    "source" : "toml (7)",
+    "target" : "java (23)",
+    "count" : 1
+  }, {
+    "source" : "ts (32)",
+    "target" : "rdf (1)",
+    "count" : 1
+  }, {
+    "source" : "rdf (1)",
+    "target" : "ts (32)",
+    "count" : 1
+  }, {
+    "source" : "yaml (28)",
+    "target" : "css (6)",
+    "count" : 1
+  }, {
+    "source" : "css (6)",
+    "target" : "yaml (28)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "kt (2)",
+    "count" : 1
+  }, {
+    "source" : "kt (2)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "kts (1)",
+    "count" : 1
+  }, {
+    "source" : "kts (1)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "kt (2)",
+    "target" : "kts (1)",
+    "count" : 1
+  }, {
+    "source" : "kts (1)",
+    "target" : "kt (2)",
+    "count" : 1
+  }, {
+    "source" : "js (12)",
+    "target" : "less (1)",
+    "count" : 1
+  }, {
+    "source" : "less (1)",
+    "target" : "js (12)",
+    "count" : 1
+  }, {
+    "source" : "css (6)",
+    "target" : "less (1)",
+    "count" : 1
+  }, {
+    "source" : "less (1)",
+    "target" : "css (6)",
+    "count" : 1
+  }, {
+    "source" : "js (12)",
+    "target" : "html (2)",
+    "count" : 1
+  }, {
+    "source" : "html (2)",
+    "target" : "js (12)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "scss (5)",
+    "count" : 1
+  }, {
+    "source" : "scss (5)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "ts (32)",
+    "target" : "mjs (1)",
+    "count" : 1
+  }, {
+    "source" : "mjs (1)",
+    "target" : "ts (32)",
+    "count" : 1
+  }, {
+    "source" : "tsx (17)",
+    "target" : "mjs (1)",
+    "count" : 1
+  }, {
+    "source" : "mjs (1)",
+    "target" : "tsx (17)",
+    "count" : 1
+  }, {
+    "source" : "scss (5)",
+    "target" : "mjs (1)",
+    "count" : 1
+  }, {
+    "source" : "mjs (1)",
+    "target" : "scss (5)",
+    "count" : 1
+  }, {
+    "source" : "tsx (17)",
+    "target" : "jsx (2)",
+    "count" : 1
+  }, {
+    "source" : "jsx (2)",
+    "target" : "tsx (17)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "h (1)",
+    "count" : 1
+  }, {
+    "source" : "h (1)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "cmake (1)",
+    "count" : 1
+  }, {
+    "source" : "cmake (1)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "py (13)",
+    "target" : "cpp (1)",
+    "count" : 1
+  }, {
+    "source" : "cpp (1)",
+    "target" : "py (13)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "h (1)",
+    "count" : 1
+  }, {
+    "source" : "h (1)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "cmake (1)",
+    "count" : 1
+  }, {
+    "source" : "cmake (1)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "xml (8)",
+    "target" : "cpp (1)",
+    "count" : 1
+  }, {
+    "source" : "cpp (1)",
+    "target" : "xml (8)",
+    "count" : 1
+  }, {
+    "source" : "h (1)",
+    "target" : "cmake (1)",
+    "count" : 1
+  }, {
+    "source" : "cmake (1)",
+    "target" : "h (1)",
+    "count" : 1
+  }, {
+    "source" : "h (1)",
+    "target" : "cpp (1)",
+    "count" : 1
+  }, {
+    "source" : "cpp (1)",
+    "target" : "h (1)",
+    "count" : 1
+  }, {
+    "source" : "cmake (1)",
+    "target" : "cpp (1)",
+    "count" : 1
+  }, {
+    "source" : "cpp (1)",
+    "target" : "cmake (1)",
+    "count" : 1
+  }, {
+    "source" : "java (23)",
+    "target" : "kt (2)",
+    "count" : 1
+  }, {
+    "source" : "kt (2)",
+    "target" : "java (23)",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

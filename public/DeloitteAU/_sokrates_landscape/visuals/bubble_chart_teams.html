@@ -1,0 +1,1690 @@
+<!--
+  ~ Copyright (c) 2021 Željko Obrenović. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A bubble chart view on componets</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+        svg {
+            font: 14px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+
+    var dataset = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "danielgindi@gmail.com",
+  "color" : "",
+  "size" : 1021,
+  "children" : [ ]
+}, {
+  "name" : "jsalau@deloitte.com.au",
+  "color" : "",
+  "size" : 563,
+  "children" : [ ]
+}, {
+  "name" : "sacameron@deloitte.com.au",
+  "color" : "",
+  "size" : 257,
+  "children" : [ ]
+}, {
+  "name" : "pierremarcairoldi@gmail.com",
+  "color" : "",
+  "size" : 184,
+  "children" : [ ]
+}, {
+  "name" : "liuxuan30@gmail.com",
+  "color" : "",
+  "size" : 183,
+  "children" : [ ]
+}, {
+  "name" : "jenna.salau@gmail.com",
+  "color" : "",
+  "size" : 176,
+  "children" : [ ]
+}, {
+  "name" : "waldron.rick@gmail.com",
+  "color" : "",
+  "size" : 151,
+  "children" : [ ]
+}, {
+  "name" : "kestreet@deloitte.com.au",
+  "color" : "",
+  "size" : 125,
+  "children" : [ ]
+}, {
+  "name" : "j.nelssonsmith@gmail.com",
+  "color" : "",
+  "size" : 102,
+  "children" : [ ]
+}, {
+  "name" : "j.christie@icloud.com",
+  "color" : "",
+  "size" : 55,
+  "children" : [ ]
+}, {
+  "name" : "keeganstreet@gmail.com",
+  "color" : "",
+  "size" : 53,
+  "children" : [ ]
+}, {
+  "name" : "aaron@gravypower.net",
+  "color" : "",
+  "size" : 53,
+  "children" : [ ]
+}, {
+  "name" : "bot@renovateapp.com",
+  "color" : "",
+  "size" : 45,
+  "children" : [ ]
+}, {
+  "name" : "dkeeghan@deloitte.com.au",
+  "color" : "",
+  "size" : 43,
+  "children" : [ ]
+}, {
+  "name" : "ricominten@gmail.com",
+  "color" : "",
+  "size" : 41,
+  "children" : [ ]
+}, {
+  "name" : "tejeong@au10917.localdomain",
+  "color" : "",
+  "size" : 41,
+  "children" : [ ]
+}, {
+  "name" : "gmills@deloitte.com.au",
+  "color" : "",
+  "size" : 36,
+  "children" : [ ]
+}, {
+  "name" : "ricominten@users.noreply.github.com",
+  "color" : "",
+  "size" : 35,
+  "children" : [ ]
+}, {
+  "name" : "jfroffice@gmail.com",
+  "color" : "",
+  "size" : 33,
+  "children" : [ ]
+}, {
+  "name" : "lacmcdonald@deloitte.com.au",
+  "color" : "",
+  "size" : 28,
+  "children" : [ ]
+}, {
+  "name" : "yhasanmiyan@deloitte.com.au",
+  "color" : "",
+  "size" : 22,
+  "children" : [ ]
+}, {
+  "name" : "leonardo.balter@gmail.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "mathewa6@users.noreply.github.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "liuxuan30@users.noreply.github.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "nicolasgallagher@gmail.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "tplester@deloitte.com.au",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "hadimichael@gmail.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "chopper@deloitte.com.au",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "alex.navasardyan@gmail.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "mathias@qiwi.be",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "phil.jahoda@gmail.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "marocchino@gmail.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "19879272+jjatie@users.noreply.github.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "lachlan@radelaide.net",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "wrigney@deloitte.com.au",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "damian@keeghan.com.au",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "juntai81@gmail.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "chenkem@gmail.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "georgee_123@hotmail.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "nf1993@gmail.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "mail@heikofranz.info",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "36178559+tplester@users.noreply.github.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "mitch.currie@virginmoney.com.au",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "gavra@arvag.net",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "mpz@financial.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "heikosebastian.franz@gmail.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "happinesz@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "who-is-bb@ya.ru",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "zntfdr@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "hmunasinghe@deloitte.com.au",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "junechuang@deloitte.com.au",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "aelam@users.noreply.github.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "pja@zuehlke.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "matt@geekrocket.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "hadimichael@users.noreply.github.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "okuryu@okuryu.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "marco@marcotrulla.it",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "davtao@deloitte.com.au",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "ryanpcmcquen@member.fsf.org",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "harryl.byread@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jc@necktronics.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "anti2moron@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "102123951+dlaborada@users.noreply.github.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "tejeong@au10917.home",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "adam@adammalone.net",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "ben.mcevoy@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dejan.dimic@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "garu@cpan.org",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "leobetosouza@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "william@rigney.com.au",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ryan.mcquen@surlatable.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "felix.herrmann@icloud.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "rynecheow@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "y_ohba@webfrontier.co.jp",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "github@w7software.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "kevin.barnes@shopify.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "wjacker2@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "tommy@pixelspark.nl",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "tracyk@zillow.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "mkubenka@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jerfranco@deloitte.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "lcaceres@deloitte.com.au",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "lim_kaiyang@hotmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "tejeong@au10917.au.deloitte.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jnelsson-smith@deloitte.com.au",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "52811724+moe-attack@users.noreply.github.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "mattaylor@deloitte.com.au",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "andrewplummer@me.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jdowdle@deloitte.com.au",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "tikong@deloitte.com.au",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "juergen.messner@cornelsen.de",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "aventurella@blitzagency.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "karl.guillotte.1@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sindresorhus@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rmurphey@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "leobalter@me.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kitcambridge@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "japaz@deloitte.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "david.sawick@trausteknij.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "samuel.alvin1994@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "fitzsimons.finn@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "101617755+jinxitian@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "lredpath@community.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "tho.do@medtronic.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "51040483+phuanggh@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "a.s.filimonov@tinkoff.ru",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sven.bone@mail.de",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "shiww@outlook.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "antonthedev@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jconstant@mac.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ewg777@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "maciektr@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "porooshani@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "thierry.hentic@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "m@macteo.it",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "anatoly@ideomobile.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "simon.tsai.j@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "vincentxueios@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ben@einsteinx2.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bartosz.olszanowski@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rfpels@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "leo@leomehlig.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "andreas.igel@computacenter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ospr@me.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "leo98meh@googlemail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "albert.donaire@sage.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mconintet@163.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sven@svens-mbp.speedport_w_724v_typ_a_05011603_00_003",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "doralon@dors-macbook-pro.local",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "doralon@guyad-pc.theseus.dev",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dor.alon@adir-pc.theseus.dev",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "101161142+jerfranco-deloitte@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "henry.tranvan@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sven.efftinge@typefox.io",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "robbie.blackburn@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "thevasya@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "zno.rocha@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "nicolas@nicolasgallagher.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ttotsuka@deloitte.com.au",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "diepnn@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "chuang.june@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rlavers@deloitte.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jsalau@au0091.au.deloitte.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aperini@aperini2.office-fulano",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mandrikov@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nick.niemeir@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "github@jeremie-parker.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mihaipaun01@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pascal.precht@googlemail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alex.navasardyan@yahoo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jt@gosquared.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rtoal@lmu.edu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fracmak@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "knuthaug+github@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ebalter@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "daniel.c.herman@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "benja1000@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tim@timshomepage.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mikko@redinnovation.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "davetao@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "38674945+aeoxia@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ariel.kirkwood@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nilsmagne.lunde@skandiabanken.no",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joshuakelly@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "19caleb95@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shaunkelly@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "erkanyildiz@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "magnificentbluez@hotmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "356485255@qq.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "batikansosun@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "emrahkrkmz1@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "raphael@sylvilagus.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "slambrakis@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "harry@moneybrilliant.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rquesada@pinterest.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nuomi1@qq.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "slynch@createchsol.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "6350992+bivant@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "me@alexruperez.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tcraig@usc.edu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "64682602+basistiy@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "9885219+rubenfer@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rebeloper@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "grant.kamin@garmin.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fkl@jumhyn.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "peter.kaminski09@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "david.piper@udo.edu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tkidd@capis.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "muclemente@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "andrey.martushev@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stefanos@zachariadis.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "4np@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "colton.lemmon@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "scalman@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jobins666@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nick@swellinvesting.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lucas.fernandes@easynvest.com.br",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pat@phughes.us",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "charlie.fougeray@st-groupe.fr",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lcsmarcal@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lucasmarcal.fernandes@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "esqlimite@hotmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tokat.shant@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "41472829+artemiusmk@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "32229799+justinlew@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dominique@stranz.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "guiga741@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anton.doudarev@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yiping_du@163.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "417.72ki@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yang.asahi@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chuynadamas@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jlcanale@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "robert.cronin@uqconnect.edu.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cuong1112035@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lennon.hejin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alexander.repty@mac.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tim@swiftkick.it",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rapisarda.carlo@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "denis@irlmobile.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "canapio.developer@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alexleeds@hotmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jekahy@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "roberto.estrada@intelygenz.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "l.lemesev@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "666tos@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "snowy_way@163.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dennis@franke-s.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "auu.aug@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yangcaimu@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "russell.qwerty@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pascal.h.herrmann@daimler.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "brian.doig@jpl.nasa.gov",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hir-suzuki@dip-net.co.jp",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "daniel@wobster.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "martnst@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "xinran_wang@comcast.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hardboiledbaby@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gzxiaozhengyang@corp.netease.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "russell.stephens@compass.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "osiansmith@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eric.ch_chang@htc.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "annalizhaz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "enrique@youneedabudget.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eric0625@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "franqueli@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "simonbromberg@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kv@idealdev.dk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "krunoslav.zaher@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "valeriy.van@cgm.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anttyc@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sokolov.lev95@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "krystof.matej@cleverlance.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "elaewin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shad.ratliff@amtrustgroup.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "esso@eventer.jp",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chris@gunawardena.id.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "emiranda04@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rofreg@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "badger@gitter.im",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tom.burns@shopify.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "me@antoniomarques.eu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "enrico.zamagni@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bogdanvitoc@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stevoeddz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "frankensteinbot@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gunter@allaboutapps.at",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "patrickscottreynolds@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "david.vicenteferreira@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aarondaub@aarons-macbook-pro.local",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chanil1218@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sky4winder@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alvesjtiago@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chenxiaobin01@lianjia.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "boyuan.gby@alibaba-inc.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fm4809@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "iangmaia@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "softdesigner.ua@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ian.guedesmaia@bux.io",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "niraj.rayalla@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "davidmiguel.ferreira@pt.bosch.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jake@stripysock.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "avishaan@codehatcher.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ilyukevich.victor@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "javiers@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "codehunt@codehunt.io",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "maxim.zabelin@noveogroup.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "michael.c.mcguire@aexp.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "arnetempelhof@googlemail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "michael@msanders.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jose.navarro@liferay.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zenkimoto@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mkalmes@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nwestr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chef@bitdeli.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mikenikles@pm.me",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ghuntley@ghuntley.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mikenikles@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anton@gitpod.io",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lachlanmcdonald@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rminten@deloitte.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "elecay@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mbk@michaels-macbook-pro.local",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "michalek@shortcat.cz",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "info@modestowicz.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "megahulk2222@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "m.strehl@kinetiqa.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "frank.taillandier@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "baepower@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "otakustay@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "david.hund@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sinantaga@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "studiomohawk@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jackalmage@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bruno1378@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bradley@squarepolka.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "srodrigo@deloitte.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "40154418+hollywoodinvegas@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hefranz@deloitte.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "throwe@deloitte.com.au",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+} ]
+    }
+
+    var diameter = 800;
+    var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    var bubble = d3.pack(dataset)
+        .size([diameter, diameter])
+        .padding(1.5);
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", diameter)
+        .attr("height", diameter)
+        .attr("class", "bubble");
+
+    var nodes = d3.hierarchy(dataset)
+        .sum(function(d) { return d.size; });
+
+    var node = svg.selectAll(".node")
+        .data(bubble(nodes).descendants())
+        .enter()
+        .filter(function(d){
+            return  !d.children
+        })
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+
+    node.append("title")
+        .text(function(d) {
+            return d.data.name + ": " + d.data.size;
+        });
+
+    node.append("circle")
+        .attr("r", function(d) {
+            return d.r;
+        })
+        .style("fill", function(d,i) {
+            return "rgb(192, 222, 237)";
+        });
+
+    node.append("text")
+        .attr("dy", ".2em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.data.name.substring(0, d.r / 3);
+        })
+        .attr("font-family", "sans-serif")
+        .attr("fill", "black");
+
+    node.append("text")
+        .attr("dy", "1.3em")
+        .style("text-anchor", "middle")
+        .text(function(d) {
+            return d.data.Count;
+        })
+        .attr("font-family",  "Gill Sans", "Gill Sans MT")
+        .attr("fill", "white");
+
+    d3.select(self.frameElement)
+        .style("height", diameter + "px");
+
+</script>
+</body>
+</html>

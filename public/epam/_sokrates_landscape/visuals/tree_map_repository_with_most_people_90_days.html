@@ -1,0 +1,495 @@
+<!--
+  ~ Copyright (c) 2021 Željko Obrenović. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A treeview view on componets</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+        svg {
+            font: 14px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<svg width="960" height="570"></svg>
+<script>
+
+    var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+    var fader = function (color) {
+                return d3.interpolateRgb(color, "#fff")(0.2);
+            },
+            color = d3.scaleOrdinal(d3.schemeCategory20.map(fader)),
+            format = d3.format(",d");
+
+    var treemap = d3.treemap()
+            .tile(d3.treemapResquarify)
+            .size([width, height])
+            .round(true)
+            .paddingInner(1);
+
+    var data = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "epam / ketcher",
+  "color" : "",
+  "size" : 27,
+  "children" : [ ]
+}, {
+  "name" : "epam / kubernetes-engine-samples",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-chat",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "epam / cloud-pipeline",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "epam / UUI",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-core",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "epam / aws-syndicate",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-analytics-realtime",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "epam / modular-sdk",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "epam / sap-commerce-intellij-idea-plugin",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-adapter-bedrock",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-app-controller",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "epam / syndicate-rule-engine",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-tekton",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-install",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-headlamp",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-cd-pipeline-operator",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-cluster-add-ons",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-sdk",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-adapter-vertexai",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-adapter-openai",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / TimeBaseGrafanaPlugin",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / OSCI",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-codebase-operator",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-nexus-operator",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-keycloak-operator",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-ci",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-adapter-dial",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / Indigo",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-app-builder-python",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-helm",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / eco-schema-catalog",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "epam / lifescience",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-chat-themes",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-interceptors-sdk",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epam / modular-cli",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epam / epmgcip-chaperone.admin",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-gerrit-operator",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-ddm-architecture",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / ecc-azure-rulepack",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / ecc-aws-rulepack",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / GMP",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / modular-api",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / ai-dial-auth-helper",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / sdmxsource",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / mriviewer",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / quanthub-portal",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / ValuesTypes4Java",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / AIRUN-Assistants-Benchmark-TestInstructions",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / AIRUN-Assistants-Benchmark-CodeBase",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / Indigo-ELN-v.-2.0",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "epam / NGB",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / edp-sonar-operator",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / TimebaseCryptoConnectors",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / epam-kafka",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / epmgcip-chaperone.contentful",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / DFP",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / xdlc-ai",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / kubernetes-kueue",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / jsdmx",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / miew",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / ember-trade-connector-sample",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / dail-xl",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / ember-restws-samples",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / AIRUN-LLM-Benchmark-Results",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / AIRUN-LLM-Benchmark",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / epmgcip-chaperone.ai",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / badgerdoc",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "epam / AIRUN-Evaluation-Framework",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+} ]
+    }
+
+    var root = d3.hierarchy(data)
+            .eachBefore(function (d) {
+                d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
+            })
+            .sum(sumBySize)
+            .sort(function (a, b) {
+                return b.height - a.height || b.value - a.value;
+            });
+
+    treemap(root);
+
+    var cell = svg.selectAll("g")
+            .data(root.leaves())
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + d.x0 + "," + d.y0 + ")";
+            });
+
+    cell.append("rect")
+            .attr("id", function (d) {
+                return d.data.id;
+            })
+            .attr("width", function (d) {
+                return d.x1 - d.x0;
+            })
+            .attr("height", function (d) {
+                return d.y1 - d.y0;
+            })
+            .style("fill", "#c0deed");
+
+    cell.append("clipPath")
+            .attr("id", function (d) {
+                return "clip-" + d.data.id;
+            })
+            .append("use")
+            .attr("xlink:href", function (d) {
+                return "#" + d.data.id;
+            });
+
+    cell.append("text")
+            .attr("clip-path", function (d) {
+                return "url(#clip-" + d.data.id + ")";
+            })
+            .selectAll("tspan")
+            .data(function (d) {
+                return d.data.name.split(/(?=[A-Z][^A-Z])/g);
+            })
+            .enter().append("tspan")
+            .attr("x", 4)
+            .attr("y", function (d, i) {
+                return 13 + i * 10;
+            })
+            .text(function (d) {
+                return d;
+            });
+
+    cell.append("title")
+            .text(function (d) {
+                return d.data.name + ": " + format(d.value);
+            });
+
+    d3.selectAll("input")
+            .data([sumBySize, sumByCount], function (d) {
+                return d ? d.name : this.value;
+            })
+            .on("change", changed);
+
+    var timeout = d3.timeout(function () {
+        d3.select("input[value=\"sumByCount\"]")
+                .property("checked", true)
+                .dispatch("change");
+    }, 2000);
+
+    function changed(sum) {
+        timeout.stop();
+
+        treemap(root.sum(sum));
+
+        cell.transition()
+                .duration(750)
+                .attr("transform", function (d) {
+                    return "translate(" + d.x0 + "," + d.y0 + ")";
+                })
+                .select("rect")
+                .attr("width", function (d) {
+                    return d.x1 - d.x0;
+                })
+                .attr("height", function (d) {
+                    return d.y1 - d.y0;
+                });
+    }
+
+    function sumByCount(d) {
+        return d.children ? 0 : 1;
+    }
+
+    function sumBySize(d) {
+        return d.size;
+    }
+
+</script>
+</body>
+</html>

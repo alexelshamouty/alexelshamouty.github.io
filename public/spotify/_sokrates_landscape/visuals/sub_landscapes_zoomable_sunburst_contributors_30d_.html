@@ -1,0 +1,700 @@
+<head>
+    <style>
+        body {
+            font-family: Sans-serif;
+            font-size: 11px;
+        }
+
+        .slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }
+    </style>
+
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+</head>
+<body>
+<script>
+    const width = window.innerWidth,
+        height = window.innerHeight,
+        maxRadius = (Math.min(width, height) / 2) - 5;
+
+    const formatNumber = d3.format(',d');
+
+    const x = d3.scaleLinear()
+        .range([0, 2 * Math.PI])
+        .clamp(true);
+
+    const y = d3.scaleSqrt()
+        .range([maxRadius * .1, maxRadius]);
+
+    const color = d3.scaleOrdinal(d3.schemeCategory20);
+
+    const partition = d3.partition();
+
+    const arc = d3.arc()
+        .startAngle(d => x(d.x0))
+        .endAngle(d => x(d.x1))
+        .innerRadius(d => Math.max(0, y(d.y0)))
+        .outerRadius(d => Math.max(0, y(d.y1)));
+
+    const middleArcLine = d => {
+        const halfPi = Math.PI / 2;
+        const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
+        const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+
+        const middleAngle = (angles[1] + angles[0]) / 2;
+        const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
+        if (invertDirection) {
+            angles.reverse();
+        }
+
+        const path = d3.path();
+        path.arc(0, 0, r, angles[0], angles[1], invertDirection);
+        return path.toString();
+    };
+
+    const textFits = d => {
+        const CHAR_SPACE = 6;
+
+        const deltaAngle = x(d.x1) - x(d.x0);
+        const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+        const perimeter = r * deltaAngle;
+
+        return d.data.name.length * CHAR_SPACE < perimeter;
+    };
+
+    const svg = d3.select('body').append('svg')
+        .style('width', '100vw')
+        .style('height', '100vh')
+        .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
+        .on('click', () => focusOn()); // Reset zoom on canvas click
+
+    var rootData = {
+        "name": "",
+        "children": [ {
+  "name" : "flink (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "beam (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "robolectric (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "volcano (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "scio (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "DataflowJavaSDK (18)",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "tfx (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "flink-on-k8s-operator (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lemur (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "pedalboard (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "luigi (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "google-http-java-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "klio (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "XCRemoteCache (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "XCMetrics (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "reactochart (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "folsom (9)",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "voyager (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "magnolify (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ratatool (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "github-java-client (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "confidence (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mobius (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "sparkey (8)",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "featran (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "chartify (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify-json (7)",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "sparkey-java (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-swift (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "basic-pitch (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "mobius-android-sample (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ruler (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "semantic-metrics (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-android (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "SPTDataLoader (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "android-auth (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "cartography (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "vispana (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-js (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "annoy (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "elitzur (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "s3mper (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-java (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "ios-sdk (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-rust (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "Mobius.swift (8)",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "dbeam (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "android-sdk (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "SPTPersistentCache (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "proto-registry (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "async-google-pubsub-client (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "Vandelay (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify-web-api-ts-sdk (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "missinglink (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "cstar (9)",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "tfreader (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dataenum (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "soundcheck-demo-environment (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "okta-sdk-python (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "simple-bigtable (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "java-hamcrest (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "web-scripts (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "big-data-rosetta-code (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "realbook (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "spotify-tensorflow (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "futures-extra (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "java-locales (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ffwd-client-java (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-go (8)",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "flyte-flink-plugin (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pythonflow (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "postgresql-metrics (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-flutter (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "lighthouse-audit-service (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "logging-java (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "fmt-maven-plugin (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "diffuser (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dh-virtualenv (5)",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "web-api-examples (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "basic-pitch-ts (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ffwd-http-client (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "confidence-sdk-python (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gcs-tools (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "futuristic-feline (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "heroic-client-java (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotify.github.io (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "completable-futures (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "container-agent (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cookiecutter-golang (4)",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "scio-idea-plugin (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sparkey-python (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "spotify-web-playback-sdk-example (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ulogger (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "terraform-google-aws-hybrid-cloud-vpn (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dockerfile-mode (3)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "perf-map-agent (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shumway (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "should-up (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "scio.g8 (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "testing-game (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "homebrew-public (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gcp-aws-iam-federation-webidentity (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ios-auth (2)",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "conversion-api-tag-template (1)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "backup-utils (6)",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+} ]
+    }
+
+
+    root = d3.hierarchy(rootData);
+    root.sum(d => d.size);
+
+    const slice = svg.selectAll('g.slice')
+        .data(partition(root).descendants());
+
+    slice.exit().remove();
+
+    const newSlice = slice.enter()
+        .append('g').attr('class', 'slice')
+        .on('click', d => {
+            d3.event.stopPropagation();
+            focusOn(d);
+        });
+
+    newSlice.append('title')
+        .text(d => d.data.name + '\n' + formatNumber(d.value));
+
+    newSlice.append('path')
+        .attr('class', 'main-arc')
+        .style('fill', d => color((d.children ? d : d.parent).data.name))
+        .attr('d', arc);
+
+    newSlice.append('path')
+        .attr('class', 'hidden-arc')
+        .attr('id', (_, i) => `hiddenArc${i}`)
+        .attr('d', middleArcLine);
+
+    const text = newSlice.append('text')
+        .attr('display', d => textFits(d) ? null : 'none');
+
+    // Add white contour
+    text.append('textPath')
+        .attr('startOffset', '50%')
+        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+        .text(d => d.data.name)
+        .style('fill', 'none')
+        .style('stroke', '#fff')
+        .style('stroke-width', 5)
+        .style('stroke-linejoin', 'round');
+
+    text.append('textPath')
+        .attr('startOffset', '50%')
+        .attr('xlink:href', (_, i) => `#hiddenArc${i}`)
+        .text(d => d.data.name);
+
+    function focusOn(d = {x0: 0, x1: 1, y0: 0, y1: 1}) {
+        const transition = svg.transition()
+            .duration(750)
+            .tween('scale', () => {
+                const xd = d3.interpolate(x.domain(), [d.x0, d.x1]),
+                    yd = d3.interpolate(y.domain(), [d.y0, 1]);
+                return t => {
+                    x.domain(xd(t));
+                    y.domain(yd(t));
+                };
+            });
+
+        transition.selectAll('path.main-arc')
+            .attrTween('d', d => () => arc(d));
+
+        transition.selectAll('path.hidden-arc')
+            .attrTween('d', d => () => middleArcLine(d));
+
+        transition.selectAll('text')
+            .attrTween('display', d => () => textFits(d) ? null : 'none');
+
+        moveStackToFront(d);
+
+        //
+
+        function moveStackToFront(elD) {
+            svg.selectAll('.slice').filter(d => d === elD)
+                .each(function (d) {
+                    this.parentNode.appendChild(this);
+                    if (d.parent) {
+                        moveStackToFront(d.parent);
+                    }
+                })
+        }
+    }
+</script>
+</body>

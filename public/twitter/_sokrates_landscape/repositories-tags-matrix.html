@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+
+<div style="margin-bottom: 42px">
+<h1>Custom Tags / Expanded View</h1>
+<p style="color: grey">Tags per sub-folder</p>
+<div style="border-radius: 9px; padding: 6px; margin-top: 16px; border: 1px solid lightgrey; background-color: #B9D9EB">
+build and dependencies management tools (5)
+</div>
+<table>
+<tr style='font-size: 80%'>
+<td></td>
+<td style="text-align: center; border-right: 4px solid lightgrey">all repositories</td>
+<td style="text-align: center">twitter-text<br>(2)</td>
+<td style="text-align: center">twemoji-parser<br>(2)</td>
+<td style="text-align: center">pants<br>(2)</td>
+<td style="text-align: center">twitter-korean-text<br>(2)</td>
+<td style="text-align: center">sqrl<br>(2)</td>
+<td style="text-align: center">scrooge<br>(2)</td>
+<td style="text-align: center">dodo-build<br>(2)</td>
+<td style="text-align: center">rsc<br>(1)</td>
+<td style="text-align: center">twemoji<br>(1)</td>
+<td style="text-align: center">joauth<br>(1)</td>
+<td style="text-align: center">iago2<br>(1)</td>
+<td style="text-align: center">chill<br>(1)</td>
+<td style="text-align: center">finatra<br>(1)</td>
+<td style="text-align: center">hadoop-lzo<br>(1)</td>
+<td style="text-align: center">finagle<br>(1)</td>
+<td style="text-align: center">cloudhopper-commons<br>(1)</td>
+<td style="text-align: center">bijection<br>(1)</td>
+<td style="text-align: center">GraphJet<br>(1)</td>
+<td style="text-align: center">elephant-bird<br>(1)</td>
+<td style="text-align: center">tormenta<br>(1)</td>
+<td style="text-align: center">storehaus<br>(1)</td>
+<td style="text-align: center">compose-rules<br>(1)</td>
+<td style="text-align: center">stitch<br>(1)</td>
+<td style="text-align: center">typeahead.js<br>(1)</td>
+<td style="text-align: center">netty-http2<br>(1)</td>
+<td style="text-align: center">hpack<br>(1)</td>
+<td style="text-align: center">SentenTree<br>(1)</td>
+<td style="text-align: center">scalding<br>(1)</td>
+<td style="text-align: center">hogan.js<br>(1)</td>
+<td style="text-align: center">algebird<br>(1)</td>
+<td style="text-align: center">bazel-multiversion<br>(1)</td>
+<td style="text-align: center">twitter-server<br>(1)</td>
+<td style="text-align: center">labella.js<br>(1)</td>
+<td style="text-align: center">Serial<br>(1)</td>
+<td style="text-align: center">nodes<br>(1)</td>
+<td style="text-align: center">util<br>(1)</td>
+<td style="text-align: center">sbf<br>(1)</td>
+<td style="text-align: center">check-my-repo<br>(1)</td>
+<td style="text-align: center">twitter-cldr-npm<br>(1)</td>
+<td style="text-align: center">ios-twitter-image...<br>(1)</td>
+<td style="text-align: center">whiskey<br>(1)</td>
+<td style="text-align: center">scala_school2<br>(1)</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)build[.]sbt
+">
+<img title='sbt' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 26px; height: 26px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/sbt.png"><div style='vertical-align: middle; display: inline-block;'>sbt</div>
+</div>
+</td>
+<td style="text-align: center; border-right: 4px solid lightgrey; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: white">
+ <a href="javascript:showHide('showMoreBlock_13');")><b>16</b></a><span id="showMoreBlock_13" style="display: none;">
+<div style="background-color: white; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>293,638</b> LOC (main)<br><b>8</b> commits (30d)<br><b>4</b> contributors (30d)
+</div>
+<div style="">
+<a href='../finagle/html/index.html' target='_blank' style='margin-left: 6px'>twitter / finagle</a> <span color='lightgrey'>(<b>89,358</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scalding/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scalding</a> <span color='lightgrey'>(<b>46,579</b> LOC)</span>
+</div>
+<div style="">
+<a href='../util/html/index.html' target='_blank' style='margin-left: 6px'>twitter / util</a> <span color='lightgrey'>(<b>35,832</b> LOC)</span>
+</div>
+<div style="">
+<a href='../algebird/html/index.html' target='_blank' style='margin-left: 6px'>twitter / algebird</a> <span color='lightgrey'>(<b>26,584</b> LOC)</span>
+</div>
+<div style="">
+<a href='../rsc/html/index.html' target='_blank' style='margin-left: 6px'>twitter / rsc</a> <span color='lightgrey'>(<b>24,285</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scrooge/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scrooge</a> <span color='lightgrey'>(<b>19,080</b> LOC)</span>
+</div>
+<div style="">
+<a href='../finatra/html/index.html' target='_blank' style='margin-left: 6px'>twitter / finatra</a> <span color='lightgrey'>(<b>14,208</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-server/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-server</a> <span color='lightgrey'>(<b>6,778</b> LOC)</span>
+</div>
+<div style="">
+<a href='../chill/html/index.html' target='_blank' style='margin-left: 6px'>twitter / chill</a> <span color='lightgrey'>(<b>6,060</b> LOC)</span>
+</div>
+<div style="">
+<a href='../stitch/html/index.html' target='_blank' style='margin-left: 6px'>twitter / stitch</a> <span color='lightgrey'>(<b>5,824</b> LOC)</span>
+</div>
+<div style="">
+<a href='../bazel-multiversion/html/index.html' target='_blank' style='margin-left: 6px'>twitter / bazel-multiversion</a> <span color='lightgrey'>(<b>5,436</b> LOC)</span>
+</div>
+<div style="">
+<a href='../bijection/html/index.html' target='_blank' style='margin-left: 6px'>twitter / bijection</a> <span color='lightgrey'>(<b>4,859</b> LOC)</span>
+</div>
+<div style="">
+<a href='../storehaus/html/index.html' target='_blank' style='margin-left: 6px'>twitter / storehaus</a> <span color='lightgrey'>(<b>4,155</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-korean-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-korean-text</a> <span color='lightgrey'>(<b>2,436</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scala_school2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scala_school2</a> <span color='lightgrey'>(<b>1,500</b> LOC)</span>
+</div>
+<div style="">
+<a href='../tormenta/html/index.html' target='_blank' style='margin-left: 6px'>twitter / tormenta</a> <span color='lightgrey'>(<b>664</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_14');")><b>1</b></a><span id="showMoreBlock_14" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>2,436</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twitter-korean-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-korean-text</a> <span color='lightgrey'>(<b>2,436</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_15');")><b>1</b></a><span id="showMoreBlock_15" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>19,080</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../scrooge/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scrooge</a> <span color='lightgrey'>(<b>19,080</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_16');")><b>1</b></a><span id="showMoreBlock_16" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>24,285</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../rsc/html/index.html' target='_blank' style='margin-left: 6px'>twitter / rsc</a> <span color='lightgrey'>(<b>24,285</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_17');")><b>1</b></a><span id="showMoreBlock_17" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>6,060</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../chill/html/index.html' target='_blank' style='margin-left: 6px'>twitter / chill</a> <span color='lightgrey'>(<b>6,060</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_18');")><b>1</b></a><span id="showMoreBlock_18" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>14,208</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../finatra/html/index.html' target='_blank' style='margin-left: 6px'>twitter / finatra</a> <span color='lightgrey'>(<b>14,208</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_19');")><b>1</b></a><span id="showMoreBlock_19" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>89,358</b> LOC (main)<br><b>8</b> commits (30d)<br><b>4</b> contributors (30d)
+</div>
+<div style="">
+<a href='../finagle/html/index.html' target='_blank' style='margin-left: 6px'>twitter / finagle</a> <span color='lightgrey'>(<b>89,358</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_20');")><b>1</b></a><span id="showMoreBlock_20" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>4,859</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../bijection/html/index.html' target='_blank' style='margin-left: 6px'>twitter / bijection</a> <span color='lightgrey'>(<b>4,859</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_21');")><b>1</b></a><span id="showMoreBlock_21" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>664</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../tormenta/html/index.html' target='_blank' style='margin-left: 6px'>twitter / tormenta</a> <span color='lightgrey'>(<b>664</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_22');")><b>1</b></a><span id="showMoreBlock_22" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>4,155</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../storehaus/html/index.html' target='_blank' style='margin-left: 6px'>twitter / storehaus</a> <span color='lightgrey'>(<b>4,155</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_23');")><b>1</b></a><span id="showMoreBlock_23" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>5,824</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../stitch/html/index.html' target='_blank' style='margin-left: 6px'>twitter / stitch</a> <span color='lightgrey'>(<b>5,824</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_24');")><b>1</b></a><span id="showMoreBlock_24" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>46,579</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../scalding/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scalding</a> <span color='lightgrey'>(<b>46,579</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_25');")><b>1</b></a><span id="showMoreBlock_25" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>26,584</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../algebird/html/index.html' target='_blank' style='margin-left: 6px'>twitter / algebird</a> <span color='lightgrey'>(<b>26,584</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_26');")><b>1</b></a><span id="showMoreBlock_26" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>5,436</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../bazel-multiversion/html/index.html' target='_blank' style='margin-left: 6px'>twitter / bazel-multiversion</a> <span color='lightgrey'>(<b>5,436</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_27');")><b>1</b></a><span id="showMoreBlock_27" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>6,778</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twitter-server/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-server</a> <span color='lightgrey'>(<b>6,778</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_28');")><b>1</b></a><span id="showMoreBlock_28" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>35,832</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../util/html/index.html' target='_blank' style='margin-left: 6px'>twitter / util</a> <span color='lightgrey'>(<b>35,832</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_29');")><b>1</b></a><span id="showMoreBlock_29" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>1,500</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../scala_school2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scala_school2</a> <span color='lightgrey'>(<b>1,500</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)pom[.]xml
+">
+<img title='maven' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 26px; height: 26px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/maven.png"><div style='vertical-align: middle; display: inline-block;'>maven</div>
+</div>
+</td>
+<td style="text-align: center; border-right: 4px solid lightgrey; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: white">
+ <a href="javascript:showHide('showMoreBlock_30');")><b>15</b></a><span id="showMoreBlock_30" style="display: none;">
+<div style="background-color: white; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>181,654</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../pants/html/index.html' target='_blank' style='margin-left: 6px'>twitter / pants</a> <span color='lightgrey'>(<b>81,165</b> LOC)</span>
+</div>
+<div style="">
+<a href='../scrooge/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scrooge</a> <span color='lightgrey'>(<b>19,080</b> LOC)</span>
+</div>
+<div style="">
+<a href='../elephant-bird/html/index.html' target='_blank' style='margin-left: 6px'>twitter / elephant-bird</a> <span color='lightgrey'>(<b>16,140</b> LOC)</span>
+</div>
+<div style="">
+<a href='../cloudhopper-commons/html/index.html' target='_blank' style='margin-left: 6px'>twitter / cloudhopper-commons</a> <span color='lightgrey'>(<b>14,674</b> LOC)</span>
+</div>
+<div style="">
+<a href='../GraphJet/html/index.html' target='_blank' style='margin-left: 6px'>twitter / GraphJet</a> <span color='lightgrey'>(<b>10,545</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-text</a> <span color='lightgrey'>(<b>9,761</b> LOC)</span>
+</div>
+<div style="">
+<a href='../whiskey/html/index.html' target='_blank' style='margin-left: 6px'>twitter / whiskey</a> <span color='lightgrey'>(<b>5,885</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sbf/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sbf</a> <span color='lightgrey'>(<b>4,691</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hadoop-lzo/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hadoop-lzo</a> <span color='lightgrey'>(<b>4,123</b> LOC)</span>
+</div>
+<div style="">
+<a href='../netty-http2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / netty-http2</a> <span color='lightgrey'>(<b>3,616</b> LOC)</span>
+</div>
+<div style="">
+<a href='../iago2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / iago2</a> <span color='lightgrey'>(<b>3,450</b> LOC)</span>
+</div>
+<div style="">
+<a href='../nodes/html/index.html' target='_blank' style='margin-left: 6px'>twitter / nodes</a> <span color='lightgrey'>(<b>2,645</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-korean-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-korean-text</a> <span color='lightgrey'>(<b>2,436</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hpack/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hpack</a> <span color='lightgrey'>(<b>1,757</b> LOC)</span>
+</div>
+<div style="">
+<a href='../joauth/html/index.html' target='_blank' style='margin-left: 6px'>twitter / joauth</a> <span color='lightgrey'>(<b>1,686</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_31');")><b>1</b></a><span id="showMoreBlock_31" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>9,761</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twitter-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-text</a> <span color='lightgrey'>(<b>9,761</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_32');")><b>1</b></a><span id="showMoreBlock_32" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>81,165</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../pants/html/index.html' target='_blank' style='margin-left: 6px'>twitter / pants</a> <span color='lightgrey'>(<b>81,165</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_33');")><b>1</b></a><span id="showMoreBlock_33" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>2,436</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twitter-korean-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-korean-text</a> <span color='lightgrey'>(<b>2,436</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_34');")><b>1</b></a><span id="showMoreBlock_34" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>19,080</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../scrooge/html/index.html' target='_blank' style='margin-left: 6px'>twitter / scrooge</a> <span color='lightgrey'>(<b>19,080</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_35');")><b>1</b></a><span id="showMoreBlock_35" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>1,686</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../joauth/html/index.html' target='_blank' style='margin-left: 6px'>twitter / joauth</a> <span color='lightgrey'>(<b>1,686</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_36');")><b>1</b></a><span id="showMoreBlock_36" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>3,450</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../iago2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / iago2</a> <span color='lightgrey'>(<b>3,450</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_37');")><b>1</b></a><span id="showMoreBlock_37" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>4,123</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../hadoop-lzo/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hadoop-lzo</a> <span color='lightgrey'>(<b>4,123</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_38');")><b>1</b></a><span id="showMoreBlock_38" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>14,674</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../cloudhopper-commons/html/index.html' target='_blank' style='margin-left: 6px'>twitter / cloudhopper-commons</a> <span color='lightgrey'>(<b>14,674</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_39');")><b>1</b></a><span id="showMoreBlock_39" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>10,545</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../GraphJet/html/index.html' target='_blank' style='margin-left: 6px'>twitter / GraphJet</a> <span color='lightgrey'>(<b>10,545</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_40');")><b>1</b></a><span id="showMoreBlock_40" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>16,140</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../elephant-bird/html/index.html' target='_blank' style='margin-left: 6px'>twitter / elephant-bird</a> <span color='lightgrey'>(<b>16,140</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_41');")><b>1</b></a><span id="showMoreBlock_41" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>3,616</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../netty-http2/html/index.html' target='_blank' style='margin-left: 6px'>twitter / netty-http2</a> <span color='lightgrey'>(<b>3,616</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_42');")><b>1</b></a><span id="showMoreBlock_42" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>1,757</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../hpack/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hpack</a> <span color='lightgrey'>(<b>1,757</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_43');")><b>1</b></a><span id="showMoreBlock_43" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>2,645</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../nodes/html/index.html' target='_blank' style='margin-left: 6px'>twitter / nodes</a> <span color='lightgrey'>(<b>2,645</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_44');")><b>1</b></a><span id="showMoreBlock_44" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>4,691</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../sbf/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sbf</a> <span color='lightgrey'>(<b>4,691</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_45');")><b>1</b></a><span id="showMoreBlock_45" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>5,885</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../whiskey/html/index.html' target='_blank' style='margin-left: 6px'>twitter / whiskey</a> <span color='lightgrey'>(<b>5,885</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)package[.]json
+">
+<img title='npm' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 26px; height: 26px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/npm.png"><div style='vertical-align: middle; display: inline-block;'>npm</div>
+</div>
+</td>
+<td style="text-align: center; border-right: 4px solid lightgrey; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: white">
+ <a href="javascript:showHide('showMoreBlock_46');")><b>12</b></a><span id="showMoreBlock_46" style="display: none;">
+<div style="background-color: white; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>132,551</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../pants/html/index.html' target='_blank' style='margin-left: 6px'>twitter / pants</a> <span color='lightgrey'>(<b>81,165</b> LOC)</span>
+</div>
+<div style="">
+<a href='../sqrl/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sqrl</a> <span color='lightgrey'>(<b>18,149</b> LOC)</span>
+</div>
+<div style="">
+<a href='../hogan.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hogan.js</a> <span color='lightgrey'>(<b>14,081</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-text</a> <span color='lightgrey'>(<b>9,761</b> LOC)</span>
+</div>
+<div style="">
+<a href='../SentenTree/html/index.html' target='_blank' style='margin-left: 6px'>twitter / SentenTree</a> <span color='lightgrey'>(<b>2,935</b> LOC)</span>
+</div>
+<div style="">
+<a href='../typeahead.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / typeahead.js</a> <span color='lightgrey'>(<b>2,220</b> LOC)</span>
+</div>
+<div style="">
+<a href='../labella.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / labella.js</a> <span color='lightgrey'>(<b>1,829</b> LOC)</span>
+</div>
+<div style="">
+<a href='../check-my-repo/html/index.html' target='_blank' style='margin-left: 6px'>twitter / check-my-repo</a> <span color='lightgrey'>(<b>960</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twemoji-parser/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji-parser</a> <span color='lightgrey'>(<b>762</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twemoji/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji</a> <span color='lightgrey'>(<b>428</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dodo-build/html/index.html' target='_blank' style='margin-left: 6px'>twitter / dodo-build</a> <span color='lightgrey'>(<b>255</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twitter-cldr-npm/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-cldr-npm</a> <span color='lightgrey'>(<b>6</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_47');")><b>1</b></a><span id="showMoreBlock_47" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>9,761</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twitter-text/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-text</a> <span color='lightgrey'>(<b>9,761</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_48');")><b>1</b></a><span id="showMoreBlock_48" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>762</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twemoji-parser/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji-parser</a> <span color='lightgrey'>(<b>762</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_49');")><b>1</b></a><span id="showMoreBlock_49" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>81,165</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../pants/html/index.html' target='_blank' style='margin-left: 6px'>twitter / pants</a> <span color='lightgrey'>(<b>81,165</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_50');")><b>1</b></a><span id="showMoreBlock_50" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>18,149</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../sqrl/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sqrl</a> <span color='lightgrey'>(<b>18,149</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_51');")><b>1</b></a><span id="showMoreBlock_51" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>255</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../dodo-build/html/index.html' target='_blank' style='margin-left: 6px'>twitter / dodo-build</a> <span color='lightgrey'>(<b>255</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_52');")><b>1</b></a><span id="showMoreBlock_52" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>428</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twemoji/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji</a> <span color='lightgrey'>(<b>428</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_53');")><b>1</b></a><span id="showMoreBlock_53" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>2,220</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../typeahead.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / typeahead.js</a> <span color='lightgrey'>(<b>2,220</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_54');")><b>1</b></a><span id="showMoreBlock_54" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>2,935</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../SentenTree/html/index.html' target='_blank' style='margin-left: 6px'>twitter / SentenTree</a> <span color='lightgrey'>(<b>2,935</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_55');")><b>1</b></a><span id="showMoreBlock_55" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>14,081</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../hogan.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / hogan.js</a> <span color='lightgrey'>(<b>14,081</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_56');")><b>1</b></a><span id="showMoreBlock_56" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>1,829</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../labella.js/html/index.html' target='_blank' style='margin-left: 6px'>twitter / labella.js</a> <span color='lightgrey'>(<b>1,829</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_57');")><b>1</b></a><span id="showMoreBlock_57" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>960</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../check-my-repo/html/index.html' target='_blank' style='margin-left: 6px'>twitter / check-my-repo</a> <span color='lightgrey'>(<b>960</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_58');")><b>1</b></a><span id="showMoreBlock_58" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>6</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twitter-cldr-npm/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twitter-cldr-npm</a> <span color='lightgrey'>(<b>6</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)jest[.].*
+">
+<img title='jest' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 26px; height: 26px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/jest.png"><div style='vertical-align: middle; display: inline-block;'>jest</div>
+</div>
+</td>
+<td style="text-align: center; border-right: 4px solid lightgrey; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: white">
+ <a href="javascript:showHide('showMoreBlock_59');")><b>3</b></a><span id="showMoreBlock_59" style="display: none;">
+<div style="background-color: white; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>19,166</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../sqrl/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sqrl</a> <span color='lightgrey'>(<b>18,149</b> LOC)</span>
+</div>
+<div style="">
+<a href='../twemoji-parser/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji-parser</a> <span color='lightgrey'>(<b>762</b> LOC)</span>
+</div>
+<div style="">
+<a href='../dodo-build/html/index.html' target='_blank' style='margin-left: 6px'>twitter / dodo-build</a> <span color='lightgrey'>(<b>255</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_60');")><b>1</b></a><span id="showMoreBlock_60" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>762</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../twemoji-parser/html/index.html' target='_blank' style='margin-left: 6px'>twitter / twemoji-parser</a> <span color='lightgrey'>(<b>762</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_61');")><b>1</b></a><span id="showMoreBlock_61" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>18,149</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../sqrl/html/index.html' target='_blank' style='margin-left: 6px'>twitter / sqrl</a> <span color='lightgrey'>(<b>18,149</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_62');")><b>1</b></a><span id="showMoreBlock_62" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>255</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../dodo-build/html/index.html' target='_blank' style='margin-left: 6px'>twitter / dodo-build</a> <span color='lightgrey'>(<b>255</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+</tr>
+<tr style='text-align: center'>
+<td style="vertical-align: top; white-space: nowrap;">
+<div style="cursor: help;vertical-align: top; cursor: help; padding: 4px; border-radius: 6px; border: 1px solid lightgrey; background-color: #B9D9EB" title="includes repositories with at least one file matching:
+ - (|.*/)build[.]gradle
+">
+<img title='gradle' style="border: 1px solid grey; border-radius: 50%; padding: 1px; background-color: #fcfcfc; vertical-align: middle; margin-right: 5px; width: 26px; height: 26px; object-fit: contain;" src="https://zeljkoobrenovic.github.io/sokrates-media/general/gradle.png"><div style='vertical-align: middle; display: inline-block;'>gradle</div>
+</div>
+</td>
+<td style="text-align: center; border-right: 4px solid lightgrey; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: white">
+ <a href="javascript:showHide('showMoreBlock_63');")><b>3</b></a><span id="showMoreBlock_63" style="display: none;">
+<div style="background-color: white; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>101,311</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../ios-twitter-image-pipeline/html/index.html' target='_blank' style='margin-left: 6px'>twitter / ios-twitter-image-pipeline</a> <span color='lightgrey'>(<b>96,338</b> LOC)</span>
+</div>
+<div style="">
+<a href='../Serial/html/index.html' target='_blank' style='margin-left: 6px'>twitter / Serial</a> <span color='lightgrey'>(<b>3,057</b> LOC)</span>
+</div>
+<div style="">
+<a href='../compose-rules/html/index.html' target='_blank' style='margin-left: 6px'>twitter / compose-rules</a> <span color='lightgrey'>(<b>1,916</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_64');")><b>1</b></a><span id="showMoreBlock_64" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>1,916</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../compose-rules/html/index.html' target='_blank' style='margin-left: 6px'>twitter / compose-rules</a> <span color='lightgrey'>(<b>1,916</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_65');")><b>1</b></a><span id="showMoreBlock_65" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>3,057</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../Serial/html/index.html' target='_blank' style='margin-left: 6px'>twitter / Serial</a> <span color='lightgrey'>(<b>3,057</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="background-color: #B9D9EB; text-align: center; vertical-align: top">
+<div style="box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 19%); margin: 2px; display: inline-block; border-radius: 4px; padding: 4px; background-color: #f0f0f0">
+ <a href="javascript:showHide('showMoreBlock_66');")><b>1</b></a><span id="showMoreBlock_66" style="display: none;">
+<div style="background-color: #f0f0f0; a margin-left: 5px; font-size: 80%; text-align: left">
+<div style="border-top: 2px solid lightgrey; border-bottom: 2px solid lightgrey; padding: 2px">
+<b>96,338</b> LOC (main)<br><b>0</b> commits (30d)<br><b>0</b> contributors (30d)
+</div>
+<div style="">
+<a href='../ios-twitter-image-pipeline/html/index.html' target='_blank' style='margin-left: 6px'>twitter / ios-twitter-image-pipeline</a> <span color='lightgrey'>(<b>96,338</b> LOC)</span>
+</div>
+</div>
+</span>
+</div>
+</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

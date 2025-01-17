@@ -1,0 +1,96 @@
+{
+  "subLandscapes" : [ ],
+  "repositories" : [ {
+    "analysisResultsPath" : "ddmock-ios/data/analysisResults.json",
+    "htmlReportsRoot" : "ddmock-ios/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "react-habitat-redux/data/analysisResults.json",
+    "htmlReportsRoot" : "react-habitat-redux/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ripple-social-channels/data/analysisResults.json",
+    "htmlReportsRoot" : "ripple-social-channels/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "eslint-config-deloitte/data/analysisResults.json",
+    "htmlReportsRoot" : "eslint-config-deloitte/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ddrouter/data/analysisResults.json",
+    "htmlReportsRoot" : "ddrouter/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "ddmock-android/data/analysisResults.json",
+    "htmlReportsRoot" : "ddmock-android/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "react-habitat/data/analysisResults.json",
+    "htmlReportsRoot" : "react-habitat/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "Dimmy.Sitecore.Plugin/data/analysisResults.json",
+    "htmlReportsRoot" : "Dimmy.Sitecore.Plugin/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "Charts/data/analysisResults.json",
+    "htmlReportsRoot" : "Charts/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dd-swiftlint-rules/data/analysisResults.json",
+    "htmlReportsRoot" : "dd-swiftlint-rules/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "thephuong-flask/data/analysisResults.json",
+    "htmlReportsRoot" : "thephuong-flask/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "webpack-config/data/analysisResults.json",
+    "htmlReportsRoot" : "webpack-config/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "htl-parser/data/analysisResults.json",
+    "htmlReportsRoot" : "htl-parser/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "rhythm-ui/data/analysisResults.json",
+    "htmlReportsRoot" : "rhythm-ui/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "stylelint-config-deloitte/data/analysisResults.json",
+    "htmlReportsRoot" : "stylelint-config-deloitte/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "DecimalFormat/data/analysisResults.json",
+    "htmlReportsRoot" : "DecimalFormat/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "SSReader/data/analysisResults.json",
+    "htmlReportsRoot" : "SSReader/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "qd-satis/data/analysisResults.json",
+    "htmlReportsRoot" : "qd-satis/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dd-detekt-rules/data/analysisResults.json",
+    "htmlReportsRoot" : "dd-detekt-rules/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "dd-breakpoint-container/data/analysisResults.json",
+    "htmlReportsRoot" : "dd-breakpoint-container/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "Atlas/data/analysisResults.json",
+    "htmlReportsRoot" : "Atlas/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "schematik-forms/data/analysisResults.json",
+    "htmlReportsRoot" : "schematik-forms/html",
+    "note" : ""
+  }, {
+    "analysisResultsPath" : "DDBreakpoints/data/analysisResults.json",
+    "htmlReportsRoot" : "DDBreakpoints/html",
+    "note" : ""
+  } ]
+}

@@ -1,0 +1,613 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/force-graph"></script>
+</head>
+
+<body>
+<div id="graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "all file extensions / sql (1)",
+    "size" : 5
+  }, {
+    "id" : "all file extensions / in (1)",
+    "size" : 5
+  }, {
+    "id" : "all file extensions / cfg (1)",
+    "size" : 5
+  }, {
+    "id" : "all file extensions / h (3)",
+    "size" : 3
+  }, {
+    "id" : "all file extensions / tsx (2)",
+    "size" : 7
+  }, {
+    "id" : "all file extensions / less (1)",
+    "size" : 2
+  }, {
+    "id" : "all file extensions / vue (2)",
+    "size" : 8
+  }, {
+    "id" : "all file extensions / kts (1)",
+    "size" : 1
+  }, {
+    "id" : "all file extensions / py (3)",
+    "size" : 7
+  }, {
+    "id" : "all file extensions / ejs (1)",
+    "size" : 3
+  }, {
+    "id" : "all file extensions / jsx (1)",
+    "size" : 4
+  }, {
+    "id" : "all file extensions / kt (2)",
+    "size" : 2
+  }, {
+    "id" : "all file extensions / ps1 (1)",
+    "size" : 2
+  }, {
+    "id" : "all file extensions / cshtml (1)",
+    "size" : 2
+  }, {
+    "id" : "all file extensions / m (1)",
+    "size" : 2
+  }, {
+    "id" : "all file extensions / cs (2)",
+    "size" : 3
+  }, {
+    "id" : "all file extensions / swift (4)",
+    "size" : 3
+  }, {
+    "id" : "all file extensions / js (12)",
+    "size" : 11
+  }, {
+    "id" : "all file extensions / html (5)",
+    "size" : 13
+  }, {
+    "id" : "all file extensions / ts (2)",
+    "size" : 7
+  }, {
+    "id" : "all file extensions / css (3)",
+    "size" : 11
+  }, {
+    "id" : "all file extensions / hbs (1)",
+    "size" : 6
+  }, {
+    "id" : "all file extensions / xml (2)",
+    "size" : 2
+  }, {
+    "id" : "all file extensions / java (1)",
+    "size" : 1
+  }, {
+    "id" : "all file extensions / scss (4)",
+    "size" : 9
+  } ],
+  "links" : [ {
+    "source" : "all file extensions / xml (2)",
+    "target" : "all file extensions / cs (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cs (2)",
+    "target" : "all file extensions / xml (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / xml (2)",
+    "target" : "all file extensions / kt (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / kt (2)",
+    "target" : "all file extensions / xml (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / swift (4)",
+    "target" : "all file extensions / h (3)",
+    "count" : 3
+  }, {
+    "source" : "all file extensions / h (3)",
+    "target" : "all file extensions / swift (4)",
+    "count" : 3
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / html (5)",
+    "count" : 3
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 3
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / js (12)",
+    "count" : 4
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 4
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / css (3)",
+    "count" : 3
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / html (5)",
+    "count" : 3
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / html (5)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / html (5)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / js (12)",
+    "count" : 4
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / html (5)",
+    "count" : 4
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / css (3)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / css (3)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / js (12)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / css (3)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / js (12)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / js (12)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / ejs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ejs (1)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / ejs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ejs (1)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / ejs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ejs (1)",
+    "target" : "all file extensions / js (12)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / java (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / java (1)",
+    "target" : "all file extensions / js (12)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cs (2)",
+    "target" : "all file extensions / cshtml (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cshtml (1)",
+    "target" : "all file extensions / cs (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cs (2)",
+    "target" : "all file extensions / ps1 (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ps1 (1)",
+    "target" : "all file extensions / cs (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cshtml (1)",
+    "target" : "all file extensions / ps1 (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ps1 (1)",
+    "target" : "all file extensions / cshtml (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / in (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / in (1)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / cfg (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cfg (1)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / sql (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / sql (1)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / in (1)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / in (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / in (1)",
+    "target" : "all file extensions / cfg (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cfg (1)",
+    "target" : "all file extensions / in (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / in (1)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / in (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / in (1)",
+    "target" : "all file extensions / sql (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / sql (1)",
+    "target" : "all file extensions / in (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / cfg (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cfg (1)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / sql (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / sql (1)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cfg (1)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / cfg (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / cfg (1)",
+    "target" : "all file extensions / sql (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / sql (1)",
+    "target" : "all file extensions / cfg (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / sql (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / sql (1)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / jsx (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / jsx (1)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / html (5)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / jsx (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / jsx (1)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / js (12)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 2
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / jsx (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / jsx (1)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / jsx (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / jsx (1)",
+    "target" : "all file extensions / js (12)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / kts (1)",
+    "target" : "all file extensions / kt (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / kt (2)",
+    "target" : "all file extensions / kts (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / m (1)",
+    "target" : "all file extensions / swift (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / swift (4)",
+    "target" : "all file extensions / m (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / m (1)",
+    "target" : "all file extensions / h (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / h (3)",
+    "target" : "all file extensions / m (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / swift (4)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / swift (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / py (3)",
+    "target" : "all file extensions / h (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / h (3)",
+    "target" : "all file extensions / py (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / scss (4)",
+    "target" : "all file extensions / less (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / less (1)",
+    "target" : "all file extensions / scss (4)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / less (1)",
+    "target" : "all file extensions / js (12)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / less (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / html (5)",
+    "target" : "all file extensions / hbs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / hbs (1)",
+    "target" : "all file extensions / html (5)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / css (3)",
+    "target" : "all file extensions / hbs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / hbs (1)",
+    "target" : "all file extensions / css (3)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / vue (2)",
+    "target" : "all file extensions / hbs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / hbs (1)",
+    "target" : "all file extensions / vue (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / ts (2)",
+    "target" : "all file extensions / hbs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / hbs (1)",
+    "target" : "all file extensions / ts (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / tsx (2)",
+    "target" : "all file extensions / hbs (1)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / hbs (1)",
+    "target" : "all file extensions / tsx (2)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / hbs (1)",
+    "target" : "all file extensions / js (12)",
+    "count" : 1
+  }, {
+    "source" : "all file extensions / js (12)",
+    "target" : "all file extensions / hbs (1)",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => {
+        return {source: l.target, target: l.source, count: l.count}
+    });
+    const colorOf = (node) => {
+        if (!node.id.startsWith("[")) return "rgba(135, 206, 235, 0.6)";
+        return "rgba(100,100,100,0.6)";
+    }
+
+    const elem = document.getElementById('graph');
+    const Graph = ForceGraph()(elem)
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => colorOf(n))
+        .linkDirectionalParticles(1)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

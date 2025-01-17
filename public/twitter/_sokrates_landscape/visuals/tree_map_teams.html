@@ -1,0 +1,6780 @@
+<!--
+  ~ Copyright (c) 2021 Željko Obrenović. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A treeview view on componets</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+
+    <style type="text/css">
+        svg {
+            font: 14px sans-serif;
+        }
+    </style>
+</head>
+<body>
+<svg width="960" height="570"></svg>
+<script>
+
+    var svg = d3.select("svg"),
+            width = +svg.attr("width"),
+            height = +svg.attr("height");
+
+    var fader = function (color) {
+                return d3.interpolateRgb(color, "#fff")(0.2);
+            },
+            color = d3.scaleOrdinal(d3.schemeCategory20.map(fader)),
+            format = d3.format(",d");
+
+    var treemap = d3.treemap()
+            .tile(d3.treemapResquarify)
+            .size([width, height])
+            .round(true)
+            .paddingInner(1);
+
+    var data = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "marius@twitter.com",
+  "color" : "",
+  "size" : 1488,
+  "children" : [ ]
+}, {
+  "name" : "ccoco@twitter.com",
+  "color" : "",
+  "size" : 954,
+  "children" : [ ]
+}, {
+  "name" : "john.sirois@gmail.com",
+  "color" : "",
+  "size" : 863,
+  "children" : [ ]
+}, {
+  "name" : "koliver@twitter.com",
+  "color" : "",
+  "size" : 774,
+  "children" : [ ]
+}, {
+  "name" : "paloma.oliveira@saucelabs.com",
+  "color" : "",
+  "size" : 674,
+  "children" : [ ]
+}, {
+  "name" : "mnakamura@twitter.com",
+  "color" : "",
+  "size" : 673,
+  "children" : [ ]
+}, {
+  "name" : "banderson@twitter.com",
+  "color" : "",
+  "size" : 590,
+  "children" : [ ]
+}, {
+  "name" : "eburmako@twitter.com",
+  "color" : "",
+  "size" : 580,
+  "children" : [ ]
+}, {
+  "name" : "vkostyukov@twitter.com",
+  "color" : "",
+  "size" : 579,
+  "children" : [ ]
+}, {
+  "name" : "camertron@gmail.com",
+  "color" : "",
+  "size" : 555,
+  "children" : [ ]
+}, {
+  "name" : "benjyw@gmail.com",
+  "color" : "",
+  "size" : 539,
+  "children" : [ ]
+}, {
+  "name" : "benjy@foursquare.com",
+  "color" : "",
+  "size" : 519,
+  "children" : [ ]
+}, {
+  "name" : "wilhelm@twitter.com",
+  "color" : "",
+  "size" : 509,
+  "children" : [ ]
+}, {
+  "name" : "julio@twitter.com",
+  "color" : "",
+  "size" : 428,
+  "children" : [ ]
+}, {
+  "name" : "zundel@squareup.com",
+  "color" : "",
+  "size" : 414,
+  "children" : [ ]
+}, {
+  "name" : "stuhood@twitter.com",
+  "color" : "",
+  "size" : 405,
+  "children" : [ ]
+}, {
+  "name" : "dawagner@gmail.com",
+  "color" : "",
+  "size" : 388,
+  "children" : [ ]
+}, {
+  "name" : "bmartin@twitter.com",
+  "color" : "",
+  "size" : 365,
+  "children" : [ ]
+}, {
+  "name" : "stuhood@gmail.com",
+  "color" : "",
+  "size" : 365,
+  "children" : [ ]
+}, {
+  "name" : "roanta@twitter.com",
+  "color" : "",
+  "size" : 356,
+  "children" : [ ]
+}, {
+  "name" : "jillianc@twitter.com",
+  "color" : "",
+  "size" : 339,
+  "children" : [ ]
+}, {
+  "name" : "ryano@twitter.com",
+  "color" : "",
+  "size" : 333,
+  "children" : [ ]
+}, {
+  "name" : "yufang@twitter.com",
+  "color" : "",
+  "size" : 324,
+  "children" : [ ]
+}, {
+  "name" : "nkallen@tallbro.local",
+  "color" : "",
+  "size" : 305,
+  "children" : [ ]
+}, {
+  "name" : "cdutro@twitter.com",
+  "color" : "",
+  "size" : 303,
+  "children" : [ ]
+}, {
+  "name" : "stevegury@twitter.com",
+  "color" : "",
+  "size" : 286,
+  "children" : [ ]
+}, {
+  "name" : "kirill.lashuk@gmail.com",
+  "color" : "",
+  "size" : 284,
+  "children" : [ ]
+}, {
+  "name" : "dschobel@twitter.com",
+  "color" : "",
+  "size" : 254,
+  "children" : [ ]
+}, {
+  "name" : "me@waleedkhan.name",
+  "color" : "",
+  "size" : 229,
+  "children" : [ ]
+}, {
+  "name" : "ericarellano@me.com",
+  "color" : "",
+  "size" : 225,
+  "children" : [ ]
+}, {
+  "name" : "jsirois@twitter.com",
+  "color" : "",
+  "size" : 191,
+  "children" : [ ]
+}, {
+  "name" : "eed3si9n@gmail.com",
+  "color" : "",
+  "size" : 190,
+  "children" : [ ]
+}, {
+  "name" : "robey@twitter.com",
+  "color" : "",
+  "size" : 177,
+  "children" : [ ]
+}, {
+  "name" : "evm@twitter.com",
+  "color" : "",
+  "size" : 176,
+  "children" : [ ]
+}, {
+  "name" : "nvong@twitter.com",
+  "color" : "",
+  "size" : 175,
+  "children" : [ ]
+}, {
+  "name" : "jeremycloud@twitter.com",
+  "color" : "",
+  "size" : 162,
+  "children" : [ ]
+}, {
+  "name" : "ibennett@twitter.com",
+  "color" : "",
+  "size" : 160,
+  "children" : [ ]
+}, {
+  "name" : "jcapote@gmail.com",
+  "color" : "",
+  "size" : 149,
+  "children" : [ ]
+}, {
+  "name" : "mister@lahosken.san-francisco.ca.us",
+  "color" : "",
+  "size" : 145,
+  "children" : [ ]
+}, {
+  "name" : "1305167+cosmicexplorer@users.noreply.github.com",
+  "color" : "",
+  "size" : 143,
+  "children" : [ ]
+}, {
+  "name" : "jaynbaxter@gmail.com",
+  "color" : "",
+  "size" : 136,
+  "children" : [ ]
+}, {
+  "name" : "pvlugter@gmail.com",
+  "color" : "",
+  "size" : 135,
+  "children" : [ ]
+}, {
+  "name" : "hallam@twitter.com",
+  "color" : "",
+  "size" : 123,
+  "children" : [ ]
+}, {
+  "name" : "jimteeuwen@gmail.com",
+  "color" : "",
+  "size" : 122,
+  "children" : [ ]
+}, {
+  "name" : "jparker@twitter.com",
+  "color" : "",
+  "size" : 119,
+  "children" : [ ]
+}, {
+  "name" : "wisechengyi@gmail.com",
+  "color" : "",
+  "size" : 119,
+  "children" : [ ]
+}, {
+  "name" : "ndowns@twitter.com",
+  "color" : "",
+  "size" : 117,
+  "children" : [ ]
+}, {
+  "name" : "xeno.by@gmail.com",
+  "color" : "",
+  "size" : 114,
+  "children" : [ ]
+}, {
+  "name" : "tcooper@twitter.com",
+  "color" : "",
+  "size" : 114,
+  "children" : [ ]
+}, {
+  "name" : "pl@foursquare.com",
+  "color" : "",
+  "size" : 111,
+  "children" : [ ]
+}, {
+  "name" : "nacho@nlopez.io",
+  "color" : "",
+  "size" : 109,
+  "children" : [ ]
+}, {
+  "name" : "jbestourous@twitter.com",
+  "color" : "",
+  "size" : 107,
+  "children" : [ ]
+}, {
+  "name" : "bdegenhardt@twitter.com",
+  "color" : "",
+  "size" : 105,
+  "children" : [ ]
+}, {
+  "name" : "nhoward@twopensource.com",
+  "color" : "",
+  "size" : 104,
+  "children" : [ ]
+}, {
+  "name" : "philippe.laflamme@gmail.com",
+  "color" : "",
+  "size" : 103,
+  "children" : [ ]
+}, {
+  "name" : "dturner@twopensource.com",
+  "color" : "",
+  "size" : 102,
+  "children" : [ ]
+}, {
+  "name" : "jyan@twitter.com",
+  "color" : "",
+  "size" : 101,
+  "children" : [ ]
+}, {
+  "name" : "andrea.giammarchi@gmail.com",
+  "color" : "",
+  "size" : 100,
+  "children" : [ ]
+}, {
+  "name" : "kwlzn@users.noreply.github.com",
+  "color" : "",
+  "size" : 99,
+  "children" : [ ]
+}, {
+  "name" : "jeff@twitter.com",
+  "color" : "",
+  "size" : 94,
+  "children" : [ ]
+}, {
+  "name" : "lucasneumann.fau@gmail.com",
+  "color" : "",
+  "size" : 93,
+  "children" : [ ]
+}, {
+  "name" : "74026070+twitterbirdwatch@users.noreply.github.com",
+  "color" : "",
+  "size" : 92,
+  "children" : [ ]
+}, {
+  "name" : "philippe@hopper.com",
+  "color" : "",
+  "size" : 91,
+  "children" : [ ]
+}, {
+  "name" : "david@twitter.com",
+  "color" : "",
+  "size" : 90,
+  "children" : [ ]
+}, {
+  "name" : "dordogh@twitter.com",
+  "color" : "",
+  "size" : 90,
+  "children" : [ ]
+}, {
+  "name" : "scosenza@twitter.com",
+  "color" : "",
+  "size" : 87,
+  "children" : [ ]
+}, {
+  "name" : "arya@twitter.com",
+  "color" : "",
+  "size" : 79,
+  "children" : [ ]
+}, {
+  "name" : "ilopezsais@twitter.com",
+  "color" : "",
+  "size" : 79,
+  "children" : [ ]
+}, {
+  "name" : "johan@oskarsson.nu",
+  "color" : "",
+  "size" : 78,
+  "children" : [ ]
+}, {
+  "name" : "mdickinson@twitter.com",
+  "color" : "",
+  "size" : 77,
+  "children" : [ ]
+}, {
+  "name" : "mateorod9@gmail.com",
+  "color" : "",
+  "size" : 77,
+  "children" : [ ]
+}, {
+  "name" : "ver@twitter.com",
+  "color" : "",
+  "size" : 76,
+  "children" : [ ]
+}, {
+  "name" : "winw@twitter.com",
+  "color" : "",
+  "size" : 75,
+  "children" : [ ]
+}, {
+  "name" : "klashuk@twitter.com",
+  "color" : "",
+  "size" : 75,
+  "children" : [ ]
+}, {
+  "name" : "brad.miller.87@gmail.com",
+  "color" : "",
+  "size" : 73,
+  "children" : [ ]
+}, {
+  "name" : "slance@twitter.com",
+  "color" : "",
+  "size" : 72,
+  "children" : [ ]
+}, {
+  "name" : "jyudaken@twitter.com",
+  "color" : "",
+  "size" : 72,
+  "children" : [ ]
+}, {
+  "name" : "wangpeiyu@gmail.com",
+  "color" : "",
+  "size" : 72,
+  "children" : [ ]
+}, {
+  "name" : "jdonham@twitter.com",
+  "color" : "",
+  "size" : 70,
+  "children" : [ ]
+}, {
+  "name" : "kwilson@twopensource.com",
+  "color" : "",
+  "size" : 70,
+  "children" : [ ]
+}, {
+  "name" : "garrett.malmquist@gmail.com",
+  "color" : "",
+  "size" : 69,
+  "children" : [ ]
+}, {
+  "name" : "cacoco@gmail.com",
+  "color" : "",
+  "size" : 68,
+  "children" : [ ]
+}, {
+  "name" : "matt@digital-wanderlust.com",
+  "color" : "",
+  "size" : 67,
+  "children" : [ ]
+}, {
+  "name" : "cheister@gmail.com",
+  "color" : "",
+  "size" : 65,
+  "children" : [ ]
+}, {
+  "name" : "ryan.blake.williams@gmail.com",
+  "color" : "",
+  "size" : 65,
+  "children" : [ ]
+}, {
+  "name" : "lhe@twitter.com",
+  "color" : "",
+  "size" : 64,
+  "children" : [ ]
+}, {
+  "name" : "ema@twitter.com",
+  "color" : "",
+  "size" : 61,
+  "children" : [ ]
+}, {
+  "name" : "mail@timothyandrew.net",
+  "color" : "",
+  "size" : 56,
+  "children" : [ ]
+}, {
+  "name" : "mduhem@twitter.com",
+  "color" : "",
+  "size" : 54,
+  "children" : [ ]
+}, {
+  "name" : "lhosken@twitter.com",
+  "color" : "",
+  "size" : 53,
+  "children" : [ ]
+}, {
+  "name" : "faria.kalim@gmail.com",
+  "color" : "",
+  "size" : 53,
+  "children" : [ ]
+}, {
+  "name" : "johan@twitter.com",
+  "color" : "",
+  "size" : 50,
+  "children" : [ ]
+}, {
+  "name" : "bing@twitter.com",
+  "color" : "",
+  "size" : 49,
+  "children" : [ ]
+}, {
+  "name" : "jpinner@twitter.com",
+  "color" : "",
+  "size" : 49,
+  "children" : [ ]
+}, {
+  "name" : "imartin@twitter.com",
+  "color" : "",
+  "size" : 49,
+  "children" : [ ]
+}, {
+  "name" : "yic@twitter.com",
+  "color" : "",
+  "size" : 49,
+  "children" : [ ]
+}, {
+  "name" : "glen@twitter.com",
+  "color" : "",
+  "size" : 48,
+  "children" : [ ]
+}, {
+  "name" : "eax@twitter.com",
+  "color" : "",
+  "size" : 48,
+  "children" : [ ]
+}, {
+  "name" : "drusek@twitter.com",
+  "color" : "",
+  "size" : 47,
+  "children" : [ ]
+}, {
+  "name" : "dwagnerhall@twitter.com",
+  "color" : "",
+  "size" : 46,
+  "children" : [ ]
+}, {
+  "name" : "tinystatemachine@gmail.com",
+  "color" : "",
+  "size" : 46,
+  "children" : [ ]
+}, {
+  "name" : "bradm@twitter.com",
+  "color" : "",
+  "size" : 43,
+  "children" : [ ]
+}, {
+  "name" : "jboyd@twitter.com",
+  "color" : "",
+  "size" : 42,
+  "children" : [ ]
+}, {
+  "name" : "sdelmore@twitter.com",
+  "color" : "",
+  "size" : 42,
+  "children" : [ ]
+}, {
+  "name" : "jdecaires@twitter.com",
+  "color" : "",
+  "size" : 41,
+  "children" : [ ]
+}, {
+  "name" : "atollenaere@twitter.com",
+  "color" : "",
+  "size" : 40,
+  "children" : [ ]
+}, {
+  "name" : "tbrown@twitter.com",
+  "color" : "",
+  "size" : 40,
+  "children" : [ ]
+}, {
+  "name" : "yujieproject@gmail.com",
+  "color" : "",
+  "size" : 40,
+  "children" : [ ]
+}, {
+  "name" : "twitterbirdwatch@users.noreply.github.com",
+  "color" : "",
+  "size" : 40,
+  "children" : [ ]
+}, {
+  "name" : "kyle@twitter.com",
+  "color" : "",
+  "size" : 39,
+  "children" : [ ]
+}, {
+  "name" : "nobrien@twitter.com",
+  "color" : "",
+  "size" : 39,
+  "children" : [ ]
+}, {
+  "name" : "nh@baroquebobcat.com",
+  "color" : "",
+  "size" : 39,
+  "children" : [ ]
+}, {
+  "name" : "ndh@baroquebobcat.com",
+  "color" : "",
+  "size" : 39,
+  "children" : [ ]
+}, {
+  "name" : "tejal29@gmail.com",
+  "color" : "",
+  "size" : 37,
+  "children" : [ ]
+}, {
+  "name" : "dbernadett@twitter.com",
+  "color" : "",
+  "size" : 36,
+  "children" : [ ]
+}, {
+  "name" : "markcc@foursquare.com",
+  "color" : "",
+  "size" : 36,
+  "children" : [ ]
+}, {
+  "name" : "cchen@twitter.com",
+  "color" : "",
+  "size" : 35,
+  "children" : [ ]
+}, {
+  "name" : "info@nsprogrammer.com",
+  "color" : "",
+  "size" : 35,
+  "children" : [ ]
+}, {
+  "name" : "finaglehelper@twitter.com",
+  "color" : "",
+  "size" : 35,
+  "children" : [ ]
+}, {
+  "name" : "bmatheny@mobocracy.net",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "jeremy.cloud@me.com",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "j@yud.co.za",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "hkantas@twitter.com",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "jconnerton@twitter.com",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "fedor.korotkov@gmail.com",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "signalstatic@gmail.com",
+  "color" : "",
+  "size" : 34,
+  "children" : [ ]
+}, {
+  "name" : "xinxiang@twitter.com",
+  "color" : "",
+  "size" : 33,
+  "children" : [ ]
+}, {
+  "name" : "rao@twitter.com",
+  "color" : "",
+  "size" : 32,
+  "children" : [ ]
+}, {
+  "name" : "thowland@twitter.com",
+  "color" : "",
+  "size" : 32,
+  "children" : [ ]
+}, {
+  "name" : "grzegorz.kossakowski@gmail.com",
+  "color" : "",
+  "size" : 32,
+  "children" : [ ]
+}, {
+  "name" : "nshkrob@twitter.com",
+  "color" : "",
+  "size" : 31,
+  "children" : [ ]
+}, {
+  "name" : "marius@monkey.org",
+  "color" : "",
+  "size" : 31,
+  "children" : [ ]
+}, {
+  "name" : "jsimms@twitter.com",
+  "color" : "",
+  "size" : 31,
+  "children" : [ ]
+}, {
+  "name" : "tsegal@twitter.com",
+  "color" : "",
+  "size" : 30,
+  "children" : [ ]
+}, {
+  "name" : "mdannenberg@twitter.com",
+  "color" : "",
+  "size" : 30,
+  "children" : [ ]
+}, {
+  "name" : "alanvelasco.a@gmail.com",
+  "color" : "",
+  "size" : 30,
+  "children" : [ ]
+}, {
+  "name" : "blorente@users.noreply.github.com",
+  "color" : "",
+  "size" : 30,
+  "children" : [ ]
+}, {
+  "name" : "dorothyordogh@gmail.com",
+  "color" : "",
+  "size" : 29,
+  "children" : [ ]
+}, {
+  "name" : "areitz@twitter.com",
+  "color" : "",
+  "size" : 28,
+  "children" : [ ]
+}, {
+  "name" : "mmcbride@twitter.com",
+  "color" : "",
+  "size" : 27,
+  "children" : [ ]
+}, {
+  "name" : "pliu@twitter.com",
+  "color" : "",
+  "size" : 27,
+  "children" : [ ]
+}, {
+  "name" : "adams@twitter.com",
+  "color" : "",
+  "size" : 27,
+  "children" : [ ]
+}, {
+  "name" : "csong@twitter.com",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "ci+autoflagger@twitter.com",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "avargasmorawetz@twitter.com",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "helenw@twitter.com",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "niw@twitter.com",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "traviscrawford@gmail.com",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "github@lahosken.san-francisco.ca.us",
+  "color" : "",
+  "size" : 26,
+  "children" : [ ]
+}, {
+  "name" : "jcrawford@twitter.com",
+  "color" : "",
+  "size" : 25,
+  "children" : [ ]
+}, {
+  "name" : "ajr9@po.cwru.edu",
+  "color" : "",
+  "size" : 25,
+  "children" : [ ]
+}, {
+  "name" : "cburnett@twitter.com",
+  "color" : "",
+  "size" : 25,
+  "children" : [ ]
+}, {
+  "name" : "sniemitz@twitter.com",
+  "color" : "",
+  "size" : 24,
+  "children" : [ ]
+}, {
+  "name" : "mbezoyan@twitter.com",
+  "color" : "",
+  "size" : 24,
+  "children" : [ ]
+}, {
+  "name" : "matt@freels.name",
+  "color" : "",
+  "size" : 24,
+  "children" : [ ]
+}, {
+  "name" : "bryan@twitter.com",
+  "color" : "",
+  "size" : 24,
+  "children" : [ ]
+}, {
+  "name" : "abishev.timur@gmail.com",
+  "color" : "",
+  "size" : 24,
+  "children" : [ ]
+}, {
+  "name" : "1862202+wiwa@users.noreply.github.com",
+  "color" : "",
+  "size" : 24,
+  "children" : [ ]
+}, {
+  "name" : "hcooper@twitter.com",
+  "color" : "",
+  "size" : 23,
+  "children" : [ ]
+}, {
+  "name" : "franklin@twitter.com",
+  "color" : "",
+  "size" : 23,
+  "children" : [ ]
+}, {
+  "name" : "nhoward@twitter.com",
+  "color" : "",
+  "size" : 23,
+  "children" : [ ]
+}, {
+  "name" : "travis@twitter.com",
+  "color" : "",
+  "size" : 22,
+  "children" : [ ]
+}, {
+  "name" : "clivingston45@gmail.com",
+  "color" : "",
+  "size" : 22,
+  "children" : [ ]
+}, {
+  "name" : "tnarg@twitter.com",
+  "color" : "",
+  "size" : 21,
+  "children" : [ ]
+}, {
+  "name" : "attila@twitter.com",
+  "color" : "",
+  "size" : 21,
+  "children" : [ ]
+}, {
+  "name" : "ver@buoyant.io",
+  "color" : "",
+  "size" : 20,
+  "children" : [ ]
+}, {
+  "name" : "stevej@twitter.com",
+  "color" : "",
+  "size" : 20,
+  "children" : [ ]
+}, {
+  "name" : "ctutika@twitter.com",
+  "color" : "",
+  "size" : 20,
+  "children" : [ ]
+}, {
+  "name" : "aleong@twitter.com",
+  "color" : "",
+  "size" : 20,
+  "children" : [ ]
+}, {
+  "name" : "cameron@lumoslabs.com",
+  "color" : "",
+  "size" : 20,
+  "children" : [ ]
+}, {
+  "name" : "gmccue@gmail.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "kpagratis@twitter.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "beisenman@twitter.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "nkallen@yahoo.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "jinfeng@outlook.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "wickman@twitter.com",
+  "color" : "",
+  "size" : 19,
+  "children" : [ ]
+}, {
+  "name" : "nnielsen@twitter.com",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "martijn.hoekstra@cargoxs.com",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "kbahr@twitter.com",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "wangtian@twitter.com",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "gianna@twitter.com",
+  "color" : "",
+  "size" : 18,
+  "children" : [ ]
+}, {
+  "name" : "ryan@theryanking.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "caniszczyk@gmail.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "agiammarchi@twitter.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "codealchemy@users.noreply.github.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "codyhgibb@gmail.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "jioannidis@twitter.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "mingl@twitter.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "cosenza@gmail.com",
+  "color" : "",
+  "size" : 17,
+  "children" : [ ]
+}, {
+  "name" : "william@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "tina@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "fbrasil@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "nick@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "bescobar@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "sbrenn@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "tamird@gmail.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "tom@twitter.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "dbragg@within3.com",
+  "color" : "",
+  "size" : 16,
+  "children" : [ ]
+}, {
+  "name" : "tleese@twitter.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "eac@twitter.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "jasonkb@airbnb.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "42618346+swlynch99@users.noreply.github.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "ity@users.noreply.github.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "tansy.arron@gmail.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "wickman@apache.org",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "pcalcado@gmail.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "huijunw@twitter.com",
+  "color" : "",
+  "size" : 15,
+  "children" : [ ]
+}, {
+  "name" : "marius+ci@twitter.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "ngreen@twitter.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "ryan@twitter.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "rahuli@twitter.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "felix.m.bruckmeier@gmail.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "chrisbenincasa@gmail.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "tom.n.cooper@gmail.com",
+  "color" : "",
+  "size" : 14,
+  "children" : [ ]
+}, {
+  "name" : "sonja@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "runger@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "yyokota@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "tdesai@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "michaelsutton@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "juliaferraioli@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "tanin@twitter.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "tyurina.katty@yandex.ru",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "john.barry@gmail.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "itykaul@gmail.com",
+  "color" : "",
+  "size" : 13,
+  "children" : [ ]
+}, {
+  "name" : "vmehra@twitter.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "wanli@tw-mbp13-wyang.local",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "peiyu@twitter.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "mlandis@twitter.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "jhoyt@twitter.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "bora@soundcloud.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "dturner@twitter.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "carolinac@twitter.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "sameer@creativedestruction.com",
+  "color" : "",
+  "size" : 12,
+  "children" : [ ]
+}, {
+  "name" : "anirudhs@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "bdemir@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "drosen@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "matsuy00@gmail.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "lucaslanger@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "stephan@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "yschimke@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "scode@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "ity@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "dgassaway@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "zx@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "rturner@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "rogerj.2010@gmail.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "joshua.suereth@gmail.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "movsiankin@twitter.com",
+  "color" : "",
+  "size" : 11,
+  "children" : [ ]
+}, {
+  "name" : "nnythm@gmail.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "ian@twitter.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "jz@twitter.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "ejones@twitter.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "ahimelman@twitter.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "landism@gmail.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "yni@twitter.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "elementation@gmail.com",
+  "color" : "",
+  "size" : 10,
+  "children" : [ ]
+}, {
+  "name" : "gvacariuc@tendrilinc.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "samwhitlock@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "kentaro@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "muxianw@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "brad@danga.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "kmaxwell@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "mjeffryes@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "ng01@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "mcarrasco@twitter.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "mathieu.c.sabourin@gmail.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "cheister@squareup.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "christopher.pesto@gmail.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "justin.trobec@gmail.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "gabriel439@gmail.com",
+  "color" : "",
+  "size" : 9,
+  "children" : [ ]
+}, {
+  "name" : "risaacs@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "edede@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "jcrossley@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "anirudh@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "jdanbrown@gmail.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "yuhua@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "pyenugutala@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "alexlevenson@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "jw@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "spullara@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "3122764+dgassaway@users.noreply.github.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "adg@golang.org",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "mkaplan@stripe.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "nysaechao@outlook.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "tom.dyas@gmail.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "peter@gigamonkeys.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "jrosenfield@squareup.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "pfehre@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "armandocanals@gmail.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "fkalim@twitter.com",
+  "color" : "",
+  "size" : 8,
+  "children" : [ ]
+}, {
+  "name" : "shakeelr@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "jowens@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "aivanov@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "tdong@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "trisha@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "brutkin@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "ddavydov@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "yujiec@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "fkorotkov@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "nsprogrammer@nsprogrammer.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "nf@wh3rd.net",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "diemol@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "github@olix0r.net",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "ptandel@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "28273671+rdturnermtl@users.noreply.github.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "justinanderson@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "djbernadett@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "kpaul@twitter.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "hellomind@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "tomjadams@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "ali.fauci@gmail.com",
+  "color" : "",
+  "size" : 7,
+  "children" : [ ]
+}, {
+  "name" : "jenskat@gmail.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "acole@pivotal.io",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "shun.otani@gmail.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "ak@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "aniruddha@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "chrischen@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "dknightly@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "steven@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "usrinivasan@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "msolomon@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "gshannon@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "lwang@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "gary@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "usalzar@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "marcyr@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "drichelson@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "mkhadikov@gmail.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "ggrossman@zendesk.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "jtrobec@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "digitalbuddha@users.noreply.github.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "lgeirsson@twitter.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "bryan.haggerty@gmail.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "me@wesleyac.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "ericzundel@gmail.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "gmalmquist@squareup.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "todor@peychev.com",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "me@amandeep.ca",
+  "color" : "",
+  "size" : 6,
+  "children" : [ ]
+}, {
+  "name" : "igorbachev@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "awawrzyniak@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "lhan@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "zmo@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "cexell@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "rashmir@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "mpalani@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "wanli@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "xyao@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "trustin@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "szegedia@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "vhaka@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "oparry@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "jcohen@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "marcel@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "petehunt@users.noreply.github.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "wnorris@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "dichat.dark@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "oda@headjapan.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "riywo.jp@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "yoshida.keiji.84@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "hzhang@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "wkhan@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "andrea.giammarchi@mailonline.co.uk",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "derek.mooney@blackboard.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "alexandre@acceis.fr",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "kristianfreeman@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "shah@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "mat@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "46382106+patliu85@users.noreply.github.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "chenchris@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "qma.twitter@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "thowland@twopensource.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "tien@squareup.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "snecula@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "rory.graves@fieldmark.co.uk",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "aguardia@twitter.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "peter.waynechina@gmail.com",
+  "color" : "",
+  "size" : 5,
+  "children" : [ ]
+}, {
+  "name" : "jennyl@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "fsareshwala@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "thirstycrow@qq.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "github@spockz.nl",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jeffrey.n.davis@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jenkins@bigbird",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "fiaz@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "grant@tnarg.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "holden@foursquare.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jmeador@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "yz@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "mdmitriev@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "rvp@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "mbilotti@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "bscheppler@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dmcclanahan@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "adimitriu@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "ssullivan@gilt.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jnievelt@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jcarey@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "nkallen@tw-mbp13-nkallen.local",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "andreoss@sdf.org",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "bfashola@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "benjamin.foster@six3systems.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "canbal@users.noreply.github.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "alan@inconshreveable.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dhiller@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jbull@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "tdyas@foursquare.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "alexeymolchan228@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "hthetiot@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "katehuang0320@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "joen@automattic.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "casassg@users.noreply.github.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "bierbaum@users.noreply.github.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dkatz@zendesk.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "emilycaveness@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "ebube97@me.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "chris.burroughs@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "sarasolano@squareup.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "n.shkrob@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "marc@marc-abramowitz.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "leo@foursquare.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "lucasn@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dbress@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "jjackson@twitter.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "dev-all+capotej+twoism@posterous-inc.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "wiwa@users.noreply.github.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "olafurpg@gmail.com",
+  "color" : "",
+  "size" : 4,
+  "children" : [ ]
+}, {
+  "name" : "hfuller@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "alessandro.vermeulen@ing.nl",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "martijnhoekstra@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ecoffey@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "shu@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "hoegqvist@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "zzhang@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jly@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "amartinsn@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "adam.shannon@banno.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "xyu@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "github@sazabi.org",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dominic.tootell@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "wilhelm@ubuntu.(none)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "nvangerow@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "hderms@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "daniel.charczynski1@ingbank.pl",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "omer.zach@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ddaniliuc@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dbenediktson@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "massa.nomura@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "ryangreenberg@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "liam@strava.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "rmagen@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "sarnat@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "stephen.judkins@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "tapans@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "hkumar@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "amadrigal@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "etyurina@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "atiurin@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "wan@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dschobel@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "welkere@ncbi.nlm.nih.gov",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jduan@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "lgoujon@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "pcarrier@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "yhuang@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "svoutilainen@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "yramin@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "john@foursquare.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "none",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "xx@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "decause@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "bradfitz@golang.org",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "keny@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "shurcool@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "blaszczykpb@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "pjfanning@users.noreply.github.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "32566798+muachilin@users.noreply.github.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "seth@tisue.net",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "neuman.vong@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "mccv@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "mdoherty@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "di.zhao@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "a.giammarchi@eyeo.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "debian@debian.(none)",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "t@thi.im",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "wangtianthu@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "opoudjis@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "philippe.44@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jonathan@dnil.net",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "harrykantas@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "skrinikov@users.noreply.github.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "6560058+dbernadett@users.noreply.github.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "thoward37@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "thesamet@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dbentleyrb@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "mjennings@foursquare.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "itay@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dhamon@twopensource.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dalpra.pierre@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jcoveney@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "cheecheeo+rbcommons@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "davydovdan@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "jon@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "kushal@foursquare.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "hwasung.lee@oriel.oxon.org",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "38562595+pitmonticone@users.noreply.github.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "dave.nicponski@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "alexis22229@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "fayi@fayimora.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "leeavital@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "manj@cs.stanford.edu",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "sonnestrahlen@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "michaelcevans10@gmail.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "460412008@qq.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "agrewal@twitter.com",
+  "color" : "",
+  "size" : 3,
+  "children" : [ ]
+}, {
+  "name" : "alpitkumarg@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "plessner.ryan@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "j.alberdi@criteo.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "k.kaizu38@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "joro.kr.21@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "crispywalrus@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rguthrie@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "martinffx@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "edio@archlinux.us",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hi@leonmaia.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ypolius@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "boaz@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "vladimir@advancedtelematic.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rschatz@ea.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jzhang@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kcraigie@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "cyphactor@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mpatidar@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ioconnell@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "tonyd3@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "orrsella@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "pierre.antoine.ganaye@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "joakim.bodin@dice.se",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gregc@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ztaylor@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jharjono@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "vince@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "zhanggl1981@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jharband@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dan@tumblr.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "coops@foursquare.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "github@likethesky.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "krishna@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "misterfunnyarsal@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "tsunanet@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "evan.meagher@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ysingh@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "amylee@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "imcusg@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mleinartas@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kmcguigan@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "diebauer@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hllrsr@protonmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mgreenberg@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mrcull@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "vrajaram@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mbraun@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "zhiyuany@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gpoulos@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "tt.tanishi100@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dennis@buoyant.io",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "nickm@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "leo@xerial.org",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "alex@buoyant.io",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "plaflamme@hopper.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mehmet.gunturkun@shazam.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "a.pakulov@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "enovales@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jmouradian@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "andrew@sig.gy",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "njohnson@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gdickinson@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "suls@suls.org",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "pseibel@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "acrane@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "daveb@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "eswiac@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sparkes@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jcoveney@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "travisrobertbrown@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jeffo@tapad.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "eric@5stops.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "thuang@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jchee@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bhaskar@tumblr.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "oscar@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "landau@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "elin@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bdd@mindcast.org",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "liam.nichols.ln@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jason-cooke@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "apratti@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "shawnpsmith@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ukai@chromium.org",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dvir@everything.me",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dan@medium.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "luit@luit.it",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "contact@pavanky.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "gareth@garethpaul.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "manuel.martos-roldan@team.bumble.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jliggitt@redhat.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jforrest@redhat.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "elazarl@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "pierre@baillet.name",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "eslutckii@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "tprintezis@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hwoldesenbet@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "6b656e6a69@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ahojsak@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "zvoase@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "argyris@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "yzhu@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "okapies@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "asiegel@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jcorwin@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jeff@somethingsimilar.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "cthalinger@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dpuppin@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "yuizalp@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "pouriya.jahanbakhsh@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "markseu@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bugzilla@crissov.de",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "wez.pyke@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "raghavtce@tce.edu",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "frederic.druilhet@dr14.cnrs.fr",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "prdolmos@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "andypiper@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kgupta8592@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "michael.hoste@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "alexander@skovik.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "hello@magnusvk.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "zassmin@lumoslabs.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "arnav@arnavkumar.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bernardod@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "84049091+kylebartush-twitter@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kdspaul@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "marcinex7@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "sluggite@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bardur@scientician.net",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ghthor@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "marcruz385@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "iantabolt@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "lenucksi@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "grimreaper@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "pankajroark@users.noreply.github.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ensonic@hora-obscura.de",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jasonqsong@outlook.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "lahosken@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "davebrewster@me.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "kmccaffrey@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "lex@squareup.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "dan@foursquare.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "me@paulgroudas.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rbcommons@mjeffryes.net",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rbcommons@tla.org",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jh@squareup.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "freekh@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "anicelyjohnson@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "github@tla.org",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "senthil@uthcode.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "blarson@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jj@foursquare.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "davidtaylor@foursquare.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "joe@foursquare.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "flo@leibert.de",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jackson@foursquare.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jiansongc@x.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "wusiqi.china@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "trevorhackman@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "yuval1010@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bmahler@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "bhalsey@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "ltang@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "rteabeault@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "amccree@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "acardenas@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jlamb@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jboiles@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "halvorgb@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "njohns@grovo.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "odinushuaia@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "git@jensraaby.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mfinnicum@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mukherjee.syamantak@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "stukra@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "github@tomczarniecki.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "jliszka@alumni.cmu.edu",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "mmurray.wa@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "avadrevu@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "amorrison@etsy.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "martin.duhem@gmail.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "nwang@twitter.com",
+  "color" : "",
+  "size" : 2,
+  "children" : [ ]
+}, {
+  "name" : "skunichi@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tpollitt@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spotu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aabdelhady@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "amiqdad@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "68562631+yamin-oanda@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "atomr3@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vpalla@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fwbrasil@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sguttikonda@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aschakaki@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ssalim@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ddelnano@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mtejo@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "emil.hotkowski@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "guilgaly@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jremy@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ocworld@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lbalara@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "schalexey@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "1033237526@qq.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "484152+plaflamme@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ssiarkiewicz@canva.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ashanat@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bodotzhao@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "carlton.dain.miller@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bholt@planetholt.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "b.potepun@tinkoff.ru",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "henri.hagberg@relexsolutions.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hmhagberg@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vivanovsky@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "blakgeof@amazon.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "takezoe@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hollowman@hollowman.ml",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bnavetta@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pstover@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "odidev@puresoftware.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "brobinson@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "spavikevik@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joseph@solidys.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alessandro.vermeulen@ing.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "brianwignall@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dsakhno@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jmagee@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kkatooru@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ole.magnus.aker@schibsted.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lfu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "guillaume@hopper.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "g.legoux@criteo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ikio.github@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cromary@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mshields@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "crimsonvoid@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kfan@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sgerstein@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "randomstep@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "czarek@drozak.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "andreajemmett@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jorgevc@fastmail.es",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hongi.keam@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "582538+coduinix@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "siddharth.boobna@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "casey.jimmy@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zackangelo@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "01.mandar@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "viktortnk@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bng@etsy.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hello@alexismas.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gsu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "robert.panzer.pb@googlemail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tle@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "garrett.everding92@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "utkarsh.cmu@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "james.schubert@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zhaoyonghui@xiaomi.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "git@doismellburning.co.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "williamkey@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jjin@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ryanb93@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mehmetcemgunturkun@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "agoncharova@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sjeyakumar@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cregado@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joao.neves@dice.se",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ojala.s.elias@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "koiroha@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "david.gurquiza@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tommi@wow.is",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alexander.jipa@db.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bhoyt@salesforce.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lguan@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "herberteuler@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "franck.nouama@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ashesh.ambasta@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jbcatte@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "myang@dytechlab.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lucasmrtuner@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mahesh.kelkar@lookout.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bgaza@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yteo@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kristof.adriaenssens@soundcloud.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "achartier@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sveinnfannar@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "timxzl@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "takuya_iwakami@dwango.co.jp",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bdimmick@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lleggieri@atlassian.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sam@soundcloud.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stevej@buoyant.io",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sunnykaka0721@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nicolas@nrinaudo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mcervera@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edward@samson.ph",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "saisi@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "denton.david@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "donghual@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sgury@netflix.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tchong@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "lorenzo.dematte@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "robsonpeixoto@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zfy0701@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dfurse@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jcastagna@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "neuman@ashmoremusic.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "whe@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "arnar.th92@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "molsen@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "wmorgan@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "warnold@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "danielpcox@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rodrick.brown@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tarossi@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alessandro@mythradil.local",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ruttenberg@stanfordalumni.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sarthak.kumar@teradata.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "svetlyak.40wt@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "adahiya@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "james.way@lookout.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "wr4bbit@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pierwszy1@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dave.pederson@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nathan@technically.us",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rahul.phulore.999@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tianxiao.matx@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gzhou@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "keith@nearlyfree.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "charith@otiose.me",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kachayev@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jsu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "csaltos@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "takei.shg@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bgmckown@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tonyd@tellapart.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "xudifsd@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alexandr.nikitin@adform.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "billg@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rodriguinho@jusbrasil.com.br",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zcho@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "justinw@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "azenkov@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joakim.bodin@ripley.se",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vargasbo@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sijieg@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "briankimjohnson@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cphelps@tendrilinc.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dconnard@atlassian.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bbadii@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "luciali@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "soboko@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rodrigolazoti@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jixuxjixu@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stantonk@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zhangxiao@xzhang.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rravi@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "okhan@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ozaki.shun5@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "romain.leroux@mail.rakuten.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bdarrow@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mehdi.mollaverdi@rea-group.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dgolombek@mylookout.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tony@firebase.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sslavic@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stibium121@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "amokashi@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jharding@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sayre@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mrapoport@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "braiter@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "petter.wigle@magine.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mikael@peerialism.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dmclaughlin@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tgajera@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kpawlowski@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "keith.l.frost@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "charmoto@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rarora@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mcbride@nestlabs.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cbarve@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sbian@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rschonberger@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "james@earldouglas.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ruben@ignitenetwork.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cyang@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "taylor@stackmob.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "andrey.kolbasov@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jared@nestlabs.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "srini@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "abhi@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "wilhelm@perpetuum.(none)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cltnschlosser@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zhongwuzw@qq.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hawflakes@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ocastx@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aalok_2@live.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "will@willnorris.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "11447520+jtemps@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ddangerous@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anthonyjpratti@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jschiller@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "steve@tryingtobeawesome.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "daker.fernandes.pinheiro@intel.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mdenton@skyportsystems.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pierredurand@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tipp@google.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ryanslade@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "awawfumin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "damian@gryski.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "blake.mizerany@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "elimisteve@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cutezerocat@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "simeon.zhidenko@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kirk@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fieldforceapp@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "davidels@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fcanas@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nuhkocaa@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "woitaschek@posteo.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pandanomic@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nao.7ken@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "586670+kenyee@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vincent.masselis@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mmartos@degirona.info",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jcraane@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "91663102+maximillianleonov@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chrisbanes@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rcouto@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ts@soundcloud.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "brandon@jangler.info",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mattn.jp@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ikawaha@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "imax@cesanta.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "abates@omeganetserv.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jordan@liggitt.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mail@serhan-sen.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tobias.schottdorf@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jbreitbart@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "beyang@sourcegraph.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aschlesinger@paypal.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stephen.searles@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "byronimo@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "opennota@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "craigtlandry@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "agaitonde@pivotallabs.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "email@iankent.co.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ryushi@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "oct@fotonauts.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "elias.naur@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ajhager@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kcelik@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tushars@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "peter.vasterd@ing.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kristoffergunnarsson47@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "the.matt.kantor@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "matt.kipps@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anurag.sharma@whatfix.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chungsoojee@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hi.teresy@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "simon@yonwell.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kyang@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sviswanathan@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "carl.patenaudepoulin@mail.mcgill.ca",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "savraz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mmejran@iown1.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cmerinogracia@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "qilab@gmx.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kovszilard@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ystein@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "prajagopal@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cevaris@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sni@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "f.gruber@eslgaming.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vivek.malik@lookout.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zkidkid@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "howard.h.l@126.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "paulb@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tbekas@infusion.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "oscar@stripe.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "streetpc@free.fr",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yzhuo@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "michael.placentraii@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dima@lookout.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sundaram@baidu.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rahil@bohra.co.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jacksonic@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cabraham@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "awushensky@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jakequist@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "stremlenye@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "njain@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ver@olix0r.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dmitriy@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jluxenberg@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "matthew.michihara@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edwards.benj@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kshklovsky@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dsotolongo@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dnicponski@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eirik.sletteberg@finn.no",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "j.samberg@samsung.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fitch@datamininglab.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "waa@hotmail.fr",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eiriksletteberg@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "raghu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mbarry@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "swang@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "evvers@ya.ru",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aaron@zymergen.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "folone@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sjiang@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hmrmaxwell@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ken@pagerduty.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "chikei@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sgarg@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zchen@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cory@pagerduty.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "peter@teichman.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "koert@tresata.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jorge.ortiz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sumeet@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "benjaminthuillier@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "boykin@pobox.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "max.m.lanin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alex@keparllp.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sritchie@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shryu@naver.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "daniel@cx.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alan@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jussi.virtanen@reaktor.fi",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kyle@kylemaxwell.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "siddarth@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "35087590+mrauro@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "github.le5ke@stenyan.jp",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "xavier@stouder.io",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "blakegearin@pm.me",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "simon.bra.ag@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "65498475+gustavwilliam@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "31452340+shahriarkh@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "saul.mirone@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alex@goooseman.ru",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dpock32509@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "goooseman@me.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "44645301+rosseljost@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kaspergam@bellsouth.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "corydanielson@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pavlobu@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kevinfaveridev@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "n.bartels@phpmonkeys.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "31558638+abhik1998@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sebastianaigner@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mia@miestasmia.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "noelle_leigh@fastmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "martinstuecklschwaiger@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "31307731+strawberry-sundae@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "me@rdil.rocks",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nilllisterri@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "deckel@blizzard.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "flucas2@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "frenchw@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "xoudini@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "contact@rudloff.pro",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eosrei@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dan@danbovey.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sabbiirr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "michaelbusby@curalate.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "terentyev.olexandr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "prayag.verma@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anirvan@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yoav.sternberg@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kev.kirsche+github@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ansavvides@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jordi@bunster.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "unindented@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "msurguy@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tombyrer@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pmk25@georgetown.edu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "juan@cavorite.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "prajakta.tathavadkar@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "preetsarb@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "amit.shekhar.iitbhu@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mitchh23@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ktr254@nyu.edu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "didier.toussaint.trad@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bartosz.blimke@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "16578570+noraj@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "david.wesmn@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "juhah@web.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jason.penny@braze.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alex@stripe.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "abobrikovich@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nicolasleger@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kyle@heironimus.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rob@versioneye.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eigil@sagafos.no",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "muir@retailnext.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nate@retailnext.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "krzysiek1507@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anthonygaudino.45@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bigloser@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "logan.hasson@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alau@getsatisfaction.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tanin47@yahoo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "neilm@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tanin@tanin-vgn-tt2.(none)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tim@timothyandrew.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "osmithsi@sfu.ca",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "3361683+matc@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "iulianm@amazon.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "litiegen456250@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bernardo@rittme.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "wumuxian1988@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "u5.horie@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fred@redhotpenguin.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "csaravia@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rusrushal13@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "billy.becker@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "3846899+pall-valmundsson@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "github@stephanerb.eu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jakubbujny@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yaup@cs.washington.edu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "marom.guy@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "robert@stapenhurst.co.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shuoli84@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hyunjoon.seol@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "larry@actioniq.co",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "elyast@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "oseemann@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tim.treptow@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "copumpkin@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mateo@foursquare.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joeennever@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gary@byoteki.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sameerparekh@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jameskoch@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "adam@adamj.eu",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "drew.rothstein@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kyle.derr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "xaelias@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dyoung@kayak.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "brandon.milton21@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jeremy.hintz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "james@jbench.co.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kevinoliver+github@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "landism@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "fiona@giphy.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nick@medium.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "agenticarus@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mattdee123@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "biethb@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "wolfram@rubyfocus.biz",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aaron@foursquare.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "digwanderlust@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ikai.lan@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nitay@actioniq.co",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ahamilton55@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "danfabulich@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "anwei06@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "alan.p.paulin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kslundberg@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tdeng@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "luca.clementi@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "luc.cary@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "james.a.mouradian@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sfranklin@twopensource.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ugodiggi@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jtownsend@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ksweeney@twopensource.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "wonlay@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "caspar@asparck.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "igmorv@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "misho.kr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jake@donham.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "adam.retter@googlemail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jonathan.sokolowski@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jackson@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mkhutornenko@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jsmith@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "drajkumar@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tstumpf@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edanielson@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mlindsey@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tdziuba@ebay.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "terasurfer@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "daniel@dattrix.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jennever@foursquare.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nsanch@foursquare.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "paulp@improving.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cschertz@craiglinuxmint.(none)",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "9256836+keithcoleman@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "carter.joshua.603@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "55425039+fannygautierr@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "76903966+abhigyadufare@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jonathanator0@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "29563098+dongle-the-gadget@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jbaxter@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "asuna.gilfoyle@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "44203993+lewismunday@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cdymlr@outlook.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "oliver@klingefjord.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "92384606+garrettladley@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zawzawwin@ucsloikaw.edu.mm",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nova@suprnova.dev",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "44579545+kaymomin@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sahil.lavingia@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shiruken343@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "102765426+veerbia@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "keith@yesitsyes.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vsatuluri@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "zsong@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "temmanuel@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dilmchaina@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "crabe@epionhealth.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yuokada@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tdiamond@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rdolan@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pchevalier@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jfeinman@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "h.riviere@criteo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mrajah@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rfleisher@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gfast@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "honglinz@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bhavdeeps@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "hyalamanchili@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "guillaume@heetch.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "aromero@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jacob@strava.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kittsville@googlemail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nicholasi@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "psu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "baoyuew@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kliao@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "julion@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mesut.ozen@trendyol.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jerrychen@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dana.ma537@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "rstapenhurst@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "andi.n.dirgantara@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tom.michiels@archimiddle.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sprabhu@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ssmith@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sgrankin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "tom.michiels@vectr.consulting",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jakehschwartz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "james.ferrara@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "gary.grossman@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "a.chan@wellcome.ac.uk",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vladimir.ivanovskiy@nih.gov",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "illumine03@naver.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "liam.m@kakaocorp.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edeng@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dmarwick@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vrf.ced@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pittwu@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jbratman@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ldorner@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nykolas.lima@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "liam.m@daumkakao.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "nsaechao@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dmueller@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "njohns+gh@grovo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "derekhenscheid@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "krohrbaugh@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ckidoz@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joe623@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jpkutner@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "joe@kiri-tech.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cburnor@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "manuel.weiss@schibsted.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jwaldrop@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "baugarten@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "dgomesbr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "c.schmitt@briefdomain.de",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "matray@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "christoph.neuroth@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "eponvert@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "me@billdimmick.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "comamitc@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mikko.koljonen@happy-or-not.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jalkoby91@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bora.tunca@yahoo.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "mweyant@enernoc.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "denis@davydkov.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "matt.ho@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "benjamin.r.whitehead@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ansmith@linkedin.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "pranjaltech@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "blakesmith0@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "delta1080@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "seb@cine7.net",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "honten@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "yymmt3.waste@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cweider@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cirno.mainasuk@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "croissant9603@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "panterathefamilyguy@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "kylebshr@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "abhik1998chakraborty@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "sameer@sundresh.org",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ssundresh@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "den.shabalin@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "vinay.ganesh@wework.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "1a1a11a@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "edwardw@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "bdpqchen@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jawnnypoo@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "jingwei.hao@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "cesar1000@users.noreply.github.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "carlo.marinangeli@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "efrohnhoefer@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "ziishaned@gmail.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "shoaba@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+}, {
+  "name" : "maxb@twitter.com",
+  "color" : "",
+  "size" : 1,
+  "children" : [ ]
+} ]
+    }
+
+    var root = d3.hierarchy(data)
+            .eachBefore(function (d) {
+                d.data.id = (d.parent ? d.parent.data.id + "." : "") + d.data.name;
+            })
+            .sum(sumBySize)
+            .sort(function (a, b) {
+                return b.height - a.height || b.value - a.value;
+            });
+
+    treemap(root);
+
+    var cell = svg.selectAll("g")
+            .data(root.leaves())
+            .enter().append("g")
+            .attr("transform", function (d) {
+                return "translate(" + d.x0 + "," + d.y0 + ")";
+            });
+
+    cell.append("rect")
+            .attr("id", function (d) {
+                return d.data.id;
+            })
+            .attr("width", function (d) {
+                return d.x1 - d.x0;
+            })
+            .attr("height", function (d) {
+                return d.y1 - d.y0;
+            })
+            .style("fill", "#c0deed");
+
+    cell.append("clipPath")
+            .attr("id", function (d) {
+                return "clip-" + d.data.id;
+            })
+            .append("use")
+            .attr("xlink:href", function (d) {
+                return "#" + d.data.id;
+            });
+
+    cell.append("text")
+            .attr("clip-path", function (d) {
+                return "url(#clip-" + d.data.id + ")";
+            })
+            .selectAll("tspan")
+            .data(function (d) {
+                return d.data.name.split(/(?=[A-Z][^A-Z])/g);
+            })
+            .enter().append("tspan")
+            .attr("x", 4)
+            .attr("y", function (d, i) {
+                return 13 + i * 10;
+            })
+            .text(function (d) {
+                return d;
+            });
+
+    cell.append("title")
+            .text(function (d) {
+                return d.data.name + ": " + format(d.value);
+            });
+
+    d3.selectAll("input")
+            .data([sumBySize, sumByCount], function (d) {
+                return d ? d.name : this.value;
+            })
+            .on("change", changed);
+
+    var timeout = d3.timeout(function () {
+        d3.select("input[value=\"sumByCount\"]")
+                .property("checked", true)
+                .dispatch("change");
+    }, 2000);
+
+    function changed(sum) {
+        timeout.stop();
+
+        treemap(root.sum(sum));
+
+        cell.transition()
+                .duration(750)
+                .attr("transform", function (d) {
+                    return "translate(" + d.x0 + "," + d.y0 + ")";
+                })
+                .select("rect")
+                .attr("width", function (d) {
+                    return d.x1 - d.x0;
+                })
+                .attr("height", function (d) {
+                    return d.y1 - d.y0;
+                });
+    }
+
+    function sumByCount(d) {
+        return d.children ? 0 : 1;
+    }
+
+    function sumBySize(d) {
+        return d.size;
+    }
+
+</script>
+</body>
+</html>

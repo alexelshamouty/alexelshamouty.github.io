@@ -1,0 +1,1328 @@
+Team	# commits (all time)	# commits (30 days)	# commits (90 days)	# commits (180 days)	# commits (365 days)	First commit	Latest commit	Repositories
+marius@twitter.com	1488	0	0	0	0	2010-10-06	2015-12-10	twitter / finagle, twitter / util
+ccoco@twitter.com	954	0	0	0	0	2014-11-20	2022-08-23	twitter / finagle, twitter / dodo, twitter / util, twitter / dodo-build, twitter / finatra
+john.sirois@gmail.com	863	0	0	0	0	2012-07-25	2019-05-21	twitter / pants
+koliver@twitter.com	774	0	0	0	0	2011-09-09	2020-09-17	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+paloma.oliveira@saucelabs.com	674	0	0	0	0	2020-10-12	2021-05-18	twitter / check-my-repo
+mnakamura@twitter.com	673	0	0	0	0	2013-09-05	2022-10-27	twitter / finagle, twitter / dodo, twitter / util, twitter / pants, twitter / finatra
+banderson@twitter.com	590	0	0	0	0	2016-07-23	2022-11-08	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+eburmako@twitter.com	580	0	0	0	0	2017-08-23	2019-02-04	twitter / finagle, twitter / finatra, twitter / rsc
+vkostyukov@twitter.com	579	0	0	0	0	2014-10-15	2022-10-22	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+camertron@gmail.com	555	0	0	0	4	2011-12-01	2024-04-28	twitter / twitter-cldr-rb
+benjyw@gmail.com	539	0	0	0	0	2013-03-05	2019-05-17	twitter / pants
+benjy@foursquare.com	519	0	0	0	0	2012-02-13	2015-10-23	twitter / pants
+wilhelm@twitter.com	509	0	0	0	0	2010-10-20	2022-11-16	twitter / finagle, twitter / util, twitter / focus
+julio@twitter.com	428	0	0	0	0	2012-04-08	2014-04-16	twitter / finagle, twitter / finatra
+zundel@squareup.com	414	0	0	0	0	2014-04-23	2016-12-03	twitter / pants
+stuhood@twitter.com	405	0	0	0	0	2011-11-17	2019-05-05	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+dawagner@gmail.com	388	0	0	0	0	2017-09-14	2019-05-18	twitter / pants
+bmartin@twitter.com	365	0	0	0	0	2019-08-19	2022-09-30	twitter / rustcommon, twitter / rezolus
+stuhood@gmail.com	365	0	0	0	0	2014-07-24	2019-05-21	twitter / pants
+roanta@twitter.com	356	0	0	0	0	2013-03-01	2022-10-31	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+jillianc@twitter.com	339	4	17	21	25	2015-07-15	2025-01-15	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+ryano@twitter.com	333	0	0	0	0	2015-11-03	2022-01-28	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+yufang@twitter.com	324	0	0	0	0	2016-10-07	2022-10-04	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+nkallen@tallbro.local	305	0	0	0	0	2010-08-03	2011-04-07	twitter / finagle, twitter / util
+cdutro@twitter.com	303	0	0	0	0	2012-03-26	2014-05-07	twitter / twitter-cldr-rb
+stevegury@twitter.com	286	0	0	0	0	2011-10-21	2015-05-08	twitter / finagle, twitter / util, twitter / finatra
+kirill.lashuk@gmail.com	284	0	0	0	0	2012-04-02	2015-08-07	twitter / twitter-cldr-rb
+dschobel@twitter.com	254	0	0	0	0	2014-08-27	2018-12-04	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+me@waleedkhan.name	229	0	0	0	0	2022-01-27	2022-09-23	twitter / focus
+ericarellano@me.com	225	0	0	0	0	2018-07-03	2019-05-20	twitter / pants
+jsirois@twitter.com	191	0	0	0	0	2011-06-10	2014-07-28	twitter / finagle, twitter / util, twitter / pants
+eed3si9n@gmail.com	190	0	0	0	0	2015-02-06	2022-11-14	twitter / pants, twitter / bazel-multiversion
+robey@twitter.com	177	0	0	0	0	2010-12-17	2012-05-10	twitter / finagle, twitter / util
+evm@twitter.com	176	0	0	0	0	2012-03-29	2015-02-03	twitter / finagle, twitter / util
+nvong@twitter.com	175	0	0	0	0	2013-05-20	2020-07-29	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+jeremycloud@twitter.com	162	0	0	0	0	2010-08-03	2015-10-08	twitter / finagle, twitter / util
+ibennett@twitter.com	160	0	0	0	0	2017-04-19	2022-07-28	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+jcapote@gmail.com	149	0	0	0	0	2012-02-17	2015-01-08	twitter / finatra
+mister@lahosken.san-francisco.ca.us	145	0	0	0	0	2014-04-16	2015-01-08	twitter / pants
+1305167+cosmicexplorer@users.noreply.github.com	143	0	0	0	0	2017-12-20	2019-05-15	twitter / pants
+jaynbaxter@gmail.com	136	0	0	12	50	2022-10-28	2024-09-18	twitter / communitynotes
+pvlugter@gmail.com	135	0	0	0	0	2012-06-06	2013-12-03	twitter / pants
+hallam@twitter.com	123	0	0	0	0	2018-06-28	2022-03-24	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+jimteeuwen@gmail.com	122	0	0	0	0	2011-06-17	2015-10-23	twitter / go-bindata
+jparker@twitter.com	119	0	0	0	0	2015-04-21	2019-01-17	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+wisechengyi@gmail.com	119	0	0	0	0	2015-09-03	2021-03-19	twitter / pants, twitter / bazel-multiversion
+ndowns@twitter.com	117	0	0	0	0	2018-06-04	2020-04-28	twitter / twemoji, twitter / twemoji-parser
+xeno.by@gmail.com	114	0	0	0	0	2016-11-24	2019-02-09	twitter / pants, twitter / rsc
+tcooper@twitter.com	114	0	0	0	0	2018-03-28	2018-06-08	twitter / caladrius
+pl@foursquare.com	111	0	0	0	0	2013-07-02	2016-08-05	twitter / pants
+nacho@nlopez.io	109	0	0	0	0	2022-06-09	2023-01-30	twitter / compose-rules
+jbestourous@twitter.com	107	0	0	0	0	2019-07-25	2022-10-14	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+bdegenhardt@twitter.com	105	0	0	0	0	2013-03-07	2016-01-29	twitter / finagle, twitter / util, twitter / finatra
+nhoward@twopensource.com	104	0	0	0	0	2015-01-17	2016-11-16	twitter / pants
+philippe.laflamme@gmail.com	103	0	0	0	0	2020-10-24	2021-01-21	twitter / finagle
+dturner@twopensource.com	102	0	0	0	0	2014-07-04	2016-02-03	twitter / pants
+jyan@twitter.com	101	0	0	0	0	2019-01-14	2022-10-19	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+andrea.giammarchi@gmail.com	100	0	0	0	0	2014-11-08	2017-08-08	twitter / twemoji
+kwlzn@users.noreply.github.com	99	0	0	0	0	2016-11-22	2018-07-25	twitter / pants
+jeff@twitter.com	94	0	0	0	0	2011-10-13	2014-11-19	twitter / finagle, twitter / util, twitter / finatra
+lucasneumann.fau@gmail.com	93	0	0	0	0	2022-07-13	2023-12-14	twitter / communitynotes
+74026070+twitterbirdwatch@users.noreply.github.com	92	0	9	11	18	2021-01-25	2024-11-19	twitter / communitynotes
+philippe@hopper.com	91	0	0	0	0	2020-04-11	2020-10-19	twitter / finagle
+david@twitter.com	90	0	0	0	0	2010-11-16	2014-11-24	twitter / finagle, twitter / util
+dordogh@twitter.com	90	0	0	0	0	2017-10-05	2022-09-03	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+scosenza@twitter.com	87	0	0	0	0	2014-09-09	2021-12-07	twitter / finatra
+arya@twitter.com	79	0	0	0	0	2011-03-11	2015-02-26	twitter / finagle, twitter / util
+ilopezsais@twitter.com	79	0	0	0	0	2022-06-09	2022-11-09	twitter / compose-rules
+johan@oskarsson.nu	78	0	0	0	0	2011-04-22	2014-11-14	twitter / finagle, twitter / util, twitter / pants
+mdickinson@twitter.com	77	0	0	0	0	2019-07-15	2023-11-02	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+mateorod9@gmail.com	77	0	0	0	0	2014-05-20	2019-03-03	twitter / pants
+ver@twitter.com	76	0	0	0	0	2011-03-08	2015-02-04	twitter / finagle, twitter / util, twitter / pants
+winw@twitter.com	75	0	0	0	0	2019-01-03	2019-11-12	twitter / finagle, twitter / util, twitter / finatra, twitter / rsc
+klashuk@twitter.com	75	0	0	0	0	2013-11-11	2015-08-06	twitter / twitter-cldr-rb
+brad.miller.87@gmail.com	73	0	1	10	24	2022-11-11	2024-12-13	twitter / communitynotes
+slance@twitter.com	72	0	0	0	0	2016-06-28	2018-10-24	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+jyudaken@twitter.com	72	0	0	0	0	2018-12-07	2021-03-01	twitter / sqrl
+wangpeiyu@gmail.com	72	0	0	0	0	2014-12-15	2017-04-04	twitter / pants
+jdonham@twitter.com	70	0	0	0	0	2010-12-21	2017-03-09	twitter / finagle, twitter / util
+kwilson@twopensource.com	70	0	0	0	0	2015-06-16	2016-11-05	twitter / pants
+garrett.malmquist@gmail.com	69	0	0	0	0	2014-06-17	2016-09-21	twitter / pants
+cacoco@gmail.com	68	0	0	0	0	2015-04-29	2021-02-09	twitter / dodo-build, twitter / finatra
+matt@digital-wanderlust.com	67	0	0	0	0	2015-07-22	2016-09-12	twitter / pants
+cheister@gmail.com	65	0	0	0	0	2016-02-24	2019-05-07	twitter / pants
+ryan.blake.williams@gmail.com	65	0	0	0	0	2012-10-16	2013-08-12	twitter / pants
+lhe@twitter.com	64	0	0	0	0	2019-07-12	2022-06-22	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+ema@twitter.com	61	0	0	0	0	2012-08-17	2017-05-24	twitter / finagle, twitter / util, twitter / finatra
+mail@timothyandrew.net	56	0	0	0	0	2012-03-30	2012-04-28	twitter / twitter-cldr-rb
+mduhem@twitter.com	54	0	0	0	0	2021-01-04	2023-03-10	twitter / bazel-multiversion
+lhosken@twitter.com	53	0	0	0	0	2014-01-28	2014-06-17	twitter / pants
+faria.kalim@gmail.com	53	0	0	0	0	2018-06-28	2018-08-17	twitter / caladrius
+johan@twitter.com	50	0	0	0	0	2012-05-14	2014-12-15	twitter / finagle, twitter / util, twitter / pants
+bing@twitter.com	49	0	0	0	0	2012-01-09	2016-03-25	twitter / finagle, twitter / util
+jpinner@twitter.com	49	0	0	0	0	2011-08-09	2015-01-17	twitter / finagle, twitter / util, twitter / finatra
+imartin@twitter.com	49	0	0	0	0	2016-10-05	2018-09-20	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+yic@twitter.com	49	0	0	0	0	2015-11-24	2022-11-09	twitter / finagle, twitter / util, twitter / finatra
+glen@twitter.com	48	0	0	0	0	2010-10-27	2015-04-03	twitter / finagle, twitter / util
+eax@twitter.com	48	0	0	0	0	2016-02-26	2022-11-10	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+drusek@twitter.com	47	0	0	0	0	2015-06-08	2019-12-19	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+dwagnerhall@twitter.com	46	0	0	0	0	2017-10-27	2020-04-15	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+tinystatemachine@gmail.com	46	0	0	0	0	2014-10-20	2015-07-28	twitter / pants
+bradm@twitter.com	43	0	1	5	9	2022-11-15	2024-12-13	twitter / communitynotes
+jboyd@twitter.com	42	0	0	0	0	2014-04-16	2022-07-12	twitter / finagle, twitter / util, twitter / finatra
+sdelmore@twitter.com	42	0	0	0	0	2018-02-17	2020-07-28	twitter / finagle, twitter / util, twitter / pants, twitter / finatra, twitter / rsc
+jdecaires@twitter.com	41	0	0	0	0	2020-05-09	2022-03-31	twitter / twemoji, twitter / twemoji-parser
+atollenaere@twitter.com	40	0	0	0	0	2013-07-25	2016-09-16	twitter / finagle, twitter / util, twitter / pants
+tbrown@twitter.com	40	0	0	0	0	2014-05-27	2015-08-28	twitter / finagle, twitter / util, twitter / finatra
+yujieproject@gmail.com	40	0	0	0	0	2016-04-26	2017-05-10	twitter / pants
+twitterbirdwatch@users.noreply.github.com	40	0	0	0	0	2021-01-25	2022-07-11	twitter / communitynotes
+kyle@twitter.com	39	0	0	0	0	2012-01-31	2012-03-14	twitter / finagle, twitter / util
+nobrien@twitter.com	39	0	0	0	0	2016-05-21	2020-10-29	twitter / ios-twitter-image-pipeline, twitter / ios-twitter-logging-service, twitter / ios-twitter-network-layer
+nh@baroquebobcat.com	39	0	0	0	0	2018-05-08	2019-03-16	twitter / pants
+ndh@baroquebobcat.com	39	0	0	0	0	2014-11-06	2018-04-24	twitter / pants
+tejal29@gmail.com	37	0	0	0	0	2014-05-10	2015-06-22	twitter / pants
+dbernadett@twitter.com	36	0	0	0	0	2022-03-31	2022-11-02	twitter / focus
+markcc@foursquare.com	36	0	0	0	0	2012-10-16	2013-06-13	twitter / pants
+cchen@twitter.com	35	0	0	0	0	2014-03-25	2016-09-02	twitter / finagle, twitter / util
+info@nsprogrammer.com	35	0	0	0	0	2016-06-02	2019-02-21	twitter / ios-twitter-image-pipeline, twitter / ios-twitter-logging-service, twitter / ios-twitter-network-layer
+finaglehelper@twitter.com	35	0	0	0	0	2021-02-10	2021-10-28	twitter / dodo
+bmatheny@mobocracy.net	34	0	0	0	0	2011-08-24	2012-03-06	twitter / finagle
+jeremy.cloud@me.com	34	0	0	0	0	2010-10-21	2011-01-05	twitter / finagle, twitter / util
+j@yud.co.za	34	0	0	0	0	2018-12-10	2022-11-21	twitter / sqrl
+hkantas@twitter.com	34	0	0	0	0	2018-05-31	2018-06-27	twitter / gatekeeper-service
+jconnerton@twitter.com	34	0	0	0	0	2022-03-09	2022-10-13	twitter / focus
+fedor.korotkov@gmail.com	34	0	0	0	0	2014-09-03	2015-11-05	twitter / pants
+signalstatic@gmail.com	34	0	0	0	0	2012-02-20	2014-05-09	twitter / finatra
+xinxiang@twitter.com	33	0	0	0	0	2012-06-13	2014-10-08	twitter / finagle
+rao@twitter.com	32	0	0	0	0	2013-01-02	2013-06-14	twitter / finagle, twitter / util
+thowland@twitter.com	32	0	0	0	0	2012-07-23	2015-06-17	twitter / finagle, twitter / util, twitter / pants
+grzegorz.kossakowski@gmail.com	32	0	0	0	0	2014-01-09	2015-02-09	twitter / pants
+nshkrob@twitter.com	31	0	0	0	0	2014-08-08	2015-10-07	twitter / finagle, twitter / util
+marius@monkey.org	31	0	0	0	0	2011-06-28	2014-05-22	twitter / finagle, twitter / util, twitter / pants
+jsimms@twitter.com	31	0	0	0	0	2015-12-07	2022-09-21	twitter / finagle, twitter / util, twitter / focus, twitter / pants, twitter / finatra
+tsegal@twitter.com	30	0	0	0	0	2015-06-22	2021-10-07	twitter / finagle, twitter / util
+mdannenberg@twitter.com	30	0	0	0	0	2019-06-06	2021-05-28	twitter / finagle, twitter / util, twitter / finatra
+alanvelasco.a@gmail.com	30	0	0	0	0	2018-06-08	2019-07-10	twitter / vireo, twitter / twemoji, twitter / nodes, twitter / twitter-cldr-rb, twitter / pants, twitter / iago2
+blorente@users.noreply.github.com	30	0	0	0	0	2018-08-29	2019-05-15	twitter / pants
+dorothyordogh@gmail.com	29	0	0	0	0	2017-05-13	2018-11-15	twitter / pants
+areitz@twitter.com	28	0	0	0	0	2012-09-12	2014-11-04	twitter / finagle, twitter / util, twitter / pants
+mmcbride@twitter.com	27	0	0	0	0	2011-11-16	2012-08-28	twitter / finagle, twitter / util, twitter / pants
+pliu@twitter.com	27	0	0	0	0	2019-12-03	2020-06-29	twitter / finagle, twitter / util, twitter / finatra
+adams@twitter.com	27	0	0	0	0	2019-01-22	2021-12-17	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+csong@twitter.com	26	0	0	0	0	2011-12-22	2013-04-23	twitter / finagle, twitter / util
+ci+autoflagger@twitter.com	26	0	1	2	2	2017-08-15	2024-11-20	twitter / finagle, twitter / util, twitter / finatra
+avargasmorawetz@twitter.com	26	0	0	0	0	2022-01-13	2022-11-01	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+helenw@twitter.com	26	0	0	0	0	2021-10-29	2022-08-30	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+niw@twitter.com	26	0	0	0	0	2016-03-04	2023-01-08	twitter / finagle, twitter / TwitterTextEditor
+traviscrawford@gmail.com	26	0	0	0	0	2014-03-07	2018-08-11	twitter / pants
+github@lahosken.san-francisco.ca.us	26	0	0	0	0	2015-01-12	2015-11-13	twitter / pants
+jcrawford@twitter.com	25	0	0	0	0	2020-05-15	2022-10-20	twitter / finagle, twitter / util, twitter / finatra
+ajr9@po.cwru.edu	25	0	0	0	0	2014-03-14	2015-10-09	twitter / pants
+cburnett@twitter.com	25	0	0	0	0	2012-04-28	2013-06-20	twitter / finatra
+sniemitz@twitter.com	24	0	0	0	0	2018-01-30	2022-11-02	twitter / finagle, twitter / util
+mbezoyan@twitter.com	24	0	0	10	11	2018-11-26	2024-10-18	twitter / finagle, twitter / util
+matt@freels.name	24	0	0	0	0	2011-03-02	2011-10-05	twitter / util
+bryan@twitter.com	24	0	0	0	0	2016-03-18	2019-01-29	twitter / twemoji
+abishev.timur@gmail.com	24	0	0	0	0	2015-10-30	2016-04-19	twitter / pants
+1862202+wiwa@users.noreply.github.com	24	0	0	0	0	2019-04-03	2019-11-12	twitter / rsc
+hcooper@twitter.com	23	0	0	0	0	2013-08-08	2015-04-28	twitter / finagle, twitter / util, twitter / pants
+franklin@twitter.com	23	0	0	0	0	2012-02-08	2014-05-15	twitter / finagle, twitter / util, twitter / finatra
+nhoward@twitter.com	23	0	0	0	0	2014-11-11	2022-07-14	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+travis@twitter.com	22	0	0	0	0	2013-08-09	2014-05-20	twitter / finagle, twitter / pants
+clivingston45@gmail.com	22	0	0	0	0	2017-10-18	2019-05-09	twitter / pants
+tnarg@twitter.com	21	0	0	0	0	2011-10-24	2015-06-01	twitter / finagle, twitter / util
+attila@twitter.com	21	0	0	0	0	2021-11-05	2022-10-18	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+ver@buoyant.io	20	0	0	0	0	2015-06-25	2016-09-08	twitter / finagle, twitter / util
+stevej@twitter.com	20	0	0	0	0	2010-09-17	2012-04-04	twitter / finagle, twitter / util
+ctutika@twitter.com	20	0	0	0	20	2024-03-20	2024-05-07	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+aleong@twitter.com	20	0	0	0	0	2014-06-12	2015-12-18	twitter / finagle, twitter / util, twitter / finatra
+cameron@lumoslabs.com	20	0	0	0	0	2014-09-10	2014-10-09	twitter / twitter-cldr-rb
+gmccue@gmail.com	19	0	0	0	0	2011-07-25	2011-12-15	twitter / finagle
+kpagratis@twitter.com	19	0	0	0	0	2021-02-24	2022-09-27	twitter / finagle, twitter / util, twitter / finatra
+beisenman@twitter.com	19	0	0	0	0	2016-06-15	2021-03-16	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+nkallen@yahoo.com	19	0	0	0	0	2010-08-03	2010-09-01	twitter / util
+jinfeng@outlook.com	19	0	0	0	0	2014-07-25	2015-02-25	twitter / pants
+wickman@twitter.com	19	0	0	0	0	2013-06-03	2014-03-26	twitter / pants
+nnielsen@twitter.com	18	0	0	0	0	2015-04-24	2020-10-16	twitter / finagle, twitter / finatra
+martijn.hoekstra@cargoxs.com	18	0	0	0	0	2018-09-19	2020-08-19	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+kbahr@twitter.com	18	0	0	0	0	2021-11-16	2022-08-10	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+wangtian@twitter.com	18	0	0	0	0	2016-03-23	2016-09-13	twitter / finagle, twitter / nodes
+gianna@twitter.com	18	0	0	0	0	2012-06-06	2012-06-12	twitter / twitter-cldr-rb
+ryan@theryanking.com	17	0	0	0	0	2011-05-11	2011-06-18	twitter / finagle
+caniszczyk@gmail.com	17	0	0	0	0	2012-03-27	2015-01-09	twitter / util, twitter / twemoji, twitter / twitter-cldr-rb, twitter / pants, twitter / finatra
+agiammarchi@twitter.com	17	0	0	0	0	2014-11-06	2014-12-19	twitter / twemoji
+codealchemy@users.noreply.github.com	17	0	0	0	0	2019-02-23	2019-04-16	twitter / pants
+codyhgibb@gmail.com	17	0	0	0	0	2015-06-26	2015-09-04	twitter / pants
+jioannidis@twitter.com	17	0	0	0	0	2013-12-11	2014-07-25	twitter / pants
+mingl@twitter.com	17	0	0	0	0	2019-02-19	2021-04-21	twitter / finatra
+cosenza@gmail.com	17	0	0	0	0	2015-04-30	2015-09-20	twitter / finatra
+william@twitter.com	16	0	0	0	0	2011-04-15	2011-07-22	twitter / finagle, twitter / util
+tina@twitter.com	16	0	0	0	0	2011-04-06	2014-02-11	twitter / finagle, twitter / util, twitter / pants
+fbrasil@twitter.com	16	0	0	0	0	2016-06-03	2022-02-08	twitter / finagle, twitter / util
+nick@twitter.com	16	0	0	0	0	2011-11-18	2012-05-08	twitter / finagle, twitter / util
+bescobar@twitter.com	16	0	0	0	0	2019-02-01	2021-03-11	twitter / finagle, twitter / util, twitter / finatra
+sbrenn@twitter.com	16	0	0	0	0	2015-12-09	2021-06-25	twitter / finagle, twitter / util, twitter / finatra
+tamird@gmail.com	16	0	0	0	0	2015-05-08	2015-08-07	twitter / go-bindata
+tom@twitter.com	16	0	0	0	0	2016-02-29	2016-03-02	twitter / twemoji
+dbragg@within3.com	16	0	0	0	0	2021-11-23	2021-12-02	twitter / twitter-cldr-rb
+tleese@twitter.com	15	0	0	0	0	2015-12-16	2016-12-19	twitter / finagle, twitter / util, twitter / finatra
+eac@twitter.com	15	0	0	0	0	2010-10-24	2011-03-04	twitter / util
+jasonkb@airbnb.com	15	0	0	0	0	2013-01-08	2013-01-14	twitter / twitter-cldr-rb
+42618346+swlynch99@users.noreply.github.com	15	0	0	0	0	2021-09-01	2022-10-19	twitter / rustcommon
+ity@users.noreply.github.com	15	0	0	0	0	2017-02-07	2018-11-12	twitter / pants
+tansy.arron@gmail.com	15	0	0	0	0	2015-09-16	2017-09-28	twitter / pants
+wickman@apache.org	15	0	0	0	0	2014-03-03	2014-12-18	twitter / pants
+pcalcado@gmail.com	15	0	0	0	0	2013-09-14	2014-06-15	twitter / finatra
+huijunw@twitter.com	15	0	0	0	0	2018-08-22	2018-08-25	twitter / caladrius
+marius+ci@twitter.com	14	0	0	0	0	2013-11-16	2014-08-06	twitter / finagle
+ngreen@twitter.com	14	0	0	0	0	2014-06-05	2016-04-19	twitter / finagle, twitter / util
+ryan@twitter.com	14	0	0	0	0	2011-07-29	2012-09-13	twitter / finagle, twitter / util
+rahuli@twitter.com	14	0	0	0	0	2019-06-21	2022-06-13	twitter / finagle, twitter / finatra
+felix.m.bruckmeier@gmail.com	14	0	0	0	0	2020-03-11	2021-10-18	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+chrisbenincasa@gmail.com	14	0	0	0	0	2017-03-24	2020-11-18	twitter / finagle, twitter / finatra
+tom.n.cooper@gmail.com	14	0	0	0	0	2018-07-16	2018-08-09	twitter / caladrius
+sonja@twitter.com	13	0	0	0	0	2011-12-09	2014-01-07	twitter / finagle, twitter / util
+runger@twitter.com	13	0	0	0	0	2013-04-24	2015-01-07	twitter / finagle, twitter / util
+yyokota@twitter.com	13	0	0	0	0	2021-01-05	2022-05-26	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+tdesai@twitter.com	13	0	0	0	0	2014-02-10	2015-07-17	twitter / finagle, twitter / util, twitter / pants
+michaelsutton@twitter.com	13	0	0	0	0	2021-07-02	2021-08-27	twitter / finagle, twitter / util, twitter / finatra
+juliaferraioli@twitter.com	13	0	0	0	0	2021-10-08	2021-10-21	twitter / ios-twitter-image-pipeline, twitter / sqrl, twitter / vireo, twitter / ios-twitter-logging-service, twitter / go-bindata, twitter / twemoji, twitter / nodes, twitter / twitter.github.io, twitter / rezolus, twitter / rsc, twitter / ios-twitter-network-layer, twitter / caladrius
+tanin@twitter.com	13	0	0	0	0	2012-11-01	2012-11-02	twitter / twitter-cldr-rb
+tyurina.katty@yandex.ru	13	0	0	0	0	2018-12-18	2019-03-19	twitter / pants
+john.barry@gmail.com	13	0	0	0	0	2018-07-14	2018-07-22	twitter / pants
+itykaul@gmail.com	13	0	0	0	0	2014-04-11	2016-06-01	twitter / pants
+vmehra@twitter.com	12	0	0	0	0	2017-02-17	2018-04-30	twitter / finagle
+wanli@tw-mbp13-wyang.local	12	0	0	0	0	2011-03-21	2011-04-21	twitter / finagle
+peiyu@twitter.com	12	0	0	0	0	2016-08-29	2017-03-28	twitter / finagle, twitter / util, twitter / finatra
+mlandis@twitter.com	12	0	0	0	0	2014-07-17	2017-06-20	twitter / finagle, twitter / util, twitter / finatra
+jhoyt@twitter.com	12	0	0	0	0	2012-03-13	2016-12-21	twitter / finagle, twitter / util
+bora@soundcloud.com	12	0	0	0	0	2013-10-28	2016-03-21	twitter / finagle, twitter / finatra
+dturner@twitter.com	12	0	0	0	0	2014-03-17	2015-10-20	twitter / finagle, twitter / pants
+carolinac@twitter.com	12	0	0	0	0	2022-10-13	2022-10-25	twitter / focus
+sameer@creativedestruction.com	12	0	0	0	0	2015-10-06	2016-02-22	twitter / pants
+anirudhs@twitter.com	11	0	0	0	0	2012-05-23	2013-05-09	twitter / finagle
+bdemir@twitter.com	11	0	0	0	0	2013-11-05	2016-01-19	twitter / finagle, twitter / util
+drosen@twitter.com	11	0	0	0	0	2013-05-30	2015-02-10	twitter / finagle, twitter / util, twitter / finatra
+matsuy00@gmail.com	11	0	0	0	0	2017-04-05	2017-07-25	twitter / finagle, twitter / finatra
+lucaslanger@twitter.com	11	0	0	0	0	2016-02-06	2016-03-31	twitter / finagle, twitter / util
+stephan@twitter.com	11	0	0	0	0	2011-08-23	2014-02-18	twitter / finagle, twitter / util, twitter / finatra
+yschimke@twitter.com	11	0	0	0	0	2013-04-04	2015-08-31	twitter / finagle, twitter / util
+scode@twitter.com	11	0	0	0	0	2014-06-08	2016-05-13	twitter / finagle, twitter / util
+ity@twitter.com	11	0	0	0	0	2014-07-29	2019-05-14	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+dgassaway@twitter.com	11	0	0	0	0	2018-12-28	2019-02-08	twitter / groupcache
+zx@twitter.com	11	0	0	0	0	2012-03-27	2015-01-09	twitter / twemoji, twitter / twitter-cldr-rb, twitter / finatra
+rturner@twitter.com	11	0	0	0	0	2020-08-07	2020-10-29	twitter / dict_minimize
+rogerj.2010@gmail.com	11	0	0	0	0	2016-10-04	2018-05-10	twitter / pants
+joshua.suereth@gmail.com	11	0	0	0	0	2014-01-09	2014-07-30	twitter / pants
+movsiankin@twitter.com	11	0	0	0	0	2018-07-26	2018-07-27	twitter / rsc
+nnythm@gmail.com	10	0	0	0	0	2012-09-27	2015-12-17	twitter / finagle, twitter / pants
+ian@twitter.com	10	0	0	0	0	2011-05-21	2012-03-08	twitter / finagle, twitter / util
+jz@twitter.com	10	0	0	0	0	2011-04-08	2011-11-03	twitter / finagle, twitter / util
+ejones@twitter.com	10	0	0	0	0	2014-08-08	2016-01-30	twitter / finagle, twitter / util, twitter / pants
+ahimelman@twitter.com	10	0	0	0	0	2022-08-09	2022-08-25	twitter / google-tag-manager-base-tag, twitter / google-tag-manager-event-tag
+landism@gmail.com	10	0	0	0	0	2015-11-03	2016-03-24	twitter / pants
+yni@twitter.com	10	0	0	0	0	2018-04-11	2019-12-20	twitter / iago2
+elementation@gmail.com	10	0	0	0	0	2014-03-20	2014-10-17	twitter / finatra
+gvacariuc@tendrilinc.com	9	0	0	0	0	2012-02-27	2012-05-16	twitter / finagle
+samwhitlock@twitter.com	9	0	0	0	0	2011-07-20	2011-08-03	twitter / finagle, twitter / util
+kentaro@twitter.com	9	0	0	0	0	2013-05-23	2017-08-25	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+muxianw@twitter.com	9	0	0	0	0	2021-02-24	2023-10-16	twitter / finagle, twitter / util, twitter / rezolus
+brad@danga.com	9	0	0	0	0	2013-07-28	2017-01-09	twitter / groupcache
+kmaxwell@twitter.com	9	0	0	0	0	2011-02-23	2011-03-14	twitter / util
+mjeffryes@twitter.com	9	0	0	0	0	2013-01-31	2018-06-22	twitter / util, twitter / finatra
+ng01@twitter.com	9	0	0	0	0	2021-07-02	2021-08-18	twitter / util, twitter / finatra
+mcarrasco@twitter.com	9	0	0	0	0	2022-07-29	2022-11-01	twitter / focus
+mathieu.c.sabourin@gmail.com	9	0	0	0	0	2018-09-05	2019-03-21	twitter / pants
+cheister@squareup.com	9	0	0	0	0	2017-03-30	2018-04-17	twitter / pants
+christopher.pesto@gmail.com	9	0	0	0	0	2015-09-28	2016-05-23	twitter / pants
+justin.trobec@gmail.com	9	0	0	0	0	2015-10-01	2015-12-09	twitter / pants
+gabriel439@gmail.com	9	0	0	0	0	2015-09-01	2015-12-02	twitter / pants
+risaacs@twitter.com	8	0	0	0	0	2018-12-04	2020-06-12	twitter / finagle
+edede@twitter.com	8	0	0	0	0	2016-03-23	2019-09-18	twitter / finagle
+jcrossley@twitter.com	8	0	0	0	0	2014-05-22	2014-08-22	twitter / finagle
+anirudh@twitter.com	8	0	0	0	0	2012-02-03	2012-05-01	twitter / finagle
+jdanbrown@gmail.com	8	0	0	0	0	2012-08-10	2013-11-12	twitter / finagle, twitter / util
+yuhua@twitter.com	8	0	0	0	0	2011-10-04	2012-11-19	twitter / finagle, twitter / util
+pyenugutala@twitter.com	8	0	0	0	0	2018-08-31	2020-02-07	twitter / finagle, twitter / util, twitter / finatra
+alexlevenson@twitter.com	8	0	0	0	0	2012-08-24	2020-02-20	twitter / finagle, twitter / util, twitter / finatra
+jw@twitter.com	8	0	0	0	0	2011-06-29	2014-03-26	twitter / finagle, twitter / util
+spullara@twitter.com	8	0	0	0	0	2011-08-22	2012-06-13	twitter / finagle, twitter / util
+3122764+dgassaway@users.noreply.github.com	8	0	0	0	0	2019-01-02	2019-09-09	twitter / groupcache
+adg@golang.org	8	0	0	0	0	2013-07-24	2016-02-08	twitter / groupcache
+mkaplan@stripe.com	8	0	0	0	0	2020-07-28	2020-08-17	twitter / twitter-cldr-rb
+nysaechao@outlook.com	8	0	0	0	0	2017-01-03	2018-10-31	twitter / pants
+tom.dyas@gmail.com	8	0	0	0	0	2017-09-26	2018-01-20	twitter / pants
+peter@gigamonkeys.com	8	0	0	0	0	2015-03-17	2015-11-30	twitter / pants
+jrosenfield@squareup.com	8	0	0	0	0	2015-05-28	2015-07-27	twitter / pants
+pfehre@twitter.com	8	0	0	0	0	2020-09-28	2020-12-29	twitter / finatra
+armandocanals@gmail.com	8	0	0	0	0	2014-01-13	2014-01-14	twitter / finatra
+fkalim@twitter.com	8	0	0	0	0	2018-06-19	2018-06-27	twitter / caladrius
+shakeelr@twitter.com	7	0	0	0	0	2019-12-10	2022-10-30	twitter / finagle
+jowens@twitter.com	7	0	0	0	0	2012-08-08	2012-12-14	twitter / finagle
+aivanov@twitter.com	7	1	5	5	5	2021-07-14	2024-12-30	twitter / finagle, twitter / util
+tdong@twitter.com	7	0	0	0	0	2015-12-03	2017-01-13	twitter / finagle, twitter / util
+trisha@twitter.com	7	0	0	0	0	2012-10-09	2014-02-19	twitter / finagle, twitter / util
+brutkin@twitter.com	7	0	0	0	0	2015-11-04	2022-10-22	twitter / finagle, twitter / util, twitter / finatra
+ddavydov@twitter.com	7	0	0	0	0	2014-01-13	2015-05-20	twitter / finagle, twitter / util, twitter / pants
+yujiec@twitter.com	7	0	0	0	0	2017-06-09	2017-06-23	twitter / finagle, twitter / util, twitter / finatra
+fkorotkov@twitter.com	7	0	0	0	0	2014-10-14	2015-08-20	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+nsprogrammer@nsprogrammer.com	7	0	0	0	0	2017-03-01	2019-09-11	twitter / ios-twitter-image-pipeline, twitter / ios-twitter-logging-service
+nf@wh3rd.net	7	0	0	0	0	2013-07-31	2014-07-08	twitter / groupcache
+diemol@gmail.com	7	0	0	0	0	2020-12-02	2021-01-15	twitter / check-my-repo
+github@olix0r.net	7	0	0	0	0	2011-03-05	2011-03-08	twitter / util
+ptandel@twitter.com	7	0	0	0	0	2019-12-11	2020-03-09	twitter / util, twitter / finatra
+28273671+rdturnermtl@users.noreply.github.com	7	0	0	0	0	2020-08-13	2021-04-14	twitter / dict_minimize
+justinanderson@twitter.com	7	0	0	0	0	2020-12-04	2022-02-04	twitter / ios-twitter-apache-thrift
+djbernadett@gmail.com	7	0	0	0	0	2022-08-20	2022-09-14	twitter / focus
+kpaul@twitter.com	7	0	0	0	0	2022-03-08	2022-05-04	twitter / focus
+hellomind@gmail.com	7	0	0	0	0	2015-05-16	2017-04-18	twitter / pants
+tomjadams@gmail.com	7	0	0	0	0	2014-11-24	2014-11-24	twitter / finatra
+ali.fauci@gmail.com	7	0	0	0	0	2017-07-25	2017-11-18	twitter / Serial
+jenskat@gmail.com	6	0	0	0	0	2018-01-19	2023-11-01	twitter / finagle
+acole@pivotal.io	6	0	0	0	0	2015-10-07	2017-11-29	twitter / finagle
+shun.otani@gmail.com	6	0	0	0	0	2017-04-03	2017-04-29	twitter / finagle
+ak@twitter.com	6	0	0	0	0	2013-04-18	2015-10-22	twitter / finagle, twitter / util
+aniruddha@twitter.com	6	0	0	0	0	2013-10-10	2015-01-21	twitter / finagle, twitter / util
+chrischen@twitter.com	6	0	0	0	0	2012-12-16	2013-12-14	twitter / finagle, twitter / util
+dknightly@twitter.com	6	0	0	0	0	2013-11-20	2015-08-27	twitter / finagle, twitter / util, twitter / finatra
+steven@twitter.com	6	0	0	0	0	2011-08-26	2014-07-22	twitter / finagle, twitter / util
+usrinivasan@twitter.com	6	0	0	0	0	2018-06-14	2018-06-22	twitter / finagle, twitter / finatra
+msolomon@twitter.com	6	0	0	0	0	2015-01-14	2018-06-22	twitter / finagle, twitter / util, twitter / finatra
+gshannon@twitter.com	6	0	0	0	0	2016-05-27	2017-09-21	twitter / finagle, twitter / finatra
+lwang@twitter.com	6	0	0	0	0	2014-01-03	2014-02-07	twitter / finagle, twitter / util
+gary@twitter.com	6	0	0	0	0	2013-04-12	2013-08-28	twitter / finagle, twitter / util
+usalzar@twitter.com	6	0	0	0	0	2022-07-08	2022-07-12	twitter / finagle, twitter / util, twitter / finatra
+marcyr@twitter.com	6	0	0	0	0	2020-08-08	2020-08-21	twitter / finagle, twitter / util, twitter / finatra
+drichelson@twitter.com	6	0	0	0	0	2015-05-26	2015-11-13	twitter / finagle, twitter / util, twitter / finatra
+mkhadikov@gmail.com	6	0	0	0	0	2012-04-10	2013-05-20	twitter / finagle, twitter / util, twitter / finatra
+ggrossman@zendesk.com	6	0	0	0	0	2021-12-17	2022-01-12	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+jtrobec@twitter.com	6	0	0	0	0	2015-08-24	2018-11-12	twitter / finagle, twitter / pants
+digitalbuddha@users.noreply.github.com	6	0	0	0	0	2022-05-26	2022-09-12	twitter / compose-rules
+lgeirsson@twitter.com	6	0	0	0	0	2019-09-27	2020-10-14	twitter / util, twitter / bazel-multiversion
+bryan.haggerty@gmail.com	6	0	0	0	0	2016-03-19	2019-05-29	twitter / twemoji
+me@wesleyac.com	6	0	0	0	0	2019-10-15	2019-12-30	twitter / rezolus
+ericzundel@gmail.com	6	0	0	0	0	2014-10-14	2016-09-16	twitter / pants
+gmalmquist@squareup.com	6	0	0	0	0	2014-05-28	2014-06-18	twitter / pants
+todor@peychev.com	6	0	0	0	0	2014-08-15	2014-10-06	twitter / finatra
+me@amandeep.ca	6	0	0	0	0	2017-11-04	2018-03-18	twitter / Serial
+igorbachev@twitter.com	5	2	4	5	5	2024-10-03	2025-01-14	twitter / finagle
+awawrzyniak@twitter.com	5	0	0	0	0	2017-07-18	2021-11-06	twitter / finagle
+lhan@twitter.com	5	0	0	0	0	2020-07-15	2020-08-03	twitter / finagle
+zmo@twitter.com	5	0	0	0	0	2018-08-09	2018-09-04	twitter / finagle
+cexell@twitter.com	5	0	0	0	0	2017-08-19	2018-01-11	twitter / finagle
+rashmir@twitter.com	5	0	0	0	0	2017-05-25	2017-08-30	twitter / finagle
+mpalani@twitter.com	5	0	0	0	0	2016-06-10	2016-06-29	twitter / finagle
+wanli@twitter.com	5	0	0	0	0	2011-07-20	2012-08-22	twitter / finagle
+xyao@twitter.com	5	0	0	0	0	2016-08-08	2017-07-10	twitter / finagle, twitter / util
+trustin@twitter.com	5	0	0	0	0	2013-03-30	2014-08-01	twitter / finagle, twitter / util
+szegedia@gmail.com	5	0	0	0	0	2010-10-01	2011-09-28	twitter / finagle, twitter / util
+vhaka@twitter.com	5	0	0	0	0	2018-12-22	2019-05-22	twitter / finagle, twitter / finatra
+oparry@twitter.com	5	0	0	0	0	2016-11-15	2019-03-21	twitter / finagle, twitter / util, twitter / finatra
+jcohen@twitter.com	5	0	0	0	0	2014-03-21	2017-12-19	twitter / finagle, twitter / util, twitter / pants, twitter / finatra
+marcel@twitter.com	5	0	0	0	0	2010-08-03	2012-04-04	twitter / finagle, twitter / util
+petehunt@users.noreply.github.com	5	0	0	0	0	2019-02-27	2019-03-06	twitter / sqrl
+wnorris@twitter.com	5	0	0	0	0	2021-05-21	2021-11-05	twitter / check-my-repo, twitter / twitter.github.io, twitter / gatekeeper-service
+dichat.dark@gmail.com	5	0	0	0	0	2016-06-15	2016-06-18	twitter / ios-twitter-logging-service
+oda@headjapan.com	5	0	0	0	0	2015-05-29	2015-07-21	twitter / go-bindata
+riywo.jp@gmail.com	5	0	0	0	0	2014-12-07	2014-12-09	twitter / go-bindata
+yoshida.keiji.84@gmail.com	5	0	0	0	0	2014-05-10	2014-05-12	twitter / go-bindata
+hzhang@twitter.com	5	0	0	0	0	2015-01-20	2015-06-16	twitter / util
+wkhan@twitter.com	5	0	0	0	0	2020-10-29	2022-09-16	twitter / util, twitter / focus, twitter / bazel-multiversion
+andrea.giammarchi@mailonline.co.uk	5	0	0	0	0	2016-08-26	2016-08-30	twitter / twemoji
+derek.mooney@blackboard.com	5	0	0	0	0	2015-02-25	2015-04-11	twitter / twemoji
+alexandre@acceis.fr	5	0	0	0	0	2023-08-18	2023-08-21	twitter / twitter-cldr-rb
+kristianfreeman@gmail.com	5	0	0	0	0	2012-04-03	2012-04-04	twitter / twitter-cldr-rb
+shah@twitter.com	5	0	0	0	0	2012-06-25	2018-04-18	twitter / twitter-cldr-rb, twitter / finatra
+mat@twitter.com	5	0	0	0	0	2018-06-22	2018-09-18	twitter / gatekeeper-service
+46382106+patliu85@users.noreply.github.com	5	0	0	0	0	2019-04-16	2019-05-13	twitter / pants
+chenchris@gmail.com	5	0	0	0	0	2015-05-28	2016-03-02	twitter / pants
+qma.twitter@gmail.com	5	0	0	0	0	2015-06-19	2015-11-07	twitter / pants
+thowland@twopensource.com	5	0	0	0	0	2015-05-08	2015-06-10	twitter / pants
+tien@squareup.com	5	0	0	0	0	2014-06-10	2014-06-12	twitter / pants
+snecula@twitter.com	5	0	0	0	0	2021-01-29	2021-04-13	twitter / finatra
+rory.graves@fieldmark.co.uk	5	0	0	0	0	2017-11-16	2018-01-17	twitter / rsc
+aguardia@twitter.com	5	0	0	0	0	2021-05-12	2022-08-24	twitter / bazel-multiversion
+peter.waynechina@gmail.com	5	0	0	0	0	2020-10-18	2020-11-05	twitter / cache-trace
+jennyl@twitter.com	4	0	0	0	0	2020-06-26	2020-07-22	twitter / finagle
+fsareshwala@twitter.com	4	0	0	0	0	2016-10-26	2018-07-17	twitter / finagle
+thirstycrow@qq.com	4	0	0	0	0	2015-07-22	2017-05-25	twitter / finagle
+github@spockz.nl	4	0	0	0	0	2015-03-23	2016-10-07	twitter / finagle
+jeffrey.n.davis@gmail.com	4	0	0	0	0	2014-05-08	2015-03-18	twitter / finagle
+jenkins@bigbird	4	0	0	0	0	2014-10-15	2014-10-28	twitter / finagle
+fiaz@twitter.com	4	0	0	0	0	2011-11-30	2012-08-10	twitter / finagle
+grant@tnarg.com	4	0	0	0	0	2011-07-01	2011-10-19	twitter / finagle
+holden@foursquare.com	4	0	0	0	0	2011-08-19	2011-08-22	twitter / finagle
+jmeador@twitter.com	4	0	0	0	0	2017-04-28	2023-09-06	twitter / finagle, twitter / util
+yz@twitter.com	4	0	0	0	0	2014-04-22	2016-07-05	twitter / finagle, twitter / util
+mdmitriev@twitter.com	4	0	0	0	0	2013-12-31	2014-11-18	twitter / finagle, twitter / util
+rvp@twitter.com	4	0	0	0	0	2011-06-29	2011-11-08	twitter / finagle, twitter / util
+mbilotti@twitter.com	4	0	0	0	0	2016-06-10	2021-02-18	twitter / finagle, twitter / util, twitter / finatra
+bscheppler@twitter.com	4	0	0	0	0	2016-12-13	2019-10-04	twitter / finagle, twitter / util, twitter / finatra
+dmcclanahan@twitter.com	4	0	0	0	0	2018-09-12	2018-12-27	twitter / finagle, twitter / util, twitter / finatra
+adimitriu@twitter.com	4	0	0	0	0	2017-12-01	2018-01-24	twitter / finagle, twitter / util, twitter / finatra
+ssullivan@gilt.com	4	0	0	0	0	2017-11-06	2017-11-07	twitter / finagle, twitter / util
+jnievelt@twitter.com	4	0	0	0	0	2014-09-17	2014-10-16	twitter / finagle, twitter / util
+jcarey@twitter.com	4	0	0	0	0	2014-01-30	2017-02-27	twitter / finagle, twitter / util, twitter / finatra
+nkallen@tw-mbp13-nkallen.local	4	0	0	0	0	2011-10-17	2011-10-24	twitter / finagle, twitter / util
+andreoss@sdf.org	4	0	0	0	0	2023-10-31	2023-10-31	twitter / finagle, twitter / dodo, twitter / util, twitter / finatra
+bfashola@twitter.com	4	0	0	0	0	2015-07-23	2015-08-13	twitter / finagle, twitter / finatra
+benjamin.foster@six3systems.com	4	0	0	0	0	2014-09-10	2014-11-21	twitter / finagle, twitter / finatra
+canbal@users.noreply.github.com	4	0	0	0	0	2017-12-18	2018-03-15	twitter / vireo
+alan@inconshreveable.com	4	0	0	0	0	2013-11-08	2013-11-08	twitter / go-bindata
+dhiller@twitter.com	4	0	0	0	0	2014-09-03	2015-01-16	twitter / util
+jbull@twitter.com	4	0	0	0	0	2019-05-14	2019-07-03	twitter / util, twitter / finatra
+tdyas@foursquare.com	4	0	0	0	0	2013-04-15	2015-06-05	twitter / util, twitter / pants
+alexeymolchan228@gmail.com	4	0	0	0	0	2022-04-30	2022-04-30	twitter / twemoji
+hthetiot@gmail.com	4	0	0	0	0	2022-03-14	2022-03-14	twitter / twemoji
+katehuang0320@gmail.com	4	0	0	0	0	2015-01-08	2019-09-10	twitter / twemoji
+joen@automattic.com	4	0	0	0	0	2015-04-09	2015-04-09	twitter / twemoji
+casassg@users.noreply.github.com	4	0	0	0	0	2020-08-19	2020-10-28	twitter / dict_minimize
+bierbaum@users.noreply.github.com	4	0	0	0	0	2022-10-28	2022-10-28	twitter / focus
+dkatz@zendesk.com	4	0	0	0	0	2017-10-18	2017-11-22	twitter / pants
+emilycaveness@gmail.com	4	0	0	0	0	2016-01-28	2016-09-14	twitter / pants
+ebube97@me.com	4	0	0	0	0	2016-06-08	2016-07-27	twitter / pants
+chris.burroughs@gmail.com	4	0	0	0	0	2015-12-14	2016-02-17	twitter / pants
+sarasolano@squareup.com	4	0	0	0	0	2015-06-17	2015-07-02	twitter / pants
+n.shkrob@gmail.com	4	0	0	0	0	2014-09-18	2014-12-05	twitter / pants
+marc@marc-abramowitz.com	4	0	0	0	0	2014-02-11	2014-02-13	twitter / pants
+leo@foursquare.com	4	0	0	0	0	2012-07-24	2013-03-19	twitter / pants
+lucasn@twitter.com	4	0	0	0	0	2023-07-28	2023-07-28	twitter / communitynotes
+dbress@twitter.com	4	0	0	0	0	2018-06-18	2019-02-13	twitter / finatra
+jjackson@twitter.com	4	0	0	0	0	2018-04-10	2018-05-25	twitter / finatra
+dev-all+capotej+twoism@posterous-inc.com	4	0	0	0	0	2012-02-19	2012-02-20	twitter / finatra
+wiwa@users.noreply.github.com	4	0	0	0	0	2019-01-16	2019-03-28	twitter / rsc
+olafurpg@gmail.com	4	0	0	0	0	2019-08-24	2020-11-24	twitter / rsc, twitter / bazel-multiversion
+hfuller@twitter.com	3	0	0	0	0	2020-07-10	2022-02-25	twitter / finagle
+alessandro.vermeulen@ing.nl	3	0	0	0	0	2018-06-07	2019-12-18	twitter / finagle
+martijnhoekstra@gmail.com	3	0	0	0	0	2019-09-19	2019-10-08	twitter / finagle
+ecoffey@twitter.com	3	0	0	0	0	2015-06-17	2019-08-23	twitter / finagle
+shu@twitter.com	3	0	0	0	0	2017-09-16	2018-07-27	twitter / finagle
+hoegqvist@gmail.com	3	0	0	0	0	2017-02-23	2018-03-27	twitter / finagle
+zzhang@twitter.com	3	0	0	0	0	2015-09-22	2017-06-23	twitter / finagle
+jly@twitter.com	3	0	0	0	0	2016-11-22	2016-12-01	twitter / finagle
+amartinsn@gmail.com	3	0	0	0	0	2015-10-08	2016-01-26	twitter / finagle
+adam.shannon@banno.com	3	0	0	0	0	2014-07-08	2014-08-04	twitter / finagle
+xyu@twitter.com	3	0	0	0	0	2013-05-09	2013-08-08	twitter / finagle
+github@sazabi.org	3	0	0	0	0	2012-10-27	2013-06-13	twitter / finagle
+dominic.tootell@gmail.com	3	0	0	0	0	2012-03-03	2012-03-13	twitter / finagle
+wilhelm@ubuntu.(none)	3	0	0	0	0	2011-01-12	2011-01-12	twitter / finagle
+nvangerow@twitter.com	3	0	0	0	0	2020-12-08	2021-12-04	twitter / finagle, twitter / finatra
+hderms@gmail.com	3	0	0	0	0	2020-01-22	2022-05-11	twitter / finagle, twitter / rustcommon
+daniel.charczynski1@ingbank.pl	3	0	0	0	0	2019-10-10	2019-10-28	twitter / finagle, twitter / util
+omer.zach@gmail.com	3	0	0	0	0	2017-07-05	2019-06-20	twitter / finagle, twitter / pants
+ddaniliuc@twitter.com	3	0	0	0	0	2015-03-24	2017-08-19	twitter / finagle, twitter / pants
+dbenediktson@twitter.com	3	0	0	0	0	2016-06-16	2017-07-13	twitter / finagle, twitter / util
+massa.nomura@gmail.com	3	0	0	0	0	2017-05-18	2017-07-10	twitter / finagle, twitter / util
+ryangreenberg@twitter.com	3	0	0	0	0	2016-02-20	2016-07-02	twitter / finagle, twitter / finatra
+liam@strava.com	3	0	0	0	0	2013-06-11	2016-03-05	twitter / finagle, twitter / util
+rmagen@twitter.com	3	0	0	0	0	2013-01-14	2016-02-03	twitter / finagle, twitter / finatra
+sarnat@twitter.com	3	0	0	0	0	2012-12-10	2013-07-17	twitter / finagle, twitter / util
+stephen.judkins@gmail.com	3	0	0	0	0	2012-04-10	2012-05-16	twitter / finagle, twitter / util
+tapans@twitter.com	3	0	0	0	3	2024-02-09	2024-02-09	twitter / finagle, twitter / util, twitter / finatra
+hkumar@twitter.com	3	0	0	0	0	2020-09-18	2022-12-20	twitter / finagle, twitter / util, twitter / finatra
+amadrigal@twitter.com	3	0	0	0	0	2022-07-20	2022-07-20	twitter / finagle, twitter / util, twitter / finatra
+etyurina@twitter.com	3	0	0	0	0	2020-09-02	2020-09-02	twitter / finagle, twitter / util, twitter / finatra
+atiurin@twitter.com	3	0	0	0	0	2019-09-03	2020-04-17	twitter / finagle, twitter / util, twitter / finatra
+wan@twitter.com	3	0	0	0	0	2017-08-30	2017-08-30	twitter / finagle, twitter / util, twitter / finatra
+dschobel@gmail.com	3	0	0	0	0	2016-11-01	2016-11-01	twitter / finagle, twitter / util, twitter / finatra
+welkere@ncbi.nlm.nih.gov	3	0	0	0	0	2015-03-11	2017-03-01	twitter / finagle, twitter / finatra
+jduan@twitter.com	3	0	0	0	0	2014-04-01	2014-12-01	twitter / finagle, twitter / util
+lgoujon@twitter.com	3	0	0	0	0	2014-10-09	2015-03-07	twitter / finagle, twitter / util
+pcarrier@twitter.com	3	0	0	0	0	2014-09-10	2015-10-01	twitter / finagle, twitter / util, twitter / finatra
+yhuang@twitter.com	3	0	0	0	0	2014-01-10	2014-06-10	twitter / finagle, twitter / finatra
+svoutilainen@twitter.com	3	0	0	0	0	2014-05-08	2017-11-07	twitter / finagle, twitter / util
+yramin@twitter.com	3	0	0	0	0	2013-11-05	2014-05-29	twitter / finagle, twitter / util
+john@foursquare.com	3	0	0	0	0	2013-09-17	2014-04-08	twitter / finagle, twitter / pants
+none	3	0	0	0	0	2012-12-03	2012-12-17	twitter / finagle, twitter / util
+xx@twitter.com	3	0	0	0	0	2012-06-29	2013-09-18	twitter / finagle, twitter / util
+decause@twitter.com	3	0	0	0	0	2017-07-25	2019-03-06	twitter / sqrl, twitter / caladrius, twitter / Serial
+bradfitz@golang.org	3	0	0	0	0	2016-02-11	2016-12-16	twitter / groupcache
+keny@twitter.com	3	0	0	0	0	2022-05-27	2022-09-06	twitter / compose-rules
+shurcool@gmail.com	3	0	0	0	0	2014-11-16	2015-02-26	twitter / go-bindata
+blaszczykpb@gmail.com	3	0	0	0	0	2014-01-03	2014-01-07	twitter / go-bindata
+pjfanning@users.noreply.github.com	3	0	0	0	0	2022-07-08	2022-07-26	twitter / util
+32566798+muachilin@users.noreply.github.com	3	0	0	0	0	2020-02-25	2020-03-11	twitter / util
+seth@tisue.net	3	0	0	0	0	2015-11-19	2019-08-28	twitter / util
+neuman.vong@gmail.com	3	0	0	0	0	2015-11-25	2016-05-10	twitter / util
+mccv@twitter.com	3	0	0	0	0	2011-08-09	2011-10-26	twitter / util
+mdoherty@twitter.com	3	0	0	0	0	2013-07-13	2021-07-21	twitter / util, twitter / pants, twitter / finatra
+di.zhao@gmail.com	3	0	0	0	0	2023-04-04	2023-04-04	twitter / the-algorithm
+a.giammarchi@eyeo.com	3	0	0	0	0	2018-07-17	2018-07-19	twitter / twemoji
+debian@debian.(none)	3	0	0	0	0	2014-11-08	2014-11-22	twitter / twemoji
+t@thi.im	3	0	0	0	0	2014-11-07	2014-11-08	twitter / twemoji
+wangtianthu@gmail.com	3	0	0	0	0	2016-08-24	2016-08-24	twitter / nodes
+opoudjis@gmail.com	3	0	0	0	0	2021-03-15	2021-03-25	twitter / twitter-cldr-rb
+philippe.44@gmail.com	3	0	0	0	0	2017-03-01	2020-10-28	twitter / twitter-cldr-rb
+jonathan@dnil.net	3	0	0	0	0	2013-10-08	2013-10-08	twitter / twitter-cldr-rb
+harrykantas@gmail.com	3	0	0	0	0	2018-06-22	2018-06-27	twitter / gatekeeper-service
+skrinikov@users.noreply.github.com	3	0	0	0	0	2020-07-17	2020-08-06	twitter / rezolus
+6560058+dbernadett@users.noreply.github.com	3	0	0	0	0	2022-08-22	2022-09-14	twitter / focus
+thoward37@gmail.com	3	0	0	0	0	2016-11-28	2019-04-05	twitter / pants
+thesamet@gmail.com	3	0	0	0	0	2017-04-10	2017-05-09	twitter / pants
+dbentleyrb@gmail.com	3	0	0	0	0	2015-12-17	2015-12-18	twitter / pants
+mjennings@foursquare.com	3	0	0	0	0	2015-06-01	2015-06-02	twitter / pants
+itay@twitter.com	3	0	0	0	0	2015-04-21	2015-04-23	twitter / pants
+dhamon@twopensource.com	3	0	0	0	0	2015-02-28	2015-03-05	twitter / pants
+dalpra.pierre@gmail.com	3	0	0	0	0	2014-09-07	2015-02-09	twitter / pants
+jcoveney@gmail.com	3	0	0	0	0	2014-04-30	2014-09-26	twitter / pants
+cheecheeo+rbcommons@gmail.com	3	0	0	0	0	2014-08-12	2014-08-14	twitter / pants
+davydovdan@gmail.com	3	0	0	0	0	2014-06-13	2014-07-31	twitter / pants
+jon@twitter.com	3	0	0	0	0	2013-01-30	2013-10-18	twitter / pants
+kushal@foursquare.com	3	0	0	0	0	2013-07-10	2013-07-10	twitter / pants
+hwasung.lee@oriel.oxon.org	3	0	0	0	0	2013-03-27	2013-04-02	twitter / pants
+38562595+pitmonticone@users.noreply.github.com	3	0	0	0	0	2023-07-01	2023-07-01	twitter / communitynotes
+dave.nicponski@gmail.com	3	0	0	0	0	2016-12-16	2017-02-22	twitter / finatra
+alexis22229@gmail.com	3	0	0	0	0	2016-10-07	2017-01-04	twitter / finatra
+fayi@fayimora.com	3	0	0	0	0	2015-09-21	2016-06-02	twitter / finatra
+leeavital@gmail.com	3	0	0	0	0	2014-09-24	2014-10-19	twitter / finatra
+manj@cs.stanford.edu	3	0	0	0	0	2014-03-22	2014-10-15	twitter / finatra
+sonnestrahlen@gmail.com	3	0	0	0	0	2013-11-01	2013-11-01	twitter / finatra
+michaelcevans10@gmail.com	3	0	0	0	0	2017-11-15	2018-11-16	twitter / Serial
+460412008@qq.com	3	0	0	0	0	2018-03-29	2018-07-25	twitter / Serial
+agrewal@twitter.com	3	0	0	0	0	2017-07-25	2017-11-09	twitter / Serial
+alpitkumarg@twitter.com	2	0	0	0	0	2021-03-05	2021-03-25	twitter / finagle
+plessner.ryan@gmail.com	2	0	0	0	0	2017-05-05	2020-10-22	twitter / finagle
+j.alberdi@criteo.com	2	0	0	0	0	2020-06-26	2020-06-26	twitter / finagle
+k.kaizu38@gmail.com	2	0	0	0	0	2020-04-20	2020-04-23	twitter / finagle
+joro.kr.21@gmail.com	2	0	0	0	0	2019-10-25	2019-10-28	twitter / finagle
+crispywalrus@gmail.com	2	0	0	0	0	2019-06-20	2019-06-28	twitter / finagle
+rguthrie@twitter.com	2	0	0	0	0	2019-06-04	2019-06-12	twitter / finagle
+martinffx@gmail.com	2	0	0	0	0	2019-05-29	2019-05-29	twitter / finagle
+edio@archlinux.us	2	0	0	0	0	2018-05-29	2018-10-27	twitter / finagle
+hi@leonmaia.com	2	0	0	0	0	2016-03-18	2018-01-26	twitter / finagle
+ypolius@twitter.com	2	0	0	0	0	2018-01-06	2018-01-12	twitter / finagle
+boaz@twitter.com	2	0	0	0	0	2013-03-14	2017-09-13	twitter / finagle
+vladimir@advancedtelematic.com	2	0	0	0	0	2017-03-20	2017-05-01	twitter / finagle
+rschatz@ea.com	2	0	0	0	0	2017-01-12	2017-04-03	twitter / finagle
+jzhang@twitter.com	2	0	0	0	0	2015-12-10	2016-10-21	twitter / finagle
+kcraigie@twitter.com	2	0	0	0	0	2016-07-14	2016-08-22	twitter / finagle
+cyphactor@gmail.com	2	0	0	0	0	2015-12-10	2016-05-30	twitter / finagle
+mpatidar@twitter.com	2	0	0	0	0	2016-03-22	2016-04-14	twitter / finagle
+ioconnell@twitter.com	2	0	0	0	0	2015-08-27	2015-08-27	twitter / finagle
+tonyd3@users.noreply.github.com	2	0	0	0	0	2015-02-18	2015-07-24	twitter / finagle
+orrsella@gmail.com	2	0	0	0	0	2015-02-05	2015-02-05	twitter / finagle
+pierre.antoine.ganaye@gmail.com	2	0	0	0	0	2014-06-20	2014-09-19	twitter / finagle
+joakim.bodin@dice.se	2	0	0	0	0	2014-03-06	2014-08-28	twitter / finagle
+gregc@twitter.com	2	0	0	0	0	2012-09-08	2014-07-05	twitter / finagle
+ztaylor@twitter.com	2	0	0	0	0	2012-10-29	2014-06-26	twitter / finagle
+jharjono@twitter.com	2	0	0	0	0	2013-05-09	2014-05-22	twitter / finagle
+vince@twitter.com	2	0	0	0	0	2013-08-31	2014-05-14	twitter / finagle
+zhanggl1981@gmail.com	2	0	0	0	0	2014-02-25	2014-03-11	twitter / finagle
+jharband@twitter.com	2	0	0	0	0	2013-10-19	2013-10-19	twitter / finagle
+dan@tumblr.com	2	0	0	0	0	2013-04-19	2013-06-19	twitter / finagle
+coops@foursquare.com	2	0	0	0	0	2013-03-26	2013-04-09	twitter / finagle
+github@likethesky.com	2	0	0	0	0	2013-03-15	2013-03-15	twitter / finagle
+krishna@twitter.com	2	0	0	0	0	2012-04-11	2012-06-27	twitter / finagle
+misterfunnyarsal@gmail.com	2	0	0	0	0	2011-11-11	2011-12-02	twitter / finagle
+tsunanet@gmail.com	2	0	0	0	0	2011-10-24	2011-11-08	twitter / finagle
+evan.meagher@gmail.com	2	0	0	0	0	2011-07-19	2011-08-19	twitter / finagle
+ysingh@twitter.com	2	0	0	0	0	2023-03-07	2023-03-07	twitter / finagle, twitter / finatra
+amylee@twitter.com	2	0	0	0	0	2022-11-02	2022-11-02	twitter / finagle, twitter / util
+imcusg@gmail.com	2	0	0	0	0	2022-05-03	2022-06-06	twitter / finagle, twitter / rezolus
+mleinartas@twitter.com	2	0	0	0	0	2021-11-03	2021-11-03	twitter / finagle, twitter / util
+kmcguigan@twitter.com	2	0	0	0	0	2021-09-24	2021-09-29	twitter / finagle, twitter / finatra
+diebauer@users.noreply.github.com	2	0	0	0	0	2018-07-31	2021-07-09	twitter / finagle, twitter / util
+hllrsr@protonmail.com	2	0	0	0	0	2021-01-11	2021-01-11	twitter / finagle, twitter / util
+mgreenberg@twitter.com	2	0	0	0	0	2020-04-09	2020-12-02	twitter / finagle, twitter / finatra
+mrcull@users.noreply.github.com	2	0	0	0	0	2020-11-14	2020-11-24	twitter / finagle, twitter / twemoji
+vrajaram@twitter.com	2	0	0	0	0	2020-07-03	2020-07-03	twitter / finagle, twitter / util
+mbraun@twitter.com	2	0	0	0	0	2020-04-21	2020-09-10	twitter / finagle, twitter / finatra
+zhiyuany@twitter.com	2	0	0	0	0	2019-12-17	2019-12-17	twitter / finagle, twitter / util
+gpoulos@twitter.com	2	0	0	0	0	2019-06-21	2019-08-19	twitter / finagle, twitter / finatra
+tt.tanishi100@gmail.com	2	0	0	0	0	2018-11-26	2018-11-26	twitter / finagle, twitter / util
+dennis@buoyant.io	2	0	0	0	0	2018-07-10	2018-11-20	twitter / finagle, twitter / util
+nickm@twitter.com	2	0	0	0	0	2018-10-26	2018-10-26	twitter / finagle, twitter / util
+leo@xerial.org	2	0	0	0	0	2018-09-25	2019-03-26	twitter / finagle, twitter / finatra
+alex@buoyant.io	2	0	0	0	0	2017-07-20	2017-09-11	twitter / finagle, twitter / util
+plaflamme@hopper.com	2	0	0	0	0	2015-01-07	2017-06-16	twitter / finagle, twitter / finatra
+mehmet.gunturkun@shazam.com	2	0	0	0	0	2017-05-24	2017-05-24	twitter / finagle, twitter / util
+a.pakulov@gmail.com	2	0	0	0	0	2017-04-03	2017-04-06	twitter / finagle, twitter / finatra
+enovales@twitter.com	2	0	0	0	0	2016-05-24	2019-04-29	twitter / finagle, twitter / finatra
+jmouradian@twitter.com	2	0	0	0	0	2016-03-16	2016-03-18	twitter / finagle, twitter / finatra
+andrew@sig.gy	2	0	0	0	0	2015-12-23	2017-05-17	twitter / finagle, twitter / util
+njohnson@twitter.com	2	0	0	0	0	2015-11-11	2015-11-11	twitter / finagle, twitter / util
+gdickinson@twitter.com	2	0	0	0	0	2013-10-18	2015-09-24	twitter / finagle, twitter / util
+suls@suls.org	2	0	0	0	0	2015-09-18	2015-11-06	twitter / finagle, twitter / util
+pseibel@twitter.com	2	0	0	0	0	2015-04-29	2015-09-16	twitter / finagle, twitter / util
+acrane@twitter.com	2	0	0	0	0	2015-08-20	2015-12-15	twitter / finagle, twitter / util
+daveb@twitter.com	2	0	0	0	0	2015-04-29	2015-04-29	twitter / finagle, twitter / util
+eswiac@twitter.com	2	0	0	0	0	2015-04-17	2015-06-04	twitter / finagle, twitter / finatra
+sparkes@twitter.com	2	0	0	0	0	2014-08-12	2014-11-26	twitter / finagle, twitter / util
+jcoveney@twitter.com	2	0	0	0	0	2014-02-03	2014-08-02	twitter / finagle, twitter / pants
+travisrobertbrown@gmail.com	2	0	0	0	0	2014-06-09	2019-08-13	twitter / finagle, twitter / util
+jeffo@tapad.com	2	0	0	0	0	2014-03-18	2016-06-03	twitter / finagle, twitter / util
+eric@5stops.com	2	0	0	0	0	2013-08-02	2014-01-15	twitter / finagle, twitter / pants
+thuang@twitter.com	2	0	0	0	0	2013-12-20	2013-12-20	twitter / finagle, twitter / util
+jchee@twitter.com	2	0	0	0	0	2013-08-08	2013-12-05	twitter / finagle, twitter / util
+bhaskar@tumblr.com	2	0	0	0	0	2013-05-08	2013-06-13	twitter / finagle, twitter / util
+oscar@twitter.com	2	0	0	0	0	2012-09-24	2012-09-24	twitter / finagle, twitter / util
+landau@twitter.com	2	0	0	0	0	2012-08-28	2012-08-28	twitter / finagle, twitter / util
+elin@twitter.com	2	0	0	0	0	2012-06-29	2012-07-16	twitter / finagle, twitter / util
+bdd@mindcast.org	2	0	0	0	0	2011-09-02	2012-02-10	twitter / finagle, twitter / util
+liam.nichols.ln@gmail.com	2	0	0	0	0	2020-08-20	2020-10-20	twitter / ios-twitter-image-pipeline
+jason-cooke@users.noreply.github.com	2	0	0	0	0	2019-08-30	2019-09-11	twitter / ios-twitter-image-pipeline, twitter / sqrl
+apratti@twitter.com	2	0	0	0	0	2019-08-30	2019-10-21	twitter / groupcache
+shawnpsmith@gmail.com	2	0	0	0	0	2015-01-25	2016-05-15	twitter / groupcache
+ukai@chromium.org	2	0	0	0	0	2013-08-29	2014-11-25	twitter / groupcache
+dvir@everything.me	2	0	0	0	0	2014-04-01	2014-07-08	twitter / groupcache
+dan@medium.com	2	0	0	0	0	2013-09-25	2013-10-16	twitter / groupcache
+luit@luit.it	2	0	0	0	0	2013-07-31	2013-07-31	twitter / groupcache
+contact@pavanky.com	2	0	0	0	0	2018-02-15	2018-10-17	twitter / vireo, twitter / nodes
+gareth@garethpaul.com	2	0	0	0	0	2016-07-02	2016-07-02	twitter / ios-twitter-logging-service
+manuel.martos-roldan@team.bumble.com	2	0	0	0	0	2022-09-30	2022-10-03	twitter / compose-rules
+jliggitt@redhat.com	2	0	0	0	0	2014-09-29	2015-08-13	twitter / go-bindata
+jforrest@redhat.com	2	0	0	0	0	2014-11-20	2014-11-24	twitter / go-bindata
+elazarl@gmail.com	2	0	0	0	0	2014-07-13	2014-07-14	twitter / go-bindata
+pierre@baillet.name	2	0	0	0	0	2013-09-30	2013-09-30	twitter / go-bindata
+eslutckii@twitter.com	2	0	1	2	2	2024-10-02	2024-12-13	twitter / util
+tprintezis@twitter.com	2	0	0	0	0	2022-04-14	2022-04-21	twitter / util
+hwoldesenbet@twitter.com	2	0	0	0	0	2020-08-05	2020-08-18	twitter / util
+6b656e6a69@gmail.com	2	0	0	0	0	2018-06-05	2018-06-11	twitter / util
+ahojsak@twitter.com	2	0	0	0	0	2016-08-26	2016-08-31	twitter / util
+zvoase@twitter.com	2	0	0	0	0	2015-02-20	2015-02-20	twitter / util
+argyris@twitter.com	2	0	0	0	0	2014-05-28	2014-06-09	twitter / util
+yzhu@twitter.com	2	0	0	0	0	2013-03-14	2013-05-20	twitter / util
+okapies@gmail.com	2	0	0	0	0	2013-02-01	2013-02-02	twitter / util
+asiegel@twitter.com	2	0	0	0	0	2012-08-14	2012-09-06	twitter / util
+jcorwin@twitter.com	2	0	0	0	0	2012-02-07	2012-03-07	twitter / util
+jeff@somethingsimilar.com	2	0	0	0	0	2011-06-14	2011-06-16	twitter / util
+cthalinger@twitter.com	2	0	0	0	0	2018-02-01	2018-12-20	twitter / util, twitter / finatra
+dpuppin@twitter.com	2	0	0	0	0	2018-09-19	2021-01-27	twitter / util, twitter / finatra
+yuizalp@gmail.com	2	0	0	0	0	2017-08-04	2017-08-09	twitter / util, twitter / finatra
+pouriya.jahanbakhsh@gmail.com	2	0	0	0	0	2023-04-01	2023-04-01	twitter / the-algorithm
+markseu@users.noreply.github.com	2	0	0	0	0	2016-03-08	2019-03-04	twitter / twemoji
+bugzilla@crissov.de	2	0	0	0	0	2017-03-30	2017-04-05	twitter / twemoji
+wez.pyke@gmail.com	2	0	0	0	0	2016-12-20	2016-12-20	twitter / twemoji
+raghavtce@tce.edu	2	0	0	0	0	2016-10-08	2016-10-08	twitter / twemoji
+frederic.druilhet@dr14.cnrs.fr	2	0	0	0	0	2016-02-08	2016-03-01	twitter / twemoji
+prdolmos@gmail.com	2	0	0	0	0	2015-06-29	2015-06-30	twitter / twemoji
+andypiper@users.noreply.github.com	2	0	0	0	0	2014-11-11	2018-10-12	twitter / twemoji, twitter / twemoji-parser
+kgupta8592@gmail.com	2	0	0	0	0	2018-01-29	2018-02-01	twitter / nodes
+michael.hoste@gmail.com	2	0	0	0	2	2024-04-25	2024-04-26	twitter / twitter-cldr-rb
+alexander@skovik.com	2	0	0	0	0	2016-06-14	2016-11-03	twitter / twitter-cldr-rb
+hello@magnusvk.com	2	0	0	0	0	2014-09-24	2014-10-06	twitter / twitter-cldr-rb
+zassmin@lumoslabs.com	2	0	0	0	0	2014-09-05	2014-09-06	twitter / twitter-cldr-rb
+arnav@arnavkumar.com	2	0	0	0	0	2014-08-20	2014-08-21	twitter / twitter-cldr-rb
+bernardod@twitter.com	2	0	0	0	0	2021-11-16	2021-11-30	twitter / rezolus
+84049091+kylebartush-twitter@users.noreply.github.com	2	0	0	0	0	2021-06-10	2021-09-16	twitter / rezolus
+kdspaul@gmail.com	2	0	0	0	0	2022-08-19	2022-09-06	twitter / focus
+marcinex7@gmail.com	2	0	0	0	0	2019-01-18	2019-02-06	twitter / pants
+sluggite@gmail.com	2	0	0	0	0	2018-12-15	2018-12-15	twitter / pants
+bardur@scientician.net	2	0	0	0	0	2018-04-24	2018-11-26	twitter / pants
+ghthor@gmail.com	2	0	0	0	0	2018-07-17	2018-07-22	twitter / pants
+marcruz385@gmail.com	2	0	0	0	0	2018-05-03	2018-05-07	twitter / pants
+iantabolt@gmail.com	2	0	0	0	0	2018-03-22	2018-03-23	twitter / pants
+lenucksi@users.noreply.github.com	2	0	0	0	0	2017-11-08	2017-11-11	twitter / pants
+grimreaper@users.noreply.github.com	2	0	0	0	0	2017-09-01	2017-10-17	twitter / pants
+pankajroark@users.noreply.github.com	2	0	0	0	0	2017-06-15	2017-07-10	twitter / pants
+ensonic@hora-obscura.de	2	0	0	0	0	2017-04-27	2017-05-14	twitter / pants
+jasonqsong@outlook.com	2	0	0	0	0	2017-02-27	2017-04-15	twitter / pants
+lahosken@gmail.com	2	0	0	0	0	2016-08-17	2017-03-27	twitter / pants
+davebrewster@me.com	2	0	0	0	0	2016-11-16	2016-11-17	twitter / pants
+kmccaffrey@twitter.com	2	0	0	0	0	2016-10-06	2016-10-19	twitter / pants
+lex@squareup.com	2	0	0	0	0	2016-08-19	2016-09-07	twitter / pants
+dan@foursquare.com	2	0	0	0	0	2015-11-23	2015-11-30	twitter / pants
+me@paulgroudas.com	2	0	0	0	0	2013-03-01	2015-06-05	twitter / pants
+rbcommons@mjeffryes.net	2	0	0	0	0	2014-06-28	2015-03-25	twitter / pants
+rbcommons@tla.org	2	0	0	0	0	2015-02-11	2015-02-15	twitter / pants
+jh@squareup.com	2	0	0	0	0	2014-10-24	2014-10-28	twitter / pants
+freekh@gmail.com	2	0	0	0	0	2014-08-23	2014-08-25	twitter / pants
+anicelyjohnson@gmail.com	2	0	0	0	0	2014-07-09	2014-07-23	twitter / pants
+github@tla.org	2	0	0	0	0	2014-05-02	2014-05-02	twitter / pants
+senthil@uthcode.com	2	0	0	0	0	2014-02-01	2014-02-03	twitter / pants
+blarson@twitter.com	2	0	0	0	0	2013-05-06	2013-05-06	twitter / pants
+jj@foursquare.com	2	0	0	0	0	2013-10-15	2013-10-15	twitter / pants
+davidtaylor@foursquare.com	2	0	0	0	0	2013-03-17	2013-04-09	twitter / pants
+joe@foursquare.com	2	0	0	0	0	2012-10-31	2012-11-04	twitter / pants
+flo@leibert.de	2	0	0	0	0	2012-08-23	2012-08-23	twitter / pants
+jackson@foursquare.com	2	0	0	0	0	2012-07-31	2012-08-01	twitter / pants
+jiansongc@x.com	2	0	1	1	2	2024-07-09	2024-11-18	twitter / communitynotes
+wusiqi.china@gmail.com	2	0	0	0	0	2023-11-29	2023-12-06	twitter / communitynotes
+trevorhackman@gmail.com	2	0	0	0	0	2023-02-27	2023-03-08	twitter / communitynotes
+yuval1010@gmail.com	2	0	0	0	0	2023-02-26	2023-03-02	twitter / communitynotes
+bmahler@twitter.com	2	0	0	0	0	2022-08-11	2022-08-11	twitter / finatra
+bhalsey@twitter.com	2	0	0	0	0	2019-01-29	2020-12-08	twitter / finatra
+ltang@twitter.com	2	0	0	0	0	2019-02-11	2020-03-03	twitter / finatra
+rteabeault@twitter.com	2	0	0	0	0	2018-09-06	2019-02-09	twitter / finatra
+amccree@twitter.com	2	0	0	0	0	2017-09-28	2018-09-28	twitter / finatra
+acardenas@twitter.com	2	0	0	0	0	2017-01-12	2018-07-11	twitter / finatra
+jlamb@twitter.com	2	0	0	0	0	2018-04-23	2018-06-05	twitter / finatra
+jboiles@twitter.com	2	0	0	0	0	2017-07-26	2017-07-28	twitter / finatra
+halvorgb@gmail.com	2	0	0	0	0	2017-03-16	2017-04-06	twitter / finatra
+njohns@grovo.com	2	0	0	0	0	2016-06-03	2017-01-09	twitter / finatra
+odinushuaia@gmail.com	2	0	0	0	0	2016-06-17	2016-12-12	twitter / finatra
+git@jensraaby.com	2	0	0	0	0	2016-01-26	2016-06-22	twitter / finatra
+mfinnicum@twitter.com	2	0	0	0	0	2016-03-14	2016-03-14	twitter / finatra
+mukherjee.syamantak@gmail.com	2	0	0	0	0	2015-09-01	2015-11-09	twitter / finatra
+stukra@twitter.com	2	0	0	0	0	2015-10-24	2015-11-05	twitter / finatra
+github@tomczarniecki.com	2	0	0	0	0	2014-05-16	2014-05-16	twitter / finatra
+jliszka@alumni.cmu.edu	2	0	0	0	0	2014-05-04	2014-05-04	twitter / finatra
+mmurray.wa@gmail.com	2	0	0	0	0	2014-02-02	2014-02-14	twitter / finatra
+avadrevu@twitter.com	2	0	0	0	0	2013-09-21	2013-09-21	twitter / finatra
+amorrison@etsy.com	2	0	0	0	0	2013-02-17	2013-02-17	twitter / finatra
+martin.duhem@gmail.com	2	0	0	0	0	2021-06-01	2021-06-07	twitter / bazel-multiversion
+nwang@twitter.com	2	0	0	0	0	2018-06-14	2018-06-14	twitter / caladrius
+skunichi@twitter.com	1	1	1	1	1	2024-12-18	2024-12-18	twitter / finagle
+tpollitt@twitter.com	1	0	1	1	1	2024-11-21	2024-11-21	twitter / finagle
+spotu@twitter.com	1	0	1	1	1	2024-11-04	2024-11-04	twitter / finagle
+aabdelhady@twitter.com	1	0	0	0	1	2024-04-24	2024-04-24	twitter / finagle
+amiqdad@twitter.com	1	0	0	0	0	2023-12-22	2023-12-22	twitter / finagle
+68562631+yamin-oanda@users.noreply.github.com	1	0	0	0	0	2023-11-01	2023-11-01	twitter / finagle
+atomr3@gmail.com	1	0	0	0	0	2023-11-01	2023-11-01	twitter / finagle
+vpalla@twitter.com	1	0	0	0	0	2023-09-19	2023-09-19	twitter / finagle
+fwbrasil@gmail.com	1	0	0	0	0	2022-08-23	2022-08-23	twitter / finagle
+sguttikonda@twitter.com	1	0	0	0	0	2022-07-29	2022-07-29	twitter / finagle
+aschakaki@twitter.com	1	0	0	0	0	2022-07-26	2022-07-26	twitter / finagle
+ssalim@twitter.com	1	0	0	0	0	2022-07-22	2022-07-22	twitter / finagle
+ddelnano@twitter.com	1	0	0	0	0	2022-07-22	2022-07-22	twitter / finagle
+mtejo@twitter.com	1	0	0	0	0	2022-06-30	2022-06-30	twitter / finagle
+emil.hotkowski@gmail.com	1	0	0	0	0	2022-02-23	2022-02-23	twitter / finagle
+guilgaly@gmail.com	1	0	0	0	0	2022-02-17	2022-02-17	twitter / finagle
+jremy@twitter.com	1	0	0	0	0	2022-01-22	2022-01-22	twitter / finagle
+ocworld@gmail.com	1	0	0	0	0	2022-01-10	2022-01-10	twitter / finagle
+lbalara@twitter.com	1	0	0	0	0	2021-10-08	2021-10-08	twitter / finagle
+schalexey@gmail.com	1	0	0	0	0	2021-10-08	2021-10-08	twitter / finagle
+1033237526@qq.com	1	0	0	0	0	2021-09-09	2021-09-09	twitter / finagle
+484152+plaflamme@users.noreply.github.com	1	0	0	0	0	2020-10-30	2020-10-30	twitter / finagle
+ssiarkiewicz@canva.com	1	0	0	0	0	2021-07-12	2021-07-12	twitter / finagle
+ashanat@twitter.com	1	0	0	0	0	2021-06-15	2021-06-15	twitter / finagle
+bodotzhao@gmail.com	1	0	0	0	0	2021-05-12	2021-05-12	twitter / finagle
+carlton.dain.miller@gmail.com	1	0	0	0	0	2021-04-05	2021-04-05	twitter / finagle
+bholt@planetholt.com	1	0	0	0	0	2021-03-17	2021-03-17	twitter / finagle
+b.potepun@tinkoff.ru	1	0	0	0	0	2021-02-24	2021-02-24	twitter / finagle
+henri.hagberg@relexsolutions.com	1	0	0	0	0	2021-02-23	2021-02-23	twitter / finagle
+hmhagberg@gmail.com	1	0	0	0	0	2021-02-09	2021-02-09	twitter / finagle
+vivanovsky@gmail.com	1	0	0	0	0	2020-12-16	2020-12-16	twitter / finagle
+blakgeof@amazon.com	1	0	0	0	0	2020-12-09	2020-12-09	twitter / finagle
+takezoe@gmail.com	1	0	0	0	0	2020-11-24	2020-11-24	twitter / finagle
+hollowman@hollowman.ml	1	0	0	0	0	2020-11-24	2020-11-24	twitter / finagle
+bnavetta@twitter.com	1	0	0	0	0	2020-10-30	2020-10-30	twitter / finagle
+pstover@twitter.com	1	0	0	0	0	2020-10-01	2020-10-01	twitter / finagle
+odidev@puresoftware.com	1	0	0	0	0	2020-09-08	2020-09-08	twitter / finagle
+brobinson@twitter.com	1	0	0	0	0	2020-08-27	2020-08-27	twitter / finagle
+spavikevik@users.noreply.github.com	1	0	0	0	0	2020-06-24	2020-06-24	twitter / finagle
+joseph@solidys.com	1	0	0	0	0	2020-02-10	2020-02-10	twitter / finagle
+alessandro.vermeulen@ing.com	1	0	0	0	0	2020-01-31	2020-01-31	twitter / finagle
+brianwignall@gmail.com	1	0	0	0	0	2019-12-09	2019-12-09	twitter / finagle
+dsakhno@twitter.com	1	0	0	0	0	2019-10-31	2019-10-31	twitter / finagle
+jmagee@twitter.com	1	0	0	0	0	2019-10-11	2019-10-11	twitter / finagle
+kkatooru@twitter.com	1	0	0	0	0	2019-09-24	2019-09-24	twitter / finagle
+ole.magnus.aker@schibsted.com	1	0	0	0	0	2019-09-04	2019-09-04	twitter / finagle
+lfu@twitter.com	1	0	0	0	0	2019-08-27	2019-08-27	twitter / finagle
+guillaume@hopper.com	1	0	0	0	0	2019-07-08	2019-07-08	twitter / finagle
+g.legoux@criteo.com	1	0	0	0	0	2019-06-05	2019-06-05	twitter / finagle
+ikio.github@gmail.com	1	0	0	0	0	2019-06-04	2019-06-04	twitter / finagle
+cromary@twitter.com	1	0	0	0	0	2019-05-28	2019-05-28	twitter / finagle
+mshields@twitter.com	1	0	0	0	0	2019-04-15	2019-04-15	twitter / finagle
+crimsonvoid@users.noreply.github.com	1	0	0	0	0	2019-04-02	2019-04-02	twitter / finagle
+kfan@twitter.com	1	0	0	0	0	2019-03-19	2019-03-19	twitter / finagle
+sgerstein@twitter.com	1	0	0	0	0	2019-02-11	2019-02-11	twitter / finagle
+randomstep@gmail.com	1	0	0	0	0	2019-02-05	2019-02-05	twitter / finagle
+czarek@drozak.net	1	0	0	0	0	2019-01-08	2019-01-08	twitter / finagle
+andreajemmett@gmail.com	1	0	0	0	0	2018-12-21	2018-12-21	twitter / finagle
+jorgevc@fastmail.es	1	0	0	0	0	2018-10-16	2018-10-16	twitter / finagle
+hongi.keam@gmail.com	1	0	0	0	0	2018-09-15	2018-09-15	twitter / finagle
+582538+coduinix@users.noreply.github.com	1	0	0	0	0	2018-09-14	2018-09-14	twitter / finagle
+siddharth.boobna@gmail.com	1	0	0	0	0	2018-09-13	2018-09-13	twitter / finagle
+casey.jimmy@gmail.com	1	0	0	0	0	2018-08-30	2018-08-30	twitter / finagle
+zackangelo@gmail.com	1	0	0	0	0	2018-08-22	2018-08-22	twitter / finagle
+01.mandar@gmail.com	1	0	0	0	0	2018-07-25	2018-07-25	twitter / finagle
+viktortnk@gmail.com	1	0	0	0	0	2018-07-11	2018-07-11	twitter / finagle
+bng@etsy.com	1	0	0	0	0	2018-07-11	2018-07-11	twitter / finagle
+hello@alexismas.com	1	0	0	0	0	2018-07-06	2018-07-06	twitter / finagle
+gsu@twitter.com	1	0	0	0	0	2018-06-14	2018-06-14	twitter / finagle
+robert.panzer.pb@googlemail.com	1	0	0	0	0	2018-05-21	2018-05-21	twitter / finagle
+tle@twitter.com	1	0	0	0	0	2018-05-04	2018-05-04	twitter / finagle
+garrett.everding92@gmail.com	1	0	0	0	0	2018-03-30	2018-03-30	twitter / finagle
+utkarsh.cmu@gmail.com	1	0	0	0	0	2017-12-20	2017-12-20	twitter / finagle
+james.schubert@gmail.com	1	0	0	0	0	2017-11-09	2017-11-09	twitter / finagle
+zhaoyonghui@xiaomi.com	1	0	0	0	0	2017-10-30	2017-10-30	twitter / finagle
+git@doismellburning.co.uk	1	0	0	0	0	2017-10-13	2017-10-13	twitter / finagle
+williamkey@gmail.com	1	0	0	0	0	2017-09-18	2017-09-18	twitter / finagle
+jjin@twitter.com	1	0	0	0	0	2017-08-21	2017-08-21	twitter / finagle
+ryanb93@users.noreply.github.com	1	0	0	0	0	2017-08-16	2017-08-16	twitter / finagle
+mehmetcemgunturkun@gmail.com	1	0	0	0	0	2017-08-14	2017-08-14	twitter / finagle
+agoncharova@twitter.com	1	0	0	0	0	2017-07-24	2017-07-24	twitter / finagle
+sjeyakumar@twitter.com	1	0	0	0	0	2017-07-22	2017-07-22	twitter / finagle
+cregado@twitter.com	1	0	0	0	0	2017-06-14	2017-06-14	twitter / finagle
+joao.neves@dice.se	1	0	0	0	0	2017-05-12	2017-05-12	twitter / finagle
+ojala.s.elias@gmail.com	1	0	0	0	0	2017-05-05	2017-05-05	twitter / finagle
+koiroha@gmail.com	1	0	0	0	0	2017-04-17	2017-04-17	twitter / finagle
+david.gurquiza@gmail.com	1	0	0	0	0	2017-04-03	2017-04-03	twitter / finagle
+tommi@wow.is	1	0	0	0	0	2017-04-03	2017-04-03	twitter / finagle
+alexander.jipa@db.com	1	0	0	0	0	2017-03-14	2017-03-14	twitter / finagle
+bhoyt@salesforce.com	1	0	0	0	0	2017-01-26	2017-01-26	twitter / finagle
+lguan@twitter.com	1	0	0	0	0	2017-01-13	2017-01-13	twitter / finagle
+herberteuler@gmail.com	1	0	0	0	0	2016-11-23	2016-11-23	twitter / finagle
+franck.nouama@gmail.com	1	0	0	0	0	2016-11-03	2016-11-03	twitter / finagle
+ashesh.ambasta@gmail.com	1	0	0	0	0	2016-09-08	2016-09-08	twitter / finagle
+jbcatte@gmail.com	1	0	0	0	0	2016-08-12	2016-08-12	twitter / finagle
+myang@dytechlab.com	1	0	0	0	0	2016-08-09	2016-08-09	twitter / finagle
+lucasmrtuner@gmail.com	1	0	0	0	0	2016-07-29	2016-07-29	twitter / finagle
+mahesh.kelkar@lookout.com	1	0	0	0	0	2016-07-20	2016-07-20	twitter / finagle
+bgaza@twitter.com	1	0	0	0	0	2016-07-14	2016-07-14	twitter / finagle
+yteo@twitter.com	1	0	0	0	0	2016-07-09	2016-07-09	twitter / finagle
+kristof.adriaenssens@soundcloud.com	1	0	0	0	0	2016-06-29	2016-06-29	twitter / finagle
+achartier@twitter.com	1	0	0	0	0	2016-06-21	2016-06-21	twitter / finagle
+sveinnfannar@gmail.com	1	0	0	0	0	2016-06-10	2016-06-10	twitter / finagle
+timxzl@gmail.com	1	0	0	0	0	2016-06-08	2016-06-08	twitter / finagle
+takuya_iwakami@dwango.co.jp	1	0	0	0	0	2016-05-31	2016-05-31	twitter / finagle
+bdimmick@twitter.com	1	0	0	0	0	2016-05-14	2016-05-14	twitter / finagle
+lleggieri@atlassian.com	1	0	0	0	0	2016-05-07	2016-05-07	twitter / finagle
+sam@soundcloud.com	1	0	0	0	0	2016-04-16	2016-04-16	twitter / finagle
+stevej@buoyant.io	1	0	0	0	0	2016-03-25	2016-03-25	twitter / finagle
+sunnykaka0721@gmail.com	1	0	0	0	0	2016-03-24	2016-03-24	twitter / finagle
+nicolas@nrinaudo.com	1	0	0	0	0	2016-03-15	2016-03-15	twitter / finagle
+mcervera@twitter.com	1	0	0	0	0	2016-02-25	2016-02-25	twitter / finagle
+edward@samson.ph	1	0	0	0	0	2016-02-23	2016-02-23	twitter / finagle
+saisi@users.noreply.github.com	1	0	0	0	0	2016-02-03	2016-02-03	twitter / finagle
+denton.david@gmail.com	1	0	0	0	0	2016-02-03	2016-02-03	twitter / finagle
+donghual@twitter.com	1	0	0	0	0	2016-01-27	2016-01-27	twitter / finagle
+sgury@netflix.com	1	0	0	0	0	2016-01-05	2016-01-05	twitter / finagle
+tchong@twitter.com	1	0	0	0	0	2015-12-10	2015-12-10	twitter / finagle
+lorenzo.dematte@gmail.com	1	0	0	0	0	2015-12-10	2015-12-10	twitter / finagle
+robsonpeixoto@gmail.com	1	0	0	0	0	2015-12-09	2015-12-09	twitter / finagle
+zfy0701@gmail.com	1	0	0	0	0	2015-11-19	2015-11-19	twitter / finagle
+dfurse@twitter.com	1	0	0	0	0	2015-11-18	2015-11-18	twitter / finagle
+jcastagna@twitter.com	1	0	0	0	0	2015-11-04	2015-11-04	twitter / finagle
+neuman@ashmoremusic.com	1	0	0	0	0	2015-10-27	2015-10-27	twitter / finagle
+whe@twitter.com	1	0	0	0	0	2015-10-23	2015-10-23	twitter / finagle
+arnar.th92@gmail.com	1	0	0	0	0	2015-10-16	2015-10-16	twitter / finagle
+molsen@twitter.com	1	0	0	0	0	2015-09-29	2015-09-29	twitter / finagle
+wmorgan@users.noreply.github.com	1	0	0	0	0	2015-09-18	2015-09-18	twitter / finagle
+warnold@twitter.com	1	0	0	0	0	2015-09-12	2015-09-12	twitter / finagle
+danielpcox@gmail.com	1	0	0	0	0	2015-09-10	2015-09-10	twitter / finagle
+rodrick.brown@gmail.com	1	0	0	0	0	2015-09-02	2015-09-02	twitter / finagle
+tarossi@users.noreply.github.com	1	0	0	0	0	2015-09-01	2015-09-01	twitter / finagle
+alessandro@mythradil.local	1	0	0	0	0	2015-09-01	2015-09-01	twitter / finagle
+ruttenberg@stanfordalumni.org	1	0	0	0	0	2015-08-05	2015-08-05	twitter / finagle
+sarthak.kumar@teradata.com	1	0	0	0	0	2015-08-04	2015-08-04	twitter / finagle
+svetlyak.40wt@gmail.com	1	0	0	0	0	2015-07-21	2015-07-21	twitter / finagle
+adahiya@twitter.com	1	0	0	0	0	2015-07-09	2015-07-09	twitter / finagle
+james.way@lookout.com	1	0	0	0	0	2015-06-20	2015-06-20	twitter / finagle
+wr4bbit@gmail.com	1	0	0	0	0	2015-05-29	2015-05-29	twitter / finagle
+pierwszy1@gmail.com	1	0	0	0	0	2015-05-02	2015-05-02	twitter / finagle
+dave.pederson@gmail.com	1	0	0	0	0	2015-04-27	2015-04-27	twitter / finagle
+nathan@technically.us	1	0	0	0	0	2015-04-24	2015-04-24	twitter / finagle
+rahul.phulore.999@gmail.com	1	0	0	0	0	2015-04-23	2015-04-23	twitter / finagle
+tianxiao.matx@gmail.com	1	0	0	0	0	2015-04-21	2015-04-21	twitter / finagle
+gzhou@twitter.com	1	0	0	0	0	2015-04-15	2015-04-15	twitter / finagle
+keith@nearlyfree.org	1	0	0	0	0	2015-04-08	2015-04-08	twitter / finagle
+charith@otiose.me	1	0	0	0	0	2015-04-08	2015-04-08	twitter / finagle
+kachayev@gmail.com	1	0	0	0	0	2015-04-08	2015-04-08	twitter / finagle
+jsu@twitter.com	1	0	0	0	0	2015-03-21	2015-03-21	twitter / finagle
+csaltos@gmail.com	1	0	0	0	0	2015-03-13	2015-03-13	twitter / finagle
+takei.shg@gmail.com	1	0	0	0	0	2015-03-10	2015-03-10	twitter / finagle
+bgmckown@gmail.com	1	0	0	0	0	2015-03-02	2015-03-02	twitter / finagle
+tonyd@tellapart.com	1	0	0	0	0	2015-02-18	2015-02-18	twitter / finagle
+xudifsd@gmail.com	1	0	0	0	0	2015-01-22	2015-01-22	twitter / finagle
+alexandr.nikitin@adform.com	1	0	0	0	0	2015-01-14	2015-01-14	twitter / finagle
+billg@twitter.com	1	0	0	0	0	2015-01-08	2015-01-08	twitter / finagle
+rodriguinho@jusbrasil.com.br	1	0	0	0	0	2014-12-19	2014-12-19	twitter / finagle
+zcho@twitter.com	1	0	0	0	0	2014-12-04	2014-12-04	twitter / finagle
+justinw@twitter.com	1	0	0	0	0	2014-11-06	2014-11-06	twitter / finagle
+azenkov@users.noreply.github.com	1	0	0	0	0	2014-10-15	2014-10-15	twitter / finagle
+joakim.bodin@ripley.se	1	0	0	0	0	2014-10-14	2014-10-14	twitter / finagle
+vargasbo@gmail.com	1	0	0	0	0	2014-10-03	2014-10-03	twitter / finagle
+sijieg@twitter.com	1	0	0	0	0	2014-09-30	2014-09-30	twitter / finagle
+briankimjohnson@gmail.com	1	0	0	0	0	2014-09-30	2014-09-30	twitter / finagle
+cphelps@tendrilinc.com	1	0	0	0	0	2014-09-23	2014-09-23	twitter / finagle
+dconnard@atlassian.com	1	0	0	0	0	2014-09-10	2014-09-10	twitter / finagle
+bbadii@twitter.com	1	0	0	0	0	2014-08-15	2014-08-15	twitter / finagle
+luciali@twitter.com	1	0	0	0	0	2014-08-10	2014-08-10	twitter / finagle
+soboko@gmail.com	1	0	0	0	0	2014-08-06	2014-08-06	twitter / finagle
+rodrigolazoti@gmail.com	1	0	0	0	0	2014-08-04	2014-08-04	twitter / finagle
+jixuxjixu@gmail.com	1	0	0	0	0	2014-07-26	2014-07-26	twitter / finagle
+stantonk@gmail.com	1	0	0	0	0	2014-07-23	2014-07-23	twitter / finagle
+zhangxiao@xzhang.net	1	0	0	0	0	2014-07-07	2014-07-07	twitter / finagle
+rravi@twitter.com	1	0	0	0	0	2014-06-13	2014-06-13	twitter / finagle
+okhan@twitter.com	1	0	0	0	0	2014-06-08	2014-06-08	twitter / finagle
+ozaki.shun5@gmail.com	1	0	0	0	0	2014-06-04	2014-06-04	twitter / finagle
+romain.leroux@mail.rakuten.com	1	0	0	0	0	2014-05-21	2014-05-21	twitter / finagle
+bdarrow@twitter.com	1	0	0	0	0	2014-05-07	2014-05-07	twitter / finagle
+mehdi.mollaverdi@rea-group.com	1	0	0	0	0	2014-05-06	2014-05-06	twitter / finagle
+dgolombek@mylookout.com	1	0	0	0	0	2014-04-21	2014-04-21	twitter / finagle
+tony@firebase.com	1	0	0	0	0	2014-04-15	2014-04-15	twitter / finagle
+sslavic@gmail.com	1	0	0	0	0	2014-04-11	2014-04-11	twitter / finagle
+stibium121@gmail.com	1	0	0	0	0	2014-03-17	2014-03-17	twitter / finagle
+amokashi@twitter.com	1	0	0	0	0	2014-01-25	2014-01-25	twitter / finagle
+jharding@twitter.com	1	0	0	0	0	2014-02-05	2014-02-05	twitter / finagle
+sayre@twitter.com	1	0	0	0	0	2013-11-19	2013-11-19	twitter / finagle
+mrapoport@twitter.com	1	0	0	0	0	2013-11-19	2013-11-19	twitter / finagle
+braiter@twitter.com	1	0	0	0	0	2013-10-31	2013-10-31	twitter / finagle
+petter.wigle@magine.com	1	0	0	0	0	2013-10-29	2013-10-29	twitter / finagle
+mikael@peerialism.com	1	0	0	0	0	2013-09-26	2013-09-26	twitter / finagle
+dmclaughlin@twitter.com	1	0	0	0	0	2013-09-06	2013-09-06	twitter / finagle
+tgajera@twitter.com	1	0	0	0	0	2013-06-25	2013-06-25	twitter / finagle
+kpawlowski@twitter.com	1	0	0	0	0	2013-05-11	2013-05-11	twitter / finagle
+keith.l.frost@gmail.com	1	0	0	0	0	2013-04-19	2013-04-19	twitter / finagle
+charmoto@twitter.com	1	0	0	0	0	2013-02-26	2013-02-26	twitter / finagle
+rarora@twitter.com	1	0	0	0	0	2013-01-04	2013-01-04	twitter / finagle
+mcbride@nestlabs.com	1	0	0	0	0	2012-12-22	2012-12-22	twitter / finagle
+cbarve@twitter.com	1	0	0	0	0	2012-12-26	2012-12-26	twitter / finagle
+sbian@twitter.com	1	0	0	0	0	2012-11-27	2012-11-27	twitter / finagle
+rschonberger@twitter.com	1	0	0	0	0	2012-11-20	2012-11-20	twitter / finagle
+james@earldouglas.com	1	0	0	0	0	2012-09-15	2012-09-15	twitter / finagle
+ruben@ignitenetwork.com	1	0	0	0	0	2012-08-10	2012-08-10	twitter / finagle
+cyang@twitter.com	1	0	0	0	0	2012-05-01	2012-05-01	twitter / finagle
+taylor@stackmob.com	1	0	0	0	0	2012-03-23	2012-03-23	twitter / finagle
+andrey.kolbasov@gmail.com	1	0	0	0	0	2012-02-22	2012-02-22	twitter / finagle
+jared@nestlabs.com	1	0	0	0	0	2011-12-01	2011-12-01	twitter / finagle
+srini@twitter.com	1	0	0	0	0	2011-07-28	2011-07-28	twitter / finagle
+abhi@twitter.com	1	0	0	0	0	2011-05-05	2011-05-05	twitter / finagle
+wilhelm@perpetuum.(none)	1	0	0	0	0	2010-12-28	2010-12-28	twitter / finagle
+cltnschlosser@gmail.com	1	0	0	0	0	2019-09-11	2019-09-11	twitter / ios-twitter-image-pipeline
+zhongwuzw@qq.com	1	0	0	0	0	2019-07-23	2019-07-23	twitter / ios-twitter-image-pipeline
+hawflakes@users.noreply.github.com	1	0	0	0	0	2018-12-07	2018-12-07	twitter / ios-twitter-image-pipeline
+ocastx@users.noreply.github.com	1	0	0	0	0	2017-03-15	2017-03-15	twitter / ios-twitter-image-pipeline
+aalok_2@live.com	1	0	0	0	0	2017-03-02	2017-03-02	twitter / ios-twitter-image-pipeline
+will@willnorris.com	1	0	0	0	0	2020-11-02	2020-11-02	twitter / sqrl
+11447520+jtemps@users.noreply.github.com	1	0	0	0	0	2020-10-30	2020-10-30	twitter / sqrl
+ddangerous@gmail.com	1	0	0	0	0	2019-02-28	2019-02-28	twitter / sqrl
+anthonyjpratti@gmail.com	1	0	0	0	0	2020-12-02	2020-12-02	twitter / groupcache
+jschiller@twitter.com	1	0	0	0	0	2017-01-28	2017-01-28	twitter / groupcache
+steve@tryingtobeawesome.com	1	0	0	0	0	2017-01-09	2017-01-09	twitter / groupcache
+daker.fernandes.pinheiro@intel.com	1	0	0	0	0	2016-11-29	2016-11-29	twitter / groupcache
+mdenton@skyportsystems.com	1	0	0	0	0	2016-08-03	2016-08-03	twitter / groupcache
+pierredurand@gmail.com	1	0	0	0	0	2016-02-02	2016-02-02	twitter / groupcache
+tipp@google.com	1	0	0	0	0	2016-01-27	2016-01-27	twitter / groupcache
+ryanslade@gmail.com	1	0	0	0	0	2014-12-16	2014-12-16	twitter / groupcache
+awawfumin@gmail.com	1	0	0	0	0	2014-10-01	2014-10-01	twitter / groupcache
+damian@gryski.com	1	0	0	0	0	2014-06-17	2014-06-17	twitter / groupcache
+blake.mizerany@gmail.com	1	0	0	0	0	2013-08-27	2013-08-27	twitter / groupcache
+elimisteve@gmail.com	1	0	0	0	0	2013-07-27	2013-07-27	twitter / groupcache
+cutezerocat@users.noreply.github.com	1	0	0	0	0	2018-01-22	2018-01-22	twitter / vireo
+simeon.zhidenko@gmail.com	1	0	0	0	0	2017-12-30	2017-12-30	twitter / vireo
+kirk@twitter.com	1	0	0	0	0	2017-12-05	2017-12-05	twitter / ios-twitter-logging-service
+fieldforceapp@gmail.com	1	0	0	0	0	2017-03-03	2017-03-03	twitter / ios-twitter-logging-service
+davidels@me.com	1	0	0	0	0	2016-06-02	2016-06-02	twitter / ios-twitter-logging-service
+fcanas@gmail.com	1	0	0	0	0	2016-06-02	2016-06-02	twitter / ios-twitter-logging-service
+nuhkocaa@gmail.com	1	0	0	0	0	2022-11-12	2022-11-12	twitter / compose-rules
+woitaschek@posteo.de	1	0	0	0	0	2022-11-09	2022-11-09	twitter / compose-rules
+pandanomic@gmail.com	1	0	0	0	0	2022-10-19	2022-10-19	twitter / compose-rules
+nao.7ken@gmail.com	1	0	0	0	0	2022-10-05	2022-10-05	twitter / compose-rules
+586670+kenyee@users.noreply.github.com	1	0	0	0	0	2022-09-16	2022-09-16	twitter / compose-rules
+vincent.masselis@gmail.com	1	0	0	0	0	2022-09-15	2022-09-15	twitter / compose-rules
+mmartos@degirona.info	1	0	0	0	0	2022-09-14	2022-09-14	twitter / compose-rules
+jcraane@gmail.com	1	0	0	0	0	2022-09-12	2022-09-12	twitter / compose-rules
+91663102+maximillianleonov@users.noreply.github.com	1	0	0	0	0	2022-09-11	2022-09-11	twitter / compose-rules
+chrisbanes@users.noreply.github.com	1	0	0	0	0	2022-08-30	2022-08-30	twitter / compose-rules
+rcouto@twitter.com	1	0	0	0	0	2018-02-08	2018-02-08	twitter / go-bindata
+ts@soundcloud.com	1	0	0	0	0	2015-10-23	2015-10-23	twitter / go-bindata
+brandon@jangler.info	1	0	0	0	0	2015-07-28	2015-07-28	twitter / go-bindata
+mattn.jp@gmail.com	1	0	0	0	0	2015-07-03	2015-07-03	twitter / go-bindata
+ikawaha@users.noreply.github.com	1	0	0	0	0	2015-06-13	2015-06-13	twitter / go-bindata
+imax@cesanta.com	1	0	0	0	0	2015-06-01	2015-06-01	twitter / go-bindata
+abates@omeganetserv.com	1	0	0	0	0	2015-04-16	2015-04-16	twitter / go-bindata
+jordan@liggitt.net	1	0	0	0	0	2015-04-01	2015-04-01	twitter / go-bindata
+mail@serhan-sen.de	1	0	0	0	0	2015-03-21	2015-03-21	twitter / go-bindata
+tobias.schottdorf@gmail.com	1	0	0	0	0	2015-03-10	2015-03-10	twitter / go-bindata
+jbreitbart@gmail.com	1	0	0	0	0	2015-03-08	2015-03-08	twitter / go-bindata
+beyang@sourcegraph.com	1	0	0	0	0	2015-01-27	2015-01-27	twitter / go-bindata
+aschlesinger@paypal.com	1	0	0	0	0	2014-11-14	2014-11-14	twitter / go-bindata
+stephen.searles@gmail.com	1	0	0	0	0	2014-08-18	2014-08-18	twitter / go-bindata
+byronimo@gmail.com	1	0	0	0	0	2014-08-07	2014-08-07	twitter / go-bindata
+opennota@gmail.com	1	0	0	0	0	2014-08-05	2014-08-05	twitter / go-bindata
+craigtlandry@gmail.com	1	0	0	0	0	2014-08-01	2014-08-01	twitter / go-bindata
+agaitonde@pivotallabs.com	1	0	0	0	0	2014-05-16	2014-05-16	twitter / go-bindata
+email@iankent.co.uk	1	0	0	0	0	2014-04-30	2014-04-30	twitter / go-bindata
+ryushi@gmail.com	1	0	0	0	0	2014-02-28	2014-02-28	twitter / go-bindata
+oct@fotonauts.com	1	0	0	0	0	2013-10-02	2013-10-02	twitter / go-bindata
+elias.naur@gmail.com	1	0	0	0	0	2013-09-19	2013-09-19	twitter / go-bindata
+ajhager@gmail.com	1	0	0	0	0	2012-07-13	2012-07-13	twitter / go-bindata
+kcelik@twitter.com	1	0	0	1	1	2024-08-29	2024-08-29	twitter / util
+tushars@twitter.com	1	0	0	0	0	2021-04-16	2021-04-16	twitter / util
+peter.vasterd@ing.com	1	0	0	0	0	2020-03-23	2020-03-23	twitter / util
+kristoffergunnarsson47@gmail.com	1	0	0	0	0	2020-02-20	2020-02-20	twitter / util
+the.matt.kantor@gmail.com	1	0	0	0	0	2020-02-05	2020-02-05	twitter / util
+matt.kipps@gmail.com	1	0	0	0	0	2020-02-05	2020-02-05	twitter / util
+anurag.sharma@whatfix.com	1	0	0	0	0	2019-08-08	2019-08-08	twitter / util
+chungsoojee@gmail.com	1	0	0	0	0	2019-04-17	2019-04-17	twitter / util
+hi.teresy@gmail.com	1	0	0	0	0	2018-11-27	2018-11-27	twitter / util
+simon@yonwell.com	1	0	0	0	0	2018-10-10	2018-10-10	twitter / util
+kyang@twitter.com	1	0	0	0	0	2018-04-28	2018-04-28	twitter / util
+sviswanathan@twitter.com	1	0	0	0	0	2018-04-11	2018-04-11	twitter / util
+carl.patenaudepoulin@mail.mcgill.ca	1	0	0	0	0	2018-01-20	2018-01-20	twitter / util
+savraz@gmail.com	1	0	0	0	0	2017-09-05	2017-09-05	twitter / util
+mmejran@iown1.net	1	0	0	0	0	2017-09-05	2017-09-05	twitter / util
+cmerinogracia@twitter.com	1	0	0	0	0	2017-07-13	2017-07-13	twitter / util
+qilab@gmx.com	1	0	0	0	0	2017-04-17	2017-04-17	twitter / util
+kovszilard@gmail.com	1	0	0	0	0	2017-04-17	2017-04-17	twitter / util
+ystein@users.noreply.github.com	1	0	0	0	0	2017-04-11	2017-04-11	twitter / util
+prajagopal@twitter.com	1	0	0	0	0	2017-04-11	2017-04-11	twitter / util
+cevaris@gmail.com	1	0	0	0	0	2016-12-09	2016-12-09	twitter / util
+sni@twitter.com	1	0	0	0	0	2016-11-18	2016-11-18	twitter / util
+f.gruber@eslgaming.com	1	0	0	0	0	2016-10-13	2016-10-13	twitter / util
+vivek.malik@lookout.com	1	0	0	0	0	2016-10-13	2016-10-13	twitter / util
+zkidkid@gmail.com	1	0	0	0	0	2016-09-26	2016-09-26	twitter / util
+howard.h.l@126.com	1	0	0	0	0	2016-09-16	2016-09-16	twitter / util
+paulb@twitter.com	1	0	0	0	0	2016-08-22	2016-08-22	twitter / util
+tbekas@infusion.com	1	0	0	0	0	2016-08-09	2016-08-09	twitter / util
+oscar@stripe.com	1	0	0	0	0	2016-07-11	2016-07-11	twitter / util
+streetpc@free.fr	1	0	0	0	0	2016-06-23	2016-06-23	twitter / util
+yzhuo@twitter.com	1	0	0	0	0	2016-06-14	2016-06-14	twitter / util
+michael.placentraii@gmail.com	1	0	0	0	0	2016-05-25	2016-05-25	twitter / util
+dima@lookout.com	1	0	0	0	0	2016-05-10	2016-05-10	twitter / util
+sundaram@baidu.com	1	0	0	0	0	2016-05-10	2016-05-10	twitter / util
+rahil@bohra.co.uk	1	0	0	0	0	2016-03-15	2016-03-15	twitter / util
+jacksonic@users.noreply.github.com	1	0	0	0	0	2016-03-08	2016-03-08	twitter / util
+cabraham@twitter.com	1	0	0	0	0	2016-01-12	2016-01-12	twitter / util
+awushensky@twitter.com	1	0	0	0	0	2015-11-11	2015-11-11	twitter / util
+jakequist@gmail.com	1	0	0	0	0	2015-11-05	2015-11-05	twitter / util
+stremlenye@gmail.com	1	0	0	0	0	2015-10-27	2015-10-27	twitter / util
+njain@twitter.com	1	0	0	0	0	2015-09-17	2015-09-17	twitter / util
+ver@olix0r.net	1	0	0	0	0	2015-09-10	2015-09-10	twitter / util
+dmitriy@twitter.com	1	0	0	0	0	2015-08-06	2015-08-06	twitter / util
+jluxenberg@twitter.com	1	0	0	0	0	2015-07-30	2015-07-30	twitter / util
+matthew.michihara@gmail.com	1	0	0	0	0	2015-07-21	2015-07-21	twitter / util
+edwards.benj@gmail.com	1	0	0	0	0	2015-07-03	2015-07-03	twitter / util
+kshklovsky@twitter.com	1	0	0	0	0	2015-05-12	2015-05-12	twitter / util
+dsotolongo@twitter.com	1	0	0	0	0	2015-05-08	2015-05-08	twitter / util
+dnicponski@twitter.com	1	0	0	0	0	2015-03-05	2015-03-05	twitter / util
+eirik.sletteberg@finn.no	1	0	0	0	0	2015-03-03	2015-03-03	twitter / util
+j.samberg@samsung.com	1	0	0	0	0	2015-02-20	2015-02-20	twitter / util
+fitch@datamininglab.com	1	0	0	0	0	2015-02-05	2015-02-05	twitter / util
+waa@hotmail.fr	1	0	0	0	0	2015-02-05	2015-02-05	twitter / util
+eiriksletteberg@gmail.com	1	0	0	0	0	2015-01-13	2015-01-13	twitter / util
+raghu@twitter.com	1	0	0	0	0	2014-10-31	2014-10-31	twitter / util
+mbarry@twitter.com	1	0	0	0	0	2014-10-14	2014-10-14	twitter / util
+swang@twitter.com	1	0	0	0	0	2014-08-28	2014-08-28	twitter / util
+evvers@ya.ru	1	0	0	0	0	2014-07-07	2014-07-07	twitter / util
+aaron@zymergen.com	1	0	0	0	0	2014-07-07	2014-07-07	twitter / util
+folone@gmail.com	1	0	0	0	0	2014-07-01	2014-07-01	twitter / util
+sjiang@twitter.com	1	0	0	0	0	2014-02-28	2014-02-28	twitter / util
+hmrmaxwell@gmail.com	1	0	0	0	0	2014-02-21	2014-02-21	twitter / util
+ken@pagerduty.com	1	0	0	0	0	2014-02-19	2014-02-19	twitter / util
+chikei@gmail.com	1	0	0	0	0	2014-02-18	2014-02-18	twitter / util
+sgarg@twitter.com	1	0	0	0	0	2013-12-05	2013-12-05	twitter / util
+zchen@twitter.com	1	0	0	0	0	2013-09-28	2013-09-28	twitter / util
+cory@pagerduty.com	1	0	0	0	0	2013-08-09	2013-08-09	twitter / util
+peter@teichman.org	1	0	0	0	0	2013-08-05	2013-08-05	twitter / util
+koert@tresata.com	1	0	0	0	0	2013-05-07	2013-05-07	twitter / util
+jorge.ortiz@gmail.com	1	0	0	0	0	2013-04-24	2013-04-24	twitter / util
+sumeet@twitter.com	1	0	0	0	0	2013-04-14	2013-04-14	twitter / util
+benjaminthuillier@gmail.com	1	0	0	0	0	2013-03-21	2013-03-21	twitter / util
+boykin@pobox.com	1	0	0	0	0	2012-12-18	2012-12-18	twitter / util
+max.m.lanin@gmail.com	1	0	0	0	0	2012-10-03	2012-10-03	twitter / util
+alex@keparllp.com	1	0	0	0	0	2012-09-10	2012-09-10	twitter / util
+sritchie@twitter.com	1	0	0	0	0	2012-08-15	2012-08-15	twitter / util
+shryu@naver.com	1	0	0	0	0	2012-05-14	2012-05-14	twitter / util
+daniel@cx.com	1	0	0	0	0	2012-05-12	2012-05-12	twitter / util
+alan@twitter.com	1	0	0	0	0	2012-04-10	2012-04-10	twitter / util
+jussi.virtanen@reaktor.fi	1	0	0	0	0	2012-03-06	2012-03-06	twitter / util
+kyle@kylemaxwell.com	1	0	0	0	0	2012-02-21	2012-02-21	twitter / util
+siddarth@twitter.com	1	0	0	0	0	2011-07-13	2011-07-13	twitter / util
+35087590+mrauro@users.noreply.github.com	1	0	0	0	0	2023-04-01	2023-04-01	twitter / the-algorithm
+github.le5ke@stenyan.jp	1	0	0	0	0	2023-01-10	2023-01-10	twitter / twemoji
+xavier@stouder.io	1	0	0	0	0	2023-01-09	2023-01-09	twitter / twemoji
+blakegearin@pm.me	1	0	0	0	0	2021-09-01	2021-09-01	twitter / twemoji
+simon.bra.ag@gmail.com	1	0	0	0	0	2022-03-24	2022-03-24	twitter / twemoji
+65498475+gustavwilliam@users.noreply.github.com	1	0	0	0	0	2021-12-25	2021-12-25	twitter / twemoji
+31452340+shahriarkh@users.noreply.github.com	1	0	0	0	0	2022-03-23	2022-03-23	twitter / twemoji
+saul.mirone@gmail.com	1	0	0	0	0	2022-03-29	2022-03-29	twitter / twemoji
+alex@goooseman.ru	1	0	0	0	0	2021-05-30	2021-05-30	twitter / twemoji
+dpock32509@gmail.com	1	0	0	0	0	2021-05-11	2021-05-11	twitter / twemoji
+goooseman@me.com	1	0	0	0	0	2020-02-13	2020-02-13	twitter / twemoji
+44645301+rosseljost@users.noreply.github.com	1	0	0	0	0	2021-02-07	2021-02-07	twitter / twemoji
+kaspergam@bellsouth.net	1	0	0	0	0	2020-12-16	2020-12-16	twitter / twemoji
+corydanielson@gmail.com	1	0	0	0	0	2020-09-04	2020-09-04	twitter / twemoji
+pavlobu@gmail.com	1	0	0	0	0	2020-10-14	2020-10-14	twitter / twemoji
+kevinfaveridev@gmail.com	1	0	0	0	0	2020-02-14	2020-02-14	twitter / twemoji
+n.bartels@phpmonkeys.de	1	0	0	0	0	2020-05-22	2020-05-22	twitter / twemoji
+31558638+abhik1998@users.noreply.github.com	1	0	0	0	0	2019-09-04	2019-09-04	twitter / twemoji
+sebastianaigner@users.noreply.github.com	1	0	0	0	0	2019-06-06	2019-06-06	twitter / twemoji
+mia@miestasmia.com	1	0	0	0	0	2019-06-06	2019-06-06	twitter / twemoji
+noelle_leigh@fastmail.com	1	0	0	0	0	2019-05-29	2019-05-29	twitter / twemoji
+martinstuecklschwaiger@users.noreply.github.com	1	0	0	0	0	2019-05-21	2019-05-21	twitter / twemoji
+31307731+strawberry-sundae@users.noreply.github.com	1	0	0	0	0	2019-05-06	2019-05-06	twitter / twemoji
+me@rdil.rocks	1	0	0	0	0	2019-03-06	2019-03-06	twitter / twemoji
+nilllisterri@gmail.com	1	0	0	0	0	2019-02-11	2019-02-11	twitter / twemoji
+deckel@blizzard.com	1	0	0	0	0	2017-07-18	2017-07-18	twitter / twemoji
+flucas2@gmail.com	1	0	0	0	0	2017-02-10	2017-02-10	twitter / twemoji
+frenchw@gmail.com	1	0	0	0	0	2016-12-24	2016-12-24	twitter / twemoji
+xoudini@users.noreply.github.com	1	0	0	0	0	2016-12-09	2016-12-09	twitter / twemoji
+contact@rudloff.pro	1	0	0	0	0	2016-09-05	2016-09-05	twitter / twemoji
+eosrei@gmail.com	1	0	0	0	0	2016-07-16	2016-07-16	twitter / twemoji
+dan@danbovey.uk	1	0	0	0	0	2016-07-03	2016-07-03	twitter / twemoji
+sabbiirr@gmail.com	1	0	0	0	0	2016-04-27	2016-04-27	twitter / twemoji
+michaelbusby@curalate.com	1	0	0	0	0	2016-04-12	2016-04-12	twitter / twemoji
+terentyev.olexandr@gmail.com	1	0	0	0	0	2016-03-10	2016-03-10	twitter / twemoji
+prayag.verma@gmail.com	1	0	0	0	0	2016-02-12	2016-02-12	twitter / twemoji
+anirvan@users.noreply.github.com	1	0	0	0	0	2016-02-09	2016-02-09	twitter / twemoji
+yoav.sternberg@gmail.com	1	0	0	0	0	2015-12-11	2015-12-11	twitter / twemoji
+kev.kirsche+github@gmail.com	1	0	0	0	0	2015-06-11	2015-06-11	twitter / twemoji
+ansavvides@users.noreply.github.com	1	0	0	0	0	2015-04-13	2015-04-13	twitter / twemoji
+jordi@bunster.org	1	0	0	0	0	2015-02-12	2015-02-12	twitter / twemoji
+unindented@gmail.com	1	0	0	0	0	2015-01-13	2015-01-13	twitter / twemoji
+msurguy@gmail.com	1	0	0	0	0	2015-01-02	2015-01-02	twitter / twemoji
+tombyrer@gmail.com	1	0	0	0	0	2014-11-11	2014-11-11	twitter / twemoji
+pmk25@georgetown.edu	1	0	0	0	0	2014-11-11	2014-11-11	twitter / twemoji
+juan@cavorite.com	1	0	0	0	0	2018-10-17	2018-10-17	twitter / nodes
+prajakta.tathavadkar@gmail.com	1	0	0	0	0	2018-02-11	2018-02-11	twitter / nodes
+preetsarb@users.noreply.github.com	1	0	0	0	0	2017-07-20	2017-07-20	twitter / nodes
+amit.shekhar.iitbhu@gmail.com	1	0	0	0	0	2016-11-14	2016-11-14	twitter / nodes
+mitchh23@gmail.com	1	0	0	0	0	2016-11-11	2016-11-11	twitter / nodes
+ktr254@nyu.edu	1	0	0	0	0	2016-10-31	2016-10-31	twitter / nodes
+didier.toussaint.trad@gmail.com	1	0	0	0	1	2024-04-26	2024-04-26	twitter / twitter-cldr-rb
+bartosz.blimke@gmail.com	1	0	0	0	1	2024-02-15	2024-02-15	twitter / twitter-cldr-rb
+16578570+noraj@users.noreply.github.com	1	0	0	0	0	2023-08-19	2023-08-19	twitter / twitter-cldr-rb
+david.wesmn@gmail.com	1	0	0	0	0	2022-04-22	2022-04-22	twitter / twitter-cldr-rb
+juhah@web.de	1	0	0	0	0	2022-04-20	2022-04-20	twitter / twitter-cldr-rb
+jason.penny@braze.com	1	0	0	0	0	2022-02-17	2022-02-17	twitter / twitter-cldr-rb
+alex@stripe.com	1	0	0	0	0	2020-02-25	2020-02-25	twitter / twitter-cldr-rb
+abobrikovich@gmail.com	1	0	0	0	0	2019-04-01	2019-04-01	twitter / twitter-cldr-rb
+nicolasleger@users.noreply.github.com	1	0	0	0	0	2018-02-22	2018-02-22	twitter / twitter-cldr-rb
+kyle@heironimus.com	1	0	0	0	0	2018-02-03	2018-02-03	twitter / twitter-cldr-rb
+rob@versioneye.com	1	0	0	0	0	2017-10-02	2017-10-02	twitter / twitter-cldr-rb
+eigil@sagafos.no	1	0	0	0	0	2017-03-27	2017-03-27	twitter / twitter-cldr-rb
+muir@retailnext.net	1	0	0	0	0	2016-11-30	2016-11-30	twitter / twitter-cldr-rb
+nate@retailnext.net	1	0	0	0	0	2016-11-29	2016-11-29	twitter / twitter-cldr-rb
+krzysiek1507@users.noreply.github.com	1	0	0	0	0	2016-07-10	2016-07-10	twitter / twitter-cldr-rb
+anthonygaudino.45@gmail.com	1	0	0	0	0	2016-03-25	2016-03-25	twitter / twitter-cldr-rb
+bigloser@users.noreply.github.com	1	0	0	0	0	2015-06-24	2015-06-24	twitter / twitter-cldr-rb
+logan.hasson@gmail.com	1	0	0	0	0	2014-05-16	2014-05-16	twitter / twitter-cldr-rb
+alau@getsatisfaction.com	1	0	0	0	0	2013-12-10	2013-12-10	twitter / twitter-cldr-rb
+tanin47@yahoo.com	1	0	0	0	0	2012-11-02	2012-11-02	twitter / twitter-cldr-rb
+neilm@twitter.com	1	0	0	0	0	2012-07-07	2012-07-07	twitter / twitter-cldr-rb
+tanin@tanin-vgn-tt2.(none)	1	0	0	0	0	2012-04-27	2012-04-27	twitter / twitter-cldr-rb
+tim@timothyandrew.net	1	0	0	0	0	2012-04-28	2012-04-28	twitter / twitter-cldr-rb
+osmithsi@sfu.ca	1	0	0	0	0	2021-04-24	2021-04-24	twitter / rustcommon
+3361683+matc@users.noreply.github.com	1	0	0	0	0	2018-08-07	2018-08-07	twitter / gatekeeper-service
+iulianm@amazon.com	1	0	0	0	0	2018-06-22	2018-06-22	twitter / gatekeeper-service
+litiegen456250@gmail.com	1	0	0	0	0	2022-01-06	2022-01-06	twitter / rezolus
+bernardo@rittme.com	1	0	0	0	0	2021-10-29	2021-10-29	twitter / rezolus
+wumuxian1988@gmail.com	1	0	0	0	0	2021-08-26	2021-08-26	twitter / rezolus
+u5.horie@gmail.com	1	0	0	0	0	2020-07-09	2020-07-09	twitter / rezolus
+fred@redhotpenguin.com	1	0	0	0	0	2019-08-20	2019-08-20	twitter / rezolus
+csaravia@twitter.com	1	0	0	0	0	2022-07-28	2022-07-28	twitter / focus
+rusrushal13@gmail.com	1	0	0	0	0	2019-04-24	2019-04-24	twitter / pants
+billy.becker@gmail.com	1	0	0	0	0	2019-03-06	2019-03-06	twitter / pants
+3846899+pall-valmundsson@users.noreply.github.com	1	0	0	0	0	2019-01-25	2019-01-25	twitter / pants
+github@stephanerb.eu	1	0	0	0	0	2018-10-27	2018-10-27	twitter / pants
+jakubbujny@gmail.com	1	0	0	0	0	2018-10-04	2018-10-04	twitter / pants
+yaup@cs.washington.edu	1	0	0	0	0	2018-08-12	2018-08-12	twitter / pants
+marom.guy@gmail.com	1	0	0	0	0	2018-08-01	2018-08-01	twitter / pants
+robert@stapenhurst.co.uk	1	0	0	0	0	2018-07-31	2018-07-31	twitter / pants
+shuoli84@gmail.com	1	0	0	0	0	2018-06-28	2018-06-28	twitter / pants
+hyunjoon.seol@gmail.com	1	0	0	0	0	2018-06-16	2018-06-16	twitter / pants
+larry@actioniq.co	1	0	0	0	0	2018-06-04	2018-06-04	twitter / pants
+elyast@users.noreply.github.com	1	0	0	0	0	2018-05-08	2018-05-08	twitter / pants
+oseemann@gmail.com	1	0	0	0	0	2018-02-23	2018-02-23	twitter / pants
+tim.treptow@gmail.com	1	0	0	0	0	2017-12-08	2017-12-08	twitter / pants
+copumpkin@users.noreply.github.com	1	0	0	0	0	2017-10-06	2017-10-06	twitter / pants
+mateo@foursquare.com	1	0	0	0	0	2017-09-14	2017-09-14	twitter / pants
+joeennever@users.noreply.github.com	1	0	0	0	0	2017-07-11	2017-07-11	twitter / pants
+gary@byoteki.com	1	0	0	0	0	2017-07-06	2017-07-06	twitter / pants
+sameerparekh@users.noreply.github.com	1	0	0	0	0	2017-06-29	2017-06-29	twitter / pants
+jameskoch@gmail.com	1	0	0	0	0	2017-06-02	2017-06-02	twitter / pants
+adam@adamj.eu	1	0	0	0	0	2016-06-02	2016-06-02	twitter / pants
+drew.rothstein@gmail.com	1	0	0	0	0	2017-04-18	2017-04-18	twitter / pants
+kyle.derr@gmail.com	1	0	0	0	0	2017-03-27	2017-03-27	twitter / pants
+xaelias@users.noreply.github.com	1	0	0	0	0	2017-03-23	2017-03-23	twitter / pants
+dyoung@kayak.com	1	0	0	0	0	2017-03-17	2017-03-17	twitter / pants
+brandon.milton21@gmail.com	1	0	0	0	0	2017-02-27	2017-02-27	twitter / pants
+jeremy.hintz@gmail.com	1	0	0	0	0	2017-02-07	2017-02-07	twitter / pants
+james@jbench.co.uk	1	0	0	0	0	2017-01-25	2017-01-25	twitter / pants
+kevinoliver+github@gmail.com	1	0	0	0	0	2017-01-14	2017-01-14	twitter / pants
+landism@users.noreply.github.com	1	0	0	0	0	2016-12-16	2016-12-16	twitter / pants
+fiona@giphy.com	1	0	0	0	0	2016-12-05	2016-12-05	twitter / pants
+nick@medium.com	1	0	0	0	0	2016-10-24	2016-10-24	twitter / pants
+agenticarus@gmail.com	1	0	0	0	0	2016-10-06	2016-10-06	twitter / pants
+mattdee123@gmail.com	1	0	0	0	0	2016-08-30	2016-08-30	twitter / pants
+biethb@gmail.com	1	0	0	0	0	2016-05-27	2016-05-27	twitter / pants
+wolfram@rubyfocus.biz	1	0	0	0	0	2016-05-18	2016-05-18	twitter / pants
+aaron@foursquare.com	1	0	0	0	0	2016-04-26	2016-04-26	twitter / pants
+digwanderlust@gmail.com	1	0	0	0	0	2016-04-25	2016-04-25	twitter / pants
+ikai.lan@gmail.com	1	0	0	0	0	2016-04-22	2016-04-22	twitter / pants
+nitay@actioniq.co	1	0	0	0	0	2016-04-21	2016-04-21	twitter / pants
+ahamilton55@gmail.com	1	0	0	0	0	2016-03-11	2016-03-11	twitter / pants
+danfabulich@gmail.com	1	0	0	0	0	2016-02-03	2016-02-03	twitter / pants
+anwei06@gmail.com	1	0	0	0	0	2015-12-10	2015-12-10	twitter / pants
+alan.p.paulin@gmail.com	1	0	0	0	0	2015-11-19	2015-11-19	twitter / pants
+kslundberg@gmail.com	1	0	0	0	0	2015-11-14	2015-11-14	twitter / pants
+tdeng@twitter.com	1	0	0	0	0	2015-08-31	2015-08-31	twitter / pants
+luca.clementi@gmail.com	1	0	0	0	0	2015-08-12	2015-08-12	twitter / pants
+luc.cary@gmail.com	1	0	0	0	0	2015-07-22	2015-07-22	twitter / pants
+james.a.mouradian@gmail.com	1	0	0	0	0	2015-05-28	2015-05-28	twitter / pants
+sfranklin@twopensource.com	1	0	0	0	0	2015-05-20	2015-05-20	twitter / pants
+ugodiggi@gmail.com	1	0	0	0	0	2015-01-24	2015-01-24	twitter / pants
+jtownsend@twitter.com	1	0	0	0	0	2015-01-14	2015-01-14	twitter / pants
+ksweeney@twopensource.com	1	0	0	0	0	2014-12-17	2014-12-17	twitter / pants
+wonlay@gmail.com	1	0	0	0	0	2014-10-23	2014-10-23	twitter / pants
+caspar@asparck.com	1	0	0	0	0	2014-10-01	2014-10-01	twitter / pants
+igmorv@gmail.com	1	0	0	0	0	2014-08-04	2014-08-04	twitter / pants
+misho.kr@gmail.com	1	0	0	0	0	2014-07-21	2014-07-21	twitter / pants
+jake@donham.org	1	0	0	0	0	2014-06-27	2014-06-27	twitter / pants
+adam.retter@googlemail.com	1	0	0	0	0	2014-05-12	2014-05-12	twitter / pants
+jonathan.sokolowski@gmail.com	1	0	0	0	0	2014-03-13	2014-03-13	twitter / pants
+jackson@twitter.com	1	0	0	0	0	2014-02-26	2014-02-26	twitter / pants
+mkhutornenko@twitter.com	1	0	0	0	0	2013-12-13	2013-12-13	twitter / pants
+jsmith@twitter.com	1	0	0	0	0	2013-10-17	2013-10-17	twitter / pants
+drajkumar@twitter.com	1	0	0	0	0	2013-10-09	2013-10-09	twitter / pants
+tstumpf@twitter.com	1	0	0	0	0	2013-09-28	2013-09-28	twitter / pants
+edanielson@twitter.com	1	0	0	0	0	2013-07-19	2013-07-19	twitter / pants
+mlindsey@twitter.com	1	0	0	0	0	2013-07-04	2013-07-04	twitter / pants
+tdziuba@ebay.com	1	0	0	0	0	2014-01-03	2014-01-03	twitter / pants
+terasurfer@gmail.com	1	0	0	0	0	2013-07-23	2013-07-23	twitter / pants
+daniel@dattrix.com	1	0	0	0	0	2013-06-18	2013-06-18	twitter / pants
+jennever@foursquare.com	1	0	0	0	0	2012-10-12	2012-10-12	twitter / pants
+nsanch@foursquare.com	1	0	0	0	0	2012-10-11	2012-10-11	twitter / pants
+paulp@improving.org	1	0	0	0	0	2012-09-14	2012-09-14	twitter / pants
+cschertz@craiglinuxmint.(none)	1	0	0	0	0	2012-09-13	2012-09-13	twitter / pants
+9256836+keithcoleman@users.noreply.github.com	1	0	1	1	1	2024-12-13	2024-12-13	twitter / communitynotes
+carter.joshua.603@gmail.com	1	0	0	0	0	2023-08-01	2023-08-01	twitter / communitynotes
+55425039+fannygautierr@users.noreply.github.com	1	0	0	0	0	2023-07-13	2023-07-13	twitter / communitynotes
+76903966+abhigyadufare@users.noreply.github.com	1	0	0	0	0	2023-05-27	2023-05-27	twitter / communitynotes
+jonathanator0@gmail.com	1	0	0	0	0	2023-04-27	2023-04-27	twitter / communitynotes
+29563098+dongle-the-gadget@users.noreply.github.com	1	0	0	0	0	2023-04-13	2023-04-13	twitter / communitynotes
+jbaxter@twitter.com	1	0	0	0	0	2023-03-14	2023-03-14	twitter / communitynotes
+asuna.gilfoyle@gmail.com	1	0	0	0	0	2023-02-25	2023-02-25	twitter / communitynotes
+44203993+lewismunday@users.noreply.github.com	1	0	0	0	0	2023-02-16	2023-02-16	twitter / communitynotes
+cdymlr@outlook.com	1	0	0	0	0	2023-01-24	2023-01-24	twitter / communitynotes
+oliver@klingefjord.com	1	0	0	0	0	2023-01-11	2023-01-11	twitter / communitynotes
+92384606+garrettladley@users.noreply.github.com	1	0	0	0	0	2022-12-21	2022-12-21	twitter / communitynotes
+zawzawwin@ucsloikaw.edu.mm	1	0	0	0	0	2022-12-13	2022-12-13	twitter / communitynotes
+nova@suprnova.dev	1	0	0	0	0	2022-12-10	2022-12-10	twitter / communitynotes
+44579545+kaymomin@users.noreply.github.com	1	0	0	0	0	2022-12-10	2022-12-10	twitter / communitynotes
+sahil.lavingia@gmail.com	1	0	0	0	0	2022-12-07	2022-12-07	twitter / communitynotes
+shiruken343@gmail.com	1	0	0	0	0	2022-11-09	2022-11-09	twitter / communitynotes
+102765426+veerbia@users.noreply.github.com	1	0	0	0	0	2022-11-05	2022-11-05	twitter / communitynotes
+keith@yesitsyes.com	1	0	0	0	0	2022-08-11	2022-08-11	twitter / communitynotes
+vsatuluri@twitter.com	1	0	0	0	0	2020-02-07	2020-02-07	twitter / sbf
+zsong@twitter.com	1	0	0	0	0	2022-06-09	2022-06-09	twitter / finatra
+temmanuel@twitter.com	1	0	0	0	0	2022-03-23	2022-03-23	twitter / finatra
+dilmchaina@twitter.com	1	0	0	0	0	2022-02-11	2022-02-11	twitter / finatra
+crabe@epionhealth.com	1	0	0	0	0	2022-01-10	2022-01-10	twitter / finatra
+yuokada@users.noreply.github.com	1	0	0	0	0	2021-08-20	2021-08-20	twitter / finatra
+tdiamond@twitter.com	1	0	0	0	0	2021-07-16	2021-07-16	twitter / finatra
+rdolan@twitter.com	1	0	0	0	0	2021-05-27	2021-05-27	twitter / finatra
+pchevalier@twitter.com	1	0	0	0	0	2021-05-18	2021-05-18	twitter / finatra
+jfeinman@twitter.com	1	0	0	0	0	2021-01-27	2021-01-27	twitter / finatra
+h.riviere@criteo.com	1	0	0	0	0	2020-08-25	2020-08-25	twitter / finatra
+mrajah@twitter.com	1	0	0	0	0	2020-04-30	2020-04-30	twitter / finatra
+rfleisher@twitter.com	1	0	0	0	0	2020-02-27	2020-02-27	twitter / finatra
+gfast@twitter.com	1	0	0	0	0	2020-02-07	2020-02-07	twitter / finatra
+honglinz@twitter.com	1	0	0	0	0	2020-02-05	2020-02-05	twitter / finatra
+bhavdeeps@twitter.com	1	0	0	0	0	2019-11-20	2019-11-20	twitter / finatra
+hyalamanchili@twitter.com	1	0	0	0	0	2019-09-05	2019-09-05	twitter / finatra
+guillaume@heetch.com	1	0	0	0	0	2019-08-23	2019-08-23	twitter / finatra
+aromero@twitter.com	1	0	0	0	0	2019-07-04	2019-07-04	twitter / finatra
+jacob@strava.com	1	0	0	0	0	2019-06-18	2019-06-18	twitter / finatra
+kittsville@googlemail.com	1	0	0	0	0	2019-05-07	2019-05-07	twitter / finatra
+nicholasi@twitter.com	1	0	0	0	0	2019-04-08	2019-04-08	twitter / finatra
+psu@twitter.com	1	0	0	0	0	2019-03-13	2019-03-13	twitter / finatra
+baoyuew@twitter.com	1	0	0	0	0	2019-03-09	2019-03-09	twitter / finatra
+kliao@twitter.com	1	0	0	0	0	2019-01-25	2019-01-25	twitter / finatra
+julion@twitter.com	1	0	0	0	0	2019-01-16	2019-01-16	twitter / finatra
+mesut.ozen@trendyol.com	1	0	0	0	0	2019-01-11	2019-01-11	twitter / finatra
+jerrychen@twitter.com	1	0	0	0	0	2018-07-20	2018-07-20	twitter / finatra
+dana.ma537@gmail.com	1	0	0	0	0	2018-05-29	2018-05-29	twitter / finatra
+rstapenhurst@twitter.com	1	0	0	0	0	2018-04-05	2018-04-05	twitter / finatra
+andi.n.dirgantara@gmail.com	1	0	0	0	0	2017-12-25	2017-12-25	twitter / finatra
+tom.michiels@archimiddle.com	1	0	0	0	0	2017-11-09	2017-11-09	twitter / finatra
+sprabhu@twitter.com	1	0	0	0	0	2017-10-14	2017-10-14	twitter / finatra
+ssmith@twitter.com	1	0	0	0	0	2017-09-26	2017-09-26	twitter / finatra
+sgrankin@gmail.com	1	0	0	0	0	2017-09-13	2017-09-13	twitter / finatra
+tom.michiels@vectr.consulting	1	0	0	0	0	2017-08-30	2017-08-30	twitter / finatra
+jakehschwartz@gmail.com	1	0	0	0	0	2017-08-17	2017-08-17	twitter / finatra
+james.ferrara@gmail.com	1	0	0	0	0	2017-07-14	2017-07-14	twitter / finatra
+gary.grossman@gmail.com	1	0	0	0	0	2017-06-29	2017-06-29	twitter / finatra
+a.chan@wellcome.ac.uk	1	0	0	0	0	2017-06-29	2017-06-29	twitter / finatra
+vladimir.ivanovskiy@nih.gov	1	0	0	0	0	2017-05-31	2017-05-31	twitter / finatra
+illumine03@naver.com	1	0	0	0	0	2017-04-06	2017-04-06	twitter / finatra
+liam.m@kakaocorp.com	1	0	0	0	0	2017-03-22	2017-03-22	twitter / finatra
+edeng@twitter.com	1	0	0	0	0	2017-03-07	2017-03-07	twitter / finatra
+dmarwick@twitter.com	1	0	0	0	0	2017-02-21	2017-02-21	twitter / finatra
+vrf.ced@gmail.com	1	0	0	0	0	2016-11-15	2016-11-15	twitter / finatra
+pittwu@gmail.com	1	0	0	0	0	2016-09-10	2016-09-10	twitter / finatra
+jbratman@twitter.com	1	0	0	0	0	2016-08-24	2016-08-24	twitter / finatra
+ldorner@twitter.com	1	0	0	0	0	2016-08-01	2016-08-01	twitter / finatra
+nykolas.lima@gmail.com	1	0	0	0	0	2016-07-23	2016-07-23	twitter / finatra
+liam.m@daumkakao.com	1	0	0	0	0	2016-07-18	2016-07-18	twitter / finatra
+nsaechao@twitter.com	1	0	0	0	0	2016-06-21	2016-06-21	twitter / finatra
+dmueller@twitter.com	1	0	0	0	0	2016-05-27	2016-05-27	twitter / finatra
+njohns+gh@grovo.com	1	0	0	0	0	2016-05-11	2016-05-11	twitter / finatra
+derekhenscheid@gmail.com	1	0	0	0	0	2016-03-11	2016-03-11	twitter / finatra
+krohrbaugh@twitter.com	1	0	0	0	0	2015-12-18	2015-12-18	twitter / finatra
+ckidoz@gmail.com	1	0	0	0	0	2015-12-14	2015-12-14	twitter / finatra
+joe623@gmail.com	1	0	0	0	0	2015-12-14	2015-12-14	twitter / finatra
+jpkutner@gmail.com	1	0	0	0	0	2015-12-11	2015-12-11	twitter / finatra
+joe@kiri-tech.com	1	0	0	0	0	2015-12-07	2015-12-07	twitter / finatra
+cburnor@twitter.com	1	0	0	0	0	2015-07-17	2015-07-17	twitter / finatra
+manuel.weiss@schibsted.com	1	0	0	0	0	2015-07-08	2015-07-08	twitter / finatra
+jwaldrop@gmail.com	1	0	0	0	0	2015-07-04	2015-07-04	twitter / finatra
+baugarten@twitter.com	1	0	0	0	0	2015-06-09	2015-06-09	twitter / finatra
+dgomesbr@gmail.com	1	0	0	0	0	2015-06-03	2015-06-03	twitter / finatra
+c.schmitt@briefdomain.de	1	0	0	0	0	2015-05-27	2015-05-27	twitter / finatra
+matray@twitter.com	1	0	0	0	0	2015-05-14	2015-05-14	twitter / finatra
+christoph.neuroth@gmail.com	1	0	0	0	0	2014-11-17	2014-11-17	twitter / finatra
+eponvert@gmail.com	1	0	0	0	0	2014-09-12	2014-09-12	twitter / finatra
+me@billdimmick.com	1	0	0	0	0	2014-09-04	2014-09-04	twitter / finatra
+comamitc@gmail.com	1	0	0	0	0	2014-07-09	2014-07-09	twitter / finatra
+mikko.koljonen@happy-or-not.com	1	0	0	0	0	2014-05-15	2014-05-15	twitter / finatra
+jalkoby91@gmail.com	1	0	0	0	0	2014-05-09	2014-05-09	twitter / finatra
+bora.tunca@yahoo.com	1	0	0	0	0	2014-03-23	2014-03-23	twitter / finatra
+mweyant@enernoc.com	1	0	0	0	0	2014-03-07	2014-03-07	twitter / finatra
+denis@davydkov.com	1	0	0	0	0	2014-02-18	2014-02-18	twitter / finatra
+matt.ho@gmail.com	1	0	0	0	0	2013-11-05	2013-11-05	twitter / finatra
+benjamin.r.whitehead@gmail.com	1	0	0	0	0	2014-01-01	2014-01-01	twitter / finatra
+ansmith@linkedin.com	1	0	0	0	0	2013-12-13	2013-12-13	twitter / finatra
+pranjaltech@gmail.com	1	0	0	0	0	2013-10-25	2013-10-25	twitter / finatra
+blakesmith0@gmail.com	1	0	0	0	0	2013-10-10	2013-10-10	twitter / finatra
+delta1080@gmail.com	1	0	0	0	0	2013-08-03	2013-08-03	twitter / finatra
+seb@cine7.net	1	0	0	0	0	2013-07-03	2013-07-03	twitter / finatra
+honten@twitter.com	1	0	0	0	0	2012-12-02	2012-12-02	twitter / finatra
+yymmt3.waste@gmail.com	1	0	0	0	0	2023-03-27	2023-03-27	twitter / TwitterTextEditor
+cweider@twitter.com	1	0	0	0	0	2021-04-01	2021-04-01	twitter / TwitterTextEditor
+cirno.mainasuk@gmail.com	1	0	0	0	0	2021-03-26	2021-03-26	twitter / TwitterTextEditor
+croissant9603@gmail.com	1	0	0	0	0	2021-02-01	2021-02-01	twitter / TwitterTextEditor
+panterathefamilyguy@gmail.com	1	0	0	0	0	2021-01-28	2021-01-28	twitter / TwitterTextEditor
+kylebshr@gmail.com	1	0	0	0	0	2021-01-25	2021-01-25	twitter / TwitterTextEditor
+abhik1998chakraborty@gmail.com	1	0	0	0	0	2019-08-14	2019-08-14	twitter / rsc
+sameer@sundresh.org	1	0	0	0	0	2019-04-02	2019-04-02	twitter / rsc
+ssundresh@twitter.com	1	0	0	0	0	2019-03-26	2019-03-26	twitter / rsc
+den.shabalin@gmail.com	1	0	0	0	0	2018-03-24	2018-03-24	twitter / rsc
+vinay.ganesh@wework.com	1	0	0	0	0	2020-04-24	2020-04-24	twitter / ios-twitter-network-layer
+1a1a11a@users.noreply.github.com	1	0	0	0	0	2020-11-10	2020-11-10	twitter / cache-trace
+edwardw@twitter.com	1	0	0	0	0	2019-11-11	2019-11-11	twitter / twemoji-parser
+bdpqchen@gmail.com	1	0	0	0	0	2020-12-10	2020-12-10	twitter / Serial
+jawnnypoo@gmail.com	1	0	0	0	0	2020-10-27	2020-10-27	twitter / Serial
+jingwei.hao@gmail.com	1	0	0	0	0	2019-05-22	2019-05-22	twitter / Serial
+cesar1000@users.noreply.github.com	1	0	0	0	0	2018-03-18	2018-03-18	twitter / Serial
+carlo.marinangeli@gmail.com	1	0	0	0	0	2017-11-27	2017-11-27	twitter / Serial
+efrohnhoefer@twitter.com	1	0	0	0	0	2017-11-07	2017-11-07	twitter / Serial
+ziishaned@gmail.com	1	0	0	0	0	2017-07-28	2017-07-28	twitter / Serial
+shoaba@twitter.com	1	0	0	0	0	2017-07-25	2017-07-25	twitter / Serial
+maxb@twitter.com	1	0	0	0	0	2017-07-24	2017-07-24	twitter / Serial
