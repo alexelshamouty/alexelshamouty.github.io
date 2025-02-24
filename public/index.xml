@@ -2,31 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alex Elshamouty&#39;s bloge</title>
-    <link>http://localhost:1313/</link>
+    <link>http://www.example.com/</link>
     <description>Recent content on Alex Elshamouty&#39;s bloge</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Feb 2025 14:49:13 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Platform Engineering Antipatterns</title>
-      <link>http://localhost:1313/posts/platform-engineering-antipatterns/</link>
-      <pubDate>Thu, 20 Feb 2025 14:49:13 +0100</pubDate>
-      <guid>http://localhost:1313/posts/platform-engineering-antipatterns/</guid>
-      <description>&lt;h1 id=&#34;platform-engineering-antipatterns&#34;&gt;&#xA;  Platform Engineering Antipatterns&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#platform-engineering-antipatterns&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Fri, 17 Jan 2025 12:28:05 +0100</lastBuildDate>
+    <atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Source Contribution Analysis</title>
-      <link>http://localhost:1313/oss/</link>
+      <link>http://www.example.com/oss/</link>
       <pubDate>Fri, 17 Jan 2025 12:28:05 +0100</pubDate>
-      <guid>http://localhost:1313/oss/</guid>
-      <description>&lt;p&gt;I maintain an OpenSource contribution and code metrics analysis &lt;a href=&#34;https://sokrates.dev&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BasedOn&lt;/a&gt; Sokrates.dev by &lt;a href=&#34;https://obren.io/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Željko Obrenović&lt;/a&gt;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/epam/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/epam.png&#34; alt=&#34;Cell 1&#34;&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;EPAM&lt;/th&gt;&#xA;          &lt;th&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/spotify/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/spotify.png&#34; alt=&#34;Cell 2&#34;&gt;&lt;/a&gt; &lt;!-- raw HTML omitted --&gt; Spotify&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/twitter/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/twitter.png&#34; alt=&#34;Cell 3&#34;&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;Twitter/X&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/DeloitteAU/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/Deloitte.png&#34; alt=&#34;Cell 4&#34;&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;Deloitte&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+      <guid>http://www.example.com/oss/</guid>
+      <description>&lt;p&gt;I maintain an OpenSource contribution and code metrics analysis &lt;a href=&#34;https://sokrates.dev&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BasedOn&lt;/a&gt; Sokrates.dev by &lt;a href=&#34;https://obren.io/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Željko Obrenović&lt;/a&gt;&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/epam/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://www.example.com/images/epam.png&#34; alt=&#34;Cell 1&#34;&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;EPAM&lt;/th&gt;&#xA;          &lt;th&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/spotify/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://www.example.com/images/spotify.png&#34; alt=&#34;Cell 2&#34;&gt;&lt;/a&gt; &lt;!-- raw HTML omitted --&gt; Spotify&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/twitter/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://www.example.com/images/twitter.png&#34; alt=&#34;Cell 3&#34;&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;Twitter/X&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://d3vu3vw5uyxhig.cloudfront.net/DeloitteAU/_sokrates_landscape&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;http://www.example.com/images/Deloitte.png&#34; alt=&#34;Cell 4&#34;&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;Deloitte&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://www.example.com/about/</link>
       <pubDate>Sat, 08 Apr 2023 15:22:50 +0200</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://www.example.com/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;&#xA;  About me&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-me&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;My Name is Alex Elshamouty,&lt;/p&gt;&#xA;&lt;p&gt;TL;DR:&lt;/p&gt;&#xA;&lt;p&gt;An architect and an engineer with a strong knowledge in the infrastructure and software delivery domain, focusing on creating feedback loops between technical strategy and business strategy.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I excel in dynamic and evolving environments that requires advanced technical and people skills.&lt;/li&gt;&#xA;&lt;li&gt;My defination of an Architect is inspired from &lt;a href=&#34;https://architectelevator.com/architecture/multiple-dimensions/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gregor Hohpe&amp;rsquo;s&lt;/a&gt; analogy of seeing multiple-dimensions, Being an architect for me means that one needs to see multiple dimensions, have the needed in-depth and breadth of knowledge required to lead complex transformational programs.&lt;/li&gt;&#xA;&lt;li&gt;I write regurarly about technology, with an emphasis on the Cloud domain.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
