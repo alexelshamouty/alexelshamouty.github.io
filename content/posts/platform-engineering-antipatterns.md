@@ -126,12 +126,6 @@ While you may have optimized your internal value chain, you could be complicatin
 
 ---
 
-## Shape
-
-*(*Note: "Shape" appears as a standalone header in the original text without additional content. It may indicate an intended focus on the structure or evolution of your platform. Consider reflecting on how your platform might naturally evolve toward a simpler, more efficient model.*)*
-
----
-
 ## Conclusion
 
 Platform engineering is not doomed, but it is challenging. It drastically changes the way your organization works—for the better! However, success requires a systematic approach to change.
