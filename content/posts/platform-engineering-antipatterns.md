@@ -1,12 +1,27 @@
----
-title: "Platform Engineering Antipatterns"
-date: 2025-02-24T17:10:36+01:00
-draft: false 
----
++++
+authors = ["Alex Elshamouty"]
+date = "2025-02-25"
+title = "Platform Engineering Antipatterns"
+description = "What to watch out when implementing a cloud platform strategy"
+summary = "A deep dive into common antipatterns in Platform Engineering, including the 'Platform for Everything' and 'Product Everything' approaches, and how to avoid these systemic traps."
+tags = [
+    "strategy",
+    "transformation",
+    "platform engineering",
+]
+categories = [
+    "strategy",
+    "architecture",
+]
++++
 
 # Platform Engineering Antipatterns
 
-You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?
+You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices.
+
+<!--more-->
+
+Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?
 
 One thing is for sure: you started this path because you want a better and more efficient model for your organization—whether to speed up development or reduce costs. Who wouldn’t want that?
 

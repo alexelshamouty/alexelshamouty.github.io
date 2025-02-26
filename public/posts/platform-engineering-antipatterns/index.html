@@ -3,7 +3,7 @@
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
-  Platform Engineering Antipatterns · Alex Elshamouty&#39;s bloge
+  Platform Engineering Antipatterns · Alex Elshamouty&#39;s Blog
 </title>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,31 +13,27 @@
 
 
 <meta name="author" content="Alex Elshamouty">
-<meta name="description" content="
-  Platform Engineering Antipatterns
-  
-    
-    Link to heading
-  
-
-You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?">
+<meta name="description" content="What to watch out when implementing a cloud platform strategy">
 <meta name="keywords" content="blog,architecture,cloud,personal">
 
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Platform Engineering Antipatterns">
-  <meta name="twitter:description" content="Platform Engineering Antipatterns Link to heading You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?">
+  <meta name="twitter:description" content="What to watch out when implementing a cloud platform strategy">
 
 <meta property="og:url" content="http://localhost:1313/posts/platform-engineering-antipatterns/">
-  <meta property="og:site_name" content="Alex Elshamouty&#39;s bloge">
+  <meta property="og:site_name" content="Alex Elshamouty&#39;s Blog">
   <meta property="og:title" content="Platform Engineering Antipatterns">
-  <meta property="og:description" content="Platform Engineering Antipatterns Link to heading You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?">
+  <meta property="og:description" content="What to watch out when implementing a cloud platform strategy">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-02-24T17:10:36+01:00">
-    <meta property="article:modified_time" content="2025-02-24T17:10:36+01:00">
+    <meta property="article:published_time" content="2025-02-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-25T00:00:00+00:00">
+    <meta property="article:tag" content="Strategy">
+    <meta property="article:tag" content="Transformation">
+    <meta property="article:tag" content="Platform Engineering">
 
 
 
@@ -103,7 +99,7 @@ You are probably already on your path to implementing platform engineering in yo
   <section class="container">
     
     <a class="navigation-title" href="http://localhost:1313/">
-      Alex Elshamouty&#39;s bloge
+      Alex Elshamouty&#39;s Blog
     </a>
     
     
@@ -113,10 +109,6 @@ You are probably already on your path to implementing platform engineering in yo
       </label>
       <ul class="navigation-list">
         
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/about/">About Me</a>
-            </li>
           
             <li class="navigation-item">
               <a class="navigation-link " href="/posts/">Blog</a>
@@ -150,8 +142,8 @@ You are probably already on your path to implementing platform engineering in yo
           <div class="date">
             <span class="posted-on">
               <i class="fa-solid fa-calendar" aria-hidden="true"></i>
-              <time datetime="2025-02-24T17:10:36&#43;01:00">
-                February 24, 2025
+              <time datetime="2025-02-25T00:00:00Z">
+                February 25, 2025
               </time>
             </span>
             <span class="reading-time">
@@ -160,8 +152,26 @@ You are probably already on your path to implementing platform engineering in yo
             </span>
           </div>
           
-          
-          
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/strategy/">Strategy</a>
+      <span class="separator">•</span>
+    <a href="/categories/architecture/">Architecture</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/strategy/">Strategy</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/transformation/">Transformation</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/platform-engineering/">Platform Engineering</a>
+    </span></div>
+
         </div>
       </header>
 
@@ -174,7 +184,8 @@ You are probably already on your path to implementing platform engineering in yo
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?</p>
+<p>You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices.</p>
+<p>Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?</p>
 <p>One thing is for sure: you started this path because you want a better and more efficient model for your organization—whether to speed up development or reduce costs. Who wouldn’t want that?</p>
 <hr>
 <h2 id="what-do-you-mean-by-a-platform">
@@ -340,7 +351,6 @@ You are probably already on your path to implementing platform engineering in yo
 <p>Sequencing your platform architecture is just as important as defining the target architecture. Starting with a rigid target assumes you know all the requirements upfront. Instead, leave room for maneuverability.</p>
 <p>We have observed these antipatterns—and more—while assisting organizations in executing and developing platform strategies. Connecting platform layers from stakeholders to engineering teams is difficult and raises countless unforeseen questions—from “How do we keep on innovating?” to “But who’s going to be on-call for all of this?”</p>
 <p>A successful platform strategy requires understanding your environment and having deep expertise in sequencing a dynamic strategy with strong, clear value propositions that connect the dots between <strong>People, Work, Structure, and Technology</strong>.</p>
-
       </div>
 
 

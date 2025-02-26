@@ -1,5 +1,5 @@
 baseURL = "http://www.example.com"
-title = "Alex Elshamouty's bloge"
+title = "Alex Elshamouty's Blog"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -12,9 +12,9 @@ style = "github-dark"
 
 [params]
 author = "Alex Elshamouty"
-description = "My own personal views on architecture, IT, cloud, and pretty much everything related to technology within the space and domains I have expertise in"
+description = "I’m always asking questions: Why do we build things this way? What if there’s a better approach? How do complex systems really work beneath the surface? This blog is where I explore those questions—diving into platform engineering, cloud strategies, software architecture, and technology transformations. I don’t just describe solutions; I challenge assumptions and dig into the details, aiming to spark thought and uncover better ways of doing things. If you’re curious and like questioning the status quo, you’ll feel right at home here."
 keywords = "blog,architecture,cloud,personal"
-info = ["Architect", "*Nix"]
+info = "I build solutions that work. I help organizations see the bigger picture and the interactions within, ensuring their transformations are successful"
 avatarURL = "images/avatar.jpg"
 dateFormat = "January 2, 2006"
 since = 2023
@@ -42,11 +42,6 @@ customJS = []
 
 # Custom remote JS files
 customRemoteJS = []
-
-[[languages.en.menu.main]]
-name = "About Me"
-weight = 1
-url = "about/"
 
 [[languages.en.menu.main]]
 name = "Blog"
