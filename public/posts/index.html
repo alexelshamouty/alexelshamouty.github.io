@@ -123,99 +123,68 @@
 
     <div class="content">
       
-<section class="container mx-auto max-w-7xl px-4 py-8">
-  <div class="grid grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)] gap-8">
-    
-    <aside class="sticky top-8">
-      <div class="text-center p-6 rounded-2xl bg-gradient-to-br from-white to-gray-100 shadow-lg border border-gray-200">
-        <img 
-          src="/images/avatar.jpg" 
-          alt="Author photo" 
-          class="w-44 h-44 rounded-full mb-6 object-cover shadow-md mx-auto"
-        >
-        <h3 class="text-gray-800 font-semibold text-xl mb-2">Alex Elshamouty</h3>
-        <p class="text-gray-600 leading-relaxed text-sm">I build solutions that work. I help organizations see the bigger picture and the interactions within, ensuring their transformations are successful</p>
-      </div>
-    </aside>
-
-    
-    <div class="w-full">
-      <header>
-        <div class="mb-10 pb-6 border-b-2 border-gray-200">
-          <p class="text-lg text-gray-600 leading-7">I’m always asking questions: Why do we build things this way? What if there’s a better approach? How do complex systems really work beneath the surface? This blog is where I explore those questions—diving into platform engineering, cloud strategies, software architecture, and technology transformations. I don’t just describe solutions; I challenge assumptions and dig into the details, aiming to spark thought and uncover better ways of doing things. If you’re curious and like questioning the status quo, you’ll feel right at home here.</p>
+  <section class="container list" style="max-width: 1400px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: 300px minmax(0, 2fr); gap: 4rem; align-items: start; margin: 0 2rem;">
+      
+      <aside style="position: sticky; top: 2rem;">
+        <div style="text-align: center; padding: 2rem; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <img src="/images/avatar.jpg" alt="Author photo" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1.5rem; object-fit: cover;">
+          <h3 style="margin-bottom: 1rem;">Alex Elshamouty</h3>
+          <p style="line-height: 1.6;">I build solutions that work. I help organizations see the bigger picture and the interactions within, ensuring their transformations are successful</p>
         </div>
-
-        <div class="mb-8">
-          <h4 class="text-gray-800 font-medium mb-4">Filter by category:</h4>
-          <nav class="flex flex-wrap gap-2">
-            
-              <a 
-                href="/tags/architecture/" 
-                class="px-4 py-2 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full text-gray-700 text-sm font-medium border border-gray-300 hover:bg-gray-200 transition-all"
-              >
-                Architecture
-              </a>
-            
-              <a 
-                href="/tags/transformation/" 
-                class="px-4 py-2 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full text-gray-700 text-sm font-medium border border-gray-300 hover:bg-gray-200 transition-all"
-              >
-                Transformation
-              </a>
-            
-              <a 
-                href="/tags/strategy/" 
-                class="px-4 py-2 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full text-gray-700 text-sm font-medium border border-gray-300 hover:bg-gray-200 transition-all"
-              >
-                Strategy
-              </a>
-            
-              <a 
-                href="/tags/technology/" 
-                class="px-4 py-2 bg-gradient-to-br from-gray-50 to-gray-100 rounded-full text-gray-700 text-sm font-medium border border-gray-300 hover:bg-gray-200 transition-all"
-              >
-                Technology
-              </a>
-            
-          </nav>
-        </div>
-      </header>
+      </aside>
 
       
+      <div style="max-width: 100%; min-width: 0;">
+        <header>
+          <div style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #0d0c0c;">
+            I’m always asking questions: Why do we build things this way? What if there’s a better approach? How do complex systems really work beneath the surface? This blog is where I explore those questions—diving into platform engineering, cloud strategies, software architecture, and technology transformations. I don’t just describe solutions; I challenge assumptions and dig into the details, aiming to spark thought and uncover better ways of doing things. If you’re curious and like questioning the status quo, you’ll feel right at home here.
+          </div>
 
-      <ul class="space-y-6">
-        
-          <li class="p-6 rounded-2xl bg-gradient-to-br from-white to-gray-50 shadow-md hover:shadow-lg transition-transform hover:scale-105">
-            <article>
-              <header>
-                <h2 class="text-2xl font-semibold text-gray-800 mb-2">
-                  <a href="http://localhost:1313/posts/platform-engineering-antipatterns/" class="hover:text-blue-600 transition-colors">Platform Engineering Antipatterns</a>
-                </h2>
-                <p class="text-sm text-gray-500 mb-4">Posted: Feb 25, 2025</p>
-              </header>
-              <div class="text-gray-600 leading-relaxed">
-                What to watch out when implementing a cloud platform strategy
-              </div>
-            </article>
-          </li>
-        
-          <li class="p-6 rounded-2xl bg-gradient-to-br from-white to-gray-50 shadow-md hover:shadow-lg transition-transform hover:scale-105">
-            <article>
-              <header>
-                <h2 class="text-2xl font-semibold text-gray-800 mb-2">
-                  <a href="http://localhost:1313/posts/test/" class="hover:text-blue-600 transition-colors">Mermaid JS support</a>
-                </h2>
-                <p class="text-sm text-gray-500 mb-4">Posted: Jul 08, 2023</p>
-              </header>
-              <div class="text-gray-600 leading-relaxed">
-                The post demonstrates Mermaid JS support
-              </div>
-            </article>
-          </li>
-        
-      </ul>
+          
+           Filter per category:
+          <nav class="tags" style="margin: 1.5rem 0;">
+            <a href="/tags/architecture/" class="tag" style="margin: 0.5rem;">Architecture</a>
+            <a href="/tags/transformation/" class="tag" style="margin: 0.5rem;">Transformation</a>
+            <a href="/tags/strategy/" class="tag" style="margin: 0.5rem;">Strategy</a>
+            <a href="/tags/technology/" class="tag" style="margin: 0.5rem;">Technology</a>
+          </nav>
+        </header>
 
-      <div class="mt-10">
+        
+
+        <ul class="post-list">
+          
+            <li class="post-item" style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #eaeaea;">
+              <article>
+                <header>
+                  <h2 class="post-title">
+                    <a href="http://localhost:1313/posts/platform-engineering-antipatterns/">Platform Engineering Antipatterns</a>
+                  </h2>
+                  <p class="post-date">Posted: Feb 25, 2025</p>
+                </header>
+                <div class="post-excerpt">
+                  What to watch out when implementing a cloud platform strategy
+                </div>
+              </article>
+            </li>
+          
+            <li class="post-item" style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #eaeaea;">
+              <article>
+                <header>
+                  <h2 class="post-title">
+                    <a href="http://localhost:1313/posts/test/">Mermaid JS support</a>
+                  </h2>
+                  <p class="post-date">Posted: Jul 08, 2023</p>
+                </header>
+                <div class="post-excerpt">
+                  The post demonstrates Mermaid JS support
+                </div>
+              </article>
+            </li>
+          
+        </ul>
+
         
 
 
@@ -225,8 +194,7 @@
 
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
     </div>
 
@@ -306,15 +274,5 @@
   
 
   
-
-  
-    
-    
-      
-        <link rel="stylesheet" href="/css/main.css">
-      
-    
-  
-
 </body>
 </html>
