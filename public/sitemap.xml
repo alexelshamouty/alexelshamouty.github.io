@@ -2,61 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://www.example.com/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/architecture/</loc>
+    <loc>http://www.example.com/categories/architecture/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://www.example.com/categories/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/platform-engineering/</loc>
+    <loc>http://www.example.com/tags/platform-engineering/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/platform-engineering-antipatterns/</loc>
+    <loc>http://www.example.com/posts/platform-engineering-antipatterns/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://www.example.com/posts/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/strategy/</loc>
+    <loc>http://www.example.com/tags/strategy/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/strategy/</loc>
+    <loc>http://www.example.com/categories/strategy/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://www.example.com/tags/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/transformation/</loc>
+    <loc>http://www.example.com/tags/transformation/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/oss/</loc>
+    <loc>http://www.example.com/oss/</loc>
     <lastmod>2025-01-17T12:28:05+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/css/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/test/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/syntax/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/theme-demo/</loc>
-    <lastmod>2023-07-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://www.example.com/about/</loc>
     <lastmod>2023-04-08T15:22:50+02:00</lastmod>
   </url>
 </urlset>
