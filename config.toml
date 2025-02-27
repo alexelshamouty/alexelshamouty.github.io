@@ -43,6 +43,15 @@ customJS = []
 # Custom remote JS files
 customRemoteJS = []
 
+# Featured Tags
+featuredTags = [
+  "platform engineering",
+  "transformation",
+  "strategy",
+  "technology",
+  "architecture"
+]
+
 [[languages.en.menu.main]]
 name = "Blog"
 weight = 2

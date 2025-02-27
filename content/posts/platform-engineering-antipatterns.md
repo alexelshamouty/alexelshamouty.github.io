@@ -4,6 +4,7 @@ date = "2025-02-25"
 title = "Platform Engineering Antipatterns"
 description = "What to watch out when implementing a cloud platform strategy"
 summary = "A deep dive into common antipatterns in Platform Engineering, including the 'Platform for Everything' and 'Product Everything' approaches, and how to avoid these systemic traps."
+headerimage=""
 tags = [
     "strategy",
     "transformation",

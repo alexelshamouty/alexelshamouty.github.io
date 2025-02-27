@@ -74,6 +74,16 @@
 
 
 
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="/css/main.css">
+      
+    
+  
+
 </head>
 
 
@@ -91,11 +101,9 @@
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
-    
-    <a class="navigation-title" href="http://localhost:1313/">
-      Alex Elshamouty&#39;s Blog
+    <a class="navigation-title" href="/">
+      Home
     </a>
-    
     
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
@@ -122,67 +130,94 @@
 
     <div class="content">
       
-  <section class="container centered">
-  <div class="about">
+  <section class="min-h-screen w-full bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+  <div class="w-full px-8 lg:px-16 py-32">
+    <div class="flex flex-col lg:flex-row gap-16">
+      
+      <div class="lg:w-[600px]">
+        <div class="w-full">
+  
+    
+      <div class="relative">
+        <img class="h-64 w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 rounded-full object-cover border-4 border-white dark:border-gray-800"
+             src="/images/avatar.jpg"
+             alt="Alex Elshamouty"
+        >
+      </div>
     
   
-    <div class="avatar"><img src="/images/avatar.jpg" alt="avatar"></div>
   
-
-
-
-
-    <div class="flex flex-col items-center justify-center min-h-[50vh] bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 p-8">
-    <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 mb-6 tracking-tight">
+  <div class="flex flex-col space-y-8 max-w-[28rem]">
+    <h1 class="text-6xl md:text-7xl lg:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 animate-fade-in leading-none mt-8">
       Alex Elshamouty
     </h1>
-  
+
     
-    <h4 class="text-lg text-gray-600 dark:text-gray-400 font-medium text-center max-w-2xl animate-fade-in">
-      I build solutions that work. I help organizations see the bigger picture and the interactions within, ensuring their transformations are successful
-    </h4>
+    <div>
+      <p class="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 font-medium leading-relaxed break-words">
+        I build solutions that work. I help organizations see the bigger picture and the interactions within, ensuring their transformations are successful
+      </p>
+    </div>
     
   </div>
+</div>
 
-    
-    
-    <section class="container list">
-  <header>
-    <h1 class="title">
-      <a class="title-link" href="http://localhost:1313/">Recent Blog Posts
-      </a>
-    </h1>
-  </header>
+<style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+</style>
+      </div>
+      
+      
+      <div class="hidden lg:block w-[2px] bg-gradient-to-b from-blue-500 to-teal-400 self-stretch opacity-50"></div>
+      
+      
+      <div class="flex-1">
+        <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-200 mb-8">Recent Posts</h2>
+        <div class="space-y-6">
+          
+            <article class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
   
-  <ul>
-    
-    <li>
-      <span class="date">February 25, 2025</span>
-      <a class="title" href="/posts/platform-engineering-antipatterns/">Platform Engineering Antipatterns</a>
-    </li>
-    
-    <li>
-      <span class="date">January 17, 2025</span>
-      <a class="title" href="/oss/">Open Source Contribution Analysis</a>
-    </li>
-    
-  </ul>
+    <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-teal-50 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center px-8">
+      <svg class="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
+        <text 
+          x="50%" 
+          y="50%" 
+          text-anchor="middle" 
+          dominant-baseline="middle"
+          class="fill-gray-600 dark:fill-gray-300 font-bold"
+          style="font-size: 36px; font-family: system-ui;">
+          Platform Engineering Antipatterns
+        </text>
+      </svg>
+    </div>
   
-
-
-
-
-
-
-</section>
-
-
+  <div class="flex flex-col gap-2 p-6">
+    <a href="http://localhost:1313/posts/platform-engineering-antipatterns/" class="text-xl font-semibold text-gray-800 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400">
+      Platform Engineering Antipatterns
+    </a>
+    <div class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
+      <time>Feb 25, 2025</time>
+      <span>·</span>
+      <span>7 min read</span>
+    </div>
+    <p class="text-gray-600 dark:text-gray-300 mt-2">
+       Platform Engineering Antipatterns Link to heading You are probably already on your path to implementing platform engineering in your company. Maybe it was …
+    </p>
   </div>
-
-  
-
+</article>
+          
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
 
     </div>
 

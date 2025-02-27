@@ -75,6 +75,16 @@
 
 
 
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="/css/main.css">
+      
+    
+  
+
 </head>
 
 
@@ -92,11 +102,9 @@
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
-    
-    <a class="navigation-title" href="http://localhost:1313/">
-      Alex Elshamouty&#39;s Blog
+    <a class="navigation-title" href="/">
+      Home
     </a>
-    
     
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
@@ -123,61 +131,116 @@
 
     <div class="content">
       
-  <section class="container list" style="max-width: 1400px; margin: 0 auto;">
-    <div style="display: grid; grid-template-columns: 300px minmax(0, 2fr); gap: 4rem; align-items: start; margin: 0 2rem;">
+  <section class="container mx-auto px-4 max-w-6xl">
+    
+    <header class="flex flex-col items-center justify-center mb-16 w-full">
+      <h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-8 text-center">Blog Posts</h1>
+      <div class="w-full mx-auto">
+        <p class="text-2xl text-gray-600 dark:text-gray-300 leading-relaxed text-center">
+          I’m always asking questions: Why do we build things this way? What if there’s a better approach? How do complex systems really work beneath the surface? This blog is where I explore those questions—diving into platform engineering, cloud strategies, software architecture, and technology transformations. I don’t just describe solutions; I challenge assumptions and dig into the details, aiming to spark thought and uncover better ways of doing things. If you’re curious and like questioning the status quo, you’ll feel right at home here.
+        </p>
+      </div>
+    </header>
+
+    <div class="grid grid-cols-[250px_1fr] gap-12">
       
-      <aside style="position: sticky; top: 2rem;">
-        <div style="text-align: center; padding: 2rem; border-radius: 8px; background-color: #f8f9fa; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-          <img src="/images/avatar.jpg" alt="Author photo" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 1.5rem; object-fit: cover;">
-          <h3 style="margin-bottom: 1rem;">Alex Elshamouty</h3>
-          <p style="line-height: 1.6;">I build solutions that work. I help organizations see the bigger picture and the interactions within, ensuring their transformations are successful</p>
+      <aside class="sticky top-8">
+        <div class="space-y-6">
+          <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Topics</h2>
+          <nav class="flex flex-col gap-3">
+            
+              
+                <a href="/tags/platform%20engineering/" 
+                   class="group px-6 py-3 rounded-lg bg-gray-50 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200">
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg font-medium text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                      Platform Engineering
+                    </span>
+                    <span class="px-2 py-1 text-sm rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400">
+                      1
+                    </span>
+                  </div>
+                </a>
+              
+            
+              
+                <a href="/tags/transformation/" 
+                   class="group px-6 py-3 rounded-lg bg-gray-50 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200">
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg font-medium text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                      Transformation
+                    </span>
+                    <span class="px-2 py-1 text-sm rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400">
+                      1
+                    </span>
+                  </div>
+                </a>
+              
+            
+              
+                <a href="/tags/strategy/" 
+                   class="group px-6 py-3 rounded-lg bg-gray-50 hover:bg-blue-50 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200">
+                  <div class="flex justify-between items-center">
+                    <span class="text-lg font-medium text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                      Strategy
+                    </span>
+                    <span class="px-2 py-1 text-sm rounded-full bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400">
+                      1
+                    </span>
+                  </div>
+                </a>
+              
+            
+              
+            
+              
+            
+          </nav>
         </div>
       </aside>
 
       
-      <div style="max-width: 100%; min-width: 0;">
-        <header>
-          <div style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #0d0c0c;">
-            I’m always asking questions: Why do we build things this way? What if there’s a better approach? How do complex systems really work beneath the surface? This blog is where I explore those questions—diving into platform engineering, cloud strategies, software architecture, and technology transformations. I don’t just describe solutions; I challenge assumptions and dig into the details, aiming to spark thought and uncover better ways of doing things. If you’re curious and like questioning the status quo, you’ll feel right at home here.
-          </div>
-
+      <div class="min-w-0">
+        <ul class="space-y-12">
           
-           Filter per category:
-          <nav class="tags" style="margin: 1.5rem 0;">
-            <a href="/tags/architecture/" class="tag" style="margin: 0.5rem;">Architecture</a>
-            <a href="/tags/transformation/" class="tag" style="margin: 0.5rem;">Transformation</a>
-            <a href="/tags/strategy/" class="tag" style="margin: 0.5rem;">Strategy</a>
-            <a href="/tags/technology/" class="tag" style="margin: 0.5rem;">Technology</a>
-          </nav>
-        </header>
-
-        
-
-        <ul class="post-list">
-          
-            <li class="post-item" style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid #eaeaea;">
-              <article>
-                <header>
-                  <h2 class="post-title">
+            <li class="group">
+              <article class="p-8 rounded-xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
+                <header class="mb-6">
+                  <h2 class="text-3xl sm:text-4xl font-bold mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
                     <a href="http://localhost:1313/posts/platform-engineering-antipatterns/">Platform Engineering Antipatterns</a>
                   </h2>
-                  <p class="post-date">Posted: Feb 25, 2025</p>
+                  <div class="flex items-center gap-4 text-gray-500 dark:text-gray-400">
+                    <time class="text-lg">Feb 25, 2025</time>
+                    <span class="text-gray-300 dark:text-gray-600">·</span>
+                    <span class="text-lg">7 min read</span>
+                  </div>
                 </header>
-                <div class="post-excerpt">
+                <div class="prose dark:prose-invert max-w-none text-xl leading-relaxed">
                   What to watch out when implementing a cloud platform strategy
+                </div>
+                <div class="mt-6">
+                  <a href="http://localhost:1313/posts/platform-engineering-antipatterns/" 
+                     class="inline-flex items-center text-blue-600 dark:text-blue-400 font-medium group-hover:text-blue-700 dark:group-hover:text-blue-300">
+                    Read more
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </a>
                 </div>
               </article>
             </li>
           
         </ul>
 
-        
+        <div class="mt-12">
+          
 
 
 
 
 
 
+        </div>
       </div>
     </div>
   </section>
