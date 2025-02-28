@@ -179,6 +179,7 @@
       "mb-6",
       "mb-8",
       "md:flex-row",
+      "md:gap-4",
       "md:justify-start",
       "md:py-24",
       "md:text-2xl",
