@@ -40,7 +40,7 @@ This will lead to all sorts of challenges we will see when we are discussing the
 
 In this blog I aim at providing some mental models that would help you navigate those complexities and guardrail your strategy from the start.
 
-Opinions in this blog are my own. They come from real life experience batteling complexity and helping organizations in their cloud transformation journey. 
+Opinions in this blog are my own. They come from real life experience battling complexity and helping organizations in their cloud transformation journey. 
 
 ---
 
@@ -85,7 +85,7 @@ Platform teams, incentivized by a general platform strategy and broad mission, o
 
 Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase. And if your answer is: Ah! But it's cheap! And my cloud bill says so. Then I wonder what other bills you have and how their cost spend look like.
 
-Keep in mind that if innovation is a priority then you need to ask yourself if your platform really delivering on it's promises, or if you are chasing a theoritical dragon that will grant you all your wishes once you find it. 
+Keep in mind that if innovation is a priority then you need to ask yourself if your platform really delivering on it's promises, or if you are chasing a theoretical dragon that will grant you all your wishes once you find it. 
 
 ---
 
@@ -109,7 +109,7 @@ Another well-intended strategy by platform teams is to decompose all developersâ
 
 Platform teams start develop solutions for problems that either do not exist or have already been solved. After all we have a a platform is a product and that product needs to grow? Right?
 
-These solutions often take the form of customized components layered on top of cloud-managed services with the promise and value proposition of adding value and reducing complexity. A nobel and well intended quest. Yet, it can lead to lots of unforseen issues.
+These solutions often take the form of customized components layered on top of cloud-managed services with the promise and value proposition of adding value and reducing complexity. A noble and well intended quest. Yet, it can lead to lots of unforeseen issues.
 
 These unforeseen problems will not only affect your platform teams as they would need to maintain all of those components. They will also affect the stakeholders and users of your platform given the divergence in ways of working between standardized cloud models and your customized platform models. 
 
