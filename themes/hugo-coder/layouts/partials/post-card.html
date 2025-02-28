@@ -1,6 +1,6 @@
 <article class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow w-full">
   {{ if and .Params.headerimage (not (eq .Params.headerimage "")) }}
-    <img src="{{ .Params.headerimage }}" alt="{{ .Title }}" class="w-full h-40 sm:h-48 object-cover">
+    <img src="/images/{{ .Params.headerimage }}" alt="{{ .Title }}" class="w-full h-40 sm:h-48 object-cover">
   {{ else }}
     <div class="w-full h-40 sm:h-48 bg-gradient-to-br from-blue-100 to-teal-50 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center px-4 sm:px-8">
       <svg class="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
