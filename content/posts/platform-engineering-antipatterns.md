@@ -79,7 +79,7 @@ Innovation is inherently unstructured, often lacking clear requirements. Innovat
 
 **Increased Platform Complexity:**
 
-Platform teams, incentivized by a general platform strategy and broad mission, often fall into the Build Trap by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform’s effectiveness. 
+Platform teams, incentivized by a general platform strategy and broad mission, often fall into the [Build Trap](https://melissaperri.com/blog/2014/08/05/the-build-trap) by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform’s effectiveness. 
 
 Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase. And if your answer is: Ah! But it's cheap! And my cloud bill says so. Then I wonder what other bills you have and how their cost spend look like.
 
@@ -115,13 +115,9 @@ Reducing the surface of divergence is the very reason you started your platform 
 
 Be cautious if your goal is to provide the most impactful and minimally necessary platform for developers. This antipattern will increase your platform friction and slow down achieving your strategic goals.
 
-Does your platform really need to abstract all technologies behind it? Also, is the purpose 
+Would metrics help you in this scenario? Customer Satisfaction metrics and product metrics? 
 
-### Analogy
-
-Imagine opening a bakery with the goal of delivering the best customer experience. To ensure complete quality control, you decide to manage every aspect of service—even generating your own electricity and designing custom microwaves so customers can reheat pastries perfectly at home. However, your electricity company delivers a unique voltage, and your custom microwaves work only when connected to your own optimized electrical supply.
-
-While you may have optimized your internal value chain, you could be complicating your stakeholders’ experience with unnecessary, overly specific optimizations. Local metrics might suggest customer happiness, but the customer experience could tell a different story.
+Maybe! [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law) may disagree though. I would put my money on deliberate and intentional leadership that accounts for the whole systematic view, in my experience, this is the most difficult thing to do, yet, it's is the most impactful. 
 
 ---
 
