@@ -47,7 +47,7 @@
             <li class="group">
               <article class="overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
                 {{ if and .Params.headerimage (not (eq .Params.headerimage "")) }}
-                  <img src="{{ .Params.headerimage }}" alt="{{ .Title }}" class="w-full h-48 sm:h-64 object-cover">
+                  <img src="/images/{{ .Params.headerimage }}" alt="{{ .Title }}" class="w-full h-48 sm:h-64 object-cover">
                 {{ else }}
                   <div class="w-full h-48 sm:h-64 bg-gradient-to-br from-blue-100 to-teal-50 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
                     <svg class="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
