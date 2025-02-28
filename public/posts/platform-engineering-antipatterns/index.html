@@ -269,12 +269,39 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<ul>
-<li>Platform teams introduce rigid prioritization techniques to manage the flux of demand.</li>
-<li>A lack of cohesion between platform components leads to excessive documentation, approvals, and meetings to maintain harmony.</li>
-<li>Platform teams continuously try to introduce a common denominator even when it is not needed.</li>
-<li>New tools and capabilities are frequently added with low adoption rates and (feature creep).</li>
-</ul>
+<div class="list-component">
+    <ul><li>Platform teams introduce rigid prioritization techniques to manage the flux of demand.</li><li>A lack of cohesion between platform components leads to excessive documentation, approvals, and meetings to maintain harmony.</li><li>Platform teams continuously try to introduce a common denominator even when it is not needed.</li><li>New tools and capabilities are frequently added with low adoption rates and (feature creep).</li></ul>
+</div>
+
+<style>
+.list-component {
+    background: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.list-component ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-component li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.list-component li:before {
+    content: "•";
+    color: #dc3545;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+</style>
 <h3 id="results">
   Results
   <a class="heading-link" href="#results">
@@ -285,8 +312,27 @@
 <p><strong>Innovation Slows Down:</strong></p>
 <p>Innovation is inherently unstructured, often lacking clear requirements. Innovating teams need speed and potentially also access to less mature and commonly adopted technologies. If your platform is covering a huge surface your teams will tend to apply prioritization and standardization techniques to maintain order and stability of the platform and manage their workloads. Left unchecked, this approach clashes with innovation that typically needs access to less mature or niche technologies that have not yet been widely adopted across the organization.</p>
 <p><strong>Increased Platform Complexity:</strong></p>
-<p>Platform teams, incentivized by a general platform strategy and broad mission, often fall into the <a href="https://melissaperri.com/blog/2014/08/05/the-build-trap"  class="external-link" target="_blank" rel="noopener">Build Trap</a> by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform’s effectiveness.</p>
-<p>Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase. And if your answer is: Ah! But it&rsquo;s cheap! And my cloud bill says so. Then I wonder what other bills you have and how their cost spend look like.</p>
+<div class="flex flex-row items-start gap-4">
+    
+<div class="flex-1">
+    
+Platform teams, incentivized by a general platform strategy and broad mission, often fall into the <a href="" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline" target="_blank"></a> by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform's effectiveness.
+
+  </div>
+
+<div class="flex-1">
+    
+<figure class="w-full"><img src="/images/itsatrap.webp"
+    alt="It&#39;s a trap">
+</figure>
+
+
+  </div>
+
+  </div>
+<p>Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase.<br>
+If your answer is: Ah! But it&rsquo;s cheap! And my cloud bill says so.
+Then I wonder what other bills you have and how their cost spend look like?</p>
 <p>Keep in mind that if innovation is a priority then you need to ask yourself if your platform really delivering on it&rsquo;s promises, or if you are chasing a theoretical dragon that will grant you all your wishes once you find it.</p>
 <hr>
 <h2 id="2-product-everything">
@@ -311,13 +357,39 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<ul>
-<li>Solutions are created for problems that were never concerns before—even if you just came from a private cloud environment.</li>
-<li>Platform teams complain about a lack of vision and unclear roles.</li>
-<li>Teams become fragmented, working on small, non-functional requirement “products.”</li>
-<li>Teams seek control over well-standardized, cloud-managed services with “add value” propositions.</li>
-<li>Platform teams obsess over abstracting away complexity from developers, while developers complain about being isolated from cloud technologies.</li>
-</ul>
+<div class="list-component">
+    <ul><li>Solutions are created for problems that were never concerns before—even if you just came from a private cloud environment.</li><li>Platform teams complain about a lack of vision and unclear roles.</li><li>Teams become fragmented, working on small, non-functional requirement "products."</li><li>Teams seek control over well-standardized, cloud-managed services with "add value" propositions.</li><li>Platform teams obsess over abstracting away complexity from developers, while developers complain about being isolated from cloud technologies.</li></ul>
+</div>
+
+<style>
+.list-component {
+    background: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.list-component ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-component li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.list-component li:before {
+    content: "•";
+    color: #dc3545;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+</style>
 <h3 id="results-1">
   Results
   <a class="heading-link" href="#results-1">
@@ -326,7 +398,7 @@
   </a>
 </h3>
 <p><strong>Increased Waste:</strong></p>
-<p>Platform teams start develop solutions for problems that either do not exist or have already been solved. After all we have a a platform is a product and that product needs to grow? Right?</p>
+<p>Platform teams start developing solutions for problems that either do not exist or have already been solved. After all, a platform is a product and that product needs to grow? Right?</p>
 <p>These solutions often take the form of customized components layered on top of cloud-managed services with the promise and value proposition of adding value and reducing complexity. A noble and well intended quest. Yet, it can lead to lots of unforeseen issues.</p>
 <p>These unforeseen problems will not only affect your platform teams as they would need to maintain all of those components. They will also affect the stakeholders and users of your platform given the divergence in ways of working between standardized cloud models and your customized platform models.</p>
 <p>Reducing the surface of divergence is the very reason you started your platform initiative. But your platform might paradoxically increase the divergence.</p>

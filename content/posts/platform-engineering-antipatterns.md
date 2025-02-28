@@ -1,20 +1,18 @@
-+++
-authors = ["Alex Elshamouty"]
-date = "2025-02-25"
-title = "Platform Engineering Antipatterns"
-description = "What to watch out when implementing a cloud platform strategy"
-summary = "A deep dive into common antipatterns in Platform Engineering, including the 'Platform for Everything' and 'Product Everything' approaches, and how to avoid these systemic traps."
-headerimage=""
-tags = [
-    "strategy",
-    "transformation",
-    "platform engineering",
-]
-categories = [
-    "strategy",
-    "architecture",
-]
-+++
+---
+authors: ["Alex Elshamouty"]
+date: "2025-02-25"
+title: "Platform Engineering Antipatterns"
+description: "What to watch out when implementing a cloud platform strategy"
+summary: "A deep dive into common antipatterns in Platform Engineering, including the 'Platform for Everything' and 'Product Everything' approaches, and how to avoid these systemic traps."
+headerimage: ""
+tags:
+    - "strategy"
+    - "transformation"
+    - "platform engineering"
+categories:
+    - "strategy"
+    - "architecture"
+---
 
 # Platform Engineering Antipatterns
 
@@ -67,11 +65,13 @@ These antipatterns arise within specific contexts rather than being universal. T
 A well-intended approach by platform teams is to create a single platform that covers every aspect of the software development lifecycle, with no escape hatches, only an opinionated and heavily guarded path. This platform attempts to unify development, deployment, observability, security, optimization, and governance. This antipattern is common during transformation times. 
 
 ### Symptoms
+{{< list >}}
 
-- Platform teams introduce rigid prioritization techniques to manage the flux of demand.
-- A lack of cohesion between platform components leads to excessive documentation, approvals, and meetings to maintain harmony.
-- Platform teams continuously try to introduce a common denominator even when it is not needed.
-- New tools and capabilities are frequently added with low adoption rates and (feature creep).
+Platform teams introduce rigid prioritization techniques to manage the flux of demand.
+A lack of cohesion between platform components leads to excessive documentation, approvals, and meetings to maintain harmony.
+Platform teams continuously try to introduce a common denominator even when it is not needed.
+New tools and capabilities are frequently added with low adoption rates and (feature creep).
+{{< / list >}}
 
 ### Results
 
@@ -81,9 +81,19 @@ Innovation is inherently unstructured, often lacking clear requirements. Innovat
 
 **Increased Platform Complexity:**
 
-Platform teams, incentivized by a general platform strategy and broad mission, often fall into the [Build Trap](https://melissaperri.com/blog/2014/08/05/the-build-trap) by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform’s effectiveness. 
+{{< rows >}}
+{{< row-item >}}
+Platform teams, incentivized by a general platform strategy and broad mission, often fall into the {{< link "https://melissaperri.com/blog/2014/08/05/the-build-trap" "Build Trap" >}} by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform's effectiveness.
+{{< /row-item >}}
 
-Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase. And if your answer is: Ah! But it's cheap! And my cloud bill says so. Then I wonder what other bills you have and how their cost spend look like.
+{{< row-item >}}
+{{< figure src="/images/itsatrap.webp" alt="It's a trap" class="w-full" >}}
+{{< /row-item >}}
+{{< /rows >}}
+
+Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase.  
+If your answer is: Ah! But it's cheap! And my cloud bill says so. 
+Then I wonder what other bills you have and how their cost spend look like?
 
 Keep in mind that if innovation is a priority then you need to ask yourself if your platform really delivering on it's promises, or if you are chasing a theoretical dragon that will grant you all your wishes once you find it. 
 
@@ -97,17 +107,19 @@ Another well-intended strategy by platform teams is to decompose all developers�
 
 ### Symptoms
 
-- Solutions are created for problems that were never concerns before—even if you just came from a private cloud environment.
-- Platform teams complain about a lack of vision and unclear roles.
-- Teams become fragmented, working on small, non-functional requirement “products.”
-- Teams seek control over well-standardized, cloud-managed services with “add value” propositions.
-- Platform teams obsess over abstracting away complexity from developers, while developers complain about being isolated from cloud technologies.
+{{< list >}}
+Solutions are created for problems that were never concerns before—even if you just came from a private cloud environment.
+Platform teams complain about a lack of vision and unclear roles.
+Teams become fragmented, working on small, non-functional requirement "products."
+Teams seek control over well-standardized, cloud-managed services with "add value" propositions.
+Platform teams obsess over abstracting away complexity from developers, while developers complain about being isolated from cloud technologies.
+{{< /list >}}
 
 ### Results
 
 **Increased Waste:**
 
-Platform teams start develop solutions for problems that either do not exist or have already been solved. After all we have a a platform is a product and that product needs to grow? Right?
+Platform teams start developing solutions for problems that either do not exist or have already been solved. After all, a platform is a product and that product needs to grow? Right?
 
 These solutions often take the form of customized components layered on top of cloud-managed services with the promise and value proposition of adding value and reducing complexity. A noble and well intended quest. Yet, it can lead to lots of unforeseen issues.
 

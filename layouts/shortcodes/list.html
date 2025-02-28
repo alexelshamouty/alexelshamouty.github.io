@@ -1,0 +1,42 @@
+<div class="list-component">
+    <ul>
+        {{- $raw := .Inner -}}
+        {{- $lines := split (trim $raw "\n") "\n" -}}
+        {{- range $lines -}}
+            {{- $line := trim . " " -}}
+            {{- if $line -}}
+                <li>{{ . | safeHTML }}</li>
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</div>
+
+<style>
+.list-component {
+    background: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.list-component ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-component li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.list-component li:before {
+    content: "•";
+    color: #dc3545;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+</style>

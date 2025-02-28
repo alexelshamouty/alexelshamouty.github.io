@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Alex Elshamouty&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2025 12:01:25 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>asfasf</title>
+      <link>http://localhost:1313/posts/asfasf/</link>
+      <pubDate>Fri, 28 Feb 2025 12:01:25 +0100</pubDate>
+      <guid>http://localhost:1313/posts/asfasf/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Solutions are created for problems that were never concerns before—even if you just came from a private cloud environment.&lt;/li&gt;&#xA;&lt;li&gt;Platform teams complain about a lack of vision and unclear roles.&lt;/li&gt;&#xA;&lt;li&gt;Teams become fragmented, working on small, non-functional requirement &amp;ldquo;products.&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;Teams seek control over well-standardized, cloud-managed services with &amp;ldquo;add value&amp;rdquo; propositions.&lt;/li&gt;&#xA;&lt;li&gt;Platform teams obsess over abstracting away complexity from developers, while developers complain about being isolated from cloud technologies.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>Platform Engineering Antipatterns</title>
       <link>http://localhost:1313/posts/platform-engineering-antipatterns/</link>

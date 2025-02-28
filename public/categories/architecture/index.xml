@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Architecture on Alex Elshamouty&#39;s Blog</title>
-    <link>http://www.example.com/categories/architecture/</link>
+    <link>http://localhost:1313/categories/architecture/</link>
     <description>Recent content in Architecture on Alex Elshamouty&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.example.com/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Platform Engineering Antipatterns</title>
-      <link>http://www.example.com/posts/platform-engineering-antipatterns/</link>
+      <link>http://localhost:1313/posts/platform-engineering-antipatterns/</link>
       <pubDate>Tue, 25 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://www.example.com/posts/platform-engineering-antipatterns/</guid>
+      <guid>http://localhost:1313/posts/platform-engineering-antipatterns/</guid>
       <description>&lt;h1 id=&#34;platform-engineering-antipatterns&#34;&gt;&#xA;  Platform Engineering Antipatterns&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#platform-engineering-antipatterns&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?&lt;/p&gt;</description>
     </item>
   </channel>
