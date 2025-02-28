@@ -18,39 +18,39 @@ categories = [
 
 # Platform Engineering Antipatterns
 
-You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices.
+You are probably already on your path to implementing platform engineering in your company. Maybe it was triggered by a major cloud transformation or a significant overhaul of your software development practices. Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?  
 
 <!--more-->
 
-Perhaps you embarked on this journey because you’ve been struggling with DevOps or SRE practices. You are thinking platform engineering is loved, cherished and promoted by the industry, so, there must be something to it?
-
-One thing is for sure: you started this path because you want a better and more efficient model for your organization—whether to speed up development or reduce costs. Who wouldn’t want that?
+One thing is for sure: you started this path because you want a better and more efficient model for your organization whether to speed up development or reduce costs. Who wouldn’t want that? 
 
 ---
 
 ## What Do You Mean by a Platform?
 
-In this article, we discuss platforms through the lens of cloud modernization. Our focus is mostly on internal developer platforms. Therefore, when we refer to a platform in this article, we mean an **internal developer platform**.
+In this blog, we will discuss platforms through the lens of cloud modernization. From this lens, our focus is mostly on internal developer platforms. Therefore, we mostly refer to “internal developer platforms” when we talk about a platform in this blog. 
 
 ---
 
-## Why This Article?
+## Why This blog?
 
-Despite good intentions and valuable promises, platforms often fail due to systematic issues and unforeseen challenges. They promise to solve many problems: reduce complexity, increase innovation, and streamline operations. But they can fall short in addressing broader contextual needs that go beyond technology.
+Despite good intentions and valuable promises, platforms often fail due to systematic issues and unforeseen challenges. They promise to solve many problems: reduce complexity, increase innovation, and streamline operations. But they fail in addressing broader contextual needs that go beyond technology. 
 
-This article aims to provide mental models that help you navigate these complexities and guardrail your strategy from the start.
+This will lead to all sorts of challenges we will see when we are discussing the antipatterns that push platforms into disorder and make it difficult for organizations to realize the benefits they desire from platforms. 
+
+In this blog we aim at providing some mental models that would help you navigate those complexities and guardrail your strategy from the start. 
 
 ---
 
 ## But What Is an Antipattern?
 
-In this article, we use the term *antipattern* in the same manner as Donella H. Meadows describes it in her book *Thinking in Systems*:
+In this blog, we use the term *antipattern* in the same manner as Donella H. Meadows describes it in her book *Thinking in Systems*:
 
 > "An antipattern can be understood as a systemic trap or archetype. A recurring dysfunctional pattern in complex systems that leads to undesirable outcomes."  
 
 I have never met anyone in my career—or in life for that matter—who set out to execute a strategy knowing it would fail and lead to dysfunctional outcomes. Yet, those outcomes occur!
 
-In this article we will highlight areas to be cautious about and questions you might face when implementing and designing your platform strategy.
+In this blog we will highlight areas to be cautious about and questions you might face when implementing and designing your platform strategy.
 
 These antipatterns arise within specific contexts rather than being universal. They emerge unintentionally, as a consequence of the complex nature of technological transformation. If you observe the symptoms we outline below, you have likely encountered an antipattern.
 
@@ -62,36 +62,28 @@ These antipatterns arise within specific contexts rather than being universal. T
 
 ### Context
 
-A well-intended approach by platform teams is to create a single platform that covers **every aspect** of the software development lifecycle—with no escape hatches, only an opinionated and heavily guarded path. This platform attempts to unify development, deployment, observability, security, optimization, and governance. This antipattern is common during transformation times.
+A well-intended approach by platform teams is to create a single platform that covers every aspect of the software development lifecycle, with no escape hatches, only an opinionated and heavily guarded path. This platform attempts to unify development, deployment, observability, security, optimization, and governance. This antipattern is common during transformation times. 
 
 ### Symptoms
 
 - Platform teams introduce rigid prioritization techniques to manage the flux of demand.
 - A lack of cohesion between platform components leads to excessive documentation, approvals, and meetings to maintain harmony.
 - Platform teams continuously try to introduce a common denominator even when it is not needed.
-- New tools and capabilities are frequently added with low adoption rates (feature creep).
+- New tools and capabilities are frequently added with low adoption rates and (feature creep).
 
 ### Results
 
 **Innovation Slows Down:**
 
-Innovation is inherently unstructured and often lacks clear requirements. Innovating teams need speed and sometimes access to less mature or niche technologies. If your platform covers a huge surface area, teams will tend to apply strict prioritization and standardization to maintain order and stability—clashing with the need for rapid, exploratory innovation.
+Innovation is inherently unstructured, often lacking clear requirements. Innovating teams need speed and potentially also access to less mature and commonly adopted technologies. If your platform is covering a huge surface your teams will tend to apply prioritization and standardization techniques to maintain order and stability of the platform and manage their workloads. Left unchecked, this approach clashes with innovation that typically needs access to less mature or niche technologies that have not yet been widely adopted across the organization. 
 
 **Increased Platform Complexity:**
 
-Platform teams, driven by a broad mission, often fall into the **Build Trap** by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams can become trapped in an endless cycle of feature delivery, which diminishes the platform’s effectiveness.
+Platform teams, incentivized by a general platform strategy and broad mission, often fall into the Build Trap by rapidly adding features in response to innovation team demands. This reactive approach prioritizes output over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform’s effectiveness. 
 
-*Be cautious with this antipattern, especially if innovation is a priority. Your platform may end up serving only the biggest stakeholders, leaving innovators in the cold—or over time, it may serve every purpose, exponentially increasing your maintenance demands. And, are you really saving costs?*
+Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase. And if your answer is: Ah! But it's cheap! And my cloud bill says so. Then I wonder what other bills you have and how their cost spend look like.
 
-### Analogy
-
-**Slowing Innovation:**
-
-Imagine that every time you want to go skiing, you have only one safe, governed path to follow. Without the option to safely explore new routes, you might either search for a new resort that offers adventure or venture out on your own without safety nets—an outcome that could be either exciting or disastrous.
-
-**Increased Complexity:**
-
-Think of it as constantly battling against a cloud service provider. Is that really the challenge you want to face?
+Keep in mind that if innovation is a priority then you need to ask yourself if your platform really delivering on it's promises, or if you are chasing a theoritical dragon that will grant you all your wishes once you find it. 
 
 ---
 
@@ -99,7 +91,7 @@ Think of it as constantly battling against a cloud service provider. Is that rea
 
 ### Context
 
-Another well-intended strategy is to decompose all developers’ requirements into components (or “capabilities” in product lingo) and treat every platform component as a managed product. Over time, the granularity of these products increases—even the smallest non-functional requirements become separate products. This approach demands more time from product owners or even additional product owners to manage these “products” effectively. This antipattern is typical in organizations that are still learning platform engineering and adopting product-thinking methodologies.
+Another well-intended strategy by platform teams is to decompose all developers’ requirements into components (capabilities in the product or enterprise architecture lingo) and start treating every platform component as a managed product. The granularity of these products increases over time, with even the smallest non-functional requirements becoming separate products. Platform teams require more time from their product owners or demand additional product owners to manage these "products" effectively. This antipattern is typical in organizations still learning platform engineering and adopting the product thinking ways of working. 
 
 ### Symptoms
 
@@ -113,11 +105,17 @@ Another well-intended strategy is to decompose all developers’ requirements in
 
 **Increased Waste:**
 
-Teams develop solutions for problems that either do not exist or have already been solved. These solutions often take the form of customized components layered on top of cloud-managed services—purporting to add value but potentially introducing unforeseen issues.
+Platform teams start develop solutions for problems that either do not exist or have already been solved. After all we have a a platform is a product and that product needs to grow? Right?
 
-These issues not only affect platform teams (who must maintain these components) but also impact stakeholders and platform users. The divergence between cloud-standardized models and your custom model can paradoxically increase the very fragmentation your platform initiative sought to reduce.
+These solutions often take the form of customized components layered on top of cloud-managed services with the promise and value proposition of adding value and reducing complexity. A nobel and well intended quest. Yet, it can lead to lots of unforseen issues.
 
-*Be cautious if your goal is to provide the most impactful and minimally necessary platform for developers. This antipattern will increase friction and slow down your strategic goals. Does your platform really need to abstract all technologies behind it?*
+These unforeseen problems will not only affect your platform teams as they would need to maintain all of those components. They will also affect the stakeholders and users of your platform given the divergence in ways of working between standardized cloud models and your customized platform models. 
+
+Reducing the surface of divergence is the very reason you started your platform initiative. But your platform might paradoxically increase the divergence. 
+
+Be cautious if your goal is to provide the most impactful and minimally necessary platform for developers. This antipattern will increase your platform friction and slow down achieving your strategic goals.
+
+Does your platform really need to abstract all technologies behind it? Also, is the purpose 
 
 ### Analogy
 
