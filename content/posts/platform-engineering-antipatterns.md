@@ -118,10 +118,18 @@ Platform teams obsess over abstracting away complexity from developers, while de
 ### Results
 
 **Increased Waste:**
-
+{{< rows >}}
+{{< row-item >}}
 Platform teams start developing solutions for problems that either do not exist or have already been solved. After all, a platform is a product and that product needs to grow? Right?
 
 These solutions often take the form of customized components layered on top of cloud-managed services with the promise and value proposition of adding value and reducing complexity. A noble and well intended quest. Yet, it can lead to lots of unforeseen issues.
+
+{{< /row-item >}}
+
+{{< row-item >}}
+{{< figure src="/images/mvp.jpg" alt="MVP? No way!" class="w-full" >}}
+{{< /row-item >}}
+{{< /rows >}}
 
 These unforeseen problems will not only affect your platform teams as they would need to maintain all of those components. They will also affect the stakeholders and users of your platform given the divergence in ways of working between standardized cloud models and your customized platform models. 
 

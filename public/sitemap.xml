@@ -3,13 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-28T12:01:25+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/asfasf/</loc>
-    <lastmod>2025-02-28T12:01:25+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-28T12:01:25+01:00</lastmod>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/architecture/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
@@ -21,6 +15,9 @@
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/platform-engineering-antipatterns/</loc>
+    <lastmod>2025-02-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-02-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/strategy/</loc>
