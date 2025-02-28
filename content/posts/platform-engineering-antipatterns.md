@@ -26,7 +26,7 @@ One thing is for sure: you started this path because you want a better and more 
 
 ## What Do You Mean by a Platform?
 
-In this blog, we will discuss platforms through the lens of cloud modernization. From this lens, our focus is mostly on internal developer platforms. Therefore, we mostly refer to “internal developer platforms” when we talk about a platform in this blog. 
+In this blog, I will discuss platforms through the lens of cloud modernization. From this lens, our focus is mostly on internal developer platforms. Therefore, I mostly refer to “internal developer platforms” when I talk about a platform in this blog. 
 
 ---
 
@@ -44,15 +44,15 @@ Opinions in this blog are my own. They come from real life experience battling c
 
 ## But What Is an Antipattern?
 
-In this blog, we use the term *antipattern* in the same manner as Donella H. Meadows describes it in her book *Thinking in Systems*:
+In this blog, I use the term *antipattern* in the same manner as Donella H. Meadows describes it in her book *Thinking in Systems*:
 
 > "An antipattern can be understood as a systemic trap or archetype. A recurring dysfunctional pattern in complex systems that leads to undesirable outcomes."  
 
 I have never met anyone in my career—or in life for that matter—who set out to execute a strategy knowing it would fail and lead to dysfunctional outcomes. Yet, those outcomes occur!
 
-In this blog we will highlight areas to be cautious about and questions you might face when implementing and designing your platform strategy.
+In this blog I will highlight areas to be cautious about and questions you might face when implementing and designing your platform strategy.
 
-These antipatterns arise within specific contexts rather than being universal. They emerge unintentionally, as a consequence of the complex nature of technological transformation. If you observe the symptoms we outline below, you have likely encountered an antipattern.
+These antipatterns arise within specific contexts rather than being universal. They emerge unintentionally, as a consequence of the complex nature of technological transformation. If you observe the symptoms outlined below, you have likely encountered an antipattern.
 
 *The antipatterns overlap, and that is expected. Systematic problems are often connected, yet they manifest differently depending on the context.*
 
@@ -157,6 +157,6 @@ Likewise, within your complex platform, there is a smaller and cleaner platform 
 
 Sequencing your platform architecture is just as important as defining the target architecture. Starting with a rigid target assumes you know all the requirements upfront. Instead, leave room for maneuverability.
 
-We have observed these antipatterns—and more—while assisting organizations in executing and developing platform strategies. Connecting platform layers from stakeholders to engineering teams is difficult and raises countless unforeseen questions—from “How do we keep on innovating?” to “But who’s going to be on-call for all of this?”
+I have observed these antipatterns—and more—while assisting organizations in executing and developing platform strategies. Connecting platform layers from stakeholders to engineering teams is difficult and raises countless unforeseen questions—from “How do we keep on innovating?” to “But who’s going to be on-call for all of this?”
 
 A successful platform strategy requires understanding your environment and having deep expertise in sequencing a dynamic strategy with strong, clear value propositions that connect the dots between **People, Work, Structure, and Technology**.
