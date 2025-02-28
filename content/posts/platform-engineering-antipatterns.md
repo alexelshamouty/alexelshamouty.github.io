@@ -38,7 +38,9 @@ Despite good intentions and valuable promises, platforms often fail due to syste
 
 This will lead to all sorts of challenges we will see when we are discussing the antipatterns that push platforms into disorder and make it difficult for organizations to realize the benefits they desire from platforms. 
 
-In this blog we aim at providing some mental models that would help you navigate those complexities and guardrail your strategy from the start. 
+In this blog I aim at providing some mental models that would help you navigate those complexities and guardrail your strategy from the start.
+
+Opinions in this blog are my own. They come from real life experience batteling complexity and helping organizations in their cloud transformation journey. 
 
 ---
 
