@@ -22,6 +22,8 @@ You are probably already on your path to implementing platform engineering in yo
 
 One thing is for sure: you started this path because you want a better and more efficient model for your organization whether to speed up development or reduce costs. Who wouldn’t want that? 
 
+> The header of this blog post is a reference to some of the systematic failures that lead to disasters on large oil platforms, ranging from spills to explosions and all sorts of unwanted, unplanned, and unintended consequences.
+
 ---
 
 ## What Do You Mean by a Platform?
