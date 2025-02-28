@@ -1,14 +1,20 @@
 {{ with .Site.Params.social }}
-<div class="w-full mt-24">
-  <div class="flex flex-wrap gap-16">
-    {{ range .Site.Params.social }}
-    <a href="{{ .url }}"
-       class="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transform hover:scale-110 transition-all duration-200"
-       target="_blank"
-       rel="me noopener noreferrer">
-      <i class="{{ .icon }} fa-4x md:fa-5x" aria-hidden="true"></i>
-      <span class="sr-only">{{ .name }}</span>
-    </a>
+<div class="w-full mt-8">
+  <div class="w-full flex flex-row justify-center lg:justify-start md:justify-start items-center gap-4">
+    {{ range . }}
+      <a href="{{ .url }}"
+         class="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transform hover:scale-110 transition-all duration-200"
+         target="_blank"
+         rel="me noopener noreferrer">
+        {{- if (eq .iconType "custom") -}}
+          <img src="{{ .icon }}" alt="{{ .name }}" class="w-8 h-8 sm:w-12 sm:h-12" style="width: 32px; height: 32px; @media (min-width: 640px) { width: 48px; height: 48px; }" />
+        {{- else if (strings.HasSuffix .icon ".svg") -}}
+          <img src="{{ .icon }}" alt="{{ .name }}" class="w-8 h-8 sm:w-12 sm:h-12" style="width: 32px; height: 32px; @media (min-width: 640px) { width: 48px; height: 48px; }" />
+        {{- else -}}
+          <i class="{{ .icon }} fa-2x sm:fa-3x" aria-hidden="true"></i>
+        {{- end -}}
+        <span class="sr-only">{{ .name }}</span>
+      </a>
     {{ end }}
   </div>
 </div>
