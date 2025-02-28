@@ -93,11 +93,16 @@ Platform teams, incentivized by a general platform strategy and broad mission, o
 {{< /row-item >}}
 {{< /rows >}}
 
-Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase.  
-If your answer is: Ah! But it's cheap! And my cloud bill says so. 
-Then I wonder what other bills you have and how their cost spend look like?
+Your platform will either only serve the biggest stakeholders leaving innovators in the cold, or, over time it will be serving every purpose, and your maintenance demands will exponentially increase.
+
+The curious thing here, too, is that the biggest stakeholder of your platform isnt necessarily your most valuable asset from a business perspective.
 
 Keep in mind that if innovation is a priority then you need to ask yourself if your platform really delivering on it's promises, or if you are chasing a theoretical dragon that will grant you all your wishes once you find it. 
+
+Can you have such a large platform without maintaining it? how much are you willing to invest into that? 
+
+If your answer is: Ah! But it's cheap! And my cloud bill says so. 
+Then I wonder what other bills you have and how their cost trend look like?
 
 ---
 
