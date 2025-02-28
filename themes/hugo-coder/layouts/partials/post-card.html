@@ -26,7 +26,7 @@
       <span>{{ .ReadingTime }} min read</span>
     </div>
     <p class="text-gray-600 dark:text-gray-300 text-left">
-      {{- .Summary | plainify | truncate 160 -}}
+      {{- .Description | plainify | truncate 160 -}}
     </p>
   </div>
 </article>
