@@ -5,7 +5,24 @@
   <section class="container post">
     <article>
       {{ if and .Params.headerimage (not (eq .Params.headerimage "")) }}
-        <img src="{{ .Params.headerimage }}" alt="{{ .Title }}" class="w-full h-96 object-cover rounded-xl mb-8">
+        <div class="w-full h-40 sm:h-48 md:h-64 lg:h-96 rounded-xl mb-8 overflow-hidden">
+          {{ $imagePath := .Params.headerimage }}
+          {{ if hasPrefix $imagePath "/images/" }}
+            {{ $staticImage := printf  $imagePath }}
+            {{ $image := resources.Get $staticImage }}
+            {{ with $image }}
+              {{ $scaled := .Resize "1600x" }}
+              <img src="{{ $scaled.RelPermalink }}" alt="{{ $.Title }}" class="w-full h-full object-cover">
+            {{ else }}
+              <img src="{{ $imagePath }}" alt="{{ $.Title }}" class="w-full h-full object-cover">
+            {{ end }}
+          {{ else }}
+            {{ with resources.Get $imagePath }}
+              {{ $scaled := .Resize "1200x" }}
+              <img src="{{ $scaled.RelPermalink }}" alt="{{ $.Title }}" class="w-full h-full object-cover">
+            {{ end }}
+          {{ end }}
+        </div>
       {{ else }}
         <div class="w-full h-96 bg-gradient-to-br from-blue-100 to-teal-50 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center rounded-xl mb-8">
           <svg class="w-full h-full" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet">
