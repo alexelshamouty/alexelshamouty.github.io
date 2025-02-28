@@ -4,7 +4,7 @@ date: "2025-02-25"
 title: "Platform Engineering Antipatterns"
 description: "Platform engineering is taking over the world! Or... not?"
 summary: "A deep dive into common antipatterns in Platform Engineering, including the 'Platform for Everything' and 'Product Everything' approaches, and how to avoid these systemic traps."
-headerimage: "/images/deepwaterdisaster.jpg"
+headerimage: "deepwaterdisaster.jpg"
 tags:
     - "strategy"
     - "transformation"
