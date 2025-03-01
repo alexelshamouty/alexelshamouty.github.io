@@ -51,6 +51,13 @@ featuredTags = [
   "architecture"
 ]
 
+[sitemap]
+  changeFreq = ""
+  disable = false
+  filename = "sitemap.xml"
+  priority = -1
+
+
 [[params.social]]
 name = "GitHub"
 icon = "fab fa-github"
