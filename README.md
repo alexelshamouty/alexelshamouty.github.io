@@ -1,1 +1,1 @@
-![CI](https://github.com/alexelshamouty/alexelshamouty.github.io/actions/workflows/hugo.yaml/badge.svg)
+![CI](https://github.com/alexelshamouty/alexelshamouty.github.io/workflows/Deploy%20Hugo%20site%20to%20Pages/badge.svg)
