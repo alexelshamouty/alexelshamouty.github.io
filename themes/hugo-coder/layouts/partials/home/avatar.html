@@ -18,9 +18,9 @@
     </h1>
 
     {{ if reflect.IsSlice .Site.Params.info }}
-    <div class="space-y-4">
+    <div class="space-y-2 max-w-2xl">
       {{ range $index, $info := .Site.Params.info }}
-      <h2 class="text-xl md:text-2xl lg:text-3xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed break-words"
+      <h2 class="text-lg md:text-xl lg:text-2xl text-gray-700 dark:text-gray-300 font-medium leading-snug break-words"
           style="animation: fadeIn 0.5s ease-out {{ mul $index 0.2 }}s forwards;">
         {{ . | markdownify }}
       </h2>
