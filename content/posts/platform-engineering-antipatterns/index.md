@@ -152,7 +152,7 @@ Maybe! [Goodhart's law](https://en.wikipedia.org/wiki/Goodhart%27s_law) may disa
 
 ## Conclusion
 
-Platform engineering is not doomed, but it is challenging. It drastically changes the way your organization works—for the better! However, success requires a systematic approach to change.
+Platform engineering is not doomed, but it is challenging. It drastically changes the way your organization works! for the better! However, success requires a systematic approach to change.
 
 The symptoms reveal the antipatterns. Identify these symptoms and correlate them with your strategy. If you see a strong correlation, you’ve found the antipattern, and you’ll have a clearer idea of the outcomes it may bring.
 
