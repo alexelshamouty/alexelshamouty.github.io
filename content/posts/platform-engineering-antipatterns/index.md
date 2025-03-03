@@ -85,7 +85,7 @@ Innovation is inherently unstructured, often lacking clear requirements. Innovat
 
 {{< rows >}}
 {{< row-item >}}
-Platform teams, incentivized by a general platform strategy and broad mission, often fall into the Build Trap by rapidly adding features in response to innovation team demands. This reactive approach prioritizes the platform-as-a-product feature delivery over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform's effectiveness.
+Platform teams, incentivized by a general platform strategy and broad mission, often fall into the {{< link href="https://melissaperri.com/blog/2014/08/05/the-build-trap" text="Build Trap" >}} by rapidly adding features in response to innovation team demands. This reactive approach prioritizes the platform-as-a-product feature delivery over long-term platform stability, leading to increased complexity and unchecked technical debt. Instead of focusing on measurable outcomes and sustainable improvements, teams become trapped in an endless cycle of feature delivery, which diminishes the platform's effectiveness.
 {{< /row-item >}}
 
 {{< row-item >}}
