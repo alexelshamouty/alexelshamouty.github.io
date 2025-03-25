@@ -59,6 +59,7 @@
       "border-white",
       "break-words",
       "categories",
+      "center",
       "centered",
       "colorscheme-light",
       "colorscheme-toggle",
@@ -304,10 +305,13 @@
       "dark-mode-toggle",
       "menu-toggle",
       "platform-engineering-antipatterns",
+      "platform-engineering-antipatterns-part-two",
       "results",
       "results-1",
+      "starting-with-the-target-architecture",
       "symptoms",
       "symptoms-1",
+      "use-x-technology-for-everything",
       "what-do-you-mean-by-a-platform",
       "why-this-blog"
     ]

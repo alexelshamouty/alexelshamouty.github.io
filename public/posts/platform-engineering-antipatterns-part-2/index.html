@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Platform Engineering Antipatterns: Part 2 · Alex Elshamouty&#39;s Blog
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Alex Elshamouty">
+<meta name="description" content="Platform engineering is taking over the world! Or... not?">
+<meta name="keywords" content="blog,architecture,cloud,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Platform Engineering Antipatterns: Part 2">
+  <meta name="twitter:description" content="Platform engineering is taking over the world! Or... not?">
+
+<meta property="og:url" content="http://localhost:1313/posts/platform-engineering-antipatterns-part-2/">
+  <meta property="og:site_name" content="Alex Elshamouty&#39;s Blog">
+  <meta property="og:title" content="Platform Engineering Antipatterns: Part 2">
+  <meta property="og:description" content="Platform engineering is taking over the world! Or... not?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-21T00:00:00+00:00">
+    <meta property="article:tag" content="Strategy">
+    <meta property="article:tag" content="Transformation">
+    <meta property="article:tag" content="Platform Engineering">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/platform-engineering-antipatterns-part-2/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="/css/main.css">
+      
+    
+  
+
+</head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Home
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/oss/">Open Source</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      
+        
+      
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/platform-engineering-antipatterns-part-2/">
+              Platform Engineering Antipatterns: Part 2
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-03-21T00:00:00Z">
+                March 21, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/strategy/">Strategy</a>
+      <span class="separator">•</span>
+    <a href="/categories/architecture/">Architecture</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/strategy/">Strategy</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/transformation/">Transformation</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/platform-engineering/">Platform Engineering</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="platform-engineering-antipatterns-part-two">
+  Platform Engineering Antipatterns: Part two
+  <a class="heading-link" href="#platform-engineering-antipatterns-part-two">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>In the <a href="/posts/platform-engineering-antipatterns/" >previous blog</a> post we wrote about some of the anti-patterns of Platform Engineering.</p>
+<p>We discussed what an Anti-pattern is, and we touched up-on the Platform for everything, and, product everything pattern.</p>
+<p>Today we will discuss a few more anti-patterns within the scope of an internal developer platforms.</p>
+<p>That being said, although we are discussing platforms from the lens of cloud modernisation and developer platforms I truely believe that some of that anti-patterns we will discuss today will have strong presence in other types of platforms as well. But that will be a subject we will be discussing in depth in another series.</p>
+<p>Let&rsquo;s dive in!</p>
+<hr>
+<h1 id="use-x-technology-for-everything">
+  Use “X” Technology for Everything
+  <a class="heading-link" href="#use-x-technology-for-everything">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h3 id="context">
+  Context
+  <a class="heading-link" href="#context">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Many organisation will resort to the usage of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since <a href="https://architectelevator.com/about/"  class="external-link" target="_blank" rel="noopener">Gregor Hohpe</a> already wrote <a href="https://architectelevator.com/architecture/cloud-oss-lockin/"  class="external-link" target="_blank" rel="noopener">a master piece on this subject</a>.</p>
+<p>Those cloud agnostic components pull teams to build more custom solutions on-top of them with the promise of avoiding lock-in, cost efficency and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-4">
+    
+<div class="w-full md:w-1/2 min-w-0">
+    
+The effects of this anti-pattern are usually amplified when combined with the product everything anti-pattern. Teams managing those platform component, incentivised by a product development approach, prush relentelsy for adoption effectively creating their own service provider within your department. Usually not what the business intended or neeeded when they embarked on their cloud modernisation journey.
+
+</div>
+
+<style>
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+</style>
+<div class="w-full md:w-1/2 min-w-0">
+    
+ <figure class="w-full"><img src="/images/kubernetes.jpg"
+     alt="Kubernetes!">
+ </figure>
+
+
+</div>
+
+<style>
+img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+</style>
+
+</div>
+<h3 id="symptoms">
+  Symptoms
+  <a class="heading-link" href="#symptoms">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="list-component">
+    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions </li><li>Your team mostly hires A-players, and you struggle finding, hiring, and retaining them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
+</div>
+
+<style>
+.list-component {
+    background: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.list-component ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-component li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.list-component li:before {
+    content: "•";
+    color: #dc3545;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+</style>
+<h3 id="results">
+  Results
+  <a class="heading-link" href="#results">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Strategic misalignment:</strong></p>
+<p>Culture is an important part of any organisation - The DNA of the organisation and it&rsquo;s value form an integral part of it&rsquo;s sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.</p>
+<p>Inserting a technology that incentivise more &ldquo;build&rdquo; over &ldquo;consumption&rdquo; will increase the wall of intertia of componentization - affecting your ability to create new sources of values. I am thankful that I do not have to write about this myself because there are great thinkers and giants which I can stand up-on their shoulders. If you want to deep dive in what I mean by creatinng new sources of values by componentization please refere to the Wardley&rsquo;s Climiatic patterns - specifically (Higher order systems create new sources of worth)[https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b]</p>
+<p>What does mean practically? Let&rsquo;s flip the question:</p>
+<div class="list-component">
+    <ul><li>Are you running your own documentdb?</li><li>Are you running your own elastic-search service?</li><li>Are you running your own identity and access managment for M2M?</li><li>Is your "public cloud team" considering running function as a service platforms on-top of Kubernetes to provide serverless technologies to developers?</li></ul>
+</div>
+
+<style>
+.list-component {
+    background: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.list-component ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-component li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.list-component li:before {
+    content: "•";
+    color: #dc3545;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+</style>
+<p>The well-intended behavior to help the organisation will undermine the &ldquo;you build it, you run it&rdquo; paradigm. Why is it a problem to undermine &ldquo;you build it, you run it&rdquo; philosophy? Well - it&rsquo;s likely you did not go to the cloud to start a prioritisation and product refinment session everytime a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?</p>
+<h1 id="starting-with-the-target-architecture">
+  Starting with the Target Architecture
+  <a class="heading-link" href="#starting-with-the-target-architecture">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h3 id="context-1">
+  Context
+  <a class="heading-link" href="#context-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>You are building a developer platform within an organization that has a federated operating model with separate or semi-separate business units and goals. Your aim is to unify the developer experience through a centralized platform. However, adoption is low, and teams struggle to promote platform components.</p>
+<h3 id="symptoms-1">
+  Symptoms
+  <a class="heading-link" href="#symptoms-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="list-component">
+    <ul><li>Platform friction increases over time, instead of decreasing. </li><li>The platform’s benefits are vague and unclear. </li><li>Finding common denominators is difficult, leading to excessive customization for different teams. </li><li>The focus is solely on platform convergence and adoption, with no vision for what comes after. </li><li>Platform teams discuss high-level theory but struggle to connect it to practical organizational challenges. </li><li>Value proposition is focused on lowering run cost.  </li></ul>
+</div>
+
+<style>
+.list-component {
+    background: #f8f9fa;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.list-component ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-component li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.list-component li:before {
+    content: "•";
+    color: #dc3545;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+</style>
+<h3 id="results-1">
+  Results
+  <a class="heading-link" href="#results-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>You will struggle to explain the platform’s benefits to different stakeholders. Your strategy will face pushback because it lacks a roadmap, clear vision, or adoption plan.</p>
+<p>The platform is perceived as an imposed initiative rather than an enabler, leading to resistance and shadow IT.</p>
+<p>Continued investment in the platform becomes hard to justify because its long-term value proposition is unclear.</p>
+<p>This is where your platform strategy may stall or might come to a screeching halt due to friction and lack of stakeholder support. After all, why are you building your platform if not to help your stakeholders?</p>
+<p>Imagine you are building a high-speed train network designed to connect multiple cities and improve mobility within each city. Sound like a game-changer? Of course: faster travel, seamless connectivity, and a modern transportation system.</p>
+<p>But paradoxically you cannot generate demand, and people are resenting your plans.</p>
+<p>The reality is that each city you plan to connect has its own existing transportation system and local habits. People do not see a compelling reason to switch their current options are reliable, affordable, and deeply embedded in daily life. Adoption feels like an unnecessary burden residents must install new apps, learn a new ticketing system, and adapt to an unfamiliar mode of travel, making the switch inconvenient.</p>
+<p>You could resort to going to court and force adoption, but this is a long and unpredictable path…</p>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+All opinions are mine and do not reflect the views of my employers.
+
+  <section class="container">
+    ©
+    
+      2023 -
+    
+    2025
+     Alex Elshamouty 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+      </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1TSQ2BJMX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-E1TSQ2BJMX');
+        }
+      </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
