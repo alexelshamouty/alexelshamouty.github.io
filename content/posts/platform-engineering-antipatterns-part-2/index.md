@@ -70,7 +70,7 @@ Teams develop in-house solutions that have strong cloud-managed alternatives.
 
 Culture is an important part of any organisation - The DNA of the organisation and it's value form an integral part of it's sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.
 
-Inserting a technology that incentivise more "build" over "consumption" will increase the wall of intertia of componentization - affecting your ability to create new sources of values. I am thankful that I do not have to write about this myself because there are great thinkers and giants which I can stand up-on their shoulders. If you want to deep dive in what I mean by creatinng new sources of values by componentization please refere to the Wardley's Climiatic patterns - specifically (Higher order systems create new sources of worth)[https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b]
+Inserting a technology that incentivise more "build" over "consumption" will increase the wall of intertia of componentization - affecting your ability to create new sources of values. I am thankful that I do not have to write about this myself because there are great thinkers and giants which I can stand up-on their shoulders. If you want to deep dive in what I mean by creatinng new sources of values by componentization please refere to the Wardley's Climiatic patterns - specifically [Higher order systems create new sources of worth](https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b)
 
 What does mean practically? Let's flip the question:
 
