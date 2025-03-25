@@ -74,13 +74,20 @@ Inserting a technology that incentivizes more "build" over "consumption" will in
 
 What does it mean practically for the less abstractly inclined reader? Let's flip the question:
 
+{{< rows >}}
+{{< row-item >}}
 {{< list >}}
 Are you running your own documentdb?
 Are you running your own elastic-search service?
 Are you running your own identity and access management for M2M?
 Is your "public cloud team" considering running function as a service platforms on top of Kubernetes to provide serverless technologies to developers?
+Are you a cloud service provider by any chance?
 {{< / list >}}
-
+{{< /row-item >}}
+{{< row-item >}}
+ {{< figure src="/images/idk.png" alt="Not sure if!" class="w-full" >}}
+{{< /row-item >}}
+{{< /rows >}}
 
 The well-intended behavior to help the organisation will undermine the "you build it, you run it" paradigm. Why is it a problem to undermine the "you build it, you run it" philosophy? Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right? 
 
