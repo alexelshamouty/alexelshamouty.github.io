@@ -96,7 +96,9 @@ The well-intended behavior to help the organisation will undermine the "you buil
 
 ### Context 
 
-You are building a developer platform within an organization that has a federated operating model with separate or semi-separate business units and goals. Your aim is to unify the developer experience through a centralized platform. However, adoption is low, and teams struggle to promote platform components. 
+You are building a developer platform within an organization that operates under a heavily federated model, where multiple business units function with a high degree of autonomy, each with their own goals, priorities, and technical stacks. Your objective is to unify and streamline the developer experience by offering a centralized platform that promotes standardization, accelerates delivery, and reduces duplication of effort.
+
+As a result, the platform team is not only tasked with technical enablement but also must act as an internal advocate, navigating political boundaries, building trust across business units, and demonstrating clear value tailored to diverse use cases. 
 
 ### Symptoms 
 
@@ -105,13 +107,15 @@ Platform friction increases over time, instead of decreasing.
 
 The platform’s benefits are vague and unclear. 
 
-Finding common denominators is difficult, leading to excessive customization for different teams. 
+It's challenging to identify shared needs across teams, which often results in the platform being heavily customized for each individual team.
 
-The focus is solely on platform convergence and adoption, with no vision for what comes after. 
+The current focus is entirely on driving platform convergence and adoption, without a clear long-term vision for how the platform will evolve or create ongoing value beyond initial rollout.
 
-Platform teams discuss high-level theory but struggle to connect it to practical organizational challenges. 
+Platform teams focus on theory but fail to ground it in the practical realities of the organization.
 
-Value proposition is focused on lowering run cost.  
+The focus on operational cost reduction comes without a corresponding analysis of resource needs or capital investments, creating a blind spot in platform planning and evaluation.
+
+Without a clear understanding of resource demands and capital investments, teams risk adopting solutions that are difficult to maintain in the long run, undermining platform sustainability
 
  {{</ list >}}
 
