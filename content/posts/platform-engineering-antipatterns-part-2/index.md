@@ -91,6 +91,7 @@ Are you a cloud service provider by any chance?
 
 The well-intended behavior to help the organisation will undermine the "you build it, you run it" paradigm. Why is it a problem to undermine the "you build it, you run it" philosophy? Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right? 
 
+---
 
 # Convergence in a federated context
 
