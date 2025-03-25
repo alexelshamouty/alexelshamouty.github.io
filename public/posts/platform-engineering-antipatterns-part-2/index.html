@@ -189,16 +189,16 @@
       <div class="post-content">
         
         <h1 id="platform-engineering-antipatterns-part-two">
-  Platform Engineering Antipatterns: Part two
+  Platform Engineering Antipatterns: Part Two
   <a class="heading-link" href="#platform-engineering-antipatterns-part-two">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h1>
-<p>In the <a href="/posts/platform-engineering-antipatterns/" >previous blog</a> post we wrote about some of the anti-patterns of Platform Engineering.</p>
-<p>We discussed what an Anti-pattern is, and we touched up-on the Platform for everything, and, product everything pattern.</p>
-<p>Today we will discuss a few more anti-patterns within the scope of an internal developer platforms.</p>
-<p>That being said, although we are discussing platforms from the lens of cloud modernisation and developer platforms I truely believe that some of that anti-patterns we will discuss today will have strong presence in other types of platforms as well. But that will be a subject we will be discussing in depth in another series.</p>
+<p>In the <a href="/posts/platform-engineering-antipatterns/" >previous blog</a> post, we wrote about some of the anti-patterns of Platform Engineering.</p>
+<p>We discussed what an Anti-pattern is and touched upon the Platform for everything and product everything patterns.</p>
+<p>Today we will discuss a few more anti-patterns within the scope of an internal developer platform.</p>
+<p>That being said, although we are discussing platforms from the lens of cloud modernisation and developer platforms, I truly believe that some of the anti-patterns we will discuss today will have a strong presence in other types of platforms as well. But that will be a subject we will discuss in depth in another series.</p>
 <p>Let&rsquo;s dive in!</p>
 <hr>
 <h1 id="use-x-technology-for-everything">
@@ -215,13 +215,13 @@
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Many organisation will resort to the usage of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since <a href="https://architectelevator.com/about/"  class="external-link" target="_blank" rel="noopener">Gregor Hohpe</a> already wrote <a href="https://architectelevator.com/architecture/cloud-oss-lockin/"  class="external-link" target="_blank" rel="noopener">a master piece on this subject</a>.</p>
-<p>Those cloud agnostic components pull teams to build more custom solutions on-top of them with the promise of avoiding lock-in, cost efficency and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
+<p>Many organisations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since <a href="https://architectelevator.com/about/"  class="external-link" target="_blank" rel="noopener">Gregor Hohpe</a> already wrote <a href="https://architectelevator.com/architecture/cloud-oss-lockin/"  class="external-link" target="_blank" rel="noopener">a master piece on this subject</a>.</p>
+<p>Those cloud-agnostic components pull teams to build more custom solutions on-top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-4">
     
 <div class="w-full md:w-1/2 min-w-0">
     
-The effects of this anti-pattern are usually amplified when combined with the product everything anti-pattern. Teams managing those platform component, incentivised by a product development approach, prush relentelsy for adoption effectively creating their own service provider within your department. Usually not what the business intended or neeeded when they embarked on their cloud modernisation journey.
+The effects of this anti-pattern are usually amplified when combined with the product everything anti-pattern. Teams managing those platform components, incentivised by a product development approach, push relentlessly for adoption, effectively creating their own service provider within your department. Usually not what the business intended or needed when they embarked on their cloud modernisation journey.
 
 </div>
 
@@ -258,7 +258,7 @@ img {
   </a>
 </h3>
 <div class="list-component">
-    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions </li><li>Your team mostly hires A-players, and you struggle finding, hiring, and retaining them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
+    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions </li><li>Your team mostly hires A-players, and you struggle to find, hiring, and retain them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
 </div>
 
 <style>
@@ -298,11 +298,11 @@ img {
   </a>
 </h3>
 <p><strong>Strategic misalignment:</strong></p>
-<p>Culture is an important part of any organisation - The DNA of the organisation and it&rsquo;s value form an integral part of it&rsquo;s sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.</p>
-<p>Inserting a technology that incentivise more &ldquo;build&rdquo; over &ldquo;consumption&rdquo; will increase the wall of intertia of componentization - affecting your ability to create new sources of values. I am thankful that I do not have to write about this myself because there are great thinkers and giants which I can stand up-on their shoulders. If you want to deep dive in what I mean by creatinng new sources of values by componentization please refere to the Wardley&rsquo;s Climiatic patterns - specifically <a href="https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b"  class="external-link" target="_blank" rel="noopener">Higher order systems create new sources of worth</a></p>
-<p>What does mean practically? Let&rsquo;s flip the question:</p>
+<p>Culture is an important part of any organisation - The DNA of the organisation and its values form an integral part of its sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.</p>
+<p>Inserting a technology that incentivizes more &ldquo;build&rdquo; over &ldquo;consumption&rdquo; will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentization, please refer to the Wardley&rsquo;s climatic patterns - specifically <a href="https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b"  class="external-link" target="_blank" rel="noopener">Higher order systems create new sources of worth</a></p>
+<p>What does it mean practically for the less abstractly inclined reader? Let&rsquo;s flip the question:</p>
 <div class="list-component">
-    <ul><li>Are you running your own documentdb?</li><li>Are you running your own elastic-search service?</li><li>Are you running your own identity and access managment for M2M?</li><li>Is your "public cloud team" considering running function as a service platforms on-top of Kubernetes to provide serverless technologies to developers?</li></ul>
+    <ul><li>Are you running your own documentdb?</li><li>Are you running your own elastic-search service?</li><li>Are you running your own identity and access management for M2M?</li><li>Is your "public cloud team" considering running function as a service platforms on top of Kubernetes to provide serverless technologies to developers?</li></ul>
 </div>
 
 <style>
@@ -334,7 +334,7 @@ img {
     left: 0;
 }
 </style>
-<p>The well-intended behavior to help the organisation will undermine the &ldquo;you build it, you run it&rdquo; paradigm. Why is it a problem to undermine &ldquo;you build it, you run it&rdquo; philosophy? Well - it&rsquo;s likely you did not go to the cloud to start a prioritisation and product refinment session everytime a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?</p>
+<p>The well-intended behavior to help the organisation will undermine the &ldquo;you build it, you run it&rdquo; paradigm. Why is it a problem to undermine the &ldquo;you build it, you run it&rdquo; philosophy? Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?</p>
 <h1 id="starting-with-the-target-architecture">
   Starting with the Target Architecture
   <a class="heading-link" href="#starting-with-the-target-architecture">
