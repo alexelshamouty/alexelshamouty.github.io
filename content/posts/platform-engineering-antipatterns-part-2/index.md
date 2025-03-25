@@ -2,7 +2,7 @@
 authors: ["Alex Elshamouty"]
 date: "2025-03-21"
 title: "Platform Engineering Antipatterns: Part 2"
-description: "Platform engineering is taking over the world! Or... not?"
+description: "A developer platform, or a private cloud? A centre of gravity, or a center of disorder?"
 summary: "X for everything and Central in Federated antipatterns"
 headerimage: "deepwaterdisaster.jpg"
 tags:
