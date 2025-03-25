@@ -3,7 +3,7 @@ authors: ["Alex Elshamouty"]
 date: "2025-03-21"
 title: "Platform Engineering Antipatterns: Part 2"
 description: "Platform engineering is taking over the world! Or... not?"
-summary: "Shared responsibility, enablement and bounderies in platform engi"
+summary: "X for everything and Central in Federated antipatterns"
 headerimage: "deepwaterdisaster.jpg"
 tags:
     - "strategy"
@@ -20,7 +20,7 @@ In the [previous blog](/posts/platform-engineering-antipatterns/) post, we wrote
 
 We discussed what an Anti-pattern is and touched upon the Platform for everything and product everything patterns.
 
-Today we will discuss a few more anti-patterns within the scope of an internal developer platform.
+Today, we will discuss a few more anti-patterns within the scope of an internal developer platform.
 
 That being said, although we are discussing platforms from the lens of cloud modernisation and developer platforms, I truly believe that some of the anti-patterns we will discuss today will have a strong presence in other types of platforms as well. But that will be a subject we will discuss in depth in another series.
 
@@ -36,7 +36,7 @@ Let's dive in!
 
 Many organisations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since [Gregor Hohpe](https://architectelevator.com/about/) already wrote [a master piece on this subject](https://architectelevator.com/architecture/cloud-oss-lockin/).
 
-Those cloud-agnostic components pull teams to build more custom solutions on-top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It's a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve. 
+Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It's a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve. 
 
 {{< rows >}}
 {{< row-item >}}
@@ -56,7 +56,7 @@ Teams managing these components are under heavy pressure and frequently request 
 
 Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions 
 
-Your team mostly hires A-players, and you struggle to find, hiring, and retain them 
+Your team mostly hires A-players, and you struggle to find, hire, and retain them 
 
 Managed cloud services are underutilized. 
 
@@ -103,7 +103,7 @@ As a result, the platform team is not only tasked with technical enablement but 
 ### Symptoms 
 
 {{< list >}}
-Platform friction increases over time, instead of decreasing. 
+Platform friction increases over time instead of decreasing. 
 
 The platform’s benefits are vague and unclear. 
 
@@ -122,18 +122,15 @@ Without a clear understanding of resource demands and capital investments, teams
 
 ### Results 
 
-You will struggle to explain the platform’s benefits to different stakeholders. Your strategy will face pushback because it lacks a roadmap, clear vision, or adoption plan. 
+Building a platform is not just a technical enhancement. It’s an organisational one. And like any organisational effort, its success depends less on the purity of its architecture, product design, reorg plan, cloud strategy, or even the story you tell around it. What matters most is how well it fits the ecosystem it’s meant to serve.
 
-The platform is perceived as an imposed initiative rather than an enabler, leading to resistance and shadow IT. 
+Being in the wrong ecosystem is a fundamental error, no matter how "compelling" the platform paradigm may seem, or how many benefits the technology claims to offer.
 
-Continued investment in the platform becomes hard to justify because its long-term value proposition is unclear. 
+You will face friction. Not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Your platform will be perceived not as a helpful enabler, but as an imposed mandate—another "central thing" trying to solve "local problems." Shadow IT is not born out of rebellion. It’s born out of need, speed, and the perception that central services are too far removed from reality. And should you be really doing that? 
 
-This is where your platform strategy may stall or might come to a screeching halt due to friction and lack of stakeholder support. After all, why are you building your platform if not to help your stakeholders?
+Let’s use a metaphor for this one, I am a bit out of memes. Imagine you are building a high-speed train network to connect a group of cities. Sounds like a great idea, right? Faster travel, shared infrastructure, better mobility! Take my money already, I am sold!!. But then you realise each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life. Switching to your sleek new train means giving that up, and not everyone is ready.
 
-Imagine you are building a high-speed train network designed to connect multiple cities and improve mobility within each city. Sound like a game-changer? Of course: faster travel, seamless connectivity, and a modern transportation system.  
+You could enforce it. Make it mandatory. Force teams to migrate. That’s one path. But much like in urban planning, top-down infrastructure with no local buy-in leads to resistance, resentment, and underused tracks.
 
-But paradoxically you cannot generate demand, and people are resenting your plans. 
 
-The reality is that each city you plan to connect has its own existing transportation system and local habits. People do not see a compelling reason to switch their current options are reliable, affordable, and deeply embedded in daily life. Adoption feels like an unnecessary burden residents must install new apps, learn a new ticketing system, and adapt to an unfamiliar mode of travel, making the switch inconvenient. 
 
-You could resort to going to court and force adoption, but this is a long and unpredictable path…

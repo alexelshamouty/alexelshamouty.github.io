@@ -197,7 +197,7 @@
 </h1>
 <p>In the <a href="/posts/platform-engineering-antipatterns/" >previous blog</a> post, we wrote about some of the anti-patterns of Platform Engineering.</p>
 <p>We discussed what an Anti-pattern is and touched upon the Platform for everything and product everything patterns.</p>
-<p>Today we will discuss a few more anti-patterns within the scope of an internal developer platform.</p>
+<p>Today, we will discuss a few more anti-patterns within the scope of an internal developer platform.</p>
 <p>That being said, although we are discussing platforms from the lens of cloud modernisation and developer platforms, I truly believe that some of the anti-patterns we will discuss today will have a strong presence in other types of platforms as well. But that will be a subject we will discuss in depth in another series.</p>
 <p>Let&rsquo;s dive in!</p>
 <hr>
@@ -216,7 +216,7 @@
   </a>
 </h3>
 <p>Many organisations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since <a href="https://architectelevator.com/about/"  class="external-link" target="_blank" rel="noopener">Gregor Hohpe</a> already wrote <a href="https://architectelevator.com/architecture/cloud-oss-lockin/"  class="external-link" target="_blank" rel="noopener">a master piece on this subject</a>.</p>
-<p>Those cloud-agnostic components pull teams to build more custom solutions on-top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
+<p>Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-4">
     
 <div class="w-full md:w-1/2 min-w-0">
@@ -258,7 +258,7 @@ img {
   </a>
 </h3>
 <div class="list-component">
-    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions </li><li>Your team mostly hires A-players, and you struggle to find, hiring, and retain them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
+    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions </li><li>Your team mostly hires A-players, and you struggle to find, hire, and retain them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
 </div>
 
 <style>
@@ -391,7 +391,7 @@ img {
   </a>
 </h3>
 <div class="list-component">
-    <ul><li>Platform friction increases over time, instead of decreasing. </li><li>The platform’s benefits are vague and unclear. </li><li>It's challenging to identify shared needs across teams, which often results in the platform being heavily customized for each individual team.</li><li>The current focus is entirely on driving platform convergence and adoption, without a clear long-term vision for how the platform will evolve or create ongoing value beyond initial rollout.</li><li>Platform teams focus on theory but fail to ground it in the practical realities of the organization.</li><li>The focus on operational cost reduction comes without a corresponding analysis of resource needs or capital investments, creating a blind spot in platform planning and evaluation.</li><li>Without a clear understanding of resource demands and capital investments, teams risk adopting solutions that are difficult to maintain in the long run, undermining platform sustainability</li></ul>
+    <ul><li>Platform friction increases over time instead of decreasing. </li><li>The platform’s benefits are vague and unclear. </li><li>It's challenging to identify shared needs across teams, which often results in the platform being heavily customized for each individual team.</li><li>The current focus is entirely on driving platform convergence and adoption, without a clear long-term vision for how the platform will evolve or create ongoing value beyond initial rollout.</li><li>Platform teams focus on theory but fail to ground it in the practical realities of the organization.</li><li>The focus on operational cost reduction comes without a corresponding analysis of resource needs or capital investments, creating a blind spot in platform planning and evaluation.</li><li>Without a clear understanding of resource demands and capital investments, teams risk adopting solutions that are difficult to maintain in the long run, undermining platform sustainability</li></ul>
 </div>
 
 <style>
@@ -430,14 +430,11 @@ img {
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>You will struggle to explain the platform’s benefits to different stakeholders. Your strategy will face pushback because it lacks a roadmap, clear vision, or adoption plan.</p>
-<p>The platform is perceived as an imposed initiative rather than an enabler, leading to resistance and shadow IT.</p>
-<p>Continued investment in the platform becomes hard to justify because its long-term value proposition is unclear.</p>
-<p>This is where your platform strategy may stall or might come to a screeching halt due to friction and lack of stakeholder support. After all, why are you building your platform if not to help your stakeholders?</p>
-<p>Imagine you are building a high-speed train network designed to connect multiple cities and improve mobility within each city. Sound like a game-changer? Of course: faster travel, seamless connectivity, and a modern transportation system.</p>
-<p>But paradoxically you cannot generate demand, and people are resenting your plans.</p>
-<p>The reality is that each city you plan to connect has its own existing transportation system and local habits. People do not see a compelling reason to switch their current options are reliable, affordable, and deeply embedded in daily life. Adoption feels like an unnecessary burden residents must install new apps, learn a new ticketing system, and adapt to an unfamiliar mode of travel, making the switch inconvenient.</p>
-<p>You could resort to going to court and force adoption, but this is a long and unpredictable path…</p>
+<p>Building a platform is not just a technical enhancement. It’s an organisational one. And like any organisational effort, its success depends less on the purity of its architecture, product design, reorg plan, cloud strategy, or even the story you tell around it. What matters most is how well it fits the ecosystem it’s meant to serve.</p>
+<p>Being in the wrong ecosystem is a fundamental error, no matter how &ldquo;compelling&rdquo; the platform paradigm may seem, or how many benefits the technology claims to offer.</p>
+<p>You will face friction. Not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Your platform will be perceived not as a helpful enabler, but as an imposed mandate—another &ldquo;central thing&rdquo; trying to solve &ldquo;local problems.&rdquo; Shadow IT is not born out of rebellion. It’s born out of need, speed, and the perception that central services are too far removed from reality. And should you be really doing that?</p>
+<p>Let’s use a metaphor for this one, I am a bit out of memes. Imagine you are building a high-speed train network to connect a group of cities. Sounds like a great idea, right? Faster travel, shared infrastructure, better mobility! Take my money already, I am sold!!. But then you realise each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life. Switching to your sleek new train means giving that up, and not everyone is ready.</p>
+<p>You could enforce it. Make it mandatory. Force teams to migrate. That’s one path. But much like in urban planning, top-down infrastructure with no local buy-in leads to resistance, resentment, and underused tracks.</p>
       </div>
 
 
