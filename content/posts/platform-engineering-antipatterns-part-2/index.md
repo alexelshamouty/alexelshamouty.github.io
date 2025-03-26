@@ -70,7 +70,7 @@ Teams develop in-house solutions that have strong cloud-managed alternatives.
 
 Culture is an important part of any organisation - The DNA of the organisation and its values form an integral part of its sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.
 
-Inserting a technology that incentivizes more "build" over "consumption" will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentization, please refer to the Wardley's climatic patterns - specifically [Higher order systems create new sources of worth](https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b)
+Inserting a technology that incentivizes more "build" over "consumption" will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentisation, please refer to the Wardley's climatic patterns - specifically [Higher order systems create new sources of worth](https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b)
 
 What does it mean practically for the less abstractly inclined reader? Let's flip the question:
 
@@ -89,7 +89,9 @@ Are you a cloud service provider by any chance?
 {{< /row-item >}}
 {{< /rows >}}
 
-The well-intended behavior to help the organisation will undermine the "you build it, you run it" paradigm. Why is it a problem to undermine the "you build it, you run it" philosophy? Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right? 
+The well-intended behavior to help the organisation will undermine the "you build it, you run it" paradigm. Why is it a problem to undermine the "you build it, you run it" philosophy? 
+
+Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?
 
 ---
 
@@ -97,7 +99,7 @@ The well-intended behavior to help the organisation will undermine the "you buil
 
 ### Context 
 
-You are building a developer platform within an organization that operates under a heavily federated model, where multiple business units function with a high degree of autonomy, each with their own goals, priorities, and technical stacks. Your objective is to unify and streamline the developer experience by offering a centralized platform that promotes standardization, accelerates delivery, and reduces duplication of effort.
+You are building a developer platform within an organization that operates under a heavily federated model,from a business perspective, where multiple business units function with a high or middle degree of autonomy, each with their own goals, priorities, and technical stacks. Your objective is to unify and streamline the developer experience by offering a centralized platform that promotes standardization, accelerates delivery, and reduces duplication of effort.
 
 As a result, the platform team is not only tasked with technical enablement but also must act as an internal advocate, navigating political boundaries, building trust across business units, and demonstrating clear value tailored to diverse use cases. 
 
