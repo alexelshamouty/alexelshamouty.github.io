@@ -36,7 +36,7 @@ Let's dive in!
 
 Many organisations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since [Gregor Hohpe](https://architectelevator.com/about/) already wrote [a master piece on this subject](https://architectelevator.com/architecture/cloud-oss-lockin/).
 
-Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It's a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve. 
+Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It's a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public cloud footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve. 
 
 {{< rows >}}
 {{< row-item >}}
@@ -54,9 +54,9 @@ Your platform architecture diagrams reveal strong dependencies on specific platf
 
 Teams managing these components are under heavy pressure and frequently request more resources. 
 
-Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions 
+Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions
 
-Your team mostly hires A-players, and you struggle to find, hire, and retain them 
+Teams managing those components mostly hire A-players, and you struggle to find, hire, and retain them 
 
 Managed cloud services are underutilized. 
 
