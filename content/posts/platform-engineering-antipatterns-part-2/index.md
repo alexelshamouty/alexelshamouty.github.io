@@ -77,9 +77,9 @@ What does it mean practically for the less abstractly inclined reader? Let's fli
 {{< rows >}}
 {{< row-item >}}
 {{< list >}}
-Are you running your own documentdb?
-Are you running your own elastic-search service?
-Are you running your own identity and access management for M2M?
+Are you managing your own databases infrastructure?
+Are you managing your own search infrastructure? 
+Are you running your own identity and access management for machine to machine?
 Is your "public cloud team" considering running function as a service platforms on top of Kubernetes to provide serverless technologies to developers?
 Are you a cloud service provider by any chance?
 {{< / list >}}
