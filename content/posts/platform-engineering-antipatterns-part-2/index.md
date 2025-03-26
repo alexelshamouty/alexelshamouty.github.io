@@ -22,7 +22,7 @@ We discussed what an Anti-pattern is and touched upon the Platform for everythin
 
 Today, we will discuss a few more anti-patterns within the scope of an internal developer platform.
 
-That being said, although we are discussing platforms from the lens of cloud modernisation and developer platforms, I truly believe that some of the anti-patterns we will discuss today will have a strong presence in other types of platforms as well. But that will be a subject we will discuss in depth in another series.
+That being said, although we are discussing platforms from the lens of cloud modernization and developer platforms, I truly believe that some of the anti-patterns we will discuss today will have a strong presence in other types of platforms as well. But that will be a subject we will discuss in depth in another series.
 
 Let's dive in!
 
@@ -34,13 +34,13 @@ Let's dive in!
 
 ### Context 
 
-Many organisations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since [Gregor Hohpe](https://architectelevator.com/about/) already wrote [a master piece on this subject](https://architectelevator.com/architecture/cloud-oss-lockin/).
+Many organizations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since [Gregor Hohpe](https://architectelevator.com/about/) already wrote [a master piece on this subject](https://architectelevator.com/architecture/cloud-oss-lockin/).
 
-Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It's a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public cloud footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve. 
+Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It's a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public cloud footprint actually resembles a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve. 
 
 {{< rows >}}
 {{< row-item >}}
-The effects of this anti-pattern are usually amplified when combined with the product everything anti-pattern. Teams managing those platform components, incentivised by a product development approach, push relentlessly for adoption, effectively creating their own service provider within your department. Usually not what the business intended or needed when they embarked on their cloud modernisation journey.
+The effects of this anti-pattern are usually amplified when combined with the product everything anti-pattern. Teams managing those platform components, incentivize by a product development approach, push relentlessly for adoption, effectively creating their own service provider within your department. Usually not what the business intended or needed when they embarked on their cloud modernization journey.
 {{< /row-item >}}
 {{< row-item >}}
  {{< figure src="/images/kubernetes.jpg" alt="Kubernetes!" class="w-full" >}}
@@ -68,9 +68,9 @@ Teams develop in-house solutions that have strong cloud-managed alternatives.
 
 **Strategic misalignment:**
 
-Culture is an important part of any organisation - The DNA of the organisation and its values form an integral part of its sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.
+Culture is an important part of any organization - The DNA of the organization and its values form an integral part of its sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.
 
-Inserting a technology that incentivizes more "build" over "consumption" will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentisation, please refer to the Wardley's climatic patterns - specifically [Higher order systems create new sources of worth](https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b)
+Inserting a technology that incentivize more "build" over "consumption" will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentization, please refer to the Wardley's climatic patterns - specifically [Higher order systems create new sources of worth](https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b)
 
 What does it mean practically for the less abstractly inclined reader? Let's flip the question:
 
@@ -89,9 +89,9 @@ Are you a cloud service provider by any chance?
 {{< /row-item >}}
 {{< /rows >}}
 
-The well-intended behavior to help the organisation will undermine the "you build it, you run it" paradigm. Why is it a problem to undermine the "you build it, you run it" philosophy? 
+The well-intended behavior to help the organization will undermine the "you build it, you run it" paradigm. Why is it a problem to undermine the "you build it, you run it" philosophy? 
 
-Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?
+Well, likely, you did not go to the cloud to start a prioritization and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?
 
 ---
 
@@ -125,11 +125,11 @@ Without a clear understanding of resource demands and capital investments, teams
 
 ### Results 
 
-Building a platform is not just a technical enhancement, your probably know that already. It’s an organisational one and like any organisational effort, its success depends less on the purity of its architecture, product design, reorg plan, cloud strategy, or even the story you tell around it. What matters most is how well it fits the ecosystem it’s meant to serve.
+Building a platform is not just a technical enhancement, your probably know that already. It’s an organizational one and like any organizational effort, its success depends less on the purity of its architecture, product design, reorg plan, cloud strategy, or even the story you tell around it. What matters most is how well it fits the ecosystem it’s meant to serve.
 
 Being in the wrong ecosystem is a fundamental error, no matter how "compelling" the platform paradigm may seem, or how many benefits the technology claims to offer.
 
-You will face friction not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Local optimisations are attached to the context which they operate in.
+You will face friction not because the platform is bad, but because it challenges existing habits, incentives, and local optimizations. Local optimizations are attached to the context which they operate in.
 Your platform will be perceived not as a helpful enabler, but as an imposed mandate.. yet another "central thing" trying to solve "local problems".. People may carry on and applaud your plan but the lack of understanding and contextual cohesion will give potential to shadow IT. Which is not born out of rebellion It’s born out of need, speed, and the perception that central services are too far removed from reality.
 
 
@@ -137,7 +137,7 @@ It is unlikely that this is your goal, right?
 
 Let’s use a metaphor for this one, I am a bit out of memes. Imagine you are building a high-speed train network to connect a group of cities. Sounds like a great idea, right? Faster travel, shared infrastructure, better mobility! Take my money already, I am sold!!
 
-But then you realise each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life and very low need for global connectivity or global optimisations.
+But then you realize each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life and very low need for global connectivity or global optimizations.
 
 Switching to your global new train means giving that up, and not everyone is ready, and they might not ever be, because they still live in their local cities.
 {{< rows >}}
