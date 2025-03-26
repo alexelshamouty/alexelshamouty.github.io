@@ -129,12 +129,9 @@ Building a platform is not just a technical enhancement, your probably know that
 
 Being in the wrong ecosystem is a fundamental error, no matter how "compelling" the platform paradigm may seem, or how many benefits the technology claims to offe.
 
-<<<<<<< HEAD
 You will face friction not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Local optimisations are attached to the context which they operate in.
 Your platform will be perceived not as a helpful enabler, but as an imposed mandate.. yet another "central thing" trying to solve "local problems".. People may carry on and applaud your plan but the lack of understanding and contextual cohesion will give potential to shadow IT. Which is not born out of rebellion It’s born out of need, speed, and the perception that central services are too far removed from reality.
-=======
-You will face friction. Not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Your platform will be perceived not as a helpful enabler, but as an imposed mandate... another "central thing" trying to solve "local problems." Shadow IT is not born out of rebellion. It’s born out of need, speed, and the perception that central services are too far removed from reality. And should you be really doing that? 
->>>>>>> 2255fff2c (Fix)
+
 
 It is unlikely that this is your goal, right?
 
@@ -143,8 +140,13 @@ Let’s use a metaphor for this one, I am a bit out of memes. Imagine you are bu
 But then you realise each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life and very low need for global connectivity or global optimisations.
 
 Switching to your global new train means giving that up, and not everyone is ready, and they might not ever be, because they still live in their local cities.
-
+{{< rows >}}
+{{< row-item >}}
 You could enforce it. You could go to court and make it mandatory. But much like in urban planning, top-down infrastructure with no local buy-in leads to resistance, resentment, and underused tracks. Very costly unused beautiful tracks, and.. abandoned platforms.
-
+{{< /row-item >}}
+{{< row-item >}}
+ {{< figure src="/images/trainnl.jpg" alt="[Empty Amsterdam Train Station!](https://www.dreamstime.com/amsterdam-netherlands-view-empty-train-platform-ingenious-steel-construction-round-roof-rail-rails-upcoming-blue-image162223861)" class="w-full" >}}
+{{< /row-item >}}
+{{< /rows >}}
 
 
