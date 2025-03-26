@@ -129,8 +129,12 @@ Building a platform is not just a technical enhancement, your probably know that
 
 Being in the wrong ecosystem is a fundamental error, no matter how "compelling" the platform paradigm may seem, or how many benefits the technology claims to offe.
 
+<<<<<<< HEAD
 You will face friction not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Local optimisations are attached to the context which they operate in.
 Your platform will be perceived not as a helpful enabler, but as an imposed mandate.. yet another "central thing" trying to solve "local problems".. People may carry on and applaud your plan but the lack of understanding and contextual cohesion will give potential to shadow IT. Which is not born out of rebellion It’s born out of need, speed, and the perception that central services are too far removed from reality.
+=======
+You will face friction. Not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Your platform will be perceived not as a helpful enabler, but as an imposed mandate... another "central thing" trying to solve "local problems." Shadow IT is not born out of rebellion. It’s born out of need, speed, and the perception that central services are too far removed from reality. And should you be really doing that? 
+>>>>>>> 2255fff2c (Fix)
 
 It is unlikely that this is your goal, right?
 

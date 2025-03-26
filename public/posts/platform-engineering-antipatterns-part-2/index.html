@@ -13,19 +13,19 @@
 
 
 <meta name="author" content="Alex Elshamouty">
-<meta name="description" content="Platform engineering is taking over the world! Or... not?">
+<meta name="description" content="A developer platform, or a private cloud? A centre of gravity, or a center of disorder?">
 <meta name="keywords" content="blog,architecture,cloud,personal">
 
 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Platform Engineering Antipatterns: Part 2">
-  <meta name="twitter:description" content="Platform engineering is taking over the world! Or... not?">
+  <meta name="twitter:description" content="A developer platform, or a private cloud? A centre of gravity, or a center of disorder?">
 
 <meta property="og:url" content="http://localhost:1313/posts/platform-engineering-antipatterns-part-2/">
   <meta property="og:site_name" content="Alex Elshamouty&#39;s Blog">
   <meta property="og:title" content="Platform Engineering Antipatterns: Part 2">
-  <meta property="og:description" content="Platform engineering is taking over the world! Or... not?">
+  <meta property="og:description" content="A developer platform, or a private cloud? A centre of gravity, or a center of disorder?">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -169,7 +169,7 @@
             </span>
             <span class="reading-time">
               <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              6-minute read
+              7-minute read
             </span>
           </div>
           
@@ -226,7 +226,7 @@
   </a>
 </h3>
 <p>Many organisations will resort to the use of cloud-agnostic technologies to reduce the vendor lock-in risk. This is a subject in itself which I do not feel that needs to be covered since <a href="https://architectelevator.com/about/"  class="external-link" target="_blank" rel="noopener">Gregor Hohpe</a> already wrote <a href="https://architectelevator.com/architecture/cloud-oss-lockin/"  class="external-link" target="_blank" rel="noopener">a master piece on this subject</a>.</p>
-<p>Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
+<p>Those cloud-agnostic components pull teams to build more custom solutions on top of them with the promise of avoiding lock-in, cost efficiency, and many more. These components offer fine-grained control, which appeals to platform tech-savvy teams who prefer custom-built solutions over ready-made alternatives. However, this results in low adoption of managed cloud services. Why is that a problem, you might ask? It&rsquo;s a problem because if you went to the public cloud to benefit from public cloud services but all of a sudden you find out that your public cloud footprint actually resembels a private cloud footprint with most of the spending allocated to vanilla compute, storage, and networking rather than managed services, then you might not have achieved the goal you set out to achieve.</p>
 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-4">
     
 <div class="w-full md:w-1/2 min-w-0">
@@ -268,7 +268,7 @@ img {
   </a>
 </h3>
 <div class="list-component">
-    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions </li><li>Your team mostly hires A-players, and you struggle to find, hire, and retain them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
+    <ul><li>Your platform architecture diagrams reveal strong dependencies on specific platform components. </li><li>Teams managing these components are under heavy pressure and frequently request more resources. </li><li>Attempts are made to distribute the operational load of these components to other teams using complex engineering solutions</li><li>Teams managing those components mostly hire A-players, and you struggle to find, hire, and retain them </li><li>Managed cloud services are underutilized. </li><li>Teams develop in-house solutions that have strong cloud-managed alternatives. </li></ul>
 </div>
 
 <style>
@@ -309,7 +309,7 @@ img {
 </h3>
 <p><strong>Strategic misalignment:</strong></p>
 <p>Culture is an important part of any organisation - The DNA of the organisation and its values form an integral part of its sociotechnical system. Introducing technology within your organisation should be viewed not only from the lens of technical advantage, but also from the lens of cultural fitness.</p>
-<p>Inserting a technology that incentivizes more &ldquo;build&rdquo; over &ldquo;consumption&rdquo; will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentization, please refer to the Wardley&rsquo;s climatic patterns - specifically <a href="https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b"  class="external-link" target="_blank" rel="noopener">Higher order systems create new sources of worth</a></p>
+<p>Inserting a technology that incentivizes more &ldquo;build&rdquo; over &ldquo;consumption&rdquo; will increase the wall of inertia of componentization, affecting your ability to create new sources of value. I am thankful that I do not have to write about this myself because there are great thinkers and giants whom I can stand on their shoulders. If you want to deep dive into what I mean by creating new sources of value by componentisation, please refer to the Wardley&rsquo;s climatic patterns - specifically <a href="https://medium.com/wardleymaps/exploring-the-map-ad0266fad59b"  class="external-link" target="_blank" rel="noopener">Higher order systems create new sources of worth</a></p>
 <p>What does it mean practically for the less abstractly inclined reader? Let&rsquo;s flip the question:</p>
 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-4">
     
@@ -376,7 +376,8 @@ img {
 </style>
 
 </div>
-<p>The well-intended behavior to help the organisation will undermine the &ldquo;you build it, you run it&rdquo; paradigm. Why is it a problem to undermine the &ldquo;you build it, you run it&rdquo; philosophy? Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?</p>
+<p>The well-intended behavior to help the organisation will undermine the &ldquo;you build it, you run it&rdquo; paradigm. Why is it a problem to undermine the &ldquo;you build it, you run it&rdquo; philosophy?</p>
+<p>Well, likely, you did not go to the cloud to start a prioritisation and product refinement session every time a development team needs a feature or a technology, right? If they can not build it and run it, someone will have to, right?</p>
 <hr>
 <h1 id="convergence-in-a-federated-context">
   Convergence in a federated context
@@ -392,7 +393,7 @@ img {
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>You are building a developer platform within an organization that operates under a heavily federated model, where multiple business units function with a high degree of autonomy, each with their own goals, priorities, and technical stacks. Your objective is to unify and streamline the developer experience by offering a centralized platform that promotes standardization, accelerates delivery, and reduces duplication of effort.</p>
+<p>You are building a developer platform within an organization that operates under a heavily federated model,from a business perspective, where multiple business units function with a high or middle degree of autonomy, each with their own goals, priorities, and technical stacks. Your objective is to unify and streamline the developer experience by offering a centralized platform that promotes standardization, accelerates delivery, and reduces duplication of effort.</p>
 <p>As a result, the platform team is not only tasked with technical enablement but also must act as an internal advocate, navigating political boundaries, building trust across business units, and demonstrating clear value tailored to diverse use cases.</p>
 <h3 id="symptoms-1">
   Symptoms
@@ -441,11 +442,38 @@ img {
     <span class="sr-only">Link to heading</span>
   </a>
 </h3>
-<p>Building a platform is not just a technical enhancement. It’s an organisational one. And like any organisational effort, its success depends less on the purity of its architecture, product design, reorg plan, cloud strategy, or even the story you tell around it. What matters most is how well it fits the ecosystem it’s meant to serve.</p>
-<p>Being in the wrong ecosystem is a fundamental error, no matter how &ldquo;compelling&rdquo; the platform paradigm may seem, or how many benefits the technology claims to offer.</p>
-<p>You will face friction. Not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Your platform will be perceived not as a helpful enabler, but as an imposed mandate—another &ldquo;central thing&rdquo; trying to solve &ldquo;local problems.&rdquo; Shadow IT is not born out of rebellion. It’s born out of need, speed, and the perception that central services are too far removed from reality. And should you be really doing that?</p>
-<p>Let’s use a metaphor for this one, I am a bit out of memes. Imagine you are building a high-speed train network to connect a group of cities. Sounds like a great idea, right? Faster travel, shared infrastructure, better mobility! Take my money already, I am sold!!. But then you realise each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life. Switching to your sleek new train means giving that up, and not everyone is ready.</p>
-<p>You could enforce it. Make it mandatory. Force teams to migrate. That’s one path. But much like in urban planning, top-down infrastructure with no local buy-in leads to resistance, resentment, and underused tracks.</p>
+<p>Building a platform is not just a technical enhancement, your probably know that already. It’s an organisational one and like any organisational effort, its success depends less on the purity of its architecture, product design, reorg plan, cloud strategy, or even the story you tell around it. What matters most is how well it fits the ecosystem it’s meant to serve.</p>
+<p>Being in the wrong ecosystem is a fundamental error, no matter how &ldquo;compelling&rdquo; the platform paradigm may seem, or how many benefits the technology claims to offe.</p>
+<h1 id="your-platform-will-be-perceived-not-as-a-helpful-enabler-but-as-an-imposed-mandate-yet-another-central-thing-trying-to-solve-local-problems-people-may-carry-on-and-applaud-your-plan-but-the-lack-of-understanding-and-contextual-cohesion-will-give-potential-to-shadow-it-which-is-not-born-out-of-rebellion-its-born-out-of-need-speed-and-the-perception-that-central-services-are-too-far-removed-from-reality">
+  &laquo;&laquo;&laquo;&lt; HEAD
+You will face friction not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Local optimisations are attached to the context which they operate in.
+Your platform will be perceived not as a helpful enabler, but as an imposed mandate.. yet another &ldquo;central thing&rdquo; trying to solve &ldquo;local problems&rdquo;.. People may carry on and applaud your plan but the lack of understanding and contextual cohesion will give potential to shadow IT. Which is not born out of rebellion It’s born out of need, speed, and the perception that central services are too far removed from reality.
+  <a class="heading-link" href="#your-platform-will-be-perceived-not-as-a-helpful-enabler-but-as-an-imposed-mandate-yet-another-central-thing-trying-to-solve-local-problems-people-may-carry-on-and-applaud-your-plan-but-the-lack-of-understanding-and-contextual-cohesion-will-give-potential-to-shadow-it-which-is-not-born-out-of-rebellion-its-born-out-of-need-speed-and-the-perception-that-central-services-are-too-far-removed-from-reality">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>You will face friction. Not because the platform is bad, but because it challenges existing habits, incentives, and local optimisations. Your platform will be perceived not as a helpful enabler, but as an imposed mandate&hellip; another &ldquo;central thing&rdquo; trying to solve &ldquo;local problems.&rdquo; Shadow IT is not born out of rebellion. It’s born out of need, speed, and the perception that central services are too far removed from reality. And should you be really doing that?</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>2255fff2c (Fix)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>It is unlikely that this is your goal, right?</p>
+<p>Let’s use a metaphor for this one, I am a bit out of memes. Imagine you are building a high-speed train network to connect a group of cities. Sounds like a great idea, right? Faster travel, shared infrastructure, better mobility! Take my money already, I am sold!!</p>
+<p>But then you realise each city has its own beloved tram system, its own ticketing app, and its own schedule aligned with local life and very low need for global connectivity or global optimisations.</p>
+<p>Switching to your global new train means giving that up, and not everyone is ready, and they might not ever be, because they still live in their local cities.</p>
+<p>You could enforce it. You could go to court and make it mandatory. But much like in urban planning, top-down infrastructure with no local buy-in leads to resistance, resentment, and underused tracks. Very costly unused beautiful tracks, and.. abandoned platforms.</p>
       </div>
 
 
