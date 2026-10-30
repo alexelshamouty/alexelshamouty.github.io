@@ -1,7 +1,7 @@
 baseURL = "https://alexelsh.nl"
 title = "Alex Elshamouty's Blog"
 theme = "hugo-coder"
-languageCode = "en"
+locale = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
 googleAnalytics = "G-E1TSQ2BJMX"
