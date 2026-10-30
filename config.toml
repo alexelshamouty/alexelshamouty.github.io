@@ -13,7 +13,7 @@ style = "github-dark"
 author = "Alex Elshamouty"
 description = "I’m always asking questions: Why do we build things this way? What if there’s a better approach? How do complex systems really work beneath the surface? This blog is where I explore those questions diving into platform engineering, cloud strategies, software architecture, and technology transformations. I don’t just describe solutions; I challenge assumptions and dig into the details, aiming to spark thought and uncover better ways of doing things. If you’re curious and like questioning the status quo, you’ll feel right at home here."
 keywords = "blog,architecture,cloud,personal"
-info = "I build solutions that work. Currently I am Senior Systems Architect at EPAM. Previously I was Principal Architect for the Adevinta Group and a full member of the amazing leadership team for the cloud organisation & the global architecture team. I built and led the cloud technology team in Adevinta and led the architecture stream of one of the largest cloud transformation projects in Europe."
+info = "I build solutions that work, and increase the businesses around them. I’m a Director at EPAM, where I lead the AWS practice across the Benelux, shaping strategy, partnerships and large-scale cloud engagements. Before that, I was Head of Cloud Architecture at Adevinta. There I built and led the cloud technology team and ran the architecture stream of one of Europe’s largest cloud transformations. I’m currently doing an Executive MBA at RSM."
 avatarURL = "images/avatar.jpg"
 dateFormat = "January 2, 2006"
 since = 2023
@@ -105,3 +105,7 @@ url = "oss/"
     disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
